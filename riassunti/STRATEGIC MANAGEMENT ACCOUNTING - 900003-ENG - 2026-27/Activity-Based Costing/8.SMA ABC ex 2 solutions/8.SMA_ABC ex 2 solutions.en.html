@@ -1,0 +1,806 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Summary · 8.SMA_ABC ex 2 solutions.pdf</title><link rel="icon" href="data:,">
+<style>html,body{margin:0;height:100%}body{display:flex;flex-direction:column}iframe{flex:1;border:0;width:100%}</style>
+</head><body><nav style="font:14px/1.4 system-ui,sans-serif;padding:6px 12px;text-align:right"><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Activity-Based%20Costing/8.SMA%20ABC%20ex%202%20solutions/8.SMA_ABC%20ex%202%20solutions.en.html" style="color:inherit;margin-right:.8em;font-weight:700">English</a><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Activity-Based%20Costing/8.SMA%20ABC%20ex%202%20solutions/8.SMA_ABC%20ex%202%20solutions.html" style="color:inherit;margin-right:.8em;">Italiano</a></nav><iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" title="Summary · 8.SMA_ABC ex 2 solutions.pdf"
+srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27;; style-src &#x27;unsafe-inline&#x27;; font-src &#x27;self&#x27;; img-src data:; form-action &#x27;none&#x27;; base-uri &#x27;none&#x27;&quot;&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Activity-Based Costing · Exercise 2 — Gallatin Carpet Cleaning&lt;/title&gt;
+&lt;style&gt;
+@font-face{font-family:&quot;Newsreader&quot;;src:url(&quot;/static/fonts/newsreader-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:&quot;IBM Plex Sans&quot;;src:url(&quot;/static/fonts/ibm-plex-sans-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:100 700;font-style:normal;font-display:swap}
+:root{
+  --paper:oklch(97% 0.012 80);--paper2:oklch(94.5% 0.014 78);--ink:oklch(21% 0.014 60);--ink2:oklch(42% 0.014 60);
+  --rule:oklch(86% 0.014 75);--accent:oklch(50% 0.15 35);--accent-bg:oklch(93% 0.035 35);
+  --sage:oklch(48% 0.08 150);--sage-bg:oklch(94% 0.03 150);
+  --ochre:oklch(52% 0.1 85);--ochre-bg:oklch(94% 0.045 85);
+  --slate:oklch(46% 0.07 250);--slate-bg:oklch(94% 0.022 250);
+  --brick:oklch(47% 0.12 25);--brick-bg:oklch(94% 0.03 25);
+  --pos:oklch(48% 0.1 150);--neg:oklch(50% 0.15 30);
+  --serif:&quot;Newsreader&quot;,Georgia,&quot;Times New Roman&quot;,serif;--sans:&quot;IBM Plex Sans&quot;,system-ui,-apple-system,&quot;Segoe UI&quot;,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(19% 0.012 60);--paper2:oklch(23% 0.014 60);--ink:oklch(92% 0.012 80);--ink2:oklch(74% 0.014 75);
+  --rule:oklch(35% 0.014 70);--accent:oklch(70% 0.14 35);--accent-bg:oklch(29% 0.05 35);
+  --sage:oklch(76% 0.09 150);--sage-bg:oklch(27% 0.035 150);
+  --ochre:oklch(80% 0.1 85);--ochre-bg:oklch(28% 0.045 85);
+  --slate:oklch(77% 0.07 250);--slate-bg:oklch(27% 0.03 250);
+  --brick:oklch(74% 0.11 25);--brick-bg:oklch(28% 0.04 25);
+  --pos:oklch(76% 0.11 150);--neg:oklch(72% 0.14 30);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.62 var(--sans);-webkit-text-size-adjust:100%}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2.3rem,6vw,4rem);font-weight:300;margin:.2em 0 .25em}
+h1 em{font-style:italic;color:var(--accent);font-weight:400}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin:0 0 .4em}
+h3{font-size:1.35rem;margin:1.6em 0 .5em}
+h4{font-size:1.1rem;margin:1.2em 0 .3em}
+p{margin:.6em 0}
+a{color:var(--accent)}
+.kicker{font:600 .78rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead{font-family:var(--serif);font-size:1.3rem;line-height:1.45;color:var(--ink2);font-weight:350}
+.muted{color:var(--ink2)}
+.small{font-size:.88rem}
+hr{border:0;border-top:1px solid var(--rule);margin:2.5rem 0}
+.t{font-style:italic;font-family:var(--serif);font-size:1.06em}
+.num{font-variant-numeric:tabular-nums}
+/* header */
+header.hero{border-bottom:1px solid var(--rule);padding:48px 0 30px;background:linear-gradient(180deg,var(--paper2),var(--paper))}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:.9rem;color:var(--ink2)}
+.meta span{border-left:2px solid var(--accent);padding-left:8px}
+/* nav */
+nav.toc{position:sticky;top:0;z-index:10;background:color-mix(in oklch,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+nav.toc a{flex:none;text-decoration:none;color:var(--ink2);font-size:.84rem;padding:4px 10px;border-radius:99px;border:1px solid transparent}
+nav.toc a:hover,nav.toc a.on{border-color:var(--rule);color:var(--ink);background:var(--paper2)}
+/* sections */
+section.part{padding:56px 0 20px;border-bottom:1px solid var(--rule);scroll-margin-top:50px}
+.tag{display:inline-block;font:600 .72rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:5px 9px;border-radius:4px;margin-bottom:12px}
+.sage .tag{background:var(--sage-bg);color:var(--sage)}
+.ochre .tag{background:var(--ochre-bg);color:var(--ochre)}
+.slate .tag{background:var(--slate-bg);color:var(--slate)}
+.brick .tag{background:var(--brick-bg);color:var(--brick)}
+.box{border:1px solid var(--rule);border-radius:10px;padding:16px 20px;margin:18px 0;background:var(--paper2)}
+.def{border-left:4px solid var(--sage);background:var(--sage-bg);border-radius:0 10px 10px 0;padding:12px 18px;margin:16px 0}
+.def b:first-child{font-family:var(--serif);font-size:1.08em}
+.formula{font-family:var(--serif);font-size:1.25rem;text-align:center;padding:16px;margin:18px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.formula .frac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;margin:0 6px}
+.formula .frac span:first-child{border-bottom:1px solid currentColor;padding:0 6px}
+.note{border-left:4px solid var(--ochre);background:var(--ochre-bg);border-radius:0 10px 10px 0;padding:12px 18px;margin:16px 0}
+.warn{border-left:4px solid var(--brick);background:var(--brick-bg);border-radius:0 10px 10px 0;padding:12px 18px;margin:16px 0}
+.src{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.04em;padding:2px 7px;border-radius:99px;border:1px solid var(--rule);color:var(--ink2);white-space:nowrap}
+.src.ext{border-color:var(--slate);color:var(--slate)}
+.src.own{border-color:var(--ochre);color:var(--ochre)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{border:1px solid var(--rule);border-radius:10px;padding:14px 18px;background:var(--paper)}
+.card h4{margin-top:.2em}
+figure{margin:22px 0}
+figcaption{font-size:.85rem;color:var(--ink2);margin-top:6px}
+svg{max-width:100%;height:auto;display:block}
+svg text{font-family:var(--sans);fill:var(--ink)}
+/* tables */
+.tbl{overflow-x:auto;margin:16px 0}
+table{border-collapse:collapse;width:100%;font-size:.93rem;font-variant-numeric:tabular-nums}
+th,td{padding:7px 10px;border-bottom:1px solid var(--rule);text-align:right}
+th:first-child,td:first-child{text-align:left}
+thead th{font-weight:600;font-size:.8rem;letter-spacing:.03em;color:var(--ink2);border-bottom:2px solid var(--ink)}
+tfoot td{font-weight:600;border-top:2px solid var(--ink);border-bottom:3px double var(--ink)}
+td.hl{background:var(--accent-bg);outline:2px solid var(--accent);outline-offset:-2px}
+tr.rowhl td{background:var(--ochre-bg)}
+td.click{cursor:pointer}
+td.click:hover{background:var(--paper2)}
+.neg{color:var(--neg)}.pos{color:var(--pos)}
+/* details */
+details{border:1px solid var(--rule);border-radius:10px;margin:10px 0;background:var(--paper)}
+details&gt;summary{cursor:pointer;padding:11px 16px;font-weight:500;list-style:none;display:flex;gap:10px;align-items:baseline}
+details&gt;summary::before{content:&quot;+&quot;;font-family:var(--serif);color:var(--accent);font-size:1.3em;line-height:1;width:14px}
+details[open]&gt;summary::before{content:&quot;–&quot;}
+details&gt;div{padding:0 18px 14px}
+/* tabs */
+.tabs [role=tablist]{display:flex;flex-wrap:wrap;gap:4px;border-bottom:1px solid var(--rule)}
+.tabs [role=tab]{font:inherit;font-size:.92rem;background:none;border:1px solid transparent;border-bottom:none;border-radius:8px 8px 0 0;padding:8px 14px;color:var(--ink2);cursor:pointer;margin-bottom:-1px}
+.tabs [role=tab][aria-selected=true]{border-color:var(--rule);background:var(--paper2);color:var(--ink);font-weight:500}
+.tabs [role=tabpanel]{border:1px solid var(--rule);border-top:none;border-radius:0 0 10px 10px;padding:14px 18px;background:var(--paper2)}
+/* buttons, controls */
+button.btn{font:500 .9rem var(--sans);border:1px solid var(--rule);background:var(--paper);color:var(--ink);padding:7px 14px;border-radius:99px;cursor:pointer}
+button.btn:hover{border-color:var(--accent);color:var(--accent)}
+button.btn[aria-pressed=true]{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+.ctrl{display:grid;grid-template-columns:minmax(150px,220px) 1fr 90px;gap:10px;align-items:center;margin:8px 0}
+.ctrl output{font:600 1rem var(--sans);text-align:right;font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--accent)}
+input[type=checkbox]{accent-color:var(--accent);width:18px;height:18px;vertical-align:-3px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:14px 0}
+.kpi{border:1px solid var(--rule);border-radius:10px;padding:10px 14px;background:var(--paper)}
+.kpi small{display:block;color:var(--ink2);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+.kpi b{font:500 1.6rem var(--serif);font-variant-numeric:tabular-nums}
+/* stepper */
+.stepper{border:1px solid var(--rule);border-radius:12px;background:var(--paper2);padding:18px 20px}
+.stepper .step{display:none}.stepper .step.on{display:block;animation:fade .35s}
+.stepper .bar{display:flex;align-items:center;gap:10px;margin-top:14px}
+.stepper .dots{display:flex;gap:6px;flex:1;justify-content:center}
+.stepper .dots i{width:9px;height:9px;border-radius:50%;background:var(--rule)}
+.stepper .dots i.on{background:var(--accent)}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+/* quiz */
+.quiz{margin-top:30px;border-top:2px solid var(--ink);padding-top:12px}
+.quiz h3{margin-top:.4em}
+.q{border-bottom:1px dashed var(--rule);padding:10px 0}
+.q p{margin:.2em 0 .5em;font-weight:500}
+.q .ans{display:none;margin-top:8px;padding:10px 14px;border-radius:8px;background:var(--sage-bg);border-left:3px solid var(--sage)}
+.q.open .ans{display:block}
+/* map */
+.map a{cursor:pointer}
+.map .node rect{stroke-width:1.5;transition:transform .2s}
+.map a:hover rect,.map a:focus rect{stroke-width:3}
+.map .n-sage rect{fill:var(--sage-bg);stroke:var(--sage)}
+.map .n-ochre rect{fill:var(--ochre-bg);stroke:var(--ochre)}
+.map .n-slate rect{fill:var(--slate-bg);stroke:var(--slate)}
+.map .n-brick rect{fill:var(--brick-bg);stroke:var(--brick)}
+.map .n-acc rect{fill:var(--accent-bg);stroke:var(--accent)}
+.map .edge{stroke:var(--ink2);stroke-width:1.4;fill:none}
+.map .edge.d{stroke-dasharray:5 4}
+.map .el{font-size:11px;fill:var(--ink2);font-style:italic}
+.map .tt{font-family:var(--serif);font-size:16px;font-weight:600}
+.map .ts{font-size:11.5px;fill:var(--ink2)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.84rem;color:var(--ink2);margin-top:6px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:5px;border:1.5px solid}
+/* svg helpers */
+.s-sage{fill:var(--sage-bg);stroke:var(--sage)}.s-ochre{fill:var(--ochre-bg);stroke:var(--ochre)}
+.s-slate{fill:var(--slate-bg);stroke:var(--slate)}.s-brick{fill:var(--brick-bg);stroke:var(--brick)}
+.s-acc{fill:var(--accent-bg);stroke:var(--accent)}
+.f-sage{fill:var(--sage)}.f-ochre{fill:var(--ochre)}.f-slate{fill:var(--slate)}.f-brick{fill:var(--brick)}.f-acc{fill:var(--accent)}
+.ln{stroke:var(--ink2);fill:none;stroke-width:1.4}
+.ax{stroke:var(--ink2);stroke-width:1}
+.grid{stroke:var(--rule);stroke-width:1}
+svg .lbl{font-size:12px;fill:var(--ink2)}
+svg .big{font-family:var(--serif);font-size:15px;font-weight:600}
+/* refs */
+.ref{border:1px solid var(--rule);border-left:4px solid var(--slate);border-radius:0 10px 10px 0;padding:14px 18px;margin:14px 0;background:var(--paper)}
+.ref h4{margin:.1em 0 .3em}
+footer{padding:36px 0 60px;color:var(--ink2);font-size:.9rem;text-align:center}
+@media (max-width:640px){
+  body{font-size:16px}.wrap{padding:0 16px}
+  .ctrl{grid-template-columns:1fr 70px}.ctrl label{grid-column:1/-1}
+  th,td{padding:6px 6px}
+  .stepper{padding:14px}
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;header class=&quot;hero&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;kicker&quot;&gt;Strategic Management Accounting · University of Bergamo&lt;/div&gt;
+    &lt;h1&gt;Activity-Based Costing&lt;br&gt;&lt;em&gt;Exercise 2: the Gallatin Carpet Cleaning case&lt;/em&gt;&lt;/h1&gt;
+    &lt;p class=&quot;lead&quot;&gt;A carpet cleaning company always charges the same price per square foot. But does a customer on a ranch 75 miles away cost the same as one in town? Using ABC, we calculate the true cost of a single job and find out who is paying for whom.&lt;/p&gt;
+    &lt;div class=&quot;meta&quot;&gt;
+      &lt;span&gt;Source: &lt;i&gt;8.SMA_ABC ex 2 solutions.pdf&lt;/i&gt; (10 slides)&lt;/span&gt;
+      &lt;span&gt;Department of Management&lt;/span&gt;
+      &lt;span&gt;Related to: &lt;i&gt;7.SMA_ABC ex 1 solutions.pdf&lt;/i&gt; (Prof. Silvia Pilonato)&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;nav class=&quot;toc&quot; aria-label=&quot;Table of contents&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;a href=&quot;#mappa&quot;&gt;Map&lt;/a&gt;&lt;a href=&quot;#caso&quot;&gt;1 · The case&lt;/a&gt;&lt;a href=&quot;#abc&quot;&gt;2 · ABC concepts&lt;/a&gt;&lt;a href=&quot;#stage1&quot;&gt;3 · First stage&lt;/a&gt;&lt;a href=&quot;#rates&quot;&gt;4 · Activity rates&lt;/a&gt;&lt;a href=&quot;#job&quot;&gt;5 · Job cost&lt;/a&gt;&lt;a href=&quot;#margin&quot;&gt;6 · Customer margin&lt;/a&gt;&lt;a href=&quot;#profit&quot;&gt;7 · Conclusions&lt;/a&gt;&lt;a href=&quot;#pricing&quot;&gt;8 · Pricing&lt;/a&gt;&lt;a href=&quot;#confronto&quot;&gt;9 · Ex 1 vs Ex 2&lt;/a&gt;&lt;a href=&quot;#fonti&quot;&gt;Further reading&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+&lt;section class=&quot;part&quot; id=&quot;mappa&quot; style=&quot;border-bottom:none&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;kicker&quot;&gt;Concept map&lt;/div&gt;
+    &lt;h2&gt;How the topics fit together&lt;/h2&gt;
+    &lt;p class=&quot;muted&quot;&gt;Each box is clickable and takes you to the corresponding section. Solid arrows follow the thread of the exercise (the 6 requirements in the slides); dashed arrows are conceptual links.&lt;/p&gt;
+    &lt;figure class=&quot;map&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 900 430&quot; role=&quot;img&quot; aria-label=&quot;Concept map of the lesson&quot;&gt;
+        &lt;defs&gt;&lt;marker id=&quot;ar&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto-start-reverse&quot;&gt;&lt;path d=&quot;M0,0 L10,5 L0,10 z&quot; style=&quot;fill:var(--ink2)&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+        &lt;!-- edges --&gt;
+        &lt;path class=&quot;edge&quot; d=&quot;M165,215 C200,215 190,95 215,95&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+        &lt;path class=&quot;edge&quot; d=&quot;M165,222 C190,222 195,262 215,262&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+        &lt;path class=&quot;edge d&quot; d=&quot;M290,122 L290,233&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+        &lt;text class=&quot;el&quot; x=&quot;298&quot; y=&quot;182&quot;&gt;defines&lt;/text&gt;
+        &lt;path class=&quot;edge&quot; d=&quot;M365,262 L395,262&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+        &lt;path class=&quot;edge&quot; d=&quot;M545,262 L575,262&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+        &lt;path class=&quot;edge&quot; d=&quot;M725,262 L755,262&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+        &lt;path class=&quot;edge&quot; d=&quot;M830,290 C830,350 800,370 760,370&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+        &lt;path class=&quot;edge&quot; d=&quot;M605,370 L560,370&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+        &lt;path class=&quot;edge d&quot; d=&quot;M365,95 L575,95&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+        &lt;text class=&quot;el&quot; x=&quot;410&quot; y=&quot;86&quot;&gt;same method, different sector&lt;/text&gt;
+        &lt;path class=&quot;edge d&quot; d=&quot;M650,122 C650,170 470,170 470,233&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+        &lt;text class=&quot;el&quot; x=&quot;560&quot; y=&quot;160&quot;&gt;activity rate&lt;/text&gt;
+        &lt;path class=&quot;edge d&quot; d=&quot;M410,370 C300,370 250,340 250,292&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+        &lt;text class=&quot;el&quot; x=&quot;180&quot; y=&quot;350&quot;&gt;&quot;Other&quot; is not assigned&lt;/text&gt;
+        &lt;!-- nodes --&gt;
+        &lt;a href=&quot;#caso&quot; class=&quot;node n-acc&quot;&gt;&lt;rect x=&quot;15&quot; y=&quot;190&quot; width=&quot;150&quot; height=&quot;58&quot; rx=&quot;10&quot;/&gt;&lt;text class=&quot;tt&quot; x=&quot;90&quot; y=&quot;214&quot; text-anchor=&quot;middle&quot;&gt;The case&lt;/text&gt;&lt;text class=&quot;ts&quot; x=&quot;90&quot; y=&quot;233&quot; text-anchor=&quot;middle&quot;&gt;Gallatin, flat fee $28&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#abc&quot; class=&quot;node n-sage&quot;&gt;&lt;rect x=&quot;215&quot; y=&quot;66&quot; width=&quot;150&quot; height=&quot;58&quot; rx=&quot;10&quot;/&gt;&lt;text class=&quot;tt&quot; x=&quot;290&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot;&gt;ABC concepts&lt;/text&gt;&lt;text class=&quot;ts&quot; x=&quot;290&quot; y=&quot;109&quot; text-anchor=&quot;middle&quot;&gt;pools, measures, levels&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#stage1&quot; class=&quot;node n-ochre&quot;&gt;&lt;rect x=&quot;215&quot; y=&quot;233&quot; width=&quot;150&quot; height=&quot;58&quot; rx=&quot;10&quot;/&gt;&lt;text class=&quot;tt&quot; x=&quot;290&quot; y=&quot;257&quot; text-anchor=&quot;middle&quot;&gt;1 · First stage&lt;/text&gt;&lt;text class=&quot;ts&quot; x=&quot;290&quot; y=&quot;276&quot; text-anchor=&quot;middle&quot;&gt;resources → pools&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#rates&quot; class=&quot;node n-ochre&quot;&gt;&lt;rect x=&quot;395&quot; y=&quot;233&quot; width=&quot;150&quot; height=&quot;58&quot; rx=&quot;10&quot;/&gt;&lt;text class=&quot;tt&quot; x=&quot;470&quot; y=&quot;257&quot; text-anchor=&quot;middle&quot;&gt;2 · Activity rate&lt;/text&gt;&lt;text class=&quot;ts&quot; x=&quot;470&quot; y=&quot;276&quot; text-anchor=&quot;middle&quot;&gt;cost ÷ activity&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#job&quot; class=&quot;node n-ochre&quot;&gt;&lt;rect x=&quot;575&quot; y=&quot;233&quot; width=&quot;150&quot; height=&quot;58&quot; rx=&quot;10&quot;/&gt;&lt;text class=&quot;tt&quot; x=&quot;650&quot; y=&quot;257&quot; text-anchor=&quot;middle&quot;&gt;3 · Job cost&lt;/text&gt;&lt;text class=&quot;ts&quot; x=&quot;650&quot; y=&quot;276&quot; text-anchor=&quot;middle&quot;&gt;rate × usage&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#margin&quot; class=&quot;node n-ochre&quot;&gt;&lt;rect x=&quot;755&quot; y=&quot;233&quot; width=&quot;130&quot; height=&quot;58&quot; rx=&quot;10&quot;/&gt;&lt;text class=&quot;tt&quot; x=&quot;820&quot; y=&quot;257&quot; text-anchor=&quot;middle&quot;&gt;4 · Margin&lt;/text&gt;&lt;text class=&quot;ts&quot; x=&quot;820&quot; y=&quot;276&quot; text-anchor=&quot;middle&quot;&gt;$140 − $167.25&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#profit&quot; class=&quot;node n-slate&quot;&gt;&lt;rect x=&quot;605&quot; y=&quot;342&quot; width=&quot;155&quot; height=&quot;58&quot; rx=&quot;10&quot;/&gt;&lt;text class=&quot;tt&quot; x=&quot;682&quot; y=&quot;366&quot; text-anchor=&quot;middle&quot;&gt;5 · Conclusions&lt;/text&gt;&lt;text class=&quot;ts&quot; x=&quot;682&quot; y=&quot;385&quot; text-anchor=&quot;middle&quot;&gt;avoidable costs?&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#pricing&quot; class=&quot;node n-slate&quot;&gt;&lt;rect x=&quot;410&quot; y=&quot;342&quot; width=&quot;150&quot; height=&quot;58&quot; rx=&quot;10&quot;/&gt;&lt;text class=&quot;tt&quot; x=&quot;485&quot; y=&quot;366&quot; text-anchor=&quot;middle&quot;&gt;6 · Pricing&lt;/text&gt;&lt;text class=&quot;ts&quot; x=&quot;485&quot; y=&quot;385&quot; text-anchor=&quot;middle&quot;&gt;end of subsidies&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#confronto&quot; class=&quot;node n-brick&quot;&gt;&lt;rect x=&quot;575&quot; y=&quot;66&quot; width=&quot;160&quot; height=&quot;58&quot; rx=&quot;10&quot;/&gt;&lt;text class=&quot;tt&quot; x=&quot;655&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot;&gt;Ex 1 · Hickory&lt;/text&gt;&lt;text class=&quot;ts&quot; x=&quot;655&quot; y=&quot;109&quot; text-anchor=&quot;middle&quot;&gt;plantwide vs ABC&lt;/text&gt;&lt;/a&gt;
+      &lt;/svg&gt;
+      &lt;div class=&quot;legend&quot;&gt;&lt;span&gt;&lt;i style=&quot;background:var(--accent-bg);border-color:var(--accent)&quot;&gt;&lt;/i&gt;context&lt;/span&gt;&lt;span&gt;&lt;i style=&quot;background:var(--sage-bg);border-color:var(--sage)&quot;&gt;&lt;/i&gt;concepts&lt;/span&gt;&lt;span&gt;&lt;i style=&quot;background:var(--ochre-bg);border-color:var(--ochre)&quot;&gt;&lt;/i&gt;calculations&lt;/span&gt;&lt;span&gt;&lt;i style=&quot;background:var(--slate-bg);border-color:var(--slate)&quot;&gt;&lt;/i&gt;analysis and decisions&lt;/span&gt;&lt;span&gt;&lt;i style=&quot;background:var(--brick-bg);border-color:var(--brick)&quot;&gt;&lt;/i&gt;links&lt;/span&gt;&lt;/div&gt;
+    &lt;/figure&gt;
+    &lt;div class=&quot;box small&quot;&gt;&lt;b&gt;Source key.&lt;/b&gt; &lt;span class=&quot;src&quot;&gt;slide&lt;/span&gt; = content from the slides of this lesson · &lt;span class=&quot;src&quot;&gt;ex 1&lt;/span&gt; = from the file &lt;i&gt;7.SMA_ABC ex 1 solutions.pdf&lt;/i&gt; · &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt; = explanation or calculation added in this summary, not found in the slides · &lt;span class=&quot;src ext&quot;&gt;external source&lt;/span&gt; = from the web, with a link.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;part&quot; id=&quot;caso&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;span class=&quot;tag&quot; style=&quot;background:var(--accent-bg);color:var(--accent)&quot;&gt;Part 1 · Context&lt;/span&gt;
+    &lt;h2&gt;The Gallatin Carpet Cleaning case&lt;/h2&gt;
+    &lt;p&gt;&lt;b&gt;Gallatin Carpet Cleaning&lt;/b&gt; is a small family-owned business in Bozeman (Montana) that cleans carpets and rugs. It has always charged a &lt;span class=&quot;t&quot;&gt;flat fee&lt;/span&gt; (a single rate, the same for every customer): &lt;b&gt;$28 per hundred square feet&lt;/b&gt;, i.e. for every 100 square feet cleaned (about 9.3 m²). &lt;span class=&quot;src&quot;&gt;slide 2&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;The question: does the company &lt;b&gt;actually make money&lt;/b&gt; on every customer? In particular, on those located on &lt;b&gt;remote ranches&lt;/b&gt;, which require a great deal of travel time. The owner&#x27;s daughter proposes using &lt;span class=&quot;t&quot;&gt;activity-based costing&lt;/span&gt; (ABC, a costing method based on activities) and designs a simple system with &lt;b&gt;four activity cost pools&lt;/b&gt;.&lt;/p&gt;
+
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div&gt;
+        &lt;h4&gt;The four activities &lt;span class=&quot;src&quot;&gt;slide 2&lt;/span&gt;&lt;/h4&gt;
+        &lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;
+          &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Activity cost pool&lt;/th&gt;&lt;th&gt;Activity measure&lt;/th&gt;&lt;th&gt;Annual activity&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;&lt;td&gt;Cleaning carpets&lt;/td&gt;&lt;td&gt;Square feet cleaned (00s)&lt;/td&gt;&lt;td&gt;20,000 hundred sq ft&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Travel to jobs&lt;/td&gt;&lt;td&gt;Miles driven&lt;/td&gt;&lt;td&gt;60,000 miles&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Job support&lt;/td&gt;&lt;td&gt;Number of jobs&lt;/td&gt;&lt;td&gt;2,000 jobs&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Other&lt;/td&gt;&lt;td&gt;None&lt;/td&gt;&lt;td&gt;not applicable&lt;/td&gt;&lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;&lt;/div&gt;
+        &lt;p class=&quot;small muted&quot;&gt;&lt;i&gt;Other&lt;/i&gt; collects &lt;span class=&quot;t&quot;&gt;organization-sustaining costs&lt;/span&gt; (costs that keep the business as a whole running) and &lt;span class=&quot;t&quot;&gt;idle capacity costs&lt;/span&gt; (the cost of unused capacity). &lt;i&gt;Job support&lt;/i&gt; = taking calls from prospective customers, scheduling jobs, billing, resolving problems. &lt;span class=&quot;src&quot;&gt;slides 2–3&lt;/span&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;h4&gt;Costs for the year &lt;span class=&quot;src&quot;&gt;slide 3&lt;/span&gt;&lt;/h4&gt;
+        &lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;
+          &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Resource&lt;/th&gt;&lt;th&gt;Cost&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;&lt;td&gt;Wages&lt;/td&gt;&lt;td&gt;$150,000&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Cleaning supplies (detergents, materials)&lt;/td&gt;&lt;td&gt;40,000&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Cleaning equipment depreciation (machines)&lt;/td&gt;&lt;td&gt;20,000&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Vehicle expenses (vans)&lt;/td&gt;&lt;td&gt;80,000&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Office expenses&lt;/td&gt;&lt;td&gt;60,000&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;President&#x27;s compensation (owner&#x27;s pay)&lt;/td&gt;&lt;td&gt;80,000&lt;/td&gt;&lt;/tr&gt;
+          &lt;/tbody&gt;
+          &lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Total cost&lt;/td&gt;&lt;td&gt;$430,000&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;
+        &lt;/table&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;The six requirements of the exercise &lt;span class=&quot;src&quot;&gt;slide 4&lt;/span&gt;&lt;/h3&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;b&gt;1.&lt;/b&gt; First-stage allocation: distribute costs to the pools. &lt;a href=&quot;#stage1&quot;&gt;→&lt;/a&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;b&gt;2.&lt;/b&gt; Compute the activity rate for each pool. &lt;a href=&quot;#rates&quot;&gt;→&lt;/a&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;b&gt;3.&lt;/b&gt; ABC cost of the job at the &lt;b&gt;Flying N Ranch&lt;/b&gt;: 500 sq ft, 75 miles round trip. &lt;a href=&quot;#job&quot;&gt;→&lt;/a&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;b&gt;4.&lt;/b&gt; Customer margin: revenue of $140 (5 × $28) minus cost. &lt;a href=&quot;#margin&quot;&gt;→&lt;/a&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;b&gt;5.&lt;/b&gt; Is the job profitable? Explain. &lt;a href=&quot;#profit&quot;&gt;→&lt;/a&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;b&gt;6.&lt;/b&gt; Advice to the owner on future pricing. &lt;a href=&quot;#pricing&quot;&gt;→&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;note&quot;&gt;&lt;b&gt;Watch the units.&lt;/b&gt; The cleaning activity is measured in &lt;b&gt;hundreds&lt;/b&gt; of square feet: 500 sq ft = &lt;b&gt;5&lt;/b&gt; units of activity. This is the most common exam mistake: multiplying $8.05 by 500 instead of by 5. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;quiz&quot;&gt;
+      &lt;div class=&quot;kicker&quot;&gt;Self-check&lt;/div&gt;&lt;h3&gt;Is the case clear?&lt;/h3&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;Why does the owner suspect the company is losing money on ranches if the fee is the same for everyone?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;Because the price depends only on square footage, whereas costs also depend on &lt;b&gt;distance&lt;/b&gt; (miles driven, employee time) and on the &lt;b&gt;number of jobs&lt;/b&gt; (phone calls, billing). A small, distant job consumes many resources but generates little revenue.&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;How many square feet did the company clean during the year? What is total revenue under the flat fee?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;20,000 hundreds = &lt;b&gt;2,000,000 sq ft&lt;/b&gt;. Revenue = 20,000 × $28 = &lt;b&gt;$560,000&lt;/b&gt;. With costs of $430,000, overall profit is $130,000: the company as a whole is profitable; the issue is &lt;i&gt;where&lt;/i&gt; it makes money and where it loses it. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;part sage&quot; id=&quot;abc&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;span class=&quot;tag&quot;&gt;Part 2 · Concepts&lt;/span&gt;
+    &lt;h2&gt;The ABC concepts needed here&lt;/h2&gt;
+    &lt;p&gt;The slides for this exercise take the theory for granted. Here is the essential vocabulary, using the course&#x27;s English terminology.&lt;/p&gt;
+
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Activity-based costing (ABC)&lt;/b&gt; — a method that assigns indirect costs to cost objects (products, services, customers, individual jobs) according to the &lt;b&gt;activities&lt;/b&gt; they consume, rather than through a single base such as direct labor-hours.&lt;/div&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Activity cost pool&lt;/b&gt; — a &quot;bucket&quot; in which the costs of an activity are accumulated (e.g. Travel to jobs).&lt;/div&gt;
+      &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Activity measure&lt;/b&gt; (or cost driver) — the quantity that measures how much of an activity a cost object consumes (e.g. miles driven).&lt;/div&gt;
+      &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Activity rate&lt;/b&gt; — the cost of the pool divided by total activity: the &quot;internal price&quot; of one unit of activity (e.g. $1.30 per mile).&lt;/div&gt;
+      &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Cost object&lt;/b&gt; — the item whose cost we want to measure: here the individual &lt;i&gt;job&lt;/i&gt;, i.e. the work performed for a customer.&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;The two-stage model&lt;/h3&gt;
+    &lt;p&gt;ABC proceeds in two stages. Step through them:&lt;/p&gt;
+    &lt;div class=&quot;stepper&quot; data-onstep=&quot;twoStage&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 760 250&quot; aria-label=&quot;Two-stage ABC model&quot; id=&quot;twostage&quot;&gt;
+        &lt;g id=&quot;ts-res&quot;&gt;
+          &lt;rect class=&quot;s-slate&quot; x=&quot;10&quot; y=&quot;20&quot; width=&quot;170&quot; height=&quot;210&quot; rx=&quot;10&quot;/&gt;
+          &lt;text class=&quot;big&quot; x=&quot;95&quot; y=&quot;45&quot; text-anchor=&quot;middle&quot;&gt;Resources&lt;/text&gt;
+          &lt;text class=&quot;lbl&quot; x=&quot;95&quot; y=&quot;75&quot; text-anchor=&quot;middle&quot;&gt;Wages&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;95&quot; y=&quot;100&quot; text-anchor=&quot;middle&quot;&gt;Supplies&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;95&quot; y=&quot;125&quot; text-anchor=&quot;middle&quot;&gt;Depreciation&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;95&quot; y=&quot;150&quot; text-anchor=&quot;middle&quot;&gt;Vehicle&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;95&quot; y=&quot;175&quot; text-anchor=&quot;middle&quot;&gt;Office&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;95&quot; y=&quot;200&quot; text-anchor=&quot;middle&quot;&gt;President&lt;/text&gt;
+        &lt;/g&gt;
+        &lt;g id=&quot;ts-a1&quot; opacity=&quot;.15&quot;&gt;&lt;path class=&quot;ln&quot; d=&quot;M185,125 L280,125&quot; marker-end=&quot;url(#ar)&quot;/&gt;&lt;text class=&quot;lbl&quot; x=&quot;232&quot; y=&quot;115&quot; text-anchor=&quot;middle&quot;&gt;% usage&lt;/text&gt;&lt;/g&gt;
+        &lt;g id=&quot;ts-pool&quot; opacity=&quot;.15&quot;&gt;
+          &lt;rect class=&quot;s-ochre&quot; x=&quot;285&quot; y=&quot;20&quot; width=&quot;190&quot; height=&quot;210&quot; rx=&quot;10&quot;/&gt;
+          &lt;text class=&quot;big&quot; x=&quot;380&quot; y=&quot;45&quot; text-anchor=&quot;middle&quot;&gt;Activity cost pools&lt;/text&gt;
+          &lt;text class=&quot;lbl&quot; x=&quot;380&quot; y=&quot;80&quot; text-anchor=&quot;middle&quot;&gt;Cleaning $161,000&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;380&quot; y=&quot;110&quot; text-anchor=&quot;middle&quot;&gt;Travel $78,000&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;380&quot; y=&quot;140&quot; text-anchor=&quot;middle&quot;&gt;Job support $59,000&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;380&quot; y=&quot;175&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--brick)&quot;&gt;Other $132,000&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;380&quot; y=&quot;192&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--brick)&quot;&gt;(not assigned)&lt;/text&gt;
+        &lt;/g&gt;
+        &lt;g id=&quot;ts-a2&quot; opacity=&quot;.15&quot;&gt;&lt;path class=&quot;ln&quot; d=&quot;M480,110 L575,110&quot; marker-end=&quot;url(#ar)&quot;/&gt;&lt;text class=&quot;lbl&quot; x=&quot;527&quot; y=&quot;100&quot; text-anchor=&quot;middle&quot;&gt;rate × usage&lt;/text&gt;&lt;/g&gt;
+        &lt;g id=&quot;ts-obj&quot; opacity=&quot;.15&quot;&gt;
+          &lt;rect class=&quot;s-sage&quot; x=&quot;580&quot; y=&quot;20&quot; width=&quot;170&quot; height=&quot;210&quot; rx=&quot;10&quot;/&gt;
+          &lt;text class=&quot;big&quot; x=&quot;665&quot; y=&quot;45&quot; text-anchor=&quot;middle&quot;&gt;Cost object&lt;/text&gt;
+          &lt;text class=&quot;lbl&quot; x=&quot;665&quot; y=&quot;80&quot; text-anchor=&quot;middle&quot;&gt;Flying N Ranch job&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;665&quot; y=&quot;110&quot; text-anchor=&quot;middle&quot;&gt;$167.25&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;665&quot; y=&quot;150&quot; text-anchor=&quot;middle&quot;&gt;compared with&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;665&quot; y=&quot;170&quot; text-anchor=&quot;middle&quot;&gt;revenue of $140&lt;/text&gt;
+        &lt;/g&gt;
+      &lt;/svg&gt;
+      &lt;div class=&quot;step&quot;&gt;&lt;b&gt;Starting point.&lt;/b&gt; Costs are recorded in the accounts by &lt;i&gt;nature&lt;/i&gt; (wages, vans, office…). In this form they tell us nothing about the cost of a single job.&lt;/div&gt;
+      &lt;div class=&quot;step&quot;&gt;&lt;b&gt;First-stage allocation.&lt;/b&gt; Through interviews and estimates, the company determines what percentage of each resource is consumed by each activity (e.g. 20% of wages goes to travel). Costs flow from resources to pools. &lt;span class=&quot;src&quot;&gt;slides 3, 5&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;step&quot;&gt;&lt;b&gt;Activity rates.&lt;/b&gt; The cost of each pool is divided by its total annual activity. The &lt;i&gt;Other&lt;/i&gt; pool has no activity measure and therefore &lt;b&gt;remains outside&lt;/b&gt;: it is not assigned to jobs. &lt;span class=&quot;src&quot;&gt;slides 2, 6&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;step&quot;&gt;&lt;b&gt;Second-stage allocation.&lt;/b&gt; Each job is charged cost = rate × activity consumed. The result is compared with the job&#x27;s revenue: this is the &lt;span class=&quot;t&quot;&gt;customer margin&lt;/span&gt;. &lt;span class=&quot;src&quot;&gt;slides 7–8&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;bar&quot;&gt;&lt;button class=&quot;btn prev&quot;&gt;← Back&lt;/button&gt;&lt;div class=&quot;dots&quot;&gt;&lt;/div&gt;&lt;span class=&quot;cnt small muted&quot;&gt;&lt;/span&gt;&lt;button class=&quot;btn next&quot;&gt;Next →&lt;/button&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;The activity hierarchy&lt;/h3&gt;
+    &lt;p&gt;Activities are classified according to &lt;b&gt;what causes them to vary&lt;/b&gt;. In Exercise 1 the course uses the terms &lt;i&gt;unit-level&lt;/i&gt;, &lt;i&gt;batch-level&lt;/i&gt; and &lt;i&gt;product-level&lt;/i&gt; &lt;span class=&quot;src&quot;&gt;ex 1&lt;/span&gt;; here &lt;i&gt;organization-sustaining&lt;/i&gt; also appears &lt;span class=&quot;src&quot;&gt;slide 2&lt;/span&gt;. Click on the levels:&lt;/p&gt;
+    &lt;div class=&quot;tabs&quot;&gt;
+      &lt;div role=&quot;tablist&quot;&gt;
+        &lt;button role=&quot;tab&quot; aria-selected=&quot;true&quot;&gt;Unit-level&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Batch / job-level&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Product-level&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Customer-level&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Organization-sustaining&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div role=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;b&gt;Unit-level&lt;/b&gt;: performed for each unit produced or served; the cost rises with volume. Example in Hickory: &lt;i&gt;machining&lt;/i&gt; (machine-hours) &lt;span class=&quot;src&quot;&gt;ex 1&lt;/span&gt;. &lt;b&gt;In Gallatin&lt;/b&gt;: &lt;i&gt;Cleaning carpets&lt;/i&gt;, which grows with every hundred square feet.&lt;/p&gt;&lt;/div&gt;
+      &lt;div role=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;b&gt;Batch-level&lt;/b&gt;: performed once per batch, regardless of how many units it contains. In Hickory: &lt;i&gt;machine setups&lt;/i&gt;, &quot;not affected by the number of units processed once the setup is completed&quot; &lt;span class=&quot;src&quot;&gt;ex 1&lt;/span&gt;. &lt;b&gt;In Gallatin&lt;/b&gt; the &quot;batch&quot; is the &lt;b&gt;job&lt;/b&gt;: &lt;i&gt;Job support&lt;/i&gt; (phone call, scheduling, invoice) costs the same for 300 sq ft as for 3,000 sq ft. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+      &lt;div role=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;b&gt;Product-level&lt;/b&gt;: needed to keep a product or service in the range, irrespective of batches and units. In Hickory: &lt;i&gt;product design&lt;/i&gt;, $42,000 per product &lt;span class=&quot;src&quot;&gt;ex 1&lt;/span&gt;. Gallatin has none: it offers a single service.&lt;/p&gt;&lt;/div&gt;
+      &lt;div role=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;b&gt;Customer-level&lt;/b&gt;: related to individual customers rather than to volume (visits, support, travel to the customer). &lt;i&gt;Travel to jobs&lt;/i&gt; depends on &lt;b&gt;where&lt;/b&gt; the customer is located: it is measured in miles, but it is the customer that determines them. This is precisely the activity the flat fee ignores. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt; (a classification typical of textbooks, e.g. Garrison et al.)&lt;/p&gt;&lt;/div&gt;
+      &lt;div role=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;b&gt;Organization-sustaining&lt;/b&gt;: costs that serve the business as a whole and do not depend on customers, products or volumes (part of the owner&#x27;s compensation, part of the office). Together with &lt;b&gt;idle capacity&lt;/b&gt; they end up in the &lt;i&gt;Other&lt;/i&gt; pool, which is &lt;b&gt;not assigned&lt;/b&gt; to jobs because any allocation basis would be arbitrary. &lt;span class=&quot;src&quot;&gt;slide 2&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;details&gt;&lt;summary&gt;Why are idle capacity costs not assigned?&lt;/summary&gt;&lt;div&gt;&lt;p&gt;Unused capacity (e.g. a van that sits idle 40% of the time) is not consumed by any customer. Charging it to jobs would make a job look expensive simply because the company has more resources than it uses. Garrison-style ABC keeps it separate so that management sees it as a cost of inefficiency, not of customers. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;ABC in a service company: what changes?&lt;/summary&gt;&lt;div&gt;&lt;p&gt;In Exercise 1 the cost object was a &lt;b&gt;product&lt;/b&gt; (Y and Z) and the costs were factory overhead. Here the cost object is a &lt;b&gt;job/customer&lt;/b&gt;, and &lt;b&gt;all&lt;/b&gt; company costs are allocated, including wages and the owner&#x27;s compensation. The logic is the same: resources are consumed through activities. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/details&gt;
+
+    &lt;div class=&quot;quiz&quot;&gt;
+      &lt;div class=&quot;kicker&quot;&gt;Self-check&lt;/div&gt;&lt;h3&gt;Concepts&lt;/h3&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;What is the difference between an activity cost pool and an activity measure?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;The &lt;b&gt;pool&lt;/b&gt; accumulates the dollars of cost of an activity; the &lt;b&gt;measure&lt;/b&gt; is the unit used to count how much of that activity each cost object consumes. Rate = pool ÷ total measure.&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;Is job support unit-level or batch-level? Why?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;Batch (job)-level: it is performed once per job and does not depend on how many square feet are cleaned, just as Hickory&#x27;s setup does not depend on the number of units in the batch.&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;Why does the Other pool have no activity measure?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;It contains organization-sustaining and idle capacity costs, which are not caused by any job. No measure explains their consumption, so they are not allocated to customers.&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;part ochre&quot; id=&quot;stage1&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;span class=&quot;tag&quot;&gt;Part 3 · Requirement 1&lt;/span&gt;
+    &lt;h2&gt;First-stage allocation: from resources to pools&lt;/h2&gt;
+    &lt;p&gt;&lt;span class=&quot;t&quot;&gt;First-stage allocation&lt;/span&gt; distributes each cost item among the pools according to the resource consumption percentages. Each cell is calculated as follows: &lt;span class=&quot;src&quot;&gt;slide 5&lt;/span&gt;&lt;/p&gt;
+    &lt;div class=&quot;formula&quot;&gt;Cost in pool = % of consumption × total cost of the resource&lt;br&gt;&lt;span class=&quot;small muted&quot;&gt;e.g. Wages → Cleaning: 70% × $150,000 = $105,000&lt;/span&gt;&lt;/div&gt;
+
+    &lt;div style=&quot;display:flex;gap:8px;flex-wrap:wrap;align-items:center&quot;&gt;
+      &lt;button class=&quot;btn&quot; id=&quot;s1pct&quot; aria-pressed=&quot;false&quot;&gt;Show percentages&lt;/button&gt;
+      &lt;button class=&quot;btn&quot; id=&quot;s1usd&quot; aria-pressed=&quot;true&quot;&gt;Show dollars&lt;/button&gt;
+      &lt;span class=&quot;small muted&quot;&gt;Click on a cell to see the calculation.&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tbl&quot;&gt;&lt;table id=&quot;s1tab&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+    &lt;div class=&quot;box&quot; id=&quot;s1out&quot; aria-live=&quot;polite&quot;&gt;Click on a cell in the table.&lt;/div&gt;
+
+    &lt;figure&gt;
+      &lt;svg viewBox=&quot;0 0 760 120&quot; aria-label=&quot;Breakdown of the $430,000 among the pools&quot;&gt;
+        &lt;rect class=&quot;s-ochre&quot; x=&quot;20&quot; y=&quot;20&quot; width=&quot;269.6&quot; height=&quot;44&quot;/&gt;
+        &lt;rect class=&quot;s-acc&quot; x=&quot;289.6&quot; y=&quot;20&quot; width=&quot;130.6&quot; height=&quot;44&quot;/&gt;
+        &lt;rect class=&quot;s-sage&quot; x=&quot;420.2&quot; y=&quot;20&quot; width=&quot;98.8&quot; height=&quot;44&quot;/&gt;
+        &lt;rect class=&quot;s-brick&quot; x=&quot;519&quot; y=&quot;20&quot; width=&quot;221&quot; height=&quot;44&quot; style=&quot;stroke-dasharray:4 3&quot;/&gt;
+        &lt;text class=&quot;big&quot; x=&quot;154.8&quot; y=&quot;47&quot; text-anchor=&quot;middle&quot;&gt;Cleaning 161k&lt;/text&gt;
+        &lt;text class=&quot;big&quot; x=&quot;354.9&quot; y=&quot;47&quot; text-anchor=&quot;middle&quot;&gt;Travel 78k&lt;/text&gt;
+        &lt;text class=&quot;big&quot; x=&quot;469.6&quot; y=&quot;47&quot; text-anchor=&quot;middle&quot;&gt;Support 59k&lt;/text&gt;
+        &lt;text class=&quot;big&quot; x=&quot;629.5&quot; y=&quot;47&quot; text-anchor=&quot;middle&quot;&gt;Other 132k&lt;/text&gt;
+        &lt;text class=&quot;lbl&quot; x=&quot;154.8&quot; y=&quot;85&quot; text-anchor=&quot;middle&quot;&gt;37.4%&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;354.9&quot; y=&quot;85&quot; text-anchor=&quot;middle&quot;&gt;18.1%&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;469.6&quot; y=&quot;85&quot; text-anchor=&quot;middle&quot;&gt;13.7%&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;629.5&quot; y=&quot;85&quot; text-anchor=&quot;middle&quot;&gt;30.7%&lt;/text&gt;
+        &lt;path class=&quot;ax&quot; d=&quot;M20,100 L519,100&quot;/&gt;&lt;text class=&quot;lbl&quot; x=&quot;270&quot; y=&quot;114&quot; text-anchor=&quot;middle&quot;&gt;$298,000 assignable to jobs&lt;/text&gt;
+      &lt;/svg&gt;
+      &lt;figcaption&gt;Almost one third of the costs (Other, $132,000) will never be attributed to individual jobs. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt; (percentages calculated from the data in slide 5)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;div class=&quot;note&quot;&gt;&lt;b&gt;Reconciliation check.&lt;/b&gt; The sum of the pool totals must equal total cost: 161,000 + 78,000 + 59,000 + 132,000 = &lt;b&gt;$430,000&lt;/b&gt;. Each row must add up to 100%. Always do this in the exam. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;quiz&quot;&gt;
+      &lt;div class=&quot;kicker&quot;&gt;Self-check&lt;/div&gt;&lt;h3&gt;First stage&lt;/h3&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;How much of the vehicle expenses ends up in Travel to jobs? And in Other?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;60% × $80,000 = &lt;b&gt;$48,000&lt;/b&gt; in Travel; 40% × $80,000 = &lt;b&gt;$32,000&lt;/b&gt; in Other (e.g. idle vans, idle capacity).&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;Which resources make up the Job support pool?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;Office expenses 45% ($27,000) + President&#x27;s compensation 40% ($32,000) = &lt;b&gt;$59,000&lt;/b&gt;.&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;If 10% of wages were moved from Other to Travel, what would the Travel pool be?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;Travel would receive 30% of wages: $45,000 + $48,000 = &lt;b&gt;$93,000&lt;/b&gt; (rate of $1.55 per mile). First-stage estimates directly affect the results. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;part ochre&quot; id=&quot;rates&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;span class=&quot;tag&quot;&gt;Part 4 · Requirement 2&lt;/span&gt;
+    &lt;h2&gt;Activity rates: the price of one unit of activity&lt;/h2&gt;
+    &lt;div class=&quot;formula&quot;&gt;Activity rate = &lt;span class=&quot;frac&quot;&gt;&lt;span&gt;(a) Total cost of the pool&lt;/span&gt;&lt;span&gt;(b) Total activity&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;
+      &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Activity cost pool&lt;/th&gt;&lt;th&gt;(a) Total cost&lt;/th&gt;&lt;th&gt;(b) Total activity&lt;/th&gt;&lt;th&gt;(a) ÷ (b) Activity rate&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;&lt;td&gt;Cleaning carpets&lt;/td&gt;&lt;td&gt;$161,000&lt;/td&gt;&lt;td&gt;20,000 hundred sq ft&lt;/td&gt;&lt;td&gt;&lt;b&gt;$8.05&lt;/b&gt; per 100 sq ft&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Travel to jobs&lt;/td&gt;&lt;td&gt;$78,000&lt;/td&gt;&lt;td&gt;60,000 miles&lt;/td&gt;&lt;td&gt;&lt;b&gt;$1.30&lt;/b&gt; per mile&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Job support&lt;/td&gt;&lt;td&gt;$59,000&lt;/td&gt;&lt;td&gt;2,000 jobs&lt;/td&gt;&lt;td&gt;&lt;b&gt;$29.50&lt;/b&gt; per job&lt;/td&gt;&lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;&lt;/div&gt;
+    &lt;p class=&quot;small muted&quot;&gt;Source: slide 6. The Other pool has no rate because it has no activity measure.&lt;/p&gt;
+
+    &lt;h3&gt;Inside each rate&lt;/h3&gt;
+    &lt;p&gt;A useful way to understand the rates is to break them down by resource: each cost in the pool divided by the same activity. This will be needed in &lt;a href=&quot;#profit&quot;&gt;Part 7&lt;/a&gt; to identify which costs are avoidable. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/p&gt;
+    &lt;figure&gt;
+      &lt;svg viewBox=&quot;0 0 760 210&quot; aria-label=&quot;Breakdown of the activity rates by resource&quot;&gt;
+        &lt;text class=&quot;lbl&quot; x=&quot;10&quot; y=&quot;40&quot;&gt;Cleaning&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;10&quot; y=&quot;54&quot;&gt;$8.05/100 sq ft&lt;/text&gt;
+        &lt;rect class=&quot;s-slate&quot; x=&quot;130&quot; y=&quot;25&quot; width=&quot;391&quot; height=&quot;34&quot;/&gt;&lt;rect class=&quot;s-ochre&quot; x=&quot;521&quot; y=&quot;25&quot; width=&quot;149&quot; height=&quot;34&quot;/&gt;&lt;rect class=&quot;s-brick&quot; x=&quot;670&quot; y=&quot;25&quot; width=&quot;60&quot; height=&quot;34&quot;/&gt;
+        &lt;text class=&quot;lbl&quot; x=&quot;325&quot; y=&quot;47&quot; text-anchor=&quot;middle&quot;&gt;wages 5.25&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;595&quot; y=&quot;47&quot; text-anchor=&quot;middle&quot;&gt;supplies 2.00&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;700&quot; y=&quot;47&quot; text-anchor=&quot;middle&quot;&gt;dep. 0.80&lt;/text&gt;
+        &lt;text class=&quot;lbl&quot; x=&quot;10&quot; y=&quot;105&quot;&gt;Travel&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;10&quot; y=&quot;119&quot;&gt;$1.30/mile&lt;/text&gt;
+        &lt;rect class=&quot;s-slate&quot; x=&quot;130&quot; y=&quot;90&quot; width=&quot;231&quot; height=&quot;34&quot;/&gt;&lt;rect class=&quot;s-sage&quot; x=&quot;361&quot; y=&quot;90&quot; width=&quot;369&quot; height=&quot;34&quot;/&gt;
+        &lt;text class=&quot;lbl&quot; x=&quot;245&quot; y=&quot;112&quot; text-anchor=&quot;middle&quot;&gt;wages 0.50&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;545&quot; y=&quot;112&quot; text-anchor=&quot;middle&quot;&gt;vehicle 0.80&lt;/text&gt;
+        &lt;text class=&quot;lbl&quot; x=&quot;10&quot; y=&quot;170&quot;&gt;Job support&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;10&quot; y=&quot;184&quot;&gt;$29.50/job&lt;/text&gt;
+        &lt;rect class=&quot;s-acc&quot; x=&quot;130&quot; y=&quot;155&quot; width=&quot;275&quot; height=&quot;34&quot;/&gt;&lt;rect class=&quot;s-slate&quot; x=&quot;405&quot; y=&quot;155&quot; width=&quot;325&quot; height=&quot;34&quot; style=&quot;stroke-dasharray:4 3&quot;/&gt;
+        &lt;text class=&quot;lbl&quot; x=&quot;267&quot; y=&quot;177&quot; text-anchor=&quot;middle&quot;&gt;office 13.50&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;567&quot; y=&quot;177&quot; text-anchor=&quot;middle&quot;&gt;president 16.00&lt;/text&gt;
+      &lt;/svg&gt;
+      &lt;figcaption&gt;Each bar represents 100% of its rate. E.g. wages in Cleaning = $105,000 ÷ 20,000 = $5.25. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;details&gt;&lt;summary&gt;Why is the denominator the activity &quot;for the year&quot; rather than maximum capacity?&lt;/summary&gt;&lt;div&gt;&lt;p&gt;The slides use the actual/expected activity for the year. If practical capacity were used instead, the rate would be lower and the difference (the cost of unused capacity) would emerge as idle capacity, which here is already partly separated in the Other pool. This is the same idea that gave rise to &lt;i&gt;time-driven ABC&lt;/i&gt; (see &lt;a href=&quot;#fonti&quot;&gt;Further reading&lt;/a&gt;). &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/details&gt;
+
+    &lt;div class=&quot;quiz&quot;&gt;
+      &lt;div class=&quot;kicker&quot;&gt;Self-check&lt;/div&gt;&lt;h3&gt;Activity rates&lt;/h3&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;What is the average ABC cost of a job, given that an average job covers 1,000 sq ft and 30 miles?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;Averages: 20,000/2,000 = 10 hundred sq ft per job; 60,000/2,000 = 30 miles. Cost = 10 × 8.05 + 30 × 1.30 + 29.50 = 80.50 + 39.00 + 29.50 = &lt;b&gt;$149.00&lt;/b&gt;, against average revenue of $280. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;Why is the $29.50 per job the same for a large job and a small one?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;Because job support is a job-level (batch) activity: the phone call, scheduling and invoice require the same effort regardless of the area cleaned.&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;part ochre&quot; id=&quot;job&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;span class=&quot;tag&quot;&gt;Part 5 · Requirement 3&lt;/span&gt;
+    &lt;h2&gt;The cost of the Flying N Ranch job&lt;/h2&gt;
+    &lt;p&gt;The &lt;span class=&quot;t&quot;&gt;second stage&lt;/span&gt;: each activity rate is multiplied by the activity consumed by the job. The Flying N Ranch: &lt;b&gt;500 sq ft&lt;/b&gt; (= 5 hundreds), &lt;b&gt;75 miles&lt;/b&gt; round trip, &lt;b&gt;1 job&lt;/b&gt;. &lt;span class=&quot;src&quot;&gt;slides 4, 7&lt;/span&gt;&lt;/p&gt;
+    &lt;div class=&quot;formula&quot;&gt;ABC cost of the job = Σ (activity rate × activity consumed)&lt;/div&gt;
+    &lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;
+      &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Activity cost pool&lt;/th&gt;&lt;th&gt;(a) Activity rate&lt;/th&gt;&lt;th&gt;(b) Activity&lt;/th&gt;&lt;th&gt;(a) × (b) ABC cost&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;&lt;td&gt;Cleaning carpets&lt;/td&gt;&lt;td&gt;$8.05 per 100 sq ft&lt;/td&gt;&lt;td&gt;5 hundred sq ft&lt;/td&gt;&lt;td&gt;$40.25&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Travel to jobs&lt;/td&gt;&lt;td&gt;$1.30 per mile&lt;/td&gt;&lt;td&gt;75 miles&lt;/td&gt;&lt;td&gt;97.50&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Job support&lt;/td&gt;&lt;td&gt;$29.50 per job&lt;/td&gt;&lt;td&gt;1 job&lt;/td&gt;&lt;td&gt;29.50&lt;/td&gt;&lt;/tr&gt;
+      &lt;/tbody&gt;
+      &lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Total&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;$167.25&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;
+    &lt;/table&gt;&lt;/div&gt;
+    &lt;p&gt;The striking figure: &lt;b&gt;travel accounts for 58%&lt;/b&gt; of the job&#x27;s cost ($97.50 out of $167.25), more than twice the cleaning itself. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/p&gt;
+
+    &lt;h3&gt;Simulator: change the job&lt;/h3&gt;
+    &lt;p&gt;Move the sliders to see how ABC cost and margin change. The chart shows the margin as a function of miles for the selected area: where the line falls below zero, travel &quot;eats up&quot; all the profit. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt; (based on the rates in slide 6)&lt;/p&gt;
+    &lt;div class=&quot;box&quot;&gt;
+      &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;jSq&quot;&gt;Area (sq ft)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;jSq&quot; min=&quot;100&quot; max=&quot;3000&quot; step=&quot;50&quot; value=&quot;500&quot;&gt;&lt;output id=&quot;jSqO&quot;&gt;500&lt;/output&gt;&lt;/div&gt;
+      &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;jMi&quot;&gt;Round-trip miles&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;jMi&quot; min=&quot;0&quot; max=&quot;160&quot; step=&quot;1&quot; value=&quot;75&quot;&gt;&lt;output id=&quot;jMiO&quot;&gt;75&lt;/output&gt;&lt;/div&gt;
+      &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;jP&quot;&gt;Price per 100 sq ft&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;jP&quot; min=&quot;15&quot; max=&quot;40&quot; step=&quot;0.25&quot; value=&quot;28&quot;&gt;&lt;output id=&quot;jPO&quot;&gt;$28.00&lt;/output&gt;&lt;/div&gt;
+      &lt;div style=&quot;display:flex;gap:8px;flex-wrap:wrap;margin:6px 0&quot;&gt;&lt;button class=&quot;btn&quot; data-preset=&quot;500,75,28&quot;&gt;Flying N Ranch&lt;/button&gt;&lt;button class=&quot;btn&quot; data-preset=&quot;1000,30,28&quot;&gt;Average job&lt;/button&gt;&lt;button class=&quot;btn&quot; data-preset=&quot;2000,8,28&quot;&gt;Large city customer&lt;/button&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpis&quot;&gt;
+        &lt;div class=&quot;kpi&quot;&gt;&lt;small&gt;Revenue&lt;/small&gt;&lt;b id=&quot;kRev&quot;&gt;$140.00&lt;/b&gt;&lt;/div&gt;
+        &lt;div class=&quot;kpi&quot;&gt;&lt;small&gt;ABC cost&lt;/small&gt;&lt;b id=&quot;kCost&quot;&gt;$167.25&lt;/b&gt;&lt;/div&gt;
+        &lt;div class=&quot;kpi&quot;&gt;&lt;small&gt;Customer margin&lt;/small&gt;&lt;b id=&quot;kMar&quot;&gt;−$27.25&lt;/b&gt;&lt;/div&gt;
+        &lt;div class=&quot;kpi&quot;&gt;&lt;small&gt;Break-even at&lt;/small&gt;&lt;b id=&quot;kBe&quot;&gt;54 mi&lt;/b&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;svg viewBox=&quot;0 0 640 300&quot; id=&quot;jChart&quot; aria-label=&quot;Margin as a function of miles&quot;&gt;&lt;/svg&gt;
+      &lt;p class=&quot;small muted&quot; id=&quot;jBreak&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;quiz&quot;&gt;
+      &lt;div class=&quot;kicker&quot;&gt;Self-check&lt;/div&gt;&lt;h3&gt;Job cost&lt;/h3&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;A customer 20 miles away (round trip) requests cleaning of 800 sq ft. What is the ABC cost?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;8 × 8.05 + 20 × 1.30 + 29.50 = 64.40 + 26.00 + 29.50 = &lt;b&gt;$119.90&lt;/b&gt;. Revenue 8 × 28 = $224, margin +$104.10.&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;What is the maximum number of miles a 500 sq ft job can involve before it makes a loss?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;Margin = 5 × (28 − 8.05) − 29.50 − 1.30 × m = 70.25 − 1.30 m. Break-even at m = 70.25 ÷ 1.30 ≈ &lt;b&gt;54 miles&lt;/b&gt; round trip. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;part ochre&quot; id=&quot;margin&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;span class=&quot;tag&quot;&gt;Part 6 · Requirement 4&lt;/span&gt;
+    &lt;h2&gt;Customer margin of the Flying N Ranch&lt;/h2&gt;
+    &lt;p&gt;The &lt;span class=&quot;t&quot;&gt;customer margin&lt;/span&gt; is the revenue from a customer minus the ABC costs caused by that customer. It does not include the costs of the Other pool. &lt;span class=&quot;src&quot;&gt;slide 8&lt;/span&gt;&lt;/p&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;&lt;td&gt;&lt;b&gt;Sales&lt;/b&gt; (5 × $28)&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;$140.00&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Costs:&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;Cleaning carpets&lt;/td&gt;&lt;td&gt;$40.25&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;Travel to jobs&lt;/td&gt;&lt;td&gt;97.50&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;Job support&lt;/td&gt;&lt;td&gt;29.50&lt;/td&gt;&lt;td&gt;167.25&lt;/td&gt;&lt;/tr&gt;
+        &lt;/tbody&gt;
+        &lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Margin&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=&quot;neg&quot;&gt;$(27.25)&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;
+      &lt;/table&gt;&lt;/div&gt;
+      &lt;figure style=&quot;margin:0&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 300 230&quot; aria-label=&quot;Waterfall from revenue to margin&quot;&gt;
+          &lt;path class=&quot;ax&quot; d=&quot;M20,190 L290,190&quot;/&gt;
+          &lt;rect class=&quot;s-sage&quot; x=&quot;30&quot; y=&quot;50&quot; width=&quot;44&quot; height=&quot;140&quot;/&gt;&lt;text class=&quot;lbl&quot; x=&quot;52&quot; y=&quot;44&quot; text-anchor=&quot;middle&quot;&gt;140&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;52&quot; y=&quot;206&quot; text-anchor=&quot;middle&quot;&gt;Sales&lt;/text&gt;
+          &lt;rect class=&quot;s-ochre&quot; x=&quot;88&quot; y=&quot;50&quot; width=&quot;44&quot; height=&quot;40.25&quot;/&gt;&lt;text class=&quot;lbl&quot; x=&quot;110&quot; y=&quot;44&quot; text-anchor=&quot;middle&quot;&gt;−40.25&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;110&quot; y=&quot;206&quot; text-anchor=&quot;middle&quot;&gt;Clean&lt;/text&gt;
+          &lt;rect class=&quot;s-acc&quot; x=&quot;146&quot; y=&quot;90.25&quot; width=&quot;44&quot; height=&quot;97.5&quot;/&gt;&lt;text class=&quot;lbl&quot; x=&quot;168&quot; y=&quot;84&quot; text-anchor=&quot;middle&quot;&gt;−97.50&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;168&quot; y=&quot;206&quot; text-anchor=&quot;middle&quot;&gt;Travel&lt;/text&gt;
+          &lt;rect class=&quot;s-slate&quot; x=&quot;204&quot; y=&quot;187.75&quot; width=&quot;44&quot; height=&quot;29.5&quot;/&gt;&lt;text class=&quot;lbl&quot; x=&quot;226&quot; y=&quot;181&quot; text-anchor=&quot;middle&quot;&gt;−29.50&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;226&quot; y=&quot;226&quot; text-anchor=&quot;middle&quot;&gt;Support&lt;/text&gt;
+          &lt;text x=&quot;268&quot; y=&quot;214&quot; class=&quot;big&quot; style=&quot;fill:var(--neg)&quot; text-anchor=&quot;middle&quot;&gt;−27&lt;/text&gt;
+        &lt;/svg&gt;
+        &lt;figcaption&gt;Waterfall: travel alone absorbs 70% of revenue. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/figcaption&gt;
+      &lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;warn&quot;&gt;&lt;b&gt;The margin is negative even &quot;before&quot; the Other costs.&lt;/b&gt; The $132,000 of organization-sustaining and idle capacity costs must be covered by customer margins. A customer with a negative margin does not help cover them: it increases them. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;quiz&quot;&gt;
+      &lt;div class=&quot;kicker&quot;&gt;Self-check&lt;/div&gt;&lt;h3&gt;Customer margin&lt;/h3&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;What price per 100 sq ft would have brought the Flying N job to break-even?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;Revenue of $167.25 is needed on 5 hundreds: 167.25 ÷ 5 = &lt;b&gt;$33.45&lt;/b&gt; per 100 sq ft (compared with $28). &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;Does the sum of the customer margins of all 2,000 jobs equal the company&#x27;s profit?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;No. Sum of margins = $560,000 − $298,000 = $262,000. Subtracting the $132,000 of Other gives the profit of &lt;b&gt;$130,000&lt;/b&gt;. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;part slate&quot; id=&quot;profit&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;span class=&quot;tag&quot;&gt;Part 7 · Requirement 5&lt;/span&gt;
+    &lt;h2&gt;Is the Flying N Ranch job really unprofitable?&lt;/h2&gt;
+    &lt;p&gt;The answer in the slides has two sides: &lt;span class=&quot;src&quot;&gt;slide 9&lt;/span&gt;&lt;/p&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Yes, it appears so…&lt;/h4&gt;&lt;p&gt;Gallatin &lt;b&gt;appears&lt;/b&gt; to lose money on the job: a negative margin of $27.25.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;…but with caution&lt;/h4&gt;&lt;p&gt;Some costs may &lt;b&gt;not be avoidable&lt;/b&gt;: they would have been incurred even if the job had been turned down. The right starting point is a more in-depth analysis.&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Avoidable cost&lt;/b&gt; — a cost that disappears if a decision is not taken (here: if the job is not accepted). An &lt;b&gt;unavoidable&lt;/b&gt; cost remains regardless, for example equipment depreciation or the salary of an employee who would be paid anyway. ABC measures &lt;b&gt;resource consumption&lt;/b&gt;, not necessarily the &lt;b&gt;savings&lt;/b&gt; obtainable by eliminating the activity.&lt;/div&gt;
+    &lt;p&gt;Nevertheless, the slides note, there is a point beyond which travel costs &lt;b&gt;eat up all the profit&lt;/b&gt;: with a flat fee that does not depend on distance, there are jobs that are worth &lt;b&gt;turning down&lt;/b&gt;.&lt;/p&gt;
+
+    &lt;h3&gt;Lab: which costs actually disappear?&lt;/h3&gt;
+    &lt;p&gt;Tick the resources you consider avoidable for this single job. The job&#x27;s cost is broken down by resource using the rates from &lt;a href=&quot;#rates&quot;&gt;Part 4&lt;/a&gt;. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/p&gt;
+    &lt;div class=&quot;box&quot;&gt;
+      &lt;div class=&quot;tbl&quot;&gt;&lt;table id=&quot;avTab&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Resource consumed by the job&lt;/th&gt;&lt;th&gt;Calculation&lt;/th&gt;&lt;th&gt;Cost&lt;/th&gt;&lt;th&gt;Avoidable?&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+        &lt;tbody&gt;&lt;/tbody&gt;
+      &lt;/table&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpis&quot;&gt;
+        &lt;div class=&quot;kpi&quot;&gt;&lt;small&gt;Avoidable cost&lt;/small&gt;&lt;b id=&quot;avC&quot;&gt;$70.00&lt;/b&gt;&lt;/div&gt;
+        &lt;div class=&quot;kpi&quot;&gt;&lt;small&gt;Revenue&lt;/small&gt;&lt;b&gt;$140.00&lt;/b&gt;&lt;/div&gt;
+        &lt;div class=&quot;kpi&quot;&gt;&lt;small&gt;Incremental margin&lt;/small&gt;&lt;b id=&quot;avM&quot;&gt;$70.00&lt;/b&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;p class=&quot;small&quot; id=&quot;avTxt&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;details&gt;&lt;summary&gt;How to reason item by item&lt;/summary&gt;&lt;div&gt;
+      &lt;p&gt;&lt;b&gt;Cleaning supplies&lt;/b&gt;: detergents used on site, almost certainly avoidable. &lt;b&gt;Vehicle expenses&lt;/b&gt;: fuel and wear yes, insurance and road tax no, so only partly. &lt;b&gt;Wages&lt;/b&gt;: depends on the contract; if employees are paid by the hour and the freed-up time is not otherwise used, they are avoidable, otherwise not. &lt;b&gt;Depreciation&lt;/b&gt;: a cost already incurred (sunk cost), not avoidable in the short run. &lt;b&gt;Office&lt;/b&gt; and &lt;b&gt;President&lt;/b&gt;: one job more or less does not change them, unless there are so many jobs that more office staff are needed.&lt;/p&gt;
+      &lt;p&gt;The result easily flips: with only supplies and vehicle avoidable, the job contributes &lt;b&gt;+$70&lt;/b&gt;; adding wages brings it down to &lt;b&gt;+$6.25&lt;/b&gt;. This is why the slides recommend caution. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/p&gt;
+    &lt;/div&gt;&lt;/details&gt;
+
+    &lt;div class=&quot;quiz&quot;&gt;
+      &lt;div class=&quot;kicker&quot;&gt;Self-check&lt;/div&gt;&lt;h3&gt;Profitability&lt;/h3&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;Why does a negative ABC margin not automatically mean the job should be turned down?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;Because part of the assigned costs (depreciation, owner&#x27;s compensation, office, possibly wages) would remain even without that job. For the decision, what matters is the comparison between revenue and &lt;b&gt;avoidable costs&lt;/b&gt;.&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;So what is ABC for, if the analysis has to be redone anyway?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;It shows &lt;b&gt;where&lt;/b&gt; resources are consumed and which customers are structurally underpriced. In the long run almost all costs become variable (vans, staff and offices are sized to demand), so the ABC signal matters for strategy and pricing. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;part slate&quot; id=&quot;pricing&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;span class=&quot;tag&quot;&gt;Part 8 · Requirement 6&lt;/span&gt;
+    &lt;h2&gt;Pricing advice: the end of cross-subsidization&lt;/h2&gt;
+    &lt;p&gt;The slides&#x27; advice to the owner: &lt;span class=&quot;src&quot;&gt;slide 10&lt;/span&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;charge a distance-based &lt;b&gt;travel fee&lt;/b&gt; to distant customers and a &lt;b&gt;fixed fee per job&lt;/b&gt;;&lt;/li&gt;
+      &lt;li&gt;at present, nearby customers are effectively &lt;b&gt;subsidizing&lt;/b&gt; distant ones (&lt;span class=&quot;t&quot;&gt;cross-subsidization&lt;/span&gt;: some customers pay more than the cost they cause, others less);&lt;/li&gt;
+      &lt;li&gt;with fees for travel and job support, the rate per 100 sq ft can &lt;b&gt;fall considerably&lt;/b&gt;;&lt;/li&gt;
+      &lt;li&gt;some small jobs in remote areas might be lost, but the lower price may attract &lt;b&gt;many more customers near Bozeman&lt;/b&gt;;&lt;/li&gt;
+      &lt;li&gt;if the rate is low enough, the additional demand need not even be taken from competitors: some customers would have their carpets cleaned &lt;b&gt;more often&lt;/b&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;figure&gt;
+      &lt;svg viewBox=&quot;0 0 760 170&quot; aria-label=&quot;From a single flat fee to a three-part tariff&quot;&gt;
+        &lt;rect class=&quot;s-brick&quot; x=&quot;10&quot; y=&quot;40&quot; width=&quot;210&quot; height=&quot;90&quot; rx=&quot;10&quot;/&gt;
+        &lt;text class=&quot;big&quot; x=&quot;115&quot; y=&quot;72&quot; text-anchor=&quot;middle&quot;&gt;Today: flat fee&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;115&quot; y=&quot;95&quot; text-anchor=&quot;middle&quot;&gt;$28 × hundreds of sq ft&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;115&quot; y=&quot;114&quot; text-anchor=&quot;middle&quot;&gt;distance ignored&lt;/text&gt;
+        &lt;path class=&quot;ln&quot; d=&quot;M228,85 L290,85&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+        &lt;rect class=&quot;s-ochre&quot; x=&quot;300&quot; y=&quot;15&quot; width=&quot;140&quot; height=&quot;140&quot; rx=&quot;10&quot;/&gt;&lt;text class=&quot;big&quot; x=&quot;370&quot; y=&quot;50&quot; text-anchor=&quot;middle&quot;&gt;per sq ft&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;370&quot; y=&quot;72&quot; text-anchor=&quot;middle&quot;&gt;lower&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;370&quot; y=&quot;92&quot; text-anchor=&quot;middle&quot;&gt;unit-level&lt;/text&gt;
+        &lt;text class=&quot;big&quot; x=&quot;455&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot;&gt;+&lt;/text&gt;
+        &lt;rect class=&quot;s-acc&quot; x=&quot;470&quot; y=&quot;15&quot; width=&quot;130&quot; height=&quot;140&quot; rx=&quot;10&quot;/&gt;&lt;text class=&quot;big&quot; x=&quot;535&quot; y=&quot;50&quot; text-anchor=&quot;middle&quot;&gt;per mile&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;535&quot; y=&quot;72&quot; text-anchor=&quot;middle&quot;&gt;travel fee&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;535&quot; y=&quot;92&quot; text-anchor=&quot;middle&quot;&gt;customer-level&lt;/text&gt;
+        &lt;text class=&quot;big&quot; x=&quot;615&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot;&gt;+&lt;/text&gt;
+        &lt;rect class=&quot;s-sage&quot; x=&quot;630&quot; y=&quot;15&quot; width=&quot;120&quot; height=&quot;140&quot; rx=&quot;10&quot;/&gt;&lt;text class=&quot;big&quot; x=&quot;690&quot; y=&quot;50&quot; text-anchor=&quot;middle&quot;&gt;per job&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;690&quot; y=&quot;72&quot; text-anchor=&quot;middle&quot;&gt;flat fee&lt;/text&gt;&lt;text class=&quot;lbl&quot; x=&quot;690&quot; y=&quot;92&quot; text-anchor=&quot;middle&quot;&gt;job-level&lt;/text&gt;
+      &lt;/svg&gt;
+      &lt;figcaption&gt;Each component of the price follows one level of the cost hierarchy. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;h3&gt;Price list simulator&lt;/h3&gt;
+    &lt;p&gt;A numerical example built for this summary: if the travel fee and job fee exactly cover the ABC rates ($1.30/mile, $29.50/job), what rate per 100 sq ft keeps total revenue unchanged at $560,000? (560,000 − 78,000 − 59,000) ÷ 20,000 = &lt;b&gt;$21.15&lt;/b&gt;, a quarter less than $28. &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt; (assumption: unchanged volumes)&lt;/p&gt;
+    &lt;div class=&quot;box&quot;&gt;
+      &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;pS&quot;&gt;Rate per 100 sq ft&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;pS&quot; min=&quot;10&quot; max=&quot;28&quot; step=&quot;0.05&quot; value=&quot;21.15&quot;&gt;&lt;output id=&quot;pSO&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+      &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;pM&quot;&gt;Travel fee per mile&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;pM&quot; min=&quot;0&quot; max=&quot;2.5&quot; step=&quot;0.05&quot; value=&quot;1.30&quot;&gt;&lt;output id=&quot;pMO&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+      &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;pJ&quot;&gt;Fee per job&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;pJ&quot; min=&quot;0&quot; max=&quot;60&quot; step=&quot;0.5&quot; value=&quot;29.5&quot;&gt;&lt;output id=&quot;pJO&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+      &lt;div class=&quot;tbl&quot;&gt;&lt;table id=&quot;pTab&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+      &lt;p class=&quot;small&quot; id=&quot;pTot&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;quiz&quot;&gt;
+      &lt;div class=&quot;kicker&quot;&gt;Self-check&lt;/div&gt;&lt;h3&gt;Pricing&lt;/h3&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;Who subsidizes whom under the current flat fee?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;&lt;b&gt;Nearby customers with large areas&lt;/b&gt; pay much more than the costs they cause; &lt;b&gt;distant, small&lt;/b&gt; ones pay less. The margin on the former covers the losses on the latter.&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;What is the risk of the new policy, and why do the slides consider it acceptable?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;Small jobs in remote areas may be lost, but these were loss-making anyway. In exchange, the lower rate attracts more nearby customers and increases purchase frequency.&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;part brick&quot; id=&quot;confronto&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;span class=&quot;tag&quot;&gt;Part 9 · Link&lt;/span&gt;
+    &lt;h2&gt;Exercise 1 (Hickory) and Exercise 2 (Gallatin) compared&lt;/h2&gt;
+    &lt;p&gt;The previous exercise in the course, &lt;i&gt;7.SMA_ABC ex 1 solutions.pdf&lt;/i&gt;, applies ABC to a manufacturing company. The two cases illustrate the &lt;b&gt;same distortion&lt;/b&gt;: a single volume-based allocation base spreads costs that do not depend on volume incorrectly. &lt;span class=&quot;src&quot;&gt;ex 1&lt;/span&gt;&lt;/p&gt;
+    &lt;div class=&quot;tabs&quot;&gt;
+      &lt;div role=&quot;tablist&quot;&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;true&quot;&gt;Hickory in brief&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Comparison table&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;The common lesson&lt;/button&gt;&lt;/div&gt;
+      &lt;div role=&quot;tabpanel&quot;&gt;
+        &lt;p&gt;Hickory produces 14,000 units of Y and 6,000 of Z, with $684,000 of overhead. With a &lt;span class=&quot;t&quot;&gt;plantwide overhead rate&lt;/span&gt; of $684,000 ÷ 12,000 DLH = &lt;b&gt;$57 per direct labor-hour&lt;/b&gt;, Y receives $456,000 (66.7%) and Z $228,000 (33.3%). With ABC (four pools: machining $20/MH, setups $500/setup, product design $42,000/product, general factory $25/DLH), Y receives &lt;b&gt;$407,000&lt;/b&gt; (59%) and Z &lt;b&gt;$277,000&lt;/b&gt; (41%). &lt;span class=&quot;src&quot;&gt;ex 1&lt;/span&gt;&lt;/p&gt;
+        &lt;p&gt;The reason: Z, a low-volume product, consumes 75% of setups (batch-level) and 50% of design (product-level). The traditional system assigned too much to Y and too little to Z.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div role=&quot;tabpanel&quot; hidden&gt;
+        &lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;
+          &lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Ex 1 · Hickory&lt;/th&gt;&lt;th&gt;Ex 2 · Gallatin&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;&lt;td&gt;Sector&lt;/td&gt;&lt;td&gt;Manufacturing&lt;/td&gt;&lt;td&gt;Services&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Cost object&lt;/td&gt;&lt;td&gt;Products Y and Z&lt;/td&gt;&lt;td&gt;Individual job / customer&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Costs allocated&lt;/td&gt;&lt;td&gt;Manufacturing overhead only ($684,000), all allocated&lt;/td&gt;&lt;td&gt;All costs ($430,000); Other ($132,000) not allocated&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;First stage&lt;/td&gt;&lt;td&gt;Given (pool costs provided)&lt;/td&gt;&lt;td&gt;To be calculated with the % of consumption&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;&quot;Traditional&quot; system&lt;/td&gt;&lt;td&gt;Plantwide rate on DLH&lt;/td&gt;&lt;td&gt;Flat fee on sq ft (a price, not an allocation)&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Who is undercosted&lt;/td&gt;&lt;td&gt;Low-volume product (Z)&lt;/td&gt;&lt;td&gt;Small, distant jobs&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Activities that make the difference&lt;/td&gt;&lt;td&gt;Setups (batch), design (product)&lt;/td&gt;&lt;td&gt;Travel (customer), job support (job)&lt;/td&gt;&lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;&lt;/div&gt;
+        &lt;p class=&quot;small muted&quot;&gt;Rows compiled from ex 1 and the slides; the synthesis is an &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div role=&quot;tabpanel&quot; hidden&gt;
+        &lt;p&gt;In both exercises the &lt;b&gt;unit-level&lt;/b&gt; pools give results similar to the traditional method (in Hickory, machining 70/30 and general factory 66.7/33.3, as with the plantwide rate &lt;span class=&quot;src&quot;&gt;ex 1&lt;/span&gt;). The differences arise from costs &lt;b&gt;not related to volume&lt;/b&gt;: setups and design for Hickory, travel and job handling for Gallatin.&lt;/p&gt;
+        &lt;p&gt;Rule of thumb: &lt;b&gt;the smaller, rarer or more &quot;inconvenient&quot; a cost object is, the more a volume-based system tends to understate its cost.&lt;/b&gt; &lt;span class=&quot;src own&quot;&gt;addition&lt;/span&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;quiz&quot;&gt;
+      &lt;div class=&quot;kicker&quot;&gt;Self-check&lt;/div&gt;&lt;h3&gt;Links&lt;/h3&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;Which Gallatin pool is the equivalent of Hickory&#x27;s &quot;machine setups&quot;?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;&lt;b&gt;Job support&lt;/b&gt;: a fixed cost for each &quot;batch&quot; (job), independent of the quantity processed.&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;q&quot;&gt;&lt;p&gt;Why does general factory in Hickory give the same percentages as the plantwide rate?&lt;/p&gt;&lt;button class=&quot;btn&quot;&gt;Show answer&lt;/button&gt;&lt;div class=&quot;ans&quot;&gt;Because it uses the same unit-level base (direct labor-hours) as the plantwide rate. &lt;span class=&quot;src&quot;&gt;ex 1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;part&quot; id=&quot;fonti&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;span class=&quot;tag&quot; style=&quot;background:var(--slate-bg);color:var(--slate)&quot;&gt;Further reading&lt;/span&gt;
+    &lt;h2&gt;Further reading&lt;/h2&gt;
+    &lt;p&gt;The slides for this exercise &lt;b&gt;do not cite any authors, texts, standards or websites&lt;/b&gt;. Below are the key references on the method and on the origin of the exercise, found on the web. Everything in this section is an &lt;span class=&quot;src ext&quot;&gt;external source&lt;/span&gt;.&lt;/p&gt;
+
+    &lt;div class=&quot;ref&quot;&gt;&lt;span class=&quot;src ext&quot;&gt;external source&lt;/span&gt;
+      &lt;h4&gt;Garrison, Noreen, Brewer — &lt;i&gt;Managerial Accounting&lt;/i&gt; (McGraw-Hill)&lt;/h4&gt;
+      &lt;p&gt;A widely used managerial accounting textbook. The chapter &quot;Activity-Based Costing: A Tool to Aid Decision Making&quot; (its number varies by edition) uses the same framework as the slides: an Other pool for organization-sustaining and idle capacity costs, a first stage based on consumption percentages, and customer margin. The Gallatin Carpet Cleaning case appears among the textbook&#x27;s problems (&quot;Evaluating the Profitability of Services&quot;). It matters because it is the likely source of the exercise and explains the theory the slides take for granted.&lt;/p&gt;
+      &lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;https://highered.mheducation.com/sites/0073379611/information_center_view0/table_of_contents.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Table of contents of the 13th edition on the McGraw-Hill website&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ref&quot;&gt;&lt;span class=&quot;src ext&quot;&gt;external source&lt;/span&gt;
+      &lt;h4&gt;Robin Cooper, Robert S. Kaplan — &quot;Measure Costs Right: Make the Right Decisions&quot;, &lt;i&gt;Harvard Business Review&lt;/i&gt;, September 1988&lt;/h4&gt;
+      &lt;p&gt;One of the articles that popularized ABC: it shows how traditional volume-based systems distort the cost of products and customers and lead to wrong pricing and mix decisions. It is the conceptual basis of both exercises in the course.&lt;/p&gt;
+      &lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;https://www.iveypublishing.ca/s/product/measure-costs-right-make-the-right-decisions/01t5c00000CwWzrAAF&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Article page (Ivey Publishing)&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ref&quot;&gt;&lt;span class=&quot;src ext&quot;&gt;external source&lt;/span&gt;
+      &lt;h4&gt;Robert S. Kaplan, V.G. Narayanan — &quot;Measuring and Managing Customer Profitability&quot;, &lt;i&gt;Cost Management&lt;/i&gt;, 2001&lt;/h4&gt;
+      &lt;p&gt;Applies ABC to customer profitability, just as requirement 4 does: it shows that a few customers generate most of the profit while some destroy it, and discusses pricing, cost-to-serve and corrective actions. Useful for further study of customer margin and cross-subsidization.&lt;/p&gt;
+      &lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;https://www.hbs.edu/faculty/Pages/item.aspx?num=11052&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Harvard Business School page&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ref&quot;&gt;&lt;span class=&quot;src ext&quot;&gt;external source&lt;/span&gt;
+      &lt;h4&gt;Robert S. Kaplan, Steven R. Anderson — &quot;Time-Driven Activity-Based Costing&quot;, &lt;i&gt;Harvard Business Review&lt;/i&gt;, November 2004&lt;/h4&gt;
+      &lt;p&gt;Proposes a simplified version of ABC: instead of interviews about consumption percentages (as in Gallatin&#x27;s first stage), it estimates the cost per minute of capacity and the time required by each activity. It makes unused capacity visible, the theme of the Other pool. Followed by the 2007 book of the same name.&lt;/p&gt;
+      &lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;https://hbswk.hbs.edu/item/rethinking-activity-based-costing&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&quot;Rethinking Activity-Based Costing&quot;, HBS Working Knowledge&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;p&gt;Summary written by Claude from the slides: always check against the material.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+
+&lt;script&gt;
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var usd=function(v,d){d=d===undefined?2:d;var s=Math.abs(v).toLocaleString(&#x27;en-US&#x27;,{minimumFractionDigits:d,maximumFractionDigits:d});return (v&lt;0?&#x27;−$&#x27;:&#x27;$&#x27;)+s};
+  window.__u={$:$,$$:$$,usd:usd};
+
+  /* quiz */
+  $$(&#x27;.q&#x27;).forEach(function(q){var b=$(&#x27;button&#x27;,q);if(!b)return;b.addEventListener(&#x27;click&#x27;,function(){q.classList.toggle(&#x27;open&#x27;);b.textContent=q.classList.contains(&#x27;open&#x27;)?&#x27;Hide answer&#x27;:&#x27;Show answer&#x27;;});});
+
+  /* tabs */
+  $$(&#x27;.tabs&#x27;).forEach(function(t){var tabs=$$(&#x27;[role=tab]&#x27;,t),pans=$$(&#x27;[role=tabpanel]&#x27;,t);
+    tabs.forEach(function(b,i){b.addEventListener(&#x27;click&#x27;,function(){tabs.forEach(function(x,j){x.setAttribute(&#x27;aria-selected&#x27;,i===j);pans[j].hidden=i!==j;});});});});
+
+  /* stepper */
+  $$(&#x27;.stepper&#x27;).forEach(function(s){var st=$$(&#x27;.step&#x27;,s),i=0,dots=$(&#x27;.dots&#x27;,s),cnt=$(&#x27;.cnt&#x27;,s);
+    st.forEach(function(){dots.appendChild(document.createElement(&#x27;i&#x27;));});
+    function go(n){i=Math.max(0,Math.min(st.length-1,n));st.forEach(function(x,j){x.classList.toggle(&#x27;on&#x27;,j===i);});$$(&#x27;i&#x27;,dots).forEach(function(x,j){x.classList.toggle(&#x27;on&#x27;,j===i);});if(cnt)cnt.textContent=(i+1)+&#x27; / &#x27;+st.length;var f=s.getAttribute(&#x27;data-onstep&#x27;);if(f&amp;&amp;window[f])window[f](i);}
+    $(&#x27;.prev&#x27;,s).addEventListener(&#x27;click&#x27;,function(){go(i-1);});$(&#x27;.next&#x27;,s).addEventListener(&#x27;click&#x27;,function(){go(i+1);});go(0);});
+
+  /* nav highlight */
+  var links=$$(&#x27;nav.toc a&#x27;),secs=links.map(function(a){return $(a.getAttribute(&#x27;href&#x27;));});
+  if(&#x27;IntersectionObserver&#x27; in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var k=secs.indexOf(e.target);links.forEach(function(a,j){a.classList.toggle(&#x27;on&#x27;,j===k);});}});},{rootMargin:&#x27;-40% 0px -55% 0px&#x27;});secs.forEach(function(s){if(s)io.observe(s);});}
+})();
+&lt;/script&gt;
+&lt;script&gt;
+(function(){
+  var U=window.__u,$=U.$,$$=U.$$,usd=U.usd;
+  var it=function(v){return v.toLocaleString(&#x27;en-US&#x27;);};
+  var eur=function(v,d){return usd(v,d);};
+  var NS=&#x27;http://www.w3.org/2000/svg&#x27;;
+  function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;}
+
+  /* two-stage stepper */
+  window.twoStage=function(i){
+    var show={&#x27;ts-a1&#x27;:i&gt;=1,&#x27;ts-pool&#x27;:i&gt;=1,&#x27;ts-a2&#x27;:i&gt;=3,&#x27;ts-obj&#x27;:i&gt;=3};
+    for(var id in show){var g=document.getElementById(id);if(g)g.setAttribute(&#x27;opacity&#x27;,show[id]?1:.15);}
+  };
+
+  /* first stage table */
+  var pools=[&#x27;Cleaning carpets&#x27;,&#x27;Travel to jobs&#x27;,&#x27;Job support&#x27;,&#x27;Other&#x27;];
+  var res=[[&#x27;Wages&#x27;,150000,[70,20,0,10]],[&#x27;Cleaning supplies&#x27;,40000,[100,0,0,0]],[&#x27;Cleaning equipment depreciation&#x27;,20000,[80,0,0,20]],[&#x27;Vehicle expenses&#x27;,80000,[0,60,0,40]],[&#x27;Office expenses&#x27;,60000,[0,0,45,55]],[&quot;President&#x27;s compensation&quot;,80000,[0,0,40,60]]];
+  var mode=&#x27;usd&#x27;,tab=$(&#x27;#s1tab&#x27;),out=$(&#x27;#s1out&#x27;);
+  function drawS1(){
+    var h=&#x27;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Resource&lt;/th&gt;&#x27;+pools.map(function(p){return &#x27;&lt;th&gt;&#x27;+p+&#x27;&lt;/th&gt;&#x27;;}).join(&#x27;&#x27;)+&#x27;&lt;th&gt;Total&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&#x27;;
+    var tot=[0,0,0,0];
+    res.forEach(function(r,ri){h+=&#x27;&lt;tr data-r=&quot;&#x27;+ri+&#x27;&quot;&gt;&lt;td&gt;&#x27;+r[0]+&#x27;&lt;/td&gt;&#x27;;
+      r[2].forEach(function(p,ci){var v=r[1]*p/100;tot[ci]+=v;h+=&#x27;&lt;td class=&quot;click&quot; data-r=&quot;&#x27;+ri+&#x27;&quot; data-c=&quot;&#x27;+ci+&#x27;&quot;&gt;&#x27;+(mode===&#x27;pct&#x27;?p+&#x27;%&#x27;:&#x27;$&#x27;+it(v))+&#x27;&lt;/td&gt;&#x27;;});
+      h+=&#x27;&lt;td&gt;&#x27;+(mode===&#x27;pct&#x27;?&#x27;100%&#x27;:&#x27;$&#x27;+it(r[1]))+&#x27;&lt;/td&gt;&lt;/tr&gt;&#x27;;});
+    h+=&#x27;&lt;/tbody&gt;&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Total cost&lt;/td&gt;&#x27;+tot.map(function(t){return &#x27;&lt;td&gt;&#x27;+(mode===&#x27;pct&#x27;?&#x27;&#x27;:&#x27;$&#x27;+it(t))+&#x27;&lt;/td&gt;&#x27;;}).join(&#x27;&#x27;)+&#x27;&lt;td&gt;&#x27;+(mode===&#x27;pct&#x27;?&#x27;&#x27;:&#x27;$430,000&#x27;)+&#x27;&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;&#x27;;
+    tab.innerHTML=h;
+  }
+  tab.addEventListener(&#x27;click&#x27;,function(e){var td=e.target.closest(&#x27;td.click&#x27;);if(!td)return;
+    $$(&#x27;td.hl,tr.rowhl&#x27;,tab).forEach(function(x){x.classList.remove(&#x27;hl&#x27;);x.classList.remove(&#x27;rowhl&#x27;);});
+    td.classList.add(&#x27;hl&#x27;);var r=res[+td.dataset.r],c=+td.dataset.c,p=r[2][c];
+    out.innerHTML=&#x27;&lt;b&gt;&#x27;+r[0]+&#x27; → &#x27;+pools[c]+&#x27;&lt;/b&gt;: &#x27;+p+&#x27;% × $&#x27;+it(r[1])+&#x27; = &lt;b&gt;$&#x27;+it(r[1]*p/100)+&#x27;&lt;/b&gt;&#x27;+(c===3&amp;&amp;p&gt;0?&#x27; &lt;span class=&quot;muted&quot;&gt;(goes to Other: it will not be assigned to jobs)&lt;/span&gt;&#x27;:&#x27;&#x27;);});
+  function setMode(m){mode=m;$(&#x27;#s1pct&#x27;).setAttribute(&#x27;aria-pressed&#x27;,m===&#x27;pct&#x27;);$(&#x27;#s1usd&#x27;).setAttribute(&#x27;aria-pressed&#x27;,m===&#x27;usd&#x27;);drawS1();}
+  $(&#x27;#s1pct&#x27;).addEventListener(&#x27;click&#x27;,function(){setMode(&#x27;pct&#x27;);});$(&#x27;#s1usd&#x27;).addEventListener(&#x27;click&#x27;,function(){setMode(&#x27;usd&#x27;);});
+  drawS1();
+
+  /* job simulator */
+  var R={c:8.05,t:1.30,j:29.50};
+  var sq=$(&#x27;#jSq&#x27;),mi=$(&#x27;#jMi&#x27;),pr=$(&#x27;#jP&#x27;),ch=$(&#x27;#jChart&#x27;);
+  function job(){
+    var S=+sq.value,M=+mi.value,P=+pr.value,h=S/100;
+    var rev=P*h,cost=R.c*h+R.t*M+R.j,mar=rev-cost,be=((P-R.c)*h-R.j)/R.t;
+    $(&#x27;#jSqO&#x27;).textContent=it(S);$(&#x27;#jMiO&#x27;).textContent=M;$(&#x27;#jPO&#x27;).textContent=eur(P);
+    $(&#x27;#kRev&#x27;).textContent=eur(rev);$(&#x27;#kCost&#x27;).textContent=eur(cost);
+    var km=$(&#x27;#kMar&#x27;);km.textContent=eur(mar);km.className=mar&lt;0?&#x27;neg&#x27;:&#x27;pos&#x27;;
+    $(&#x27;#kBe&#x27;).textContent=be&lt;=0?&#x27;never&#x27;:Math.floor(be)+&#x27; mi&#x27;;
+    $(&#x27;#jBreak&#x27;).innerHTML=&#x27;Cost: &#x27;+it(h)+&#x27; × $8.05 + &#x27;+M+&#x27; × $1.30 + $29.50 = &lt;b&gt;&#x27;+eur(cost)+&#x27;&lt;/b&gt;. &#x27;+(be&lt;=0?&#x27;With this area and this price the job makes a loss even at zero distance: revenue does not even cover cleaning and job support.&#x27;:&#x27;The job remains profitable up to &lt;b&gt;&#x27;+be.toFixed(1)+&#x27; miles&lt;/b&gt; round trip; beyond that, travel absorbs the entire margin.&#x27;);
+    /* chart */
+    while(ch.firstChild)ch.removeChild(ch.firstChild);
+    var W=640,H=300,L=56,Rr=16,T=16,B=40,mx=160;
+    var m0=(P-R.c)*h-R.j,m1=m0-R.t*mx,ymax=Math.max(m0,50),ymin=Math.min(m1,-50);
+    var span=ymax-ymin;ymax+=span*.08;ymin-=span*.08;
+    var X=function(m){return L+(W-L-Rr)*m/mx;},Y=function(v){return T+(H-T-B)*(ymax-v)/(ymax-ymin);};
+    var step=span&gt;600?200:span&gt;250?100:50;
+    for(var g=Math.ceil(ymin/step)*step;g&lt;=ymax;g+=step){el(&#x27;line&#x27;,{x1:L,x2:W-Rr,y1:Y(g),y2:Y(g),&#x27;class&#x27;:&#x27;grid&#x27;},ch);var t=el(&#x27;text&#x27;,{x:L-6,y:Y(g)+4,&#x27;text-anchor&#x27;:&#x27;end&#x27;,&#x27;class&#x27;:&#x27;lbl&#x27;},ch);t.textContent=(g&lt;0?&#x27;−$&#x27;:&#x27;$&#x27;)+Math.abs(g);}
+    for(var m=0;m&lt;=mx;m+=20){var t2=el(&#x27;text&#x27;,{x:X(m),y:H-B+18,&#x27;text-anchor&#x27;:&#x27;middle&#x27;,&#x27;class&#x27;:&#x27;lbl&#x27;},ch);t2.textContent=m;}
+    var tx=el(&#x27;text&#x27;,{x:(L+W-Rr)/2,y:H-6,&#x27;text-anchor&#x27;:&#x27;middle&#x27;,&#x27;class&#x27;:&#x27;lbl&#x27;},ch);tx.textContent=&#x27;round-trip miles&#x27;;
+    el(&#x27;rect&#x27;,{x:L,y:Y(0),width:W-L-Rr,height:Math.max(0,Y(ymin)-Y(0)),style:&#x27;fill:var(--brick-bg);opacity:.6&#x27;},ch);
+    el(&#x27;line&#x27;,{x1:L,x2:W-Rr,y1:Y(0),y2:Y(0),&#x27;class&#x27;:&#x27;ax&#x27;,style:&#x27;stroke-width:1.5&#x27;},ch);
+    el(&#x27;path&#x27;,{d:&#x27;M&#x27;+X(0)+&#x27;,&#x27;+Y(m0)+&#x27; L&#x27;+X(mx)+&#x27;,&#x27;+Y(m1),style:&#x27;stroke:var(--accent);stroke-width:2.5;fill:none&#x27;},ch);
+    if(be&gt;0&amp;&amp;be&lt;=mx){el(&#x27;line&#x27;,{x1:X(be),x2:X(be),y1:T,y2:H-B,style:&#x27;stroke:var(--ink2);stroke-dasharray:4 3&#x27;},ch);var tb=el(&#x27;text&#x27;,{x:X(be)+5,y:T+12,&#x27;class&#x27;:&#x27;lbl&#x27;},ch);tb.textContent=&#x27;break-even&#x27;;}
+    el(&#x27;circle&#x27;,{cx:X(M),cy:Y(mar),r:6,style:&#x27;fill:&#x27;+(mar&lt;0?&#x27;var(--neg)&#x27;:&#x27;var(--pos)&#x27;)+&#x27;;stroke:var(--paper);stroke-width:2&#x27;},ch);
+    var tl=el(&#x27;text&#x27;,{x:Math.min(X(M)+9,W-90),y:Y(mar)-9,&#x27;class&#x27;:&#x27;lbl&#x27;,style:&#x27;font-weight:600&#x27;},ch);tl.textContent=eur(mar);
+  }
+  [sq,mi,pr].forEach(function(i){i.addEventListener(&#x27;input&#x27;,job);});
+  $$(&#x27;[data-preset]&#x27;).forEach(function(b){b.addEventListener(&#x27;click&#x27;,function(){var v=b.dataset.preset.split(&#x27;,&#x27;);sq.value=v[0];mi.value=v[1];pr.value=v[2];job();});});
+  job();
+
+  /* avoidable costs */
+  var av=[[&#x27;Wages (cleaning)&#x27;,&#x27;5 × $5.25&#x27;,26.25,false],[&#x27;Wages (travel)&#x27;,&#x27;75 × $0.50&#x27;,37.50,false],[&#x27;Cleaning supplies&#x27;,&#x27;5 × $2.00&#x27;,10,true],[&#x27;Equipment depreciation&#x27;,&#x27;5 × $0.80&#x27;,4,false],[&#x27;Vehicle expenses&#x27;,&#x27;75 × $0.80&#x27;,60,true],[&#x27;Office expenses&#x27;,&#x27;1 × $13.50&#x27;,13.5,false],[&quot;President&#x27;s compensation&quot;,&#x27;1 × $16.00&#x27;,16,false]];
+  var tb=$(&#x27;#avTab tbody&#x27;);
+  tb.innerHTML=av.map(function(a,i){return &#x27;&lt;tr&gt;&lt;td&gt;&#x27;+a[0]+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+a[1]+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+eur(a[2])+&#x27;&lt;/td&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; data-i=&quot;&#x27;+i+&#x27;&quot; aria-label=&quot;&#x27;+a[0]+&#x27; avoidable&quot;&#x27;+(a[3]?&#x27; checked&#x27;:&#x27;&#x27;)+&#x27;&gt;&lt;/td&gt;&lt;/tr&gt;&#x27;;}).join(&#x27;&#x27;)+&#x27;&lt;tr&gt;&lt;td&gt;&lt;b&gt;ABC total&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;$167.25&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&#x27;;
+  function avc(){var c=0;$$(&#x27;input&#x27;,tb).forEach(function(x){if(x.checked)c+=av[+x.dataset.i][2];});var m=140-c;
+    $(&#x27;#avC&#x27;).textContent=eur(c);var e=$(&#x27;#avM&#x27;);e.textContent=eur(m);e.className=m&lt;0?&#x27;neg&#x27;:&#x27;pos&#x27;;
+    $(&#x27;#avTxt&#x27;).innerHTML=m&gt;=0?&#x27;Under these assumptions, accepting the job &lt;b&gt;increases&lt;/b&gt; company profit by &#x27;+eur(m)+&#x27;: the negative ABC margin stems from costs that would be incurred anyway.&#x27;:&#x27;Under these assumptions, the job &lt;b&gt;reduces&lt;/b&gt; profit by &#x27;+eur(-m)+&#x27;: it should be turned down or the price renegotiated.&#x27;;}
+  tb.addEventListener(&#x27;change&#x27;,avc);avc();
+
+  /* pricing simulator */
+  var prof=[[&#x27;Large city customer&#x27;,2000,8],[&#x27;Average job&#x27;,1000,30],[&#x27;Small nearby customer&#x27;,400,10],[&#x27;Flying N Ranch&#x27;,500,75],[&#x27;Large distant ranch&#x27;,1500,120]];
+  var pS=$(&#x27;#pS&#x27;),pM=$(&#x27;#pM&#x27;),pJ=$(&#x27;#pJ&#x27;);
+  function cls(v){return v&lt;0?&#x27;neg&#x27;:&#x27;pos&#x27;;}
+  function pricing(){
+    var s=+pS.value,m=+pM.value,j=+pJ.value;
+    $(&#x27;#pSO&#x27;).textContent=eur(s);$(&#x27;#pMO&#x27;).textContent=eur(m);$(&#x27;#pJO&#x27;).textContent=eur(j);
+    var h=&#x27;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Profile&lt;/th&gt;&lt;th&gt;sq ft / miles&lt;/th&gt;&lt;th&gt;ABC cost&lt;/th&gt;&lt;th&gt;Price today ($28)&lt;/th&gt;&lt;th&gt;Margin today&lt;/th&gt;&lt;th&gt;New price&lt;/th&gt;&lt;th&gt;New margin&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&#x27;;
+    prof.forEach(function(p){var hh=p[1]/100,c=R.c*hh+R.t*p[2]+R.j,o=28*hh,n=s*hh+m*p[2]+j;
+      h+=&#x27;&lt;tr&gt;&lt;td&gt;&#x27;+p[0]+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+it(p[1])+&#x27; / &#x27;+p[2]+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+eur(c)+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+eur(o)+&#x27;&lt;/td&gt;&lt;td class=&quot;&#x27;+cls(o-c)+&#x27;&quot;&gt;&#x27;+eur(o-c)+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+eur(n)+&#x27;&lt;/td&gt;&lt;td class=&quot;&#x27;+cls(n-c)+&#x27;&quot;&gt;&#x27;+eur(n-c)+&#x27;&lt;/td&gt;&lt;/tr&gt;&#x27;;});
+    $(&#x27;#pTab&#x27;).innerHTML=h+&#x27;&lt;/tbody&gt;&#x27;;
+    var tot=20000*s+60000*m+2000*j,d=tot-560000;
+    $(&#x27;#pTot&#x27;).innerHTML=&#x27;Total revenue at current volumes: &lt;b&gt;$&#x27;+it(Math.round(tot))+&#x27;&lt;/b&gt; (&#x27;+(d&gt;=0?&#x27;+&#x27;:&#x27;−&#x27;)+&#x27;$&#x27;+it(Math.abs(Math.round(d)))+&#x27; compared with today\&#x27;s $560,000). The large city customer pays less; the distant ranch pays for the travel it causes.&#x27;;
+  }
+  [pS,pM,pJ].forEach(function(i){i.addEventListener(&#x27;input&#x27;,pricing);});pricing();
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe></body></html>

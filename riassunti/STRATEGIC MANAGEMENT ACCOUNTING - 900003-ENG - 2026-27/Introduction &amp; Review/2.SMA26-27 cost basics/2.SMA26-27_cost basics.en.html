@@ -1,0 +1,768 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Summary · 2.SMA26-27_cost basics.pdf</title><link rel="icon" href="data:,">
+<style>html,body{margin:0;height:100%}body{display:flex;flex-direction:column}iframe{flex:1;border:0;width:100%}</style>
+</head><body><nav style="font:14px/1.4 system-ui,sans-serif;padding:6px 12px;text-align:right"><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Introduction%20%26amp%3B%20Review/2.SMA26-27%20cost%20basics/2.SMA26-27_cost%20basics.en.html" style="color:inherit;margin-right:.8em;font-weight:700">English</a><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Introduction%20%26amp%3B%20Review/2.SMA26-27%20cost%20basics/2.SMA26-27_cost%20basics.html" style="color:inherit;margin-right:.8em;">Italiano</a></nav><iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" title="Summary · 2.SMA26-27_cost basics.pdf"
+srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27;; style-src &#x27;unsafe-inline&#x27;; font-src &#x27;self&#x27;; img-src data:; form-action &#x27;none&#x27;; base-uri &#x27;none&#x27;&quot;&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Basics on costs — study canvas&lt;/title&gt;
+&lt;style&gt;
+@font-face{font-family:&quot;Newsreader&quot;;src:url(/static/fonts/newsreader-latin-wght-normal.woff2) format(&quot;woff2&quot;);font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:&quot;IBM Plex Sans&quot;;src:url(/static/fonts/ibm-plex-sans-latin-wght-normal.woff2) format(&quot;woff2&quot;);font-weight:100 700;font-style:normal;font-display:swap}
+:root{
+  --paper:oklch(97% 0.012 80);--ink:oklch(21% 0.014 60);--ink2:oklch(43% 0.014 60);--rule:oklch(86% 0.014 75);
+  --card:oklch(99% 0.006 80);--acc:oklch(50% 0.15 35);--acc-bg:oklch(94% 0.035 35);
+  --sal:oklch(45% 0.08 150);--sal-bg:oklch(94% 0.03 150);
+  --ocr:oklch(50% 0.1 85);--ocr-bg:oklch(95% 0.04 85);
+  --sla:oklch(45% 0.07 250);--sla-bg:oklch(94% 0.025 250);
+  --brk:oklch(47% 0.13 25);--brk-bg:oklch(94% 0.03 25);
+  --ok:oklch(48% 0.12 150);--no:oklch(50% 0.17 25);
+  --serif:&quot;Newsreader&quot;,Georgia,&quot;Times New Roman&quot;,serif;--sans:&quot;IBM Plex Sans&quot;,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(19% 0.012 60);--ink:oklch(93% 0.012 80);--ink2:oklch(76% 0.012 80);--rule:oklch(35% 0.014 75);
+  --card:oklch(23% 0.012 60);--acc:oklch(72% 0.13 35);--acc-bg:oklch(28% 0.045 35);
+  --sal:oklch(78% 0.09 150);--sal-bg:oklch(27% 0.035 150);
+  --ocr:oklch(80% 0.1 85);--ocr-bg:oklch(28% 0.04 85);
+  --sla:oklch(78% 0.07 250);--sla-bg:oklch(27% 0.035 250);
+  --brk:oklch(75% 0.12 25);--brk-bg:oklch(28% 0.04 25);
+  --ok:oklch(78% 0.12 150);--no:oklch(74% 0.14 25);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.02rem/1.62 var(--sans);-webkit-text-size-adjust:100%}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.15;margin:1.6em 0 .5em}
+h1{font-size:clamp(2.3rem,7vw,4.2rem);font-weight:500;letter-spacing:-.01em;margin:.2em 0}
+h2{font-size:clamp(1.7rem,4.5vw,2.5rem);font-weight:500;margin-top:.3em}
+h3{font-size:1.35rem}
+h4{font-size:1.1rem;margin:1.1em 0 .3em}
+p{margin:.6em 0}
+a{color:var(--acc)}
+em.t,.t{font-style:italic;font-family:var(--serif);font-size:1.06em}
+code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.15rem}
+header.top{border-bottom:1px solid var(--rule);padding:2.6rem 0 2rem}
+.kicker{font:600 .78rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+.lede{font:400 1.25rem/1.5 var(--serif);color:var(--ink2);max-width:44rem}
+nav.toc{position:sticky;top:0;z-index:5;background:color-mix(in oklch,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav.toc .wrap{display:flex;gap:.4rem;overflow-x:auto;padding-top:.5rem;padding-bottom:.5rem;scrollbar-width:thin}
+nav.toc a{flex:none;text-decoration:none;color:var(--ink);font-size:.85rem;padding:.25rem .7rem;border:1px solid var(--rule);border-radius:99px;white-space:nowrap}
+nav.toc a:hover{border-color:var(--acc);color:var(--acc)}
+section.part{--c:var(--acc);--cb:var(--acc-bg);padding:3rem 0 2rem;border-bottom:1px solid var(--rule)}
+.p-sal{--c:var(--sal)!important;--cb:var(--sal-bg)!important}
+.p-ocr{--c:var(--ocr)!important;--cb:var(--ocr-bg)!important}
+.p-sla{--c:var(--sla)!important;--cb:var(--sla-bg)!important}
+.p-brk{--c:var(--brk)!important;--cb:var(--brk-bg)!important}
+.num{display:inline-block;font:500 .8rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--c);border-top:3px solid var(--c);padding-top:.5rem}
+.src{font-size:.8rem;color:var(--ink2);font-style:normal}
+.src::before{content:&quot;▸ &quot;}
+.box{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:1rem 1.2rem;margin:1.1rem 0}
+.def{background:var(--cb);border-left:4px solid var(--c);border-radius:0 12px 12px 0;padding:1rem 1.2rem;margin:1.1rem 0}
+.def b:first-child{font-family:var(--serif);font-size:1.12rem}
+.int{border:1px dashed var(--rule);border-radius:12px;padding:.8rem 1.1rem;margin:1rem 0}
+.int::before{content:&quot;Supplement · not in the slides&quot;;display:block;font:600 .7rem/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);margin-bottom:.4rem}
+.ext{border:1px solid var(--rule);border-left:4px solid var(--ink2);border-radius:0 12px 12px 0;padding:.8rem 1.1rem;margin:1rem 0}
+.tag{display:inline-block;font:600 .68rem/1.4 var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:.1rem .45rem;border-radius:4px;background:var(--ink);color:var(--paper);vertical-align:middle}
+.tag.ext-t{background:var(--ink2)}
+.formula{font:500 1.15rem/1.5 var(--serif);text-align:center;background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:.9rem;margin:1rem 0;overflow-x:auto}
+.formula small{display:block;font:400 .82rem/1.4 var(--sans);color:var(--ink2);margin-top:.3rem}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1rem}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:.9rem}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:.9rem 1.1rem}
+.card h4{margin-top:.1rem;color:var(--c)}
+figure{margin:1.3rem 0}
+figure svg{width:100%;height:auto;display:block}
+figcaption{font-size:.85rem;color:var(--ink2);margin-top:.4rem}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;padding:.45rem .55rem;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink2)}
+td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto}
+button{font:inherit;cursor:pointer}
+.btn{border:1px solid var(--rule);background:var(--card);color:var(--ink);border-radius:99px;padding:.35rem .9rem;font-size:.9rem}
+.btn:hover{border-color:var(--c,var(--acc))}
+.btn[aria-pressed=true],.btn[aria-selected=true]{background:var(--c,var(--acc));color:var(--paper);border-color:var(--c,var(--acc))}
+.btn:focus-visible,summary:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+/* quiz dalle slide */
+.q{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:.9rem 1.1rem;margin:1rem 0}
+.q .qh{font:600 .75rem/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--c)}
+.q .qt{margin:.45rem 0 .7rem;font-family:var(--serif);font-size:1.12rem}
+.q .opts{display:flex;flex-wrap:wrap;gap:.45rem}
+.q .opts.col{flex-direction:column;align-items:flex-start}
+.q .opts.col .btn{border-radius:10px;text-align:left}
+.q .btn.right{background:var(--ok);border-color:var(--ok);color:var(--paper)}
+.q .btn.wrong{background:var(--no);border-color:var(--no);color:var(--paper);text-decoration:line-through}
+.q .fb{margin-top:.7rem;padding-top:.6rem;border-top:1px dashed var(--rule);font-size:.95rem}
+.q .fb[hidden]{display:none}
+/* autoverifica */
+.self{background:var(--cb);border-radius:14px;padding:1rem 1.2rem 1.2rem;margin-top:2rem}
+.self h3{margin:.2rem 0 .6rem;color:var(--c)}
+details{border-top:1px solid color-mix(in oklch,var(--c,var(--rule)) 30%,var(--rule));padding:.55rem 0}
+details summary{cursor:pointer;font-weight:500;list-style:none;padding-left:1.5rem;position:relative}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:&quot;+&quot;;position:absolute;left:0;top:-.05rem;font:600 1.1rem/1.3 var(--sans);color:var(--c,var(--acc))}
+details[open] summary::before{content:&quot;–&quot;}
+details&gt;div{padding:.4rem 0 .2rem 1.5rem;color:var(--ink2)}
+.acc details{border-top:1px solid var(--rule)}
+.acc{border-bottom:1px solid var(--rule)}
+/* linguette */
+.tabs [role=tablist]{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.8rem}
+.tabs [role=tabpanel][hidden]{display:none}
+/* passi */
+.steps .step[hidden]{display:none}
+.steps .bar{display:flex;align-items:center;gap:.6rem;margin-top:.8rem}
+.steps .dots{display:flex;gap:.3rem;flex:1}
+.steps .dots i{height:4px;flex:1;border-radius:2px;background:var(--rule)}
+.steps .dots i.on{background:var(--c)}
+.step .big{font:500 1.25rem/1.4 var(--serif)}
+/* cursori */
+.ctrl{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:.6rem 1.2rem;margin:.6rem 0}
+.ctrl label{font-size:.85rem;color:var(--ink2);display:flex;flex-direction:column;gap:.15rem}
+.ctrl output{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--c,var(--acc))}
+.read{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:.5rem;margin:.6rem 0}
+.read div{background:var(--cb);border-radius:10px;padding:.5rem .7rem;font-size:.8rem;color:var(--ink2)}
+.read b{display:block;font:600 1.15rem/1.3 var(--sans);color:var(--ink);font-variant-numeric:tabular-nums}
+.warn{color:var(--no);font-weight:600;font-size:.88rem;min-height:1.3em}
+/* svg */
+.sv-ink{fill:var(--ink)}.sv-ink2{fill:var(--ink2)}.sv-rule{stroke:var(--rule)}
+.sv-paper{fill:var(--paper)}.sv-card{fill:var(--card)}
+.sv-txt{font-family:var(--sans);font-size:13px;fill:var(--ink)}
+.sv-sm{font-family:var(--sans);font-size:11px;fill:var(--ink2)}
+.sv-ser{font-family:var(--serif);font-size:16px;fill:var(--ink);font-weight:600}
+.map a{cursor:pointer}
+.map a rect{transition:transform .15s,stroke-width .15s}
+.map a:hover rect,.map a:focus rect{stroke-width:3}
+.cls-dir{color:var(--ok);font-weight:600}.cls-ind{color:var(--no);font-weight:600}
+.pill{display:inline-block;padding:.05rem .5rem;border-radius:99px;font-size:.78rem;font-weight:600}
+.pill.d{background:var(--sal-bg);color:var(--sal)}.pill.i{background:var(--brk-bg);color:var(--brk)}
+footer{padding:2.5rem 0 3rem;color:var(--ink2);font-size:.9rem;text-align:center}
+.biblio .ext{margin:.9rem 0}
+.biblio h4{margin:.1rem 0 .3rem}
+@media (max-width:560px){body{font-size:.98rem}.box,.def,.q,.self{padding:.8rem .9rem}}
+@media print{nav.toc{display:none}details&gt;div{display:block}}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header class=&quot;top&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;kicker&quot;&gt;University of Bergamo · Department of Management · SMA 2026-27 · Introduction &amp;amp; Review&lt;/div&gt;
+    &lt;h1&gt;Basics on costs&lt;/h1&gt;
+    &lt;p class=&quot;lede&quot;&gt;A study canvas for Lecture 2: what a cost is, how it is classified with respect to a &lt;em class=&quot;t&quot;&gt;cost object&lt;/em&gt;, how it behaves as volume changes, and how it flows into the financial statements and financial ratios.&lt;/p&gt;
+    &lt;p class=&quot;src&quot;&gt;Main source: &lt;span class=&quot;mono&quot;&gt;corso/Introduction &amp;amp; Review/2.SMA26-27 cost basics/2.SMA26-27_cost basics.pdf&lt;/span&gt; (56 slides). The lecture is a 24-question review quiz (Q1–Q24); here the questions are regrouped by topic and explained. Each “From the slides” box gives the slide number.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+&lt;nav class=&quot;toc&quot; aria-label=&quot;Table of contents&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;a href=&quot;#mappa&quot;&gt;Map&lt;/a&gt;&lt;a href=&quot;#costo&quot;&gt;1 · Cost&lt;/a&gt;&lt;a href=&quot;#diretti&quot;&gt;2 · Direct / indirect&lt;/a&gt;&lt;a href=&quot;#produzione&quot;&gt;3 · Manufacturing&lt;/a&gt;&lt;a href=&quot;#behaviour&quot;&gt;4 · Cost behaviour&lt;/a&gt;&lt;a href=&quot;#bilancio&quot;&gt;5 · Statements and ratios&lt;/a&gt;&lt;a href=&quot;#approfondire&quot;&gt;Further reading&lt;/a&gt;
+&lt;/div&gt;&lt;/nav&gt;
+
+&lt;main&gt;
+&lt;section class=&quot;part&quot; id=&quot;mappa&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;Concept map&lt;/span&gt;
+  &lt;h2&gt;How the topics fit together&lt;/h2&gt;
+  &lt;p&gt;Click a node to jump to the corresponding section. The arrows indicate &lt;em&gt;why&lt;/em&gt; one concept leads to the next.&lt;/p&gt;
+  &lt;figure class=&quot;map&quot;&gt;
+  &lt;svg viewBox=&quot;0 0 900 470&quot; role=&quot;img&quot; aria-labelledby=&quot;mapT&quot;&gt;
+    &lt;title id=&quot;mapT&quot;&gt;Concept map: from the notion of cost to cost classifications, cost behaviour, financial statements and financial ratios&lt;/title&gt;
+    &lt;defs&gt;&lt;marker id=&quot;ar&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto-start-reverse&quot;&gt;&lt;path d=&quot;M0 0L10 5L0 10z&quot; class=&quot;sv-ink2&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+    &lt;g stroke-width=&quot;1.6&quot; fill=&quot;none&quot; style=&quot;stroke:var(--ink2)&quot; marker-end=&quot;url(#ar)&quot;&gt;
+      &lt;path d=&quot;M410 82 C330 110 280 120 250 148&quot;/&gt;
+      &lt;path d=&quot;M490 82 C570 110 620 120 655 148&quot;/&gt;
+      &lt;path d=&quot;M200 198 C170 225 140 240 128 270&quot;/&gt;
+      &lt;path d=&quot;M240 198 C280 225 320 240 340 270&quot;/&gt;
+      &lt;path d=&quot;M660 198 C640 225 620 240 610 270&quot;/&gt;
+      &lt;path d=&quot;M720 198 C760 225 790 240 805 270&quot;/&gt;
+      &lt;path d=&quot;M350 320 C350 350 350 370 350 388&quot;/&gt;
+      &lt;path d=&quot;M600 320 C520 350 450 370 420 388&quot;/&gt;
+      &lt;path d=&quot;M460 413 L560 413&quot;/&gt;
+    &lt;/g&gt;
+    &lt;g class=&quot;sv-sm&quot; text-anchor=&quot;middle&quot;&gt;
+      &lt;text x=&quot;300&quot; y=&quot;108&quot;&gt;measured with respect to&lt;/text&gt;
+      &lt;text x=&quot;610&quot; y=&quot;108&quot;&gt;how it varies with volume&lt;/text&gt;
+      &lt;text x=&quot;118&quot; y=&quot;240&quot;&gt;traceability&lt;/text&gt;
+      &lt;text x=&quot;345&quot; y=&quot;240&quot;&gt;function&lt;/text&gt;
+      &lt;text x=&quot;575&quot; y=&quot;240&quot;&gt;type&lt;/text&gt;
+      &lt;text x=&quot;815&quot; y=&quot;240&quot;&gt;limits and mix&lt;/text&gt;
+      &lt;text x=&quot;300&quot; y=&quot;362&quot;&gt;product cost → COGS&lt;/text&gt;
+      &lt;text x=&quot;545&quot; y=&quot;362&quot;&gt;structure → income&lt;/text&gt;
+      &lt;text x=&quot;510&quot; y=&quot;405&quot;&gt;data for&lt;/text&gt;
+    &lt;/g&gt;
+    &lt;a href=&quot;#costo&quot;&gt;&lt;rect x=&quot;360&quot; y=&quot;30&quot; width=&quot;180&quot; height=&quot;52&quot; rx=&quot;12&quot; style=&quot;fill:var(--acc-bg);stroke:var(--acc)&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;450&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Cost&lt;/text&gt;&lt;text x=&quot;450&quot; y=&quot;72&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;resources given up for a purpose&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#costo&quot;&gt;&lt;rect x=&quot;130&quot; y=&quot;148&quot; width=&quot;180&quot; height=&quot;50&quot; rx=&quot;12&quot; style=&quot;fill:var(--acc-bg);stroke:var(--acc)&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;220&quot; y=&quot;171&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Cost object&lt;/text&gt;&lt;text x=&quot;220&quot; y=&quot;189&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;product, department, store…&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#behaviour&quot;&gt;&lt;rect x=&quot;590&quot; y=&quot;148&quot; width=&quot;180&quot; height=&quot;50&quot; rx=&quot;12&quot; style=&quot;fill:var(--sla-bg);stroke:var(--sla)&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;680&quot; y=&quot;171&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Cost behaviour&lt;/text&gt;&lt;text x=&quot;680&quot; y=&quot;189&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;as activity changes&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#diretti&quot;&gt;&lt;rect x=&quot;30&quot; y=&quot;270&quot; width=&quot;190&quot; height=&quot;50&quot; rx=&quot;12&quot; style=&quot;fill:var(--sal-bg);stroke:var(--sal)&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;125&quot; y=&quot;293&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Direct / Indirect&lt;/text&gt;&lt;text x=&quot;125&quot; y=&quot;311&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;traced or allocated&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#produzione&quot;&gt;&lt;rect x=&quot;240&quot; y=&quot;270&quot; width=&quot;210&quot; height=&quot;50&quot; rx=&quot;12&quot; style=&quot;fill:var(--ocr-bg);stroke:var(--ocr)&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;345&quot; y=&quot;293&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Manufacturing / Non&lt;/text&gt;&lt;text x=&quot;345&quot; y=&quot;311&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;DM · DL · MOH · S&amp;amp;A&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#behaviour&quot;&gt;&lt;rect x=&quot;500&quot; y=&quot;270&quot; width=&quot;190&quot; height=&quot;50&quot; rx=&quot;12&quot; style=&quot;fill:var(--sla-bg);stroke:var(--sla)&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;595&quot; y=&quot;293&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Fixed · Variable · Mixed&lt;/text&gt;&lt;text x=&quot;595&quot; y=&quot;311&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;total vs per unit&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#behaviour&quot;&gt;&lt;rect x=&quot;710&quot; y=&quot;270&quot; width=&quot;170&quot; height=&quot;50&quot; rx=&quot;12&quot; style=&quot;fill:var(--sla-bg);stroke:var(--sla)&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;795&quot; y=&quot;293&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Relevant range&lt;/text&gt;&lt;text x=&quot;795&quot; y=&quot;311&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;and cost structure&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#bilancio&quot;&gt;&lt;rect x=&quot;240&quot; y=&quot;388&quot; width=&quot;220&quot; height=&quot;50&quot; rx=&quot;12&quot; style=&quot;fill:var(--brk-bg);stroke:var(--brk)&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;350&quot; y=&quot;411&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Financial statements&lt;/text&gt;&lt;text x=&quot;350&quot; y=&quot;429&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;BS · IS · cash flow&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#bilancio&quot;&gt;&lt;rect x=&quot;560&quot; y=&quot;388&quot; width=&quot;190&quot; height=&quot;50&quot; rx=&quot;12&quot; style=&quot;fill:var(--brk-bg);stroke:var(--brk)&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;655&quot; y=&quot;411&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Financial ratios&lt;/text&gt;&lt;text x=&quot;655&quot; y=&quot;429&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;P/E · ROE · liquidity&lt;/text&gt;&lt;/a&gt;
+  &lt;/svg&gt;
+  &lt;figcaption&gt;Section colours: terracotta = cost, sage = direct/indirect, ochre = manufacturing, slate = cost behaviour, brick = financial statements and ratios.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part&quot; id=&quot;costo&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;Part 1 · The starting point&lt;/span&gt;
+  &lt;h2&gt;What we mean by cost&lt;/h2&gt;
+  &lt;p&gt;The lecture opens with an unfinished question (“A cost is…”) and then provides the answer.&lt;/p&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Cost&lt;/b&gt; — &lt;q&gt;the measure of resources given up to achieve a particular purpose&lt;/q&gt;: the measure, usually in monetary terms, of the resources sacrificed to achieve a specific objective.&lt;br&gt;&lt;span class=&quot;src&quot;&gt;Slides 3–4&lt;/span&gt;&lt;/div&gt;
+  &lt;p&gt;It is worth reading the definition word by word, since each element anticipates a later topic:&lt;/p&gt;
+  &lt;div class=&quot;grid3&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;“measure”&lt;/h4&gt;&lt;p&gt;A cost is a &lt;em&gt;number&lt;/em&gt;: it requires a measurement rule (purchase price, hours × rate, depreciation charge…). Without measurement, alternatives cannot be compared.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;“resources given up”&lt;/h4&gt;&lt;p&gt;Materials, labour, machine time, services: resources that are consumed or committed and are therefore no longer available for other uses.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;“particular purpose”&lt;/h4&gt;&lt;p&gt;A cost is always the &lt;em&gt;cost of something&lt;/em&gt;: of a product, a department, a customer. This “something” is the &lt;em class=&quot;t&quot;&gt;cost object&lt;/em&gt;.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Cost object&lt;/b&gt; — anything for which a separate measurement of cost is desired: a unit of product, a product line, a department, a store, a customer, a project. The term appears on slides 5 and 9–10 and in the answer on slide 15 (&lt;q&gt;It depends… what&#x27;s about the cost object?&lt;/q&gt;).&lt;/div&gt;
+  &lt;figure&gt;
+  &lt;svg viewBox=&quot;0 0 760 210&quot; role=&quot;img&quot; aria-label=&quot;The same cost changes its nature depending on the chosen cost object&quot;&gt;
+    &lt;rect x=&quot;20&quot; y=&quot;70&quot; width=&quot;170&quot; height=&quot;70&quot; rx=&quot;12&quot; style=&quot;fill:var(--acc-bg);stroke:var(--acc)&quot; stroke-width=&quot;1.5&quot;/&gt;
+    &lt;text x=&quot;105&quot; y=&quot;100&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Resources&lt;/text&gt;&lt;text x=&quot;105&quot; y=&quot;120&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;materials · labour · services&lt;/text&gt;
+    &lt;g fill=&quot;none&quot; stroke-width=&quot;1.6&quot; style=&quot;stroke:var(--ink2)&quot; marker-end=&quot;url(#ar)&quot;&gt;&lt;path d=&quot;M190 105 L280 105&quot;/&gt;&lt;path d=&quot;M450 105 C500 105 510 40 555 40&quot;/&gt;&lt;path d=&quot;M450 105 L555 105&quot;/&gt;&lt;path d=&quot;M450 105 C500 105 510 170 555 170&quot;/&gt;&lt;/g&gt;
+    &lt;rect x=&quot;280&quot; y=&quot;70&quot; width=&quot;170&quot; height=&quot;70&quot; rx=&quot;12&quot; class=&quot;sv-card&quot; style=&quot;stroke:var(--rule)&quot; stroke-width=&quot;1.5&quot;/&gt;
+    &lt;text x=&quot;365&quot; y=&quot;100&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Cost&lt;/text&gt;&lt;text x=&quot;365&quot; y=&quot;120&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;measured in €/$&lt;/text&gt;
+    &lt;g class=&quot;sv-txt&quot;&gt;&lt;text x=&quot;565&quot; y=&quot;44&quot;&gt;unit of product&lt;/text&gt;&lt;text x=&quot;565&quot; y=&quot;109&quot;&gt;department / store&lt;/text&gt;&lt;text x=&quot;565&quot; y=&quot;174&quot;&gt;entire company&lt;/text&gt;&lt;/g&gt;
+    &lt;text x=&quot;500&quot; y=&quot;200&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;cost object: the purpose of the measurement&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;figcaption&gt;From resource to cost, and from cost to its object. Changing the object changes the classification (Part 2).&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;div class=&quot;int&quot;&gt;&lt;p&gt;&lt;b&gt;Costs and expenses, costs and assets.&lt;/b&gt; In &lt;em class=&quot;t&quot;&gt;management accounting&lt;/em&gt; (accounting information for internal managers) a cost may exist even if it does not appear as an expense in that period&#x27;s income statement: for example, the cost of materials first enters inventory and becomes an expense (&lt;em class=&quot;t&quot;&gt;cost of goods sold&lt;/em&gt;) only when the product is sold. In &lt;em class=&quot;t&quot;&gt;financial accounting&lt;/em&gt; (reporting to external users: the financial statements), by contrast, the rules of accounting standards apply. This link returns in Part 5.&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;self&quot;&gt;
+    &lt;h3&gt;Self-check · Part 1&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;State the definition of cost used in the course.&lt;/summary&gt;&lt;div&gt;The measure of the resources given up to achieve a particular purpose.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Give three examples of cost objects for a chain of stores.&lt;/summary&gt;&lt;div&gt;A single product sold, the Cosmetics department of a store, the Northridge store, the entire company, a customer, an advertising campaign.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Why does the definition stress “particular purpose”?&lt;/summary&gt;&lt;div&gt;Because a cost has no absolute nature: it is “direct”, “indirect” or “relevant” only with respect to an object or a decision. Without a purpose, no classification is possible.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part p-sal&quot; id=&quot;diretti&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;Part 2 · Classifying with respect to the object&lt;/span&gt;
+  &lt;h2&gt;Direct cost and indirect cost&lt;/h2&gt;
+  &lt;div class=&quot;grid2&quot;&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Direct cost&lt;/b&gt; — a cost that can be &lt;em&gt;traced&lt;/em&gt; (&lt;em class=&quot;t&quot;&gt;trace&lt;/em&gt;) easily and cost-effectively to the cost object under consideration. Example: the wood of a table with respect to the table.&lt;/div&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Indirect cost&lt;/b&gt; — a cost that cannot be easily traced to the object because it is &lt;em&gt;common&lt;/em&gt; to several objects; to assign it, it must be allocated (&lt;em class=&quot;t&quot;&gt;allocate&lt;/em&gt;) using a conventional base. Example: the department supervisor&#x27;s salary with respect to a single table.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p&gt;The key word is &lt;b&gt;traceability&lt;/b&gt;, not the amount or the nature of the expenditure. And traceability depends on the object: a cost common to many products is indirect for each individual product but may be direct for the department that makes all of them.&lt;/p&gt;
+  &lt;figure&gt;
+  &lt;svg viewBox=&quot;0 0 760 250&quot; role=&quot;img&quot; aria-label=&quot;Direct costs traced to the product, indirect costs allocated across several products&quot;&gt;
+    &lt;rect x=&quot;20&quot; y=&quot;30&quot; width=&quot;200&quot; height=&quot;56&quot; rx=&quot;10&quot; style=&quot;fill:var(--sal-bg);stroke:var(--sal)&quot; stroke-width=&quot;1.5&quot;/&gt;
+    &lt;text x=&quot;120&quot; y=&quot;55&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Direct materials&lt;/text&gt;&lt;text x=&quot;120&quot; y=&quot;74&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;traced to the individual unit&lt;/text&gt;
+    &lt;rect x=&quot;20&quot; y=&quot;150&quot; width=&quot;200&quot; height=&quot;56&quot; rx=&quot;10&quot; style=&quot;fill:var(--brk-bg);stroke:var(--brk)&quot; stroke-width=&quot;1.5&quot;/&gt;
+    &lt;text x=&quot;120&quot; y=&quot;175&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Supervisor&#x27;s salary&lt;/text&gt;&lt;text x=&quot;120&quot; y=&quot;194&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;common to all production&lt;/text&gt;
+    &lt;g fill=&quot;none&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#ar)&quot;&gt;&lt;path d=&quot;M220 58 L520 58&quot; style=&quot;stroke:var(--sal)&quot;/&gt;&lt;/g&gt;
+    &lt;g fill=&quot;none&quot; stroke-width=&quot;1.6&quot; stroke-dasharray=&quot;5 4&quot; style=&quot;stroke:var(--brk)&quot; marker-end=&quot;url(#ar)&quot;&gt;&lt;path d=&quot;M220 178 L330 178&quot;/&gt;&lt;path d=&quot;M440 160 C480 120 490 80 520 70&quot;/&gt;&lt;path d=&quot;M440 178 L520 140&quot;/&gt;&lt;path d=&quot;M440 196 L520 210&quot;/&gt;&lt;/g&gt;
+    &lt;rect x=&quot;330&quot; y=&quot;155&quot; width=&quot;110&quot; height=&quot;46&quot; rx=&quot;23&quot; class=&quot;sv-card&quot; style=&quot;stroke:var(--brk)&quot; stroke-width=&quot;1.5&quot;/&gt;
+    &lt;text x=&quot;385&quot; y=&quot;176&quot; text-anchor=&quot;middle&quot; class=&quot;sv-txt&quot;&gt;allocation&lt;/text&gt;&lt;text x=&quot;385&quot; y=&quot;192&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;base: hours, units…&lt;/text&gt;
+    &lt;text x=&quot;370&quot; y=&quot;48&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;tracing: direct measurement&lt;/text&gt;
+    &lt;g&gt;&lt;rect x=&quot;525&quot; y=&quot;40&quot; width=&quot;210&quot; height=&quot;40&quot; rx=&quot;8&quot; class=&quot;sv-card&quot; style=&quot;stroke:var(--rule)&quot;/&gt;&lt;text x=&quot;630&quot; y=&quot;65&quot; text-anchor=&quot;middle&quot; class=&quot;sv-txt&quot;&gt;Product A&lt;/text&gt;
+    &lt;rect x=&quot;525&quot; y=&quot;120&quot; width=&quot;210&quot; height=&quot;40&quot; rx=&quot;8&quot; class=&quot;sv-card&quot; style=&quot;stroke:var(--rule)&quot;/&gt;&lt;text x=&quot;630&quot; y=&quot;145&quot; text-anchor=&quot;middle&quot; class=&quot;sv-txt&quot;&gt;Product B&lt;/text&gt;
+    &lt;rect x=&quot;525&quot; y=&quot;192&quot; width=&quot;210&quot; height=&quot;40&quot; rx=&quot;8&quot; class=&quot;sv-card&quot; style=&quot;stroke:var(--rule)&quot;/&gt;&lt;text x=&quot;630&quot; y=&quot;217&quot; text-anchor=&quot;middle&quot; class=&quot;sv-txt&quot;&gt;Product C&lt;/text&gt;&lt;/g&gt;
+  &lt;/svg&gt;
+  &lt;figcaption&gt;Solid line = &lt;em&gt;tracing&lt;/em&gt; (direct cost). Dashed line = &lt;em&gt;allocation&lt;/em&gt; using an allocation base (indirect cost).&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;div class=&quot;q&quot; data-ans=&quot;T&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q1 · slides 5–6&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;A direct cost is a cost that can be easily traced to the particular cost object under consideration.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;True.&lt;/b&gt; This is precisely the definition: “easily traced” + “particular cost object”.&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;T&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q2 · slides 7–8&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;A factory supervisor&#x27;s salary would be classified as an indirect cost with respect to a unit of product.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;True.&lt;/b&gt; The supervisor oversees all production: it is impossible to say how much of the salary “belongs” to a single unit. With respect to the department being supervised, however, it would be direct.&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;T&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q3 · slides 9–10&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;A cost can be direct or indirect. The classification can change if the cost object changes.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;True.&lt;/b&gt; Direct/indirect is not a property of the cost itself but of the cost–object relationship. Try it below with the Quinonez case.&lt;/div&gt;&lt;/div&gt;
+
+  &lt;h3&gt;Lab: change the cost object (Quinonez case, Q15)&lt;/h3&gt;
+  &lt;p&gt;Quinonez Department Stores owns many stores; Northridge is one of them, and the Cosmetics department is one of Northridge&#x27;s departments. The central warehouse serves all stores. Choose the cost object and observe how the classifications change.&lt;/p&gt;
+  &lt;p class=&quot;src&quot;&gt;September data, slides 34–36&lt;/p&gt;
+  &lt;div class=&quot;box tabs&quot; id=&quot;labCO&quot;&gt;
+    &lt;div role=&quot;tablist&quot; aria-label=&quot;Cost object&quot;&gt;
+      &lt;button class=&quot;btn&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;co0&quot; data-l=&quot;0&quot;&gt;Cosmetics department&lt;/button&gt;
+      &lt;button class=&quot;btn&quot; role=&quot;tab&quot; aria-selected=&quot;true&quot; aria-controls=&quot;co1&quot; data-l=&quot;1&quot;&gt;Northridge store&lt;/button&gt;
+      &lt;button class=&quot;btn&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;co2&quot; data-l=&quot;2&quot;&gt;Entire company&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;co0&quot; hidden&gt;&lt;/div&gt;&lt;div role=&quot;tabpanel&quot; id=&quot;co1&quot;&gt;&lt;/div&gt;&lt;div role=&quot;tabpanel&quot; id=&quot;co2&quot; hidden&gt;&lt;/div&gt;
+    &lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Item&lt;/th&gt;&lt;th class=&quot;r&quot;&gt;$&lt;/th&gt;&lt;th&gt;Classification&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody id=&quot;coBody&quot;&gt;&lt;/tbody&gt;
+    &lt;tfoot&gt;&lt;tr&gt;&lt;th&gt;Total direct&lt;/th&gt;&lt;th class=&quot;r&quot; id=&quot;coD&quot;&gt;&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;Total NOT direct&lt;/th&gt;&lt;th class=&quot;r&quot; id=&quot;coI&quot;&gt;&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/tfoot&gt;&lt;/table&gt;&lt;/div&gt;
+    &lt;p id=&quot;coNote&quot; class=&quot;src&quot;&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;q&quot; data-ans=&quot;a&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q15 · slides 34–36&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;What is the total amount of the costs listed above that are NOT direct costs of the Northridge Store?&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;a&quot;&gt;a) $152,000&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;b&quot;&gt;b) $33,000&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;c&quot;&gt;c) $45,000&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;d&quot;&gt;d) $77,000&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;a) $152,000.&lt;/b&gt; Only company-level costs are not direct for the store: headquarters lease 77,000 + corporate legal 59,000 + central warehouse 16,000 = 152,000. Everything relating to Northridge (including the costs of the Cosmetics department, which sits inside the store) is direct for Northridge. Distractor c) $45,000 is the total direct cost of the Cosmetics &lt;em&gt;department&lt;/em&gt;: it answers a different question, with a different cost object.&lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;self&quot;&gt;
+    &lt;h3&gt;Self-check · Part 2&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;Is the central warehouse lease direct or indirect?&lt;/summary&gt;&lt;div&gt;It depends: indirect for Northridge (it serves all stores), direct for the entire company.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Is a “small” cost necessarily indirect?&lt;/summary&gt;&lt;div&gt;No. The criterion is traceability. It is true, however, that for very small amounts (glue, screws) tracing may not be worth the effort, so in practice they are treated as indirect: “easily” also means “cost-effectively”.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;What is needed to assign an indirect cost to a product?&lt;/summary&gt;&lt;div&gt;An &lt;em&gt;allocation base&lt;/em&gt;, for example machine hours or direct labor hours, used to distribute the common cost among products.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part p-ocr&quot; id=&quot;produzione&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;Part 3 · Classifying by function&lt;/span&gt;
+  &lt;h2&gt;Manufacturing vs nonmanufacturing costs&lt;/h2&gt;
+  &lt;p&gt;Manufacturing companies usually divide costs into two broad families (slide 13): &lt;em class=&quot;t&quot;&gt;manufacturing costs&lt;/em&gt; (everything needed to make the product) and &lt;em class=&quot;t&quot;&gt;nonmanufacturing costs&lt;/em&gt; (everything needed to sell it and to run the company).&lt;/p&gt;
+  &lt;figure&gt;
+  &lt;svg viewBox=&quot;0 0 760 300&quot; role=&quot;img&quot; aria-label=&quot;Tree: manufacturing costs divided into direct materials, direct labor, manufacturing overhead; nonmanufacturing costs divided into selling and administrative&quot;&gt;
+    &lt;rect x=&quot;230&quot; y=&quot;14&quot; width=&quot;300&quot; height=&quot;44&quot; rx=&quot;10&quot; class=&quot;sv-card&quot; style=&quot;stroke:var(--rule)&quot; stroke-width=&quot;1.5&quot;/&gt;
+    &lt;text x=&quot;380&quot; y=&quot;41&quot; text-anchor=&quot;middle&quot; class=&quot;sv-txt&quot; font-weight=&quot;600&quot;&gt;Costs of a manufacturing company&lt;/text&gt;
+    &lt;g fill=&quot;none&quot; stroke-width=&quot;1.6&quot; style=&quot;stroke:var(--ink2)&quot; marker-end=&quot;url(#ar)&quot;&gt;&lt;path d=&quot;M330 58 L210 100&quot;/&gt;&lt;path d=&quot;M430 58 L560 100&quot;/&gt;
+    &lt;path d=&quot;M150 150 L70 200&quot;/&gt;&lt;path d=&quot;M200 150 L200 200&quot;/&gt;&lt;path d=&quot;M250 150 L335 200&quot;/&gt;&lt;path d=&quot;M530 150 L490 200&quot;/&gt;&lt;path d=&quot;M600 150 L650 200&quot;/&gt;&lt;/g&gt;
+    &lt;rect x=&quot;100&quot; y=&quot;100&quot; width=&quot;220&quot; height=&quot;50&quot; rx=&quot;10&quot; style=&quot;fill:var(--ocr-bg);stroke:var(--ocr)&quot; stroke-width=&quot;1.5&quot;/&gt;
+    &lt;text x=&quot;210&quot; y=&quot;122&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Manufacturing&lt;/text&gt;&lt;text x=&quot;210&quot; y=&quot;140&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;product costs&lt;/text&gt;
+    &lt;rect x=&quot;460&quot; y=&quot;100&quot; width=&quot;220&quot; height=&quot;50&quot; rx=&quot;10&quot; style=&quot;fill:var(--sla-bg);stroke:var(--sla)&quot; stroke-width=&quot;1.5&quot;/&gt;
+    &lt;text x=&quot;570&quot; y=&quot;122&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Nonmanufacturing&lt;/text&gt;&lt;text x=&quot;570&quot; y=&quot;140&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;period costs&lt;/text&gt;
+    &lt;g class=&quot;sv-txt&quot; text-anchor=&quot;middle&quot;&gt;
+      &lt;rect x=&quot;10&quot; y=&quot;200&quot; width=&quot;125&quot; height=&quot;58&quot; rx=&quot;10&quot; class=&quot;sv-card&quot; style=&quot;stroke:var(--ocr)&quot;/&gt;&lt;text x=&quot;72&quot; y=&quot;224&quot;&gt;Direct&lt;/text&gt;&lt;text x=&quot;72&quot; y=&quot;242&quot;&gt;Materials&lt;/text&gt;
+      &lt;rect x=&quot;145&quot; y=&quot;200&quot; width=&quot;115&quot; height=&quot;58&quot; rx=&quot;10&quot; class=&quot;sv-card&quot; style=&quot;stroke:var(--ocr)&quot;/&gt;&lt;text x=&quot;202&quot; y=&quot;224&quot;&gt;Direct&lt;/text&gt;&lt;text x=&quot;202&quot; y=&quot;242&quot;&gt;Labor&lt;/text&gt;
+      &lt;rect x=&quot;270&quot; y=&quot;200&quot; width=&quot;140&quot; height=&quot;58&quot; rx=&quot;10&quot; class=&quot;sv-card&quot; style=&quot;stroke:var(--ocr)&quot;/&gt;&lt;text x=&quot;340&quot; y=&quot;224&quot;&gt;Manufacturing&lt;/text&gt;&lt;text x=&quot;340&quot; y=&quot;242&quot;&gt;overhead&lt;/text&gt;
+      &lt;rect x=&quot;430&quot; y=&quot;200&quot; width=&quot;120&quot; height=&quot;58&quot; rx=&quot;10&quot; class=&quot;sv-card&quot; style=&quot;stroke:var(--sla)&quot;/&gt;&lt;text x=&quot;490&quot; y=&quot;224&quot;&gt;Selling&lt;/text&gt;&lt;text x=&quot;490&quot; y=&quot;242&quot;&gt;costs&lt;/text&gt;
+      &lt;rect x=&quot;575&quot; y=&quot;200&quot; width=&quot;160&quot; height=&quot;58&quot; rx=&quot;10&quot; class=&quot;sv-card&quot; style=&quot;stroke:var(--sla)&quot;/&gt;&lt;text x=&quot;655&quot; y=&quot;224&quot;&gt;Administrative&lt;/text&gt;&lt;text x=&quot;655&quot; y=&quot;242&quot;&gt;costs&lt;/text&gt;
+    &lt;/g&gt;
+    &lt;path d=&quot;M14 272 H256&quot; style=&quot;stroke:var(--ocr)&quot; stroke-width=&quot;3&quot;/&gt;&lt;text x=&quot;135&quot; y=&quot;290&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;prime cost = DM + DL&lt;/text&gt;
+    &lt;path d=&quot;M150 268 H406&quot; style=&quot;stroke:var(--ocr)&quot; stroke-width=&quot;3&quot; stroke-dasharray=&quot;2 4&quot;/&gt;&lt;text x=&quot;330&quot; y=&quot;290&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;conversion cost = DL + MOH&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;figcaption&gt;The diagram from slide 13, with the labels &lt;em&gt;product/period costs&lt;/em&gt;, &lt;em&gt;prime cost&lt;/em&gt; and &lt;em&gt;conversion cost&lt;/em&gt; added as a supplement.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;h3&gt;The five categories, one by one&lt;/h3&gt;
+  &lt;div class=&quot;acc&quot;&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;Direct materials&lt;/b&gt;: become part of the product and can be traced to it&lt;/summary&gt;&lt;div&gt;The wood of a table, the fabric of a shirt, the chip in a phone. Minor materials that are hard to trace (glue, screws) are instead classified as &lt;em&gt;indirect materials&lt;/em&gt;, i.e. as manufacturing overhead.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;Direct labor&lt;/b&gt;: the work of those who physically transform the product&lt;/summary&gt;&lt;div&gt;Line workers, assemblers. The work of supervisors, maintenance staff and warehouse workers cannot be traced to the individual unit: it is &lt;em&gt;indirect labor&lt;/em&gt; and belongs to manufacturing overhead (Q4).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;Manufacturing overhead&lt;/b&gt;: all other manufacturing costs&lt;/summary&gt;&lt;div&gt;Defined by exclusion: &lt;em&gt;all&lt;/em&gt; factory costs except direct materials and direct labor (Q6). It includes indirect materials, indirect labor, depreciation and rent of the plant, factory utilities, maintenance and insurance. It has both a fixed and a variable component (Q7, Q16).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;Selling costs&lt;/b&gt;: incurred to secure customer orders and deliver the product&lt;/summary&gt;&lt;div&gt;Advertising, &lt;em&gt;sales commissions&lt;/em&gt;, shipping to customers, sales staff salaries, finished goods warehouses.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;Administrative costs&lt;/b&gt;: incurred for the general management of the organisation&lt;/summary&gt;&lt;div&gt;Executive salaries, accounting, legal department, corporate headquarters. They relate neither to the factory nor to selling.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;formula&quot;&gt;Total manufacturing cost = DM + DL + MOH&lt;small&gt;Prime cost = DM + DL · Conversion cost = DL + MOH (supplement: standard &lt;em&gt;cost accounting&lt;/em&gt; definitions, not stated in the slides)&lt;/small&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;int&quot;&gt;&lt;p&gt;&lt;b&gt;Product costs and period costs.&lt;/b&gt; Manufacturing costs are &lt;em class=&quot;t&quot;&gt;product costs&lt;/em&gt;: they follow the product into inventory and become an expense (&lt;em&gt;cost of goods sold&lt;/em&gt;) only when the product is sold. Selling and administrative costs are &lt;em class=&quot;t&quot;&gt;period costs&lt;/em&gt;: they are expensed in the income statement in the period in which they are incurred. This is why the functional classification leads straight to the income statement in Part 5.&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;q&quot; data-ans=&quot;T&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q4 · slides 11–12&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;Wages paid to production supervisors would be classified as manufacturing overhead.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;True.&lt;/b&gt; They are factory costs (hence manufacturing) but not direct labor, because supervisors do not physically work on the product: they remain in manufacturing overhead as indirect labor. This connects to Q2.&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;D&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q5 · slides 14–15&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;Selling costs are usually indirect costs.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;D&quot;&gt;It depends&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;It depends&lt;/b&gt; — the slide answers &lt;q&gt;It depends… what&#x27;s about the cost object?&lt;/q&gt;. With respect to a single unit of product, general advertising is indirect; with respect to a department, a store or a sales territory, many selling costs (such as the Cosmetics department&#x27;s commissions in Q15) are direct.&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;T&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q6 · slides 16–17&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;The sum of all manufacturing costs except for direct materials and direct labor is called manufacturing overhead.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;True.&lt;/b&gt; MOH = total manufacturing costs − DM − DL. It is a definition by exclusion.&lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;self&quot;&gt;
+    &lt;h3&gt;Self-check · Part 3&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;Where does the marketing manager&#x27;s salary belong?&lt;/summary&gt;&lt;div&gt;Nonmanufacturing, selling cost (period cost).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Where does depreciation of factory machinery belong?&lt;/summary&gt;&lt;div&gt;Manufacturing overhead (product cost); it is usually a fixed cost.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;DM = 50, DL = 30, MOH = 20. Compute prime cost and conversion cost.&lt;/summary&gt;&lt;div&gt;Prime cost = 50 + 30 = 80. Conversion cost = 30 + 20 = 50. Total manufacturing cost = 100.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Why is the supervisor&#x27;s work not direct labor?&lt;/summary&gt;&lt;div&gt;Because it cannot be traced to the individual unit: the supervisor oversees all production. It is indirect labor, part of MOH.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part p-sla&quot; id=&quot;behaviour&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;Part 4 · Classifying by behaviour&lt;/span&gt;
+  &lt;h2&gt;Cost behaviour: fixed, variable, mixed&lt;/h2&gt;
+  &lt;p&gt;&lt;em class=&quot;t&quot;&gt;Cost behaviour&lt;/em&gt; refers to how a cost responds when the &lt;em class=&quot;t&quot;&gt;activity level&lt;/em&gt; changes (units produced, machine hours, customers served…). It is the largest part of the quiz (Q7–Q17).&lt;/p&gt;
+  &lt;div class=&quot;grid3&quot;&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Variable cost&lt;/b&gt; — the total varies in proportion to activity; the cost &lt;em&gt;per unit&lt;/em&gt; remains constant. E.g. direct materials, commissions.&lt;/div&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Fixed cost&lt;/b&gt; — the total remains constant (within the relevant range); the cost &lt;em&gt;per unit&lt;/em&gt; falls as activity rises and rises as activity falls. E.g. rent, supervisors&#x27; salaries.&lt;/div&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Mixed cost&lt;/b&gt; — has both a fixed and a variable component. E.g. a utility bill with a fixed charge + consumption; a rental car with a flat fee + €/km.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;formula&quot;&gt;Y = a + b·X&lt;small&gt;Y = total cost · a = total fixed component · b = variable cost per unit · X = activity level&lt;/small&gt;&lt;/div&gt;
+
+  &lt;h3&gt;The table to know by heart&lt;/h3&gt;
+  &lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;
+    &lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Total cost&lt;/th&gt;&lt;th&gt;Cost per unit&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;&lt;b&gt;Variable&lt;/b&gt;&lt;/td&gt;&lt;td&gt;rises and falls with activity&lt;/td&gt;&lt;td&gt;&lt;b&gt;constant&lt;/b&gt; (Q13)&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;&lt;b&gt;Fixed&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;constant&lt;/b&gt; within the relevant range&lt;/td&gt;&lt;td&gt;falls as activity rises, rises as activity falls (Q10–Q12)&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;p&gt;This is the most common mistake: confusing the behaviour of the &lt;em&gt;total&lt;/em&gt; with the behaviour &lt;em&gt;per unit&lt;/em&gt;. A fixed cost is “fixed” in total, but per unit it is precisely the figure that moves.&lt;/p&gt;
+
+  &lt;h3&gt;Interactive chart: total and per unit&lt;/h3&gt;
+  &lt;p&gt;The starting values come from the Rhome case (Q16, slides 37–39): fixed manufacturing costs = $3.00 × 4,000 = $12,000; variable manufacturing costs = 5.40 + 3.55 + 1.70 = $10.65 per unit; relevant range 2,000–6,000 units (shaded band).&lt;/p&gt;
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;
+      &lt;label&gt;Total fixed costs (a) &lt;output id=&quot;oF&quot;&gt;&lt;/output&gt;&lt;input type=&quot;range&quot; id=&quot;sF&quot; min=&quot;0&quot; max=&quot;30000&quot; step=&quot;500&quot; value=&quot;12000&quot;&gt;&lt;/label&gt;
+      &lt;label&gt;Variable cost per unit (b) &lt;output id=&quot;oV&quot;&gt;&lt;/output&gt;&lt;input type=&quot;range&quot; id=&quot;sV&quot; min=&quot;0&quot; max=&quot;20&quot; step=&quot;0.05&quot; value=&quot;10.65&quot;&gt;&lt;/label&gt;
+      &lt;label&gt;Units produced (X) &lt;output id=&quot;oX&quot;&gt;&lt;/output&gt;&lt;input type=&quot;range&quot; id=&quot;sX&quot; min=&quot;500&quot; max=&quot;8000&quot; step=&quot;100&quot; value=&quot;4000&quot;&gt;&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;figure&gt;&lt;svg viewBox=&quot;0 0 360 260&quot; role=&quot;img&quot; aria-label=&quot;Total costs as a function of units&quot;&gt;&lt;g id=&quot;gTot&quot;&gt;&lt;/g&gt;&lt;/svg&gt;&lt;figcaption&gt;&lt;b&gt;Total&lt;/b&gt; costs: fixed (flat), variable (from the origin), total.&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;figure&gt;&lt;svg viewBox=&quot;0 0 360 260&quot; role=&quot;img&quot; aria-label=&quot;Per-unit costs as a function of units&quot;&gt;&lt;g id=&quot;gUnit&quot;&gt;&lt;/g&gt;&lt;/svg&gt;&lt;figcaption&gt;Costs &lt;b&gt;per unit&lt;/b&gt;: fixed cost per unit is a hyperbola (a ÷ X).&lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;read&quot;&gt;
+      &lt;div&gt;Total variable&lt;b id=&quot;rV&quot;&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Total cost&lt;b id=&quot;rT&quot;&gt;&lt;/b&gt;&lt;/div&gt;
+      &lt;div&gt;Fixed per unit&lt;b id=&quot;rFu&quot;&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Full cost per unit&lt;b id=&quot;rU&quot;&gt;&lt;/b&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;warn&quot; id=&quot;rW&quot;&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Relevant range&lt;/b&gt; — the range of activity within which the assumptions about cost behaviour hold: fixed costs remain fixed and variable cost per unit remains constant. Outside this range, for example, a second plant might be required (fixed costs “step up”) or volume discounts on materials might be obtained (variable cost per unit changes).&lt;/div&gt;
+
+  &lt;div class=&quot;q&quot; data-ans=&quot;F&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q7 · slides 18–19&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;Indirect costs, such as manufacturing overhead, are variable costs.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;False.&lt;/b&gt; Direct/indirect (traceability) and fixed/variable (behaviour) are two independent classifications. MOH contains fixed costs (rent, depreciation, supervisors), variable costs (machine power, indirect materials) and mixed costs. Indeed, the Rhome case includes both &lt;em&gt;variable&lt;/em&gt; and &lt;em&gt;fixed manufacturing overhead&lt;/em&gt;.&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;F&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q10 · slides 24–25&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;If the activity level increases, then one would expect the fixed cost per unit to increase as well.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;False.&lt;/b&gt; Total fixed cost is spread over more units: fixed cost per unit &lt;em&gt;decreases&lt;/em&gt;. Move the X slider above.&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;T&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q11 · slides 26–27&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;A fixed cost is a cost whose cost per unit varies as the activity level rises and falls.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;True.&lt;/b&gt; It looks like a trick, but it is correct: the total is fixed, while the per-unit amount varies with activity.&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;F&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q12 · slides 28–29&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;A decrease in production will ordinarily result in a decrease in fixed production costs per unit.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;False.&lt;/b&gt; Fewer units → the same total fixed cost divided by a smaller number → &lt;em&gt;higher&lt;/em&gt; fixed cost per unit.&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;F&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q13 · slides 30–31&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;The variable cost per unit depends on how many units are produced.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;False.&lt;/b&gt; Within the relevant range, variable cost per unit is constant: it is &lt;em&gt;total&lt;/em&gt; variable cost that depends on the number of units.&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;a&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q14 · slides 32–33&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;For the past 8 months, Jinan Corporation has experienced a steady increase in its cost per unit even though total costs have remained stable. This cost per unit increase may be due to ____ costs if the level of activity at Jinan is ____.&lt;/div&gt;
+    &lt;div class=&quot;opts col&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;a&quot;&gt;a) fixed, decreasing&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;b&quot;&gt;b) fixed, increasing&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;c&quot;&gt;c) variable, decreasing&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;d&quot;&gt;d) variable, increasing&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;a) fixed, decreasing.&lt;/b&gt; A stable total combined with a rising unit cost is the “signature” of fixed costs with falling volumes. If the costs were variable, unit cost would remain constant and the total would move.&lt;/div&gt;&lt;/div&gt;
+
+  &lt;h3&gt;Cost structure and related terms&lt;/h3&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;b&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q8 · slides 20–21&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;The relative proportion of variable, fixed, and mixed costs in a company is known as the company&#x27;s:&lt;/div&gt;
+    &lt;div class=&quot;opts col&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;a&quot;&gt;a) contribution margin&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;b&quot;&gt;b) cost structure&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;c&quot;&gt;c) product mix&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;d&quot;&gt;d) relevant range&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;b) cost structure&lt;/b&gt;. See the tabs below to understand why the other options are wrong.&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;box tabs&quot;&gt;
+    &lt;div role=&quot;tablist&quot; aria-label=&quot;Terms&quot;&gt;&lt;button class=&quot;btn&quot; role=&quot;tab&quot; aria-selected=&quot;true&quot; aria-controls=&quot;tm1&quot;&gt;Cost structure&lt;/button&gt;&lt;button class=&quot;btn&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;tm2&quot;&gt;Contribution margin&lt;/button&gt;&lt;button class=&quot;btn&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;tm3&quot;&gt;Product mix&lt;/button&gt;&lt;button class=&quot;btn&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;tm4&quot;&gt;Relevant range&lt;/button&gt;&lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;tm1&quot;&gt;&lt;p&gt;The relative weight of fixed, variable and mixed costs. A company with a high proportion of fixed costs (a steelworks, an airline) has profits that are highly sensitive to volume: it earns a great deal when sales rise and loses a great deal when they fall. A company with mostly variable costs is more “flexible” and less risky, but earns less on each additional unit. &lt;span class=&quot;src&quot;&gt;supplement: this effect is called &lt;em&gt;operating leverage&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;tm2&quot; hidden&gt;&lt;p&gt;&lt;b&gt;Contribution margin&lt;/b&gt; = revenues − variable costs. It is what remains to cover fixed costs and then generate profit. Per unit: price − variable cost per unit. It is an &lt;em&gt;amount&lt;/em&gt;, not a proportion between types of cost.&lt;/p&gt;&lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;tm3&quot; hidden&gt;&lt;p&gt;&lt;b&gt;Product mix&lt;/b&gt; (sales mix) = the proportions in which the various products are sold. It concerns sales, not costs.&lt;/p&gt;&lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;tm4&quot; hidden&gt;&lt;p&gt;&lt;b&gt;Relevant range&lt;/b&gt; = the range of activity within which the cost behaviour assumptions hold (for Rhome, 2,000–6,000 units). It is a range of volumes, not a composition of costs.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;How to determine whether a cost is fixed or variable&lt;/h3&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;T&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q9 · slides 22–23&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;In account analysis, an account is classified as either variable or fixed based on an analyst&#x27;s prior knowledge of how the cost in the account behaves.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;True.&lt;/b&gt; &lt;em&gt;Account analysis&lt;/em&gt; is the simplest method: someone who knows the company reviews each account and labels it as fixed or variable based on experience. It is quick but subjective.&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;int&quot;&gt;&lt;p&gt;For mixed costs there are quantitative methods that estimate &lt;em&gt;a&lt;/em&gt; and &lt;em&gt;b&lt;/em&gt; from historical data: the &lt;b&gt;high-low method&lt;/b&gt; (points of highest and lowest activity: b = ΔCost ÷ ΔActivity, then a = Cost − b·X), the &lt;b&gt;scattergraph&lt;/b&gt; (a scatter plot fitted by eye) and &lt;b&gt;least-squares regression&lt;/b&gt; (linear regression). High-low example: 1,000 hours → €9,000; 3,000 hours → €15,000 ⇒ b = 6,000 ÷ 2,000 = €3/hour; a = 9,000 − 3,000 = €6,000.&lt;/p&gt;&lt;/div&gt;
+
+  &lt;h3&gt;Guided numerical exercises&lt;/h3&gt;
+  &lt;h4&gt;Q16 · Rhome Corporation (slides 37–39)&lt;/h4&gt;
+  &lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Average cost per unit at 4,000 units&lt;/th&gt;&lt;th class=&quot;r&quot;&gt;$&lt;/th&gt;&lt;th&gt;Behaviour&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Direct materials&lt;/td&gt;&lt;td class=&quot;r&quot;&gt;5.40&lt;/td&gt;&lt;td&gt;variable&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Direct labor&lt;/td&gt;&lt;td class=&quot;r&quot;&gt;3.55&lt;/td&gt;&lt;td&gt;variable&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Variable manufacturing overhead&lt;/td&gt;&lt;td class=&quot;r&quot;&gt;1.70&lt;/td&gt;&lt;td&gt;variable&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Fixed manufacturing overhead&lt;/b&gt;&lt;/td&gt;&lt;td class=&quot;r&quot;&gt;&lt;b&gt;3.00&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;fixed&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Fixed selling expense&lt;/td&gt;&lt;td class=&quot;r&quot;&gt;0.60&lt;/td&gt;&lt;td&gt;fixed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Fixed administrative expense&lt;/td&gt;&lt;td class=&quot;r&quot;&gt;0.40&lt;/td&gt;&lt;td&gt;fixed&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Sales commissions&lt;/td&gt;&lt;td class=&quot;r&quot;&gt;1.00&lt;/td&gt;&lt;td&gt;variable&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Variable administrative expense&lt;/td&gt;&lt;td class=&quot;r&quot;&gt;0.40&lt;/td&gt;&lt;td&gt;variable&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;div class=&quot;box steps&quot;&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;p class=&quot;big&quot;&gt;Question: if 5,000 units are produced, what is the average fixed manufacturing cost per unit?&lt;/p&gt;&lt;p&gt;Options: a) $3.75 · b) $2.40 · c) $2.70 · d) $3.00. Try to answer, then go through the steps.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;p class=&quot;big&quot;&gt;1 · The $3.00 is an average computed at 4,000 units.&lt;/p&gt;&lt;p&gt;A fixed cost “per unit” is not a stable figure: always convert it back to the total.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;p class=&quot;big&quot;&gt;2 · Total fixed manufacturing cost = 3.00 × 4,000 = $12,000&lt;/p&gt;&lt;p&gt;This total does not change at 5,000 units, because 5,000 lies within the relevant range (2,000–6,000).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;p class=&quot;big&quot;&gt;3 · New per-unit amount = 12,000 ÷ 5,000 = $2.40&lt;/p&gt;&lt;p&gt;Answer &lt;b&gt;b&lt;/b&gt;. Option d) $3.00 is the trap for those who treat the fixed cost as if it were variable.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;bar&quot;&gt;&lt;button class=&quot;btn prev&quot;&gt;← Back&lt;/button&gt;&lt;span class=&quot;dots&quot;&gt;&lt;/span&gt;&lt;button class=&quot;btn next&quot;&gt;Next →&lt;/button&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;h4&gt;Q17 · Timchak Corporation (slides 40–41)&lt;/h4&gt;
+  &lt;div class=&quot;box steps&quot;&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;p class=&quot;big&quot;&gt;At 9,900 units: total variable costs $919,116, total fixed costs $259,974. What is total cost at 10,100 units (within the relevant range)?&lt;/p&gt;&lt;p&gt;Options: a) $1,197,658 · b) $1,191,000 · c) $1,179,090 · d) $1,202,910.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;p class=&quot;big&quot;&gt;1 · Variable cost per unit = 919,116 ÷ 9,900 = $92.84&lt;/p&gt;&lt;p&gt;Variable cost per unit is constant: derive it from the total and reuse it at the new volume.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;p class=&quot;big&quot;&gt;2 · Variable costs at 10,100 units = 92.84 × 10,100 = $937,684&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;p class=&quot;big&quot;&gt;3 · Fixed costs unchanged = $259,974&lt;/p&gt;&lt;p&gt;We are within the relevant range: total fixed cost stays the same.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;p class=&quot;big&quot;&gt;4 · Total = 259,974 + 937,684 = $1,197,658&lt;/p&gt;&lt;p&gt;Answer &lt;b&gt;a&lt;/b&gt;. Typical error: multiplying the fixed costs by 10,100/9,900 as well.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;bar&quot;&gt;&lt;button class=&quot;btn prev&quot;&gt;← Back&lt;/button&gt;&lt;span class=&quot;dots&quot;&gt;&lt;/span&gt;&lt;button class=&quot;btn next&quot;&gt;Next →&lt;/button&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;self&quot;&gt;
+    &lt;h3&gt;Self-check · Part 4&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;Rhome: what is the total variable cost per unit (manufacturing + selling + administrative)?&lt;/summary&gt;&lt;div&gt;5.40 + 3.55 + 1.70 + 1.00 + 0.40 = $12.05 per unit, constant throughout the relevant range.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Rhome: what are total fixed costs (all of them), and what is fixed cost per unit at 2,000 units?&lt;/summary&gt;&lt;div&gt;(3.00 + 0.60 + 0.40) × 4,000 = $16,000. At 2,000 units: 16,000 ÷ 2,000 = $8.00 per unit.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;A utility bill has a fixed charge of €200 per month + €0.25/kWh. What is the cost at 1,600 kWh?&lt;/summary&gt;&lt;div&gt;Y = 200 + 0.25 × 1,600 = €600. It is a mixed cost.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Why does “indirect” not mean “fixed”?&lt;/summary&gt;&lt;div&gt;Because they are two different criteria: traceability to the cost object and response to volume. Machine power is indirect for the product but variable; a department&#x27;s commissions are direct for the department and variable; the department manager&#x27;s salary is direct for the department but fixed.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part p-brk&quot; id=&quot;bilancio&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;Part 5 · From costs to financial statements&lt;/span&gt;
+  &lt;h2&gt;Financial statements and financial ratios&lt;/h2&gt;
+  &lt;p&gt;The final questions (Q18–Q24) review the financial statements: the costs from the previous parts end up in the income statement, assets and liabilities in the balance sheet, and ratios are computed from both.&lt;/p&gt;
+
+  &lt;div class=&quot;q&quot; data-ans=&quot;a,d,e&quot; data-multi&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q18 · slides 42–43 · one or more answers&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;What are the main reports provided by FINANCIAL STATEMENTS?&lt;/div&gt;
+    &lt;div class=&quot;opts col&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;a&quot; aria-pressed=&quot;false&quot;&gt;a) The cash flow statement&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;b&quot; aria-pressed=&quot;false&quot;&gt;b) The strategic plan&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;c&quot; aria-pressed=&quot;false&quot;&gt;c) The plan of human resources&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;d&quot; aria-pressed=&quot;false&quot;&gt;d) The income statement&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;e&quot; aria-pressed=&quot;false&quot;&gt;e) The balance sheet&lt;/button&gt;&lt;/div&gt;
+    &lt;p&gt;&lt;button class=&quot;btn check&quot;&gt;Check&lt;/button&gt;&lt;/p&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;a, d, e.&lt;/b&gt; The strategic plan and the human resources plan are internal planning documents, not financial statements.&lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;box tabs&quot;&gt;
+    &lt;div role=&quot;tablist&quot; aria-label=&quot;Statements&quot;&gt;&lt;button class=&quot;btn&quot; role=&quot;tab&quot; aria-selected=&quot;true&quot; aria-controls=&quot;fs1&quot;&gt;Balance sheet&lt;/button&gt;&lt;button class=&quot;btn&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;fs2&quot;&gt;Income statement&lt;/button&gt;&lt;button class=&quot;btn&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;fs3&quot;&gt;Cash flow statement&lt;/button&gt;&lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;fs1&quot;&gt;
+      &lt;p&gt;&lt;b&gt;Balance sheet&lt;/b&gt;: a &lt;em&gt;snapshot&lt;/em&gt; at a given date (the end of the financial year). It lists &lt;em class=&quot;t&quot;&gt;assets&lt;/em&gt; (what the company owns or controls), &lt;em class=&quot;t&quot;&gt;liabilities&lt;/em&gt; (what it owes to third parties) and &lt;em class=&quot;t&quot;&gt;equity&lt;/em&gt; (what remains for the shareholders).&lt;/p&gt;
+      &lt;figure&gt;&lt;svg viewBox=&quot;0 0 520 230&quot; role=&quot;img&quot; aria-label=&quot;Assets equal liabilities plus equity&quot;&gt;
+        &lt;rect x=&quot;40&quot; y=&quot;20&quot; width=&quot;200&quot; height=&quot;190&quot; rx=&quot;6&quot; style=&quot;fill:var(--sla-bg);stroke:var(--sla)&quot; stroke-width=&quot;1.5&quot;/&gt;
+        &lt;text x=&quot;140&quot; y=&quot;105&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Assets&lt;/text&gt;&lt;text x=&quot;140&quot; y=&quot;125&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;cash, receivables, inventory,&lt;/text&gt;&lt;text x=&quot;140&quot; y=&quot;140&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;plant…&lt;/text&gt;
+        &lt;rect x=&quot;280&quot; y=&quot;20&quot; width=&quot;200&quot; height=&quot;115&quot; rx=&quot;6&quot; style=&quot;fill:var(--brk-bg);stroke:var(--brk)&quot; stroke-width=&quot;1.5&quot;/&gt;
+        &lt;text x=&quot;380&quot; y=&quot;72&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Liabilities&lt;/text&gt;&lt;text x=&quot;380&quot; y=&quot;92&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;bank loans, payables to suppliers…&lt;/text&gt;
+        &lt;rect x=&quot;280&quot; y=&quot;140&quot; width=&quot;200&quot; height=&quot;70&quot; rx=&quot;6&quot; style=&quot;fill:var(--sal-bg);stroke:var(--sal)&quot; stroke-width=&quot;1.5&quot;/&gt;
+        &lt;text x=&quot;380&quot; y=&quot;172&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;Equity&lt;/text&gt;&lt;text x=&quot;380&quot; y=&quot;191&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;= Assets − Liabilities&lt;/text&gt;
+        &lt;text x=&quot;260&quot; y=&quot;120&quot; text-anchor=&quot;middle&quot; class=&quot;sv-ser&quot;&gt;=&lt;/text&gt;
+      &lt;/svg&gt;&lt;figcaption&gt;The accounting equation: Assets = Liabilities + Equity.&lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;fs2&quot; hidden&gt;
+      &lt;p&gt;&lt;b&gt;Income statement&lt;/b&gt;: a &lt;em&gt;film&lt;/em&gt; of the financial year. It starts from &lt;em class=&quot;t&quot;&gt;revenues&lt;/em&gt;, deducts costs step by step and arrives at &lt;em class=&quot;t&quot;&gt;net income&lt;/em&gt;. This is where product costs (as cost of goods sold) and period costs (selling and administrative) end up.&lt;/p&gt;
+      &lt;p&gt;Use the sliders in the lab below to watch it being built.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;fs3&quot; hidden&gt;
+      &lt;p&gt;&lt;b&gt;Cash flow statement&lt;/b&gt;: explains how cash changed during the financial year, separating flows from &lt;em class=&quot;t&quot;&gt;operating&lt;/em&gt;, &lt;em class=&quot;t&quot;&gt;investing&lt;/em&gt; and &lt;em class=&quot;t&quot;&gt;financing&lt;/em&gt; activities. It is needed because profit and cash do not coincide: a credit sale generates revenue but no cash; depreciation is a cost but not a cash outflow.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;q&quot; data-ans=&quot;a&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q19 · slides 44–45&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;What is the main value identified in the income statement?&lt;/div&gt;
+    &lt;div class=&quot;opts col&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;a&quot;&gt;a) Net income realized during the financial year, as the difference between revenues and costs&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;b&quot;&gt;b) Net income realized during the financial year, as the difference between assets and liabilities&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;c&quot;&gt;c) Equity available at the end of the financial year, as the difference between assets and liabilities&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;d&quot;&gt;d) Equity realized during the financial year, as the difference between assets and liabilities&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;a).&lt;/b&gt; Income statement = flow over the period: revenues − costs = net income.&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;c&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q20 · slides 46–47&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;What is the main value identified in the balance sheet?&lt;/div&gt;
+    &lt;div class=&quot;opts col&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;a&quot;&gt;a) Net income realized during the financial year, as the difference between revenues and costs&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;b&quot;&gt;b) Net income realized during the financial year, as the difference between assets and liabilities&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;c&quot;&gt;c) Equity available at the end of the financial year, as the difference between assets and liabilities&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;d&quot;&gt;d) Equity realized during the financial year, as the difference between assets and liabilities&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;c).&lt;/b&gt; Balance sheet = position at a given date: assets − liabilities = equity &lt;em&gt;available at the end of the financial year&lt;/em&gt;. Option d) is wrong because equity is not “realized” during the year: it is a stock, not a flow.&lt;/div&gt;&lt;/div&gt;
+
+  &lt;h3&gt;Lab: build the income statement&lt;/h3&gt;
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;
+      &lt;label&gt;Revenues &lt;output id=&quot;oR&quot;&gt;&lt;/output&gt;&lt;input type=&quot;range&quot; id=&quot;iR&quot; min=&quot;200000&quot; max=&quot;2000000&quot; step=&quot;10000&quot; value=&quot;1000000&quot;&gt;&lt;/label&gt;
+      &lt;label&gt;Cost of goods sold (product costs) &lt;output id=&quot;oC&quot;&gt;&lt;/output&gt;&lt;input type=&quot;range&quot; id=&quot;iC&quot; min=&quot;0&quot; max=&quot;1500000&quot; step=&quot;10000&quot; value=&quot;600000&quot;&gt;&lt;/label&gt;
+      &lt;label&gt;Selling &amp;amp; administrative (period costs) &lt;output id=&quot;oS&quot;&gt;&lt;/output&gt;&lt;input type=&quot;range&quot; id=&quot;iS&quot; min=&quot;0&quot; max=&quot;800000&quot; step=&quot;10000&quot; value=&quot;200000&quot;&gt;&lt;/label&gt;
+      &lt;label&gt;Interest expense &lt;output id=&quot;oI&quot;&gt;&lt;/output&gt;&lt;input type=&quot;range&quot; id=&quot;iI&quot; min=&quot;0&quot; max=&quot;200000&quot; step=&quot;5000&quot; value=&quot;40000&quot;&gt;&lt;/label&gt;
+      &lt;label&gt;Tax rate &lt;output id=&quot;oTx&quot;&gt;&lt;/output&gt;&lt;input type=&quot;range&quot; id=&quot;iTx&quot; min=&quot;0&quot; max=&quot;50&quot; step=&quot;1&quot; value=&quot;24&quot;&gt;&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;figure&gt;&lt;svg viewBox=&quot;0 0 640 280&quot; role=&quot;img&quot; aria-label=&quot;Income statement waterfall chart&quot;&gt;&lt;g id=&quot;gWf&quot;&gt;&lt;/g&gt;&lt;/svg&gt;
+    &lt;figcaption&gt;Waterfall: each dark bar deducts a cost; the coloured bars are the intermediate results. Operating income = revenues − operating costs (Q23).&lt;/figcaption&gt;&lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;b&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q23 · slides 52–53&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;What is the Operating Income?&lt;/div&gt;
+    &lt;div class=&quot;opts col&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;a&quot;&gt;a) The difference between revenues and taxes&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;b&quot;&gt;b) The difference between revenues and operating costs&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;c&quot;&gt;c) The difference between revenues and costs of bank loans&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;d&quot;&gt;d) The difference between revenues and accounts receivable&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;b).&lt;/b&gt; &lt;em&gt;Operating income&lt;/em&gt; measures the results of core operations, before financial expenses (interest on loans) and taxes. &lt;em class=&quot;t&quot;&gt;Accounts receivable&lt;/em&gt; are a balance sheet asset, not a cost.&lt;/div&gt;&lt;/div&gt;
+
+  &lt;h3&gt;The ratios from the slides&lt;/h3&gt;
+  &lt;div class=&quot;grid3&quot;&gt;
+    &lt;div class=&quot;formula&quot;&gt;P/E = Market value per share ÷ Earnings per share&lt;small&gt;slide 49 · EPS = net income ÷ number of shares&lt;/small&gt;&lt;/div&gt;
+    &lt;div class=&quot;formula&quot;&gt;ROE = Net income ÷ Average stockholders&#x27; equity&lt;small&gt;slides 50–51 · average = (opening + closing equity) ÷ 2&lt;/small&gt;&lt;/div&gt;
+    &lt;div class=&quot;formula&quot;&gt;Current ratio = Current assets ÷ Current liabilities&lt;small&gt;supplement: the standard liquidity ratio&lt;/small&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;h4&gt;Calculator linked to the income statement above&lt;/h4&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;
+      &lt;label&gt;Number of shares &lt;output id=&quot;oN&quot;&gt;&lt;/output&gt;&lt;input type=&quot;range&quot; id=&quot;iN&quot; min=&quot;10000&quot; max=&quot;500000&quot; step=&quot;10000&quot; value=&quot;100000&quot;&gt;&lt;/label&gt;
+      &lt;label&gt;Market price per share &lt;output id=&quot;oP&quot;&gt;&lt;/output&gt;&lt;input type=&quot;range&quot; id=&quot;iP&quot; min=&quot;1&quot; max=&quot;100&quot; step=&quot;0.5&quot; value=&quot;30&quot;&gt;&lt;/label&gt;
+      &lt;label&gt;Equity at beginning of year &lt;output id=&quot;oE0&quot;&gt;&lt;/output&gt;&lt;input type=&quot;range&quot; id=&quot;iE0&quot; min=&quot;100000&quot; max=&quot;3000000&quot; step=&quot;50000&quot; value=&quot;900000&quot;&gt;&lt;/label&gt;
+      &lt;label&gt;Equity at end of year &lt;output id=&quot;oE1&quot;&gt;&lt;/output&gt;&lt;input type=&quot;range&quot; id=&quot;iE1&quot; min=&quot;100000&quot; max=&quot;3000000&quot; step=&quot;50000&quot; value=&quot;1000000&quot;&gt;&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;read&quot;&gt;&lt;div&gt;Net income&lt;b id=&quot;rNI&quot;&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;EPS&lt;b id=&quot;rEPS&quot;&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;P/E&lt;b id=&quot;rPE&quot;&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;ROE&lt;b id=&quot;rROE&quot;&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;p class=&quot;src&quot; id=&quot;rPEnote&quot;&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;T&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q21 · slides 48–49&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;A high price-earnings ratio means that investors are willing to pay a premium for the company&#x27;s stock.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;True.&lt;/b&gt; A high P/E means the market pays many euros for each euro of current earnings, usually because it expects future growth. (Supplement: a high P/E may also result from temporarily depressed earnings, so it should be interpreted with caution.)&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;T&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q22 · slides 50–51&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;Return on equity = Net income / Average total stockholders&#x27; equity.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;True.&lt;/b&gt; ROE measures the return on shareholders&#x27; capital. The average is used because net income accrues over the whole year, whereas equity is a point-in-time value (beginning and end).&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;q&quot; data-ans=&quot;T&quot;&gt;&lt;div class=&quot;qh&quot;&gt;From the slides · Q24 · slides 54–55&lt;/div&gt;
+    &lt;div class=&quot;qt&quot;&gt;Liquidity refers to how quickly an asset can be converted into cash.&lt;/div&gt;
+    &lt;div class=&quot;opts&quot;&gt;&lt;button class=&quot;btn&quot; data-v=&quot;T&quot;&gt;True&lt;/button&gt;&lt;button class=&quot;btn&quot; data-v=&quot;F&quot;&gt;False&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;fb&quot; hidden&gt;&lt;b&gt;True.&lt;/b&gt; Cash is liquid by definition, receivables and inventories less so, plant and equipment very little. Liquidity ratios (current ratio, quick ratio) compare the most liquid assets with short-term liabilities.&lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;self&quot;&gt;
+    &lt;h3&gt;Self-check · Part 5&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;Stock or flow? Balance sheet and income statement.&lt;/summary&gt;&lt;div&gt;Balance sheet = stock at a given date (snapshot). Income statement = flow over a period (film). Net income for the period increases closing equity (if not distributed).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Net income 120,000; opening equity 900,000, closing equity 1,100,000. ROE?&lt;/summary&gt;&lt;div&gt;Average equity = 1,000,000 → ROE = 120,000 ÷ 1,000,000 = 12%.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Price €40, EPS €2. P/E? And if EPS rises to €4 with the price unchanged?&lt;/summary&gt;&lt;div&gt;P/E = 20; with EPS of 4 → P/E = 10. At a constant price, higher earnings per share = lower P/E.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Where do manufacturing costs and selling costs appear in the income statement?&lt;/summary&gt;&lt;div&gt;The product costs of goods sold appear in cost of goods sold; selling and administrative costs appear among the operating expenses of the period. Both lie above operating income.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part biblio&quot; id=&quot;approfondire&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;Further reading&lt;/span&gt;
+  &lt;h2&gt;Textbooks, standards and regulations&lt;/h2&gt;
+  &lt;p&gt;The slides cite no authors, textbooks or regulations: they are a quiz without a bibliography. The references below were selected by me because they cover exactly the topics of the lecture. They are all &lt;b&gt;external sources&lt;/b&gt; found via web search: they are not part of the course material, and the official reference textbook remains the one indicated by the lecturer.&lt;/p&gt;
+
+  &lt;div class=&quot;ext&quot;&gt;&lt;span class=&quot;tag ext-t&quot;&gt;external source&lt;/span&gt;
+    &lt;h4&gt;Garrison, Noreen, Brewer (and Montague) — &lt;em&gt;Managerial Accounting&lt;/em&gt;, McGraw Hill&lt;/h4&gt;
+    &lt;p&gt;The standard textbook for management accounting; the publisher&#x27;s page lists a 2026 release (18th edition). It contains chapters on cost terms (direct/indirect, manufacturing/nonmanufacturing, product/period costs), cost behaviour (fixed, variable, mixed, relevant range, high-low and regression methods) and financial statement analysis. &lt;b&gt;Why it matters:&lt;/b&gt; the style and vocabulary of the questions (cases such as Jinan, Rhome, Timchak, Quinonez) are typical of this textbook&#x27;s exercises. I have not, however, verified that the questions come from it.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.mheducation.com/highered/product/managerial-accounting-garrison.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;mheducation.com — Managerial Accounting (Garrison)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ext&quot;&gt;&lt;span class=&quot;tag ext-t&quot;&gt;external source&lt;/span&gt;
+    &lt;h4&gt;Datar, Rajan — &lt;em&gt;Horngren&#x27;s Cost Accounting: A Managerial Emphasis&lt;/em&gt;, Pearson (Global Edition, 17th ed.)&lt;/h4&gt;
+    &lt;p&gt;The classic cost accounting text. It ranges from the fundamentals (cost object, direct/indirect, cost drivers) to CVP, job costing and activity-based costing. Its unifying theme is “different costs for different purposes”. &lt;b&gt;Why it matters:&lt;/b&gt; this is the same principle as in Q3 and Q5: the classification of a cost depends on the object and the decision.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.pearson.com/en-gb/subject-catalog/p/Datar-Horngren-s-Cost-Accounting-Global-Edition-17th-Edition/P200000004493/9781292363202&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;pearson.com — Horngren&#x27;s Cost Accounting, Global Edition&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ext&quot;&gt;&lt;span class=&quot;tag ext-t&quot;&gt;external source&lt;/span&gt;
+    &lt;h4&gt;IAS 1 — &lt;em&gt;Presentation of Financial Statements&lt;/em&gt; (IFRS Foundation)&lt;/h4&gt;
+    &lt;p&gt;The international accounting standard that defines a complete set of financial statements: statement of financial position (balance sheet), statement of profit or loss and other comprehensive income, statement of changes in equity, statement of cash flows and notes, with comparative information at least annually. &lt;b&gt;Why it matters:&lt;/b&gt; it provides the authoritative answer to Q18, adding the statement of changes in equity and the notes.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.ifrs.org/issued-standards/list-of-standards/ias-1-presentation-of-financial-statements/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ifrs.org — IAS 1&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ext&quot;&gt;&lt;span class=&quot;tag ext-t&quot;&gt;external source&lt;/span&gt;
+    &lt;h4&gt;IFRS 18 — &lt;em&gt;Presentation and Disclosure in Financial Statements&lt;/em&gt; (IASB, April 2024)&lt;/h4&gt;
+    &lt;p&gt;Replaces IAS 1 for annual periods beginning on or after 1 January 2027. It requires the subtotals &lt;em&gt;operating profit&lt;/em&gt; and &lt;em&gt;profit before financing and income taxes&lt;/em&gt; in the income statement, with operating, investing and financing categories, and requires disclosure of management-defined performance measures. &lt;b&gt;Why it matters:&lt;/b&gt; Q23 (operating income) becomes a subtotal defined by the standard in the 2026-27 academic year itself.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.ifrs.org/issued-standards/list-of-standards/ifrs-18-presentation-and-disclosure-in-financial-statements/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ifrs.org — IFRS 18&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ext&quot;&gt;&lt;span class=&quot;tag ext-t&quot;&gt;external source&lt;/span&gt;
+    &lt;h4&gt;IAS 7 — &lt;em&gt;Statement of Cash Flows&lt;/em&gt;&lt;/h4&gt;
+    &lt;p&gt;Governs the cash flow statement. It classifies cash flows as operating, investing and financing and permits both the direct and the indirect method. Under the amendments linked to IFRS 18, the indirect method will start from operating profit. &lt;b&gt;Why it matters:&lt;/b&gt; it is the third statement in Q18 and explains the difference between profit and cash.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ifrs.org — IAS 7&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ext&quot;&gt;&lt;span class=&quot;tag ext-t&quot;&gt;external source&lt;/span&gt;
+    &lt;h4&gt;IAS 2 — &lt;em&gt;Inventories&lt;/em&gt;&lt;/h4&gt;
+    &lt;p&gt;Sets out how the cost of inventories is measured, including costs of conversion (direct labour and production overheads). Fixed overheads are allocated on the basis of normal capacity: if production is low, the fixed amount per unit is &lt;em&gt;not&lt;/em&gt; increased, and unallocated overheads are recognised as an expense of the period. &lt;b&gt;Why it matters:&lt;/b&gt; it links the product/period cost distinction (Part 3) and the fixed cost per unit that rises as volume falls (Q12, Q16) to financial reporting rules.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.ifrs.org/issued-standards/list-of-standards/ias-2-inventories/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ifrs.org — IAS 2&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ext&quot;&gt;&lt;span class=&quot;tag ext-t&quot;&gt;external source&lt;/span&gt;
+    &lt;h4&gt;Italian Civil Code, Art. 2423 — Preparation of the financial statements&lt;/h4&gt;
+    &lt;p&gt;For Italian companies that do not apply IFRS, the annual financial statements comprise the balance sheet (Art. 2424), the income statement (Art. 2425), the cash flow statement (Art. 2425-ter) and the notes to the financial statements. They must be prepared clearly and give a true and fair view of the company&#x27;s financial position and results of operations. Companies preparing abridged financial statements are exempt from the cash flow statement. &lt;b&gt;Why it matters:&lt;/b&gt; it is the Italian counterpart of the balance sheet, income statement and cash flow statement.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://brocardi.it/codice-civile/libro-quinto/titolo-v/capo-v/sezione-ix/art2423.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;brocardi.it — Art. 2423 Civil Code&lt;/a&gt; (for the official, up-to-date text see Normattiva; both in Italian)&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;p&gt;Summary written by Claude from the slides: always check against the material.&lt;/p&gt;
+&lt;/div&gt;&lt;/footer&gt;
+
+&lt;script&gt;
+(function(){
+  var fmt=function(n,d){return n.toLocaleString(&#x27;en-US&#x27;,{minimumFractionDigits:d||0,maximumFractionDigits:d||0})};
+  window.__fmt=fmt;
+  // quiz dalle slide: Vero/Falso e scelta multipla
+  document.querySelectorAll(&#x27;.q&#x27;).forEach(function(q){
+    var ans=q.getAttribute(&#x27;data-ans&#x27;).split(&#x27;,&#x27;);
+    var fb=q.querySelector(&#x27;.fb&#x27;);
+    q.querySelectorAll(&#x27;.opts .btn&#x27;).forEach(function(b){
+      b.addEventListener(&#x27;click&#x27;,function(){
+        var v=b.getAttribute(&#x27;data-v&#x27;);
+        if(q.hasAttribute(&#x27;data-multi&#x27;)){
+          b.setAttribute(&#x27;aria-pressed&#x27;,b.getAttribute(&#x27;aria-pressed&#x27;)===&#x27;true&#x27;?&#x27;false&#x27;:&#x27;true&#x27;);
+          return;
+        }
+        q.querySelectorAll(&#x27;.opts .btn&#x27;).forEach(function(o){o.classList.remove(&#x27;right&#x27;,&#x27;wrong&#x27;)});
+        b.classList.add(ans.indexOf(v)&gt;=0?&#x27;right&#x27;:&#x27;wrong&#x27;);
+        if(ans.indexOf(v)&lt;0){q.querySelectorAll(&#x27;.opts .btn&#x27;).forEach(function(o){if(ans.indexOf(o.getAttribute(&#x27;data-v&#x27;))&gt;=0)o.classList.add(&#x27;right&#x27;)})}
+        fb.hidden=false;
+      });
+    });
+    var chk=q.querySelector(&#x27;.check&#x27;);
+    if(chk)chk.addEventListener(&#x27;click&#x27;,function(){
+      q.querySelectorAll(&#x27;.opts .btn&#x27;).forEach(function(o){
+        var on=o.getAttribute(&#x27;aria-pressed&#x27;)===&#x27;true&#x27;,ok=ans.indexOf(o.getAttribute(&#x27;data-v&#x27;))&gt;=0;
+        o.classList.remove(&#x27;right&#x27;,&#x27;wrong&#x27;);
+        if(ok)o.classList.add(&#x27;right&#x27;);else if(on)o.classList.add(&#x27;wrong&#x27;);
+      });
+      fb.hidden=false;
+    });
+  });
+  // linguette
+  document.querySelectorAll(&#x27;.tabs&#x27;).forEach(function(t){
+    var bs=t.querySelectorAll(&#x27;[role=tab]&#x27;);
+    bs.forEach(function(b){b.addEventListener(&#x27;click&#x27;,function(){
+      bs.forEach(function(x){x.setAttribute(&#x27;aria-selected&#x27;,&#x27;false&#x27;);document.getElementById(x.getAttribute(&#x27;aria-controls&#x27;)).hidden=true});
+      b.setAttribute(&#x27;aria-selected&#x27;,&#x27;true&#x27;);document.getElementById(b.getAttribute(&#x27;aria-controls&#x27;)).hidden=false;
+      if(t.__on)t.__on(b);
+    })});
+  });
+  // passi da scorrere
+  document.querySelectorAll(&#x27;.steps&#x27;).forEach(function(s){
+    var st=s.querySelectorAll(&#x27;.step&#x27;),i=0,dots=s.querySelector(&#x27;.dots&#x27;),pv=s.querySelector(&#x27;.prev&#x27;),nx=s.querySelector(&#x27;.next&#x27;);
+    st.forEach(function(){dots.appendChild(document.createElement(&#x27;i&#x27;))});
+    function go(k){i=Math.max(0,Math.min(st.length-1,k));st.forEach(function(x,j){x.hidden=j!==i});
+      dots.querySelectorAll(&#x27;i&#x27;).forEach(function(d,j){d.className=j&lt;=i?&#x27;on&#x27;:&#x27;&#x27;});pv.disabled=i===0;nx.disabled=i===st.length-1;}
+    pv.addEventListener(&#x27;click&#x27;,function(){go(i-1)});nx.addEventListener(&#x27;click&#x27;,function(){go(i+1)});go(0);
+  });
+})();
+&lt;/script&gt;
+&lt;script&gt;
+(function(){
+  var fmt=window.__fmt,$=function(id){return document.getElementById(id)};
+  var usd=function(n,d){return &#x27;$&#x27;+fmt(n,d)};
+  // laboratorio cost object (Quinonez, Q15). livello: 0 reparto, 1 negozio, 2 società
+  var items=[[&quot;Corporate headquarters building lease&quot;,77000,2],[&quot;Cosmetics Dept. sales commissions – Northridge&quot;,4000,0],[&quot;Corporate legal office salaries&quot;,59000,2],[&quot;Store manager&#x27;s salary – Northridge&quot;,11000,1],[&quot;Heating – Northridge&quot;,10000,1],[&quot;Cosmetics Dept. cost of sales – Northridge&quot;,37000,0],[&quot;Central warehouse lease cost&quot;,16000,2],[&quot;Store security – Northridge&quot;,12000,1],[&quot;Cosmetics Dept. manager&#x27;s salary – Northridge&quot;,4000,0]];
+  var notes=[&quot;For the Cosmetics department, only its own costs are direct: 45,000 (this is distractor c in Q15). Heating, security and the store manager are common to all departments.&quot;,&quot;For the Northridge store, all costs of the store and its departments are direct: the non-direct costs total 152,000 (the answer to Q15).&quot;,&quot;For the entire company every cost is direct: no item needs to be allocated.&quot;];
+  function co(l){
+    var d=0,i=0,h=&#x27;&#x27;;
+    items.forEach(function(it){var dir=it[2]&lt;=l;if(dir)d+=it[1];else i+=it[1];
+      h+=&#x27;&lt;tr&gt;&lt;td&gt;&#x27;+it[0]+&#x27;&lt;/td&gt;&lt;td class=&quot;r&quot;&gt;&#x27;+fmt(it[1])+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+(dir?&#x27;&lt;span class=&quot;pill d&quot;&gt;direct&lt;/span&gt;&#x27;:&#x27;&lt;span class=&quot;pill i&quot;&gt;indirect&lt;/span&gt;&#x27;)+&#x27;&lt;/td&gt;&lt;/tr&gt;&#x27;});
+    $(&#x27;coBody&#x27;).innerHTML=h;$(&#x27;coD&#x27;).textContent=usd(d);$(&#x27;coI&#x27;).textContent=usd(i);$(&#x27;coNote&#x27;).textContent=notes[l];
+  }
+  var lab=$(&#x27;labCO&#x27;);lab.__on=function(b){co(+b.getAttribute(&#x27;data-l&#x27;))};co(1);
+
+  // grafici cost behaviour
+  var x0=48,x1=345,y0=220,y1=18;
+  function axes(xmax,ymax,xl,yl,lo,hi,xmin){
+    xmin=xmin||0;var X=function(v){return x0+(v-xmin)/(xmax-xmin)*(x1-x0)},s=&#x27;&#x27;;
+    s+=&#x27;&lt;rect x=&quot;&#x27;+X(lo)+&#x27;&quot; y=&quot;&#x27;+y1+&#x27;&quot; width=&quot;&#x27;+(X(hi)-X(lo))+&#x27;&quot; height=&quot;&#x27;+(y0-y1)+&#x27;&quot; style=&quot;fill:var(--sla-bg)&quot;/&gt;&#x27;;
+    s+=&#x27;&lt;text x=&quot;&#x27;+((X(lo)+X(hi))/2)+&#x27;&quot; y=&quot;&#x27;+(y1+12)+&#x27;&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;relevant range&lt;/text&gt;&#x27;;
+    s+=&#x27;&lt;path d=&quot;M&#x27;+x0+&#x27; &#x27;+y1+&#x27;V&#x27;+y0+&#x27;H&#x27;+x1+&#x27;&quot; fill=&quot;none&quot; style=&quot;stroke:var(--ink2)&quot;/&gt;&#x27;;
+    for(var k=0;k&lt;=4;k++){var xv=k*2000;if(xv&lt;xmin)xv=xmin;s+=&#x27;&lt;text x=&quot;&#x27;+X(xv)+&#x27;&quot; y=&quot;&#x27;+(y0+15)+&#x27;&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot;&gt;&#x27;+fmt(xv)+&#x27;&lt;/text&gt;&#x27;}
+    s+=&#x27;&lt;text x=&quot;&#x27;+x1+&#x27;&quot; y=&quot;&#x27;+(y0+32)+&#x27;&quot; text-anchor=&quot;end&quot; class=&quot;sv-sm&quot;&gt;&#x27;+xl+&#x27;&lt;/text&gt;&#x27;;
+    s+=&#x27;&lt;text x=&quot;&#x27;+(x0-6)+&#x27;&quot; y=&quot;&#x27;+(y1+4)+&#x27;&quot; text-anchor=&quot;end&quot; class=&quot;sv-sm&quot;&gt;&#x27;+yl+&#x27;&lt;/text&gt;&#x27;;
+    s+=&#x27;&lt;text x=&quot;&#x27;+(x0-6)+&#x27;&quot; y=&quot;&#x27;+(y1+18)+&#x27;&quot; text-anchor=&quot;end&quot; class=&quot;sv-sm&quot;&gt;&#x27;+fmt(ymax)+&#x27;&lt;/text&gt;&#x27;;
+    return {s:s,X:X};
+  }
+  function lbl(x,y,t,c){return &#x27;&lt;text x=&quot;&#x27;+x+&#x27;&quot; y=&quot;&#x27;+y+&#x27;&quot; class=&quot;sv-sm&quot; style=&quot;fill:&#x27;+c+&#x27;;font-weight:600&quot;&gt;&#x27;+t+&#x27;&lt;/text&gt;&#x27;}
+  function cb(){
+    var F=+$(&#x27;sF&#x27;).value,v=+$(&#x27;sV&#x27;).value,x=+$(&#x27;sX&#x27;).value;
+    $(&#x27;oF&#x27;).textContent=usd(F);$(&#x27;oV&#x27;).textContent=usd(v,2);$(&#x27;oX&#x27;).textContent=fmt(x);
+    var ymax=Math.max(1000,F+v*8000)*1.08,Y=function(c){return y0-c/ymax*(y0-y1)};
+    var a=axes(8000,ymax,&#x27;units&#x27;,&#x27;total $&#x27;,2000,6000),X=a.X,s=a.s;
+    s+=&#x27;&lt;path d=&quot;M&#x27;+X(0)+&#x27; &#x27;+Y(F)+&#x27;L&#x27;+X(8000)+&#x27; &#x27;+Y(F)+&#x27;&quot; style=&quot;stroke:var(--brk)&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;6 4&quot;/&gt;&#x27;;
+    s+=&#x27;&lt;path d=&quot;M&#x27;+X(0)+&#x27; &#x27;+Y(0)+&#x27;L&#x27;+X(8000)+&#x27; &#x27;+Y(v*8000)+&#x27;&quot; style=&quot;stroke:var(--ocr)&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;2 3&quot;/&gt;&#x27;;
+    s+=&#x27;&lt;path d=&quot;M&#x27;+X(0)+&#x27; &#x27;+Y(F)+&#x27;L&#x27;+X(8000)+&#x27; &#x27;+Y(F+v*8000)+&#x27;&quot; style=&quot;stroke:var(--sla)&quot; stroke-width=&quot;3&quot;/&gt;&#x27;;
+    s+=&#x27;&lt;path d=&quot;M&#x27;+X(x)+&#x27; &#x27;+y1+&#x27;V&#x27;+y0+&#x27;&quot; style=&quot;stroke:var(--acc)&quot; stroke-width=&quot;1.2&quot;/&gt;&lt;circle cx=&quot;&#x27;+X(x)+&#x27;&quot; cy=&quot;&#x27;+Y(F+v*x)+&#x27;&quot; r=&quot;5&quot; style=&quot;fill:var(--acc)&quot;/&gt;&#x27;;
+    s+=lbl(X(8000)-40,Y(F)-6,&#x27;fixed&#x27;,&#x27;var(--brk)&#x27;)+lbl(X(8000)-60,Y(v*8000)+14,&#x27;variable&#x27;,&#x27;var(--ocr)&#x27;)+lbl(X(8000)-40,Y(F+v*8000)-8,&#x27;total&#x27;,&#x27;var(--sla)&#x27;);
+    $(&#x27;gTot&#x27;).innerHTML=s;
+    // per unità
+    var xm=500,ym=(F/xm+v)*1.08||1,Yu=function(c){return y0-Math.min(c,ym)/ym*(y0-y1)};
+    var b=axes(8000,ym,&#x27;units&#x27;,&#x27;$/unit&#x27;,2000,6000,xm),Xu=b.X,t=b.s,pf=&#x27;&#x27;,pt=&#x27;&#x27;;
+    for(var q=xm;q&lt;=8000;q+=125){pf+=(q===xm?&#x27;M&#x27;:&#x27;L&#x27;)+Xu(q).toFixed(1)+&#x27; &#x27;+Yu(F/q).toFixed(1);pt+=(q===xm?&#x27;M&#x27;:&#x27;L&#x27;)+Xu(q).toFixed(1)+&#x27; &#x27;+Yu(F/q+v).toFixed(1)}
+    t+=&#x27;&lt;path d=&quot;&#x27;+pf+&#x27;&quot; fill=&quot;none&quot; style=&quot;stroke:var(--brk)&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;6 4&quot;/&gt;&#x27;;
+    t+=&#x27;&lt;path d=&quot;M&#x27;+Xu(xm)+&#x27; &#x27;+Yu(v)+&#x27;L&#x27;+Xu(8000)+&#x27; &#x27;+Yu(v)+&#x27;&quot; style=&quot;stroke:var(--ocr)&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;2 3&quot;/&gt;&#x27;;
+    t+=&#x27;&lt;path d=&quot;&#x27;+pt+&#x27;&quot; fill=&quot;none&quot; style=&quot;stroke:var(--sla)&quot; stroke-width=&quot;3&quot;/&gt;&#x27;;
+    t+=&#x27;&lt;path d=&quot;M&#x27;+Xu(x)+&#x27; &#x27;+y1+&#x27;V&#x27;+y0+&#x27;&quot; style=&quot;stroke:var(--acc)&quot; stroke-width=&quot;1.2&quot;/&gt;&lt;circle cx=&quot;&#x27;+Xu(x)+&#x27;&quot; cy=&quot;&#x27;+Yu(F/x+v)+&#x27;&quot; r=&quot;5&quot; style=&quot;fill:var(--acc)&quot;/&gt;&#x27;;
+    t+=lbl(Xu(8000)-70,Yu(F/8000)-6,&#x27;fixed/unit&#x27;,&#x27;var(--brk)&#x27;)+lbl(Xu(8000)-82,Yu(v)+14,&#x27;variable/unit&#x27;,&#x27;var(--ocr)&#x27;);
+    $(&#x27;gUnit&#x27;).innerHTML=t;
+    $(&#x27;rV&#x27;).textContent=usd(v*x);$(&#x27;rT&#x27;).textContent=usd(F+v*x);$(&#x27;rFu&#x27;).textContent=usd(F/x,2);$(&#x27;rU&#x27;).textContent=usd(F/x+v,2);
+    $(&#x27;rW&#x27;).textContent=(x&lt;2000||x&gt;6000)?&#x27;Outside the relevant range: the assumptions (constant fixed costs, constant variable cost per unit) may no longer hold.&#x27;:&#x27;&#x27;;
+  }
+  [&#x27;sF&#x27;,&#x27;sV&#x27;,&#x27;sX&#x27;].forEach(function(i){$(i).addEventListener(&#x27;input&#x27;,cb)});cb();
+
+  // conto economico a cascata + indici
+  function ise(){
+    var R=+$(&#x27;iR&#x27;).value,C=+$(&#x27;iC&#x27;).value,S=+$(&#x27;iS&#x27;).value,I=+$(&#x27;iI&#x27;).value,tx=+$(&#x27;iTx&#x27;).value/100;
+    $(&#x27;oR&#x27;).textContent=usd(R);$(&#x27;oC&#x27;).textContent=usd(C);$(&#x27;oS&#x27;).textContent=usd(S);$(&#x27;oI&#x27;).textContent=usd(I);$(&#x27;oTx&#x27;).textContent=fmt(tx*100)+&#x27;%&#x27;;
+    var GM=R-C,OI=GM-S,EBT=OI-I,T=Math.max(0,EBT)*tx,NI=EBT-T;
+    var steps=[[&#x27;Revenues&#x27;,0,R,&#x27;r&#x27;],[&#x27;COGS&#x27;,GM,R,&#x27;c&#x27;],[&#x27;Gross margin&#x27;,0,GM,&#x27;r&#x27;],[&#x27;Selling &amp; admin&#x27;,OI,GM,&#x27;c&#x27;],[&#x27;Operating income&#x27;,0,OI,&#x27;r&#x27;],[&#x27;Interest&#x27;,EBT,OI,&#x27;c&#x27;],[&#x27;Pre-tax income&#x27;,0,EBT,&#x27;r&#x27;],[&#x27;Taxes&#x27;,NI,EBT,&#x27;c&#x27;],[&#x27;Net income&#x27;,0,NI,&#x27;r&#x27;]];
+    var lo=Math.min(0,OI,EBT,NI),hi=R,W=640,top=20,bot=230,Y=function(v){return bot-(v-lo)/(hi-lo||1)*(bot-top)};
+    var bw=W/steps.length,s=&#x27;&lt;path d=&quot;M0 &#x27;+Y(0)+&#x27;H&#x27;+W+&#x27;&quot; style=&quot;stroke:var(--ink2)&quot;/&gt;&#x27;;
+    steps.forEach(function(st,k){
+      var a=Math.min(st[1],st[2]),b=Math.max(st[1],st[2]),x=k*bw+8,res=st[3]===&#x27;r&#x27;,v=res?st[2]:st[1]-st[2];
+      var col=res?(st[2]&lt;0?&#x27;var(--no)&#x27;:(k===8?&#x27;var(--acc)&#x27;:&#x27;var(--brk)&#x27;)):&#x27;var(--ink2)&#x27;;
+      s+=&#x27;&lt;rect x=&quot;&#x27;+x+&#x27;&quot; y=&quot;&#x27;+Y(b)+&#x27;&quot; width=&quot;&#x27;+(bw-16)+&#x27;&quot; height=&quot;&#x27;+Math.max(1,Y(a)-Y(b))+&#x27;&quot; rx=&quot;3&quot; style=&quot;fill:&#x27;+col+&#x27;&quot; opacity=&quot;&#x27;+(res?1:.45)+&#x27;&quot;/&gt;&#x27;;
+      s+=&#x27;&lt;text x=&quot;&#x27;+(x+(bw-16)/2)+&#x27;&quot; y=&quot;&#x27;+(Y(b)-5)+&#x27;&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot; style=&quot;font-size:10px&quot;&gt;&#x27;+fmt(Math.round(v/1000))+&#x27;k&lt;/text&gt;&#x27;;
+      var nm=st[0].split(&#x27; &#x27;);s+=&#x27;&lt;text x=&quot;&#x27;+(x+(bw-16)/2)+&#x27;&quot; y=&quot;248&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot; style=&quot;font-size:10px&quot;&gt;&#x27;+nm[0]+&#x27;&lt;/text&gt;&#x27;;
+      if(nm[1])s+=&#x27;&lt;text x=&quot;&#x27;+(x+(bw-16)/2)+&#x27;&quot; y=&quot;261&quot; text-anchor=&quot;middle&quot; class=&quot;sv-sm&quot; style=&quot;font-size:10px&quot;&gt;&#x27;+nm.slice(1).join(&#x27; &#x27;)+&#x27;&lt;/text&gt;&#x27;;
+    });
+    $(&#x27;gWf&#x27;).innerHTML=s;
+    var N=+$(&#x27;iN&#x27;).value,P=+$(&#x27;iP&#x27;).value,E0=+$(&#x27;iE0&#x27;).value,E1=+$(&#x27;iE1&#x27;).value,EPS=NI/N;
+    $(&#x27;oN&#x27;).textContent=fmt(N);$(&#x27;oP&#x27;).textContent=usd(P,2);$(&#x27;oE0&#x27;).textContent=usd(E0);$(&#x27;oE1&#x27;).textContent=usd(E1);
+    $(&#x27;rNI&#x27;).textContent=usd(NI);$(&#x27;rEPS&#x27;).textContent=usd(EPS,2);
+    $(&#x27;rPE&#x27;).textContent=EPS&gt;0?fmt(P/EPS,1):&#x27;n/m&#x27;;
+    $(&#x27;rROE&#x27;).textContent=fmt(NI/((E0+E1)/2)*100,1)+&#x27;%&#x27;;
+    $(&#x27;rPEnote&#x27;).textContent=EPS&gt;0?&#x27;The market pays &#x27;+usd(P/EPS,1)+&#x27; for every $1 of earnings per share. ROE: net income ÷ average equity (&#x27;+usd((E0+E1)/2)+&#x27;).&#x27;:&#x27;With negative earnings, the P/E ratio is not meaningful.&#x27;;
+  }
+  [&#x27;iR&#x27;,&#x27;iC&#x27;,&#x27;iS&#x27;,&#x27;iI&#x27;,&#x27;iTx&#x27;,&#x27;iN&#x27;,&#x27;iP&#x27;,&#x27;iE0&#x27;,&#x27;iE1&#x27;].forEach(function(i){$(i).addEventListener(&#x27;input&#x27;,ise)});ise();
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe></body></html>

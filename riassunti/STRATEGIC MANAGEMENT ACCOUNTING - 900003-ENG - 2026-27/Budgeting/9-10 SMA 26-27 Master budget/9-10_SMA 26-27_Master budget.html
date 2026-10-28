@@ -1,0 +1,1002 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Riassunto · 9-10_SMA 26-27_Master budget.pdf</title><link rel="icon" href="data:,">
+<style>html,body{margin:0;height:100%}body{display:flex;flex-direction:column}iframe{flex:1;border:0;width:100%}</style>
+</head><body><nav style="font:14px/1.4 system-ui,sans-serif;padding:6px 12px;text-align:right"><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Budgeting/9-10%20SMA%2026-27%20Master%20budget/9-10_SMA%2026-27_Master%20budget.en.html" style="color:inherit;margin-right:.8em;">English</a><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Budgeting/9-10%20SMA%2026-27%20Master%20budget/9-10_SMA%2026-27_Master%20budget.html" style="color:inherit;margin-right:.8em;font-weight:700">Italiano</a></nav><iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" title="Riassunto · 9-10_SMA 26-27_Master budget.pdf"
+srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;it&quot;&gt;
+&lt;head&gt;&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27;; style-src &#x27;unsafe-inline&#x27;; font-src &#x27;self&#x27;; img-src data:; form-action &#x27;none&#x27;; base-uri &#x27;none&#x27;&quot;&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Master Budgeting — canvas di studio&lt;/title&gt;
+&lt;style&gt;
+@font-face{font-family:&quot;Newsreader&quot;;src:url(&quot;/static/fonts/newsreader-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:&quot;IBM Plex Sans&quot;;src:url(&quot;/static/fonts/ibm-plex-sans-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:100 700;font-style:normal;font-display:swap}
+:root{
+  --paper:oklch(97% 0.012 80);--ink:oklch(21% 0.014 60);--soft:oklch(42% 0.014 60);
+  --rule:oklch(86% 0.014 75);--accent:oklch(50% 0.15 35);--accent-bg:oklch(93% 0.035 35);
+  --card:oklch(99% 0.006 80);--L:52%;--C:0.09;--Lbg:94.5%;--Cbg:0.03;
+  --serif:&quot;Newsreader&quot;,Georgia,&quot;Times New Roman&quot;,serif;--sans:&quot;IBM Plex Sans&quot;,system-ui,-apple-system,&quot;Segoe UI&quot;,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(19% 0.012 60);--ink:oklch(92% 0.012 80);--soft:oklch(74% 0.012 75);
+  --rule:oklch(34% 0.014 75);--accent:oklch(72% 0.13 35);--accent-bg:oklch(28% 0.05 35);
+  --card:oklch(23% 0.012 60);--L:74%;--C:0.09;--Lbg:26%;--Cbg:0.035;
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.62 var(--sans);-webkit-text-size-adjust:100%}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.4rem,7vw,4.6rem);font-weight:300;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,4.2vw,2.5rem);font-weight:400}
+h3{font-size:1.3rem;font-weight:600;margin-top:1.6em}
+p{margin:.6em 0}
+a{color:var(--accent)}
+em.t,.t{font-style:normal;font-weight:600;color:var(--c,var(--accent))}
+small,.small{font-size:.86rem;color:var(--soft)}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.hero{padding:64px 0 28px;border-bottom:1px solid var(--rule)}
+.kicker{font:600 .78rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead{font:400 1.25rem/1.5 var(--serif);color:var(--soft);max-width:44em}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px;margin:22px 0 0}
+nav.toc a{font-size:.82rem;text-decoration:none;color:var(--ink);border:1px solid var(--rule);border-radius:99px;padding:3px 11px;background:var(--card)}
+nav.toc a:hover{border-color:var(--accent);color:var(--accent)}
+.map{margin:26px 0 8px;background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:10px}
+svg{max-width:100%;height:auto;display:block}
+svg text{font-family:var(--sans);fill:var(--ink)}
+.gnode{cursor:pointer}
+.gnode rect{stroke-width:1.4;transition:filter .15s}
+.gnode:hover rect,.gnode:focus rect,.gnode.on rect{filter:brightness(.93);stroke-width:2.6}
+.gedge{stroke:var(--soft);stroke-width:1.2;fill:none;opacity:.55}
+.gedge.on{stroke:var(--accent);opacity:1;stroke-width:2.2}
+section.part{--c:oklch(var(--L) var(--C) var(--h));--bg:oklch(var(--Lbg) var(--Cbg) var(--h));padding:56px 0 40px;border-bottom:1px solid var(--rule)}
+section.part&gt;.wrap&gt;h2{color:var(--c)}
+.num{display:inline-block;font:600 .8rem/1 var(--sans);color:var(--paper);background:var(--c);border-radius:99px;padding:5px 10px;margin-bottom:12px;letter-spacing:.06em}
+.src{font-size:.8rem;color:var(--soft);border-left:3px solid var(--c);padding-left:8px;margin:4px 0 18px}
+.def{background:var(--bg);border-left:4px solid var(--c);border-radius:0 10px 10px 0;padding:12px 16px;margin:14px 0}
+.def b:first-child{font-family:var(--serif);font-size:1.08rem}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:14px 0}
+.box{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px 16px}
+.box h4{font-size:1.1rem;margin-bottom:.3em;color:var(--c)}
+.formula{font:500 1rem/1.5 var(--sans);background:var(--card);border:1px dashed var(--c);border-radius:10px;padding:12px 16px;margin:14px 0;overflow-x:auto}
+.formula .eq{white-space:nowrap}
+.note{background:var(--accent-bg);border-radius:10px;padding:10px 14px;margin:14px 0;font-size:.95rem}
+.note.ext{background:transparent;border:1px solid var(--rule);border-left:4px solid var(--accent)}
+.badge{display:inline-block;font:600 .68rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:4px 7px;border-radius:5px;background:var(--accent);color:var(--paper);vertical-align:middle;margin-right:6px}
+.badge.mine{background:var(--soft)}
+details.card{background:var(--card);border:1px solid var(--rule);border-radius:12px;margin:10px 0;padding:0 16px}
+details.card&gt;summary{cursor:pointer;padding:12px 0;font-weight:600;list-style:none}
+details.card&gt;summary::before{content:&quot;+&quot;;display:inline-block;width:1.2em;color:var(--c,var(--accent));font-weight:700}
+details.card[open]&gt;summary::before{content:&quot;–&quot;}
+details.card&gt;div{padding:0 0 14px}
+.tabs{margin:16px 0}
+.tabs [role=tablist]{display:flex;flex-wrap:wrap;gap:4px;border-bottom:1px solid var(--rule)}
+.tabs button[role=tab]{font:600 .92rem var(--sans);background:none;border:0;border-bottom:3px solid transparent;padding:8px 14px;color:var(--soft);cursor:pointer}
+.tabs button[aria-selected=true]{color:var(--c,var(--accent));border-color:var(--c,var(--accent))}
+.tabs [role=tabpanel]{padding:12px 2px}
+.tabs [hidden]{display:none}
+button.btn{font:600 .88rem var(--sans);background:var(--c,var(--accent));color:var(--paper);border:0;border-radius:8px;padding:8px 14px;cursor:pointer;margin:4px 6px 4px 0}
+button.btn.ghost{background:transparent;color:var(--c,var(--accent));border:1px solid var(--c,var(--accent))}
+button.btn:disabled{opacity:.4;cursor:default}
+.tblwrap{overflow-x:auto;margin:12px 0;border:1px solid var(--rule);border-radius:10px;background:var(--card)}
+table.sched{border-collapse:collapse;width:100%;min-width:560px;font-size:.92rem;font-variant-numeric:tabular-nums}
+table.sched th{font:600 .8rem var(--sans);text-transform:uppercase;letter-spacing:.06em;color:var(--soft);text-align:right;padding:8px 10px;border-bottom:2px solid var(--rule)}
+table.sched th:first-child{text-align:left}
+table.sched td{padding:5px 10px;text-align:right;border-bottom:1px solid color-mix(in oklch,var(--rule) 60%,transparent)}
+table.sched td:first-child{text-align:left}
+table.sched td:last-child,table.sched th:last-child{background:color-mix(in oklch,var(--bg,var(--accent-bg)) 70%,transparent)}
+table.sched tr.tot td{font-weight:700;border-top:1.5px solid var(--ink)}
+table.sched tr.hl td{color:var(--c);font-weight:600}
+table.sched tr.sub td:first-child{padding-left:26px}
+table.sched tr.head td{font-weight:600;color:var(--soft);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+table.sched tr.hide{display:none}
+table.sched tr.fresh td{animation:fresh 1.2s}
+@keyframes fresh{from{background:var(--accent-bg)}to{background:transparent}}
+.stepbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:6px}
+.stepmsg{font-size:.92rem;color:var(--soft);flex:1 1 260px}
+.quiz{margin-top:30px;background:var(--bg);border-radius:14px;padding:16px 18px}
+.quiz h3{margin-top:0;color:var(--c)}
+.mcq{margin:12px 0 18px}
+.mcq p{font-weight:600;margin-bottom:6px}
+.mcq button{display:block;width:100%;text-align:left;font:400 .95rem var(--sans);background:var(--card);color:var(--ink);border:1px solid var(--rule);border-radius:8px;padding:7px 12px;margin:4px 0;cursor:pointer}
+.mcq button.ok{border-color:oklch(55% 0.12 150);background:oklch(55% 0.12 150 / .16)}
+.mcq button.ko{border-color:oklch(55% 0.15 25);background:oklch(55% 0.15 25 / .14)}
+.mcq .why{font-size:.92rem;margin-top:6px;display:none}
+.mcq.done .why{display:block}
+.quiz details{background:var(--card);border-radius:8px;padding:8px 12px;margin:8px 0}
+.quiz summary{cursor:pointer;font-weight:600}
+.quiz details&gt;div{padding-top:6px;font-size:.95rem}
+.ctrl{display:grid;grid-template-columns:minmax(150px,1fr) 2fr auto;gap:8px 12px;align-items:center;margin:8px 0}
+.ctrl label{font-size:.9rem}
+.ctrl output{font:600 .92rem var(--sans);min-width:5.5em;text-align:right;font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--c,var(--accent))}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.kpi{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:10px 12px}
+.kpi b{display:block;font:500 1.45rem var(--serif)}
+.kpi span{font-size:.78rem;color:var(--soft);text-transform:uppercase;letter-spacing:.06em}
+.warn{color:oklch(55% 0.17 25);font-weight:600}
+#labBanner{position:sticky;top:0;z-index:5;background:var(--accent);color:var(--paper);text-align:center;font-size:.88rem;padding:6px 10px;display:none}
+#labBanner button{font:600 .82rem var(--sans);margin-left:10px;border:1px solid var(--paper);background:transparent;color:var(--paper);border-radius:6px;padding:2px 8px;cursor:pointer}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;margin:12px 0;min-height:4.5em}
+.qlist{counter-reset:q;list-style:none;padding:0;margin:12px 0}
+.qlist li{counter-increment:q;padding:8px 10px 8px 46px;position:relative;border-bottom:1px solid var(--rule);cursor:pointer}
+.qlist li::before{content:counter(q);position:absolute;left:8px;top:8px;width:26px;height:26px;border-radius:50%;background:var(--bg);color:var(--c);font-weight:700;text-align:center;line-height:26px;font-size:.85rem}
+.qlist li .ans{display:none;font-size:.9rem;color:var(--c);font-weight:600}
+.qlist li.open .ans{display:block}
+.refs{list-style:none;padding:0}
+.refs li{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;margin:12px 0}
+.refs h4{margin:.2em 0 .3em;font-size:1.15rem}
+footer{padding:36px 0 60px;text-align:center;color:var(--soft);font-size:.9rem}
+@media (max-width:600px){body{font-size:16px}.ctrl{grid-template-columns:1fr auto}.ctrl input{grid-column:1/-1;grid-row:2}header.hero{padding-top:40px}}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;labBanner&quot;&gt;Stai vedendo numeri modificati dal Laboratorio: le tabelle non coincidono più con le slide. &lt;button type=&quot;button&quot; id=&quot;bannerReset&quot;&gt;Ripristina i dati delle slide&lt;/button&gt;&lt;/div&gt;
+
+&lt;header class=&quot;hero&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;kicker&quot;&gt;SMA 26-27 · Budgeting · Lezioni 9-10&lt;/div&gt;
+  &lt;h1&gt;Master Budgeting&lt;/h1&gt;
+  &lt;p class=&quot;lead&quot;&gt;Perché un&#x27;impresa fa il budget, come lo costruisce e come le dieci schedule del &lt;i&gt;master budget&lt;/i&gt; si incastrano l&#x27;una nell&#x27;altra, dal sales budget fino al bilancio previsionale. Tutto seguendo l&#x27;esempio della Royal Company.&lt;/p&gt;
+  &lt;p class=&quot;small&quot;&gt;Fonte principale: &lt;i&gt;9-10_SMA 26-27_Master budget.pdf&lt;/i&gt; (87 slide). I numeri delle slide (es. «8-34») sono indicati come &lt;b&gt;[8-34]&lt;/b&gt;.&lt;/p&gt;
+  &lt;nav class=&quot;toc&quot; aria-label=&quot;Indice&quot;&gt;
+   &lt;a href=&quot;#definizione&quot;&gt;1 · Cos&#x27;è un budget&lt;/a&gt;&lt;a href=&quot;#perche&quot;&gt;2 · Perché&lt;/a&gt;&lt;a href=&quot;#come&quot;&gt;3 · Come&lt;/a&gt;&lt;a href=&quot;#master&quot;&gt;4 · Il master budget&lt;/a&gt;&lt;a href=&quot;#sales&quot;&gt;5 · Sales&lt;/a&gt;&lt;a href=&quot;#production&quot;&gt;6 · Production&lt;/a&gt;&lt;a href=&quot;#materials&quot;&gt;7 · Materials&lt;/a&gt;&lt;a href=&quot;#labor&quot;&gt;8 · Labor&lt;/a&gt;&lt;a href=&quot;#overhead&quot;&gt;9 · Overhead&lt;/a&gt;&lt;a href=&quot;#fginv&quot;&gt;10 · Finished goods&lt;/a&gt;&lt;a href=&quot;#sa&quot;&gt;11 · S&amp;amp;A&lt;/a&gt;&lt;a href=&quot;#cash&quot;&gt;12 · Cash budget&lt;/a&gt;&lt;a href=&quot;#statements&quot;&gt;13 · Income statement e balance sheet&lt;/a&gt;&lt;a href=&quot;#lab&quot;&gt;14 · Laboratorio&lt;/a&gt;&lt;a href=&quot;#approfondire&quot;&gt;Per approfondire&lt;/a&gt;
+  &lt;/nav&gt;
+  &lt;div class=&quot;map&quot;&gt;
+   &lt;svg id=&quot;cmap&quot; viewBox=&quot;0 0 960 420&quot; role=&quot;img&quot; aria-label=&quot;Mappa concettuale della lezione: clicca un nodo per andare alla sezione&quot;&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;small&quot;&gt;Mappa concettuale: clicca un riquadro per saltare alla sezione. A sinistra il &lt;b&gt;perché&lt;/b&gt; e il &lt;b&gt;come&lt;/b&gt; del budgeting; al centro e a destra la catena delle schedule del master budget, che confluiscono nel cash budget e nei prospetti finali.&lt;/p&gt;
+ &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+&lt;!-- 1 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;definizione&quot; style=&quot;--h:150&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 1 · LEARNING OBJECTIVE 1&lt;/span&gt;
+  &lt;h2&gt;Cos&#x27;è un budget e su quale periodo&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-2] – [8-4]&lt;/p&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Budget&lt;/b&gt;: un &lt;b&gt;detailed quantitative plan&lt;/b&gt; (piano dettagliato e quantitativo) per acquisire e usare risorse finanziarie e di altro tipo in un periodo futuro specificato. [8-3]&lt;/div&gt;
+  &lt;p&gt;Le parole chiave sono tre. &lt;b&gt;Quantitativo&lt;/b&gt;: il budget parla in unità, ore, chili e dollari, non in intenzioni. &lt;b&gt;Dettagliato&lt;/b&gt;: scende fino al mese e alla singola voce di costo. &lt;b&gt;Futuro&lt;/b&gt;: riguarda il periodo che sta per cominciare, mentre la contabilità generale registra quello già trascorso.&lt;/p&gt;
+  &lt;div class=&quot;grid2&quot;&gt;
+   &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;Operating budget annuale&lt;/h4&gt;&lt;p&gt;Di solito copre &lt;b&gt;un anno&lt;/b&gt; e coincide con il &lt;span class=&quot;t&quot;&gt;fiscal year&lt;/span&gt; (l&#x27;esercizio contabile dell&#x27;impresa). Molte imprese lo dividono in &lt;b&gt;quattro trimestri&lt;/b&gt; e i trimestri in mesi. [8-3, 8-4]&lt;/p&gt;&lt;/div&gt;
+   &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;Continuous / perpetual budget&lt;/h4&gt;&lt;p&gt;Un &lt;span class=&quot;t&quot;&gt;continuous budget&lt;/span&gt; (o &lt;i&gt;perpetual&lt;/i&gt;, o &lt;i&gt;rolling budget&lt;/i&gt;) è un budget a 12 mesi che &lt;b&gt;scorre in avanti&lt;/b&gt;: chiuso un mese (o un trimestre), se ne aggiunge uno nuovo in fondo. L&#x27;orizzonte resta così sempre di un anno. [8-3, 8-4]&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;h3&gt;Prova: fai scorrere il rolling budget&lt;/h3&gt;
+  &lt;p&gt;Ogni clic chiude il mese più vecchio e ne aggiunge uno nuovo alla fine: la finestra resta sempre di 12 mesi.&lt;/p&gt;
+  &lt;svg id=&quot;rolling&quot; viewBox=&quot;0 0 900 150&quot; role=&quot;img&quot; aria-label=&quot;Finestra di 12 mesi che scorre&quot;&gt;&lt;/svg&gt;
+  &lt;div class=&quot;stepbar&quot;&gt;&lt;button class=&quot;btn&quot; type=&quot;button&quot; id=&quot;rollBtn&quot;&gt;Chiudi un mese ▸&lt;/button&gt;&lt;button class=&quot;btn ghost&quot; type=&quot;button&quot; id=&quot;rollReset&quot;&gt;Ricomincia&lt;/button&gt;&lt;span class=&quot;stepmsg&quot; id=&quot;rollMsg&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;p class=&quot;small&quot;&gt;Perché conviene: il manager guarda sempre un anno avanti invece di un orizzonte che si accorcia man mano che l&#x27;esercizio va avanti (a novembre, con un budget annuale classico, restano solo due mesi pianificati).&lt;/p&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;div class=&quot;mcq&quot; data-ok=&quot;b&quot;&gt;&lt;p&gt;Un budget è soprattutto…&lt;/p&gt;
+    &lt;button data-k=&quot;a&quot;&gt;a. un elenco di obiettivi strategici qualitativi&lt;/button&gt;
+    &lt;button data-k=&quot;b&quot;&gt;b. un piano quantitativo dettagliato per acquisire e usare risorse in un periodo futuro&lt;/button&gt;
+    &lt;button data-k=&quot;c&quot;&gt;c. il resoconto dei costi sostenuti nell&#x27;esercizio precedente&lt;/button&gt;
+    &lt;div class=&quot;why&quot;&gt;È la definizione di [8-3]. Il punto (c) descrive la contabilità a consuntivo, non il budget.&lt;/div&gt;&lt;/div&gt;
+   &lt;details&gt;&lt;summary&gt;Siamo a fine marzo e c&#x27;è un continuous budget mensile. Quali mesi copre dopo la chiusura di marzo?&lt;/summary&gt;&lt;div&gt;Da aprile a marzo dell&#x27;anno successivo: marzo esce dalla finestra e si aggiunge il nuovo marzo, in modo da avere sempre 12 mesi davanti.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 2 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;perche&quot; style=&quot;--h:85&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 2&lt;/span&gt;
+  &lt;h2&gt;Perché le organizzazioni fanno il budget&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-5] – [8-8]&lt;/p&gt;
+  &lt;p&gt;Il budget serve a due scopi distinti ma collegati, che le slide chiamano &lt;b&gt;planning&lt;/b&gt; e &lt;b&gt;control&lt;/b&gt; [8-8].&lt;/p&gt;
+  &lt;div class=&quot;tabs&quot; data-tabs&gt;
+   &lt;div role=&quot;tablist&quot;&gt;&lt;button role=&quot;tab&quot; type=&quot;button&quot;&gt;Planning perspective&lt;/button&gt;&lt;button role=&quot;tab&quot; type=&quot;button&quot;&gt;Control perspective&lt;/button&gt;&lt;button role=&quot;tab&quot; type=&quot;button&quot;&gt;Come si legano&lt;/button&gt;&lt;/div&gt;
+   &lt;div role=&quot;tabpanel&quot;&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Planning&lt;/b&gt;: sviluppare obiettivi e preparare i vari budget per raggiungerli. [8-8]&lt;/div&gt;
+    &lt;p&gt;Clicca un beneficio per leggerne il significato. [8-6]&lt;/p&gt;
+    &lt;svg id=&quot;benefits&quot; viewBox=&quot;0 0 640 300&quot; role=&quot;img&quot; aria-label=&quot;Benefici del budget dal punto di vista della pianificazione&quot;&gt;&lt;/svg&gt;
+    &lt;div class=&quot;panel&quot; id=&quot;benefitTxt&quot;&gt;Scegli un riquadro.&lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div role=&quot;tabpanel&quot; hidden&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Control&lt;/b&gt;: i passi che il management compie per aumentare la probabilità che gli obiettivi fissati in fase di planning siano raggiunti e che tutte le parti dell&#x27;organizzazione lavorino insieme verso quel traguardo. [8-8]&lt;/div&gt;
+    &lt;p&gt;In pratica si &lt;b&gt;confronta il budget con i risultati effettivi&lt;/b&gt; (actual results) per [8-7]:&lt;/p&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+     &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;Improve&lt;/h4&gt;&lt;p&gt;migliorare &lt;b&gt;efficiency&lt;/b&gt; (fare le cose usando meno risorse) ed &lt;b&gt;effectiveness&lt;/b&gt; (raggiungere davvero l&#x27;obiettivo) delle operazioni.&lt;/p&gt;&lt;/div&gt;
+     &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;Evaluate &amp;amp; reward&lt;/h4&gt;&lt;p&gt;valutare e premiare i dipendenti in base allo scostamento fra risultato e budget. Questo uso apre la strada al &lt;i&gt;budgetary slack&lt;/i&gt; (vedi parte 3).&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div role=&quot;tabpanel&quot; hidden&gt;
+    &lt;svg viewBox=&quot;0 0 640 210&quot; role=&quot;img&quot; aria-label=&quot;Ciclo pianificazione e controllo&quot;&gt;
+     &lt;defs&gt;&lt;marker id=&quot;ah&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto-start-reverse&quot;&gt;&lt;path d=&quot;M0,0L10,5L0,10z&quot; fill=&quot;currentColor&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+     &lt;g style=&quot;color:var(--c)&quot;&gt;
+      &lt;rect x=&quot;30&quot; y=&quot;70&quot; width=&quot;150&quot; height=&quot;60&quot; rx=&quot;10&quot; style=&quot;fill:var(--bg);stroke:var(--c)&quot;/&gt;&lt;text x=&quot;105&quot; y=&quot;97&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Planning&lt;/text&gt;&lt;text x=&quot;105&quot; y=&quot;116&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot;&gt;obiettivi + budget&lt;/text&gt;
+      &lt;rect x=&quot;245&quot; y=&quot;70&quot; width=&quot;150&quot; height=&quot;60&quot; rx=&quot;10&quot; style=&quot;fill:var(--card);stroke:var(--rule)&quot;/&gt;&lt;text x=&quot;320&quot; y=&quot;97&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Esecuzione&lt;/text&gt;&lt;text x=&quot;320&quot; y=&quot;116&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot;&gt;risultati effettivi&lt;/text&gt;
+      &lt;rect x=&quot;460&quot; y=&quot;70&quot; width=&quot;150&quot; height=&quot;60&quot; rx=&quot;10&quot; style=&quot;fill:var(--bg);stroke:var(--c)&quot;/&gt;&lt;text x=&quot;535&quot; y=&quot;97&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Control&lt;/text&gt;&lt;text x=&quot;535&quot; y=&quot;116&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot;&gt;budget vs actual&lt;/text&gt;
+      &lt;path d=&quot;M182 100H240&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#ah)&quot;/&gt;&lt;path d=&quot;M397 100H455&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#ah)&quot;/&gt;
+      &lt;path d=&quot;M535 133C535 190 105 190 105 136&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;5 4&quot; marker-end=&quot;url(#ah)&quot;/&gt;
+      &lt;text x=&quot;320&quot; y=&quot;200&quot; text-anchor=&quot;middle&quot; font-size=&quot;12.5&quot;&gt;feedback: il piano si corregge quando cambiano le circostanze&lt;/text&gt;
+     &lt;/g&gt;
+    &lt;/svg&gt;
+    &lt;p&gt;Lo dice il riquadro di [8-8]: il controllo consiste nel «raccogliere feedback per assicurarsi che il piano sia eseguito correttamente e modificarlo quando le circostanze cambiano». Senza planning non c&#x27;è un metro di paragone; senza control il piano resta sulla carta.&lt;/p&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;div class=&quot;mcq&quot; data-ok=&quot;c&quot;&gt;&lt;p&gt;Confrontare il budget con i risultati effettivi per premiare un responsabile di reparto rientra nella prospettiva…&lt;/p&gt;
+    &lt;button data-k=&quot;a&quot;&gt;a. di planning&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. di coordinamento&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. di control&lt;/button&gt;
+    &lt;div class=&quot;why&quot;&gt;[8-7]: dal punto di vista del controllo si confronta budget e actual per migliorare le operazioni e per &lt;i&gt;evaluate and reward employees&lt;/i&gt;.&lt;/div&gt;&lt;/div&gt;
+   &lt;details&gt;&lt;summary&gt;Elenca i sei benefici di planning visti a lezione.&lt;/summary&gt;&lt;div&gt;Definire goals e objectives; pensare e pianificare il futuro; allocare le risorse; scoprire potenziali bottlenecks (colli di bottiglia); coordinare le attività; comunicare i piani. [8-6]&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 3 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;come&quot; style=&quot;--h:250&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 3&lt;/span&gt;
+  &lt;h2&gt;Come si crea un budget: top-down o self-imposed&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-9] – [8-14]&lt;/p&gt;
+  &lt;p&gt;Nella pratica le imprese combinano due approcci [8-9]: il &lt;span class=&quot;t&quot;&gt;top-down budgeting&lt;/span&gt; (dall&#x27;alto verso il basso) e il &lt;span class=&quot;t&quot;&gt;self-imposed budget&lt;/span&gt;, detto anche &lt;span class=&quot;t&quot;&gt;participative budget&lt;/span&gt; (budget partecipativo).&lt;/p&gt;
+  &lt;div class=&quot;tabs&quot; data-tabs&gt;
+   &lt;div role=&quot;tablist&quot;&gt;&lt;button role=&quot;tab&quot; type=&quot;button&quot;&gt;Top-down&lt;/button&gt;&lt;button role=&quot;tab&quot; type=&quot;button&quot;&gt;Self-imposed&lt;/button&gt;&lt;button role=&quot;tab&quot; type=&quot;button&quot;&gt;Confronto&lt;/button&gt;&lt;/div&gt;
+   &lt;div role=&quot;tabpanel&quot;&gt;
+    &lt;svg viewBox=&quot;0 0 640 200&quot; role=&quot;img&quot; aria-label=&quot;Budget top-down: gli obiettivi scendono dal vertice&quot;&gt;
+     &lt;g id=&quot;orgDown&quot;&gt;&lt;/g&gt;
+    &lt;/svg&gt;
+    &lt;p&gt;Il top management avvia il processo fissando i &lt;b&gt;profit targets&lt;/b&gt;; i manager di livello inferiore devono preparare budget che li rispettino. [8-10]&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Problemi&lt;/b&gt; [8-10]:&lt;/p&gt;
+    &lt;ul&gt;&lt;li&gt;spesso &lt;b&gt;demotiva&lt;/b&gt; i manager di livello inferiore, perché ignora le loro conoscenze e opinioni;&lt;/li&gt;
+    &lt;li&gt;gli obiettivi possono essere &lt;b&gt;troppo alti&lt;/b&gt;, e allora generano risentimento invece di cooperazione, oppure, senza che nessuno se ne accorga, &lt;b&gt;troppo bassi&lt;/b&gt;, e allora sono inefficaci.&lt;/li&gt;&lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div role=&quot;tabpanel&quot; hidden&gt;
+    &lt;svg viewBox=&quot;0 0 640 200&quot; role=&quot;img&quot; aria-label=&quot;Budget self-imposed: le stime salgono dai supervisori al vertice&quot;&gt;&lt;g id=&quot;orgUp&quot;&gt;&lt;/g&gt;&lt;/svg&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Self-imposed (participative) budget&lt;/b&gt;: budget preparato con la piena cooperazione e partecipazione dei manager di tutti i livelli. [8-9]&lt;/div&gt;
+    &lt;p&gt;Le stime salgono dai supervisor al middle management e poi al top management [8-11]. Lavorando insieme, i manager tendono a fissare obiettivi &lt;b&gt;sfidanti ma raggiungibili&lt;/b&gt;, che rafforzano fiducia e impegno verso il budget.&lt;/p&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+     &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;Vantaggi [8-12]&lt;/h4&gt;&lt;ol&gt;&lt;li&gt;&lt;b&gt;Respect&lt;/b&gt;: valorizza le opinioni dei manager di livello inferiore.&lt;/li&gt;&lt;li&gt;&lt;b&gt;More accurate&lt;/b&gt;: chi lavora in prima linea stima spesso meglio del vertice.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Motivation&lt;/b&gt;: si è più motivati a perseguire obiettivi che si è contribuito a fissare.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Ownership&lt;/b&gt;: il manager si sente proprietario del budget e risponde degli scostamenti.&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;
+     &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;Limiti [8-13]&lt;/h4&gt;&lt;ol&gt;&lt;li&gt;Senza la visione strategica del vertice, le stime dal basso possono essere &lt;b&gt;subottimali&lt;/b&gt;.&lt;/li&gt;&lt;li&gt;Se il budget serve anche a premiare, i manager possono creare troppo &lt;span class=&quot;t&quot;&gt;budgetary slack&lt;/span&gt;.&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div role=&quot;tabpanel&quot; hidden&gt;
+    &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; style=&quot;min-width:480px&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Aspetto&lt;/th&gt;&lt;th style=&quot;text-align:left&quot;&gt;Top-down&lt;/th&gt;&lt;th style=&quot;text-align:left&quot;&gt;Self-imposed&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+     &lt;tr&gt;&lt;td&gt;Chi parte&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Top management (profit targets)&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;Manager di tutti i livelli&lt;/td&gt;&lt;/tr&gt;
+     &lt;tr&gt;&lt;td&gt;Direzione&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;dall&#x27;alto in basso&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;dal basso in alto, con revisione dall&#x27;alto&lt;/td&gt;&lt;/tr&gt;
+     &lt;tr&gt;&lt;td&gt;Accuratezza&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;rischio di target troppo alti o troppo bassi&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;stime spesso più accurate&lt;/td&gt;&lt;/tr&gt;
+     &lt;tr&gt;&lt;td&gt;Motivazione&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;rischio di demotivazione e risentimento&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;più alta, con ownership&lt;/td&gt;&lt;/tr&gt;
+     &lt;tr&gt;&lt;td&gt;Rischio tipico&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;si ignora la conoscenza operativa&lt;/td&gt;&lt;td style=&quot;text-align:left&quot;&gt;slack, visione poco strategica&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+    &lt;p&gt;La soluzione delle slide è &lt;b&gt;mista&lt;/b&gt; [8-14]: il vertice fissa linee guida generali (profitti o vendite complessivi), i livelli inferiori costruiscono il budget dentro quei limiti e il vertice lo rivede per evitare lo slack.&lt;/p&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Budgetary slack: cos&#x27;è e perché si combatte&lt;/h3&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Budgetary slack&lt;/b&gt; (riserva o «cuscinetto» di budget): margine introdotto di proposito nelle stime, per esempio sottostimando i ricavi o sovrastimando i costi, così che i risultati effettivi superino il piano con facilità. [8-13, 8-14]&lt;/div&gt;
+  &lt;p&gt;Per questo i self-imposed budget vanno &lt;b&gt;rivisti dai livelli superiori&lt;/b&gt; [8-14]. L&#x27;obiettivo è un target &lt;i&gt;challenging but highly achievable&lt;/i&gt;. Lo schema qui sotto (illustrativo, non preso dalle slide) mostra le tre zone descritte in [8-10] e [8-14].&lt;/p&gt;
+  &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;slackR&quot;&gt;Target proposto rispetto alla stima realistica&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;slackR&quot; min=&quot;-30&quot; max=&quot;30&quot; value=&quot;0&quot; step=&quot;1&quot;&gt;&lt;output id=&quot;slackO&quot;&gt;0%&lt;/output&gt;&lt;/div&gt;
+  &lt;svg id=&quot;slackSvg&quot; viewBox=&quot;0 0 640 170&quot; role=&quot;img&quot; aria-label=&quot;Zone del target: troppo basso, sfidante ma raggiungibile, troppo alto&quot;&gt;&lt;/svg&gt;
+  &lt;div class=&quot;panel&quot; id=&quot;slackTxt&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;div class=&quot;mcq&quot; data-ok=&quot;a&quot;&gt;&lt;p&gt;Un responsabile commerciale sa di poter vendere 12.000 unità ma mette a budget 10.000, perché il suo bonus dipende dal superamento del budget. Che cosa sta facendo?&lt;/p&gt;
+    &lt;button data-k=&quot;a&quot;&gt;a. crea budgetary slack&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. applica il top-down budgeting&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. usa un continuous budget&lt;/button&gt;
+    &lt;div class=&quot;why&quot;&gt;Sottostimare i ricavi per battere il piano è proprio lo slack descritto in [8-13]. Il rimedio è la revisione da parte dei livelli superiori [8-14].&lt;/div&gt;&lt;/div&gt;
+   &lt;details&gt;&lt;summary&gt;Perché le stime dei manager in prima linea sono spesso più accurate di quelle del vertice?&lt;/summary&gt;&lt;div&gt;Perché conoscono da vicino clienti, processi, tempi e problemi operativi. È il vantaggio n. 2 di [8-12].&lt;/div&gt;&lt;/details&gt;
+   &lt;details&gt;&lt;summary&gt;Quali sono i due limiti del budget partecipativo?&lt;/summary&gt;&lt;div&gt;(1) Stime subottimali se manca la prospettiva strategica del vertice; (2) troppo slack se il budget viene usato per premiare. [8-13]&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 4 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;master&quot; style=&quot;--h:250&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 4&lt;/span&gt;
+  &lt;h2&gt;Il master budget: visione d&#x27;insieme&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-15] – [8-18]&lt;/p&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Master budget&lt;/b&gt;: l&#x27;insieme coordinato dei budget dell&#x27;impresa per il periodo, cioè dieci &lt;i&gt;schedule&lt;/i&gt; (prospetti) collegati fra loro, che partono dal &lt;span class=&quot;t&quot;&gt;sales budget&lt;/span&gt; e arrivano al conto economico e allo stato patrimoniale previsionali. [8-15, 8-16]&lt;/div&gt;
+  &lt;p&gt;La freccia rossa di [8-15] indica il punto di partenza: &lt;b&gt;tutto discende dal sales budget&lt;/b&gt;. Le vendite previste determinano quanto produrre; la produzione determina materiali, manodopera e overhead; tutti i flussi di cassa confluiscono nel &lt;span class=&quot;t&quot;&gt;cash budget&lt;/span&gt;; alla fine si compilano il &lt;span class=&quot;t&quot;&gt;budgeted income statement&lt;/span&gt; (conto economico previsionale) e il &lt;span class=&quot;t&quot;&gt;budgeted balance sheet&lt;/span&gt; (stato patrimoniale previsionale).&lt;/p&gt;
+  &lt;p&gt;&lt;b&gt;Clicca uno schema&lt;/b&gt; per vedere da dove prende i dati, a cosa serve e a quale delle 10 domande risponde.&lt;/p&gt;
+  &lt;div class=&quot;map&quot;&gt;&lt;svg id=&quot;flow&quot; viewBox=&quot;0 0 900 470&quot; role=&quot;img&quot; aria-label=&quot;Flusso del master budget, schema cliccabile&quot;&gt;&lt;/svg&gt;&lt;/div&gt;
+  &lt;div class=&quot;panel&quot; id=&quot;flowTxt&quot;&gt;Scegli uno schema nel diagramma.&lt;/div&gt;
+
+  &lt;h3&gt;Seeing the big picture: le 10 domande&lt;/h3&gt;
+  &lt;p&gt;Le 10 schedule del master budget servono a rispondere a 10 domande [8-16, 8-17]. Clicca una domanda per vedere quale schedule le risponde.&lt;/p&gt;
+  &lt;ol class=&quot;qlist&quot; id=&quot;qlist&quot;&gt;
+   &lt;li&gt;Quanti ricavi di vendita otterremo? &lt;span class=&quot;ans&quot;&gt;→ Sales budget (parte 5)&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;Quanta cassa incasseremo dai clienti? &lt;span class=&quot;ans&quot;&gt;→ Schedule of expected cash collections (parte 5)&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;Quanta materia prima dovremo acquistare? &lt;span class=&quot;ans&quot;&gt;→ Direct materials budget (parte 7)&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;Quanti costi di produzione sosterremo? &lt;span class=&quot;ans&quot;&gt;→ Direct materials, direct labor e manufacturing overhead budget (parti 7–9)&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;Quanta cassa pagheremo a fornitori, manodopera diretta e overhead? &lt;span class=&quot;ans&quot;&gt;→ Disbursements for materials, direct labor budget, overhead budget (parti 7–9)&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;Quale costo totale passerà dal magazzino prodotti finiti al costo del venduto? &lt;span class=&quot;ans&quot;&gt;→ Ending finished goods inventory budget, che dà il costo unitario (parte 10)&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;Quante spese di vendita e amministrative sosterremo, e quanta cassa pagheremo per esse? &lt;span class=&quot;ans&quot;&gt;→ Selling and administrative expense budget (parte 11)&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;Quanto prenderemo in prestito o rimborseremo, interessi compresi? &lt;span class=&quot;ans&quot;&gt;→ Cash budget (parte 12)&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;Quanto operating income (reddito operativo) otterremo? &lt;span class=&quot;ans&quot;&gt;→ Budgeted income statement (parte 13)&lt;/span&gt;&lt;/li&gt;
+   &lt;li&gt;Come sarà lo stato patrimoniale a fine periodo? &lt;span class=&quot;ans&quot;&gt;→ Budgeted balance sheet (parte 13)&lt;/span&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;h3&gt;Ogni schedule si regge su stime e ipotesi&lt;/h3&gt;
+  &lt;p&gt;Il master budget si fonda su &lt;b&gt;estimates/assumptions&lt;/b&gt; [8-18]. Il sales budget, per esempio, ne richiede tre:&lt;/p&gt;
+  &lt;div class=&quot;grid2&quot;&gt;
+   &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;1 · Unità&lt;/h4&gt;&lt;p&gt;Quante unità prevediamo di vendere?&lt;/p&gt;&lt;/div&gt;
+   &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;2 · Prezzo&lt;/h4&gt;&lt;p&gt;Qual è il prezzo di vendita unitario previsto?&lt;/p&gt;&lt;/div&gt;
+   &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;3 · Incassi&lt;/h4&gt;&lt;p&gt;Che percentuale dei crediti verso clienti (&lt;span class=&quot;t&quot;&gt;accounts receivable&lt;/span&gt;) sarà incassata nel periodo corrente e in quelli successivi?&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Se un&#x27;ipotesi cambia, cambiano a cascata tutte le schedule che ne dipendono. Lo puoi provare nel &lt;a href=&quot;#lab&quot;&gt;Laboratorio&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;h3&gt;L&#x27;esempio guida: Royal Company&lt;/h3&gt;
+  &lt;p&gt;Royal prepara i budget per il &lt;b&gt;trimestre che termina il 30 giugno&lt;/b&gt;, prezzo &lt;b&gt;$10&lt;/b&gt; per unità [8-21]. Vendite previste:&lt;/p&gt;
+  &lt;svg id=&quot;salesChart&quot; viewBox=&quot;0 0 640 220&quot; role=&quot;img&quot; aria-label=&quot;Vendite previste da aprile ad agosto&quot;&gt;&lt;/svg&gt;
+  &lt;p class=&quot;small&quot;&gt;Luglio e agosto non fanno parte del trimestre, ma servono per calcolare le scorte finali desiderate di giugno (di prodotti e di materiali).&lt;/p&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;div class=&quot;mcq&quot; data-ok=&quot;b&quot;&gt;&lt;p&gt;Da quale schedule parte la costruzione del master budget?&lt;/p&gt;
+    &lt;button data-k=&quot;a&quot;&gt;a. Cash budget&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. Sales budget&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. Production budget&lt;/button&gt;
+    &lt;div class=&quot;why&quot;&gt;[8-15]: il sales budget è il punto di partenza, perché quasi tutte le altre schedule dipendono dal volume di vendite previsto.&lt;/div&gt;&lt;/div&gt;
+   &lt;details&gt;&lt;summary&gt;Perché il cash budget sta quasi in fondo alla catena?&lt;/summary&gt;&lt;div&gt;Perché raccoglie gli incassi (dalla schedule of collections) e i pagamenti calcolati nelle schedule di materiali, manodopera, overhead e S&amp;amp;A. Si può compilare solo dopo di esse [8-15].&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 5 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;sales&quot; style=&quot;--h:25&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 5 · LEARNING OBJECTIVE 2&lt;/span&gt;
+  &lt;h2&gt;Sales budget e schedule of expected cash collections&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-20] – [8-29]&lt;/p&gt;
+  &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;eq&quot;&gt;Total budgeted sales = Budgeted unit sales × Selling price per unit&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; id=&quot;tSales&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;p&gt;Ricavo e incasso però non coincidono: «Do customers pay immediately? Usually they do not» [8-22]. Il ricavo di aprile è 200.000 $, ma ad aprile se ne incassa solo una parte.&lt;/p&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Sales on account&lt;/b&gt; (vendite a credito): il cliente paga dopo la consegna. Nel frattempo l&#x27;importo è un credito, cioè un &lt;span class=&quot;t&quot;&gt;accounts receivable&lt;/span&gt; (A/R). Royal incassa il &lt;b&gt;70%&lt;/b&gt; nel mese della vendita e il &lt;b&gt;30%&lt;/b&gt; nel mese successivo; il saldo A/R al 31 marzo (30.000 $) si incassa tutto ad aprile. [8-23]&lt;/div&gt;
+  &lt;svg id=&quot;collSvg&quot; viewBox=&quot;0 0 640 210&quot; role=&quot;img&quot; aria-label=&quot;Come le vendite di ogni mese si trasformano in incassi&quot;&gt;&lt;/svg&gt;
+  &lt;h3&gt;Costruisci la schedule passo per passo&lt;/h3&gt;
+  &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; id=&quot;tColl&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;div class=&quot;stepbar&quot; data-stepper=&quot;tColl&quot; data-max=&quot;5&quot;&gt;&lt;button class=&quot;btn ghost&quot; type=&quot;button&quot; data-d=&quot;-1&quot;&gt;◂ Indietro&lt;/button&gt;&lt;button class=&quot;btn&quot; type=&quot;button&quot; data-d=&quot;1&quot;&gt;Avanti ▸&lt;/button&gt;&lt;span class=&quot;stepmsg&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;eq&quot;&gt;Collections&lt;sub&gt;mese t&lt;/sub&gt; = 70% × Sales&lt;sub&gt;t&lt;/sub&gt; + 30% × Sales&lt;sub&gt;t−1&lt;/sub&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;eq&quot;&gt;A/R al 30/6 = 30% × vendite di giugno = &lt;b id=&quot;arEnd&quot;&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;p&gt;Il credito di fine trimestre non sparisce: finirà nel &lt;b&gt;budgeted balance sheet&lt;/b&gt; come attività e sarà incassato a luglio. [8-29]&lt;/p&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;div class=&quot;mcq&quot; data-ok=&quot;d&quot;&gt;&lt;p&gt;&lt;b&gt;Quick Check 1&lt;/b&gt; [8-27]: quali saranno gli incassi totali del trimestre?&lt;/p&gt;
+    &lt;button data-k=&quot;a&quot;&gt;a. $700,000&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. $220,000&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. $190,000&lt;/button&gt;&lt;button data-k=&quot;d&quot;&gt;d. $940,000&lt;/button&gt;
+    &lt;div class=&quot;why&quot;&gt;30.000 + 200.000 + 500.000 + 70% × 300.000 = 940.000. In alternativa: ricavi 1.000.000 + A/R iniziale 30.000 − A/R finale 90.000 = 940.000. [8-28, 8-29]&lt;/div&gt;&lt;/div&gt;
+   &lt;details&gt;&lt;summary&gt;Se Royal incassasse il 60% nel mese e il 40% nel mese dopo, quanto incasserebbe a maggio?&lt;/summary&gt;&lt;div&gt;60% × 500.000 + 40% × 200.000 = 300.000 + 80.000 = 380.000 $ (invece di 410.000).&lt;/div&gt;&lt;/details&gt;
+   &lt;details&gt;&lt;summary&gt;Perché i ricavi del trimestre (1.000.000) sono diversi dagli incassi (940.000)?&lt;/summary&gt;&lt;div&gt;Perché si incassano 30.000 di crediti vecchi (marzo) ma restano da incassare 90.000 di vendite di giugno: 1.000.000 + 30.000 − 90.000 = 940.000.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 6 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;production&quot; style=&quot;--h:150&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 6 · LEARNING OBJECTIVE 3&lt;/span&gt;
+  &lt;h2&gt;Production budget&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-30] – [8-38]&lt;/p&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Production budget&lt;/b&gt;: elenca le unità da produrre per soddisfare le vendite previste e avere in magazzino la scorta finale desiderata di prodotti finiti (&lt;span class=&quot;t&quot;&gt;desired ending finished goods&lt;/span&gt;). Si prepara dopo il sales budget. [8-31]&lt;/div&gt;
+  &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;eq&quot;&gt;Required production = Budgeted sales + Desired ending inventory − Beginning inventory&lt;/span&gt;&lt;/div&gt;
+  &lt;p&gt;Intuizione: devo avere abbastanza unità per &lt;b&gt;vendere&lt;/b&gt; e per &lt;b&gt;lasciarne una scorta&lt;/b&gt; a fine mese (fabbisogno totale, &lt;i&gt;total needs&lt;/i&gt;). Una parte c&#x27;è già in magazzino a inizio mese, quindi la sottraggo.&lt;/p&gt;
+  &lt;p&gt;Royal vuole una scorta finale pari al &lt;b&gt;20% delle vendite del mese successivo&lt;/b&gt;; al 31 marzo ha &lt;b&gt;4.000 unità&lt;/b&gt;. [8-32]&lt;/p&gt;
+  &lt;svg id=&quot;prodSvg&quot; viewBox=&quot;0 0 640 230&quot; role=&quot;img&quot; aria-label=&quot;Scomposizione della produzione richiesta&quot;&gt;&lt;/svg&gt;
+  &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;prodMonth&quot;&gt;Mese da scomporre&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;prodMonth&quot; min=&quot;0&quot; max=&quot;2&quot; value=&quot;0&quot; step=&quot;1&quot;&gt;&lt;output id=&quot;prodMonthO&quot;&gt;April&lt;/output&gt;&lt;/div&gt;
+  &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; id=&quot;tProd&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;p&gt;&lt;b&gt;Attenzione ai legami&lt;/b&gt; [8-34, 8-37, 8-38]: la scorta finale di un mese è la scorta iniziale del mese dopo (aprile finisce con 10.000 e maggio parte da 10.000). Nella colonna &lt;i&gt;Quarter&lt;/i&gt; la scorta finale è quella di &lt;b&gt;giugno&lt;/b&gt; (5.000 = 20% × 25.000 di luglio) e quella iniziale è quella di &lt;b&gt;aprile&lt;/b&gt; (4.000): non si sommano i tre mesi.&lt;/p&gt;
+  &lt;div class=&quot;note&quot;&gt;&lt;b&gt;E se Royal fosse un&#x27;impresa commerciale?&lt;/b&gt; Una &lt;i&gt;merchandising company&lt;/i&gt; compra e rivende senza trasformare: invece del production budget prepara un &lt;span class=&quot;t&quot;&gt;merchandise purchase budget&lt;/span&gt; (budget degli acquisti di merci), con la stessa logica: acquisti = costo del venduto + scorta finale desiderata − scorta iniziale. [8-32]&lt;/div&gt;
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;div class=&quot;mcq&quot; data-ok=&quot;b&quot;&gt;&lt;p&gt;&lt;b&gt;Quick Check 2&lt;/b&gt; [8-35]: qual è la produzione richiesta a maggio?&lt;/p&gt;
+    &lt;button data-k=&quot;a&quot;&gt;a. 56,000 units&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. 46,000 units&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. 62,000 units&lt;/button&gt;&lt;button data-k=&quot;d&quot;&gt;d. 52,000 units&lt;/button&gt;
+    &lt;div class=&quot;why&quot;&gt;50.000 vendite + 6.000 scorta finale (20% × 30.000 di giugno) − 10.000 scorta iniziale = 46.000. Il 56.000 dell&#x27;opzione (a) è il &lt;i&gt;total needs&lt;/i&gt;: manca la sottrazione della scorta iniziale. [8-36, 8-37]&lt;/div&gt;&lt;/div&gt;
+   &lt;details&gt;&lt;summary&gt;Perché la produzione del trimestre (101.000) supera le vendite (100.000)?&lt;/summary&gt;&lt;div&gt;Perché la scorta di prodotti finiti cresce da 4.000 (1 aprile) a 5.000 (30 giugno): 100.000 + 5.000 − 4.000 = 101.000.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 7 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;materials&quot; style=&quot;--h:85&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 7 · LEARNING OBJECTIVE 4&lt;/span&gt;
+  &lt;h2&gt;Direct materials budget e pagamenti ai fornitori&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-39] – [8-54]&lt;/p&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Direct materials budget&lt;/b&gt;: indica quante materie prime (&lt;span class=&quot;t&quot;&gt;raw materials&lt;/span&gt;, i materiali diretti che entrano fisicamente nel prodotto) acquistare per soddisfare il production budget e mantenere scorte adeguate. Si prepara dopo il production budget. [8-40]&lt;/div&gt;
+  &lt;p&gt;Dati Royal [8-41]: &lt;b&gt;5 pounds&lt;/b&gt; (libbre) di materiale per unità; scorta finale desiderata pari al &lt;b&gt;10% del fabbisogno di produzione del mese successivo&lt;/b&gt;; 13.000 libbre al 31 marzo; costo &lt;b&gt;$0.40&lt;/b&gt; per libbra.&lt;/p&gt;
+  &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;eq&quot;&gt;Production needs = Units to produce × Materials per unit&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;eq&quot;&gt;Materials to be purchased = Production needs + Desired ending inventory − Beginning inventory&lt;/span&gt;&lt;/div&gt;
+  &lt;p&gt;È la stessa logica del production budget, spostata un gradino più in basso nella catena: lì si partiva dalle &lt;i&gt;vendite&lt;/i&gt;, qui dalla &lt;i&gt;produzione&lt;/i&gt;.&lt;/p&gt;
+  &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; id=&quot;tMat&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;details class=&quot;card&quot;&gt;&lt;summary&gt;Come si ottiene la scorta finale di giugno (11.500 lb)?&lt;/summary&gt;&lt;div&gt;Serve la produzione di &lt;b&gt;luglio&lt;/b&gt;: vendite di luglio 25.000 + scorta finale 20% × 15.000 (agosto) = 3.000 − scorta iniziale 5.000 = &lt;b&gt;23.000 unità&lt;/b&gt;. Fabbisogno di luglio = 23.000 × 5 = 115.000 lb, e il 10% è 11.500 lb. Le slide riportano solo il risultato [8-48]; il passaggio è ricostruito qui.&lt;/div&gt;&lt;/details&gt;
+  &lt;div class=&quot;note&quot;&gt;«These are numbers of units of raw materials… not money» [8-48]. Il materials budget è in &lt;b&gt;libbre&lt;/b&gt;. Per passare ai dollari: libbre acquistate × $0.40 (es. aprile 140.000 × 0,40 = 56.000 $) [8-51].&lt;/div&gt;
+
+  &lt;h3&gt;Schedule of expected cash disbursements for materials&lt;/h3&gt;
+  &lt;p&gt;Royal paga &lt;b&gt;metà&lt;/b&gt; degli acquisti nel mese stesso e &lt;b&gt;metà&lt;/b&gt; nel mese successivo; i debiti verso fornitori (&lt;span class=&quot;t&quot;&gt;accounts payable&lt;/span&gt;, A/P) al 31 marzo sono 12.000 $ e si pagano ad aprile. [8-49] &lt;i&gt;Disbursement&lt;/i&gt; = esborso di cassa.&lt;/p&gt;
+  &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; id=&quot;tPay&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;div class=&quot;stepbar&quot; data-stepper=&quot;tPay&quot; data-max=&quot;5&quot;&gt;&lt;button class=&quot;btn ghost&quot; type=&quot;button&quot; data-d=&quot;-1&quot;&gt;◂ Indietro&lt;/button&gt;&lt;button class=&quot;btn&quot; type=&quot;button&quot; data-d=&quot;1&quot;&gt;Avanti ▸&lt;/button&gt;&lt;span class=&quot;stepmsg&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;p&gt;A/P al 30 giugno = 50% × acquisti di giugno = &lt;b id=&quot;apEnd&quot;&gt;&lt;/b&gt; [8-54]: andrà nel budgeted balance sheet come passività.&lt;/p&gt;
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;div class=&quot;mcq&quot; data-ok=&quot;a&quot;&gt;&lt;p&gt;&lt;b&gt;Quick Check 3&lt;/b&gt; [8-45]: quanti materiali acquistare a maggio?&lt;/p&gt;
+    &lt;button data-k=&quot;a&quot;&gt;a. 221,500 pounds&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. 240,000 pounds&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. 230,000 pounds&lt;/button&gt;&lt;button data-k=&quot;d&quot;&gt;d. 211,500 pounds&lt;/button&gt;
+    &lt;div class=&quot;why&quot;&gt;230.000 (46.000 × 5) + 14.500 (10% × 29.000 × 5) − 23.000 (scorta iniziale) = 221.500 lb. [8-47]&lt;/div&gt;&lt;/div&gt;
+   &lt;div class=&quot;mcq&quot; data-ok=&quot;a&quot;&gt;&lt;p&gt;&lt;b&gt;Quick Check 4&lt;/b&gt; [8-52]: quali sono i pagamenti totali per materiali nel trimestre?&lt;/p&gt;
+    &lt;button data-k=&quot;a&quot;&gt;a. $185,000&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. $68,000&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. $56,000&lt;/button&gt;&lt;button data-k=&quot;d&quot;&gt;d. $201,400&lt;/button&gt;
+    &lt;div class=&quot;why&quot;&gt;12.000 + 56.000 + 88.600 + 50% × 56.800 = 185.000. 201.400 è il &lt;i&gt;costo&lt;/i&gt; degli acquisti del trimestre: la differenza (12.000 − 28.400) dipende dalla variazione dei debiti verso fornitori. [8-54]&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 8 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;labor&quot; style=&quot;--h:250&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 8 · LEARNING OBJECTIVE 5&lt;/span&gt;
+  &lt;h2&gt;Direct labor budget&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-55] – [8-60]&lt;/p&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Direct labor budget&lt;/b&gt;: mostra le ore di manodopera diretta (&lt;span class=&quot;t&quot;&gt;direct labor-hours&lt;/span&gt;, il lavoro degli addetti che trasformano fisicamente il prodotto) richieste dal production budget. Così l&#x27;impresa può pianificare in anticipo come adeguare la forza lavoro nel corso dell&#x27;anno. [8-56]&lt;/div&gt;
+  &lt;p&gt;Royal: &lt;b&gt;0,05 ore&lt;/b&gt; (3 minuti) per unità, manodopera non specializzata, &lt;b&gt;$10/ora&lt;/b&gt;. [8-57]&lt;/p&gt;
+  &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;eq&quot;&gt;Labor-hours required = Units of production × Direct labor time per unit&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;eq&quot;&gt;Total direct labor cost = Labor-hours × Hourly wage rate&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; id=&quot;tLab&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;div class=&quot;note&quot;&gt;&lt;b&gt;Ipotesi semplificatrice&lt;/b&gt; [8-56]: la forza lavoro si adegua esattamente al fabbisogno, quindi il costo è variabile. Nella realtà politiche del personale e contratti spesso garantiscono un minimo di ore o richiedono pagamenti extra (straordinari), e allora il costo della manodopera non segue la produzione in modo proporzionale. Le slide assumono anche che le paghe si versino nel mese stesso: il costo coincide con l&#x27;uscita di cassa.&lt;/div&gt;
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;details&gt;&lt;summary&gt;Se la paga salisse a $12/ora, quale sarebbe il costo della manodopera diretta a maggio?&lt;/summary&gt;&lt;div&gt;2.300 ore × 12 = 27.600 $ (invece di 23.000).&lt;/div&gt;&lt;/details&gt;
+   &lt;details&gt;&lt;summary&gt;Perché il direct labor budget parte dal production budget e non dal sales budget?&lt;/summary&gt;&lt;div&gt;Perché si lavora per &lt;i&gt;produrre&lt;/i&gt;, non per vendere: le ore dipendono dalle unità prodotte (26.000, 46.000, 29.000), che differiscono dalle vendite per effetto delle scorte.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 9 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;overhead&quot; style=&quot;--h:25&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 9 · LEARNING OBJECTIVE 6&lt;/span&gt;
+  &lt;h2&gt;Manufacturing overhead budget&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-61] – [8-66]&lt;/p&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Manufacturing overhead&lt;/b&gt; (costi generali di produzione): tutti i costi di produzione &lt;b&gt;diversi&lt;/b&gt; da materiali diretti e manodopera diretta [8-62], come energia, manutenzione, supervisione, affitto e ammortamento dello stabilimento.&lt;/div&gt;
+  &lt;p&gt;Royal applica l&#x27;overhead ai prodotti in base alle &lt;b&gt;direct labor-hours&lt;/b&gt; [8-63]:&lt;/p&gt;
+  &lt;div class=&quot;grid2&quot;&gt;
+   &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;Variabile&lt;/h4&gt;&lt;p&gt;&lt;b&gt;$20 per direct labor-hour&lt;/b&gt;: cresce con le ore lavorate.&lt;/p&gt;&lt;/div&gt;
+   &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;Fisso&lt;/h4&gt;&lt;p&gt;&lt;b&gt;$50.000 al mese&lt;/b&gt;, di cui &lt;b&gt;$20.000 noncash&lt;/b&gt;, cioè soprattutto &lt;span class=&quot;t&quot;&gt;depreciation&lt;/span&gt; (ammortamento) degli impianti.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;eq&quot;&gt;Total mfg. OH = Labor-hours × $20 + $50,000&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;eq&quot;&gt;Cash disbursement for mfg. OH = Total mfg. OH − Noncash costs ($20,000)&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; id=&quot;tOH&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Depreciation is a noncash charge&lt;/b&gt; [8-66]. L&#x27;ammortamento ripartisce negli anni il costo di un impianto già pagato quando è stato acquistato. È un &lt;i&gt;costo&lt;/i&gt; del periodo, che entra nel costo del prodotto e nel conto economico, ma non è un&#x27;&lt;i&gt;uscita di cassa&lt;/i&gt; del periodo. Per questo si toglie prima di passare al cash budget.&lt;/div&gt;
+
+  &lt;h3&gt;Il tasso orario medio: $49,70&lt;/h3&gt;
+  &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;eq&quot;&gt;Predetermined OH rate = Total mfg. OH for quarter / Total labor-hours = 251,000 / 5,050 ≈ $49.70 per hour&lt;/span&gt; [8-65]&lt;/div&gt;
+  &lt;p&gt;Sposta il cursore: con più ore la quota fissa si spalma su una base più ampia e il costo medio orario scende. Per questo si usa un tasso &lt;b&gt;medio del trimestre&lt;/b&gt;, così il costo unitario del prodotto non oscilla da un mese all&#x27;altro.&lt;/p&gt;
+  &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;ohH&quot;&gt;Direct labor-hours nel mese&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;ohH&quot; min=&quot;500&quot; max=&quot;3000&quot; step=&quot;50&quot; value=&quot;1300&quot;&gt;&lt;output id=&quot;ohHO&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+  &lt;svg id=&quot;ohSvg&quot; viewBox=&quot;0 0 640 260&quot; role=&quot;img&quot; aria-label=&quot;Overhead totale, in cassa e tasso medio in funzione delle ore&quot;&gt;&lt;/svg&gt;
+  &lt;div class=&quot;kpis&quot; id=&quot;ohK&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;details&gt;&lt;summary&gt;Quanto paga in cassa Royal per l&#x27;overhead a giugno? Spiega il calcolo.&lt;/summary&gt;&lt;div&gt;1.450 h × 20 = 29.000 variabile + 50.000 fisso = 79.000 totale − 20.000 ammortamento = &lt;b&gt;59.000 $&lt;/b&gt;. [8-66]&lt;/div&gt;&lt;/details&gt;
+   &lt;div class=&quot;mcq&quot; data-ok=&quot;c&quot;&gt;&lt;p&gt;Perché si sottraggono 20.000 $ al mese nell&#x27;overhead budget?&lt;/p&gt;
+    &lt;button data-k=&quot;a&quot;&gt;a. perché sono costi variabili&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. perché sono già inclusi nella manodopera diretta&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. perché l&#x27;ammortamento non comporta un&#x27;uscita di cassa nel periodo&lt;/button&gt;
+    &lt;div class=&quot;why&quot;&gt;[8-63, 8-66]: i costi noncash non entrano nel cash budget.&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 10 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;fginv&quot; style=&quot;--h:150&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 10&lt;/span&gt;
+  &lt;h2&gt;Ending finished goods inventory budget&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-67] – [8-71]&lt;/p&gt;
+  &lt;p&gt;Questa schedule calcola il &lt;b&gt;costo unitario di produzione&lt;/b&gt; (&lt;span class=&quot;t&quot;&gt;unit product cost&lt;/span&gt;) e il valore della scorta finale di prodotti finiti. Serve per due cose: il costo del venduto (&lt;span class=&quot;t&quot;&gt;cost of goods sold&lt;/span&gt;, COGS) nel conto economico e il magazzino nello stato patrimoniale. Risponde alla domanda 6.&lt;/p&gt;
+  &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;eq&quot;&gt;Unit product cost = DM (5 lb × $0.40) + DL (0.05 h × $10) + MOH (0.05 h × $49.70)&lt;/span&gt;&lt;/div&gt;
+  &lt;svg id=&quot;ucSvg&quot; viewBox=&quot;0 0 640 150&quot; role=&quot;img&quot; aria-label=&quot;Composizione del costo unitario&quot;&gt;&lt;/svg&gt;
+  &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; id=&quot;tFG&quot; style=&quot;min-width:420px&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;p&gt;Ogni riga ha la sua fonte: materiali dal &lt;i&gt;direct materials budget&lt;/i&gt; [8-67], manodopera dal &lt;i&gt;direct labor budget&lt;/i&gt; [8-68], tasso di overhead dall&#x27;&lt;i&gt;overhead budget&lt;/i&gt; [8-69], unità finali dal &lt;i&gt;production budget&lt;/i&gt; [8-71]. È l&#x27;approccio dell&#x27;&lt;b&gt;absorption costing&lt;/b&gt; (il costo del prodotto include anche l&#x27;overhead fisso), visto che il tasso di 49,70 $ comprende la quota fissa.&lt;/p&gt;
+  &lt;div class=&quot;note&quot;&gt;L&#x27;overhead per unità è 0,05 × 49,70 = 2,485, che le slide arrotondano a &lt;b&gt;2,49&lt;/b&gt;. Il costo unitario è quindi 4,99 $ e la scorta finale vale 5.000 × 4,99 = &lt;b&gt;24.950 $&lt;/b&gt; [8-70].&lt;/div&gt;
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;details&gt;&lt;summary&gt;Perché per l&#x27;overhead si usano 0,05 ore (come per la manodopera) e non le libbre di materiale?&lt;/summary&gt;&lt;div&gt;Perché Royal applica l&#x27;overhead sulla base delle direct labor-hours [8-63]: ogni unità «consuma» 0,05 ore, quindi assorbe 0,05 × 49,70 di overhead.&lt;/div&gt;&lt;/details&gt;
+   &lt;details&gt;&lt;summary&gt;Da dove vengono le 5.000 unità di scorta finale?&lt;/summary&gt;&lt;div&gt;Dal production budget: scorta desiderata a fine giugno = 20% × 25.000 (vendite di luglio). [8-38, 8-71]&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 11 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;sa&quot; style=&quot;--h:85&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 11 · LEARNING OBJECTIVE 7&lt;/span&gt;
+  &lt;h2&gt;Selling and administrative expense budget&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-72] – [8-77]&lt;/p&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Selling and administrative (S&amp;amp;A) expenses&lt;/b&gt;: costi &lt;b&gt;non di produzione&lt;/b&gt;, cioè commerciali (provvigioni, pubblicità, spedizioni) e amministrativi (direzione, contabilità, uffici). Non entrano nel costo del prodotto: sono &lt;i&gt;period costs&lt;/i&gt; (costi di periodo) e vanno direttamente a conto economico.&lt;/div&gt;
+  &lt;p&gt;Royal li divide in componente variabile e fissa [8-73]: &lt;b&gt;$0.50 per unità venduta&lt;/b&gt; (si guarda alle vendite, non alla produzione) più &lt;b&gt;$70.000 al mese&lt;/b&gt; fissi, di cui &lt;b&gt;$10.000 noncash&lt;/b&gt; (soprattutto ammortamento).&lt;/p&gt;
+  &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;eq&quot;&gt;Total S&amp;amp;A = Unit sales × $0.50 + $70,000&lt;/span&gt;  ·  &lt;span class=&quot;eq&quot;&gt;Cash S&amp;amp;A = Total S&amp;amp;A − $10,000&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; id=&quot;tSA&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;div class=&quot;mcq&quot; data-ok=&quot;b&quot;&gt;&lt;p&gt;&lt;b&gt;Quick Check 6&lt;/b&gt; [8-75]: quali sono gli esborsi di cassa per S&amp;amp;A nel trimestre?&lt;/p&gt;
+    &lt;button data-k=&quot;a&quot;&gt;a. $180,000&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. $230,000&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. $110,000&lt;/button&gt;&lt;button data-k=&quot;d&quot;&gt;d. $70,000&lt;/button&gt;
+    &lt;div class=&quot;why&quot;&gt;Variabili 50.000 + fissi 210.000 = 260.000 − noncash 30.000 = 230.000. [8-77]&lt;/div&gt;&lt;/div&gt;
+   &lt;details&gt;&lt;summary&gt;Le spese S&amp;amp;A variabili dipendono dalle unità prodotte o vendute? Perché conta?&lt;/summary&gt;&lt;div&gt;Dalle &lt;b&gt;vendute&lt;/b&gt; (20.000, 50.000, 30.000). Le spese commerciali nascono dalla vendita; nel trimestre sono 100.000 unità vendute contro 101.000 prodotte.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 12 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;cash&quot; style=&quot;--h:250&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 12 · LEARNING OBJECTIVE 8&lt;/span&gt;
+  &lt;h2&gt;Cash budget&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-78] – [8-88]&lt;/p&gt;
+  &lt;p&gt;Il cash budget raccoglie in un&#x27;unica schedule tutti i flussi di cassa calcolati finora e dice se e quando l&#x27;impresa dovrà &lt;b&gt;chiedere un prestito&lt;/b&gt; o potrà &lt;b&gt;rimborsarlo&lt;/b&gt;.&lt;/p&gt;
+  &lt;h3&gt;Le quattro sezioni [8-79]&lt;/h3&gt;
+  &lt;div class=&quot;grid2&quot;&gt;
+   &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;1 · Cash receipts&lt;/h4&gt;&lt;p&gt;Tutte le entrate di cassa, &lt;b&gt;escluse&lt;/b&gt; quelle da finanziamenti.&lt;/p&gt;&lt;/div&gt;
+   &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;2 · Cash disbursements&lt;/h4&gt;&lt;p&gt;Tutti i pagamenti, &lt;b&gt;esclusi&lt;/b&gt; rimborsi di capitale e interessi.&lt;/p&gt;&lt;/div&gt;
+   &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;3 · Excess or deficiency&lt;/h4&gt;&lt;p&gt;Cassa disponibile − esborsi: dice se servirà un prestito o se si potrà rimborsare.&lt;/p&gt;&lt;/div&gt;
+   &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;4 · Financing&lt;/h4&gt;&lt;p&gt;Prestiti ottenuti (&lt;i&gt;borrowings&lt;/i&gt;), rimborsi (&lt;i&gt;repayments&lt;/i&gt;) e interessi del periodo.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;eq&quot;&gt;Beginning cash + Cash collections = Total cash available&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;eq&quot;&gt;Total cash available − Total disbursements = Excess (deficiency)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;eq&quot;&gt;Excess (deficiency) + Total financing = Ending cash balance&lt;/span&gt; → che diventa il saldo iniziale del mese dopo&lt;/div&gt;
+  &lt;h3&gt;Informazioni aggiuntive su Royal [8-80]&lt;/h3&gt;
+  &lt;ul&gt;
+   &lt;li&gt;&lt;span class=&quot;t&quot;&gt;Line of credit&lt;/span&gt; (linea di credito: la banca concede prestiti fino a un tetto, da usare quando serve) di &lt;b&gt;$75.000 al 16%&lt;/b&gt; annuo;&lt;/li&gt;
+   &lt;li&gt;&lt;b&gt;saldo minimo di cassa: $30.000&lt;/b&gt;;&lt;/li&gt;
+   &lt;li&gt;prende a prestito il &lt;b&gt;primo giorno del mese&lt;/b&gt; e rimborsa l&#x27;&lt;b&gt;ultimo giorno del trimestre&lt;/b&gt;;&lt;/li&gt;
+   &lt;li&gt;dividendo in contanti di &lt;b&gt;$49.000 ad aprile&lt;/b&gt;;&lt;/li&gt;
+   &lt;li&gt;acquisto di attrezzature per &lt;b&gt;$143.700 a maggio&lt;/b&gt; e &lt;b&gt;$48.300 a giugno&lt;/b&gt;, pagate in contanti;&lt;/li&gt;
+   &lt;li&gt;cassa al 1° aprile: &lt;b&gt;$40.000&lt;/b&gt;.&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h3&gt;Compila il cash budget&lt;/h3&gt;
+  &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; id=&quot;tCash&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;div class=&quot;stepbar&quot; data-stepper=&quot;tCash&quot; data-max=&quot;6&quot;&gt;&lt;button class=&quot;btn ghost&quot; type=&quot;button&quot; data-d=&quot;-1&quot;&gt;◂ Indietro&lt;/button&gt;&lt;button class=&quot;btn&quot; type=&quot;button&quot; data-d=&quot;1&quot;&gt;Avanti ▸&lt;/button&gt;&lt;span class=&quot;stepmsg&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;details class=&quot;card&quot;&gt;&lt;summary&gt;Ragionamento di aprile: perché si prendono a prestito 48.000 $&lt;/summary&gt;&lt;div&gt;Gli esborsi (228.000) superano la cassa disponibile (210.000): deficit di 18.000. Per chiudere il mese con il saldo minimo di 30.000 servono 30.000 − (−18.000) = &lt;b&gt;48.000&lt;/b&gt; [8-83, 8-84]. A maggio l&#x27;eccedenza è 40.000, sopra il minimo, quindi non si chiede nulla, ma non si rimborsa ancora, perché il rimborso avviene a fine trimestre.&lt;/div&gt;&lt;/details&gt;
+  &lt;details class=&quot;card&quot;&gt;&lt;summary&gt;Ragionamento di giugno: rimborso e interessi&lt;/summary&gt;&lt;div&gt;Eccedenza 130.500. Si rimborsano i 48.000 più gli interessi per i 3 mesi (1° aprile – 30 giugno):
+   &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;eq&quot;&gt;Interest = $48,000 × 16% × 3/12 = $1,920&lt;/span&gt;&lt;/div&gt;
+   Saldo finale: 130.500 − 48.000 − 1.920 = &lt;b&gt;80.580&lt;/b&gt; [8-88]. Gli interessi passano poi nel budgeted income statement [8-89].&lt;/div&gt;&lt;/details&gt;
+  &lt;div class=&quot;note&quot;&gt;Colonna &lt;i&gt;Quarter&lt;/i&gt;: il saldo iniziale è quello del 1° aprile (40.000) e il finale quello del 30 giugno (80.580). Flussi (incassi, esborsi, finanziamenti) si sommano; saldi no.&lt;/div&gt;
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;div class=&quot;mcq&quot; data-ok=&quot;d&quot;&gt;&lt;p&gt;&lt;b&gt;Quick Check 7&lt;/b&gt; [8-86]: qual è l&#x27;eccedenza (deficit) di cassa disponibile sugli esborsi a giugno?&lt;/p&gt;
+    &lt;button data-k=&quot;a&quot;&gt;a. $95,000&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. $(21,000)&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. $175,000&lt;/button&gt;&lt;button data-k=&quot;d&quot;&gt;d. $130,500&lt;/button&gt;
+    &lt;div class=&quot;why&quot;&gt;Cassa disponibile 40.000 + 360.000 = 400.000 − esborsi 269.500 (72.700 + 14.500 + 59.000 + 75.000 + 48.300) = 130.500. [8-87, 8-88]&lt;/div&gt;&lt;/div&gt;
+   &lt;details&gt;&lt;summary&gt;In quale sezione del cash budget va il dividendo? E il rimborso del prestito?&lt;/summary&gt;&lt;div&gt;Il dividendo è un &lt;i&gt;cash disbursement&lt;/i&gt; (sezione 2). Rimborso e interessi stanno nella sezione &lt;i&gt;financing&lt;/i&gt; (4), perché la sezione 2 li esclude esplicitamente [8-79].&lt;/div&gt;&lt;/details&gt;
+   &lt;details&gt;&lt;summary&gt;Perché l&#x27;ammortamento non compare nel cash budget?&lt;/summary&gt;&lt;div&gt;Perché è già stato tolto (noncash) nell&#x27;overhead budget e nell&#x27;S&amp;amp;A budget: nel cash budget entrano solo gli importi &lt;i&gt;cash&lt;/i&gt; (56.000, 70.000…).&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 13 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;statements&quot; style=&quot;--h:25&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 13&lt;/span&gt;
+  &lt;h2&gt;Budgeted income statement e budgeted balance sheet&lt;/h2&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide [8-89] e schema [8-15]. Le slide si fermano all&#x27;introduzione: i prospetti qui sotto sono &lt;b&gt;ricostruiti&lt;/b&gt; con i dati delle schedule precedenti.&lt;/p&gt;
+  &lt;p&gt;Completato il cash budget, Royal conosce anche gli &lt;b&gt;interessi passivi&lt;/b&gt; e può preparare il conto economico previsionale [8-89]. Ultimo passo è lo stato patrimoniale previsionale [8-15, 8-17 domanda 10].&lt;/p&gt;
+  &lt;div class=&quot;tabs&quot; data-tabs&gt;
+   &lt;div role=&quot;tablist&quot;&gt;&lt;button role=&quot;tab&quot; type=&quot;button&quot;&gt;Budgeted income statement&lt;/button&gt;&lt;button role=&quot;tab&quot; type=&quot;button&quot;&gt;Budgeted balance sheet&lt;/button&gt;&lt;/div&gt;
+   &lt;div role=&quot;tabpanel&quot;&gt;
+    &lt;p&gt;&lt;span class=&quot;badge mine&quot;&gt;ricostruzione&lt;/span&gt;Formato a costo pieno (absorption), trimestre al 30 giugno:&lt;/p&gt;
+    &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; id=&quot;tIS&quot; style=&quot;min-width:420px&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+    &lt;p class=&quot;small&quot;&gt;Senza imposte, come nell&#x27;esempio delle slide. COGS = unità vendute × costo unitario del prodotto (parte 10), assumendo che anche le 4.000 unità iniziali siano valutate 4,99 $.&lt;/p&gt;
+   &lt;/div&gt;
+   &lt;div role=&quot;tabpanel&quot; hidden&gt;
+    &lt;p&gt;&lt;span class=&quot;badge mine&quot;&gt;ricostruzione&lt;/span&gt;Le slide non danno lo stato patrimoniale di partenza (al 31 marzo), quindi non si può compilarlo per intero. Si può però dire &lt;b&gt;da quale schedule viene ogni voce&lt;/b&gt; al 30 giugno:&lt;/p&gt;
+    &lt;div class=&quot;tblwrap&quot;&gt;&lt;table class=&quot;sched&quot; id=&quot;tBS&quot; style=&quot;min-width:480px&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+    &lt;p class=&quot;small&quot;&gt;Il principio: lo stato patrimoniale previsionale = stato patrimoniale iniziale + effetti di tutte le schedule del periodo.&lt;/p&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Autoverifica&lt;/h3&gt;
+   &lt;details&gt;&lt;summary&gt;Perché il reddito netto (≈ 239.000) è così diverso dalla variazione di cassa del trimestre (+40.580)?&lt;/summary&gt;&lt;div&gt;Perché competenza e cassa divergono: ammortamenti (90.000) riducono il reddito ma non la cassa; attrezzature (192.000) e dividendi (49.000) riducono la cassa ma non il reddito; crediti, debiti e scorte cambiano. Per questo servono &lt;i&gt;sia&lt;/i&gt; l&#x27;income statement &lt;i&gt;sia&lt;/i&gt; il cash budget.&lt;/div&gt;&lt;/details&gt;
+   &lt;details&gt;&lt;summary&gt;Quale valore di cassa va nello stato patrimoniale al 30 giugno e da dove viene?&lt;/summary&gt;&lt;div&gt;80.580 $, il saldo finale del cash budget [8-88].&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 14 --&gt;
+&lt;section class=&quot;part&quot; id=&quot;lab&quot; style=&quot;--h:35&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PARTE 14 · LABORATORIO&lt;/span&gt;
+  &lt;h2&gt;Cambia un&#x27;ipotesi, guarda cambiare tutto&lt;/h2&gt;
+  &lt;p&gt;Ogni cursore modifica un&#x27;ipotesi del caso Royal. &lt;b&gt;Tutte le tabelle della pagina&lt;/b&gt; si ricalcolano, come in un vero master budget collegato. Il grafico mostra il cash budget mese per mese. Il motore di calcolo segue le regole delle slide; per i prestiti si arrotonda ai 1.000 $ superiori e, se a giugno la cassa non basta, si rimborsa solo in parte.&lt;/p&gt;
+  &lt;div class=&quot;box&quot;&gt;
+   &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;lMay&quot;&gt;Vendite di maggio (unità)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;lMay&quot; min=&quot;20000&quot; max=&quot;80000&quot; step=&quot;1000&quot;&gt;&lt;output&gt;&lt;/output&gt;&lt;/div&gt;
+   &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;lPrice&quot;&gt;Prezzo di vendita ($)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;lPrice&quot; min=&quot;8&quot; max=&quot;12&quot; step=&quot;0.5&quot;&gt;&lt;output&gt;&lt;/output&gt;&lt;/div&gt;
+   &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;lColl&quot;&gt;% incassata nel mese di vendita&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;lColl&quot; min=&quot;0.3&quot; max=&quot;1&quot; step=&quot;0.05&quot;&gt;&lt;output&gt;&lt;/output&gt;&lt;/div&gt;
+   &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;lFG&quot;&gt;Scorta finale prodotti (% vendite mese dopo)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;lFG&quot; min=&quot;0&quot; max=&quot;0.5&quot; step=&quot;0.05&quot;&gt;&lt;output&gt;&lt;/output&gt;&lt;/div&gt;
+   &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;lRM&quot;&gt;Scorta finale materiali (% fabbisogno mese dopo)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;lRM&quot; min=&quot;0&quot; max=&quot;0.3&quot; step=&quot;0.05&quot;&gt;&lt;output&gt;&lt;/output&gt;&lt;/div&gt;
+   &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;lPay&quot;&gt;% acquisti pagata nel mese&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;lPay&quot; min=&quot;0&quot; max=&quot;1&quot; step=&quot;0.1&quot;&gt;&lt;output&gt;&lt;/output&gt;&lt;/div&gt;
+   &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;lMin&quot;&gt;Saldo minimo di cassa ($)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;lMin&quot; min=&quot;10000&quot; max=&quot;80000&quot; step=&quot;5000&quot;&gt;&lt;output&gt;&lt;/output&gt;&lt;/div&gt;
+   &lt;button class=&quot;btn&quot; type=&quot;button&quot; id=&quot;labReset&quot;&gt;Ripristina i dati delle slide&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;kpis&quot; id=&quot;labK&quot;&gt;&lt;/div&gt;
+  &lt;svg id=&quot;labSvg&quot; viewBox=&quot;0 0 640 300&quot; role=&quot;img&quot; aria-label=&quot;Cash budget mensile: eccedenza, prestiti e saldo finale&quot;&gt;&lt;/svg&gt;
+  &lt;p id=&quot;labMsg&quot; class=&quot;small&quot;&gt;&lt;/p&gt;
+  &lt;div class=&quot;quiz&quot;&gt;
+   &lt;h3&gt;Esperimenti guidati&lt;/h3&gt;
+   &lt;details&gt;&lt;summary&gt;Porta la % incassata nel mese al 100%. Che cosa succede ad aprile?&lt;/summary&gt;&lt;div&gt;Gli incassi di aprile salgono a 230.000 (30.000 + 200.000): la cassa disponibile basta e il prestito di aprile scompare. Il reddito però non cambia, perché i ricavi sono gli stessi. Cambia solo il &lt;i&gt;timing&lt;/i&gt; della cassa.&lt;/div&gt;&lt;/details&gt;
+   &lt;details&gt;&lt;summary&gt;Alza la scorta finale di prodotti al 40%. Perché sale il fabbisogno di prestito?&lt;/summary&gt;&lt;div&gt;Si produce di più ad aprile (più scorta per il picco di maggio), quindi crescono materiali, manodopera e overhead pagati prima di incassare le vendite. È il &lt;i&gt;bottleneck&lt;/i&gt; finanziario che il budget serve a scoprire in anticipo [8-6].&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- Per approfondire --&gt;
+&lt;section class=&quot;part&quot; id=&quot;approfondire&quot; style=&quot;--h:35&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;span class=&quot;num&quot;&gt;PER APPROFONDIRE&lt;/span&gt;
+  &lt;h2&gt;Per approfondire&lt;/h2&gt;
+  &lt;p&gt;Le slide non citano esplicitamente autori, testi, norme o siti. Le voci sotto vengono da ricerche web: alcune ricostruiscono la fonte probabile dell&#x27;esempio, altre approfondiscono concetti citati nelle slide (rolling budget, budgetary slack, participative budgeting). Ogni voce è segnata come &lt;span class=&quot;badge&quot;&gt;fonte esterna&lt;/span&gt;.&lt;/p&gt;
+  &lt;ul class=&quot;refs&quot;&gt;
+   &lt;li&gt;&lt;span class=&quot;badge&quot;&gt;fonte esterna&lt;/span&gt;&lt;h4&gt;Garrison, Noreen, Brewer — &lt;i&gt;Managerial Accounting&lt;/i&gt; (McGraw Hill), cap. «Master Budgeting»&lt;/h4&gt;
+    &lt;p&gt;&lt;b&gt;Cosa contiene:&lt;/b&gt; il manuale di contabilità direzionale da cui con ogni probabilità vengono struttura ed esempio delle slide. La numerazione «8-x» corrisponde al capitolo 8, &lt;i&gt;Master Budgeting&lt;/i&gt;, nelle edizioni di &lt;i&gt;Managerial Accounting&lt;/i&gt; e &lt;i&gt;Managerial Accounting for Managers&lt;/i&gt;, seguito da «Flexible Budgets and Performance Analysis». L&#x27;attribuzione è una deduzione dalla numerazione, non è dichiarata nelle slide.&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Perché conta:&lt;/b&gt; riporta l&#x27;esempio completo, compresi income statement e balance sheet che qui sono ricostruiti, ed esercizi svolti. Il capitolo successivo (flexible budgets) riprende il confronto budget–actual della prospettiva di controllo. La numerazione dei capitoli può cambiare da un&#x27;edizione all&#x27;altra.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.mheducation.com/highered/product/Managerial-Accounting-Garrison&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;mheducation.com — Managerial Accounting (Garrison)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;span class=&quot;badge&quot;&gt;fonte esterna&lt;/span&gt;&lt;h4&gt;CGMA (AICPA &amp;amp; CIMA) — «Rolling plans and forecasts»&lt;/h4&gt;
+    &lt;p&gt;&lt;b&gt;Cosa contiene:&lt;/b&gt; una guida pratica dell&#x27;organismo professionale dei management accountant su piani e forecast a scorrimento. Riprende la definizione della CIMA Official Terminology di &lt;i&gt;rolling plans or budgets&lt;/i&gt;: budget aggiornati di continuo aggiungendo un periodo quando quello più vecchio si chiude.&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Perché conta:&lt;/b&gt; è il riferimento professionale per il &lt;i&gt;continuous / perpetual budget&lt;/i&gt; di [8-3, 8-4], con vantaggi, limiti e consigli di implementazione.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.cgma.org/resources/tools/essential-tools/rolling-plans-and-forecasts.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;cgma.org — Rolling plans and forecasts&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;span class=&quot;badge&quot;&gt;fonte esterna&lt;/span&gt;&lt;h4&gt;Merchant, K. A. (1985) — «Budgeting and the propensity to create budgetary slack», &lt;i&gt;Accounting, Organizations and Society&lt;/i&gt;, 10(2), 201–210&lt;/h4&gt;
+    &lt;p&gt;&lt;b&gt;Cosa contiene:&lt;/b&gt; uno degli studi empirici classici sul budgetary slack, cioè la sottostima dei ricavi e/o la sovrastima dei costi nel budget. Analizza i fattori che spingono i manager a crearlo, fra cui la partecipazione al budget.&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Perché conta:&lt;/b&gt; dà il fondamento di ricerca a [8-13, 8-14] (slack e participative budgeting). Non ho trovato un link diretto verificato all&#x27;articolo: il link qui sotto è a un articolo accademico ad accesso aperto che lo cita con questi dati bibliografici.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://scielo.br/j/rcf/a/qh7PKcLvxWFmFy7jjLBCxVh/?lang=en&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;scielo.br — articolo che cita Merchant (1985)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;span class=&quot;badge&quot;&gt;fonte esterna&lt;/span&gt;&lt;h4&gt;Daumoser, Hirsch, Sohn (2018) — «Honesty in budgeting: a review of morality and control aspects in the budgetary slack literature», &lt;i&gt;Journal of Management Control&lt;/i&gt;, 29(2), 115–159&lt;/h4&gt;
+    &lt;p&gt;&lt;b&gt;Cosa contiene:&lt;/b&gt; una rassegna della ricerca sul budgetary slack nelle principali riviste di accounting e di etica degli affari. Conclude che il participative budgeting può sia &lt;b&gt;creare&lt;/b&gt; sia &lt;b&gt;ridurre&lt;/b&gt; lo slack, e che se ne crea meno con schemi retributivi che incentivano stime veritiere (&lt;i&gt;truth-inducing&lt;/i&gt;).&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Perché conta:&lt;/b&gt; mostra che i vantaggi e i limiti del self-imposed budget visti in [8-12, 8-13] sono un tema ancora discusso e che dipendono da come il budget è legato ai premi, proprio il punto 2 di [8-13].&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://link.springer.com/doi/10.1007/s00187-018-0267-z&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Springer — DOI 10.1007/s00187-018-0267-z&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/main&gt;
+&lt;footer&gt;&lt;div class=&quot;wrap&quot;&gt;Riassunto scritto da Claude a partire dalle slide: controlla sempre sul materiale.&lt;/div&gt;&lt;/footer&gt;
+
+&lt;script&gt;
+(function(){
+&quot;use strict&quot;;
+var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var NS=&quot;http://www.w3.org/2000/svg&quot;;
+function el(tag,attrs,parent,text){var e=document.createElementNS(NS,tag);for(var k in attrs){var v=attrs[k];if((k===&quot;fill&quot;||k===&quot;stroke&quot;)&amp;&amp;/var\(|oklch/.test(v))e.style.setProperty(k,v);else e.setAttribute(k,v);}if(text!=null)e.textContent=text;if(parent)parent.appendChild(e);return e;}
+function sum(a){return a.reduce(function(x,y){return x+y},0)}
+function r2(x){return Math.round(x*100+1e-7)/100}
+function fmt(n,d){d=d||0;var s=Math.abs(n).toLocaleString(&quot;en-US&quot;,{minimumFractionDigits:d,maximumFractionDigits:d});return (n&lt;-1e-9)?&quot;(&quot;+s+&quot;)&quot;:s;}
+var HUE={s:150,o:85,a:250,m:25,t:35};
+function col(h,L,C){return &quot;oklch(var(--L) &quot;+(C||&quot;var(--C)&quot;)+&quot; &quot;+h+&quot;)&quot;}
+function bgc(h){return &quot;oklch(var(--Lbg) var(--Cbg) &quot;+h+&quot;)&quot;}
+
+/* ---------- grafo generico (mappa e flusso) ---------- */
+function graph(svg,nodes,edges,onClick){
+ var gE=el(&quot;g&quot;,{},svg), gN=el(&quot;g&quot;,{},svg), idx={};
+ var defs=el(&quot;defs&quot;,{},svg);
+ var mk=el(&quot;marker&quot;,{id:svg.id+&quot;Arr&quot;,viewBox:&quot;0 0 10 10&quot;,refX:&quot;5&quot;,refY:&quot;5&quot;,markerWidth:&quot;7&quot;,markerHeight:&quot;7&quot;,orient:&quot;auto&quot;},defs);
+ el(&quot;path&quot;,{d:&quot;M0,1L9,5L0,9z&quot;,fill:&quot;var(--soft)&quot;},mk);
+ nodes.forEach(function(n){idx[n.id]=n});
+ var eEls=edges.map(function(e){var a=idx[e[0]],b=idx[e[1]];var mx=(a.x+b.x)/2,my=(a.y+b.y)/2;
+  var p=el(&quot;polyline&quot;,{points:a.x+&quot;,&quot;+a.y+&quot; &quot;+mx+&quot;,&quot;+my+&quot; &quot;+b.x+&quot;,&quot;+b.y,&quot;class&quot;:&quot;gedge&quot;,&quot;marker-mid&quot;:&quot;url(#&quot;+svg.id+&quot;Arr)&quot;},gE);p._a=e[0];p._b=e[1];return p;});
+ nodes.forEach(function(n){
+  var g=el(&quot;g&quot;,{&quot;class&quot;:&quot;gnode&quot;,tabindex:&quot;0&quot;,role:&quot;link&quot;,&quot;aria-label&quot;:n.label.join(&quot; &quot;)},gN);
+  var w=n.w||150,h=n.label.length&gt;1?44:34;
+  el(&quot;rect&quot;,{x:n.x-w/2,y:n.y-h/2,width:w,height:h,rx:9,fill:bgc(n.h),stroke:col(n.h)},g);
+  n.label.forEach(function(t,i){el(&quot;text&quot;,{x:n.x,y:n.y+(i-(n.label.length-1)/2)*15+4.5,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:n.fs||13,&quot;font-weight&quot;:i?400:600},g,t)});
+  function act(){$$(&quot;.gnode&quot;,svg).forEach(function(x){x.classList.remove(&quot;on&quot;)});g.classList.add(&quot;on&quot;);
+   eEls.forEach(function(p){p.classList.toggle(&quot;on&quot;,p._a===n.id||p._b===n.id)});onClick(n);}
+  g.addEventListener(&quot;click&quot;,act);g.addEventListener(&quot;keydown&quot;,function(ev){if(ev.key===&quot;Enter&quot;||ev.key===&quot; &quot;){ev.preventDefault();act();}});
+ });
+}
+graph($(&quot;#cmap&quot;),[
+ {id:&quot;B&quot;,x:480,y:36,w:170,label:[&quot;Budget&quot;,&quot;piano quantitativo&quot;],h:150,go:&quot;definizione&quot;},
+ {id:&quot;P&quot;,x:130,y:130,w:200,label:[&quot;Perché?&quot;,&quot;planning &amp; control&quot;],h:85,go:&quot;perche&quot;},
+ {id:&quot;C&quot;,x:130,y:235,w:200,label:[&quot;Come?&quot;,&quot;top-down vs self-imposed&quot;],h:250,go:&quot;come&quot;},
+ {id:&quot;S&quot;,x:130,y:340,w:200,label:[&quot;Budgetary slack&quot;,&quot;rischio e review&quot;],h:250,go:&quot;come&quot;},
+ {id:&quot;M&quot;,x:480,y:130,w:190,label:[&quot;Master budget&quot;,&quot;10 schedule, 10 domande&quot;],h:250,go:&quot;master&quot;},
+ {id:&quot;SB&quot;,x:330,y:230,w:130,label:[&quot;Sales budget&quot;,&quot;+ collections&quot;],h:25,go:&quot;sales&quot;},
+ {id:&quot;PB&quot;,x:480,y:230,w:130,label:[&quot;Production&quot;,&quot;budget&quot;],h:150,go:&quot;production&quot;},
+ {id:&quot;DM&quot;,x:660,y:180,w:150,label:[&quot;Direct materials&quot;,&quot;+ disbursements&quot;],h:85,go:&quot;materials&quot;},
+ {id:&quot;DL&quot;,x:660,y:235,w:150,label:[&quot;Direct labor&quot;],h:250,go:&quot;labor&quot;},
+ {id:&quot;OH&quot;,x:660,y:285,w:150,label:[&quot;Mfg. overhead&quot;],h:25,go:&quot;overhead&quot;},
+ {id:&quot;FG&quot;,x:530,y:350,w:160,label:[&quot;Ending finished&quot;,&quot;goods inventory&quot;],h:150,go:&quot;fginv&quot;},
+ {id:&quot;SA&quot;,x:330,y:330,w:130,label:[&quot;Selling &amp;&quot;,&quot;administrative&quot;],h:85,go:&quot;sa&quot;},
+ {id:&quot;CB&quot;,x:860,y:180,w:130,label:[&quot;Cash budget&quot;],h:250,go:&quot;cash&quot;},
+ {id:&quot;IS&quot;,x:850,y:330,w:160,label:[&quot;Income statement&quot;,&quot;+ balance sheet&quot;],h:25,go:&quot;statements&quot;}
+],[[&quot;B&quot;,&quot;P&quot;],[&quot;P&quot;,&quot;C&quot;],[&quot;C&quot;,&quot;S&quot;],[&quot;B&quot;,&quot;M&quot;],[&quot;C&quot;,&quot;M&quot;],[&quot;M&quot;,&quot;SB&quot;],[&quot;SB&quot;,&quot;PB&quot;],[&quot;PB&quot;,&quot;DM&quot;],[&quot;PB&quot;,&quot;DL&quot;],[&quot;PB&quot;,&quot;OH&quot;],[&quot;DM&quot;,&quot;FG&quot;],[&quot;OH&quot;,&quot;FG&quot;],[&quot;SB&quot;,&quot;SA&quot;],[&quot;DM&quot;,&quot;CB&quot;],[&quot;OH&quot;,&quot;CB&quot;],[&quot;CB&quot;,&quot;IS&quot;],[&quot;FG&quot;,&quot;IS&quot;],[&quot;SA&quot;,&quot;IS&quot;]],
+function(n){var t=document.getElementById(n.go);if(t)t.scrollIntoView({behavior:&quot;smooth&quot;});});
+
+/* ---------- rolling budget ---------- */
+var MESI=[&quot;Gen&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;Mag&quot;,&quot;Giu&quot;,&quot;Lug&quot;,&quot;Ago&quot;,&quot;Set&quot;,&quot;Ott&quot;,&quot;Nov&quot;,&quot;Dic&quot;],roll=0;
+function drawRoll(){var s=$(&quot;#rolling&quot;);s.innerHTML=&quot;&quot;;
+ var w=60,gap=6,start=30;
+ for(var k=(roll?-1:0);k&lt;12;k++){var mi=(k+roll+120)%12,yr=Math.floor((k+roll)/12);var x=start+(k)*(w+gap)+ (w+gap);
+  var inside=k&gt;=0&amp;&amp;k&lt;12, past=k&lt;0, isNew=(k===11&amp;&amp;roll&gt;0);
+  if(x&lt;0||x&gt;880)continue;
+  el(&quot;rect&quot;,{x:x,y:40,width:w,height:56,rx:7,fill:past?&quot;transparent&quot;:(isNew?&quot;var(--accent-bg)&quot;:bgc(150)),stroke:past?&quot;var(--rule)&quot;:(isNew?&quot;var(--accent)&quot;:col(150)),&quot;stroke-dasharray&quot;:past?&quot;4 3&quot;:&quot;0&quot;,opacity:k===12?.35:1},s);
+  el(&quot;text&quot;,{x:x+w/2,y:66,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-weight&quot;:600,&quot;font-size&quot;:14,opacity:past||k===12?.45:1},s,MESI[mi]);
+  el(&quot;text&quot;,{x:x+w/2,y:84,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11,opacity:past||k===12?.45:1},s,&quot;anno &quot;+(yr+1));
+ }
+ if(roll)el(&quot;text&quot;,{x:start+30,y:26,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:12,fill:&quot;var(--soft)&quot;},s,&quot;chiuso&quot;);
+ el(&quot;path&quot;,{d:&quot;M&quot;+(start+66)+&quot; 110 H&quot;+(start+66+12*66-6),stroke:col(150),&quot;stroke-width&quot;:2},s);
+ el(&quot;text&quot;,{x:start+66+6*66,y:132,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:13,&quot;font-weight&quot;:600},s,&quot;finestra di 12 mesi sempre davanti&quot;);
+ $(&quot;#rollMsg&quot;).textContent=roll?((roll===1?&quot;Chiuso 1 mese&quot;:&quot;Chiusi &quot;+roll+&quot; mesi&quot;)+&quot;: l&#x27;ultimo mese aggiunto è &quot;+MESI[(11+roll)%12]+&quot; (anno &quot;+(Math.floor((11+roll)/12)+1)+&quot;).&quot;) : &quot;Finestra iniziale: gennaio–dicembre dell&#x27;anno 1.&quot;;
+}
+$(&quot;#rollBtn&quot;).onclick=function(){roll++;drawRoll()};$(&quot;#rollReset&quot;).onclick=function(){roll=0;drawRoll()};drawRoll();
+
+/* ---------- tabs ---------- */
+$$(&quot;[data-tabs]&quot;).forEach(function(t){var bs=$$(&quot;[role=tab]&quot;,t),ps=$$(&quot;:scope &gt; [role=tabpanel]&quot;,t);
+ bs.forEach(function(b,i){b.setAttribute(&quot;aria-selected&quot;,i?&quot;false&quot;:&quot;true&quot;);b.onclick=function(){bs.forEach(function(x,j){x.setAttribute(&quot;aria-selected&quot;,j===i?&quot;true&quot;:&quot;false&quot;);ps[j].hidden=j!==i;});};});});
+
+/* ---------- quiz a scelta multipla ---------- */
+$$(&quot;.mcq&quot;).forEach(function(q){$$(&quot;button&quot;,q).forEach(function(b){b.type=&quot;button&quot;;b.onclick=function(){
+ $$(&quot;button&quot;,q).forEach(function(x){x.classList.remove(&quot;ok&quot;,&quot;ko&quot;)});
+ var ok=b.dataset.k===q.dataset.ok;b.classList.add(ok?&quot;ok&quot;:&quot;ko&quot;);if(!ok)$(&#x27;button[data-k=&quot;&#x27;+q.dataset.ok+&#x27;&quot;]&#x27;,q).classList.add(&quot;ok&quot;);q.classList.add(&quot;done&quot;);};});});
+
+/* ---------- benefici (planning) ---------- */
+var BEN=[[&quot;Define goals&quot;,&quot;and objectives&quot;,&quot;Il budget obbliga a tradurre la strategia in obiettivi espliciti e misurabili (unità, ricavi, costi).&quot;],
+ [&quot;Think about and&quot;,&quot;plan for the future&quot;,&quot;Costringe i manager a guardare avanti, invece di limitarsi a reagire ai problemi del giorno.&quot;],
+ [&quot;Means of allocating&quot;,&quot;resources&quot;,&quot;Mostra dove servono le risorse (denaro, persone, macchine) e permette di assegnarle dove rendono di più.&quot;],
+ [&quot;Uncover potential&quot;,&quot;bottlenecks&quot;,&quot;Fa emergere in anticipo i colli di bottiglia: un mese con picco di produzione, una carenza di cassa (come aprile per Royal).&quot;],
+ [&quot;Coordinate&quot;,&quot;activities&quot;,&quot;Collega le funzioni: vendite, produzione, acquisti e tesoreria lavorano sugli stessi numeri.&quot;],
+ [&quot;Communicate&quot;,&quot;plans&quot;,&quot;Rende noti a tutta l&#x27;organizzazione i piani del management.&quot;]];
+(function(){var s=$(&quot;#benefits&quot;);el(&quot;ellipse&quot;,{cx:320,cy:150,rx:80,ry:40,fill:col(85),opacity:.9},s);el(&quot;text&quot;,{x:320,y:156,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:18,&quot;font-weight&quot;:600,fill:&quot;var(--paper)&quot;,style:&quot;fill:var(--paper)&quot;},s,&quot;Benefits&quot;);
+ var pos=[[320,40],[540,80],[540,220],[320,262],[100,220],[100,80]];
+ BEN.forEach(function(b,i){var p=pos[i];el(&quot;line&quot;,{x1:p[0],y1:p[1],x2:320+(p[0]-320)*.35,y2:150+(p[1]-150)*.35,stroke:col(85),&quot;stroke-width&quot;:1.5},s);
+  var g=el(&quot;g&quot;,{&quot;class&quot;:&quot;gnode&quot;,tabindex:&quot;0&quot;,role:&quot;button&quot;},s);el(&quot;rect&quot;,{x:p[0]-82,y:p[1]-22,width:164,height:44,rx:8,fill:bgc(85),stroke:col(85)},g);
+  el(&quot;text&quot;,{x:p[0],y:p[1]-3,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:13,&quot;font-weight&quot;:600},g,b[0]);el(&quot;text&quot;,{x:p[0],y:p[1]+13,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:13,&quot;font-weight&quot;:600},g,b[1]);
+  function a(){$$(&quot;.gnode&quot;,s).forEach(function(x){x.classList.remove(&quot;on&quot;)});g.classList.add(&quot;on&quot;);$(&quot;#benefitTxt&quot;).innerHTML=&quot;&lt;b&gt;&quot;+b[0]+&quot; &quot;+b[1]+&quot;.&lt;/b&gt; &quot;+b[2];}
+  g.addEventListener(&quot;click&quot;,a);g.addEventListener(&quot;keydown&quot;,function(e){if(e.key===&quot;Enter&quot;){a()}});});})();
+
+/* ---------- organigrammi ---------- */
+function org(g,up){var h=250,c=col(h),bx=[[320,30,&quot;Top Management&quot;],[170,95,&quot;Middle Mgmt&quot;],[470,95,&quot;Middle Mgmt&quot;],[95,160,&quot;Supervisor&quot;],[245,160,&quot;Supervisor&quot;],[395,160,&quot;Supervisor&quot;],[545,160,&quot;Supervisor&quot;]];
+ var lk=[[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]];var svg=g.ownerSVGElement;var id=&quot;o&quot;+(up?&quot;u&quot;:&quot;d&quot;);
+ var d=el(&quot;defs&quot;,{},g),m=el(&quot;marker&quot;,{id:id,viewBox:&quot;0 0 10 10&quot;,refX:&quot;8&quot;,refY:&quot;5&quot;,markerWidth:&quot;7&quot;,markerHeight:&quot;7&quot;,orient:&quot;auto&quot;},d);el(&quot;path&quot;,{d:&quot;M0,0L10,5L0,10z&quot;,fill:up?&quot;var(--accent)&quot;:c},m);
+ lk.forEach(function(l){var a=bx[l[0]],b=bx[l[1]];var f=up?b:a,t=up?a:b;el(&quot;line&quot;,{x1:f[0],y1:f[1]+(up?-14:14),x2:t[0],y2:t[1]+(up?14:-14),stroke:up?&quot;var(--accent)&quot;:c,&quot;stroke-width&quot;:2,&quot;marker-end&quot;:&quot;url(#&quot;+id+&quot;)&quot;},g);});
+ bx.forEach(function(b){el(&quot;rect&quot;,{x:b[0]-62,y:b[1]-14,width:124,height:28,rx:6,fill:bgc(h),stroke:c},g);el(&quot;text&quot;,{x:b[0],y:b[1]+4.5,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:12.5,&quot;font-weight&quot;:600},g,b[2]);});
+ el(&quot;text&quot;,{x:620,y:100,&quot;text-anchor&quot;:&quot;end&quot;,&quot;font-size&quot;:12,fill:&quot;var(--soft)&quot;},g,up?&quot;stime ↑&quot;:&quot;target ↓&quot;);}
+org($(&quot;#orgDown&quot;),false);org($(&quot;#orgUp&quot;),true);
+
+/* ---------- slack ---------- */
+function drawSlack(){var v=+$(&quot;#slackR&quot;).value,s=$(&quot;#slackSvg&quot;);s.innerHTML=&quot;&quot;;$(&quot;#slackO&quot;).textContent=(v&gt;0?&quot;+&quot;:&quot;&quot;)+v+&quot;%&quot;;
+ var X=function(p){return 40+(p+30)/60*560};
+ [[-30,-8,25,&quot;troppo basso: slack, target inefficace&quot;],[-8,10,150,&quot;sfidante ma raggiungibile&quot;],[10,30,25,&quot;troppo alto: risentimento&quot;]].forEach(function(z){
+  el(&quot;rect&quot;,{x:X(z[0]),y:40,width:X(z[1])-X(z[0]),height:50,fill:bgc(z[2]),stroke:col(z[2])},s);
+  el(&quot;text&quot;,{x:(X(z[0])+X(z[1]))/2,y:69,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:12,&quot;font-weight&quot;:600},s,z[3]);});
+ for(var t=-30;t&lt;=30;t+=10){el(&quot;text&quot;,{x:X(t),y:110,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11,fill:&quot;var(--soft)&quot;},s,(t&gt;0?&quot;+&quot;:&quot;&quot;)+t+&quot;%&quot;);}
+ el(&quot;text&quot;,{x:X(0),y:28,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11,fill:&quot;var(--soft)&quot;},s,&quot;stima realistica&quot;);
+ el(&quot;line&quot;,{x1:X(v),y1:34,x2:X(v),y2:96,stroke:&quot;var(--accent)&quot;,&quot;stroke-width&quot;:3},s);el(&quot;circle&quot;,{cx:X(v),cy:96,r:6,fill:&quot;var(--accent)&quot;},s);
+ el(&quot;text&quot;,{x:320,y:150,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11.5,fill:&quot;var(--soft)&quot;},s,&quot;schema illustrativo · confini delle zone arbitrari&quot;);
+ var msg=v&lt;-8?&quot;&lt;b&gt;Target troppo basso.&lt;/b&gt; Facile da battere: è il segno tipico del &lt;i&gt;budgetary slack&lt;/i&gt;. Il budget smette di guidare la performance (target «ineffective», [8-10]) e le risorse vengono assegnate su stime gonfiate. Serve la review dei livelli superiori [8-14].&quot;:
+  v&gt;10?&quot;&lt;b&gt;Target troppo alto.&lt;/b&gt; Quasi impossibile da raggiungere: genera risentimento invece di cooperazione e demotiva [8-10]. Rischio tipico del puro top-down.&quot;:
+  &quot;&lt;b&gt;Challenging but highly achievable.&lt;/b&gt; È la zona cercata dalle slide [8-11, 8-14]: un obiettivo che chiede impegno ma è credibile rafforza fiducia e commitment.&quot;;
+ $(&quot;#slackTxt&quot;).innerHTML=msg;}
+$(&quot;#slackR&quot;).addEventListener(&quot;input&quot;,drawSlack);drawSlack();
+
+/* ================= MODELLO ROYAL COMPANY ================= */
+var P0={sales:[20000,50000,30000,25000,15000],price:10,collIn:.7,ar0:30000,fgPct:.2,fg0:4000,lbs:5,rmPct:.1,rm0:13000,cost:.4,payIn:.5,ap0:12000,
+ hrs:.05,wage:10,voh:20,foh:50000,fohNC:20000,vsa:.5,fsa:70000,fsaNC:10000,cash0:40000,minCash:30000,rate:.16,line:75000,div:[49000,0,0],equip:[0,143700,48300]};
+var p=JSON.parse(JSON.stringify(P0));
+var M3=[0,1,2];
+function model(p){
+ var s=p.sales,m={};
+ m.rev=s.map(function(u){return u*p.price});
+ m.coll=M3.map(function(i){return p.collIn*m.rev[i]+(i?(1-p.collIn)*m.rev[i-1]:p.ar0)});
+ m.arEnd=(1-p.collIn)*m.rev[2];
+ function endFG(i){return p.fgPct*s[i+1]}
+ m.endFG=[0,1,2,3].map(endFG);
+ m.begFG=[p.fg0,m.endFG[0],m.endFG[1],m.endFG[2]];
+ m.prod=[0,1,2,3].map(function(i){return s[i]+m.endFG[i]-m.begFG[i]});
+ m.need=M3.map(function(i){return m.prod[i]*p.lbs});
+ m.endRM=M3.map(function(i){return p.rmPct*m.prod[i+1]*p.lbs});
+ m.begRM=[p.rm0,m.endRM[0],m.endRM[1]];
+ m.buy=M3.map(function(i){return m.need[i]+m.endRM[i]-m.begRM[i]});
+ m.buyD=m.buy.map(function(x){return x*p.cost});
+ m.pay=M3.map(function(i){return p.payIn*m.buyD[i]+(i?(1-p.payIn)*m.buyD[i-1]:p.ap0)});
+ m.apEnd=(1-p.payIn)*m.buyD[2];
+ m.hrs=M3.map(function(i){return m.prod[i]*p.hrs});
+ m.dl=m.hrs.map(function(h){return h*p.wage});
+ m.voh=m.hrs.map(function(h){return h*p.voh});
+ m.toh=m.voh.map(function(v){return v+p.foh});
+ m.coh=m.toh.map(function(t){return t-p.fohNC});
+ m.ohRate=r2(sum(m.toh)/sum(m.hrs));
+ m.ucDM=r2(p.lbs*p.cost);m.ucDL=r2(p.hrs*p.wage);m.ucOH=r2(p.hrs*m.ohRate);m.uc=r2(m.ucDM+m.ucDL+m.ucOH);
+ m.fgVal=m.endFG[2]*m.uc;
+ m.vsa=M3.map(function(i){return s[i]*p.vsa});
+ m.tsa=m.vsa.map(function(v){return v+p.fsa});
+ m.csa=m.tsa.map(function(t){return t-p.fsaNC});
+ var C={beg:[],avail:[],tot:[],exc:[],bor:[],rep:[],int:[],fin:[],end:[]},bal=p.cash0,out=[0,0,0];m.capHit=false;m.short=false;
+ M3.forEach(function(i){
+  C.beg[i]=bal;C.avail[i]=bal+m.coll[i];
+  C.tot[i]=m.pay[i]+m.dl[i]+m.coh[i]+m.csa[i]+p.equip[i]+p.div[i];
+  var ex=C.avail[i]-C.tot[i],b=0,r=0,it=0;C.exc[i]=ex;
+  if(ex&lt;p.minCash){b=Math.ceil((p.minCash-ex)/1000-1e-6)*1000;var room=p.line-sum(out);if(b&gt;room){b=Math.max(0,room);m.capHit=true;}out[i]=b;}
+  else if(i===2){var P=out[0]+out[1];if(P&gt;0){var I=(out[0]*3+out[1]*2)*p.rate/12,av=ex-p.minCash;
+   if(av&gt;=P+I){r=P;it=I;}else{r=Math.max(0,av)/(1+I/P);it=I*r/P;}}}
+  C.bor[i]=b;C.rep[i]=-r;C.int[i]=-it;C.fin[i]=b-r-it;bal=ex+C.fin[i];C.end[i]=bal;
+  if(bal&lt;p.minCash-.5)m.short=true;
+ });
+ m.C=C;m.debtEnd=sum(out)+sum(C.rep);
+ m.units=s[0]+s[1]+s[2];m.sales=sum(m.rev.slice(0,3));m.cogs=m.units*m.uc;m.gm=m.sales-m.cogs;m.sa=sum(m.tsa);
+ m.opInc=m.gm-m.sa;m.interest=-sum(C.int);m.ni=m.opInc-m.interest;
+ return m;
+}
+
+/* ---------- tabelle ---------- */
+var STEP={tColl:1,tPay:1,tCash:1};
+function cell(v,d){return v==null?&quot;&quot;:fmt(v,d)}
+function tbl(id,rows){
+ var h=&quot;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;April&lt;/th&gt;&lt;th&gt;May&lt;/th&gt;&lt;th&gt;June&lt;/th&gt;&lt;th&gt;Quarter&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&quot;;
+ rows.forEach(function(r){var cls=(r.c||&quot;&quot;)+(r.s?&quot;&quot;:&quot;&quot;);
+  h+=&#x27;&lt;tr class=&quot;&#x27;+cls+&#x27;&quot;&#x27;+(r.s?&#x27; data-s=&quot;&#x27;+r.s+&#x27;&quot;&#x27;:&quot;&quot;)+&quot;&gt;&lt;td&gt;&quot;+r.l+&quot;&lt;/td&gt;&quot;;
+  if(r.v){r.v.forEach(function(v){h+=&quot;&lt;td&gt;&quot;+cell(v,r.d)+&quot;&lt;/td&gt;&quot;});h+=&quot;&lt;td&gt;&quot;+cell(r.q,r.d)+&quot;&lt;/td&gt;&quot;;}else h+=&#x27;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&#x27;;
+  h+=&quot;&lt;/tr&gt;&quot;;});
+ var t=document.getElementById(id);t.innerHTML=h+&quot;&lt;/tbody&gt;&quot;;if(STEP[id]!=null)applyStep(id);
+}
+function simple(id,head,rows){var h=&quot;&lt;thead&gt;&lt;tr&gt;&quot;+head.map(function(x,i){return &quot;&lt;th&quot;+(i&gt;1?&#x27; style=&quot;text-align:left&quot;&#x27;:&quot;&quot;)+&quot;&gt;&quot;+x+&quot;&lt;/th&gt;&quot;}).join(&quot;&quot;)+&quot;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&quot;;
+ rows.forEach(function(r){h+=&#x27;&lt;tr class=&quot;&#x27;+(r.c||&quot;&quot;)+&#x27;&quot;&gt;&#x27;+r.v.map(function(x,i){return &quot;&lt;td&quot;+(i&gt;1?&#x27; style=&quot;text-align:left&quot;&#x27;:&quot;&quot;)+&quot;&gt;&quot;+x+&quot;&lt;/td&gt;&quot;}).join(&quot;&quot;)+&quot;&lt;/tr&gt;&quot;});
+ document.getElementById(id).innerHTML=h+&quot;&lt;/tbody&gt;&quot;;}
+function pc(x){return Math.round(x*100)+&quot;%&quot;}
+function d$(x){return &quot;$&quot;+fmt(x,x%1?2:0)}
+
+var STEPMSG={
+ tColl:function(){return[&quot;Il credito al 31/3 (&quot;+d$(p.ar0)+&quot;) si incassa tutto ad aprile.&quot;,&quot;Vendite di aprile: &quot;+pc(p.collIn)+&quot; incassato ad aprile, &quot;+pc(1-p.collIn)+&quot; a maggio.&quot;,&quot;Vendite di maggio: &quot;+pc(p.collIn)+&quot; a maggio, &quot;+pc(1-p.collIn)+&quot; a giugno.&quot;,&quot;Vendite di giugno: nel trimestre entra solo il &quot;+pc(p.collIn)+&quot;; il resto è credito al 30/6.&quot;,&quot;Sommando le colonne si ottengono gli incassi di ogni mese, il dato che va nel cash budget.&quot;]},
+ tPay:function(){return[&quot;Il debito verso fornitori al 31/3 (&quot;+d$(p.ap0)+&quot;) si paga ad aprile.&quot;,&quot;Acquisti di aprile: &quot;+pc(p.payIn)+&quot; pagato ad aprile, il resto a maggio.&quot;,&quot;Acquisti di maggio: &quot;+pc(p.payIn)+&quot; a maggio, il resto a giugno.&quot;,&quot;Acquisti di giugno: nel trimestre si paga solo il &quot;+pc(p.payIn)+&quot;; il resto è debito al 30/6.&quot;,&quot;Totali: gli esborsi per materiali che entrano nel cash budget.&quot;]},
+ tCash:function(){return[&quot;Sezione 1: saldo iniziale + incassi = cassa disponibile. Il saldo di fine mese diventa l&#x27;iniziale del mese dopo.&quot;,&quot;Sezione 2: gli esborsi presi dalle schedule di materiali, manodopera, overhead (solo cash) e S&amp;A (solo cash), più attrezzature e dividendo.&quot;,&quot;Sezione 3: eccedenza o deficit = cassa disponibile − esborsi.&quot;,&quot;Sezione 4: si prende a prestito quanto serve per non scendere sotto il saldo minimo (&quot;+d$(p.minCash)+&quot;).&quot;,&quot;Rimborso a fine trimestre del capitale e degli interessi (16% annuo per i mesi di utilizzo).&quot;,&quot;Saldo finale = eccedenza + finanziamento netto.&quot;]}
+};
+function applyStep(id){var t=document.getElementById(id),n=STEP[id];$$(&quot;tr[data-s]&quot;,t).forEach(function(r){var s=+r.dataset.s;r.classList.toggle(&quot;hide&quot;,s&gt;n);r.classList.toggle(&quot;fresh&quot;,s===n);});
+ var bar=$(&#x27;[data-stepper=&quot;&#x27;+id+&#x27;&quot;]&#x27;);if(bar){var mx=+bar.dataset.max;$(&quot;.stepmsg&quot;,bar).textContent=&quot;Passo &quot;+n+&quot;/&quot;+mx+&quot; · &quot;+STEPMSG[id]()[n-1];
+  $(&#x27;[data-d=&quot;-1&quot;]&#x27;,bar).disabled=n&lt;=1;$(&#x27;[data-d=&quot;1&quot;]&#x27;,bar).disabled=n&gt;=mx;}}
+$$(&quot;[data-stepper]&quot;).forEach(function(bar){var id=bar.dataset.stepper,mx=+bar.dataset.max;$$(&quot;button&quot;,bar).forEach(function(b){b.onclick=function(){STEP[id]=Math.min(mx,Math.max(1,STEP[id]+(+b.dataset.d)));applyStep(id);};});});
+
+/* ---------- grafici ---------- */
+function salesChart(){var s=$(&quot;#salesChart&quot;);s.innerHTML=&quot;&quot;;var mx=Math.max.apply(null,p.sales.concat([60000])),L=[&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;];
+ p.sales.forEach(function(u,i){var h=u/mx*150,x=60+i*112;var q=i&lt;3;
+  el(&quot;rect&quot;,{x:x,y:180-h,width:72,height:h,rx:4,fill:q?col(250):bgc(250),stroke:col(250)},s);
+  el(&quot;text&quot;,{x:x+36,y:172-h,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:13,&quot;font-weight&quot;:600},s,fmt(u));
+  el(&quot;text&quot;,{x:x+36,y:200,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:12.5},s,L[i]);});
+ el(&quot;line&quot;,{x1:40,y1:180,x2:620,y2:180,stroke:&quot;var(--rule)&quot;},s);
+ el(&quot;text&quot;,{x:60+1.5*112,y:216,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11.5,fill:&quot;var(--soft)&quot;},s,&quot;trimestre di budget&quot;);
+ el(&quot;text&quot;,{x:60+3.5*112+36-36,y:216,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11.5,fill:&quot;var(--soft)&quot;},s,&quot;servono per le scorte finali&quot;);}
+
+function collSvg(m){var s=$(&quot;#collSvg&quot;);s.innerHTML=&quot;&quot;;var c=col(25);
+ var d=el(&quot;defs&quot;,{},s),mk=el(&quot;marker&quot;,{id:&quot;ca&quot;,viewBox:&quot;0 0 10 10&quot;,refX:&quot;9&quot;,refY:&quot;5&quot;,markerWidth:&quot;7&quot;,markerHeight:&quot;7&quot;,orient:&quot;auto&quot;},d);el(&quot;path&quot;,{d:&quot;M0,0L10,5L0,10z&quot;,fill:c},mk);
+ var X=[70,195,320,445,570],top=[[&quot;A/R 31/3&quot;,p.ar0],[&quot;Sales Apr&quot;,m.rev[0]],[&quot;Sales May&quot;,m.rev[1]],[&quot;Sales Jun&quot;,m.rev[2]]];
+ top.forEach(function(t,i){el(&quot;rect&quot;,{x:X[i]-52,y:14,width:104,height:42,rx:7,fill:bgc(25),stroke:c},s);el(&quot;text&quot;,{x:X[i],y:31,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11.5},s,t[0]);el(&quot;text&quot;,{x:X[i],y:48,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:13,&quot;font-weight&quot;:600},s,fmt(t[1]));});
+ [&quot;Coll. Apr&quot;,&quot;Coll. May&quot;,&quot;Coll. Jun&quot;].forEach(function(t,i){var x=X[i+1];el(&quot;rect&quot;,{x:x-52,y:150,width:104,height:42,rx:7,fill:col(25),stroke:c},s);
+  el(&quot;text&quot;,{x:x,y:167,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11.5,style:&quot;fill:var(--paper)&quot;},s,t);el(&quot;text&quot;,{x:x,y:184,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:13,&quot;font-weight&quot;:600,style:&quot;fill:var(--paper)&quot;},s,fmt(m.coll[i]));});
+ el(&quot;rect&quot;,{x:X[4]-52,y:150,width:104,height:42,rx:7,fill:&quot;transparent&quot;,stroke:c,&quot;stroke-dasharray&quot;:&quot;4 3&quot;},s);el(&quot;text&quot;,{x:X[4],y:167,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11.5},s,&quot;A/R 30/6&quot;);el(&quot;text&quot;,{x:X[4],y:184,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:13,&quot;font-weight&quot;:600},s,fmt(m.arEnd));
+ function ar(x1,x2,lab){el(&quot;line&quot;,{x1:x1,y1:58,x2:x2,y2:146,stroke:c,&quot;stroke-width&quot;:1.6,&quot;marker-end&quot;:&quot;url(#ca)&quot;},s);el(&quot;text&quot;,{x:(x1+x2)/2+(x2&gt;x1?10:-4),y:104,&quot;font-size&quot;:11.5,&quot;font-weight&quot;:600,&quot;text-anchor&quot;:x2&gt;x1?&quot;start&quot;:&quot;end&quot;},s,lab);}
+ ar(X[0]+20,X[1]-30,&quot;100%&quot;);for(var i=1;i&lt;4;i++){if(i&lt;4)ar(X[i]-6,X[i]-6,pc(p.collIn));ar(X[i]+20,X[i+1]-30,pc(1-p.collIn));}
+}
+
+function prodSvg(m){var i=+$(&quot;#prodMonth&quot;).value,s=$(&quot;#prodSvg&quot;);s.innerHTML=&quot;&quot;;$(&quot;#prodMonthO&quot;).textContent=[&quot;April&quot;,&quot;May&quot;,&quot;June&quot;][i];
+ var mx=Math.max.apply(null,M3.map(function(k){return p.sales[k]+m.endFG[k]})),W=470,X=function(v){return v/mx*W},x0=140,g=col(150);
+ var sale=p.sales[i],end=m.endFG[i],beg=m.begFG[i],pr=m.prod[i];
+ el(&quot;text&quot;,{x:x0-10,y:58,&quot;text-anchor&quot;:&quot;end&quot;,&quot;font-size&quot;:12.5,&quot;font-weight&quot;:600},s,&quot;Total needs&quot;);
+ el(&quot;rect&quot;,{x:x0,y:38,width:X(sale),height:32,fill:g},s);el(&quot;text&quot;,{x:x0+X(sale)/2,y:59,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:12,style:&quot;fill:var(--paper)&quot;},s,&quot;sales &quot;+fmt(sale));
+ el(&quot;rect&quot;,{x:x0+X(sale),y:38,width:X(end),height:32,fill:bgc(150),stroke:g},s);el(&quot;text&quot;,{x:x0+X(sale)+X(end)/2,y:28,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11.5},s,&quot;+ ending &quot;+fmt(end));
+ el(&quot;text&quot;,{x:x0-10,y:128,&quot;text-anchor&quot;:&quot;end&quot;,&quot;font-size&quot;:12.5,&quot;font-weight&quot;:600},s,&quot;Production&quot;);
+ el(&quot;rect&quot;,{x:x0,y:108,width:X(beg),height:32,fill:&quot;transparent&quot;,stroke:g,&quot;stroke-dasharray&quot;:&quot;4 3&quot;},s);el(&quot;text&quot;,{x:x0+X(beg)/2,y:160,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11.5},s,&quot;− beginning &quot;+fmt(beg));
+ el(&quot;rect&quot;,{x:x0+X(beg),y:108,width:X(pr),height:32,fill:col(85)},s);el(&quot;text&quot;,{x:x0+X(beg)+X(pr)/2,y:129,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:12.5,&quot;font-weight&quot;:600,style:&quot;fill:var(--paper)&quot;},s,&quot;produce &quot;+fmt(pr));
+ el(&quot;text&quot;,{x:320,y:200,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:12.5},s,fmt(sale)+&quot; + &quot;+fmt(end)+&quot; − &quot;+fmt(beg)+&quot; = &quot;+fmt(pr)+&quot; unità&quot;);
+ el(&quot;text&quot;,{x:320,y:220,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11,fill:&quot;var(--soft)&quot;},s,&quot;la scorta iniziale c&#x27;è già in magazzino: non va prodotta&quot;);}
+
+function ohDraw(m){var h=+$(&quot;#ohH&quot;).value,s=$(&quot;#ohSvg&quot;);s.innerHTML=&quot;&quot;;$(&quot;#ohHO&quot;).textContent=fmt(h)+&quot; h&quot;;
+ var X=function(v){return 60+v/3000*550},Y=function(v){return 220-v/120000*200};
+ for(var k=0;k&lt;=120000;k+=30000){el(&quot;line&quot;,{x1:60,y1:Y(k),x2:610,y2:Y(k),stroke:&quot;var(--rule)&quot;},s);el(&quot;text&quot;,{x:54,y:Y(k)+4,&quot;text-anchor&quot;:&quot;end&quot;,&quot;font-size&quot;:10.5,fill:&quot;var(--soft)&quot;},s,k/1000+&quot;k&quot;);}
+ for(k=0;k&lt;=3000;k+=500)el(&quot;text&quot;,{x:X(k),y:238,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:10.5,fill:&quot;var(--soft)&quot;},s,fmt(k));
+ el(&quot;text&quot;,{x:610,y:254,&quot;text-anchor&quot;:&quot;end&quot;,&quot;font-size&quot;:11,fill:&quot;var(--soft)&quot;},s,&quot;direct labor-hours&quot;);
+ el(&quot;line&quot;,{x1:X(0),y1:Y(p.foh),x2:X(3000),y2:Y(p.foh+p.voh*3000),stroke:col(25),&quot;stroke-width&quot;:2.5},s);
+ el(&quot;line&quot;,{x1:X(0),y1:Y(p.foh-p.fohNC),x2:X(3000),y2:Y(p.foh-p.fohNC+p.voh*3000),stroke:col(250),&quot;stroke-width&quot;:2,&quot;stroke-dasharray&quot;:&quot;6 4&quot;},s);
+ el(&quot;line&quot;,{x1:X(0),y1:Y(p.foh),x2:X(3000),y2:Y(p.foh),stroke:&quot;var(--soft)&quot;,&quot;stroke-dasharray&quot;:&quot;2 3&quot;},s);
+ el(&quot;text&quot;,{x:X(2950),y:Y(p.foh+p.voh*2950)-8,&quot;text-anchor&quot;:&quot;end&quot;,&quot;font-size&quot;:11.5,&quot;font-weight&quot;:600,fill:col(25)},s,&quot;Total mfg. OH&quot;);
+ el(&quot;text&quot;,{x:X(2950),y:Y(p.foh-p.fohNC+p.voh*2950)+16,&quot;text-anchor&quot;:&quot;end&quot;,&quot;font-size&quot;:11.5,&quot;font-weight&quot;:600,fill:col(250)},s,&quot;Cash mfg. OH&quot;);
+ el(&quot;text&quot;,{x:X(40),y:Y(p.foh)-5,&quot;font-size&quot;:10.5,fill:&quot;var(--soft)&quot;},s,&quot;fixed 50k&quot;);
+ m.hrs.forEach(function(hh,i){el(&quot;circle&quot;,{cx:X(hh),cy:Y(m.toh[i]),r:4,fill:&quot;var(--paper)&quot;,stroke:col(25),&quot;stroke-width&quot;:2},s);el(&quot;text&quot;,{x:X(hh),y:Y(m.toh[i])+18,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:10.5},s,[&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;][i]);});
+ var tot=p.foh+p.voh*h;el(&quot;line&quot;,{x1:X(h),y1:Y(0),x2:X(h),y2:Y(tot),stroke:&quot;var(--accent)&quot;,&quot;stroke-width&quot;:1.5},s);el(&quot;circle&quot;,{cx:X(h),cy:Y(tot),r:6,fill:&quot;var(--accent)&quot;},s);
+ $(&quot;#ohK&quot;).innerHTML=&#x27;&lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Total OH&lt;/span&gt;&lt;b&gt;$&#x27;+fmt(tot)+&#x27;&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Cash OH&lt;/span&gt;&lt;b&gt;$&#x27;+fmt(tot-p.fohNC)+&#x27;&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Costo medio per ora&lt;/span&gt;&lt;b&gt;$&#x27;+fmt(tot/h,2)+&#x27;&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Tasso trimestre&lt;/span&gt;&lt;b&gt;$&#x27;+fmt(m.ohRate,2)+&#x27;&lt;/b&gt;&lt;/div&gt;&#x27;;}
+
+function ucSvg(m){var s=$(&quot;#ucSvg&quot;);s.innerHTML=&quot;&quot;;var parts=[[&quot;Direct materials&quot;,m.ucDM,85],[&quot;Direct labor&quot;,m.ucDL,250],[&quot;Mfg. overhead&quot;,m.ucOH,25]],x=40,W=560;
+ parts.forEach(function(q,i){var w=q[1]/m.uc*W;el(&quot;rect&quot;,{x:x,y:40,width:w,height:44,fill:col(q[2])},s);
+  el(&quot;text&quot;,{x:x+w/2,y:67,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:13,&quot;font-weight&quot;:600,style:&quot;fill:var(--paper)&quot;},s,&quot;$&quot;+fmt(q[1],2));
+  el(&quot;text&quot;,{x:x+w/2,y:i===1?110:30,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11.5},s,q[0]);x+=w;});
+ el(&quot;text&quot;,{x:600,y:132,&quot;text-anchor&quot;:&quot;end&quot;,&quot;font-size&quot;:14,&quot;font-weight&quot;:700},s,&quot;Unit product cost = $&quot;+fmt(m.uc,2));}
+
+function labSvg(m){var s=$(&quot;#labSvg&quot;),C=m.C;s.innerHTML=&quot;&quot;;var vals=C.exc.concat(C.end,[p.minCash,0]),lo=Math.min.apply(null,vals),hi=Math.max.apply(null,vals);hi=hi+(hi-lo)*.12;lo=lo-(hi-lo)*.05;
+ var Y=function(v){return 250-(v-lo)/(hi-lo)*220};
+ el(&quot;line&quot;,{x1:40,y1:Y(0),x2:620,y2:Y(0),stroke:&quot;var(--ink)&quot;},s);
+ el(&quot;line&quot;,{x1:40,y1:Y(p.minCash),x2:620,y2:Y(p.minCash),stroke:&quot;var(--accent)&quot;,&quot;stroke-dasharray&quot;:&quot;6 4&quot;},s);
+ el(&quot;text&quot;,{x:620,y:Y(p.minCash)-5,&quot;text-anchor&quot;:&quot;end&quot;,&quot;font-size&quot;:11,fill:&quot;var(--accent)&quot;},s,&quot;saldo minimo &quot;+fmt(p.minCash));
+ [&quot;April&quot;,&quot;May&quot;,&quot;June&quot;].forEach(function(n,i){var x=80+i*185;
+  [[C.exc[i],250,&quot;excess&quot;],[C.end[i],150,&quot;ending&quot;]].forEach(function(b,j){var y1=Y(Math.max(0,b[0])),y2=Y(Math.min(0,b[0]));
+   el(&quot;rect&quot;,{x:x+j*62,y:y1,width:54,height:Math.max(1,y2-y1),rx:3,fill:b[0]&lt;0?col(25):col(b[1])},s);
+   el(&quot;text&quot;,{x:x+j*62+27,y:b[0]&lt;0?y2+13:y1-5,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:10.5,&quot;font-weight&quot;:600},s,fmt(b[0]/1000,1)+&quot;k&quot;);
+   el(&quot;text&quot;,{x:x+j*62+27,y:276,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:10.5,fill:&quot;var(--soft)&quot;},s,b[2]);});
+  el(&quot;text&quot;,{x:x+58,y:294,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:12.5,&quot;font-weight&quot;:600},s,n);
+  var f=C.bor[i]?&quot;prestito +&quot;+fmt(C.bor[i]):(C.rep[i]?&quot;rimborso &quot;+fmt(-C.rep[i])+&quot; + int. &quot;+fmt(-C.int[i]):&quot;&quot;);
+  if(f)el(&quot;text&quot;,{x:x+58,y:16,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11,&quot;font-weight&quot;:600,fill:col(250)},s,f);});}
+
+/* ---------- render complessivo ---------- */
+function renderAll(){var m=model(p),s=p.sales,C=m.C,dP=p.price%1?2:0;
+ salesChart();
+ tbl(&quot;tSales&quot;,[{l:&quot;Budgeted sales in units&quot;,v:s.slice(0,3),q:m.units},{l:&quot;Selling price per unit ($)&quot;,v:[p.price,p.price,p.price],q:p.price,d:dP},{l:&quot;Total budgeted sales ($)&quot;,v:m.rev.slice(0,3),q:m.sales,c:&quot;tot hl&quot;}]);
+ var ci=p.collIn,co=1-ci;
+ tbl(&quot;tColl&quot;,[{l:&quot;Accounts receivable 3/31&quot;,v:[p.ar0,null,null],q:p.ar0,s:1},
+  {l:&quot;April sales:&quot;,c:&quot;head&quot;,s:2},{l:pc(ci)+&quot; × $&quot;+fmt(m.rev[0]),v:[ci*m.rev[0],null,null],q:ci*m.rev[0],c:&quot;sub&quot;,s:2},{l:pc(co)+&quot; × $&quot;+fmt(m.rev[0]),v:[null,co*m.rev[0],null],q:co*m.rev[0],c:&quot;sub&quot;,s:2},
+  {l:&quot;May sales:&quot;,c:&quot;head&quot;,s:3},{l:pc(ci)+&quot; × $&quot;+fmt(m.rev[1]),v:[null,ci*m.rev[1],null],q:ci*m.rev[1],c:&quot;sub&quot;,s:3},{l:pc(co)+&quot; × $&quot;+fmt(m.rev[1]),v:[null,null,co*m.rev[1]],q:co*m.rev[1],c:&quot;sub&quot;,s:3},
+  {l:&quot;June sales:&quot;,c:&quot;head&quot;,s:4},{l:pc(ci)+&quot; × $&quot;+fmt(m.rev[2]),v:[null,null,ci*m.rev[2]],q:ci*m.rev[2],c:&quot;sub&quot;,s:4},
+  {l:&quot;Total cash collections ($)&quot;,v:m.coll,q:sum(m.coll),c:&quot;tot hl&quot;,s:5}]);
+ $(&quot;#arEnd&quot;).textContent=&quot;$&quot;+fmt(m.arEnd);
+ tbl(&quot;tProd&quot;,[{l:&quot;Budgeted sales&quot;,v:s.slice(0,3),q:m.units},{l:&quot;Add: Desired ending inventory&quot;,v:m.endFG.slice(0,3),q:m.endFG[2],c:&quot;hl&quot;},{l:&quot;Total needs&quot;,v:M3.map(function(i){return s[i]+m.endFG[i]}),q:m.units+m.endFG[2]},{l:&quot;Less: Beginning inventory&quot;,v:m.begFG.slice(0,3),q:p.fg0},{l:&quot;Required production&quot;,v:m.prod.slice(0,3),q:sum(m.prod.slice(0,3)),c:&quot;tot&quot;}]);
+ prodSvg(m);
+ var Q=sum(m.prod.slice(0,3));
+ tbl(&quot;tMat&quot;,[{l:&quot;Production (units)&quot;,v:m.prod.slice(0,3),q:Q},{l:&quot;Materials per unit (pounds)&quot;,v:[p.lbs,p.lbs,p.lbs],q:p.lbs},{l:&quot;Production needs (lb)&quot;,v:m.need,q:sum(m.need)},{l:&quot;Add: Desired ending inventory&quot;,v:m.endRM,q:m.endRM[2],c:&quot;hl&quot;},{l:&quot;Total needed&quot;,v:M3.map(function(i){return m.need[i]+m.endRM[i]}),q:sum(m.need)+m.endRM[2]},{l:&quot;Less: Beginning inventory&quot;,v:m.begRM,q:p.rm0},{l:&quot;Materials to be purchased (lb)&quot;,v:m.buy,q:sum(m.buy),c:&quot;tot&quot;},{l:&quot;Cost per pound ($)&quot;,v:[p.cost,p.cost,p.cost],q:p.cost,d:2},{l:&quot;Cost of raw materials purchased ($)&quot;,v:m.buyD,q:sum(m.buyD),c:&quot;tot hl&quot;}]);
+ var pi=p.payIn,po=1-pi;
+ tbl(&quot;tPay&quot;,[{l:&quot;Accounts payable 3/31&quot;,v:[p.ap0,null,null],q:p.ap0,s:1},
+  {l:&quot;April purchases:&quot;,c:&quot;head&quot;,s:2},{l:pc(pi)+&quot; × $&quot;+fmt(m.buyD[0]),v:[pi*m.buyD[0],null,null],q:pi*m.buyD[0],c:&quot;sub&quot;,s:2},{l:pc(po)+&quot; × $&quot;+fmt(m.buyD[0]),v:[null,po*m.buyD[0],null],q:po*m.buyD[0],c:&quot;sub&quot;,s:2},
+  {l:&quot;May purchases:&quot;,c:&quot;head&quot;,s:3},{l:pc(pi)+&quot; × $&quot;+fmt(m.buyD[1]),v:[null,pi*m.buyD[1],null],q:pi*m.buyD[1],c:&quot;sub&quot;,s:3},{l:pc(po)+&quot; × $&quot;+fmt(m.buyD[1]),v:[null,null,po*m.buyD[1]],q:po*m.buyD[1],c:&quot;sub&quot;,s:3},
+  {l:&quot;June purchases:&quot;,c:&quot;head&quot;,s:4},{l:pc(pi)+&quot; × $&quot;+fmt(m.buyD[2]),v:[null,null,pi*m.buyD[2]],q:pi*m.buyD[2],c:&quot;sub&quot;,s:4},
+  {l:&quot;Total cash disbursements ($)&quot;,v:m.pay,q:sum(m.pay),c:&quot;tot hl&quot;,s:5}]);
+ $(&quot;#apEnd&quot;).textContent=&quot;$&quot;+fmt(m.apEnd);
+ tbl(&quot;tLab&quot;,[{l:&quot;Units of production&quot;,v:m.prod.slice(0,3),q:Q},{l:&quot;Direct labor time per unit (h)&quot;,v:[p.hrs,p.hrs,p.hrs],q:p.hrs,d:2},{l:&quot;Labor-hours required&quot;,v:m.hrs,q:sum(m.hrs)},{l:&quot;Hourly wage rate ($)&quot;,v:[p.wage,p.wage,p.wage],q:p.wage},{l:&quot;Total direct labor costs ($)&quot;,v:m.dl,q:sum(m.dl),c:&quot;tot hl&quot;}]);
+ tbl(&quot;tOH&quot;,[{l:&quot;Budgeted direct labor-hours&quot;,v:m.hrs,q:sum(m.hrs)},{l:&quot;Variable mfg. OH rate ($)&quot;,v:[p.voh,p.voh,p.voh],q:p.voh},{l:&quot;Variable mfg. OH costs&quot;,v:m.voh,q:sum(m.voh)},{l:&quot;Fixed mfg. OH costs&quot;,v:[p.foh,p.foh,p.foh],q:3*p.foh},{l:&quot;Total mfg. OH costs&quot;,v:m.toh,q:sum(m.toh),c:&quot;tot&quot;},{l:&quot;Less: Noncash costs (depreciation)&quot;,v:[p.fohNC,p.fohNC,p.fohNC],q:3*p.fohNC},{l:&quot;Cash disbursement for mfg. OH ($)&quot;,v:m.coh,q:sum(m.coh),c:&quot;tot hl&quot;}]);
+ ohDraw(m);
+ simple(&quot;tFG&quot;,[&quot;Production costs per unit&quot;,&quot;Quantity&quot;,&quot;Cost&quot;,&quot;Total&quot;],[
+  {v:[&quot;Direct materials&quot;,fmt(p.lbs,2)+&quot; lb&quot;,&quot;$&quot;+fmt(p.cost,2),&quot;$&quot;+fmt(m.ucDM,2)]},{v:[&quot;Direct labor&quot;,fmt(p.hrs,2)+&quot; hr&quot;,&quot;$&quot;+fmt(p.wage,2),fmt(m.ucDL,2)]},{v:[&quot;Manufacturing overhead&quot;,fmt(p.hrs,2)+&quot; hr&quot;,&quot;$&quot;+fmt(m.ohRate,2),fmt(m.ucOH,2)]},
+  {v:[&quot;Unit product cost&quot;,&quot;&quot;,&quot;&quot;,&quot;$&quot;+fmt(m.uc,2)],c:&quot;tot&quot;},{v:[&quot;Ending inventory in units&quot;,&quot;&quot;,&quot;&quot;,fmt(m.endFG[2])]},{v:[&quot;Ending finished goods inventory&quot;,&quot;&quot;,&quot;&quot;,&quot;$&quot;+fmt(m.fgVal)],c:&quot;tot hl&quot;}]);
+ $$(&quot;#tFG td,#tFG th&quot;).forEach(function(c){c.style.textAlign=c.cellIndex?&quot;right&quot;:&quot;left&quot;});
+ ucSvg(m);
+ tbl(&quot;tSA&quot;,[{l:&quot;Budgeted sales (units)&quot;,v:s.slice(0,3),q:m.units},{l:&quot;Variable S&amp;A rate ($)&quot;,v:[p.vsa,p.vsa,p.vsa],q:p.vsa,d:2},{l:&quot;Variable expenses&quot;,v:m.vsa,q:sum(m.vsa)},{l:&quot;Fixed S&amp;A expenses&quot;,v:[p.fsa,p.fsa,p.fsa],q:3*p.fsa},{l:&quot;Total S&amp;A expenses&quot;,v:m.tsa,q:sum(m.tsa),c:&quot;tot&quot;},{l:&quot;Less: Noncash expenses&quot;,v:[p.fsaNC,p.fsaNC,p.fsaNC],q:3*p.fsaNC},{l:&quot;Cash S&amp;A expenses ($)&quot;,v:m.csa,q:sum(m.csa),c:&quot;tot hl&quot;}]);
+ var TD=sum(C.tot),AV=p.cash0+sum(m.coll);
+ tbl(&quot;tCash&quot;,[{l:&quot;Beginning cash balance&quot;,v:C.beg,q:p.cash0,s:1},{l:&quot;Add: Cash collections&quot;,v:m.coll,q:sum(m.coll),s:1},{l:&quot;Total cash available&quot;,v:C.avail,q:AV,c:&quot;tot&quot;,s:1},
+  {l:&quot;Less: Cash disbursements&quot;,c:&quot;head&quot;,s:2},{l:&quot;Materials&quot;,v:m.pay,q:sum(m.pay),c:&quot;sub&quot;,s:2},{l:&quot;Direct labor&quot;,v:m.dl,q:sum(m.dl),c:&quot;sub&quot;,s:2},{l:&quot;Manufacturing overhead&quot;,v:m.coh,q:sum(m.coh),c:&quot;sub&quot;,s:2},{l:&quot;Selling and administrative&quot;,v:m.csa,q:sum(m.csa),c:&quot;sub&quot;,s:2},{l:&quot;Equipment purchase&quot;,v:p.equip,q:sum(p.equip),c:&quot;sub&quot;,s:2},{l:&quot;Dividend&quot;,v:p.div,q:sum(p.div),c:&quot;sub&quot;,s:2},
+  {l:&quot;Total disbursements&quot;,v:C.tot,q:TD,c:&quot;tot&quot;,s:3},{l:&quot;Excess (deficiency)&quot;,v:C.exc,q:AV-TD,c:&quot;hl&quot;,s:3},
+  {l:&quot;Financing:&quot;,c:&quot;head&quot;,s:4},{l:&quot;Borrowing&quot;,v:C.bor,q:sum(C.bor),c:&quot;sub&quot;,s:4},{l:&quot;Repayment&quot;,v:C.rep,q:sum(C.rep),c:&quot;sub&quot;,s:5},{l:&quot;Interest&quot;,v:C.int,q:sum(C.int),c:&quot;sub&quot;,s:5},
+  {l:&quot;Total financing&quot;,v:C.fin,q:sum(C.fin),c:&quot;tot&quot;,s:6},{l:&quot;Ending cash balance&quot;,v:C.end,q:C.end[2],c:&quot;tot hl&quot;,s:6}]);
+ simple(&quot;tIS&quot;,[&quot;Royal Company — quarter ended June 30&quot;,&quot;&quot;,&quot;$&quot;],[
+  {v:[&quot;Sales (&quot;+fmt(m.units)+&quot; units × $&quot;+fmt(p.price,dP)+&quot;)&quot;,&quot;&quot;,fmt(m.sales)]},{v:[&quot;Cost of goods sold (&quot;+fmt(m.units)+&quot; × $&quot;+fmt(m.uc,2)+&quot;)&quot;,&quot;&quot;,fmt(m.cogs)]},{v:[&quot;Gross margin&quot;,&quot;&quot;,fmt(m.gm)],c:&quot;tot&quot;},
+  {v:[&quot;Selling and administrative expenses&quot;,&quot;&quot;,fmt(m.sa)]},{v:[&quot;Operating income&quot;,&quot;&quot;,fmt(m.opInc)],c:&quot;tot&quot;},{v:[&quot;Interest expense (dal cash budget)&quot;,&quot;&quot;,fmt(m.interest)]},{v:[&quot;Net income&quot;,&quot;&quot;,fmt(m.ni)],c:&quot;tot hl&quot;}]);
+ $$(&quot;#tIS td,#tIS th&quot;).forEach(function(c){c.style.textAlign=c.cellIndex===2?&quot;right&quot;:&quot;left&quot;});
+ simple(&quot;tBS&quot;,[&quot;Voce al 30 giugno&quot;,&quot;Importo / logica&quot;,&quot;Da quale schedule&quot;],[
+  {v:[&quot;Cash&quot;,&quot;$&quot;+fmt(C.end[2]),&quot;Cash budget (saldo finale)&quot;]},{v:[&quot;Accounts receivable&quot;,&quot;$&quot;+fmt(m.arEnd)+&quot; (&quot;+pc(1-p.collIn)+&quot; vendite di giugno)&quot;,&quot;Schedule of expected cash collections&quot;]},
+  {v:[&quot;Raw materials inventory&quot;,&quot;$&quot;+fmt(m.endRM[2]*p.cost)+&quot; (&quot;+fmt(m.endRM[2])+&quot; lb × $&quot;+fmt(p.cost,2)+&quot;)&quot;,&quot;Direct materials budget&quot;]},{v:[&quot;Finished goods inventory&quot;,&quot;$&quot;+fmt(m.fgVal)+&quot; (&quot;+fmt(m.endFG[2])+&quot; × $&quot;+fmt(m.uc,2)+&quot;)&quot;,&quot;Ending finished goods inventory budget&quot;]},
+  {v:[&quot;Plant and equipment (netto)&quot;,&quot;iniziale + &quot;+fmt(sum(p.equip))+&quot; acquisti − &quot;+fmt(3*(p.fohNC+p.fsaNC))+&quot; ammortamenti&quot;,&quot;Cash budget; overhead e S&amp;A budget (noncash)&quot;]},
+  {v:[&quot;Accounts payable&quot;,&quot;$&quot;+fmt(m.apEnd)+&quot; (&quot;+pc(1-p.payIn)+&quot; acquisti di giugno)&quot;,&quot;Schedule of disbursements for materials&quot;]},{v:[&quot;Line of credit&quot;,&quot;$&quot;+fmt(Math.max(0,m.debtEnd)),&quot;Cash budget (financing)&quot;]},
+  {v:[&quot;Retained earnings&quot;,&quot;iniziale + &quot;+fmt(m.ni)+&quot; net income − &quot;+fmt(sum(p.div))+&quot; dividendi&quot;,&quot;Budgeted income statement; cash budget&quot;]}]);
+ $$(&quot;#tBS td,#tBS th&quot;).forEach(function(c){c.style.textAlign=&quot;left&quot;});
+ collSvg(m);labSvg(m);
+ $(&quot;#labK&quot;).innerHTML=[[&quot;Prestito massimo&quot;,d$(sum(C.bor))],[&quot;Cassa al 30/6&quot;,d$(C.end[2])],[&quot;Operating income&quot;,d$(m.opInc)],[&quot;Net income&quot;,d$(m.ni)]].map(function(k){return &#x27;&lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;&#x27;+k[0]+&quot;&lt;/span&gt;&lt;b&gt;&quot;+k[1]+&quot;&lt;/b&gt;&lt;/div&gt;&quot;}).join(&quot;&quot;);
+ $(&quot;#labMsg&quot;).innerHTML=(m.capHit?&#x27;&lt;span class=&quot;warn&quot;&gt;La linea di credito da $75.000 non basta: il fabbisogno la supera.&lt;/span&gt; &#x27;:&quot;&quot;)+(m.short?&#x27;&lt;span class=&quot;warn&quot;&gt;In almeno un mese il saldo finale scende sotto il minimo.&lt;/span&gt; &#x27;:&quot;&quot;)+(m.debtEnd&gt;0.5?&#x27;&lt;span class=&quot;warn&quot;&gt;A fine giugno resta un debito di $&#x27;+fmt(m.debtEnd)+&quot; non rimborsato.&lt;/span&gt;&quot;:&quot;&quot;)||&quot;Barre: «excess» = cassa disponibile − esborsi; «ending» = saldo finale dopo i finanziamenti.&quot;;
+ var changed=JSON.stringify(p)!==JSON.stringify(P0);$(&quot;#labBanner&quot;).style.display=changed?&quot;block&quot;:&quot;none&quot;;
+}
+
+/* ---------- laboratorio ---------- */
+var LAB=[[&quot;lMay&quot;,function(v){p.sales[1]=v},function(){return p.sales[1]},function(v){return fmt(v)}],
+ [&quot;lPrice&quot;,function(v){p.price=v},function(){return p.price},function(v){return &quot;$&quot;+fmt(v,2)}],
+ [&quot;lColl&quot;,function(v){p.collIn=v},function(){return p.collIn},pc],
+ [&quot;lFG&quot;,function(v){p.fgPct=v},function(){return p.fgPct},pc],
+ [&quot;lRM&quot;,function(v){p.rmPct=v},function(){return p.rmPct},pc],
+ [&quot;lPay&quot;,function(v){p.payIn=v},function(){return p.payIn},pc],
+ [&quot;lMin&quot;,function(v){p.minCash=v},function(){return p.minCash},function(v){return &quot;$&quot;+fmt(v)}]];
+function syncLab(){LAB.forEach(function(L){var i=document.getElementById(L[0]);i.value=L[2]();i.nextElementSibling.textContent=L[3](L[2]())})}
+LAB.forEach(function(L){var i=document.getElementById(L[0]);i.addEventListener(&quot;input&quot;,function(){var v=Math.round(+i.value*100)/100;L[1](v);i.nextElementSibling.textContent=L[3](v);renderAll();});});
+function resetLab(){p=JSON.parse(JSON.stringify(P0));syncLab();renderAll();}
+$(&quot;#labReset&quot;).onclick=resetLab;$(&quot;#bannerReset&quot;).onclick=resetLab;
+$(&quot;#prodMonth&quot;).addEventListener(&quot;input&quot;,function(){prodSvg(model(p))});
+$(&quot;#ohH&quot;).addEventListener(&quot;input&quot;,function(){ohDraw(model(p))});
+
+/* ---------- flusso del master budget ---------- */
+var FLOW={
+ SB:[&quot;Sales budget&quot;,&quot;Stime di unità vendute e prezzo [8-18].&quot;,&quot;Ricavi previsti per mese e trimestre; include la schedule of expected cash collections.&quot;,&quot;Domande 1 e 2&quot;,&quot;sales&quot;],
+ EI:[&quot;Ending inventory budget&quot;,&quot;Politiche di scorta (20% delle vendite del mese dopo) e costo unitario.&quot;,&quot;Fissa le scorte finali che il production budget deve garantire; valorizza il magazzino prodotti finiti.&quot;,&quot;Domanda 6&quot;,&quot;fginv&quot;],
+ PB:[&quot;Production budget&quot;,&quot;Sales budget + scorte desiderate.&quot;,&quot;Unità da produrre ogni mese: alimenta materiali, manodopera e overhead.&quot;,&quot;Base per le domande 3–5&quot;,&quot;production&quot;],
+ SA:[&quot;Selling and administrative budget&quot;,&quot;Unità vendute (componente variabile) + costi fissi.&quot;,&quot;Spese commerciali e amministrative e relativa cassa.&quot;,&quot;Domanda 7&quot;,&quot;sa&quot;],
+ DM:[&quot;Direct materials budget&quot;,&quot;Production budget × libbre per unità + scorte di materiali.&quot;,&quot;Materie da acquistare e relativi pagamenti ai fornitori.&quot;,&quot;Domande 3, 4, 5&quot;,&quot;materials&quot;],
+ DL:[&quot;Direct labor budget&quot;,&quot;Production budget × ore per unità × paga oraria.&quot;,&quot;Ore e costo della manodopera diretta (pagata nel mese).&quot;,&quot;Domande 4, 5&quot;,&quot;labor&quot;],
+ OH:[&quot;Manufacturing overhead budget&quot;,&quot;Ore di manodopera diretta × tasso variabile + costi fissi.&quot;,&quot;Overhead totale (per il costo del prodotto) e cash overhead (per il cash budget).&quot;,&quot;Domande 4, 5&quot;,&quot;overhead&quot;],
+ CB:[&quot;Cash budget&quot;,&quot;Incassi dal sales budget, esborsi da DM, DL, OH e S&amp;A, più investimenti e dividendi.&quot;,&quot;Eccedenza o deficit, prestiti, rimborsi, interessi e saldo finale.&quot;,&quot;Domanda 8&quot;,&quot;cash&quot;],
+ IS:[&quot;Budgeted income statement&quot;,&quot;Ricavi, costo del venduto (costo unitario), S&amp;A, interessi dal cash budget.&quot;,&quot;Reddito operativo e netto previsto.&quot;,&quot;Domanda 9&quot;,&quot;statements&quot;],
+ BS:[&quot;Budgeted balance sheet&quot;,&quot;Saldi finali di tutte le schedule più lo stato patrimoniale iniziale.&quot;,&quot;Attività, passività e patrimonio a fine periodo.&quot;,&quot;Domanda 10&quot;,&quot;statements&quot;]};
+(function(){var svg=$(&quot;#flow&quot;);var N=[
+ {id:&quot;SB&quot;,x:450,y:40,w:170,label:[&quot;Sales budget&quot;],h:25},{id:&quot;EI&quot;,x:200,y:120,w:180,label:[&quot;Ending inventory&quot;,&quot;budget&quot;],h:150},{id:&quot;PB&quot;,x:450,y:120,w:170,label:[&quot;Production budget&quot;],h:150},
+ {id:&quot;SA&quot;,x:720,y:120,w:180,label:[&quot;Selling and&quot;,&quot;administrative budget&quot;],h:85},{id:&quot;DM&quot;,x:220,y:215,w:170,label:[&quot;Direct materials&quot;,&quot;budget&quot;],h:85},
+ {id:&quot;DL&quot;,x:450,y:215,w:150,label:[&quot;Direct labor&quot;,&quot;budget&quot;],h:250},{id:&quot;OH&quot;,x:680,y:215,w:180,label:[&quot;Manufacturing&quot;,&quot;overhead budget&quot;],h:25},
+ {id:&quot;CB&quot;,x:450,y:315,w:160,label:[&quot;Cash budget&quot;],h:250},{id:&quot;IS&quot;,x:230,y:420,w:170,label:[&quot;Budgeted income&quot;,&quot;statement&quot;],h:25},{id:&quot;BS&quot;,x:680,y:420,w:170,label:[&quot;Budgeted&quot;,&quot;balance sheet&quot;],h:150}];
+ graph(svg,N,[[&quot;SB&quot;,&quot;PB&quot;],[&quot;EI&quot;,&quot;PB&quot;],[&quot;SB&quot;,&quot;SA&quot;],[&quot;PB&quot;,&quot;DM&quot;],[&quot;PB&quot;,&quot;DL&quot;],[&quot;PB&quot;,&quot;OH&quot;],[&quot;DM&quot;,&quot;CB&quot;],[&quot;DL&quot;,&quot;CB&quot;],[&quot;OH&quot;,&quot;CB&quot;],[&quot;CB&quot;,&quot;IS&quot;],[&quot;CB&quot;,&quot;BS&quot;],[&quot;IS&quot;,&quot;BS&quot;]],function(n){var f=FLOW[n.id];
+  $(&quot;#flowTxt&quot;).innerHTML=&quot;&lt;b&gt;&quot;+f[0]+&quot;&lt;/b&gt;&lt;br&gt;&lt;b&gt;Prende i dati da:&lt;/b&gt; &quot;+f[1]+&quot;&lt;br&gt;&lt;b&gt;Produce:&lt;/b&gt; &quot;+f[2]+&quot;&lt;br&gt;&lt;b&gt;Risponde a:&lt;/b&gt; &quot;+f[3]+&#x27; · &lt;a href=&quot;#&#x27;+f[4]+&#x27;&quot;&gt;vai alla sezione ↓&lt;/a&gt;&#x27;;});
+ var g=svg.firstChild;
+ [[&quot;M365,40 H60 V315 H368&quot;,&quot;SB→CB&quot;],[&quot;M60,315 V420 H143&quot;,&quot;&quot;],[&quot;M810,120 H860 V315 H532&quot;,&quot;SA→CB&quot;]].forEach(function(d){el(&quot;path&quot;,{d:d[0],&quot;class&quot;:&quot;gedge&quot;,&quot;marker-end&quot;:&quot;url(#flowArr)&quot;},g);});
+ el(&quot;text&quot;,{x:66,y:180,&quot;font-size&quot;:11,fill:&quot;var(--soft)&quot;},g,&quot;collections&quot;);el(&quot;text&quot;,{x:854,y:250,&quot;font-size&quot;:11,&quot;text-anchor&quot;:&quot;end&quot;,fill:&quot;var(--soft)&quot;},g,&quot;cash S&amp;A&quot;);
+})();
+
+$$(&quot;#qlist li&quot;).forEach(function(li){li.addEventListener(&quot;click&quot;,function(){li.classList.toggle(&quot;open&quot;)});});
+
+syncLab();renderAll();
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe></body></html>

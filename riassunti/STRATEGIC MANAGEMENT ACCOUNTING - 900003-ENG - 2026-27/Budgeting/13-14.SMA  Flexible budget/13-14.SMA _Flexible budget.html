@@ -1,0 +1,988 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Riassunto · 13-14.SMA _Flexible budget.pdf</title><link rel="icon" href="data:,">
+<style>html,body{margin:0;height:100%}body{display:flex;flex-direction:column}iframe{flex:1;border:0;width:100%}</style>
+</head><body><nav style="font:14px/1.4 system-ui,sans-serif;padding:6px 12px;text-align:right"><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Budgeting/13-14.SMA%20%20Flexible%20budget/13-14.SMA%20_Flexible%20budget.en.html" style="color:inherit;margin-right:.8em;">English</a><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Budgeting/13-14.SMA%20%20Flexible%20budget/13-14.SMA%20_Flexible%20budget.html" style="color:inherit;margin-right:.8em;font-weight:700">Italiano</a></nav><iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" title="Riassunto · 13-14.SMA _Flexible budget.pdf"
+srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;it&quot;&gt;
+&lt;head&gt;&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27;; style-src &#x27;unsafe-inline&#x27;; font-src &#x27;self&#x27;; img-src data:; form-action &#x27;none&#x27;; base-uri &#x27;none&#x27;&quot;&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Flexible Budgets and Performance Analysis — canvas di studio&lt;/title&gt;
+&lt;style&gt;
+@font-face{font-family:&quot;Newsreader&quot;;src:url(&quot;/static/fonts/newsreader-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:&quot;IBM Plex Sans&quot;;src:url(&quot;/static/fonts/ibm-plex-sans-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:100 700;font-style:normal;font-display:swap}
+:root{
+  --paper:oklch(97% 0.012 80);--ink:oklch(21% 0.014 60);--rule:oklch(86% 0.014 75);
+  --accent:oklch(50% 0.15 35);--accent-bg:oklch(93% 0.04 35);
+  --muted:oklch(46% 0.02 60);--card:oklch(99% 0.006 80);
+  --sage:oklch(46% 0.09 150);--sage-bg:oklch(94% 0.03 150);
+  --ochre:oklch(52% 0.11 85);--ochre-bg:oklch(94% 0.045 85);
+  --slate:oklch(45% 0.08 250);--slate-bg:oklch(94% 0.025 250);
+  --brick:oklch(47% 0.14 25);--brick-bg:oklch(94% 0.03 25);
+  --fav:var(--sage);--unf:var(--brick);
+  --serif:&quot;Newsreader&quot;,Georgia,&quot;Times New Roman&quot;,serif;
+  --sans:&quot;IBM Plex Sans&quot;,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(19% 0.012 60);--ink:oklch(92% 0.012 80);--rule:oklch(34% 0.014 70);
+  --accent:oklch(70% 0.13 35);--accent-bg:oklch(28% 0.05 35);
+  --muted:oklch(72% 0.02 70);--card:oklch(23% 0.012 60);
+  --sage:oklch(74% 0.09 150);--sage-bg:oklch(27% 0.035 150);
+  --ochre:oklch(78% 0.1 85);--ochre-bg:oklch(28% 0.04 85);
+  --slate:oklch(75% 0.07 250);--slate-bg:oklch(27% 0.035 250);
+  --brick:oklch(72% 0.12 25);--brick-bg:oklch(28% 0.04 25);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.62;font-variant-numeric:tabular-nums}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.prose{max-width:720px}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2.3rem,6vw,4rem);font-weight:300;margin:.2em 0 .3em}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin:0 0 .4em}
+h3{font-size:1.45rem;margin:2.2em 0 .5em}
+h4{font-size:1.15rem;margin:1.4em 0 .3em}
+p{margin:.6em 0}
+a{color:var(--accent)}
+em.t{font-style:normal;font-weight:600;color:var(--c,var(--accent))}
+small,.small{font-size:.85rem;color:var(--muted)}
+hr{border:0;border-top:1px solid var(--rule);margin:2.5em 0}
+code,.mono{font-family:ui-monospace,&quot;SF Mono&quot;,Menlo,Consolas,monospace;font-size:.92em}
+
+/* testata */
+header.top{padding:56px 0 30px;border-bottom:1px solid var(--rule)}
+.kicker{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.lede{font-family:var(--serif);font-size:1.3rem;font-weight:300;max-width:720px;color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.85rem;color:var(--muted);margin-top:18px}
+nav.toc{position:sticky;top:0;z-index:5;background:color-mix(in oklch,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+nav.toc a{flex:none;text-decoration:none;color:var(--ink);font-size:.85rem;padding:5px 11px;border-radius:99px;border:1px solid transparent}
+nav.toc a:hover{border-color:var(--rule)}
+nav.toc a .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:var(--c,var(--accent))}
+
+/* parti */
+section.part{padding:64px 0 24px;border-bottom:1px solid var(--rule)}
+.sage{--c:var(--sage);--cbg:var(--sage-bg)}
+.ochre{--c:var(--ochre);--cbg:var(--ochre-bg)}
+.slate{--c:var(--slate);--cbg:var(--slate-bg)}
+.brick{--c:var(--brick);--cbg:var(--brick-bg)}
+.chip{display:inline-block;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--c);background:var(--cbg);padding:4px 10px;border-radius:99px;margin-bottom:12px}
+.src{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.04em;color:var(--muted);border:1px solid var(--rule);border-radius:4px;padding:0 6px;margin-left:6px;vertical-align:2px;white-space:nowrap}
+.ext{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.04em;color:var(--accent);background:var(--accent-bg);border-radius:4px;padding:1px 7px;white-space:nowrap}
+
+/* box */
+.def{border-left:4px solid var(--c,var(--accent));background:var(--cbg,var(--accent-bg));padding:14px 18px;border-radius:0 10px 10px 0;margin:1.2em 0}
+.def b.term{font-family:var(--serif);font-size:1.15rem;font-weight:600;display:block;margin-bottom:2px}
+.callout{border:1px dashed var(--rule);border-radius:12px;padding:14px 18px;margin:1.4em 0;background:var(--card)}
+.callout .lab{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--accent)}
+.formula{font-family:var(--serif);font-size:1.25rem;text-align:center;padding:16px 12px;margin:1.2em 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.formula .lbl{display:block;font-family:var(--sans);font-size:.78rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:1.2em 0}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:16px 18px}
+.card h4{margin-top:0}
+figure{margin:1.6em 0}
+figcaption{font-size:.85rem;color:var(--muted);margin-top:6px}
+svg{max-width:100%;height:auto;display:block}
+svg text{font-family:var(--sans);fill:var(--ink)}
+.fav{color:var(--fav);font-weight:600}.unf{color:var(--unf);font-weight:600}
+
+/* tabelle */
+.tw{overflow-x:auto;margin:1em 0;border:1px solid var(--rule);border-radius:10px;background:var(--card)}
+table.fin{border-collapse:collapse;width:100%;font-size:.9rem;min-width:520px}
+table.fin th,table.fin td{padding:6px 10px;border-bottom:1px solid var(--rule);text-align:right;white-space:nowrap}
+table.fin th{font-weight:600;font-size:.78rem;letter-spacing:.03em;color:var(--muted);vertical-align:bottom;background:var(--cbg,transparent)}
+table.fin td:first-child,table.fin th:first-child{text-align:left}
+table.fin td.f{color:var(--muted);text-align:left;font-size:.85rem}
+table.fin tr.sub td{font-weight:600}
+table.fin tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
+table.fin td.ind{padding-left:24px}
+table.fin .hl{background:var(--cbg)}
+table.fin tr.pick{cursor:pointer}
+table.fin tr.pick:hover td{background:var(--cbg)}
+.vhide{opacity:0;transition:opacity .35s}
+.vshow{opacity:1}
+
+/* controlli */
+button{font:inherit}
+.btn{font-size:.88rem;font-weight:600;border:1px solid var(--c,var(--accent));color:var(--c,var(--accent));background:transparent;border-radius:99px;padding:6px 14px;cursor:pointer}
+.btn:hover,.btn[aria-pressed=true]{background:var(--c,var(--accent));color:var(--paper)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:1em 0 0}
+.tabs [role=tab]{border:1px solid var(--rule);background:var(--card);color:var(--ink);padding:7px 14px;border-radius:10px 10px 0 0;cursor:pointer;font-size:.9rem}
+.tabs [role=tab][aria-selected=true]{background:var(--cbg);border-color:var(--c);color:var(--c);font-weight:600}
+[role=tabpanel]{border-top:2px solid var(--c);padding-top:6px}
+[role=tabpanel][hidden]{display:none}
+.slider{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;margin:.6em 0}
+.slider input{width:100%;accent-color:var(--c,var(--accent))}
+.slider output{font-weight:700;min-width:4.5em;text-align:right}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:18px;margin:1.4em 0}
+.kpis{display:flex;flex-wrap:wrap;gap:10px;margin:.8em 0}
+.kpi{flex:1 1 140px;background:var(--cbg);border-radius:10px;padding:10px 12px}
+.kpi b{display:block;font-family:var(--serif);font-size:1.4rem;font-weight:600}
+.kpi span{font-size:.78rem;color:var(--muted)}
+
+/* autoverifica e quiz */
+.check{margin-top:2.4em;background:var(--cbg);border-radius:14px;padding:18px 20px}
+.check h3{margin:0 0 .5em;font-size:1.25rem}
+details{border-top:1px solid color-mix(in oklch,var(--c,var(--accent)) 30%,transparent);padding:8px 0}
+details summary{cursor:pointer;font-weight:600;list-style:none;padding-left:22px;position:relative}
+details summary::before{content:&quot;+&quot;;position:absolute;left:0;color:var(--c,var(--accent));font-weight:700}
+details[open] summary::before{content:&quot;−&quot;}
+details .ans{padding:6px 0 4px 22px}
+.quiz .opts{display:flex;flex-direction:column;gap:6px;margin:.6em 0}
+.quiz .opts button{text-align:left;border:1px solid var(--rule);background:var(--card);color:var(--ink);padding:8px 12px;border-radius:8px;cursor:pointer}
+.quiz .opts button.ok{border-color:var(--fav);background:var(--sage-bg)}
+.quiz .opts button.ko{border-color:var(--unf);background:var(--brick-bg)}
+.quiz .fb{min-height:1.4em;font-size:.92rem}
+
+/* mappa e schemi */
+.map a{cursor:pointer}
+.map a rect{transition:transform .2s,filter .2s}
+.map a:hover rect,.map a:focus rect{filter:brightness(.95);stroke-width:2.5}
+.cyc{cursor:pointer}
+.cyc rect{transition:stroke-width .2s}
+.cyc.on rect{stroke-width:3.5}
+.bar{height:22px;border-radius:4px;display:inline-block;vertical-align:middle}
+.flag{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 8px;border-radius:99px;background:var(--accent);color:var(--paper)}
+ul.mbe{list-style:none;padding:0;margin:.6em 0}
+ul.mbe li{display:grid;grid-template-columns:1fr 5.5em 4em 6em;gap:8px;padding:5px 0;border-bottom:1px solid var(--rule);font-size:.9rem;align-items:center}
+ul.mbe li span{text-align:right}
+ul.mbe li.ex{background:var(--accent-bg)}
+
+.ref{border-top:1px solid var(--rule);padding:16px 0}
+.ref h4{margin:.2em 0}
+footer{padding:40px 0 60px;color:var(--muted);font-size:.9rem;text-align:center}
+@media (max-width:620px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  ul.mbe li{grid-template-columns:1fr 4.5em 3.5em 5em;font-size:.82rem}
+  .slider{grid-template-columns:1fr auto}
+  .slider label{grid-column:1/-1}
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;header class=&quot;top&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;kicker&quot;&gt;Budgeting · Lezioni 13–14 (SMA)&lt;/div&gt;
+    &lt;h1&gt;Flexible Budgets and Performance Analysis&lt;/h1&gt;
+    &lt;p class=&quot;lede&quot;&gt;Perché un budget fissato prima del periodo non basta per giudicare chi gestisce, e come un &lt;em&gt;flexible budget&lt;/em&gt; separa ciò che dipende dal volume da ciò che dipende dalla gestione.&lt;/p&gt;
+    &lt;div class=&quot;meta&quot;&gt;&lt;span&gt;Fonte principale: &lt;i&gt;13-14.SMA _Flexible budget.pdf&lt;/i&gt; (70 slide, materiale © McGraw Hill)&lt;/span&gt;&lt;span&gt;Casi: Larry&#x27;s Lawn Service · Jake&#x27;s Roof Repair · Alyeski Tours&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;nav class=&quot;toc&quot; aria-label=&quot;Indice&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;a href=&quot;#mappa&quot;&gt;&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;Mappa&lt;/a&gt;
+    &lt;a href=&quot;#p1&quot; class=&quot;sage&quot;&gt;&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;1 · Perché flessibile&lt;/a&gt;
+    &lt;a href=&quot;#p2&quot; class=&quot;ochre&quot;&gt;&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;2 · Planning vs flexible&lt;/a&gt;
+    &lt;a href=&quot;#p3&quot; class=&quot;slate&quot;&gt;&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;3 · Variances e report&lt;/a&gt;
+    &lt;a href=&quot;#p4&quot; class=&quot;brick&quot;&gt;&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;4 · Più cost driver&lt;/a&gt;
+    &lt;a href=&quot;#sintesi&quot;&gt;&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;Sintesi&lt;/a&gt;
+    &lt;a href=&quot;#approfondire&quot;&gt;&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;Per approfondire&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+&lt;section id=&quot;mappa&quot; class=&quot;part&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;chip&quot; style=&quot;--c:var(--accent);--cbg:var(--accent-bg)&quot;&gt;Mappa concettuale&lt;/div&gt;
+    &lt;h2&gt;Come si tengono insieme gli argomenti&lt;/h2&gt;
+    &lt;p class=&quot;prose&quot;&gt;Ogni riquadro porta alla sezione corrispondente. Leggi la mappa dall&#x27;alto: il &lt;em&gt;planning budget&lt;/em&gt; mostra un limite, il &lt;em&gt;flexible budget&lt;/em&gt; lo risolve, e le due famiglie di &lt;em&gt;variances&lt;/em&gt; confluiscono nel &lt;em&gt;performance report&lt;/em&gt;, che a sua volta alimenta il ciclo di analisi.&lt;/p&gt;
+    &lt;figure class=&quot;map&quot;&gt;
+&lt;svg viewBox=&quot;0 0 900 480&quot; role=&quot;img&quot; aria-label=&quot;Mappa concettuale della lezione&quot;&gt;
+  &lt;defs&gt;
+    &lt;marker id=&quot;ar&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto-start-reverse&quot;&gt;&lt;path d=&quot;M0,0 L10,5 L0,10 z&quot; style=&quot;fill:var(--muted)&quot;/&gt;&lt;/marker&gt;
+  &lt;/defs&gt;
+  &lt;g style=&quot;stroke:var(--muted);stroke-width:1.5;fill:none&quot; marker-end=&quot;url(#ar)&quot;&gt;
+    &lt;path d=&quot;M745,82 V158&quot;/&gt;
+    &lt;path d=&quot;M628,185 H569&quot;/&gt;
+    &lt;path d=&quot;M272,185 H331&quot;/&gt;
+    &lt;path d=&quot;M395,212 L210,298&quot;/&gt;
+    &lt;path d=&quot;M450,212 V298&quot;/&gt;
+    &lt;path d=&quot;M505,212 L690,298&quot;/&gt;
+    &lt;path d=&quot;M155,352 L375,408&quot;/&gt;
+    &lt;path d=&quot;M450,352 V408&quot;/&gt;
+    &lt;path d=&quot;M745,352 L525,408&quot;/&gt;
+    &lt;path d=&quot;M333,436 H18 V56 H36&quot;/&gt;
+    &lt;path d=&quot;M272,56 H331&quot;/&gt;
+  &lt;/g&gt;
+  &lt;g style=&quot;font-size:12px;fill:var(--muted)&quot;&gt;
+    &lt;text x=&quot;752&quot; y=&quot;125&quot;&gt;limite&lt;/text&gt;
+    &lt;text x=&quot;598&quot; y=&quot;176&quot; text-anchor=&quot;middle&quot;&gt;soluzione&lt;/text&gt;
+    &lt;text x=&quot;302&quot; y=&quot;176&quot; text-anchor=&quot;middle&quot;&gt;serve&lt;/text&gt;
+    &lt;text x=&quot;175&quot; y=&quot;245&quot;&gt;Flexible − Planning&lt;/text&gt;
+    &lt;text x=&quot;456&quot; y=&quot;262&quot;&gt;Actual − Flexible&lt;/text&gt;
+    &lt;text x=&quot;608&quot; y=&quot;250&quot;&gt;estensione&lt;/text&gt;
+    &lt;text x=&quot;40&quot; y=&quot;452&quot;&gt;il report alimenta il ciclo&lt;/text&gt;
+    &lt;text x=&quot;302&quot; y=&quot;47&quot; text-anchor=&quot;middle&quot;&gt;si usa con&lt;/text&gt;
+  &lt;/g&gt;
+  &lt;a href=&quot;#ciclo&quot;&gt;&lt;rect x=&quot;40&quot; y=&quot;30&quot; width=&quot;232&quot; height=&quot;52&quot; rx=&quot;10&quot; style=&quot;fill:var(--sage-bg);stroke:var(--sage);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;156&quot; y=&quot;61&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Variance analysis cycle&lt;/text&gt;&lt;/a&gt;
+  &lt;a href=&quot;#mbe&quot;&gt;&lt;rect x=&quot;335&quot; y=&quot;30&quot; width=&quot;230&quot; height=&quot;52&quot; rx=&quot;10&quot; style=&quot;fill:var(--sage-bg);stroke:var(--sage);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;450&quot; y=&quot;61&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Management by exception&lt;/text&gt;&lt;/a&gt;
+  &lt;a href=&quot;#static&quot;&gt;&lt;rect x=&quot;630&quot; y=&quot;30&quot; width=&quot;230&quot; height=&quot;52&quot; rx=&quot;10&quot; style=&quot;fill:var(--ochre-bg);stroke:var(--ochre);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;745&quot; y=&quot;61&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Planning (static) budget&lt;/text&gt;&lt;/a&gt;
+  &lt;a href=&quot;#limiti&quot;&gt;&lt;rect x=&quot;630&quot; y=&quot;160&quot; width=&quot;230&quot; height=&quot;52&quot; rx=&quot;10&quot; style=&quot;fill:var(--ochre-bg);stroke:var(--ochre);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;745&quot; y=&quot;183&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Limiti del budget statico&lt;/text&gt;&lt;text x=&quot;745&quot; y=&quot;201&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:11.5px;fill:var(--muted)&quot;&gt;attività effettiva ≠ pianificata&lt;/text&gt;&lt;/a&gt;
+  &lt;a href=&quot;#flex&quot;&gt;&lt;rect x=&quot;335&quot; y=&quot;158&quot; width=&quot;230&quot; height=&quot;56&quot; rx=&quot;10&quot; style=&quot;fill:var(--accent-bg);stroke:var(--accent);stroke-width:2.5&quot;/&gt;&lt;text x=&quot;450&quot; y=&quot;191&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:17px;font-weight:700;font-family:var(--serif)&quot;&gt;Flexible budget&lt;/text&gt;&lt;/a&gt;
+  &lt;a href=&quot;#cost-behavior&quot;&gt;&lt;rect x=&quot;40&quot; y=&quot;160&quot; width=&quot;232&quot; height=&quot;52&quot; rx=&quot;10&quot; style=&quot;fill:var(--ochre-bg);stroke:var(--ochre);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;156&quot; y=&quot;183&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Cost behavior&lt;/text&gt;&lt;text x=&quot;156&quot; y=&quot;201&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:11.5px;fill:var(--muted)&quot;&gt;variable · fixed · relevant range&lt;/text&gt;&lt;/a&gt;
+  &lt;a href=&quot;#activity&quot;&gt;&lt;rect x=&quot;40&quot; y=&quot;300&quot; width=&quot;232&quot; height=&quot;52&quot; rx=&quot;10&quot; style=&quot;fill:var(--slate-bg);stroke:var(--slate);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;156&quot; y=&quot;323&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Activity variances&lt;/text&gt;&lt;text x=&quot;156&quot; y=&quot;341&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:11.5px;fill:var(--muted)&quot;&gt;effetto del volume&lt;/text&gt;&lt;/a&gt;
+  &lt;a href=&quot;#spending&quot;&gt;&lt;rect x=&quot;335&quot; y=&quot;300&quot; width=&quot;230&quot; height=&quot;52&quot; rx=&quot;10&quot; style=&quot;fill:var(--slate-bg);stroke:var(--slate);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;450&quot; y=&quot;323&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Revenue &amp;amp; spending variances&lt;/text&gt;&lt;text x=&quot;450&quot; y=&quot;341&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:11.5px;fill:var(--muted)&quot;&gt;effetto della gestione&lt;/text&gt;&lt;/a&gt;
+  &lt;a href=&quot;#multi&quot;&gt;&lt;rect x=&quot;630&quot; y=&quot;300&quot; width=&quot;230&quot; height=&quot;52&quot; rx=&quot;10&quot; style=&quot;fill:var(--brick-bg);stroke:var(--brick);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;745&quot; y=&quot;331&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Multiple cost drivers&lt;/text&gt;&lt;/a&gt;
+  &lt;a href=&quot;#report&quot;&gt;&lt;rect x=&quot;335&quot; y=&quot;410&quot; width=&quot;230&quot; height=&quot;52&quot; rx=&quot;10&quot; style=&quot;fill:var(--slate-bg);stroke:var(--slate);stroke-width:2&quot;/&gt;&lt;text x=&quot;450&quot; y=&quot;441&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:700&quot;&gt;Performance report&lt;/text&gt;&lt;/a&gt;
+&lt;/svg&gt;
+      &lt;figcaption&gt;Colori: &lt;span style=&quot;color:var(--sage)&quot;&gt;salvia&lt;/span&gt; = controllo e ciclo di analisi · &lt;span style=&quot;color:var(--ochre)&quot;&gt;ocra&lt;/span&gt; = budget e comportamento dei costi · &lt;span style=&quot;color:var(--slate)&quot;&gt;ardesia&lt;/span&gt; = variances e report · &lt;span style=&quot;color:var(--brick)&quot;&gt;mattone&lt;/span&gt; = più cost driver.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;p1&quot; class=&quot;part sage&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;chip&quot;&gt;Parte 1&lt;/div&gt;
+    &lt;h2&gt;Perché il budget deve diventare flessibile&lt;/h2&gt;
+    &lt;div class=&quot;prose&quot;&gt;
+      &lt;p&gt;Il &lt;em&gt;budget&lt;/em&gt; si prepara &lt;b&gt;prima&lt;/b&gt; che il periodo cominci &lt;span class=&quot;src&quot;&gt;slide 2&lt;/span&gt;. Durante e dopo il periodo però serve a due cose diverse: &lt;b&gt;guidare le operazioni&lt;/b&gt; e &lt;b&gt;valutare la performance&lt;/b&gt;. Per farlo va &quot;adattato&quot; a ciò che è successo davvero, e da qui nasce il &lt;em class=&quot;t&quot;&gt;flexible budget&lt;/em&gt;.&lt;/p&gt;
+
+      &lt;h3&gt;Il problema: uno scostamento non spiega niente da solo&lt;/h3&gt;
+      &lt;p&gt;La slide 3 parte da un caso minimo: vendite a budget per il trimestre € 200,000, vendite effettive € 180,000, &lt;b&gt;delta = (€ 20,000)&lt;/b&gt;. La parentesi indica un valore negativo, come d&#x27;uso nei prospetti contabili. La domanda è: &lt;b&gt;perché?&lt;/b&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Meno volume?&lt;/h4&gt;&lt;p&gt;Si sono venduti meno pezzi del previsto, al prezzo previsto. Allora il problema è commerciale o di mercato.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Prezzo più basso?&lt;/h4&gt;&lt;p&gt;Il volume è quello previsto, ma si sono fatti sconti. Il problema è la politica di prezzo.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Un mix dei due?&lt;/h4&gt;&lt;p&gt;Il numero da solo non lo dice. Serve un modo per &lt;b&gt;scomporre&lt;/b&gt; lo scostamento: è esattamente ciò che fa il flexible budget.&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;h3 id=&quot;ciclo&quot;&gt;Il Variance Analysis Cycle&lt;/h3&gt;
+    &lt;div class=&quot;prose&quot;&gt;
+      &lt;p&gt;Una &lt;em class=&quot;t&quot;&gt;variance&lt;/em&gt; (scostamento) è la differenza tra un valore effettivo (&lt;em&gt;actual&lt;/em&gt;) e un valore di riferimento (budget). Il &lt;em&gt;variance analysis cycle&lt;/em&gt; è il ciclo con cui l&#x27;azienda usa gli scostamenti per &lt;b&gt;valutare e migliorare&lt;/b&gt; la performance &lt;span class=&quot;src&quot;&gt;slide 4&lt;/span&gt;. Clicca le fasi: si parte da &quot;Prepare performance report&quot;.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;figure class=&quot;panel&quot;&gt;
+&lt;svg viewBox=&quot;0 0 640 330&quot; role=&quot;group&quot; aria-label=&quot;Variance analysis cycle&quot; id=&quot;cycSvg&quot;&gt;
+  &lt;defs&gt;&lt;marker id=&quot;ar2&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0,0 L10,5 L0,10 z&quot; style=&quot;fill:var(--ink)&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+  &lt;g style=&quot;stroke:var(--ink);stroke-width:2.2;fill:none&quot; marker-end=&quot;url(#ar2)&quot;&gt;
+    &lt;path d=&quot;M228,280 H120 V200&quot;/&gt;
+    &lt;path d=&quot;M120,138 V80&quot;/&gt;
+    &lt;path d=&quot;M212,50 H226&quot;/&gt;
+    &lt;path d=&quot;M412,50 H426&quot;/&gt;
+    &lt;path d=&quot;M520,80 V136&quot;/&gt;
+    &lt;path d=&quot;M520,198 V280 H414&quot;/&gt;
+  &lt;/g&gt;
+  &lt;text x=&quot;448&quot; y=&quot;272&quot; style=&quot;font-size:13px;font-weight:700&quot;&gt;Begin&lt;/text&gt;
+  &lt;circle cx=&quot;320&quot; cy=&quot;160&quot; r=&quot;38&quot; style=&quot;fill:none;stroke:var(--sage);stroke-width:8;stroke-dasharray:50 10;opacity:.35&quot;/&gt;
+  &lt;g class=&quot;cyc on&quot; data-i=&quot;0&quot; tabindex=&quot;0&quot; role=&quot;button&quot;&gt;&lt;rect x=&quot;230&quot; y=&quot;252&quot; width=&quot;182&quot; height=&quot;58&quot; rx=&quot;8&quot; style=&quot;fill:var(--slate-bg);stroke:var(--slate);stroke-width:2&quot;/&gt;&lt;text x=&quot;321&quot; y=&quot;277&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Prepare&lt;/text&gt;&lt;text x=&quot;321&quot; y=&quot;295&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;performance report&lt;/text&gt;&lt;/g&gt;
+  &lt;g class=&quot;cyc&quot; data-i=&quot;1&quot; tabindex=&quot;0&quot; role=&quot;button&quot;&gt;&lt;rect x=&quot;30&quot; y=&quot;140&quot; width=&quot;182&quot; height=&quot;58&quot; rx=&quot;8&quot; style=&quot;fill:var(--accent-bg);stroke:var(--accent);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;121&quot; y=&quot;174&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Analyze variances&lt;/text&gt;&lt;/g&gt;
+  &lt;g class=&quot;cyc&quot; data-i=&quot;2&quot; tabindex=&quot;0&quot; role=&quot;button&quot;&gt;&lt;rect x=&quot;30&quot; y=&quot;20&quot; width=&quot;182&quot; height=&quot;58&quot; rx=&quot;8&quot; style=&quot;fill:var(--accent-bg);stroke:var(--accent);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;121&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Raise questions&lt;/text&gt;&lt;/g&gt;
+  &lt;g class=&quot;cyc&quot; data-i=&quot;3&quot; tabindex=&quot;0&quot; role=&quot;button&quot;&gt;&lt;rect x=&quot;230&quot; y=&quot;20&quot; width=&quot;182&quot; height=&quot;58&quot; rx=&quot;8&quot; style=&quot;fill:var(--accent-bg);stroke:var(--accent);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;321&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Identify root causes&lt;/text&gt;&lt;/g&gt;
+  &lt;g class=&quot;cyc&quot; data-i=&quot;4&quot; tabindex=&quot;0&quot; role=&quot;button&quot;&gt;&lt;rect x=&quot;430&quot; y=&quot;20&quot; width=&quot;182&quot; height=&quot;58&quot; rx=&quot;8&quot; style=&quot;fill:var(--accent-bg);stroke:var(--accent);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;521&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Take actions&lt;/text&gt;&lt;/g&gt;
+  &lt;g class=&quot;cyc&quot; data-i=&quot;5&quot; tabindex=&quot;0&quot; role=&quot;button&quot;&gt;&lt;rect x=&quot;430&quot; y=&quot;140&quot; width=&quot;182&quot; height=&quot;58&quot; rx=&quot;8&quot; style=&quot;fill:var(--accent-bg);stroke:var(--accent);stroke-width:1.5&quot;/&gt;&lt;text x=&quot;521&quot; y=&quot;165&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;Conduct next&lt;/text&gt;&lt;text x=&quot;521&quot; y=&quot;183&quot; text-anchor=&quot;middle&quot; style=&quot;font-size:14px;font-weight:600&quot;&gt;period&#x27;s operations&lt;/text&gt;&lt;/g&gt;
+&lt;/svg&gt;
+      &lt;div id=&quot;cycTxt&quot; aria-live=&quot;polite&quot; style=&quot;margin-top:10px&quot;&gt;&lt;/div&gt;
+      &lt;div style=&quot;display:flex;gap:8px;margin-top:10px&quot;&gt;&lt;button class=&quot;btn&quot; id=&quot;cycPrev&quot;&gt;← fase precedente&lt;/button&gt;&lt;button class=&quot;btn&quot; id=&quot;cycNext&quot;&gt;fase successiva →&lt;/button&gt;&lt;/div&gt;
+      &lt;figcaption&gt;Schema ridisegnato dalla slide 4. Secondo una ricerca web, il diagramma originale viene dai materiali McGraw Hill del manuale di Wild &amp;amp; Shaw &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt;, vedi &lt;a href=&quot;#approfondire&quot;&gt;Per approfondire&lt;/a&gt;.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;h3 id=&quot;mbe&quot;&gt;Management &quot;by exception&quot;&lt;/h3&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b class=&quot;term&quot;&gt;Management by exception&lt;/b&gt;Un approccio di gestione che confronta i risultati &lt;b&gt;actual&lt;/b&gt; con un &lt;b&gt;budget&lt;/b&gt;, così che gli scostamenti significativi emergano come &quot;eccezioni&quot; e vengano approfonditi. Si usa insieme al variance analysis cycle. &lt;span class=&quot;src&quot;&gt;slide 5&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;prose&quot;&gt;
+      &lt;p&gt;L&#x27;idea è di risparmiare attenzione: un manager non può indagare su ogni riga. Le slide dicono che le variances più rilevanti si individuano sia &lt;b&gt;in valore assoluto&lt;/b&gt; (amount) sia &lt;b&gt;in percentuale&lt;/b&gt;. I due criteri si completano. $2,000 su una voce da $21,500 è il 9%, mentre $200 su una voce da $1,000 è il 20%: il primo pesa di più sul profitto, il secondo segnala una voce &quot;fuori controllo&quot;.&lt;/p&gt;
+      &lt;p&gt;Prova qui sotto con le revenue e spending variances di Larry&#x27;s Lawn Service (le calcoleremo nella &lt;a href=&quot;#spending&quot;&gt;Parte 3&lt;/a&gt;). Scegli le soglie e guarda quali righe diventano eccezioni.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel&quot; id=&quot;mbeBox&quot;&gt;
+      &lt;div class=&quot;slider&quot;&gt;&lt;label for=&quot;mbeAmt&quot;&gt;Soglia in valore&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;mbeAmt&quot; min=&quot;0&quot; max=&quot;2500&quot; step=&quot;50&quot; value=&quot;500&quot;&gt;&lt;output id=&quot;mbeAmtO&quot;&gt;$500&lt;/output&gt;&lt;/div&gt;
+      &lt;div class=&quot;slider&quot;&gt;&lt;label for=&quot;mbePct&quot;&gt;Soglia in %&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;mbePct&quot; min=&quot;0&quot; max=&quot;30&quot; step=&quot;1&quot; value=&quot;10&quot;&gt;&lt;output id=&quot;mbePctO&quot;&gt;10%&lt;/output&gt;&lt;/div&gt;
+      &lt;div style=&quot;display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:.4em 0&quot;&gt;&lt;span class=&quot;small&quot;&gt;Criterio:&lt;/span&gt;&lt;button class=&quot;btn&quot; data-logic=&quot;or&quot; aria-pressed=&quot;true&quot;&gt;basta una soglia&lt;/button&gt;&lt;button class=&quot;btn&quot; data-logic=&quot;and&quot; aria-pressed=&quot;false&quot;&gt;servono entrambe&lt;/button&gt;&lt;/div&gt;
+      &lt;ul class=&quot;mbe&quot; id=&quot;mbeList&quot;&gt;&lt;/ul&gt;
+      &lt;p class=&quot;small&quot;&gt;Valori dal confronto actual vs flexible budget di Larry (slide 47–48). La % è calcolata sul valore del flexible budget. Le soglie sono un esempio didattico: le slide non indicano valori.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;callout&quot;&gt;&lt;div class=&quot;lab&quot;&gt;Da notare&lt;/div&gt;
+      &lt;p&gt;Anche una variance &lt;span class=&quot;fav&quot;&gt;favorevole&lt;/span&gt; può essere un&#x27;eccezione. I $350 F sulla manutenzione di Larry (21%) possono voler dire efficienza, ma anche manutenzione rinviata, che domani costerà di più. Il management by exception guarda la &lt;b&gt;dimensione&lt;/b&gt; dello scostamento, non il suo segno.&lt;/p&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;check&quot;&gt;
+      &lt;h3&gt;Autoverifica · Parte 1&lt;/h3&gt;
+      &lt;details&gt;&lt;summary&gt;Perché un budget fatto prima del periodo non basta per valutare chi gestisce?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Perché è costruito su un livello di attività ipotizzato. Se l&#x27;attività effettiva è diversa, gli scostamenti mescolano l&#x27;effetto del volume con l&#x27;effetto della gestione, e non si capisce di chi sia il merito o la colpa.&lt;/div&gt;&lt;/details&gt;
+      &lt;details&gt;&lt;summary&gt;Nel variance analysis cycle, quale fase viene subito dopo &quot;Identify root causes&quot;? E da quale si parte?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Dopo viene &quot;Take actions&quot;. Si parte (Begin) da &quot;Prepare performance report&quot;: report → analyze variances → raise questions → identify root causes → take actions → conduct next period&#x27;s operations → di nuovo report.&lt;/div&gt;&lt;/details&gt;
+      &lt;details&gt;&lt;summary&gt;Con quali due misure si decide se uno scostamento è un&#x27;&quot;eccezione&quot;?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Con il valore assoluto (amount) e con la percentuale rispetto al riferimento. Usarle insieme evita di ignorare voci piccole ma molto fuori controllo, e di dare troppo peso a scostamenti grandi in assoluto ma piccoli in proporzione.&lt;/div&gt;&lt;/details&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;p2&quot; class=&quot;part ochre&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;chip&quot;&gt;Parte 2 · Learning Objective 1&lt;/div&gt;
+    &lt;h2&gt;Planning budget e flexible budget con un solo cost driver&lt;/h2&gt;
+
+    &lt;h3 id=&quot;static&quot;&gt;Che cos&#x27;è il planning budget (e perché è &quot;statico&quot;)&lt;/h3&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div class=&quot;def&quot;&gt;&lt;b class=&quot;term&quot;&gt;Planning budget&lt;/b&gt;Viene preparato &lt;b&gt;prima&lt;/b&gt; del periodo, per un &lt;b&gt;unico livello di attività pianificato&lt;/b&gt; (&lt;em&gt;planned level of activity&lt;/em&gt;). Lo si chiama anche &lt;em&gt;static budget&lt;/em&gt; perché non cambia quando cambia il volume. &lt;span class=&quot;src&quot;&gt;slide 7&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;def&quot;&gt;&lt;b class=&quot;term&quot;&gt;Flexible budget&lt;/b&gt;Stima ricavi e costi &lt;b&gt;dato il livello di attività effettivo&lt;/b&gt; del periodo, tenendo conto di come i costi reagiscono all&#x27;attività. Mostra quanto &lt;i&gt;si sarebbe dovuto&lt;/i&gt; spendere e incassare a quel volume. &lt;span class=&quot;src&quot;&gt;slide 9, 31&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;prose&quot;&gt;
+      &lt;p&gt;Le slide sono nette &lt;span class=&quot;src&quot;&gt;slide 8&lt;/span&gt;: un planning budget statico va bene per &lt;b&gt;pianificare&lt;/b&gt;, ma non per valutare &lt;b&gt;quanto bene sono stati controllati i costi&lt;/b&gt;. Se l&#x27;attività effettiva è diversa da quella prevista, confrontare i costi effettivi con il budget statico è &lt;i&gt;fuorviante&lt;/i&gt;.&lt;/p&gt;
+      &lt;p&gt;Caratteristiche del flexible budget &lt;span class=&quot;src&quot;&gt;slide 10&lt;/span&gt;:&lt;/p&gt;
+      &lt;ol&gt;
+        &lt;li&gt;si può preparare per &lt;b&gt;qualsiasi livello di attività&lt;/b&gt; all&#x27;interno della &lt;em&gt;relevant range&lt;/em&gt;;&lt;/li&gt;
+        &lt;li&gt;mostra i costi che &lt;b&gt;avrebbero dovuto&lt;/b&gt; essere sostenuti al livello effettivo, così il confronto è &lt;b&gt;&quot;apples to apples&quot;&lt;/b&gt; (si confrontano grandezze omogenee, &quot;mele con mele&quot;);&lt;/li&gt;
+        &lt;li&gt;aiuta i manager a &lt;b&gt;controllare i costi&lt;/b&gt;;&lt;/li&gt;
+        &lt;li&gt;migliora la &lt;b&gt;valutazione della performance&lt;/b&gt;.&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;Il caso Larry&#x27;s Lawn Service&lt;/h3&gt;
+    &lt;div class=&quot;prose&quot;&gt;
+      &lt;p&gt;Larry taglia prati in un quartiere dove tutti i prati hanno più o meno la stessa dimensione. A fine maggio prepara il budget di giugno su &lt;b&gt;500 prati&lt;/b&gt;. Poiché i prati sono simili, sceglie come misura dell&#x27;attività il &lt;b&gt;numero di prati tagliati (Q)&lt;/b&gt;: è il suo &lt;em class=&quot;t&quot;&gt;cost driver&lt;/em&gt;, cioè la variabile che &quot;guida&quot; i costi &lt;span class=&quot;src&quot;&gt;slide 11&lt;/span&gt;.&lt;/p&gt;
+      &lt;p&gt;A giugno ne taglia invece &lt;b&gt;550&lt;/b&gt;. Sfoglia le tre linguette.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tabs&quot; role=&quot;tablist&quot; data-tabs=&quot;larry&quot;&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;true&quot; aria-controls=&quot;lt1&quot; id=&quot;lt1b&quot;&gt;Planning budget (Q = 500)&lt;/button&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;lt2&quot; id=&quot;lt2b&quot;&gt;Actual results (Q = 550)&lt;/button&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;lt3&quot; id=&quot;lt3b&quot;&gt;Confronto con il budget statico&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;lt1&quot; aria-labelledby=&quot;lt1b&quot;&gt;
+      &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot;&gt;
+        &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th style=&quot;text-align:left&quot;&gt;Revenue/Cost Formulas&lt;/th&gt;&lt;th&gt;Planning Budget&lt;/th&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;hl&quot;&gt;&lt;td&gt;Number of lawns (Q)&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;500&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Revenue&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$75Q&lt;/td&gt;&lt;td&gt;$37,500&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Wages and salaries&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$5,000 + $30Q&lt;/td&gt;&lt;td&gt;$20,000&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Gasoline and supplies&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$9Q&lt;/td&gt;&lt;td&gt;4,500&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Equipment maintenance&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$3Q&lt;/td&gt;&lt;td&gt;1,500&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Office and shop utilities&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$1,000&lt;/td&gt;&lt;td&gt;1,000&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Office and shop rent&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$2,000&lt;/td&gt;&lt;td&gt;2,000&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Equipment depreciation&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$2,500&lt;/td&gt;&lt;td&gt;2,500&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Insurance&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$1,000&lt;/td&gt;&lt;td&gt;1,000&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total expenses&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;32,500&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;$5,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;&lt;/div&gt;
+      &lt;p class=&quot;small&quot;&gt;Slide 12. Le formule sono la chiave: revenue e costi sono scritti come funzione di Q.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;lt2&quot; aria-labelledby=&quot;lt2b&quot; hidden&gt;
+      &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot;&gt;
+        &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Actual Results&lt;/th&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;hl&quot;&gt;&lt;td&gt;Number of lawns (Q)&lt;/td&gt;&lt;td&gt;&lt;b&gt;550&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Revenue&lt;/td&gt;&lt;td&gt;$43,000&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Wages and salaries&lt;/td&gt;&lt;td&gt;$23,500&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Gasoline and supplies&lt;/td&gt;&lt;td&gt;5,100&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Equipment maintenance&lt;/td&gt;&lt;td&gt;1,300&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Office and shop utilities&lt;/td&gt;&lt;td&gt;950&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Office and shop rent&lt;/td&gt;&lt;td&gt;2,000&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Equipment depreciation&lt;/td&gt;&lt;td&gt;2,500&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Insurance&lt;/td&gt;&lt;td&gt;1,200&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total expenses&lt;/td&gt;&lt;td&gt;36,550&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;$6,450&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;&lt;/div&gt;
+      &lt;p class=&quot;small&quot;&gt;Slide 13. I risultati effettivi non hanno formule: sono quello che è successo.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;lt3&quot; aria-labelledby=&quot;lt3b&quot; hidden&gt;
+      &lt;p&gt;Regola dei segni &lt;span class=&quot;src&quot;&gt;slide 14&lt;/span&gt;: &lt;span class=&quot;fav&quot;&gt;F = favorable&lt;/span&gt; se la revenue effettiva è &lt;b&gt;maggiore&lt;/b&gt; di quella a budget, o se i costi effettivi sono &lt;b&gt;minori&lt;/b&gt;. &lt;span class=&quot;unf&quot;&gt;U = unfavorable&lt;/span&gt; se i costi effettivi sono &lt;b&gt;maggiori&lt;/b&gt; (o la revenue minore). Il criterio è sempre l&#x27;effetto sul profitto. Clicca per rivelare le variances una alla volta, come nelle slide 15–24.&lt;/p&gt;
+      &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot; id=&quot;staticTbl&quot;&gt;
+        &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th style=&quot;text-align:left&quot;&gt;Formula&lt;/th&gt;&lt;th&gt;Actual&lt;/th&gt;&lt;th&gt;Planning&lt;/th&gt;&lt;th&gt;Variances&lt;/th&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Number of lawns (Q)&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;&lt;/td&gt;&lt;td&gt;550&lt;/td&gt;&lt;td&gt;500&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Revenue&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$75Q&lt;/td&gt;&lt;td&gt;$43,000&lt;/td&gt;&lt;td&gt;$37,500&lt;/td&gt;&lt;td class=&quot;vhide fav&quot;&gt;$5,500 F&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Wages and salaries&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$5,000 + $30Q&lt;/td&gt;&lt;td&gt;$23,500&lt;/td&gt;&lt;td&gt;$20,000&lt;/td&gt;&lt;td class=&quot;vhide unf&quot;&gt;$3,500 U&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Gasoline and supplies&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$9Q&lt;/td&gt;&lt;td&gt;5,100&lt;/td&gt;&lt;td&gt;4,500&lt;/td&gt;&lt;td class=&quot;vhide unf&quot;&gt;600 U&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Equipment maintenance&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$3Q&lt;/td&gt;&lt;td&gt;1,300&lt;/td&gt;&lt;td&gt;1,500&lt;/td&gt;&lt;td class=&quot;vhide fav&quot;&gt;200 F&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Office and shop utilities&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$1,000&lt;/td&gt;&lt;td&gt;950&lt;/td&gt;&lt;td&gt;1,000&lt;/td&gt;&lt;td class=&quot;vhide fav&quot;&gt;50 F&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Office and shop rent&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$2,000&lt;/td&gt;&lt;td&gt;2,000&lt;/td&gt;&lt;td&gt;2,000&lt;/td&gt;&lt;td class=&quot;vhide&quot;&gt;–&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Equipment depreciation&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$2,500&lt;/td&gt;&lt;td&gt;2,500&lt;/td&gt;&lt;td&gt;2,500&lt;/td&gt;&lt;td class=&quot;vhide&quot;&gt;–&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Insurance&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$1,000&lt;/td&gt;&lt;td&gt;1,200&lt;/td&gt;&lt;td&gt;1,000&lt;/td&gt;&lt;td class=&quot;vhide unf&quot;&gt;200 U&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total expenses&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;36,550&lt;/td&gt;&lt;td&gt;32,500&lt;/td&gt;&lt;td class=&quot;vhide unf&quot;&gt;4,050 U&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;$6,450&lt;/td&gt;&lt;td&gt;$5,000&lt;/td&gt;&lt;td class=&quot;vhide fav&quot;&gt;$1,450 F&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;&lt;/div&gt;
+      &lt;div style=&quot;display:flex;gap:8px;flex-wrap:wrap&quot;&gt;&lt;button class=&quot;btn&quot; id=&quot;stNext&quot;&gt;Rivela la prossima variance&lt;/button&gt;&lt;button class=&quot;btn&quot; id=&quot;stAll&quot;&gt;Mostra tutte&lt;/button&gt;&lt;button class=&quot;btn&quot; id=&quot;stReset&quot;&gt;Ricomincia&lt;/button&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;h3 id=&quot;limiti&quot;&gt;I limiti del budget statico&lt;/h3&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4 class=&quot;unf&quot;&gt;Variances unfavorable…&lt;/h4&gt;&lt;p&gt;Wages +$3,500, gasoline +$600: Larry ha controllato male i costi? &lt;span class=&quot;src&quot;&gt;slide 25&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4 class=&quot;fav&quot;&gt;…e favorable&lt;/h4&gt;&lt;p&gt;Revenue +$5,500, NOI +$1,450: allora ha gestito bene?&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b class=&quot;term&quot;&gt;Risposta delle slide: &quot;non possiamo ancora dirlo&quot;&lt;/b&gt;Il livello di attività effettivo (550) è &lt;b&gt;maggiore&lt;/b&gt; di quello pianificato (500). I costi variabili effettivi saranno quindi probabilmente più alti di quelli pianificati, &lt;b&gt;a prescindere&lt;/b&gt; dall&#x27;efficienza di Larry. &lt;span class=&quot;src&quot;&gt;slide 26&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;lbl&quot;&gt;La domanda giusta (slide 27)&lt;/span&gt;&quot;Quanta parte delle cost variances dipende dalla &lt;b&gt;maggiore attività&lt;/b&gt;, e quanta dal &lt;b&gt;controllo dei costi&lt;/b&gt;?&quot;&lt;/div&gt;
+    &lt;p class=&quot;prose&quot;&gt;Per rispondere bisogna &lt;em class=&quot;t&quot;&gt;flex&lt;/em&gt; (&quot;flettere&quot;) il planning budget: ricalcolarlo al livello di attività effettivo.&lt;/p&gt;
+
+    &lt;h3 id=&quot;cost-behavior&quot;&gt;Come funziona un flexible budget: il comportamento dei costi&lt;/h3&gt;
+    &lt;div class=&quot;prose&quot;&gt;&lt;p&gt;Per flettere un budget bisogna sapere due cose &lt;span class=&quot;src&quot;&gt;slide 28&lt;/span&gt;:&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Costi variabili totali&lt;/h4&gt;&lt;p&gt;Cambiano &lt;b&gt;in proporzione diretta&lt;/b&gt; all&#x27;attività. Esempio: gasoline $9 per prato → 500 prati = $4,500, 550 prati = $4,950. Per unità il costo è costante, in totale cresce.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Costi fissi totali&lt;/h4&gt;&lt;p&gt;Restano &lt;b&gt;invariati&lt;/b&gt; all&#x27;interno della relevant range. Esempio: rent $2,000 sia con 500 sia con 550 prati.&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;callout&quot;&gt;&lt;div class=&quot;lab&quot;&gt;Ciò che le slide danno per scontato&lt;/div&gt;
+      &lt;p&gt;&lt;b&gt;Cost formula.&lt;/b&gt; Ogni voce si scrive come &lt;span class=&quot;mono&quot;&gt;Costo = a + b·Q&lt;/span&gt;, dove &lt;i&gt;a&lt;/i&gt; è la parte fissa del periodo e &lt;i&gt;b&lt;/i&gt; il costo variabile per unità di driver. Se &lt;i&gt;a&lt;/i&gt; = 0 il costo è puramente variabile (gasoline &lt;span class=&quot;mono&quot;&gt;$9Q&lt;/span&gt;), se &lt;i&gt;b&lt;/i&gt; = 0 è puramente fisso (rent &lt;span class=&quot;mono&quot;&gt;$2,000&lt;/span&gt;). Se ci sono entrambi è un &lt;em&gt;mixed cost&lt;/em&gt; (costo misto): wages &lt;span class=&quot;mono&quot;&gt;$5,000 + $30Q&lt;/span&gt; contiene stipendi fissi più paga per prato.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;Relevant range.&lt;/b&gt; È l&#x27;intervallo di attività in cui queste ipotesi reggono. Oltre una certa soglia Larry dovrebbe comprare un secondo tosaerba o affittare un capannone più grande: i &quot;fissi&quot; salterebbero a un nuovo livello e le formule non varrebbero più.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;Net operating income (NOI).&lt;/b&gt; È il reddito operativo, cioè revenue meno tutte le spese operative. Per Larry: costi fissi totali = 5,000 + 1,000 + 2,000 + 2,500 + 1,000 = &lt;b&gt;$11,500&lt;/b&gt;; costo variabile per prato = 30 + 9 + 3 = &lt;b&gt;$42&lt;/b&gt;; quindi &lt;span class=&quot;mono&quot;&gt;NOI = 75Q − 42Q − 11,500 = 33Q − 11,500&lt;/span&gt;. I $33 sono il &lt;em&gt;contribution margin&lt;/em&gt; per prato (margine di contribuzione: prezzo meno costi variabili unitari).&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;h3 id=&quot;flex&quot;&gt;Il flexible budget in azione&lt;/h3&gt;
+    &lt;p class=&quot;prose&quot;&gt;Muovi il cursore. Il &lt;b&gt;budget statico&lt;/b&gt; resta un punto fisso a Q = 500. Il &lt;b&gt;flexible budget&lt;/b&gt; è invece una retta: per ogni Q dice quanto avresti dovuto incassare e spendere. Le formule sono le stesse del planning budget, cambia solo Q.&lt;/p&gt;
+    &lt;div class=&quot;panel&quot;&gt;
+      &lt;div class=&quot;slider&quot;&gt;&lt;label for=&quot;qS&quot;&gt;Prati tagliati (Q)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;qS&quot; min=&quot;300&quot; max=&quot;700&quot; step=&quot;10&quot; value=&quot;550&quot;&gt;&lt;output id=&quot;qO&quot;&gt;550&lt;/output&gt;&lt;/div&gt;
+      &lt;svg viewBox=&quot;0 0 640 320&quot; id=&quot;flexChart&quot; role=&quot;img&quot; aria-label=&quot;Grafico di revenue e costi in funzione di Q&quot;&gt;
+        &lt;g id=&quot;fcGrid&quot; style=&quot;stroke:var(--rule);stroke-width:1&quot;&gt;&lt;/g&gt;
+        &lt;g id=&quot;fcAxis&quot; style=&quot;font-size:11px;fill:var(--muted)&quot;&gt;&lt;/g&gt;
+        &lt;rect id=&quot;fcStaticBand&quot; style=&quot;fill:var(--ochre-bg)&quot;&gt;&lt;/rect&gt;
+        &lt;path id=&quot;fcFixed&quot; style=&quot;stroke:var(--muted);stroke-width:2;stroke-dasharray:5 4;fill:none&quot;/&gt;
+        &lt;path id=&quot;fcCost&quot; style=&quot;stroke:var(--brick);stroke-width:3;fill:none&quot;/&gt;
+        &lt;path id=&quot;fcRev&quot; style=&quot;stroke:var(--sage);stroke-width:3;fill:none&quot;/&gt;
+        &lt;line id=&quot;fcStaticCost&quot; style=&quot;stroke:var(--ochre);stroke-width:2;stroke-dasharray:2 4&quot;/&gt;
+        &lt;line id=&quot;fcQ&quot; style=&quot;stroke:var(--ink);stroke-width:1;stroke-dasharray:3 3&quot;/&gt;
+        &lt;circle id=&quot;fcPlanR&quot; r=&quot;5&quot; style=&quot;fill:var(--paper);stroke:var(--sage);stroke-width:2&quot;/&gt;
+        &lt;circle id=&quot;fcPlanC&quot; r=&quot;5&quot; style=&quot;fill:var(--paper);stroke:var(--brick);stroke-width:2&quot;/&gt;
+        &lt;circle id=&quot;fcDotR&quot; r=&quot;6&quot; style=&quot;fill:var(--sage)&quot;/&gt;
+        &lt;circle id=&quot;fcDotC&quot; r=&quot;6&quot; style=&quot;fill:var(--brick)&quot;/&gt;
+        &lt;g style=&quot;font-size:12px;font-weight:600&quot;&gt;
+          &lt;text id=&quot;fcLR&quot; style=&quot;fill:var(--sage)&quot;&gt;Revenue = 75Q&lt;/text&gt;
+          &lt;text id=&quot;fcLC&quot; style=&quot;fill:var(--brick)&quot;&gt;Total cost = 11,500 + 42Q&lt;/text&gt;
+          &lt;text id=&quot;fcLF&quot; style=&quot;fill:var(--muted)&quot;&gt;Fixed = 11,500&lt;/text&gt;
+          &lt;text id=&quot;fcLS&quot; style=&quot;fill:var(--ochre)&quot;&gt;costi del budget statico: 32,500 (non si muovono)&lt;/text&gt;
+        &lt;/g&gt;
+      &lt;/svg&gt;
+      &lt;div class=&quot;kpis&quot;&gt;
+        &lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Revenue (flex)&lt;/span&gt;&lt;b id=&quot;kRev&quot;&gt;&lt;/b&gt;&lt;/div&gt;
+        &lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Total expenses (flex)&lt;/span&gt;&lt;b id=&quot;kCost&quot;&gt;&lt;/b&gt;&lt;/div&gt;
+        &lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;NOI (flex)&lt;/span&gt;&lt;b id=&quot;kNoi&quot;&gt;&lt;/b&gt;&lt;/div&gt;
+        &lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Activity variance sul NOI&lt;/span&gt;&lt;b id=&quot;kAct&quot;&gt;&lt;/b&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot; id=&quot;flexTbl&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+      &lt;p class=&quot;small&quot;&gt;La relevant range 300–700 è un&#x27;ipotesi didattica: le slide non la specificano. Cerchi vuoti = planning budget (Q = 500), cerchi pieni = flexible budget al Q scelto.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;prose&quot;&gt;A Q = 550 si ottiene il flexible budget delle slide &lt;span class=&quot;src&quot;&gt;slide 32&lt;/span&gt;: revenue &lt;b&gt;$41,250&lt;/b&gt; (75 × 550), total expenses &lt;b&gt;$34,600&lt;/b&gt;, NOI &lt;b&gt;$6,650&lt;/b&gt;. Visto il numero effettivo di prati, il profitto &lt;b&gt;sarebbe dovuto&lt;/b&gt; essere $6,650, ma è stato $6,450. Da dove vengono queste differenze? Lo vediamo nella Parte 3.&lt;/p&gt;
+
+    &lt;div class=&quot;panel quiz&quot; data-answer=&quot;c&quot;&gt;
+      &lt;b&gt;Quick Check 1&lt;/b&gt; &lt;span class=&quot;src&quot;&gt;slide 29–30&lt;/span&gt;
+      &lt;p&gt;Quanto dovrebbero valere wages and salaries in un flexible budget per &lt;b&gt;600 prati&lt;/b&gt;?&lt;/p&gt;
+      &lt;div class=&quot;opts&quot;&gt;&lt;button data-k=&quot;a&quot;&gt;a. $18,000&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. $20,000&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. $23,000&lt;/button&gt;&lt;button data-k=&quot;d&quot;&gt;d. $25,000&lt;/button&gt;&lt;/div&gt;
+      &lt;div class=&quot;fb&quot; aria-live=&quot;polite&quot; data-ok=&quot;Esatto: $5,000 + ($30 × 600) = $5,000 + $18,000 = $23,000.&quot; data-ko=&quot;No. Usa la formula $5,000 + $30Q, senza dimenticare la parte fissa.&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;check&quot;&gt;
+      &lt;h3&gt;Autoverifica · Parte 2&lt;/h3&gt;
+      &lt;details&gt;&lt;summary&gt;Larry ha una variance di $600 U su gasoline rispetto al budget statico. Vuol dire che ha sprecato carburante?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Non necessariamente. Con 50 prati in più il carburante &quot;dovuto&quot; sale di 9 × 50 = $450. Solo $150 (5,100 − 4,950) dipendono davvero da come ha speso.&lt;/div&gt;&lt;/details&gt;
+      &lt;details&gt;&lt;summary&gt;Che cosa hanno in comune planning budget e flexible budget, e che cosa li distingue?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Le &lt;b&gt;formule&lt;/b&gt; di revenue e costi sono identiche. Cambia il &lt;b&gt;livello di attività&lt;/b&gt; a cui si applicano: quello pianificato (500) contro quello effettivo (550). Il flexible budget si prepara a fine periodo, quando Q è noto.&lt;/div&gt;&lt;/details&gt;
+      &lt;details&gt;&lt;summary&gt;Calcola wages and salaries e NOI del flexible budget per 450 prati.&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Wages = 5,000 + 30 × 450 = &lt;b&gt;$18,500&lt;/b&gt;. NOI = 33 × 450 − 11,500 = &lt;b&gt;$3,350&lt;/b&gt;.&lt;/div&gt;&lt;/details&gt;
+      &lt;details&gt;&lt;summary&gt;Perché il flexible budget vale solo entro la relevant range?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Perché fuori da quell&#x27;intervallo i costi fissi cambiano a gradini (nuove attrezzature, spazi, personale) e anche i costi variabili unitari possono cambiare. Le cost formulas smettono di descrivere la realtà.&lt;/div&gt;&lt;/details&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;p3&quot; class=&quot;part slate&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;chip&quot;&gt;Parte 3 · Learning Objectives 2, 3, 4&lt;/div&gt;
+    &lt;h2&gt;Activity variances, revenue e spending variances, performance report&lt;/h2&gt;
+    &lt;p class=&quot;prose&quot;&gt;Il flexible budget sta &lt;b&gt;in mezzo&lt;/b&gt; tra planning budget e actual results, e divide lo scostamento totale in due pezzi che rispondono a due domande diverse.&lt;/p&gt;
+    &lt;figure class=&quot;panel&quot;&gt;
+&lt;svg viewBox=&quot;0 0 700 170&quot; role=&quot;img&quot; aria-label=&quot;Il flexible budget divide lo scostamento in due&quot;&gt;
+  &lt;g style=&quot;font-size:13px&quot;&gt;
+    &lt;rect x=&quot;10&quot; y=&quot;20&quot; width=&quot;170&quot; height=&quot;60&quot; rx=&quot;10&quot; style=&quot;fill:var(--card);stroke:var(--ink);stroke-width:1.5&quot;/&gt;
+    &lt;text x=&quot;95&quot; y=&quot;46&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:700&quot;&gt;Actual results&lt;/text&gt;&lt;text x=&quot;95&quot; y=&quot;65&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--muted)&quot;&gt;Q effettivo, valori effettivi&lt;/text&gt;
+    &lt;rect x=&quot;265&quot; y=&quot;20&quot; width=&quot;170&quot; height=&quot;60&quot; rx=&quot;10&quot; style=&quot;fill:var(--accent-bg);stroke:var(--accent);stroke-width:2&quot;/&gt;
+    &lt;text x=&quot;350&quot; y=&quot;46&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:700&quot;&gt;Flexible budget&lt;/text&gt;&lt;text x=&quot;350&quot; y=&quot;65&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--muted)&quot;&gt;Q effettivo, formule&lt;/text&gt;
+    &lt;rect x=&quot;520&quot; y=&quot;20&quot; width=&quot;170&quot; height=&quot;60&quot; rx=&quot;10&quot; style=&quot;fill:var(--ochre-bg);stroke:var(--ochre);stroke-width:1.5&quot;/&gt;
+    &lt;text x=&quot;605&quot; y=&quot;46&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:700&quot;&gt;Planning budget&lt;/text&gt;&lt;text x=&quot;605&quot; y=&quot;65&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--muted)&quot;&gt;Q pianificato, formule&lt;/text&gt;
+  &lt;/g&gt;
+  &lt;g style=&quot;fill:none;stroke-width:2&quot;&gt;
+    &lt;path d=&quot;M100,88 Q100,118 222,118 Q345,118 345,88&quot; style=&quot;stroke:var(--slate)&quot;/&gt;
+    &lt;path d=&quot;M355,88 Q355,118 478,118 Q600,118 600,88&quot; style=&quot;stroke:var(--sage)&quot;/&gt;
+  &lt;/g&gt;
+  &lt;g style=&quot;font-size:13px;font-weight:700&quot; text-anchor=&quot;middle&quot;&gt;
+    &lt;text x=&quot;222&quot; y=&quot;142&quot; style=&quot;fill:var(--slate)&quot;&gt;Revenue &amp;amp; spending variances&lt;/text&gt;
+    &lt;text x=&quot;222&quot; y=&quot;160&quot; style=&quot;font-weight:400;fill:var(--muted)&quot;&gt;&quot;Come abbiamo gestito?&quot;&lt;/text&gt;
+    &lt;text x=&quot;478&quot; y=&quot;142&quot; style=&quot;fill:var(--sage)&quot;&gt;Activity variances&lt;/text&gt;
+    &lt;text x=&quot;478&quot; y=&quot;160&quot; style=&quot;font-weight:400;fill:var(--muted)&quot;&gt;&quot;Che effetto ha avuto il volume?&quot;&lt;/text&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+    &lt;/figure&gt;
+
+    &lt;h3 id=&quot;activity&quot;&gt;Activity variances &lt;span class=&quot;src&quot;&gt;LO2 · slide 33–38&lt;/span&gt;&lt;/h3&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b class=&quot;term&quot;&gt;Activity variance&lt;/b&gt;Lo scostamento che nasce &lt;b&gt;solo&lt;/b&gt; dalla differenza tra il livello di attività effettivo e quello inserito nel planning budget. Risponde alla domanda: &quot;Che impatto ha avuto la variazione dell&#x27;attività su ricavi, costi e profitto?&quot;&lt;/div&gt;
+    &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;lbl&quot;&gt;Formula&lt;/span&gt;Activity variance = Flexible budget − Planning budget&lt;/div&gt;
+    &lt;div class=&quot;prose&quot;&gt;
+      &lt;p&gt;Il &lt;b&gt;flexible budget&lt;/b&gt; dice cosa sarebbe dovuto succedere al livello di attività &lt;i&gt;effettivo&lt;/i&gt;, il &lt;b&gt;planning budget&lt;/b&gt; cosa sarebbe dovuto succedere al livello &lt;i&gt;previsto&lt;/i&gt;. Entrambi usano le formule, quindi la loro differenza è pura conseguenza del volume e &lt;b&gt;non dice nulla&lt;/b&gt; sull&#x27;abilità di chi ha gestito.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot;&gt;
+      &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th style=&quot;text-align:left&quot;&gt;Formula&lt;/th&gt;&lt;th&gt;Flexible (550)&lt;/th&gt;&lt;th&gt;Planning (500)&lt;/th&gt;&lt;th&gt;Activity Variances&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Revenue&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$75Q&lt;/td&gt;&lt;td&gt;$41,250&lt;/td&gt;&lt;td&gt;$37,500&lt;/td&gt;&lt;td class=&quot;fav&quot;&gt;$3,750 F&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Wages and salaries&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$5,000 + $30Q&lt;/td&gt;&lt;td&gt;$21,500&lt;/td&gt;&lt;td&gt;$20,000&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;$1,500 U&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Gasoline and supplies&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$9Q&lt;/td&gt;&lt;td&gt;4,950&lt;/td&gt;&lt;td&gt;4,500&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;450 U&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Equipment maintenance&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$3Q&lt;/td&gt;&lt;td&gt;1,650&lt;/td&gt;&lt;td&gt;1,500&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;150 U&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Utilities · Rent · Depreciation · Insurance&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;fissi&lt;/td&gt;&lt;td&gt;6,500&lt;/td&gt;&lt;td&gt;6,500&lt;/td&gt;&lt;td&gt;–&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total expenses&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;34,600&lt;/td&gt;&lt;td&gt;32,500&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;2,100 U&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;$6,650&lt;/td&gt;&lt;td&gt;$5,000&lt;/td&gt;&lt;td class=&quot;fav&quot;&gt;$1,650 F&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Scorciatoia&lt;/h4&gt;&lt;p&gt;Ogni activity variance = &lt;b&gt;ΔQ × parte variabile della formula&lt;/b&gt;. Revenue: 50 × $75 = $3,750 F. Wages: 50 × $30 = $1,500 U &lt;span class=&quot;src&quot;&gt;slide 56&lt;/span&gt;. Gli U sui costi sono &quot;buoni&quot;: significano che si è lavorato di più.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Costi fissi → activity variance zero&lt;/h4&gt;&lt;p&gt;Entro la relevant range i costi fissi non dipendono da Q, quindi flexible e planning coincidono.&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Effetto leva dei costi fissi&lt;/h4&gt;&lt;p&gt;Attività e revenue crescono del &lt;b&gt;10%&lt;/b&gt;, il NOI cresce del &lt;b&gt;33%&lt;/b&gt; (1,650 / 5,000) proprio perché ci sono costi fissi &lt;span class=&quot;src&quot;&gt;slide 37&lt;/span&gt;. Ogni prato in più porta $33 di contribution margin, mentre i fissi restano $11,500. Nei manuali questo effetto si chiama &lt;em&gt;operating leverage&lt;/em&gt; (leva operativa).&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;panel&quot;&gt;
+      &lt;h4 style=&quot;margin-top:0&quot;&gt;Esercizio · Jake&#x27;s Roof Repair &lt;span class=&quot;src&quot;&gt;slide 39–41&lt;/span&gt;&lt;/h4&gt;
+      &lt;p&gt;Cost driver: &lt;b&gt;repair-hours&lt;/b&gt; (q). Previste 2,800 ore a maggio, lavorate &lt;b&gt;2,900&lt;/b&gt;. Ricavo atteso $44.50 per ora. Calcola le activity variances.&lt;/p&gt;
+      &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot;&gt;
+        &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Fixed Cost per Month&lt;/th&gt;&lt;th&gt;Cost per Repair-Hour&lt;/th&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Wages and salaries&lt;/td&gt;&lt;td&gt;$23,200&lt;/td&gt;&lt;td&gt;$16.30&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Parts and supplies&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;$8.60&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Equipment depreciation&lt;/td&gt;&lt;td&gt;$1,600&lt;/td&gt;&lt;td&gt;$0.40&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Truck operating expenses&lt;/td&gt;&lt;td&gt;$6,400&lt;/td&gt;&lt;td&gt;$1.70&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Rent&lt;/td&gt;&lt;td&gt;$3,480&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Administrative expenses&lt;/td&gt;&lt;td&gt;$4,500&lt;/td&gt;&lt;td&gt;$0.80&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;&lt;/div&gt;
+      &lt;div class=&quot;quiz&quot; data-answer=&quot;b&quot;&gt;
+        &lt;p&gt;&lt;b&gt;Prova:&lt;/b&gt; quanto vale l&#x27;activity variance della revenue?&lt;/p&gt;
+        &lt;div class=&quot;opts&quot;&gt;&lt;button data-k=&quot;a&quot;&gt;a. $4,450 U&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. $4,450 F&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. $1,670 F&lt;/button&gt;&lt;/div&gt;
+        &lt;div class=&quot;fb&quot; aria-live=&quot;polite&quot; data-ok=&quot;Sì: 100 ore × $44.50 = $4,450 F (129,050 − 124,600).&quot; data-ko=&quot;Riprova: per la revenue, più attività significa più ricavi (F). $1,670 è la variance del NOI.&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;details&gt;&lt;summary&gt;Mostra la soluzione completa&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;
+        &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot;&gt;
+          &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Flexible (2,900)&lt;/th&gt;&lt;th&gt;Planning (2,800)&lt;/th&gt;&lt;th&gt;Activity Var.&lt;/th&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Revenue ($44.50q)&lt;/td&gt;&lt;td&gt;$129,050&lt;/td&gt;&lt;td&gt;$124,600&lt;/td&gt;&lt;td class=&quot;fav&quot;&gt;$4,450 F&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Wages ($23,200 + $16.30q)&lt;/td&gt;&lt;td&gt;70,470&lt;/td&gt;&lt;td&gt;68,840&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;1,630 U&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Parts and supplies ($8.60q)&lt;/td&gt;&lt;td&gt;24,940&lt;/td&gt;&lt;td&gt;24,080&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;860 U&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Depreciation ($1,600 + $0.40q)&lt;/td&gt;&lt;td&gt;2,760&lt;/td&gt;&lt;td&gt;2,720&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;40 U&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Truck ($6,400 + $1.70q)&lt;/td&gt;&lt;td&gt;11,330&lt;/td&gt;&lt;td&gt;11,160&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;170 U&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Rent ($3,480)&lt;/td&gt;&lt;td&gt;3,480&lt;/td&gt;&lt;td&gt;3,480&lt;/td&gt;&lt;td&gt;0 (None)&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Administrative ($4,500 + $0.80q)&lt;/td&gt;&lt;td&gt;6,820&lt;/td&gt;&lt;td&gt;6,740&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;80 U&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total expense&lt;/td&gt;&lt;td&gt;119,800&lt;/td&gt;&lt;td&gt;117,020&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;2,780 U&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;$9,250&lt;/td&gt;&lt;td&gt;$7,580&lt;/td&gt;&lt;td class=&quot;fav&quot;&gt;$1,670 F&lt;/td&gt;&lt;/tr&gt;
+        &lt;/table&gt;&lt;/div&gt;
+        &lt;p&gt;Controllo veloce: costo variabile per ora = 16.30 + 8.60 + 0.40 + 1.70 + 0.80 = $27.80; margine per ora = 44.50 − 27.80 = $16.70; 100 ore × 16.70 = &lt;b&gt;$1,670 F&lt;/b&gt;. Nota che qui anche la depreciation ha una parte variabile.&lt;/p&gt;
+      &lt;/div&gt;&lt;/details&gt;
+    &lt;/div&gt;
+
+    &lt;h3 id=&quot;spending&quot;&gt;Revenue e spending variances &lt;span class=&quot;src&quot;&gt;LO3 · slide 42–48&lt;/span&gt;&lt;/h3&gt;
+    &lt;p class=&quot;prose&quot;&gt;Domanda guida: &quot;Quanto bene abbiamo controllato ricavi, costi e profitto?&quot; Ora il confronto è tra &lt;b&gt;actual&lt;/b&gt; e &lt;b&gt;flexible budget&lt;/b&gt;: lo stesso Q da entrambe le parti, quindi l&#x27;effetto volume è eliminato.&lt;/p&gt;
+    &lt;figure class=&quot;panel&quot;&gt;
+&lt;svg viewBox=&quot;0 0 640 250&quot; role=&quot;img&quot; aria-label=&quot;Key terminology: revenue variance e spending variance&quot;&gt;
+  &lt;g style=&quot;font-size:14px&quot;&gt;
+    &lt;rect x=&quot;20&quot; y=&quot;10&quot; width=&quot;240&quot; height=&quot;44&quot; rx=&quot;6&quot; style=&quot;fill:var(--slate-bg);stroke:var(--slate)&quot;/&gt;&lt;text x=&quot;140&quot; y=&quot;38&quot; text-anchor=&quot;middle&quot;&gt;Actual revenue&lt;/text&gt;
+    &lt;rect x=&quot;380&quot; y=&quot;10&quot; width=&quot;240&quot; height=&quot;44&quot; rx=&quot;6&quot; style=&quot;fill:var(--slate-bg);stroke:var(--slate)&quot;/&gt;&lt;text x=&quot;500&quot; y=&quot;38&quot; text-anchor=&quot;middle&quot;&gt;Flexible budget revenue&lt;/text&gt;
+    &lt;rect x=&quot;150&quot; y=&quot;80&quot; width=&quot;340&quot; height=&quot;40&quot; rx=&quot;6&quot; style=&quot;fill:var(--slate);stroke:var(--slate)&quot;/&gt;&lt;text x=&quot;320&quot; y=&quot;106&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--paper);font-weight:700&quot;&gt;differenza = revenue variance&lt;/text&gt;
+    &lt;rect x=&quot;20&quot; y=&quot;135&quot; width=&quot;240&quot; height=&quot;44&quot; rx=&quot;6&quot; style=&quot;fill:var(--sage-bg);stroke:var(--sage)&quot;/&gt;&lt;text x=&quot;140&quot; y=&quot;163&quot; text-anchor=&quot;middle&quot;&gt;Actual cost&lt;/text&gt;
+    &lt;rect x=&quot;380&quot; y=&quot;135&quot; width=&quot;240&quot; height=&quot;44&quot; rx=&quot;6&quot; style=&quot;fill:var(--sage-bg);stroke:var(--sage)&quot;/&gt;&lt;text x=&quot;500&quot; y=&quot;163&quot; text-anchor=&quot;middle&quot;&gt;Flexible budget cost&lt;/text&gt;
+    &lt;rect x=&quot;150&quot; y=&quot;205&quot; width=&quot;340&quot; height=&quot;40&quot; rx=&quot;6&quot; style=&quot;fill:var(--card);stroke:var(--ink)&quot;/&gt;&lt;text x=&quot;320&quot; y=&quot;231&quot; text-anchor=&quot;middle&quot; style=&quot;font-weight:700&quot;&gt;differenza = spending variance&lt;/text&gt;
+  &lt;/g&gt;
+  &lt;g style=&quot;fill:none;stroke:var(--ink);stroke-width:1.5&quot;&gt;&lt;path d=&quot;M140,54 V66 H500 V54 M320,66 V78&quot;/&gt;&lt;path d=&quot;M140,179 V191 H500 V179 M320,191 V203&quot;/&gt;&lt;/g&gt;
+&lt;/svg&gt;
+      &lt;figcaption&gt;Ridisegnato dalla slide 43 (Key Terminology).&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div class=&quot;def&quot;&gt;&lt;b class=&quot;term&quot;&gt;Revenue variance&lt;/b&gt;Actual revenue − flexible budget revenue. &lt;span class=&quot;fav&quot;&gt;Favorable&lt;/span&gt; se l&#x27;incasso effettivo supera quello che &quot;doveva essere&quot;, &lt;span class=&quot;unf&quot;&gt;unfavorable&lt;/span&gt; se è inferiore. Con un solo driver equivale a dire che il &lt;b&gt;prezzo medio di vendita&lt;/b&gt; è stato maggiore (F) o minore (U) del previsto. &lt;span class=&quot;src&quot;&gt;slide 44&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;def&quot;&gt;&lt;b class=&quot;term&quot;&gt;Spending variance&lt;/b&gt;Actual cost − flexible budget cost. &lt;span class=&quot;unf&quot;&gt;Unfavorable&lt;/span&gt; se il costo effettivo supera quello che &quot;doveva essere&quot;, &lt;span class=&quot;fav&quot;&gt;favorable&lt;/span&gt; se è inferiore. &lt;span class=&quot;src&quot;&gt;slide 45&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot;&gt;
+      &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th style=&quot;text-align:left&quot;&gt;Formula&lt;/th&gt;&lt;th&gt;Actual (550)&lt;/th&gt;&lt;th&gt;Flexible (550)&lt;/th&gt;&lt;th&gt;Revenue &amp;amp; Spending Var.&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Revenue&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$75Q&lt;/td&gt;&lt;td&gt;$43,000&lt;/td&gt;&lt;td&gt;$41,250&lt;/td&gt;&lt;td class=&quot;fav&quot;&gt;$1,750 F&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Wages and salaries&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$5,000 + $30Q&lt;/td&gt;&lt;td&gt;$23,500&lt;/td&gt;&lt;td&gt;$21,500&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;$2,000 U&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Gasoline and supplies&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$9Q&lt;/td&gt;&lt;td&gt;5,100&lt;/td&gt;&lt;td&gt;4,950&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;150 U&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Equipment maintenance&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$3Q&lt;/td&gt;&lt;td&gt;1,300&lt;/td&gt;&lt;td&gt;1,650&lt;/td&gt;&lt;td class=&quot;fav&quot;&gt;350 F&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Office and shop utilities&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$1,000&lt;/td&gt;&lt;td&gt;950&lt;/td&gt;&lt;td&gt;1,000&lt;/td&gt;&lt;td class=&quot;fav&quot;&gt;50 F&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Office and shop rent&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$2,000&lt;/td&gt;&lt;td&gt;2,000&lt;/td&gt;&lt;td&gt;2,000&lt;/td&gt;&lt;td&gt;–&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Equipment depreciation&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$2,500&lt;/td&gt;&lt;td&gt;2,500&lt;/td&gt;&lt;td&gt;2,500&lt;/td&gt;&lt;td&gt;–&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Insurance&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$1,000&lt;/td&gt;&lt;td&gt;1,200&lt;/td&gt;&lt;td&gt;1,000&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;200 U&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total expenses&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;36,550&lt;/td&gt;&lt;td&gt;34,600&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;1,950 U&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;$6,450&lt;/td&gt;&lt;td&gt;$6,650&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;$200 U&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;&lt;/div&gt;
+    &lt;div class=&quot;callout&quot;&gt;&lt;div class=&quot;lab&quot;&gt;Come leggere questi numeri (oltre le slide)&lt;/div&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Revenue $1,750 F&lt;/b&gt;: prezzo medio effettivo = 43,000 / 550 ≈ &lt;b&gt;$78.18&lt;/b&gt; per prato, contro i $75 previsti.&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Wages $2,000 U&lt;/b&gt;: è la vera voce critica. Al volume effettivo i salari dovevano essere $21,500. Le cause possibili (straordinari, paghe più alte, lentezza) vanno cercate con il variance analysis cycle.&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Insurance $200 U&lt;/b&gt;: anche un costo &lt;b&gt;fisso&lt;/b&gt; può avere una spending variance (per esempio un premio aumentato), anche se non ha mai un&#x27;activity variance.&lt;/li&gt;
+        &lt;li&gt;Una spending variance mescola due effetti: &lt;b&gt;prezzo&lt;/b&gt; pagato per le risorse e &lt;b&gt;quantità&lt;/b&gt; usata. Per separarli servono gli &lt;em&gt;standard costs&lt;/em&gt; (costi standard), argomento che nel manuale McGraw Hill citato viene subito dopo questo capitolo &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt;.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;h3 id=&quot;report&quot;&gt;Il performance report che combina tutto &lt;span class=&quot;src&quot;&gt;LO4 · slide 49–59&lt;/span&gt;&lt;/h3&gt;
+    &lt;p class=&quot;prose&quot;&gt;Il &lt;em class=&quot;t&quot;&gt;flexible budget performance report&lt;/em&gt; mette in fila le tre colonne (1) Actual, (2) Flexible, (3) Planning e, tra una e l&#x27;altra, le due famiglie di variances. &lt;b&gt;Clicca una riga&lt;/b&gt; per vedere come lo scostamento rispetto al budget statico si scompone.&lt;/p&gt;
+    &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot; id=&quot;repTbl&quot;&gt;
+      &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;(1) Actual&lt;/th&gt;&lt;th&gt;Revenue &amp;amp; Spending&lt;br&gt;(1) − (2)&lt;/th&gt;&lt;th&gt;(2) Flexible&lt;/th&gt;&lt;th&gt;Activity&lt;br&gt;(2) − (3)&lt;/th&gt;&lt;th&gt;(3) Planning&lt;/th&gt;&lt;/tr&gt;
+    &lt;/table&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel&quot; id=&quot;decBox&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+    &lt;figure class=&quot;panel&quot;&gt;
+&lt;svg viewBox=&quot;0 0 700 300&quot; role=&quot;img&quot; aria-label=&quot;Ponte del net operating income da planning ad actual&quot;&gt;
+  &lt;line x1=&quot;40&quot; y1=&quot;250&quot; x2=&quot;680&quot; y2=&quot;250&quot; style=&quot;stroke:var(--ink)&quot;/&gt;
+  &lt;g style=&quot;stroke:var(--rule);stroke-dasharray:3 3&quot;&gt;&lt;line x1=&quot;150&quot; y1=&quot;103&quot; x2=&quot;190&quot; y2=&quot;103&quot;/&gt;&lt;line x1=&quot;280&quot; y1=&quot;55&quot; x2=&quot;320&quot; y2=&quot;55&quot;/&gt;&lt;line x1=&quot;410&quot; y1=&quot;55&quot; x2=&quot;450&quot; y2=&quot;55&quot;/&gt;&lt;line x1=&quot;540&quot; y1=&quot;61&quot; x2=&quot;580&quot; y2=&quot;61&quot;/&gt;&lt;/g&gt;
+  &lt;rect x=&quot;60&quot; y=&quot;103&quot; width=&quot;90&quot; height=&quot;147&quot; style=&quot;fill:var(--ochre-bg);stroke:var(--ochre);stroke-width:1.5&quot;/&gt;
+  &lt;rect x=&quot;190&quot; y=&quot;55&quot; width=&quot;90&quot; height=&quot;48&quot; style=&quot;fill:var(--sage)&quot;/&gt;
+  &lt;rect x=&quot;320&quot; y=&quot;55&quot; width=&quot;90&quot; height=&quot;195&quot; style=&quot;fill:var(--accent-bg);stroke:var(--accent);stroke-width:1.5&quot;/&gt;
+  &lt;rect x=&quot;450&quot; y=&quot;55&quot; width=&quot;90&quot; height=&quot;6&quot; style=&quot;fill:var(--brick)&quot;/&gt;
+  &lt;rect x=&quot;580&quot; y=&quot;61&quot; width=&quot;90&quot; height=&quot;189&quot; style=&quot;fill:var(--card);stroke:var(--ink);stroke-width:1.5&quot;/&gt;
+  &lt;g text-anchor=&quot;middle&quot; style=&quot;font-size:13px;font-weight:700&quot;&gt;
+    &lt;text x=&quot;105&quot; y=&quot;95&quot;&gt;$5,000&lt;/text&gt;&lt;text x=&quot;235&quot; y=&quot;47&quot; style=&quot;fill:var(--sage)&quot;&gt;+ $1,650 F&lt;/text&gt;&lt;text x=&quot;365&quot; y=&quot;47&quot;&gt;$6,650&lt;/text&gt;&lt;text x=&quot;495&quot; y=&quot;47&quot; style=&quot;fill:var(--brick)&quot;&gt;− $200 U&lt;/text&gt;&lt;text x=&quot;625&quot; y=&quot;53&quot;&gt;$6,450&lt;/text&gt;
+  &lt;/g&gt;
+  &lt;g text-anchor=&quot;middle&quot; style=&quot;font-size:12px;fill:var(--muted)&quot;&gt;
+    &lt;text x=&quot;105&quot; y=&quot;268&quot;&gt;Planning&lt;/text&gt;&lt;text x=&quot;105&quot; y=&quot;283&quot;&gt;budget&lt;/text&gt;
+    &lt;text x=&quot;235&quot; y=&quot;268&quot;&gt;Activity&lt;/text&gt;&lt;text x=&quot;235&quot; y=&quot;283&quot;&gt;variance&lt;/text&gt;
+    &lt;text x=&quot;365&quot; y=&quot;268&quot;&gt;Flexible&lt;/text&gt;&lt;text x=&quot;365&quot; y=&quot;283&quot;&gt;budget&lt;/text&gt;
+    &lt;text x=&quot;495&quot; y=&quot;268&quot;&gt;Rev. &amp;amp; spending&lt;/text&gt;&lt;text x=&quot;495&quot; y=&quot;283&quot;&gt;variances&lt;/text&gt;
+    &lt;text x=&quot;625&quot; y=&quot;268&quot;&gt;Actual&lt;/text&gt;&lt;text x=&quot;625&quot; y=&quot;283&quot;&gt;results&lt;/text&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+      &lt;figcaption&gt;Net operating income di Larry: dal budget statico al risultato effettivo. Lo scostamento &quot;statico&quot; di $1,450 F = $1,650 F di volume − $200 U di gestione. Scala da $0, le altezze sono proporzionali.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b class=&quot;term&quot;&gt;Il verdetto su Larry&lt;/b&gt;L&#x27;aumento del NOI rispetto al budget (+$1,450) &lt;b&gt;non&lt;/b&gt; è merito della gestione dei costi. Viene tutto dal volume (+$1,650), e la gestione ha anzi tolto $200: prezzi migliori (+$1,750) non hanno compensato salari (−$2,000), carburante e assicurazione fuori budget.&lt;/div&gt;
+
+    &lt;div class=&quot;check&quot;&gt;
+      &lt;h3&gt;Autoverifica · Parte 3&lt;/h3&gt;
+      &lt;details&gt;&lt;summary&gt;Qual è l&#x27;activity variance dei costi fissi? E la loro spending variance è sempre zero?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;L&#x27;activity variance è zero (entro la relevant range). La spending variance &lt;b&gt;no&lt;/b&gt;: Larry ha speso $1,200 di assicurazione contro $1,000 (200 U) e $950 di utilities contro $1,000 (50 F).&lt;/div&gt;&lt;/details&gt;
+      &lt;details&gt;&lt;summary&gt;Se Larry avesse tagliato 480 prati, quale sarebbe stata l&#x27;activity variance del NOI?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;ΔQ = −20; −20 × $33 = &lt;b&gt;$660 U&lt;/b&gt;.&lt;/div&gt;&lt;/details&gt;
+      &lt;details&gt;&lt;summary&gt;Scomponi la variance statica di wages ($3,500 U).&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Activity: 50 × $30 = $1,500 U (flex 21,500 − planning 20,000). Spending: 23,500 − 21,500 = $2,000 U. Totale $3,500 U.&lt;/div&gt;&lt;/details&gt;
+      &lt;details&gt;&lt;summary&gt;Una spending variance U sulla gasoline: quali due cause diverse può nascondere?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Un &lt;b&gt;prezzo&lt;/b&gt; più alto del carburante (effetto prezzo) oppure &lt;b&gt;più carburante&lt;/b&gt; usato per prato (effetto quantità/efficienza). Il performance report non le distingue: serve l&#x27;analisi delle cause o un sistema di standard costs.&lt;/div&gt;&lt;/details&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;p4&quot; class=&quot;part brick&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;chip&quot;&gt;Parte 4 · Learning Objectives 5, 6&lt;/div&gt;
+    &lt;h2 id=&quot;multi&quot;&gt;Budget e performance report con più cost driver&lt;/h2&gt;
+    &lt;div class=&quot;prose&quot;&gt;
+      &lt;p&gt;Un solo cost driver può non bastare a spiegare &lt;b&gt;tutti&lt;/b&gt; i costi di un&#x27;organizzazione. Le cost formulas del flexible budget si possono estendere per riconoscere &lt;b&gt;più driver&lt;/b&gt; &lt;span class=&quot;src&quot;&gt;slide 61&lt;/span&gt;.&lt;/p&gt;
+      &lt;p&gt;Larry si accorge che il tempo per &lt;i&gt;edging and trimming&lt;/i&gt; (rifilatura dei bordi e delle siepi) cambia molto da prato a prato. Aggiunge quindi un secondo driver, le &lt;b&gt;ore di edging/trimming (H)&lt;/b&gt;, sia nelle formule dei ricavi sia in quelle dei costi &lt;span class=&quot;src&quot;&gt;slide 62&lt;/span&gt;.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;formula&quot;&gt;&lt;span class=&quot;lbl&quot;&gt;Forma generale di una cost formula con due driver&lt;/span&gt;Costo = a + b₁·Q + b₂·H&lt;/div&gt;
+
+    &lt;div class=&quot;panel&quot;&gt;
+      &lt;h4 style=&quot;margin-top:0&quot;&gt;Calcolatore del flexible budget a due driver&lt;/h4&gt;
+      &lt;div class=&quot;slider&quot;&gt;&lt;label for=&quot;mQ&quot;&gt;Prati (Q)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;mQ&quot; min=&quot;400&quot; max=&quot;700&quot; step=&quot;10&quot; value=&quot;550&quot;&gt;&lt;output id=&quot;mQO&quot;&gt;550&lt;/output&gt;&lt;/div&gt;
+      &lt;div class=&quot;slider&quot;&gt;&lt;label for=&quot;mH&quot;&gt;Ore edging/trimming (H)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;mH&quot; min=&quot;0&quot; max=&quot;250&quot; step=&quot;10&quot; value=&quot;100&quot;&gt;&lt;output id=&quot;mHO&quot;&gt;100&lt;/output&gt;&lt;/div&gt;
+      &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot; id=&quot;multiTbl&quot;&gt;&lt;/table&gt;&lt;/div&gt;
+      &lt;p class=&quot;small&quot;&gt;Planning budget delle slide: Q = 500, H = 100 → NOI $5,700 &lt;span class=&quot;src&quot;&gt;slide 63&lt;/span&gt;. Flexible budget: Q = 550, H = 100 → NOI $7,500 &lt;span class=&quot;src&quot;&gt;slide 64&lt;/span&gt;. Il revenue per ora ($25H) e il costo salariale per ora ($25H) si compensano: le ore di edging, così come sono prezzate, non generano margine e consumano solo carburante e manutenzione (6 + 2 = $8/ora).&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;h3&gt;Il performance report con due driver &lt;span class=&quot;src&quot;&gt;LO6 · slide 66&lt;/span&gt;&lt;/h3&gt;
+    &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot;&gt;
+      &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th style=&quot;text-align:left&quot;&gt;Formula&lt;/th&gt;&lt;th&gt;Actual&lt;/th&gt;&lt;th&gt;Rev. &amp;amp; Spending&lt;/th&gt;&lt;th&gt;Flexible&lt;/th&gt;&lt;th&gt;Activity&lt;/th&gt;&lt;th&gt;Planning&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Number of lawns (Q)&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;&lt;/td&gt;&lt;td&gt;550&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;550&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;500&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;hl&quot;&gt;&lt;td&gt;Number of hours (H)&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Revenue&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$75Q + $25H&lt;/td&gt;&lt;td&gt;$43,000&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;$750 U&lt;/td&gt;&lt;td&gt;$43,750&lt;/td&gt;&lt;td class=&quot;fav&quot;&gt;$3,750 F&lt;/td&gt;&lt;td&gt;$40,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Wages and salaries&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$5,000 + $29Q + $25H&lt;/td&gt;&lt;td&gt;$23,500&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;$50 U&lt;/td&gt;&lt;td&gt;$23,450&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;$1,450 U&lt;/td&gt;&lt;td&gt;$22,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Gasoline and supplies&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$8Q + $6H&lt;/td&gt;&lt;td&gt;5,100&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;100 U&lt;/td&gt;&lt;td&gt;5,000&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;400 U&lt;/td&gt;&lt;td&gt;4,600&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Equipment maintenance&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$2Q + $2H&lt;/td&gt;&lt;td&gt;1,300&lt;/td&gt;&lt;td&gt;–&lt;/td&gt;&lt;td&gt;1,300&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;100 U&lt;/td&gt;&lt;td&gt;1,200&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Office and shop utilities&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$1,000&lt;/td&gt;&lt;td&gt;950&lt;/td&gt;&lt;td class=&quot;fav&quot;&gt;50 F&lt;/td&gt;&lt;td&gt;1,000&lt;/td&gt;&lt;td&gt;–&lt;/td&gt;&lt;td&gt;1,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Office and shop rent&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$2,000&lt;/td&gt;&lt;td&gt;2,000&lt;/td&gt;&lt;td&gt;–&lt;/td&gt;&lt;td&gt;2,000&lt;/td&gt;&lt;td&gt;–&lt;/td&gt;&lt;td&gt;2,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Equipment depreciation&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$2,500&lt;/td&gt;&lt;td&gt;2,500&lt;/td&gt;&lt;td&gt;–&lt;/td&gt;&lt;td&gt;2,500&lt;/td&gt;&lt;td&gt;–&lt;/td&gt;&lt;td&gt;2,500&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Insurance&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;$1,000&lt;/td&gt;&lt;td&gt;1,200&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;200 U&lt;/td&gt;&lt;td&gt;1,000&lt;/td&gt;&lt;td&gt;–&lt;/td&gt;&lt;td&gt;1,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total expenses&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;36,550&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;300 U&lt;/td&gt;&lt;td&gt;36,250&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;1,950 U&lt;/td&gt;&lt;td&gt;34,300&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;$6,450&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;$1,150 U&lt;/td&gt;&lt;td&gt;$7,500&lt;/td&gt;&lt;td class=&quot;fav&quot;&gt;$1,800 F&lt;/td&gt;&lt;td&gt;$5,700&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;&lt;/div&gt;
+
+    &lt;h4&gt;Stessi risultati effettivi, diagnosi diversa&lt;/h4&gt;
+    &lt;p class=&quot;prose&quot;&gt;Confronta le due versioni del report. Gli actual results sono identici, ma cambiano il &quot;dovuto&quot; e quindi il giudizio sulla gestione:&lt;/p&gt;
+    &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot;&gt;
+      &lt;tr&gt;&lt;th&gt;Voce&lt;/th&gt;&lt;th&gt;1 driver (Q)&lt;/th&gt;&lt;th&gt;2 driver (Q, H)&lt;/th&gt;&lt;th&gt;Cosa cambia&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Revenue variance&lt;/td&gt;&lt;td class=&quot;fav&quot;&gt;$1,750 F&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;$750 U&lt;/td&gt;&lt;td style=&quot;text-align:left;white-space:normal&quot;&gt;Con 100 ore di edging Larry doveva incassare $43,750: ha &lt;b&gt;incassato meno&lt;/b&gt; del dovuto.&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Wages spending&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;$2,000 U&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;$50 U&lt;/td&gt;&lt;td style=&quot;text-align:left;white-space:normal&quot;&gt;Gran parte dei salari &quot;in eccesso&quot; era lavoro di edging, ora riconosciuto dalla formula.&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Equipment maintenance&lt;/td&gt;&lt;td class=&quot;fav&quot;&gt;$350 F&lt;/td&gt;&lt;td&gt;–&lt;/td&gt;&lt;td style=&quot;text-align:left;white-space:normal&quot;&gt;Esattamente in linea con il dovuto.&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;NOI rev. &amp;amp; spending&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;$200 U&lt;/td&gt;&lt;td class=&quot;unf&quot;&gt;$1,150 U&lt;/td&gt;&lt;td style=&quot;text-align:left;white-space:normal&quot;&gt;Il problema si sposta dai costi ai &lt;b&gt;prezzi&lt;/b&gt;.&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;&lt;/div&gt;
+    &lt;div class=&quot;callout&quot;&gt;&lt;div class=&quot;lab&quot;&gt;Lezione di metodo&lt;/div&gt;&lt;p&gt;Il flexible budget è valido quanto le sue formule. Con un driver inadeguato una parte dell&#x27;effetto volume finisce nelle spending variances e si accusa la persona sbagliata del problema sbagliato. Più driver costano più dati da raccogliere, ma rendono il confronto davvero &quot;apples to apples&quot;.&lt;/p&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;panel&quot;&gt;
+      &lt;h4 style=&quot;margin-top:0&quot;&gt;Esercizio · Alyeski Tours &lt;span class=&quot;src&quot;&gt;slide 67–70&lt;/span&gt;&lt;/h4&gt;
+      &lt;p&gt;Tour in barca dei ghiacciai costieri in Alaska (barca &lt;i&gt;Blue Glacier&lt;/i&gt;, max 89 passeggeri). Due driver: &lt;b&gt;numero di crociere&lt;/b&gt; e &lt;b&gt;numero di passeggeri&lt;/b&gt;. Ricavo medio $30 per passeggero. A luglio: &lt;b&gt;59 crociere, 3,150 passeggeri&lt;/b&gt;. Prepara il flexible budget.&lt;/p&gt;
+      &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot;&gt;
+        &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Fixed per Month&lt;/th&gt;&lt;th&gt;per Cruise&lt;/th&gt;&lt;th&gt;per Passenger&lt;/th&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Vessel operating costs&lt;/td&gt;&lt;td&gt;$6,200&lt;/td&gt;&lt;td&gt;$475.00&lt;/td&gt;&lt;td&gt;$3.50&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Advertising&lt;/td&gt;&lt;td&gt;$2,000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Administrative costs&lt;/td&gt;&lt;td&gt;$5,400&lt;/td&gt;&lt;td&gt;$37.00&lt;/td&gt;&lt;td&gt;$1.50&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Insurance&lt;/td&gt;&lt;td&gt;$3,100&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;&lt;/div&gt;
+      &lt;div class=&quot;quiz&quot; data-answer=&quot;a&quot;&gt;
+        &lt;p&gt;&lt;b&gt;Prova:&lt;/b&gt; vessel operating costs nel flexible budget di luglio?&lt;/p&gt;
+        &lt;div class=&quot;opts&quot;&gt;&lt;button data-k=&quot;a&quot;&gt;a. $45,250&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;b. $39,050&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;c. $28,025&lt;/button&gt;&lt;/div&gt;
+        &lt;div class=&quot;fb&quot; aria-live=&quot;polite&quot; data-ok=&quot;Esatto: 6,200 + 475 × 59 + 3.50 × 3,150 = 6,200 + 28,025 + 11,025 = $45,250.&quot; data-ko=&quot;Ricorda tutte e tre le componenti: fissa, per crociera, per passeggero.&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;details&gt;&lt;summary&gt;Mostra la soluzione completa&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;
+        &lt;div class=&quot;tw&quot;&gt;&lt;table class=&quot;fin&quot;&gt;
+          &lt;tr&gt;&lt;th&gt;Alyeski Tours · Flexible Budget · July&lt;/th&gt;&lt;th&gt;Calcolo&lt;/th&gt;&lt;th&gt;Importo&lt;/th&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Revenue&lt;/td&gt;&lt;td&gt;30 × 3,150&lt;/td&gt;&lt;td&gt;$94,500&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Vessel operating costs&lt;/td&gt;&lt;td&gt;6,200 + 28,025 + 11,025&lt;/td&gt;&lt;td&gt;45,250&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Advertising&lt;/td&gt;&lt;td&gt;fisso&lt;/td&gt;&lt;td&gt;2,000&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Administrative costs&lt;/td&gt;&lt;td&gt;5,400 + 37 × 59 + 1.50 × 3,150 = 5,400 + 2,183 + 4,725&lt;/td&gt;&lt;td&gt;12,308&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td class=&quot;ind&quot;&gt;Insurance&lt;/td&gt;&lt;td&gt;fisso&lt;/td&gt;&lt;td&gt;3,100&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total expense&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;62,658&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;$31,842&lt;/td&gt;&lt;/tr&gt;
+        &lt;/table&gt;&lt;/div&gt;
+      &lt;/div&gt;&lt;/details&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;check&quot;&gt;
+      &lt;h3&gt;Autoverifica · Parte 4&lt;/h3&gt;
+      &lt;details&gt;&lt;summary&gt;Perché Larry aggiunge un secondo cost driver?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Perché il tempo di edging/trimming varia da prato a prato, quindi il numero di prati non spiega bene salari, carburante e manutenzione. Le ore H catturano questa variabilità.&lt;/div&gt;&lt;/details&gt;
+      &lt;details&gt;&lt;summary&gt;Verifica la riga wages del planning budget a due driver.&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;5,000 + 29 × 500 + 25 × 100 = 5,000 + 14,500 + 2,500 = &lt;b&gt;$22,000&lt;/b&gt;.&lt;/div&gt;&lt;/details&gt;
+      &lt;details&gt;&lt;summary&gt;Alyeski: vessel operating costs con 60 crociere e 3,000 passeggeri?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;6,200 + 475 × 60 + 3.50 × 3,000 = 6,200 + 28,500 + 10,500 = &lt;b&gt;$45,200&lt;/b&gt;.&lt;/div&gt;&lt;/details&gt;
+      &lt;details&gt;&lt;summary&gt;Con due driver la revenue variance di Larry passa da $1,750 F a $750 U. Come è possibile se l&#x27;incasso è lo stesso?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Cambia il riferimento. Con due driver il ricavo &quot;dovuto&quot; include $25 × 100 ore di edging ($2,500), quindi sale a $43,750. Rispetto a questo, $43,000 è un incasso inferiore al dovuto.&lt;/div&gt;&lt;/details&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;sintesi&quot; class=&quot;part&quot; style=&quot;--c:var(--accent);--cbg:var(--accent-bg)&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;chip&quot;&gt;Sintesi&lt;/div&gt;
+    &lt;h2&gt;Il foglio da ripasso&lt;/h2&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Tre colonne&lt;/h4&gt;&lt;p&gt;&lt;b&gt;Planning&lt;/b&gt; = formule × Q previsto&lt;br&gt;&lt;b&gt;Flexible&lt;/b&gt; = formule × Q effettivo&lt;br&gt;&lt;b&gt;Actual&lt;/b&gt; = ciò che è successo&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Due variances&lt;/h4&gt;&lt;p&gt;&lt;b&gt;Activity&lt;/b&gt; = Flexible − Planning (volume)&lt;br&gt;&lt;b&gt;Revenue/Spending&lt;/b&gt; = Actual − Flexible (gestione)&lt;br&gt;Somma = Actual − Planning&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;F o U?&lt;/h4&gt;&lt;p&gt;Conta l&#x27;effetto sul profitto.&lt;br&gt;Revenue: actual &amp;gt; riferimento → &lt;span class=&quot;fav&quot;&gt;F&lt;/span&gt;&lt;br&gt;Costi: actual &amp;gt; riferimento → &lt;span class=&quot;unf&quot;&gt;U&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Scorciatoie&lt;/h4&gt;&lt;p&gt;Activity var. di una voce = ΔQ × coeff. variabile.&lt;br&gt;Activity var. del NOI = ΔQ × contribution margin unitario.&lt;br&gt;Costi fissi: activity var. = 0.&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h4&gt;Errori tipici all&#x27;esame&lt;/h4&gt;
+    &lt;ul class=&quot;prose&quot;&gt;
+      &lt;li&gt;Confrontare actual e planning budget e giudicare la gestione: è proprio ciò che le slide indicano come fuorviante.&lt;/li&gt;
+      &lt;li&gt;Dimenticare la parte fissa dei &lt;em&gt;mixed costs&lt;/em&gt; (wages $5,000 + $30Q).&lt;/li&gt;
+      &lt;li&gt;Leggere un U sulle activity variances dei costi come &quot;negativo&quot;: significa soltanto più lavoro.&lt;/li&gt;
+      &lt;li&gt;Credere che i costi fissi non possano avere spending variance (insurance 200 U).&lt;/li&gt;
+      &lt;li&gt;Scambiare l&#x27;ordine delle sottrazioni: l&#x27;importo si scrive sempre positivo, il segno lo dà la lettera F/U.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;approfondire&quot; class=&quot;part&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;chip&quot; style=&quot;--c:var(--accent);--cbg:var(--accent-bg)&quot;&gt;Per approfondire&lt;/div&gt;
+    &lt;h2&gt;Testi e fonti dietro le slide&lt;/h2&gt;
+    &lt;p class=&quot;prose&quot;&gt;Le slide non hanno una bibliografia esplicita: riportano &quot;© McGraw Hill&quot;, una numerazione &quot;9-xx&quot; (capitolo 9) e alcuni concetti con un&#x27;origine precisa. Tutto ciò che segue viene da una ricerca web ed è segnato come &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt;.&lt;/p&gt;
+
+    &lt;div class=&quot;ref&quot;&gt;
+      &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt;
+      &lt;h4&gt;Noreen, Brewer, Garrison — &lt;i&gt;Managerial Accounting for Managers&lt;/i&gt; (McGraw Hill)&lt;/h4&gt;
+      &lt;p&gt;&lt;b&gt;Che cos&#x27;è:&lt;/b&gt; il manuale di contabilità direzionale della famiglia Garrison/Noreen/Brewer. Nell&#x27;edizione internazionale attuale (ISBN 9781265617660) il capitolo 9 si intitola proprio &lt;i&gt;Flexible Budgets and Performance Analysis&lt;/i&gt;, tra &lt;i&gt;Master Budgeting&lt;/i&gt; e &lt;i&gt;Standard Costs and Variances&lt;/i&gt;. Questo corrisponde alla numerazione 9-3, 9-39… delle slide e al loro copyright McGraw Hill.&lt;br&gt;
+      &lt;b&gt;Perché conta:&lt;/b&gt; è la fonte più probabile dei casi Larry&#x27;s Lawn Service, Jake&#x27;s Roof Repair e Alyeski Tours, con esercizi aggiuntivi. Il capitolo successivo (standard costs) scompone le spending variances in effetto prezzo ed effetto quantità. Nelle edizioni più vecchie lo stesso capitolo ha un altro numero (per esempio è il 10 nell&#x27;edizione 2010).&lt;br&gt;
+      &lt;a href=&quot;https://www.mheducation.ca/managerial-accounting-for-managers-ise-9781265617660-can&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Scheda dell&#x27;editore (McGraw Hill Canada)&lt;/a&gt; · &lt;a href=&quot;https://highered.mheducation.com/sites/0073379611/information_center_view0/table_of_contents.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Indice di un&#x27;edizione precedente (McGraw Hill Higher Education)&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;ref&quot;&gt;
+      &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt;
+      &lt;h4&gt;Wild &amp;amp; Shaw — &lt;i&gt;Managerial Accounting&lt;/i&gt; (McGraw Hill)&lt;/h4&gt;
+      &lt;p&gt;&lt;b&gt;Che cos&#x27;è:&lt;/b&gt; un altro manuale McGraw Hill. Il diagramma &lt;i&gt;Variance Analysis Cycle&lt;/i&gt; della slide 4 (preparare il report → analizzare le variances → porre domande → trovare le cause → agire → periodo successivo) compare nelle slide di questo testo, nel capitolo su flexible budgets e standard costing. Lo indica una copia delle slide trovata online, quindi è un&#x27;attribuzione da verificare.&lt;br&gt;
+      &lt;b&gt;Perché conta:&lt;/b&gt; tratta il ciclo come processo di controllo continuo, il quadro in cui inserire il calcolo delle variances visto in questa lezione.&lt;br&gt;
+      &lt;a href=&quot;https://www.mheducation.com/highered/product/managerial-accounting-wild.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Scheda del manuale (McGraw Hill)&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;ref&quot;&gt;
+      &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt;
+      &lt;h4&gt;Management by exception — AccountingTools&lt;/h4&gt;
+      &lt;p&gt;&lt;b&gt;Che cosa contiene:&lt;/b&gt; una definizione pratica del management by exception. Si segnalano al management solo le differenze &lt;i&gt;sostanziali&lt;/i&gt; rispetto al budget, con un esempio di soglia combinata (la maggiore tra $10,000 e il 20%) che ricorda i due criteri, valore assoluto e percentuale, delle slide. Indica anche un limite: il metodo funziona solo se il budget è ben costruito, altrimenti produce molte variances prive di significato.&lt;br&gt;
+      &lt;b&gt;Perché conta:&lt;/b&gt; mostra come si fissano in pratica le soglie per decidere che cosa indagare, e conferma che un budget statico mal calibrato rende il metodo inutile.&lt;br&gt;
+      &lt;a href=&quot;https://www.accountingtools.com/articles/what-is-management-by-exception.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AccountingTools — Management by exception&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;div class=&quot;wrap&quot;&gt;Riassunto scritto da Claude a partire dalle slide: controlla sempre sul materiale.&lt;/div&gt;
+&lt;/footer&gt;
+
+&lt;script&gt;
+(function(){
+  var $ = function(s,r){return (r||document).querySelector(s)};
+  var $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var fmt = function(n){return &#x27;$&#x27;+Math.round(Math.abs(n)).toLocaleString(&#x27;en-US&#x27;)};
+  var num = function(n){return Math.round(n).toLocaleString(&#x27;en-US&#x27;)};
+  // segno F/U: per revenue e NOI una differenza positiva è favorevole, per i costi è sfavorevole
+  function fu(d,rev){
+    if(Math.round(d)===0) return &#x27;&lt;span&gt;–&lt;/span&gt;&#x27;;
+    var fav = rev ? d&gt;0 : d&lt;0;
+    return &#x27;&lt;span class=&quot;&#x27;+(fav?&#x27;fav&#x27;:&#x27;unf&#x27;)+&#x27;&quot;&gt;&#x27;+fmt(d)+&#x27; &#x27;+(fav?&#x27;F&#x27;:&#x27;U&#x27;)+&#x27;&lt;/span&gt;&#x27;;
+  }
+
+  /* linguette */
+  $$(&#x27;[data-tabs]&#x27;).forEach(function(list){
+    var tabs = $$(&#x27;[role=tab]&#x27;,list);
+    tabs.forEach(function(t){
+      t.addEventListener(&#x27;click&#x27;,function(){
+        tabs.forEach(function(o){
+          var on = o===t;
+          o.setAttribute(&#x27;aria-selected&#x27;,on);
+          document.getElementById(o.getAttribute(&#x27;aria-controls&#x27;)).hidden = !on;
+        });
+      });
+    });
+  });
+
+  /* variance analysis cycle */
+  var cycT = [
+    [&#x27;Prepare performance report&#x27;,&#x27;Si parte da qui (&lt;b&gt;Begin&lt;/b&gt;). A fine periodo si confrontano risultati effettivi e budget in un &lt;em&gt;performance report&lt;/em&gt;: un prospetto riga per riga con le variances.&#x27;],
+    [&#x27;Analyze variances&#x27;,&#x27;Si calcolano e si scompongono gli scostamenti: quanto dipende dal volume (&lt;em&gt;activity variances&lt;/em&gt;) e quanto da prezzi e controllo dei costi (&lt;em&gt;revenue e spending variances&lt;/em&gt;).&#x27;],
+    [&#x27;Raise questions&#x27;,&#x27;Gli scostamenti rilevanti (vedi &lt;em&gt;management by exception&lt;/em&gt;) diventano domande. Per esempio: perché i salari di Larry superano di $2,000 quanto avrebbero dovuto essere?&#x27;],
+    [&#x27;Identify root causes&#x27;,&#x27;Si cercano le cause profonde (&lt;em&gt;root causes&lt;/em&gt;): straordinari, aumenti di prezzo dei fornitori, sprechi, oppure formule di budget irrealistiche.&#x27;],
+    [&#x27;Take actions&#x27;,&#x27;Si interviene: correzioni operative, rinegoziazioni, nuove procedure, oppure revisione delle cost formulas se erano sbagliate.&#x27;],
+    [&#x27;Conduct next period\&#x27;s operations&#x27;,&#x27;Il periodo successivo si svolge con le correzioni. A fine periodo si prepara un nuovo report e il ciclo ricomincia.&#x27;]
+  ];
+  var cyc = 0;
+  function setCyc(i){
+    cyc = (i+6)%6;
+    $$(&#x27;.cyc&#x27;).forEach(function(g){g.classList.toggle(&#x27;on&#x27;,+g.dataset.i===cyc)});
+    $(&#x27;#cycTxt&#x27;).innerHTML = &#x27;&lt;b&gt;&#x27;+(cyc+1)+&#x27;/6 · &#x27;+cycT[cyc][0]+&#x27;&lt;/b&gt; — &#x27;+cycT[cyc][1];
+  }
+  $$(&#x27;.cyc&#x27;).forEach(function(g){
+    g.addEventListener(&#x27;click&#x27;,function(){setCyc(+g.dataset.i)});
+    g.addEventListener(&#x27;keydown&#x27;,function(e){if(e.key===&#x27;Enter&#x27;||e.key===&#x27; &#x27;){e.preventDefault();setCyc(+g.dataset.i)}});
+  });
+  $(&#x27;#cycPrev&#x27;).addEventListener(&#x27;click&#x27;,function(){setCyc(cyc-1)});
+  $(&#x27;#cycNext&#x27;).addEventListener(&#x27;click&#x27;,function(){setCyc(cyc+1)});
+  setCyc(0);
+
+  /* management by exception */
+  var mbeRows = [
+    [&#x27;Revenue&#x27;,1750,41250,&#x27;F&#x27;],[&#x27;Wages and salaries&#x27;,2000,21500,&#x27;U&#x27;],[&#x27;Gasoline and supplies&#x27;,150,4950,&#x27;U&#x27;],
+    [&#x27;Equipment maintenance&#x27;,350,1650,&#x27;F&#x27;],[&#x27;Office and shop utilities&#x27;,50,1000,&#x27;F&#x27;],[&#x27;Office and shop rent&#x27;,0,2000,&#x27;&#x27;],
+    [&#x27;Equipment depreciation&#x27;,0,2500,&#x27;&#x27;],[&#x27;Insurance&#x27;,200,1000,&#x27;U&#x27;]
+  ];
+  var logic = &#x27;or&#x27;;
+  function drawMbe(){
+    var a = +$(&#x27;#mbeAmt&#x27;).value, p = +$(&#x27;#mbePct&#x27;).value;
+    $(&#x27;#mbeAmtO&#x27;).textContent = fmt(a); $(&#x27;#mbePctO&#x27;).textContent = p+&#x27;%&#x27;;
+    var n = 0;
+    $(&#x27;#mbeList&#x27;).innerHTML = &#x27;&lt;li style=&quot;font-weight:600;color:var(--muted)&quot;&gt;&lt;span style=&quot;text-align:left&quot;&gt;Voce&lt;/span&gt;&lt;span&gt;Variance&lt;/span&gt;&lt;span&gt;%&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;&#x27; +
+      mbeRows.map(function(r){
+        var pct = r[1]/r[2]*100;
+        var hitA = r[1]&gt;0 &amp;&amp; r[1]&gt;=a, hitP = r[1]&gt;0 &amp;&amp; pct&gt;=p;
+        var ex = logic===&#x27;or&#x27; ? (hitA||hitP) : (hitA&amp;&amp;hitP);
+        if(ex) n++;
+        var cls = r[3]===&#x27;F&#x27;?&#x27;fav&#x27;:(r[3]===&#x27;U&#x27;?&#x27;unf&#x27;:&#x27;&#x27;);
+        return &#x27;&lt;li class=&quot;&#x27;+(ex?&#x27;ex&#x27;:&#x27;&#x27;)+&#x27;&quot;&gt;&lt;span style=&quot;text-align:left&quot;&gt;&#x27;+r[0]+&#x27;&lt;/span&gt;&lt;span class=&quot;&#x27;+cls+&#x27;&quot;&gt;&#x27;+(r[1]?fmt(r[1])+&#x27; &#x27;+r[3]:&#x27;–&#x27;)+&#x27;&lt;/span&gt;&lt;span&gt;&#x27;+pct.toFixed(1)+&#x27;%&lt;/span&gt;&lt;span&gt;&#x27;+(ex?&#x27;&lt;span class=&quot;flag&quot;&gt;eccezione&lt;/span&gt;&#x27;:&#x27;&#x27;)+&#x27;&lt;/span&gt;&lt;/li&gt;&#x27;;
+      }).join(&#x27;&#x27;);
+    $(&#x27;#mbeList&#x27;).insertAdjacentHTML(&#x27;beforeend&#x27;,&#x27;&lt;li style=&quot;border:0&quot;&gt;&lt;span style=&quot;text-align:left&quot; class=&quot;small&quot;&gt;&#x27;+n+&#x27; voci su 8 da indagare&lt;/span&gt;&lt;/li&gt;&#x27;);
+  }
+  $(&#x27;#mbeAmt&#x27;).addEventListener(&#x27;input&#x27;,drawMbe);
+  $(&#x27;#mbePct&#x27;).addEventListener(&#x27;input&#x27;,drawMbe);
+  $$(&#x27;[data-logic]&#x27;).forEach(function(b){
+    b.addEventListener(&#x27;click&#x27;,function(){
+      logic = b.dataset.logic;
+      $$(&#x27;[data-logic]&#x27;).forEach(function(o){o.setAttribute(&#x27;aria-pressed&#x27;,o===b)});
+      drawMbe();
+    });
+  });
+  drawMbe();
+
+  /* rivelazione progressiva delle variances statiche */
+  var stCells = $$(&#x27;#staticTbl .vhide&#x27;), stI = 0;
+  $(&#x27;#stNext&#x27;).addEventListener(&#x27;click&#x27;,function(){if(stI&lt;stCells.length){stCells[stI++].classList.add(&#x27;vshow&#x27;)}});
+  $(&#x27;#stAll&#x27;).addEventListener(&#x27;click&#x27;,function(){stCells.forEach(function(c){c.classList.add(&#x27;vshow&#x27;)});stI=stCells.length});
+  $(&#x27;#stReset&#x27;).addEventListener(&#x27;click&#x27;,function(){stCells.forEach(function(c){c.classList.remove(&#x27;vshow&#x27;)});stI=0});
+
+  /* grafico del flexible budget */
+  var X = function(q){return 60+(q-300)/400*560}, Y = function(v){return 280-v/55000*260};
+  var g = &#x27;&#x27;, ax = &#x27;&#x27;;
+  for(var v=0; v&lt;=50000; v+=10000){
+    g += &#x27;&lt;line x1=&quot;60&quot; x2=&quot;620&quot; y1=&quot;&#x27;+Y(v)+&#x27;&quot; y2=&quot;&#x27;+Y(v)+&#x27;&quot;/&gt;&#x27;;
+    ax += &#x27;&lt;text x=&quot;54&quot; y=&quot;&#x27;+(Y(v)+4)+&#x27;&quot; text-anchor=&quot;end&quot;&gt;&#x27;+(v/1000)+&#x27;k&lt;/text&gt;&#x27;;
+  }
+  for(var q=300; q&lt;=700; q+=100){ ax += &#x27;&lt;text x=&quot;&#x27;+X(q)+&#x27;&quot; y=&quot;298&quot; text-anchor=&quot;middle&quot;&gt;&#x27;+q+&#x27;&lt;/text&gt;&#x27;; }
+  ax += &#x27;&lt;text x=&quot;340&quot; y=&quot;316&quot; text-anchor=&quot;middle&quot;&gt;Q = numero di prati&lt;/text&gt;&#x27;;
+  $(&#x27;#fcGrid&#x27;).innerHTML = g; $(&#x27;#fcAxis&#x27;).innerHTML = ax;
+  $(&#x27;#fcRev&#x27;).setAttribute(&#x27;d&#x27;,&#x27;M&#x27;+X(300)+&#x27;,&#x27;+Y(22500)+&#x27; L&#x27;+X(700)+&#x27;,&#x27;+Y(52500));
+  $(&#x27;#fcCost&#x27;).setAttribute(&#x27;d&#x27;,&#x27;M&#x27;+X(300)+&#x27;,&#x27;+Y(11500+42*300)+&#x27; L&#x27;+X(700)+&#x27;,&#x27;+Y(11500+42*700));
+  $(&#x27;#fcFixed&#x27;).setAttribute(&#x27;d&#x27;,&#x27;M&#x27;+X(300)+&#x27;,&#x27;+Y(11500)+&#x27; L&#x27;+X(700)+&#x27;,&#x27;+Y(11500));
+  var sc = $(&#x27;#fcStaticCost&#x27;); sc.setAttribute(&#x27;x1&#x27;,X(300)); sc.setAttribute(&#x27;x2&#x27;,X(700)); sc.setAttribute(&#x27;y1&#x27;,Y(32500)); sc.setAttribute(&#x27;y2&#x27;,Y(32500));
+  function at(el,x,y,anchor){el.setAttribute(&#x27;x&#x27;,x);el.setAttribute(&#x27;y&#x27;,y);if(anchor)el.setAttribute(&#x27;text-anchor&#x27;,anchor)}
+  at($(&#x27;#fcLR&#x27;),600,30,&#x27;end&#x27;); at($(&#x27;#fcLC&#x27;),615,108,&#x27;end&#x27;); at($(&#x27;#fcLF&#x27;),615,218,&#x27;end&#x27;); at($(&#x27;#fcLS&#x27;),66,120,&#x27;start&#x27;);
+  $(&#x27;#fcPlanR&#x27;).setAttribute(&#x27;cx&#x27;,X(500)); $(&#x27;#fcPlanR&#x27;).setAttribute(&#x27;cy&#x27;,Y(37500));
+  $(&#x27;#fcPlanC&#x27;).setAttribute(&#x27;cx&#x27;,X(500)); $(&#x27;#fcPlanC&#x27;).setAttribute(&#x27;cy&#x27;,Y(32500));
+  var flexRows = [
+    [&#x27;Revenue&#x27;,&#x27;$75Q&#x27;,0,75,true],[&#x27;Wages and salaries&#x27;,&#x27;$5,000 + $30Q&#x27;,5000,30],[&#x27;Gasoline and supplies&#x27;,&#x27;$9Q&#x27;,0,9],
+    [&#x27;Equipment maintenance&#x27;,&#x27;$3Q&#x27;,0,3],[&#x27;Office and shop utilities&#x27;,&#x27;$1,000&#x27;,1000,0],[&#x27;Office and shop rent&#x27;,&#x27;$2,000&#x27;,2000,0],
+    [&#x27;Equipment depreciation&#x27;,&#x27;$2,500&#x27;,2500,0],[&#x27;Insurance&#x27;,&#x27;$1,000&#x27;,1000,0]
+  ];
+  function drawFlex(){
+    var q = +$(&#x27;#qS&#x27;).value; $(&#x27;#qO&#x27;).textContent = q;
+    var rev = 75*q, cost = 11500+42*q, noi = rev-cost;
+    $(&#x27;#fcDotR&#x27;).setAttribute(&#x27;cx&#x27;,X(q)); $(&#x27;#fcDotR&#x27;).setAttribute(&#x27;cy&#x27;,Y(rev));
+    $(&#x27;#fcDotC&#x27;).setAttribute(&#x27;cx&#x27;,X(q)); $(&#x27;#fcDotC&#x27;).setAttribute(&#x27;cy&#x27;,Y(cost));
+    var l = $(&#x27;#fcQ&#x27;); l.setAttribute(&#x27;x1&#x27;,X(q)); l.setAttribute(&#x27;x2&#x27;,X(q)); l.setAttribute(&#x27;y1&#x27;,20); l.setAttribute(&#x27;y2&#x27;,280);
+    $(&#x27;#kRev&#x27;).textContent = fmt(rev); $(&#x27;#kCost&#x27;).textContent = fmt(cost);
+    $(&#x27;#kNoi&#x27;).textContent = (noi&lt;0?&#x27;−&#x27;:&#x27;&#x27;)+fmt(noi);
+    $(&#x27;#kAct&#x27;).innerHTML = fu(noi-5000,true);
+    var h = &#x27;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th style=&quot;text-align:left&quot;&gt;Formula&lt;/th&gt;&lt;th&gt;Flexible (Q = &#x27;+q+&#x27;)&lt;/th&gt;&lt;th&gt;Planning (Q = 500)&lt;/th&gt;&lt;th&gt;Activity variance&lt;/th&gt;&lt;/tr&gt;&#x27;;
+    flexRows.forEach(function(r){
+      var f = r[2]+r[3]*q, p = r[2]+r[3]*500;
+      h += &#x27;&lt;tr&gt;&lt;td&#x27;+(r[4]?&#x27;&#x27;:&#x27; class=&quot;ind&quot;&#x27;)+&#x27;&gt;&#x27;+r[0]+&#x27;&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;&#x27;+r[1]+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+num(f)+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+num(p)+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+fu(f-p,!!r[4])+&#x27;&lt;/td&gt;&lt;/tr&gt;&#x27;;
+    });
+    h += &#x27;&lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total expenses&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&#x27;+num(cost)+&#x27;&lt;/td&gt;&lt;td&gt;32,500&lt;/td&gt;&lt;td&gt;&#x27;+fu(cost-32500,false)+&#x27;&lt;/td&gt;&lt;/tr&gt;&#x27;;
+    h += &#x27;&lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;33Q − 11,500&lt;/td&gt;&lt;td&gt;&#x27;+(noi&lt;0?&#x27;−&#x27;:&#x27;&#x27;)+fmt(noi)+&#x27;&lt;/td&gt;&lt;td&gt;$5,000&lt;/td&gt;&lt;td&gt;&#x27;+fu(noi-5000,true)+&#x27;&lt;/td&gt;&lt;/tr&gt;&#x27;;
+    $(&#x27;#flexTbl&#x27;).innerHTML = h;
+  }
+  $(&#x27;#qS&#x27;).addEventListener(&#x27;input&#x27;,drawFlex);
+  drawFlex();
+
+  /* quiz */
+  $$(&#x27;.quiz&#x27;).forEach(function(qz){
+    var fb = $(&#x27;.fb&#x27;,qz), ans = qz.dataset.answer;
+    $$(&#x27;.opts button&#x27;,qz).forEach(function(b){
+      b.addEventListener(&#x27;click&#x27;,function(){
+        var ok = b.dataset.k===ans;
+        $$(&#x27;.opts button&#x27;,qz).forEach(function(o){o.classList.remove(&#x27;ok&#x27;,&#x27;ko&#x27;)});
+        b.classList.add(ok?&#x27;ok&#x27;:&#x27;ko&#x27;);
+        fb.textContent = ok ? fb.dataset.ok : fb.dataset.ko;
+      });
+    });
+  });
+
+  /* performance report e scomposizione */
+  var rep = [
+    [&#x27;Revenue&#x27;,43000,41250,37500,true],[&#x27;Wages and salaries&#x27;,23500,21500,20000],[&#x27;Gasoline and supplies&#x27;,5100,4950,4500],
+    [&#x27;Equipment maintenance&#x27;,1300,1650,1500],[&#x27;Office and shop utilities&#x27;,950,1000,1000],[&#x27;Office and shop rent&#x27;,2000,2000,2000],
+    [&#x27;Equipment depreciation&#x27;,2500,2500,2500],[&#x27;Insurance&#x27;,1200,1000,1000],[&#x27;Total expenses&#x27;,36550,34600,32500,false,&#x27;sub&#x27;],
+    [&#x27;Net operating income&#x27;,6450,6650,5000,true,&#x27;tot&#x27;]
+  ];
+  var rh = &#x27;&lt;tr&gt;&lt;td&gt;Number of lawns (Q)&lt;/td&gt;&lt;td&gt;550&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;550&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;500&lt;/td&gt;&lt;/tr&gt;&#x27;;
+  rep.forEach(function(r,i){
+    var ind = (!r[4] &amp;&amp; !r[5]) ? &#x27; class=&quot;ind&quot;&#x27; : &#x27;&#x27;;
+    rh += &#x27;&lt;tr class=&quot;pick &#x27;+(r[5]||&#x27;&#x27;)+&#x27;&quot; data-i=&quot;&#x27;+i+&#x27;&quot; tabindex=&quot;0&quot;&gt;&lt;td&#x27;+ind+&#x27;&gt;&#x27;+r[0]+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+num(r[1])+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+fu(r[1]-r[2],!!r[4])+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+num(r[2])+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+fu(r[2]-r[3],!!r[4])+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+num(r[3])+&#x27;&lt;/td&gt;&lt;/tr&gt;&#x27;;
+  });
+  $(&#x27;#repTbl&#x27;).insertAdjacentHTML(&#x27;beforeend&#x27;,rh);
+  function bar(d,rev,max){
+    var fav = rev ? d&gt;0 : d&lt;0, w = max ? Math.abs(d)/max*100 : 0;
+    return &#x27;&lt;span class=&quot;bar&quot; style=&quot;width:&#x27;+Math.max(w,0.5)+&#x27;%;max-width:60%;background:&#x27;+(Math.round(d)===0?&#x27;var(--rule)&#x27;:(fav?&#x27;var(--fav)&#x27;:&#x27;var(--unf)&#x27;))+&#x27;&quot;&gt;&lt;/span&gt;&#x27;;
+  }
+  function dec(i){
+    var r = rep[i], rev = !!r[4];
+    var st = r[1]-r[3], ac = r[2]-r[3], sp = r[1]-r[2];
+    var max = Math.max(Math.abs(st),Math.abs(ac),Math.abs(sp));
+    $$(&#x27;#repTbl tr.pick&#x27;).forEach(function(t){t.classList.toggle(&#x27;hl&#x27;,+t.dataset.i===i)});
+    var line = function(lab,d,note){return &#x27;&lt;div style=&quot;display:grid;grid-template-columns:minmax(8em,13em) 7em 1fr;gap:10px;align-items:center;margin:6px 0&quot;&gt;&lt;span&gt;&#x27;+lab+&#x27;&lt;/span&gt;&lt;span style=&quot;text-align:right&quot;&gt;&#x27;+fu(d,rev)+&#x27;&lt;/span&gt;&lt;span&gt;&#x27;+bar(d,rev,max)+&#x27; &lt;span class=&quot;small&quot;&gt;&#x27;+note+&#x27;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&#x27;};
+    var msg;
+    if(Math.round(st)===0 &amp;&amp; Math.round(ac)===0 &amp;&amp; Math.round(sp)===0) msg = &#x27;Nessuno scostamento: voce fissa, spesa esattamente come previsto.&#x27;;
+    else if(Math.round(ac)===0) msg = &#x27;Voce fissa: il volume non la tocca, tutto lo scostamento dipende dalla gestione.&#x27;;
+    else if(Math.round(sp)===0) msg = &#x27;Tutto lo scostamento si spiega con il volume.&#x27;;
+    else msg = &#x27;Il confronto con il budget statico (&#x27;+fu(st,rev)+&#x27;) mescola due effetti che vanno letti separatamente.&#x27;;
+    $(&#x27;#decBox&#x27;).innerHTML = &#x27;&lt;h4 style=&quot;margin-top:0&quot;&gt;&#x27;+r[0]+&#x27;&lt;/h4&gt;&#x27;+
+      line(&#x27;Actual − Planning (statica)&#x27;,st,&#x27;ciò che si vedeva senza flexible budget&#x27;)+
+      line(&#x27;= Activity (Flex − Plan)&#x27;,ac,&#x27;effetto del volume&#x27;)+
+      line(&#x27;+ Rev./Spending (Act − Flex)&#x27;,sp,&#x27;effetto della gestione&#x27;)+
+      &#x27;&lt;p class=&quot;small&quot; style=&quot;margin-bottom:0&quot;&gt;&#x27;+msg+&#x27;&lt;/p&gt;&#x27;;
+  }
+  $$(&#x27;#repTbl tr.pick&#x27;).forEach(function(t){
+    t.addEventListener(&#x27;click&#x27;,function(){dec(+t.dataset.i)});
+    t.addEventListener(&#x27;keydown&#x27;,function(e){if(e.key===&#x27;Enter&#x27;||e.key===&#x27; &#x27;){e.preventDefault();dec(+t.dataset.i)}});
+  });
+  dec(1);
+
+  /* calcolatore a due driver */
+  var mRows = [
+    [&#x27;Revenue&#x27;,&#x27;$75Q + $25H&#x27;,0,75,25,true],[&#x27;Wages and salaries&#x27;,&#x27;$5,000 + $29Q + $25H&#x27;,5000,29,25],
+    [&#x27;Gasoline and supplies&#x27;,&#x27;$8Q + $6H&#x27;,0,8,6],[&#x27;Equipment maintenance&#x27;,&#x27;$2Q + $2H&#x27;,0,2,2],
+    [&#x27;Office and shop utilities&#x27;,&#x27;$1,000&#x27;,1000,0,0],[&#x27;Office and shop rent&#x27;,&#x27;$2,000&#x27;,2000,0,0],
+    [&#x27;Equipment depreciation&#x27;,&#x27;$2,500&#x27;,2500,0,0],[&#x27;Insurance&#x27;,&#x27;$1,000&#x27;,1000,0,0]
+  ];
+  function drawMulti(){
+    var Q = +$(&#x27;#mQ&#x27;).value, H = +$(&#x27;#mH&#x27;).value;
+    $(&#x27;#mQO&#x27;).textContent = Q; $(&#x27;#mHO&#x27;).textContent = H;
+    var h = &#x27;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th style=&quot;text-align:left&quot;&gt;Formula&lt;/th&gt;&lt;th&gt;Flexible (Q &#x27;+Q+&#x27;, H &#x27;+H+&#x27;)&lt;/th&gt;&lt;th&gt;Planning (Q 500, H 100)&lt;/th&gt;&lt;th&gt;Activity variance&lt;/th&gt;&lt;/tr&gt;&#x27;;
+    var tf = 0, tp = 0, rf = 0, rp = 0;
+    mRows.forEach(function(r){
+      var f = r[2]+r[3]*Q+r[4]*H, p = r[2]+r[3]*500+r[4]*100;
+      if(r[5]){rf=f;rp=p}else{tf+=f;tp+=p}
+      h += &#x27;&lt;tr&gt;&lt;td&#x27;+(r[5]?&#x27;&#x27;:&#x27; class=&quot;ind&quot;&#x27;)+&#x27;&gt;&#x27;+r[0]+&#x27;&lt;/td&gt;&lt;td class=&quot;f&quot;&gt;&#x27;+r[1]+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+num(f)+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+num(p)+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+fu(f-p,!!r[5])+&#x27;&lt;/td&gt;&lt;/tr&gt;&#x27;;
+    });
+    var nf = rf-tf, np = rp-tp;
+    h += &#x27;&lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total expenses&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&#x27;+num(tf)+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+num(tp)+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+fu(tf-tp,false)+&#x27;&lt;/td&gt;&lt;/tr&gt;&#x27;;
+    h += &#x27;&lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&#x27;+(nf&lt;0?&#x27;−&#x27;:&#x27;&#x27;)+fmt(nf)+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+fmt(np)+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+fu(nf-np,true)+&#x27;&lt;/td&gt;&lt;/tr&gt;&#x27;;
+    $(&#x27;#multiTbl&#x27;).innerHTML = h;
+  }
+  $(&#x27;#mQ&#x27;).addEventListener(&#x27;input&#x27;,drawMulti);
+  $(&#x27;#mH&#x27;).addEventListener(&#x27;input&#x27;,drawMulti);
+  drawMulti();
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe></body></html>

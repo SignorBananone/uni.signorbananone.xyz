@@ -1,0 +1,1193 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Summary · 05_EEP_Empirical test of self-fulfilling_26-27.pdf</title><link rel="icon" href="data:,">
+<style>html,body{margin:0;height:100%}body{display:flex;flex-direction:column}iframe{flex:1;border:0;width:100%}</style>
+</head><body><nav style="font:14px/1.4 system-ui,sans-serif;padding:6px 12px;text-align:right"><a href="/riassunti/EUROPEAN%20ECONOMIC%20POLICY%20-%20149006-ENG%20-%202026-27/Slides/5-EEP/05_EEP_Empirical%20test%20of%20self-fulfilling_26-27.en.html" style="color:inherit;margin-right:.8em;font-weight:700">English</a><a href="/riassunti/EUROPEAN%20ECONOMIC%20POLICY%20-%20149006-ENG%20-%202026-27/Slides/5-EEP/05_EEP_Empirical%20test%20of%20self-fulfilling_26-27.html" style="color:inherit;margin-right:.8em;">Italiano</a></nav><iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" title="Summary · 05_EEP_Empirical test of self-fulfilling_26-27.pdf"
+srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27;; style-src &#x27;unsafe-inline&#x27;; font-src &#x27;self&#x27;; img-src data:; form-action &#x27;none&#x27;; base-uri &#x27;none&#x27;&quot;&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Empirical tests of self-fulfilling debt crises — study canvas&lt;/title&gt;
+&lt;style&gt;
+@font-face{font-family:&quot;Newsreader&quot;;src:url(&quot;/static/fonts/newsreader-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:&quot;IBM Plex Sans&quot;;src:url(&quot;/static/fonts/ibm-plex-sans-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:100 700;font-style:normal;font-display:swap}
+:root{
+  --paper:oklch(97% 0.012 80);--ink:oklch(21% 0.014 60);--rule:oklch(86% 0.014 75);
+  --muted:oklch(45% 0.014 60);--card:oklch(99% 0.006 80);
+  --accent:oklch(50% 0.15 35);--accent-bg:oklch(93% 0.04 35);
+  --sage:oklch(48% 0.09 150);--sage-bg:oklch(94% 0.03 150);
+  --ochre:oklch(52% 0.11 85);--ochre-bg:oklch(94% 0.045 85);
+  --slate:oklch(46% 0.08 250);--slate-bg:oklch(94% 0.022 250);
+  --brick:oklch(47% 0.13 25);--brick-bg:oklch(94% 0.03 25);
+  --tint:var(--accent);--tint-bg:var(--accent-bg);
+  --serif:&quot;Newsreader&quot;,Georgia,&quot;Times New Roman&quot;,serif;
+  --sans:&quot;IBM Plex Sans&quot;,system-ui,-apple-system,&quot;Segoe UI&quot;,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(19% 0.012 60);--ink:oklch(92% 0.012 80);--rule:oklch(34% 0.014 70);
+  --muted:oklch(72% 0.014 70);--card:oklch(23% 0.012 60);
+  --accent:oklch(72% 0.13 35);--accent-bg:oklch(28% 0.05 35);
+  --sage:oklch(74% 0.09 150);--sage-bg:oklch(26% 0.035 150);
+  --ochre:oklch(78% 0.11 85);--ochre-bg:oklch(27% 0.04 85);
+  --slate:oklch(74% 0.08 250);--slate-bg:oklch(26% 0.03 250);
+  --brick:oklch(72% 0.12 25);--brick-bg:oklch(27% 0.04 25);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.15;margin:1.4em 0 .5em}
+h1{font-size:clamp(2.2rem,6vw,3.8rem);font-weight:300;letter-spacing:-.01em;margin:.2em 0}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:400}
+h3{font-size:1.35rem}
+h4{font-size:1.1rem;font-family:var(--sans);font-weight:600}
+p{margin:.6em 0}
+a{color:var(--accent)}
+em.t,.t{font-style:normal;font-weight:600;color:var(--tint)}
+.muted{color:var(--muted)}
+.small{font-size:.88rem}
+code,.f{font-family:var(--serif);font-style:italic}
+hr{border:0;border-top:1px solid var(--rule);margin:2rem 0}
+/* hero */
+header.hero{border-bottom:1px solid var(--rule);padding:48px 0 28px}
+.kicker{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.lede{font-family:var(--serif);font-size:1.3rem;font-weight:300;max-width:46em}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{display:inline-block;border:1px solid var(--rule);border-radius:99px;padding:2px 11px;font-size:.82rem;background:var(--card)}
+/* nav */
+nav.toc{position:sticky;top:0;z-index:5;background:color-mix(in oklch,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:6px;padding-bottom:6px;scrollbar-width:thin}
+nav.toc a{white-space:nowrap;text-decoration:none;color:var(--ink);font-size:.82rem;padding:4px 10px;border-radius:99px}
+nav.toc a:hover,nav.toc a.on{background:var(--accent-bg);color:var(--accent)}
+/* sections */
+section.part{padding:28px 0 36px;border-bottom:1px solid var(--rule)}
+section.sage{--tint:var(--sage);--tint-bg:var(--sage-bg)}
+section.ochre{--tint:var(--ochre);--tint-bg:var(--ochre-bg)}
+section.slate{--tint:var(--slate);--tint-bg:var(--slate-bg)}
+section.brick{--tint:var(--brick);--tint-bg:var(--brick-bg)}
+.sec-head{display:flex;align-items:baseline;gap:14px;border-left:5px solid var(--tint);padding-left:14px;margin-top:1.2rem}
+.sec-head .num{font-family:var(--serif);font-size:2.6rem;font-weight:200;color:var(--tint)}
+.sec-head h2{margin:.2em 0}
+.src{font-size:.78rem;color:var(--muted);margin:.1em 0 1em;padding-left:19px}
+.box{background:var(--tint-bg);border-radius:12px;padding:14px 18px;margin:16px 0}
+.box.def{border-left:4px solid var(--tint)}
+.box h4{margin:.1em 0 .3em}
+.ctx{border:1px dashed var(--rule);border-radius:12px;padding:12px 16px;margin:16px 0;background:var(--card)}
+.ctx::before{content:&quot;Added context (not in the slides)&quot;;display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.ext{border:1px solid var(--slate);border-radius:12px;padding:12px 16px;margin:16px 0;background:var(--slate-bg)}
+.ext::before{content:&quot;External source&quot;;display:inline-block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--paper);background:var(--slate);border-radius:4px;padding:1px 7px;margin-bottom:6px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px 16px}
+.card h4{margin-top:0}
+.formula{font-family:var(--serif);font-size:1.15rem;background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;overflow-x:auto;white-space:nowrap;text-align:center;margin:14px 0}
+.formula sub,.formula sup{font-size:.7em}
+figure{margin:18px 0}
+figure svg{width:100%;height:auto;display:block}
+figcaption{font-size:.8rem;color:var(--muted);margin-top:6px}
+/* svg classes */
+.s-ink{stroke:var(--ink);fill:none}.s-rule{stroke:var(--rule);fill:none}
+.f-ink{fill:var(--ink)}.f-muted{fill:var(--muted)}.f-paper{fill:var(--card)}
+.f-tint{fill:var(--tint)}.s-tint{stroke:var(--tint);fill:none}
+.f-sage{fill:var(--sage)}.f-ochre{fill:var(--ochre)}.f-slate{fill:var(--slate)}.f-brick{fill:var(--brick)}.f-accent{fill:var(--accent)}
+.s-sage{stroke:var(--sage)}.s-ochre{stroke:var(--ochre)}.s-slate{stroke:var(--slate)}.s-brick{stroke:var(--brick)}.s-accent{stroke:var(--accent)}
+.fb-sage{fill:var(--sage-bg)}.fb-ochre{fill:var(--ochre-bg)}.fb-slate{fill:var(--slate-bg)}.fb-brick{fill:var(--brick-bg)}.fb-accent{fill:var(--accent-bg)}
+svg text{font-family:var(--sans);fill:var(--ink)}
+svg .serif{font-family:var(--serif)}
+/* map */
+.map a{cursor:pointer}
+.map a rect{transition:transform .15s, stroke-width .15s}
+.map a:hover rect,.map a:focus rect{stroke-width:3}
+.map a:focus{outline:none}
+/* tabs */
+.tabs{margin:16px 0}
+.tablist{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--rule)}
+.tablist button{font:inherit;font-size:.9rem;background:none;border:1px solid transparent;border-bottom:none;border-radius:8px 8px 0 0;padding:6px 12px;color:var(--muted);cursor:pointer}
+.tablist button[aria-selected=true]{background:var(--card);border-color:var(--rule);color:var(--tint);font-weight:600;margin-bottom:-1px}
+.tabpanel{background:var(--card);border:1px solid var(--rule);border-top:none;border-radius:0 0 12px 12px;padding:14px 18px}
+.tabpanel[hidden]{display:none}
+/* details */
+details.acc{background:var(--card);border:1px solid var(--rule);border-radius:12px;margin:10px 0;padding:0 16px}
+details.acc summary{cursor:pointer;padding:12px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}
+details.acc summary::after{content:&quot;+&quot;;color:var(--tint);font-size:1.3rem;line-height:1}
+details.acc[open] summary::after{content:&quot;–&quot;}
+details.acc summary::-webkit-details-marker{display:none}
+details.acc&gt;div{padding-bottom:12px}
+/* stepper */
+.stepper{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;margin:16px 0}
+.stepper .step{display:none}.stepper .step.on{display:block;animation:fade .3s}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
+.stepper .ctrl{display:flex;align-items:center;gap:10px;margin-top:12px}
+.dots{display:flex;gap:6px;flex:1}
+.dots i{width:9px;height:9px;border-radius:50%;background:var(--rule);cursor:pointer}
+.dots i.on{background:var(--tint)}
+.btn{font:inherit;font-size:.88rem;background:var(--tint-bg);color:var(--tint);border:1px solid color-mix(in oklch,var(--tint) 40%,transparent);border-radius:99px;padding:5px 14px;cursor:pointer}
+.btn:hover{background:var(--tint);color:var(--paper)}
+.btn[aria-pressed=true]{background:var(--tint);color:var(--paper)}
+.step .lab{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tint);font-weight:600}
+/* sliders */
+.ctl{display:grid;grid-template-columns:minmax(120px,190px) 1fr 70px;gap:10px;align-items:center;margin:8px 0;font-size:.9rem}
+.ctl output{font-family:var(--serif);font-size:1.1rem;text-align:right}
+input[type=range]{width:100%;accent-color:var(--tint)}
+.readout{font-family:var(--serif);font-size:1.25rem;margin:8px 0}
+.readout b{color:var(--tint);font-weight:600}
+/* tables */
+.tbl{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.86rem;font-variant-numeric:tabular-nums}
+th,td{padding:5px 8px;border-bottom:1px solid var(--rule);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left;white-space:normal}
+thead th{font-weight:600;border-bottom:2px solid var(--ink)}
+td.sig{color:var(--tint);font-weight:600}
+tr.hl td{background:var(--tint-bg)}
+/* quiz */
+.quiz{border-top:3px double var(--tint);margin-top:26px;padding-top:6px}
+.quiz&gt;h3{display:flex;align-items:center;gap:8px}
+.quiz&gt;h3::before{content:&quot;✓&quot;;display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--tint);color:var(--paper);font-size:.9rem;font-family:var(--sans)}
+.q{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:12px 16px;margin:10px 0}
+.q .opts{display:flex;flex-direction:column;gap:6px;margin:8px 0}
+.q .opts button{font:inherit;font-size:.92rem;text-align:left;background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:7px 12px;cursor:pointer;color:var(--ink)}
+.q .opts button.ok{border-color:var(--sage);background:var(--sage-bg)}
+.q .opts button.ko{border-color:var(--brick);background:var(--brick-bg);text-decoration:line-through}
+.q .fb{display:none;font-size:.92rem;border-left:3px solid var(--tint);padding-left:10px;margin-top:6px}
+.q .fb.on{display:block}
+.reveal{font:inherit;font-size:.85rem;background:none;border:1px dashed var(--tint);color:var(--tint);border-radius:99px;padding:3px 12px;cursor:pointer;margin-top:4px}
+/* misc */
+.pill{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:1px 8px;border-radius:4px;background:var(--tint-bg);color:var(--tint)}
+.countries{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.countries span{border:1px solid var(--rule);background:var(--card);border-radius:6px;padding:2px 9px;font-size:.85rem}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:stretch}
+.vs .mid{align-self:center;font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--muted)}
+@media (max-width:640px){.vs{grid-template-columns:1fr}.vs .mid{text-align:center}.ctl{grid-template-columns:1fr 60px}.ctl label{grid-column:1/-1}body{font-size:16px}}
+.refs article{border-top:1px solid var(--rule);padding:14px 0}
+.refs h4{margin:.1em 0}
+.refs .why{font-size:.92rem}
+footer{padding:30px 0 50px;color:var(--muted);font-size:.9rem;text-align:center}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.82rem;margin:6px 0}
+.legend span::before{content:&quot;&quot;;display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px;background:var(--c)}
+.note{font-size:.82rem;color:var(--muted);font-style:italic}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;header class=&quot;hero&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;kicker&quot;&gt;European Economic Policy · 2026-27 · Lecture 5&lt;/div&gt;
+    &lt;h1&gt;Empirical tests of self-fulfilling debt crises&lt;/h1&gt;
+    &lt;p class=&quot;lede&quot;&gt;Was the Eurozone sovereign debt crisis (2010-12) caused by the state of public finances or by market fear? Two empirical studies from 2013 attempt to measure it: how much of the rise in &lt;em&gt;spreads&lt;/em&gt; is explained by &lt;em&gt;fundamentals&lt;/em&gt; and how much by &lt;em&gt;market sentiment&lt;/em&gt;.&lt;/p&gt;
+    &lt;div class=&quot;meta&quot;&gt;
+      &lt;span class=&quot;chip&quot;&gt;De Grauwe &amp;amp; Ji (2013)&lt;/span&gt;
+      &lt;span class=&quot;chip&quot;&gt;Aizenman, Hutchison &amp;amp; Jinjarak (2013)&lt;/span&gt;
+      &lt;span class=&quot;chip&quot;&gt;spread · CDS · fiscal space · time dummies&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;h3 style=&quot;margin-top:28px&quot;&gt;Lecture map &lt;span class=&quot;muted small&quot; style=&quot;font-family:var(--sans);font-weight:400&quot;&gt;— click a node to jump to the section&lt;/span&gt;&lt;/h3&gt;
+    &lt;figure class=&quot;map&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 900 470&quot; role=&quot;img&quot; aria-label=&quot;Concept map of the lecture&quot;&gt;
+        &lt;defs&gt;
+          &lt;marker id=&quot;ar&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto-start-reverse&quot;&gt;&lt;path d=&quot;M0,0 L10,5 L0,10 z&quot; class=&quot;f-muted&quot;/&gt;&lt;/marker&gt;
+        &lt;/defs&gt;
+        &lt;g stroke-width=&quot;1.4&quot; class=&quot;s-rule&quot; style=&quot;stroke:var(--muted)&quot; marker-end=&quot;url(#ar)&quot;&gt;
+          &lt;path d=&quot;M380,78 C330,140 250,160 215,198&quot;/&gt;
+          &lt;path d=&quot;M520,78 C570,140 650,160 690,198&quot;/&gt;
+          &lt;path d=&quot;M140,248 L140,282&quot;/&gt;
+          &lt;path d=&quot;M260,248 C290,262 320,270 335,282&quot;/&gt;
+          &lt;path d=&quot;M132,330 L132,364&quot;/&gt;
+          &lt;path d=&quot;M347,330 L352,364&quot;/&gt;
+          &lt;path d=&quot;M700,248 L700,282&quot;/&gt;
+          &lt;path d=&quot;M700,330 L700,364&quot;/&gt;
+          &lt;path d=&quot;M440,412 L455,418&quot;/&gt;
+          &lt;path d=&quot;M610,412 L590,420&quot;/&gt;
+        &lt;/g&gt;
+        &lt;path d=&quot;M200,284 C260,258 480,258 568,292&quot; stroke-dasharray=&quot;4 4&quot; fill=&quot;none&quot; stroke-width=&quot;1.4&quot; style=&quot;stroke:var(--muted)&quot;/&gt;
+        &lt;text x=&quot;395&quot; y=&quot;258&quot; font-size=&quot;11&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--muted)&quot;&gt;fiscal space in both&lt;/text&gt;
+
+        &lt;a href=&quot;#s1&quot;&gt;&lt;rect x=&quot;300&quot; y=&quot;20&quot; width=&quot;300&quot; height=&quot;58&quot; rx=&quot;12&quot; class=&quot;fb-sage s-sage&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;450&quot; y=&quot;45&quot; text-anchor=&quot;middle&quot; font-size=&quot;16&quot; font-weight=&quot;600&quot; class=&quot;serif&quot;&gt;1 · Self-fulfilling debt crisis&lt;/text&gt;&lt;text x=&quot;450&quot; y=&quot;65&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot;&gt;theory and signals: spreads, clusters, gap&lt;/text&gt;&lt;/a&gt;
+
+        &lt;a href=&quot;#s2&quot;&gt;&lt;rect x=&quot;80&quot; y=&quot;200&quot; width=&quot;240&quot; height=&quot;48&quot; rx=&quot;10&quot; class=&quot;fb-ochre s-ochre&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;200&quot; y=&quot;221&quot; text-anchor=&quot;middle&quot; font-size=&quot;14&quot; font-weight=&quot;600&quot;&gt;2 · De Grauwe &amp;amp; Ji (2013)&lt;/text&gt;&lt;text x=&quot;200&quot; y=&quot;239&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot;&gt;strategy · control group · facts&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#s3&quot;&gt;&lt;rect x=&quot;40&quot; y=&quot;284&quot; width=&quot;200&quot; height=&quot;46&quot; rx=&quot;10&quot; class=&quot;fb-ochre s-ochre&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;140&quot; y=&quot;304&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;3 · Fundamentals&lt;/text&gt;&lt;text x=&quot;140&quot; y=&quot;321&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot;&gt;debt/GDP · fiscal space&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#s4&quot;&gt;&lt;rect x=&quot;252&quot; y=&quot;284&quot; width=&quot;190&quot; height=&quot;46&quot; rx=&quot;10&quot; class=&quot;fb-ochre s-ochre&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;347&quot; y=&quot;304&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;4 · Linear model&lt;/text&gt;&lt;text x=&quot;347&quot; y=&quot;321&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot;&gt;fixed effects · non-linearity&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#s5&quot;&gt;&lt;rect x=&quot;40&quot; y=&quot;366&quot; width=&quot;185&quot; height=&quot;46&quot; rx=&quot;10&quot; class=&quot;fb-ochre s-ochre&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;132&quot; y=&quot;386&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;5 · Time dummies&lt;/text&gt;&lt;text x=&quot;132&quot; y=&quot;403&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot;&gt;= market sentiment&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#s6&quot;&gt;&lt;rect x=&quot;250&quot; y=&quot;366&quot; width=&quot;210&quot; height=&quot;46&quot; rx=&quot;10&quot; class=&quot;fb-brick s-brick&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;355&quot; y=&quot;386&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;6 · Decomposition&lt;/text&gt;&lt;text x=&quot;355&quot; y=&quot;403&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot;&gt;Spain vs Greece · austerity&lt;/text&gt;&lt;/a&gt;
+
+        &lt;a href=&quot;#s7&quot;&gt;&lt;rect x=&quot;580&quot; y=&quot;200&quot; width=&quot;240&quot; height=&quot;48&quot; rx=&quot;10&quot; class=&quot;fb-slate s-slate&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;700&quot; y=&quot;221&quot; text-anchor=&quot;middle&quot; font-size=&quot;14&quot; font-weight=&quot;600&quot;&gt;7 · CDS&lt;/text&gt;&lt;text x=&quot;700&quot; y=&quot;239&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot;&gt;credit default swaps and basis points&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#s8&quot;&gt;&lt;rect x=&quot;570&quot; y=&quot;284&quot; width=&quot;260&quot; height=&quot;46&quot; rx=&quot;10&quot; class=&quot;fb-slate s-slate&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;700&quot; y=&quot;304&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;8 · Aizenman et al. (2013)&lt;/text&gt;&lt;text x=&quot;700&quot; y=&quot;321&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot;&gt;dynamic panel · SWEAP dummies&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#s9&quot;&gt;&lt;rect x=&quot;570&quot; y=&quot;366&quot; width=&quot;260&quot; height=&quot;46&quot; rx=&quot;10&quot; class=&quot;fb-slate s-slate&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;700&quot; y=&quot;386&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;9 · Prediction errors&lt;/text&gt;&lt;text x=&quot;700&quot; y=&quot;403&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot;&gt;future fundamentals or Calvo (1988)?&lt;/text&gt;&lt;/a&gt;
+
+        &lt;a href=&quot;#s10&quot;&gt;&lt;rect x=&quot;360&quot; y=&quot;420&quot; width=&quot;240&quot; height=&quot;40&quot; rx=&quot;10&quot; class=&quot;fb-accent&quot; style=&quot;stroke:var(--accent)&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;480&quot; y=&quot;445&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;10 · Comparison and questions&lt;/text&gt;&lt;/a&gt;
+        &lt;text x=&quot;245&quot; y=&quot;185&quot; font-size=&quot;11&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--muted)&quot;&gt;10-year bond spread&lt;/text&gt;
+        &lt;text x=&quot;660&quot; y=&quot;185&quot; font-size=&quot;11&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--muted)&quot;&gt;5-year CDS spread&lt;/text&gt;
+      &lt;/svg&gt;
+      &lt;figcaption&gt;Two parallel paths towards the same question: on the left (ochre) the study of government bond spreads, on the right (slate) the study of CDS. At the bottom the two are compared.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;nav class=&quot;toc&quot; aria-label=&quot;Table of contents&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;a href=&quot;#s1&quot;&gt;1 Theory&lt;/a&gt;&lt;a href=&quot;#s2&quot;&gt;2 De Grauwe-Ji&lt;/a&gt;&lt;a href=&quot;#s3&quot;&gt;3 Fundamentals&lt;/a&gt;&lt;a href=&quot;#s4&quot;&gt;4 Model&lt;/a&gt;&lt;a href=&quot;#s5&quot;&gt;5 Time dummies&lt;/a&gt;&lt;a href=&quot;#s6&quot;&gt;6 Decomposition&lt;/a&gt;&lt;a href=&quot;#s7&quot;&gt;7 CDS&lt;/a&gt;&lt;a href=&quot;#s8&quot;&gt;8 Aizenman et al.&lt;/a&gt;&lt;a href=&quot;#s9&quot;&gt;9 Predictions&lt;/a&gt;&lt;a href=&quot;#s10&quot;&gt;10 Comparison&lt;/a&gt;&lt;a href=&quot;#fonti&quot;&gt;Further reading&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+&lt;!-- S1 --&gt;
+&lt;section class=&quot;part sage&quot; id=&quot;s1&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;span class=&quot;num&quot;&gt;1&lt;/span&gt;&lt;h2&gt;What a self-fulfilling debt crisis is and how to recognise one&lt;/h2&gt;&lt;/div&gt;
+  &lt;p class=&quot;src&quot;&gt;Slides 1-2&lt;/p&gt;
+
+  &lt;p&gt;The question of the lecture: &lt;strong&gt;did the Eurozone (EZ) experience a self-fulfilling debt crisis?&lt;/strong&gt; And which signals would make it visible in the data?&lt;/p&gt;
+
+  &lt;div class=&quot;box def&quot;&gt;
+    &lt;h4&gt;Self-fulfilling debt crisis&lt;/h4&gt;
+    &lt;p&gt;A &lt;em class=&quot;t&quot;&gt;self-fulfilling crisis&lt;/em&gt; is a crisis triggered by &lt;em&gt;expectations themselves&lt;/em&gt;: if investors fear a default and demand higher interest rates, the cost of debt rises so much that default actually becomes more likely. The pessimistic prophecy comes true because it was believed.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;box def&quot;&gt;
+    &lt;h4&gt;Spread&lt;/h4&gt;
+    &lt;p&gt;The &lt;em class=&quot;t&quot;&gt;spread&lt;/em&gt; is the difference between the yield on a country&#x27;s 10-year government bond and that on a benchmark bond regarded as safe (in the Eurozone, usually the German Bund). It measures the risk premium that markets demand for lending to that government. Example: Italian BTP at 5.5% and Bund at 2.0% → spread = 3.5 percentage points = 350 &lt;em&gt;basis points&lt;/em&gt; (1 bp = 0.01%).&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;The logic: why in a monetary union?&lt;/h3&gt;
+  &lt;p&gt;In the slides: “in a monetary union, movements of distrust towards a country lead to an increase in the yield on its government bonds → an increase in the spread”. The step taken for granted is the reason why.&lt;/p&gt;
+  &lt;div class=&quot;ctx&quot;&gt;
+    &lt;p&gt;This is De Grauwe&#x27;s &lt;strong&gt;fragility hypothesis&lt;/strong&gt;, mentioned on slide 13 (“fragility hypothesis”). A Eurozone country issues debt in a currency it &lt;em&gt;does not control&lt;/em&gt;: its national central bank cannot print euros to repay maturing bonds. A &lt;em class=&quot;t&quot;&gt;stand-alone&lt;/em&gt; country (with its own currency, such as the United Kingdom) can instead always pay in its own currency, because the central bank acts as &lt;em&gt;lender of last resort&lt;/em&gt;. Hence in the EZ a &lt;em&gt;liquidity&lt;/em&gt; problem (being unable to find buyers to roll over the debt) can turn into a &lt;em&gt;solvency&lt;/em&gt; problem. This makes &lt;em class=&quot;t&quot;&gt;multiple equilibria&lt;/em&gt; possible: with the same fundamentals, a country can end up in a “good” equilibrium (low interest rates) or a “bad” one (high interest rates and default).&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;stepper&quot; data-stepper&gt;
+    &lt;div class=&quot;step on&quot;&gt;&lt;span class=&quot;lab&quot;&gt;Step 1 · Confidence shock&lt;/span&gt;&lt;p&gt;Investors begin to doubt an EZ country (because of an event, a piece of news, contagion from another country). They sell its bonds.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;lab&quot;&gt;Step 2 · The spread rises&lt;/span&gt;&lt;p&gt;Bond prices fall and yields rise: the spread widens. The government has to refinance itself at higher interest rates.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;lab&quot;&gt;Step 3 · Liquidity squeeze&lt;/span&gt;&lt;p&gt;Without a national central bank guaranteeing the rollover of debt, the government risks finding no buyers: a liquidity crisis.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;lab&quot;&gt;Step 4 · Forced austerity&lt;/span&gt;&lt;p&gt;To reassure markets, the government cuts spending and raises taxes during a recession. GDP falls (slide 20).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;lab&quot;&gt;Step 5 · Fundamentals really do worsen&lt;/span&gt;&lt;p&gt;With falling GDP and high interest rates, the debt-to-GDP ratio rises. The initial pessimism now looks “justified”: the crisis has become self-fulfilling. The cycle returns to step 1, stronger.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;button class=&quot;btn&quot; data-prev&gt;← back&lt;/button&gt;&lt;div class=&quot;dots&quot;&gt;&lt;/div&gt;&lt;button class=&quot;btn&quot; data-next&gt;next →&lt;/button&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;figure&gt;
+    &lt;svg viewBox=&quot;0 0 700 260&quot; role=&quot;img&quot; aria-label=&quot;Vicious circle of the self-fulfilling crisis&quot;&gt;
+      &lt;g font-size=&quot;13&quot; text-anchor=&quot;middle&quot;&gt;
+        &lt;circle cx=&quot;350&quot; cy=&quot;130&quot; r=&quot;92&quot; class=&quot;s-sage&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;5 5&quot; fill=&quot;none&quot;/&gt;
+        &lt;text x=&quot;350&quot; y=&quot;125&quot; class=&quot;serif&quot; font-size=&quot;16&quot; font-weight=&quot;600&quot;&gt;bad equilibrium&lt;/text&gt;
+        &lt;text x=&quot;350&quot; y=&quot;145&quot; font-size=&quot;11&quot; style=&quot;fill:var(--muted)&quot;&gt;self-reinforcing loop&lt;/text&gt;
+        &lt;rect x=&quot;270&quot; y=&quot;10&quot; width=&quot;160&quot; height=&quot;34&quot; rx=&quot;8&quot; class=&quot;fb-sage s-sage&quot;/&gt;&lt;text x=&quot;350&quot; y=&quot;32&quot;&gt;distrust / panic&lt;/text&gt;
+        &lt;rect x=&quot;470&quot; y=&quot;112&quot; width=&quot;170&quot; height=&quot;34&quot; rx=&quot;8&quot; class=&quot;fb-sage s-sage&quot;/&gt;&lt;text x=&quot;555&quot; y=&quot;134&quot;&gt;spread ↑ (rates ↑)&lt;/text&gt;
+        &lt;rect x=&quot;270&quot; y=&quot;216&quot; width=&quot;160&quot; height=&quot;34&quot; rx=&quot;8&quot; class=&quot;fb-sage s-sage&quot;/&gt;&lt;text x=&quot;350&quot; y=&quot;238&quot;&gt;austerity · GDP ↓&lt;/text&gt;
+        &lt;rect x=&quot;60&quot; y=&quot;112&quot; width=&quot;170&quot; height=&quot;34&quot; rx=&quot;8&quot; class=&quot;fb-sage s-sage&quot;/&gt;&lt;text x=&quot;145&quot; y=&quot;134&quot;&gt;debt/GDP ↑&lt;/text&gt;
+      &lt;/g&gt;
+      &lt;g class=&quot;s-sage&quot; stroke-width=&quot;2&quot; fill=&quot;none&quot; marker-end=&quot;url(#ar)&quot;&gt;
+        &lt;path d=&quot;M430,30 Q520,40 545,108&quot;/&gt;&lt;path d=&quot;M545,150 Q520,220 432,232&quot;/&gt;&lt;path d=&quot;M268,232 Q180,220 150,150&quot;/&gt;&lt;path d=&quot;M150,110 Q180,40 268,30&quot;/&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+    &lt;figcaption&gt;Diagram of the vicious circle described on slides 2, 8 and 20.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;h3&gt;The three signals of a sentiment-driven crisis&lt;/h3&gt;
+  &lt;p&gt;When &lt;em class=&quot;t&quot;&gt;market sentiment&lt;/em&gt; (the mood, the collective expectations of investors) turns against a country, spreads tend to show:&lt;/p&gt;
+  &lt;div class=&quot;grid3&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;① Large jumps in a short time&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;Large movements over short periods: fundamentals (debt, growth) change slowly, quarter after quarter; the spread, by contrast, can double within weeks.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;② Clusters in time&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;Clusters in time: movements are concentrated in episodes (waves of panic) and often hit several countries at once (contagion).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;③ An unexplained “gap”&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;Changes in fundamentals are not enough to explain the total change in the spread. This is precisely what the two studies try to measure.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;div class=&quot;q&quot; data-mc=&quot;b&quot;&gt;
+      &lt;p&gt;Why does the fragility hypothesis apply specifically to countries in a monetary union?&lt;/p&gt;
+      &lt;div class=&quot;opts&quot;&gt;
+        &lt;button data-k=&quot;a&quot;&gt;Because their public debt is always higher than that of stand-alone countries&lt;/button&gt;
+        &lt;button data-k=&quot;b&quot;&gt;Because they issue debt in a currency that their national central bank cannot create&lt;/button&gt;
+        &lt;button data-k=&quot;c&quot;&gt;Because they cannot issue 10-year bonds&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;fb&quot;&gt;Option b is correct: without a national lender of last resort, distrust can turn a liquidity problem into insolvency. Option a is false: slide 7 shows that the US and the UK had debt-to-GDP ratios rising as fast as, or faster than, the euro area&#x27;s.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;
+      &lt;p&gt;If a country&#x27;s spread rises from 100 to 400 bp in one quarter while debt/GDP and growth remain almost unchanged, which of the three signals are you observing?&lt;/p&gt;
+      &lt;button class=&quot;reveal&quot;&gt;Show answer&lt;/button&gt;
+      &lt;div class=&quot;fb&quot;&gt;Signal ① (large jumps in a short time) and above all ③: the change in fundamentals does not explain the change in the spread. If the same happens simultaneously in other countries, signal ② (clusters) as well.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- S2 --&gt;
+&lt;section class=&quot;part ochre&quot; id=&quot;s2&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;span class=&quot;num&quot;&gt;2&lt;/span&gt;&lt;h2&gt;De Grauwe &amp;amp; Ji (2013): hypothesis, strategy, facts&lt;/h2&gt;&lt;/div&gt;
+  &lt;p class=&quot;src&quot;&gt;Slides 3-8 · Paul De Grauwe (LSE) and Yuemei Ji (LICOS Leuven, CEPS), &lt;em&gt;Journal of International Money and Finance&lt;/em&gt; 34 (2013) 15-36&lt;/p&gt;
+
+  &lt;h3&gt;The abstract in four moves&lt;/h3&gt;
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;tablist&quot;&gt;&lt;button&gt;We test&lt;/button&gt;&lt;button&gt;We find&lt;/button&gt;&lt;button&gt;We argue&lt;/button&gt;&lt;button&gt;We also find&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;Hypothesis.&lt;/strong&gt; Government bond markets in the Eurozone are &lt;em&gt;more fragile&lt;/em&gt; and more susceptible to &lt;em class=&quot;t&quot;&gt;self-fulfilling liquidity crises&lt;/em&gt; than those of &lt;em&gt;stand-alone&lt;/em&gt; countries, i.e. countries with their own currency and central bank.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;Finding.&lt;/strong&gt; A significant part of the surge in peripheral countries&#x27; spreads in 2010-11 was &lt;em&gt;disconnected&lt;/em&gt; from increases in debt/GDP and fiscal space, and was associated with negative self-fulfilling sentiment, which became very strong from the end of 2010.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;Implication.&lt;/strong&gt; This can push Eurozone member countries into &lt;em class=&quot;t&quot;&gt;bad equilibria&lt;/em&gt;: equilibria with high interest rates, austerity and recession which, with identical fundamentals, could have been avoided.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;Second finding.&lt;/strong&gt; After years in which they had &lt;em&gt;ignored&lt;/em&gt; high public debt, investors in the EZ began to worry about it and pushed spreads up. This did not happen in stand-alone countries, despite equally high and rising debt/GDP and fiscal space.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;The estimation strategy, step by step&lt;/h3&gt;
+  &lt;div class=&quot;stepper&quot; data-stepper&gt;
+    &lt;div class=&quot;step on&quot;&gt;&lt;span class=&quot;lab&quot;&gt;Step 1 · Model with fundamentals&lt;/span&gt;&lt;p&gt;A model is estimated that explains the spread with a set of &lt;em&gt;fundamental variables&lt;/em&gt; (debt, external accounts, real exchange rate, growth). This is the “fair price” of risk according to fundamentals.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;lab&quot;&gt;Step 2 · Adding time dummies&lt;/span&gt;&lt;p&gt;The model is re-estimated with &lt;em class=&quot;t&quot;&gt;time dummies&lt;/em&gt; (0/1 variables, one per quarter). Their coefficient captures how far the spread in that quarter deviates from what fundamentals explain: this makes it possible to identify periods of &lt;em class=&quot;t&quot;&gt;regime switching&lt;/em&gt;, in which sentiment drives spreads away from fundamentals.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;lab&quot;&gt;Step 3 · How much do they matter?&lt;/span&gt;&lt;p&gt;The share of the total change in spreads attributable to the time dummies is measured (→ section 6, decomposition).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;lab&quot;&gt;Step 4 · Control group&lt;/span&gt;&lt;p&gt;To be convincing, the whole exercise is repeated on a &lt;em class=&quot;t&quot;&gt;control group&lt;/em&gt; of countries that do &lt;em&gt;not&lt;/em&gt; belong to a monetary union. If fragility stems from the monetary union, the time dummies should remain flat there.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;button class=&quot;btn&quot; data-prev&gt;← back&lt;/button&gt;&lt;div class=&quot;dots&quot;&gt;&lt;/div&gt;&lt;button class=&quot;btn&quot; data-next&gt;next →&lt;/button&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h4&gt;The control group: 14 developed stand-alone countries&lt;/h4&gt;
+  &lt;div class=&quot;countries&quot;&gt;&lt;span&gt;Australia&lt;/span&gt;&lt;span&gt;Canada&lt;/span&gt;&lt;span&gt;Czech Republic&lt;/span&gt;&lt;span&gt;Denmark&lt;/span&gt;&lt;span&gt;Hungary&lt;/span&gt;&lt;span&gt;Japan&lt;/span&gt;&lt;span&gt;South Korea&lt;/span&gt;&lt;span&gt;Norway&lt;/span&gt;&lt;span&gt;Poland&lt;/span&gt;&lt;span&gt;Singapore&lt;/span&gt;&lt;span&gt;Sweden&lt;/span&gt;&lt;span&gt;Switzerland&lt;/span&gt;&lt;span&gt;UK&lt;/span&gt;&lt;span&gt;US&lt;/span&gt;&lt;/div&gt;
+  &lt;p class=&quot;small muted&quot;&gt;Note: Denmark, the Czech Republic, Hungary, Poland and Sweden are in the EU but not in the euro; the criterion is having one&#x27;s own currency, not EU membership.&lt;/p&gt;
+
+  &lt;h3&gt;The facts (slide 7)&lt;/h3&gt;
+  &lt;div class=&quot;tabs&quot; data-cb=&quot;factsTab&quot;&gt;
+    &lt;div class=&quot;tablist&quot;&gt;&lt;button&gt;Fig. 1 · Debt/GDP&lt;/button&gt;&lt;button&gt;Fig. 2 · Spreads&lt;/button&gt;&lt;button&gt;Fig. 4 vs 5 · Spreads and debt&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;
+      &lt;figure&gt;&lt;svg id=&quot;fig1&quot; viewBox=&quot;0 0 680 300&quot;&gt;&lt;/svg&gt;
+      &lt;div class=&quot;legend&quot;&gt;&lt;span style=&quot;--c:var(--slate)&quot;&gt;United States&lt;/span&gt;&lt;span style=&quot;--c:var(--ochre)&quot;&gt;Euro area&lt;/span&gt;&lt;span style=&quot;--c:var(--brick)&quot;&gt;UK&lt;/span&gt;&lt;/div&gt;
+      &lt;figcaption&gt;Gross government debt, % of GDP, 2000-2011 (source in the slide: European Commission, Ameco). Redrawn with values read by eye.&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; after 2008 debt grows &lt;em&gt;more&lt;/em&gt; in the US and the United Kingdom than in the euro area. Yet the debt crisis erupts in the EZ. A first hint that the level of debt alone does not explain everything.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;
+      &lt;figure&gt;&lt;svg id=&quot;fig2&quot; viewBox=&quot;0 0 680 300&quot;&gt;&lt;/svg&gt;
+      &lt;div class=&quot;legend&quot;&gt;&lt;span style=&quot;--c:var(--brick)&quot;&gt;Greece&lt;/span&gt;&lt;span style=&quot;--c:var(--ochre)&quot;&gt;Portugal&lt;/span&gt;&lt;span style=&quot;--c:var(--sage)&quot;&gt;Ireland&lt;/span&gt;&lt;span style=&quot;--c:var(--slate)&quot;&gt;Italy&lt;/span&gt;&lt;span style=&quot;--c:var(--accent)&quot;&gt;Belgium&lt;/span&gt;&lt;span style=&quot;--c:var(--muted)&quot;&gt;France / Netherlands&lt;/span&gt;&lt;/div&gt;
+      &lt;figcaption&gt;10-year bond spreads against Germany, % (source in the slide: Datastream). Schematic pattern redrawn, not exact data.&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;p&gt;From 1999 to 2008 spreads are practically &lt;strong&gt;zero&lt;/strong&gt; for all countries: markets priced Greek debt like Dutch debt. Then, from 2010, they diverge explosively (Greece above 20 points at the end of 2011). These are signals ① and ② from section 1.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;
+      &lt;div class=&quot;grid2&quot;&gt;
+        &lt;figure&gt;&lt;svg id=&quot;fig4&quot; viewBox=&quot;0 0 330 260&quot;&gt;&lt;/svg&gt;&lt;figcaption&gt;Eurozone 2000Q1-2011Q3 (slide: Eurostat, Datastream).&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure&gt;&lt;svg id=&quot;fig5&quot; viewBox=&quot;0 0 330 260&quot;&gt;&lt;/svg&gt;&lt;figcaption&gt;Stand-alone countries 2000Q1-2011Q3 (slide: OECD, Datastream).&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;p class=&quot;note&quot;&gt;Illustrative scatter plots reproducing the shape of the original charts, not the data.&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Eurozone:&lt;/strong&gt; most observations have spreads close to zero; then a group of points (the red triangle in the slide: GR, PT, IR 2010Q2-2011Q3) shoots up. The relationship is &lt;em&gt;non-linear&lt;/em&gt;: beyond a certain debt threshold the spread explodes. &lt;strong&gt;Stand-alone:&lt;/strong&gt; no positive relationship; indeed, countries with debt/GDP between 100% and 200% (Japan) have negative spreads.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;div class=&quot;q&quot; data-mc=&quot;c&quot;&gt;
+      &lt;p&gt;What is the purpose of the control group in De Grauwe and Ji&#x27;s study?&lt;/p&gt;
+      &lt;div class=&quot;opts&quot;&gt;
+        &lt;button data-k=&quot;a&quot;&gt;To increase the number of observations and obtain more precise estimates&lt;/button&gt;
+        &lt;button data-k=&quot;b&quot;&gt;To estimate the “fair” value of the spread for EZ countries&lt;/button&gt;
+        &lt;button data-k=&quot;c&quot;&gt;To verify that deviations from fundamentals are specific to the monetary union and not a global feature of the crisis&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;fb&quot;&gt;Correct. If the time dummies rose in stand-alone countries too, the phenomenon would be linked to the global financial crisis rather than to the fragility of the monetary union. The control group serves as a benchmark, as in an experiment.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;
+      &lt;p&gt;What does the comparison between Fig. 1 and Fig. 2 show against a “fundamentals only” explanation?&lt;/p&gt;
+      &lt;button class=&quot;reveal&quot;&gt;Show answer&lt;/button&gt;
+      &lt;div class=&quot;fb&quot;&gt;The US and the UK saw their debt/GDP rise more than the euro area after 2008, but did not experience a spread crisis. In the EZ, by contrast, peripheral spreads exploded. If only debt mattered, we would expect the opposite.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- S3 --&gt;
+&lt;section class=&quot;part ochre&quot; id=&quot;s3&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;span class=&quot;num&quot;&gt;3&lt;/span&gt;&lt;h2&gt;Fundamentals versus market sentiment · fiscal space&lt;/h2&gt;&lt;/div&gt;
+  &lt;p class=&quot;src&quot;&gt;Slides 8, 10&lt;/p&gt;
+
+  &lt;div class=&quot;vs&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;span class=&quot;pill&quot;&gt;Explanation 1&lt;/span&gt;&lt;h4&gt;Deteriorating fundamentals&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;&lt;em class=&quot;t&quot;&gt;Fundamentals&lt;/em&gt; are the “objective” economic variables that determine a government&#x27;s capacity to repay. In this literature the most commonly used ones measure the &lt;strong&gt;sustainability&lt;/strong&gt; of public debt. The paper uses two: the &lt;strong&gt;debt to GDP ratio&lt;/strong&gt; and &lt;strong&gt;fiscal space&lt;/strong&gt;.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;mid&quot;&gt;versus&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;span class=&quot;pill&quot;&gt;Explanation 2&lt;/span&gt;&lt;h4&gt;Market sentiment&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;Expectations driven by &lt;em&gt;panic and fear&lt;/em&gt;, which can change suddenly without any change in fundamentals. They are not directly observable and must be measured indirectly (→ time dummies).&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Common consequence (slides 8 and 20): high spreads forced countries into &lt;strong&gt;severe austerity measures&lt;/strong&gt;, which in turn &lt;em&gt;raised&lt;/em&gt; debt/GDP (because GDP, the denominator, falls).&lt;/p&gt;
+
+  &lt;h3&gt;Fiscal space&lt;/h3&gt;
+  &lt;div class=&quot;box def&quot;&gt;
+    &lt;h4&gt;Definition (Aizenman and Hutchison, 2012, cited in the slide)&lt;/h4&gt;
+    &lt;p class=&quot;formula&quot; style=&quot;background:transparent;border:0;margin:6px 0&quot;&gt;fiscal space = public debt / total tax revenue&lt;/p&gt;
+    &lt;p&gt;It measures &lt;em&gt;how many years of tax revenue&lt;/em&gt; would be needed to repay the entire debt. According to the authors it is a better sustainability indicator than debt/GDP, because it takes into account the &lt;strong&gt;capacity to collect taxes&lt;/strong&gt;. Mind the name: a &lt;em&gt;high&lt;/em&gt; value means &lt;em&gt;little&lt;/em&gt; fiscal space.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt;A country may have low debt/GDP yet struggle to service its debt because it collects little tax revenue: the debt-to-revenue ratio is then high, i.e. many years of revenue are needed. Try it:&lt;/p&gt;
+
+  &lt;div class=&quot;card&quot; id=&quot;fsCalc&quot;&gt;
+    &lt;div class=&quot;grid2&quot;&gt;
+      &lt;div&gt;
+        &lt;h4&gt;Country A&lt;/h4&gt;
+        &lt;div class=&quot;ctl&quot;&gt;&lt;label for=&quot;dA&quot;&gt;Debt / GDP&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;dA&quot; min=&quot;20&quot; max=&quot;200&quot; value=&quot;100&quot;&gt;&lt;output id=&quot;dAo&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+        &lt;div class=&quot;ctl&quot;&gt;&lt;label for=&quot;tA&quot;&gt;Tax revenue / GDP&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;tA&quot; min=&quot;10&quot; max=&quot;55&quot; value=&quot;45&quot;&gt;&lt;output id=&quot;tAo&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;h4&gt;Country B&lt;/h4&gt;
+        &lt;div class=&quot;ctl&quot;&gt;&lt;label for=&quot;dB&quot;&gt;Debt / GDP&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;dB&quot; min=&quot;20&quot; max=&quot;200&quot; value=&quot;60&quot;&gt;&lt;output id=&quot;dBo&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+        &lt;div class=&quot;ctl&quot;&gt;&lt;label for=&quot;tB&quot;&gt;Tax revenue / GDP&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;tB&quot; min=&quot;10&quot; max=&quot;55&quot; value=&quot;15&quot;&gt;&lt;output id=&quot;tBo&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;svg id=&quot;fsSvg&quot; viewBox=&quot;0 0 640 120&quot; style=&quot;width:100%;height:auto&quot;&gt;&lt;/svg&gt;
+    &lt;p id=&quot;fsMsg&quot; class=&quot;small&quot;&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;small muted&quot;&gt;Example constructed for this page, not taken from the slides. Fiscal space = (debt/GDP) ÷ (revenue/GDP) = debt/revenue.&lt;/p&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;div class=&quot;q&quot; data-mc=&quot;a&quot;&gt;
+      &lt;p&gt;Country X: debt/GDP 60%, revenue/GDP 20%. Country Y: debt/GDP 90%, revenue/GDP 45%. Which has the “worse” fiscal space?&lt;/p&gt;
+      &lt;div class=&quot;opts&quot;&gt;
+        &lt;button data-k=&quot;a&quot;&gt;X: it needs 3 years of revenue against Y&#x27;s 2&lt;/button&gt;
+        &lt;button data-k=&quot;b&quot;&gt;Y, because it has higher debt&lt;/button&gt;
+        &lt;button data-k=&quot;c&quot;&gt;They are the same&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;fb&quot;&gt;X: 60/20 = 3.0; Y: 90/45 = 2.0. Despite having less debt, X has less capacity to service it. This is the case described on slide 10.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;
+      &lt;p&gt;Why can the austerity imposed by spreads raise the debt-to-GDP ratio instead of reducing it?&lt;/p&gt;
+      &lt;button class=&quot;reveal&quot;&gt;Show answer&lt;/button&gt;
+      &lt;div class=&quot;fb&quot;&gt;Spending cuts and tax increases during a recession reduce GDP (the denominator) and revenue; meanwhile, high interest rates increase the debt (the numerator). The ratio can therefore rise in the short run: this is the link that closes the vicious circle of section 1.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- S4 --&gt;
+&lt;section class=&quot;part ochre&quot; id=&quot;s4&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;span class=&quot;num&quot;&gt;4&lt;/span&gt;&lt;h2&gt;The linear model and its results&lt;/h2&gt;&lt;/div&gt;
+  &lt;p class=&quot;src&quot;&gt;Slides 9, 11, 12&lt;/p&gt;
+
+  &lt;p&gt;It is a &lt;em class=&quot;t&quot;&gt;panel regression&lt;/em&gt;: data with two dimensions, countries (&lt;span class=&quot;f&quot;&gt;i&lt;/span&gt;) and quarters (&lt;span class=&quot;f&quot;&gt;t&lt;/span&gt;), from 2000Q1 to 2011Q3. Two versions:&lt;/p&gt;
+  &lt;div class=&quot;formula&quot;&gt;I&lt;sub&gt;it&lt;/sub&gt; = α + z·CA&lt;sub&gt;it&lt;/sub&gt; + γ·Debt&lt;sub&gt;it&lt;/sub&gt; + μ·REE&lt;sub&gt;it&lt;/sub&gt; + δ·Growth&lt;sub&gt;it&lt;/sub&gt; + α&lt;sub&gt;i&lt;/sub&gt; + u&lt;sub&gt;it&lt;/sub&gt;&lt;/div&gt;
+  &lt;div class=&quot;formula&quot;&gt;I&lt;sub&gt;it&lt;/sub&gt; = α + z·CA&lt;sub&gt;it&lt;/sub&gt; + γ&lt;sub&gt;1&lt;/sub&gt;·Debt&lt;sub&gt;it&lt;/sub&gt; + μ·REE&lt;sub&gt;it&lt;/sub&gt; + δ·Growth&lt;sub&gt;it&lt;/sub&gt; + γ&lt;sub&gt;2&lt;/sub&gt;·(Debt&lt;sub&gt;it&lt;/sub&gt;)&lt;sup&gt;2&lt;/sup&gt; + α&lt;sub&gt;i&lt;/sub&gt; + u&lt;sub&gt;it&lt;/sub&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;tablist&quot;&gt;&lt;button&gt;I&lt;/button&gt;&lt;button&gt;CA&lt;/button&gt;&lt;button&gt;Debt&lt;/button&gt;&lt;button&gt;REE&lt;/button&gt;&lt;button&gt;Growth&lt;/button&gt;&lt;button&gt;α&lt;sub&gt;i&lt;/sub&gt;&lt;/button&gt;&lt;button&gt;(Debt)²&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;I&lt;/strong&gt; = 10-year government bond spread. It is the dependent variable, the one to be explained.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;CA&lt;/strong&gt; = &lt;em&gt;accumulated&lt;/em&gt; &lt;em class=&quot;t&quot;&gt;current account&lt;/em&gt; deficit, relative to GDP. It measures the external debt accumulated by the whole economy, public and private: a country that has accumulated external deficits depends on foreign capital.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;Debt&lt;/strong&gt; = public debt/GDP &lt;em&gt;or&lt;/em&gt; fiscal space (debt/revenue). The two alternative measures of sustainability.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;REE&lt;/strong&gt; = &lt;em class=&quot;t&quot;&gt;real effective exchange rate&lt;/em&gt;: the weighted average exchange rate against trading partners, adjusted for relative prices. If it rises, the country loses competitiveness.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;Growth&lt;/strong&gt; = GDP growth rate. More growth = easier debt servicing, so a negative sign is expected.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;α&lt;sub&gt;i&lt;/sub&gt;&lt;/strong&gt; = &lt;em class=&quot;t&quot;&gt;country fixed effect&lt;/em&gt;: a different constant for each country. It captures country-specific characteristics that &lt;em&gt;do not change over time&lt;/em&gt; and affect the spread: efficiency of the tax system, quality of governance, etc. In practice the model compares each country with itself over time.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;(Debt)²&lt;/strong&gt;: the squared term allows for a &lt;em&gt;non-linear&lt;/em&gt; relationship. If γ&lt;sub&gt;2&lt;/sub&gt; &amp;gt; 0, the effect of one additional point of debt on the spread &lt;em&gt;increases&lt;/em&gt; with the level of debt. This is the “kinked” shape of Fig. 4.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;How to read a regression table (prerequisite)&lt;/summary&gt;&lt;div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Coefficient&lt;/strong&gt;: how much the dependent variable changes when the regressor increases by 1, holding the others constant. Here the spread is in percentage points, so 0.0744 = +7.44 basis points for each point of debt/GDP.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;[number in brackets]&lt;/strong&gt;: the &lt;em&gt;standard error&lt;/em&gt;, i.e. the uncertainty of the estimate. The estimates are &lt;em&gt;robust&lt;/em&gt; and &lt;em&gt;clustered at country level&lt;/em&gt;: they allow for the fact that errors for the same country in different quarters are correlated.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Asterisks&lt;/strong&gt;: statistical significance. *** p&amp;lt;0.01, ** p&amp;lt;0.05, * p&amp;lt;0.1. Without asterisks, one cannot rule out that the true effect is zero.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;R²&lt;/strong&gt;: the share of the variability of the spread explained by the model (from 0 to 1).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;&lt;/details&gt;
+
+  &lt;h3&gt;Results: Eurozone versus stand-alone&lt;/h3&gt;
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;tablist&quot;&gt;&lt;button&gt;Table 1 · Eurozone&lt;/button&gt;&lt;button&gt;Table 2 · Stand-alone&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;
+      &lt;thead&gt;&lt;tr&gt;&lt;th&gt;2000Q1-2011Q3&lt;/th&gt;&lt;th&gt;(1)&lt;/th&gt;&lt;th&gt;(2)&lt;/th&gt;&lt;th&gt;(3)&lt;/th&gt;&lt;th&gt;(4)&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;&lt;td&gt;Accumulated current account/GDP&lt;/td&gt;&lt;td&gt;−0.0115&lt;/td&gt;&lt;td&gt;−0.0001&lt;/td&gt;&lt;td&gt;−0.0116&lt;/td&gt;&lt;td&gt;0.0011&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Real effective exchange rate&lt;/td&gt;&lt;td&gt;0.0119&lt;/td&gt;&lt;td&gt;0.0121&lt;/td&gt;&lt;td&gt;0.0060&lt;/td&gt;&lt;td&gt;0.0005&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Growth rate&lt;/td&gt;&lt;td&gt;−0.0668&lt;/td&gt;&lt;td class=&quot;sig&quot;&gt;−0.0501***&lt;/td&gt;&lt;td&gt;−0.0571&lt;/td&gt;&lt;td class=&quot;sig&quot;&gt;−0.0405***&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;hl&quot;&gt;&lt;td&gt;Debt/GDP&lt;/td&gt;&lt;td class=&quot;sig&quot;&gt;0.0744***&lt;/td&gt;&lt;td&gt;−0.0523&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;hl&quot;&gt;&lt;td&gt;Debt/GDP squared&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=&quot;sig&quot;&gt;0.0009***&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;hl&quot;&gt;&lt;td&gt;Fiscal space&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=&quot;sig&quot;&gt;2.5008***&lt;/td&gt;&lt;td class=&quot;sig&quot;&gt;−1.7636***&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;hl&quot;&gt;&lt;td&gt;Fiscal space squared&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=&quot;sig&quot;&gt;0.9265***&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Country fixed effect&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Observations&lt;/td&gt;&lt;td&gt;470&lt;/td&gt;&lt;td&gt;470&lt;/td&gt;&lt;td&gt;470&lt;/td&gt;&lt;td&gt;470&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;R²&lt;/td&gt;&lt;td&gt;0.67&lt;/td&gt;&lt;td&gt;0.80&lt;/td&gt;&lt;td&gt;0.71&lt;/td&gt;&lt;td&gt;0.85&lt;/td&gt;&lt;/tr&gt;
+      &lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+      &lt;p class=&quot;small&quot;&gt;Standard errors omitted for readability (they are on slide 11).&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Reading:&lt;/strong&gt; in the EZ, debt and fiscal space are highly significant, and the version with the squared term explains more (R² from 0.67 to 0.80; from 0.71 to 0.85): the effect of debt is &lt;em&gt;non-linear&lt;/em&gt;. Growth also matters (negative sign).&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;
+      &lt;thead&gt;&lt;tr&gt;&lt;th&gt;2000Q1-2011Q3&lt;/th&gt;&lt;th&gt;(1)&lt;/th&gt;&lt;th&gt;(2)&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;&lt;td&gt;Accumulated current account/GDP&lt;/td&gt;&lt;td&gt;−0.0012&lt;/td&gt;&lt;td&gt;−0.0023&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Real effective exchange rate&lt;/td&gt;&lt;td&gt;0.0019&lt;/td&gt;&lt;td&gt;0.0014&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;hl&quot;&gt;&lt;td&gt;Change in exchange rate&lt;/td&gt;&lt;td class=&quot;sig&quot;&gt;−0.0274**&lt;/td&gt;&lt;td class=&quot;sig&quot;&gt;−0.0278***&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Growth rate&lt;/td&gt;&lt;td&gt;−0.0216&lt;/td&gt;&lt;td&gt;−0.0231&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;hl&quot;&gt;&lt;td&gt;Debt/GDP&lt;/td&gt;&lt;td&gt;0.0105&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr class=&quot;hl&quot;&gt;&lt;td&gt;Fiscal space&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;0.2653&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Country fixed effect&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Observations&lt;/td&gt;&lt;td&gt;658&lt;/td&gt;&lt;td&gt;658&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;R²&lt;/td&gt;&lt;td&gt;0.84&lt;/td&gt;&lt;td&gt;0.84&lt;/td&gt;&lt;/tr&gt;
+      &lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+      &lt;p&gt;&lt;strong&gt;Reading:&lt;/strong&gt; in stand-alone countries neither debt/GDP nor fiscal space is significant: markets do not punish high debt in countries with their own central bank. What matters instead is the change in the exchange rate, an adjustment instrument that euro countries lack.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Explore the non-linearity&lt;/h3&gt;
+  &lt;p&gt;Using the coefficients in column (2) of Table 1, the effect of one additional point of debt is the derivative: &lt;span class=&quot;f&quot;&gt;∂I/∂Debt = γ&lt;sub&gt;1&lt;/sub&gt; + 2γ&lt;sub&gt;2&lt;/sub&gt;·Debt = −0.0523 + 0.0018·Debt&lt;/span&gt;. Move the slider:&lt;/p&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;ctl&quot;&gt;&lt;label for=&quot;qD&quot;&gt;Debt / GDP (%)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;qD&quot; min=&quot;30&quot; max=&quot;160&quot; value=&quot;100&quot;&gt;&lt;output id=&quot;qDo&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+    &lt;figure style=&quot;margin:6px 0&quot;&gt;&lt;svg id=&quot;qSvg&quot; viewBox=&quot;0 0 640 280&quot;&gt;&lt;/svg&gt;
+    &lt;div class=&quot;legend&quot;&gt;&lt;span style=&quot;--c:var(--ochre)&quot;&gt;Eurozone: Table 1 col. (2)&lt;/span&gt;&lt;span style=&quot;--c:var(--slate)&quot;&gt;Stand-alone: Table 2 col. (1), not significant&lt;/span&gt;&lt;/div&gt;&lt;/figure&gt;
+    &lt;p class=&quot;readout&quot; id=&quot;qMsg&quot;&gt;&lt;/p&gt;
+    &lt;p class=&quot;note&quot;&gt;Change in the spread relative to a country with debt/GDP = 60%, all other variables held constant. Illustrative calculation based on the estimated coefficients, not a forecast.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;div class=&quot;q&quot; data-mc=&quot;b&quot;&gt;
+      &lt;p&gt;In column (2) of Table 1 the linear debt coefficient is negative (−0.0523) and not significant. Does this mean that debt does not matter?&lt;/p&gt;
+      &lt;div class=&quot;opts&quot;&gt;
+        &lt;button data-k=&quot;a&quot;&gt;Yes: the linear coefficient is not significant&lt;/button&gt;
+        &lt;button data-k=&quot;b&quot;&gt;No: with the squared term the effect must be read jointly, and for realistic debt levels it is positive and increasing&lt;/button&gt;
+        &lt;button data-k=&quot;c&quot;&gt;No: it means that more debt reduces the spread&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;fb&quot;&gt;The marginal effect is −0.0523 + 0.0018·Debt, positive above roughly 29% debt/GDP and increasingly strong. The significant squared term (0.0009***) is precisely the evidence of non-linearity.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;
+      &lt;p&gt;What does the country fixed effect α&lt;sub&gt;i&lt;/sub&gt; capture, and what can it &lt;em&gt;not&lt;/em&gt; capture?&lt;/p&gt;
+      &lt;button class=&quot;reveal&quot;&gt;Show answer&lt;/button&gt;
+      &lt;div class=&quot;fb&quot;&gt;It captures everything that is country-specific and constant over time (quality of institutions, tax efficiency…). It cannot capture what changes over time, such as a wave of panic in 2010: that requires time dummies (section 5).&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;
+      &lt;p&gt;Why does the “change in exchange rate” matter in stand-alone countries while debt and fiscal space do not?&lt;/p&gt;
+      &lt;button class=&quot;reveal&quot;&gt;Show answer&lt;/button&gt;
+      &lt;div class=&quot;fb&quot;&gt;A country with its own currency can adjust through the exchange rate and cannot be forced into default on debt denominated in its own currency (the central bank acts as lender of last resort). Investors therefore pay less attention to the level of debt. This is consistent with the fragility hypothesis.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- S5 --&gt;
+&lt;section class=&quot;part ochre&quot; id=&quot;s5&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;span class=&quot;num&quot;&gt;5&lt;/span&gt;&lt;h2&gt;Time dummies: measuring market sentiment&lt;/h2&gt;&lt;/div&gt;
+  &lt;p class=&quot;src&quot;&gt;Slides 13-15&lt;/p&gt;
+
+  &lt;p&gt;A key feature of the fragility hypothesis is that it can generate movements in spreads that are &lt;strong&gt;seemingly disconnected&lt;/strong&gt; from the fundamentals in the model. To measure them, a time component is added:&lt;/p&gt;
+  &lt;div class=&quot;formula&quot;&gt;I&lt;sub&gt;it&lt;/sub&gt; = α + z·CA&lt;sub&gt;it&lt;/sub&gt; + γ&lt;sub&gt;1&lt;/sub&gt;·Debt&lt;sub&gt;it&lt;/sub&gt; + μ·REE&lt;sub&gt;it&lt;/sub&gt; + δ·Growth&lt;sub&gt;it&lt;/sub&gt; + γ&lt;sub&gt;2&lt;/sub&gt;·(Debt&lt;sub&gt;it&lt;/sub&gt;)&lt;sup&gt;2&lt;/sup&gt; + α&lt;sub&gt;i&lt;/sub&gt; + &lt;b style=&quot;color:var(--tint)&quot;&gt;β&lt;sub&gt;t&lt;/sub&gt;&lt;/b&gt; + ε&lt;sub&gt;it&lt;/sub&gt;&lt;/div&gt;
+  &lt;div class=&quot;box def&quot;&gt;
+    &lt;h4&gt;Time dummy β&lt;sub&gt;t&lt;/sub&gt;&lt;/h4&gt;
+    &lt;p&gt;A &lt;em class=&quot;t&quot;&gt;time dummy&lt;/em&gt; is a variable equal to 1 in a given quarter and 0 in all others; its coefficient β&lt;sub&gt;t&lt;/sub&gt; is the “extra” spread common to all countries in the group in that quarter, &lt;em&gt;net of fundamentals&lt;/em&gt;. By construction it is exogenous and unrelated to fundamentals: it is what remains once the fundamentals have explained everything they can. The authors interpret it as &lt;strong&gt;market sentiment&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Estimated time dummies by group&lt;/h3&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;figure style=&quot;margin:0&quot;&gt;&lt;svg id=&quot;tdSvg&quot; viewBox=&quot;0 0 680 300&quot;&gt;&lt;/svg&gt;
+    &lt;div class=&quot;legend&quot;&gt;&lt;span style=&quot;--c:var(--slate)&quot;&gt;Stand-alone&lt;/span&gt;&lt;span style=&quot;--c:var(--ochre)&quot;&gt;Eurozone&lt;/span&gt;&lt;span style=&quot;--c:var(--sage)&quot;&gt;Core Eurozone&lt;/span&gt;&lt;span style=&quot;--c:var(--brick)&quot;&gt;Peripheral Eurozone&lt;/span&gt;&lt;/div&gt;&lt;/figure&gt;
+    &lt;div class=&quot;ctl&quot;&gt;&lt;label for=&quot;tdQ&quot;&gt;Quarter&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;tdQ&quot; min=&quot;0&quot; max=&quot;46&quot; value=&quot;46&quot;&gt;&lt;output id=&quot;tdQo&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+    &lt;div id=&quot;tdRead&quot; class=&quot;grid3 small&quot;&gt;&lt;/div&gt;
+    &lt;p class=&quot;note&quot;&gt;Curves redrawn by eye from the four charts on slide 14 (values in percentage points).&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;grid2&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Stand-alone&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;Flat time component, around 0 / −0.5 throughout the period, including 2008-09. No panic regime.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;EZ periphery&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;Rises from 2010 to about +5 points in 2011Q3: five points of spread that fundamentals do not explain. Earlier, in 2009, a dip: euphoria and pessimism alternate.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Interpretation: mispricing in both directions&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Especially in the periphery there were &lt;em class=&quot;t&quot;&gt;departures&lt;/em&gt;: increases in spreads that cannot be explained by debt/GDP and fiscal space.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Before the crisis&lt;/strong&gt; markets saw no risk in peripheral debt and priced it like that of core countries → risk was &lt;em&gt;underestimated&lt;/em&gt;.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;After the crisis&lt;/strong&gt; peripheral spreads rose dramatically and independently of observed fundamentals → markets, gripped by negative sentiment, &lt;em&gt;overestimated&lt;/em&gt; the risk of default.&lt;/li&gt;
+    &lt;li&gt;Conclusion: the &lt;em class=&quot;t&quot;&gt;mispricing of risks&lt;/em&gt;, in both directions, appears to have been an &lt;strong&gt;endemic&lt;/strong&gt; feature of the Eurozone.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;div class=&quot;q&quot; data-mc=&quot;c&quot;&gt;
+      &lt;p&gt;If in 2011Q3 the periphery&#x27;s time dummy is about 5, what does this mean?&lt;/p&gt;
+      &lt;div class=&quot;opts&quot;&gt;
+        &lt;button data-k=&quot;a&quot;&gt;That the periphery&#x27;s fundamentals worsened by 5 points&lt;/button&gt;
+        &lt;button data-k=&quot;b&quot;&gt;That the periphery&#x27;s average spread was 5%&lt;/button&gt;
+        &lt;button data-k=&quot;c&quot;&gt;That the spread was about 5 points higher than predicted by fundamentals, in a way common to the peripheral countries&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;fb&quot;&gt;The time dummy measures the common deviation not explained by fundamentals, i.e. the component attributed to sentiment.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;
+      &lt;p&gt;What is one limitation of interpreting time dummies as “market sentiment”?&lt;/p&gt;
+      &lt;button class=&quot;reveal&quot;&gt;Show answer&lt;/button&gt;
+      &lt;div class=&quot;fb&quot;&gt;They capture &lt;em&gt;everything&lt;/em&gt; that is common to the countries in the group in a given quarter and not included in the model: besides panic, also omitted variables (expectations about future fundamentals, banking risks, political events). It is a residual, and therefore indirect, measure. The same doubt returns with the study by Aizenman et al. (section 9).&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- S6 --&gt;
+&lt;section class=&quot;part brick&quot; id=&quot;s6&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;span class=&quot;num&quot;&gt;6&lt;/span&gt;&lt;h2&gt;Decomposing the change in the spread&lt;/h2&gt;&lt;/div&gt;
+  &lt;p class=&quot;src&quot;&gt;Slides 16-20 · Fig. 5.7 (source in the slide: De Grauwe and Ji, 2013a) and Fig. 11 of the paper&lt;/p&gt;
+
+  &lt;p&gt;The change in each country&#x27;s spread between 2008Q1 and 2011Q3 is decomposed into three parts:&lt;/p&gt;
+  &lt;div class=&quot;formula&quot;&gt;ΔI&lt;sub&gt;i&lt;/sub&gt; = &lt;span style=&quot;color:var(--slate)&quot;&gt;Δβ&lt;sub&gt;t&lt;/sub&gt; (time component)&lt;/span&gt; + &lt;span style=&quot;color:var(--brick)&quot;&gt;Σ coeff × Δfundamentals (fundamental factors)&lt;/span&gt; + &lt;span style=&quot;color:var(--muted)&quot;&gt;residual&lt;/span&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div style=&quot;display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px&quot;&gt;
+      &lt;button class=&quot;btn&quot; id=&quot;dcEZ&quot; aria-pressed=&quot;true&quot;&gt;Eurozone&lt;/button&gt;&lt;button class=&quot;btn&quot; id=&quot;dcSA&quot; aria-pressed=&quot;false&quot;&gt;Stand-alone&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;figure style=&quot;margin:0&quot;&gt;&lt;svg id=&quot;dcSvg&quot; viewBox=&quot;0 0 680 320&quot;&gt;&lt;/svg&gt;
+    &lt;div class=&quot;legend&quot;&gt;&lt;span style=&quot;--c:var(--slate)&quot;&gt;time component&lt;/span&gt;&lt;span style=&quot;--c:var(--brick)&quot;&gt;fundamental factors&lt;/span&gt;&lt;span style=&quot;--c:var(--rule)&quot;&gt;residual&lt;/span&gt;&lt;/div&gt;&lt;/figure&gt;
+    &lt;p id=&quot;dcMsg&quot; class=&quot;small&quot; style=&quot;min-height:3em&quot;&gt;Click a bar for a comment.&lt;/p&gt;
+    &lt;p class=&quot;note&quot;&gt;Heights read by eye from the charts on slides 16-17 (percentage points); they are meant for comparing proportions.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;On the whole&lt;/h3&gt;
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;tablist&quot;&gt;&lt;button&gt;Portugal and Ireland&lt;/button&gt;&lt;button&gt;Spain&lt;/button&gt;&lt;button&gt;Greece&lt;/button&gt;&lt;button&gt;Core&lt;/button&gt;&lt;button&gt;Stand-alone&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;About &lt;strong&gt;half&lt;/strong&gt; of the change in the spread is due to the time dummies and half to fundamentals.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;Almost all of the increase is due to the time dummies: fundamentals play little role; the explanation is the change in sentiment towards Spain. The &lt;strong&gt;clearest case of pure loss of confidence&lt;/strong&gt;: markets may have &lt;em&gt;mispriced&lt;/em&gt; the risk of Spanish bonds.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;About &lt;strong&gt;60%&lt;/strong&gt; of the increase is explained by deteriorating fundamentals, less than 40% by the time dummies. Bad fundamentals &lt;em&gt;plus&lt;/em&gt; loss of confidence: markets priced Greek risk “with some justification”.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;A similar pattern in &lt;strong&gt;six core countries&lt;/strong&gt; (Austria, Belgium, Finland, France, Italy, the Netherlands in the chart): most of the increase, small as it is, comes from the time dummies; fundamentals often made a negative contribution.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;Minimal changes for all, below 2 points: no relevant time component. No trace of a self-fulfilling crisis outside the monetary union.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;h4&gt;The policy message&lt;/h4&gt;
+    &lt;p&gt;There is a &lt;strong&gt;risk that markets push countries into a bad equilibrium&lt;/strong&gt;, which can be avoided through policies that remove the &lt;em&gt;fear factor&lt;/em&gt; from the market.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;ctx&quot;&gt;&lt;p&gt;A historical example of this kind of policy is the ECB&#x27;s announcement of the OMT (Outright Monetary Transactions) programme in 2012, through which the central bank declared itself ready to purchase the bonds of countries in difficulty: in effect, a lender-of-last-resort function. The slides do not mention it; if the course covers it in another lecture, link it here.&lt;/p&gt;&lt;/div&gt;
+
+  &lt;h3&gt;From liquidity crises to forced austerity&lt;/h3&gt;
+  &lt;figure&gt;
+    &lt;svg viewBox=&quot;0 0 680 120&quot; role=&quot;img&quot; aria-label=&quot;Chain from sentiment to austerity&quot;&gt;
+      &lt;g font-size=&quot;12.5&quot; text-anchor=&quot;middle&quot;&gt;
+        &lt;rect x=&quot;5&quot; y=&quot;35&quot; width=&quot;140&quot; height=&quot;50&quot; rx=&quot;10&quot; class=&quot;fb-brick s-brick&quot;/&gt;&lt;text x=&quot;75&quot; y=&quot;57&quot;&gt;market sentiment&lt;/text&gt;&lt;text x=&quot;75&quot; y=&quot;74&quot;&gt;(+ fundamentals)&lt;/text&gt;
+        &lt;rect x=&quot;180&quot; y=&quot;35&quot; width=&quot;140&quot; height=&quot;50&quot; rx=&quot;10&quot; class=&quot;fb-brick s-brick&quot;/&gt;&lt;text x=&quot;250&quot; y=&quot;57&quot;&gt;spread ↑&lt;/text&gt;&lt;text x=&quot;250&quot; y=&quot;74&quot;&gt;from 2010&lt;/text&gt;
+        &lt;rect x=&quot;355&quot; y=&quot;35&quot; width=&quot;140&quot; height=&quot;50&quot; rx=&quot;10&quot; class=&quot;fb-brick s-brick&quot;/&gt;&lt;text x=&quot;425&quot; y=&quot;57&quot;&gt;severe&lt;/text&gt;&lt;text x=&quot;425&quot; y=&quot;74&quot;&gt;austerity&lt;/text&gt;
+        &lt;rect x=&quot;530&quot; y=&quot;35&quot; width=&quot;145&quot; height=&quot;50&quot; rx=&quot;10&quot; class=&quot;fb-brick s-brick&quot;/&gt;&lt;text x=&quot;602&quot; y=&quot;57&quot;&gt;debt/GDP ↑&lt;/text&gt;&lt;text x=&quot;602&quot; y=&quot;74&quot;&gt;(GDP ↓)&lt;/text&gt;
+      &lt;/g&gt;
+      &lt;g class=&quot;s-brick&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#ar)&quot;&gt;&lt;path d=&quot;M146,60 H176&quot;/&gt;&lt;path d=&quot;M321,60 H351&quot;/&gt;&lt;path d=&quot;M496,60 H526&quot;/&gt;&lt;path d=&quot;M602,86 C602,118 75,118 75,90&quot; fill=&quot;none&quot; stroke-dasharray=&quot;4 4&quot;/&gt;&lt;/g&gt;
+    &lt;/svg&gt;
+    &lt;figcaption&gt;Slide 20: spreads, driven mainly by sentiment, imposed austerity that raised debt/GDP.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;div class=&quot;q&quot; data-mc=&quot;a&quot;&gt;
+      &lt;p&gt;According to the decomposition, for which country is the case for a self-fulfilling crisis strongest?&lt;/p&gt;
+      &lt;div class=&quot;opts&quot;&gt;&lt;button data-k=&quot;a&quot;&gt;Spain&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;Greece&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;United Kingdom&lt;/button&gt;&lt;/div&gt;
+      &lt;div class=&quot;fb&quot;&gt;Spain: almost all of the increase comes from the time component, i.e. from sentiment. In Greece fundamentals prevail (~60%); the United Kingdom is stand-alone and does not show the phenomenon.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;
+      &lt;p&gt;The time component is the same for Greece, Ireland, Portugal and Spain (about 4.5 points). Why?&lt;/p&gt;
+      &lt;button class=&quot;reveal&quot;&gt;Show answer&lt;/button&gt;
+      &lt;div class=&quot;fb&quot;&gt;Because the time dummies are estimated by group (periphery, core): β&lt;sub&gt;t&lt;/sub&gt; is common to all countries in the group in that quarter. What differentiates the countries are the fundamentals and the residual.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- S7 --&gt;
+&lt;section class=&quot;part slate&quot; id=&quot;s7&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;span class=&quot;num&quot;&gt;7&lt;/span&gt;&lt;h2&gt;Other studies: credit default swaps (CDS)&lt;/h2&gt;&lt;/div&gt;
+  &lt;p class=&quot;src&quot;&gt;Slides 21-22, 25 · definition from A. Carboni (2011), Banca d&#x27;Italia, Temi di discussione (Working Papers) no. 821, cited in the slide&lt;/p&gt;
+
+  &lt;p&gt;Do other studies reach similar conclusions? The second paper, Aizenman, Hutchison and Jinjarak (2013), uses as its risk measure not the bond spread but the &lt;strong&gt;CDS spread&lt;/strong&gt;.&lt;/p&gt;
+
+  &lt;div class=&quot;box def&quot;&gt;
+    &lt;h4&gt;Credit default swap&lt;/h4&gt;
+    &lt;p&gt;&lt;em class=&quot;t&quot;&gt;Credit default swaps&lt;/em&gt; are the most common type of &lt;em&gt;credit derivatives&lt;/em&gt;. A CDS is a &lt;strong&gt;bilateral contract&lt;/strong&gt; that insures the nominal value (&lt;em&gt;par value&lt;/em&gt;) of a reference bond: the &lt;em&gt;protection buyer&lt;/em&gt; pays a periodic fee (the spread) or a one-off premium to the &lt;em&gt;protection seller&lt;/em&gt;, who pays out if a &lt;em&gt;credit event&lt;/em&gt; (default, restructuring…) occurs during the life of the contract.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;figure&gt;
+    &lt;svg viewBox=&quot;0 0 680 170&quot; role=&quot;img&quot; aria-label=&quot;Diagram of a CDS&quot;&gt;
+      &lt;g font-size=&quot;13&quot; text-anchor=&quot;middle&quot;&gt;
+        &lt;rect x=&quot;20&quot; y=&quot;50&quot; width=&quot;170&quot; height=&quot;64&quot; rx=&quot;12&quot; class=&quot;fb-slate s-slate&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;105&quot; y=&quot;78&quot; font-weight=&quot;600&quot;&gt;Protection buyer&lt;/text&gt;&lt;text x=&quot;105&quot; y=&quot;98&quot; font-size=&quot;11&quot;&gt;holds government bonds&lt;/text&gt;
+        &lt;rect x=&quot;490&quot; y=&quot;50&quot; width=&quot;170&quot; height=&quot;64&quot; rx=&quot;12&quot; class=&quot;fb-slate s-slate&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;575&quot; y=&quot;78&quot; font-weight=&quot;600&quot;&gt;Protection seller&lt;/text&gt;&lt;text x=&quot;575&quot; y=&quot;98&quot; font-size=&quot;11&quot;&gt;bank, fund…&lt;/text&gt;
+        &lt;text x=&quot;340&quot; y=&quot;40&quot;&gt;annual spread (e.g. 197 bp of notional)&lt;/text&gt;
+        &lt;text x=&quot;340&quot; y=&quot;148&quot;&gt;if a credit event occurs: pays the lost nominal value&lt;/text&gt;
+        &lt;rect x=&quot;270&quot; y=&quot;65&quot; width=&quot;140&quot; height=&quot;34&quot; rx=&quot;8&quot; class=&quot;f-paper s-rule&quot;/&gt;&lt;text x=&quot;340&quot; y=&quot;87&quot; font-size=&quot;11.5&quot;&gt;reference bond&lt;/text&gt;
+      &lt;/g&gt;
+      &lt;g class=&quot;s-slate&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#ar)&quot; fill=&quot;none&quot;&gt;&lt;path d=&quot;M190,58 C300,40 380,40 488,58&quot;/&gt;&lt;path d=&quot;M490,108 C380,130 300,130 192,108&quot; stroke-dasharray=&quot;5 4&quot;/&gt;&lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/figure&gt;
+
+  &lt;h3&gt;Quoting in basis points: calculator&lt;/h3&gt;
+  &lt;p&gt;The convention is the &lt;em&gt;annual&lt;/em&gt; premium as a percentage of the notional. In the paper: 1 bp = $1,000 to insure 10 million. Example from the slide: 197 bp → 1.97% × 10 million = $197,000 per year.&lt;/p&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;ctl&quot;&gt;&lt;label for=&quot;cdsBp&quot;&gt;CDS spread (bp)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;cdsBp&quot; min=&quot;10&quot; max=&quot;2000&quot; step=&quot;1&quot; value=&quot;197&quot;&gt;&lt;output id=&quot;cdsBpo&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctl&quot;&gt;&lt;label for=&quot;cdsN&quot;&gt;Notional ($ million)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;cdsN&quot; min=&quot;1&quot; max=&quot;100&quot; value=&quot;10&quot;&gt;&lt;output id=&quot;cdsNo&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+    &lt;p class=&quot;readout&quot; id=&quot;cdsMsg&quot;&gt;&lt;/p&gt;
+    &lt;p class=&quot;small muted&quot;&gt;Try 1026 bp: this was Greece&#x27;s average CDS in 2010 (Table 1 of Aizenman et al., slide 27).&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;grid3&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Common causes&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;According to the literature, sovereign yields and CDS spreads have &lt;em&gt;common underlying causes&lt;/em&gt;, rather than one driving the other.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Before: OTC&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;Before the crisis CDS were traded &lt;em class=&quot;t&quot;&gt;over-the-counter&lt;/em&gt; (OTC): outside regulated markets, through brokers or dealers.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;After: more rules&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;Since the financial crisis, CDS trading has been subject to more regulation and standardised contracts.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;ext&quot;&gt;&lt;p&gt;In the EU, Regulation (EU) No 236/2012 on short selling and CDS banned, among other things, “naked” sovereign CDS, i.e. CDS bought without holding the exposure to be insured. &lt;a href=&quot;https://eur-lex.europa.eu/EN/legal-content/summary/short-selling-of-securities.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Summary on EUR-Lex&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;h4&gt;Who was most insured? (slide 25)&lt;/h4&gt;
+  &lt;p&gt;Gross notional amount of outstanding sovereign CDS positions as of 25 February 2011 ($ billion), i.e. the total insured capital. &lt;strong&gt;Italy&lt;/strong&gt; stands out (almost 300), followed by &lt;strong&gt;Brazil&lt;/strong&gt;, &lt;strong&gt;Spain&lt;/strong&gt;, &lt;strong&gt;Turkey&lt;/strong&gt; (about 150-165), &lt;strong&gt;Mexico&lt;/strong&gt; (~120) and Russia (~100). Italy, the largest debt market in the periphery, was the most insured sovereign in the world.&lt;/p&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;div class=&quot;q&quot; data-mc=&quot;b&quot;&gt;
+      &lt;p&gt;A CDS on Portuguese debt is quoted at 500 bp. How much does it cost per year to insure €20 million?&lt;/p&gt;
+      &lt;div class=&quot;opts&quot;&gt;&lt;button data-k=&quot;a&quot;&gt;€100,000&lt;/button&gt;&lt;button data-k=&quot;b&quot;&gt;€1,000,000&lt;/button&gt;&lt;button data-k=&quot;c&quot;&gt;€10,000,000&lt;/button&gt;&lt;/div&gt;
+      &lt;div class=&quot;fb&quot;&gt;500 bp = 5% per year; 5% × 20 million = 1 million per year.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;
+      &lt;p&gt;Why is a CDS spread a good measure of the default risk perceived by markets?&lt;/p&gt;
+      &lt;button class=&quot;reveal&quot;&gt;Show answer&lt;/button&gt;
+      &lt;div class=&quot;fb&quot;&gt;It is the market price of insurance against default: the more likely the market considers a credit event, the more the protection seller demands. Unlike the bond spread, it does not depend on the German benchmark and is comparable across countries with different currencies: this is why it suits a sample of 50 countries.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- S8 --&gt;
+&lt;section class=&quot;part slate&quot; id=&quot;s8&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;span class=&quot;num&quot;&gt;8&lt;/span&gt;&lt;h2&gt;Aizenman, Hutchison &amp;amp; Jinjarak (2013)&lt;/h2&gt;&lt;/div&gt;
+  &lt;p class=&quot;src&quot;&gt;Slides 21, 23-30 · &lt;em&gt;Journal of International Money and Finance&lt;/em&gt; 34 (2013) 37-59&lt;/p&gt;
+
+  &lt;div class=&quot;grid2&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Facts&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;Perceived sovereign risk explodes in 2010 in several European countries and culminates in the &lt;em class=&quot;t&quot;&gt;selective default&lt;/em&gt; on Greek debt in early 2012.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Objective&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;To determine whether the high perceived risk of the troubled euro countries, as measured by CDS spreads, can be explained by past or current fundamentals: debt and deficits relative to tax revenue, which they call &lt;em class=&quot;t&quot;&gt;de facto fiscal space&lt;/em&gt;, plus other determinants.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box def&quot;&gt;
+    &lt;h4&gt;SWEAP&lt;/h4&gt;
+    &lt;p&gt;&lt;em class=&quot;t&quot;&gt;South-West Euro Area Periphery&lt;/em&gt;: Greece, Ireland, Italy, Portugal, Spain. Note that here &lt;strong&gt;Italy is in the periphery&lt;/strong&gt;, whereas in De Grauwe and Ji it appears among the core countries.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;h4&gt;Research questions&lt;/h4&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Does &lt;strong&gt;fiscal space&lt;/strong&gt; help to explain the pricing of risk systematically, beyond what is already explained by other macro indicators?&lt;/li&gt;
+    &lt;li&gt;Was the risk of some markets (e.g. SWEAP) &lt;strong&gt;“overpriced”&lt;/strong&gt; in 2010, according to the model&#x27;s predictions based on actual values of fiscal space and the other variables?&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;h3&gt;The data: CDS and fiscal space (Table 1, slide 27)&lt;/h3&gt;
+  &lt;div class=&quot;tabs&quot; data-cb=&quot;ahjTab&quot;&gt;
+    &lt;div class=&quot;tablist&quot;&gt;&lt;button&gt;5-year CDS (bp)&lt;/button&gt;&lt;button&gt;Debt / tax base&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;div class=&quot;tbl&quot; id=&quot;ahjT1&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;div class=&quot;tbl&quot; id=&quot;ahjT2&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p&gt;&lt;strong&gt;The key comparison:&lt;/strong&gt; in 2010 Spain has a debt/tax ratio of 1.7, &lt;em&gt;lower&lt;/em&gt; than the non-euro OECD average (1.9), yet a CDS of 348 bp against 118. Portugal (2.4) is similar to the middle-income countries (2.3) but pays 497 bp against 233. The figures in brackets in the slide are the group standard deviations.&lt;/p&gt;
+  &lt;p class=&quot;small&quot;&gt;Fig. 2 (slide 24): CDS of middle-income countries (South Africa, Panama, Malaysia, Mexico, Colombia) rise in 2008 and then fall back by mid-2009; those of SWEAP countries, by contrast, keep rising in 2010-11 (Greece above 8,000 bp at the end of 2011). Global financial stress had emerged in early 2008, became dramatic in late 2008, and then subsided almost everywhere except in the SWEAP group.&lt;/p&gt;
+
+  &lt;h3&gt;The model: dynamic panel&lt;/h3&gt;
+  &lt;div class=&quot;formula&quot;&gt;Y&lt;sub&gt;it&lt;/sub&gt; = a + θ·Y&lt;sub&gt;i,t−1&lt;/sub&gt; + X′&lt;sub&gt;it&lt;/sub&gt;β + ε&lt;sub&gt;it&lt;/sub&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid2&quot;&gt;
+    &lt;div class=&quot;card small&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Y&lt;/strong&gt;: 5-year sovereign CDS spread · &lt;strong&gt;50 countries&lt;/strong&gt; · 2005-2010 (annual).&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Y&lt;sub&gt;t−1&lt;/sub&gt;&lt;/strong&gt;: the lagged dependent variable: this year&#x27;s CDS depends on last year&#x27;s (persistence). This is why the model is &lt;em class=&quot;t&quot;&gt;dynamic&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;X&lt;/strong&gt;: vector of controls, including the fiscal space measures (debt/tax, fiscal balance/tax), plus the TED spread, trade/GDP, inflation, external debt/GDP, and time dummies interacted with the Euro and SWEAP dummies.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card small&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Why not OLS?&lt;/strong&gt; With fixed effects, the lagged variable Y&lt;sub&gt;t−1&lt;/sub&gt; is correlated with the unobservable error term: the estimate would be biased.&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; the instrumental-variable &lt;em class=&quot;t&quot;&gt;Arellano-Bond GMM&lt;/em&gt; estimator: first differences are taken (eliminating the fixed effect) and deeper lags of Y are used as instruments.&lt;/p&gt;
+      &lt;p&gt;Variants with &lt;em&gt;fixed effects&lt;/em&gt; and with &lt;em&gt;clustered standard errors&lt;/em&gt;. After estimation: in-sample and out-of-sample &lt;strong&gt;prediction errors&lt;/strong&gt; (section 9).&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;What is the TED spread?&lt;/summary&gt;&lt;div&gt;&lt;p&gt;From the note to Table 2: the 3-month US dollar LIBOR rate minus the 3-month US Treasury yield. It measures stress in the interbank market and global risk: when banks do not trust one another, LIBOR rises relative to the safe asset.&lt;/p&gt;&lt;/div&gt;&lt;/details&gt;
+
+  &lt;h3&gt;Results (Table 2, slides 29-30)&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;+1 point of &lt;strong&gt;debt/tax&lt;/strong&gt; → CDS spread &lt;strong&gt;+15 to +81 bp&lt;/strong&gt; (14.7*** with clustered s.e.; 81.0*** with fixed effects).&lt;/li&gt;
+    &lt;li&gt;+1 point of &lt;strong&gt;fiscal balance/tax base&lt;/strong&gt; (better budget balance) → CDS &lt;strong&gt;−194 to −829 bp&lt;/strong&gt;.&lt;/li&gt;
+    &lt;li&gt;Highly significant estimates; the low ones come from clustered standard errors, the high ones from fixed effects.&lt;/li&gt;
+    &lt;li&gt;Also worth examining are the &lt;strong&gt;time dummies&lt;/strong&gt; and their interactions with the Euro and SWEAP dummies:&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;h4 style=&quot;margin-top:0&quot;&gt;Compute the “SWEAP premium” by year&lt;/h4&gt;
+    &lt;div style=&quot;display:flex;gap:6px;flex-wrap:wrap&quot; id=&quot;t2cols&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tbl&quot; id=&quot;t2tbl&quot;&gt;&lt;/div&gt;
+    &lt;p class=&quot;readout&quot; id=&quot;t2msg&quot;&gt;&lt;/p&gt;
+    &lt;p class=&quot;note&quot;&gt;Reading assumption: SWEAP countries are also in the euro, so their year effect is t + t×Euro + t×SWEAP. Coefficients from Table 2; the sum was computed for this page.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt;In 2008 the Euro and SWEAP interactions are &lt;strong&gt;negative&lt;/strong&gt;: the global shock hits the euro area less. In 2010 the SWEAP interaction is large and positive (up to +324 bp, *** in 3 columns out of 4): a risk premium that the model&#x27;s variables do not explain.&lt;/p&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;div class=&quot;q&quot; data-mc=&quot;c&quot;&gt;
+      &lt;p&gt;Why do Aizenman et al. use the Arellano-Bond estimator instead of a simple fixed-effects regression?&lt;/p&gt;
+      &lt;div class=&quot;opts&quot;&gt;
+        &lt;button data-k=&quot;a&quot;&gt;Because they have too many countries&lt;/button&gt;
+        &lt;button data-k=&quot;b&quot;&gt;Because CDS are measured in basis points&lt;/button&gt;
+        &lt;button data-k=&quot;c&quot;&gt;Because the lagged dependent variable is correlated with the unobservable error, and the estimate would be biased&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;fb&quot;&gt;This is the dynamic panel problem: with Y&lt;sub&gt;t−1&lt;/sub&gt; among the regressors, fixed effects generate correlation with the error term. Arellano-Bond uses first differences and lags as instruments (GMM).&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;
+      &lt;p&gt;What does a coefficient t2010×SWEAP = +261.9*** indicate?&lt;/p&gt;
+      &lt;button class=&quot;reveal&quot;&gt;Show answer&lt;/button&gt;
+      &lt;div class=&quot;fb&quot;&gt;In 2010 the CDS of SWEAP countries were on average about 262 bp higher than explained by the other variables (fiscal space, macro variables, the common year effect and the euro effect). It is the equivalent of the periphery time dummy in De Grauwe and Ji.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- S9 --&gt;
+&lt;section class=&quot;part slate&quot; id=&quot;s9&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;span class=&quot;num&quot;&gt;9&lt;/span&gt;&lt;h2&gt;Prediction errors and two interpretations&lt;/h2&gt;&lt;/div&gt;
+  &lt;p class=&quot;src&quot;&gt;Slides 31-34&lt;/p&gt;
+
+  &lt;div class=&quot;box def&quot;&gt;
+    &lt;h4&gt;Prediction error = actual CDS / predicted CDS&lt;/h4&gt;
+    &lt;p&gt;&lt;strong&gt;Out-of-sample&lt;/strong&gt;: the model is estimated on the pre-crisis period only (2005-07) and then used to predict 2008-10. &lt;strong&gt;In-sample&lt;/strong&gt;: estimated over the whole 2005-10 period. A value &amp;gt; 1 is &lt;em class=&quot;t&quot;&gt;under-prediction&lt;/em&gt;: the actual CDS exceeds the predicted one, i.e. sovereign risk is &lt;strong&gt;over-priced&lt;/strong&gt; relative to fundamentals. Example: 6.5 = the market demands 6.5 times the predicted value.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div style=&quot;display:flex;gap:6px;flex-wrap:wrap&quot; id=&quot;peBtns&quot;&gt;&lt;/div&gt;
+    &lt;figure style=&quot;margin:8px 0 0&quot;&gt;&lt;svg id=&quot;peSvg&quot; viewBox=&quot;0 0 680 280&quot;&gt;&lt;/svg&gt;
+    &lt;div class=&quot;legend&quot;&gt;&lt;span style=&quot;--c:var(--slate)&quot;&gt;out-of-sample&lt;/span&gt;&lt;span style=&quot;--c:var(--ochre)&quot;&gt;in-sample&lt;/span&gt;&lt;/div&gt;&lt;/figure&gt;
+    &lt;p id=&quot;peMsg&quot; class=&quot;small&quot;&gt;&lt;/p&gt;
+    &lt;p class=&quot;note&quot;&gt;Data from Table 4 (slide 32). Ratio scale: the line at 1 = perfect prediction.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;h4&gt;What the numbers say&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Errors are huge everywhere during the crisis, especially out-of-sample: in 2008-10 actual CDS exceed predictions by a factor of &lt;strong&gt;2.3&lt;/strong&gt; (middle income) up to &lt;strong&gt;12.9&lt;/strong&gt; (non-euro OECD). Under-predictions of this magnitude are &lt;em&gt;extraordinary&lt;/em&gt;.&lt;/li&gt;
+    &lt;li&gt;For the SWEAP countries, on the 2008-10 average, errors are not particularly high in relative terms: from 2.6 (Italy) to 5.3 (Ireland).&lt;/li&gt;
+    &lt;li&gt;But the &lt;strong&gt;time profile&lt;/strong&gt; differs: the non-euro OECD has an error of 31.6 in 2008 (global shock), then 1.6 in 2009 and 5.4 in 2010. The SWEAP countries have relatively low errors in 2008 that rise in 2009 and above all in 2010 (Spain 6.5, Ireland 7.9, Portugal 6.9). Possibly a &lt;em class=&quot;t&quot;&gt;contagion&lt;/em&gt; effect.&lt;/li&gt;
+    &lt;li&gt;The euro area excluding SWEAP also peaks in 2010 (13.7).&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;Moreover, comparing the SWEAP countries with five middle-income countries outside Europe with similar fiscal space, in 2010 the periphery&#x27;s default risk is priced &lt;strong&gt;much higher&lt;/strong&gt;, even after accounting for differences in fundamentals (abstract, slide 23).&lt;/p&gt;
+
+  &lt;h3&gt;Two readings of the same data&lt;/h3&gt;
+  &lt;div class=&quot;vs&quot;&gt;
+    &lt;div class=&quot;card&quot; style=&quot;border-top:4px solid var(--slate)&quot;&gt;
+      &lt;span class=&quot;pill&quot;&gt;Interpretation A&lt;/span&gt;
+      &lt;h4&gt;Future fundamentals&lt;/h4&gt;
+      &lt;p class=&quot;small&quot;&gt;The CDS market prices default not on &lt;em&gt;current&lt;/em&gt; fundamentals but on &lt;em&gt;future&lt;/em&gt; ones, expecting a sharp deterioration in SWEAP fiscal space.&lt;/p&gt;
+      &lt;p class=&quot;small&quot;&gt;Consistent with the &lt;strong&gt;Greek selective default of 2012&lt;/strong&gt;. Adjustment in the SWEAP countries is seen as &lt;em&gt;economically and politically more difficult&lt;/em&gt;, owing to the exchange-rate rigidity tied to the euro, a constraint that middle-income countries do not face.&lt;/p&gt;
+      &lt;p class=&quot;small&quot;&gt;&lt;strong&gt;Rational, forward-looking markets&lt;/strong&gt;.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mid&quot;&gt;or&lt;/div&gt;
+    &lt;div class=&quot;card&quot; style=&quot;border-top:4px solid var(--brick)&quot;&gt;
+      &lt;span class=&quot;pill&quot;&gt;Interpretation B&lt;/span&gt;
+      &lt;h4&gt;Multiple equilibria and contagion&lt;/h4&gt;
+      &lt;p class=&quot;small&quot;&gt;Consistent with the &lt;strong&gt;Calvo (1988)&lt;/strong&gt; model and with De Grauwe and Ji (2012): sovereign risk follows &lt;em class=&quot;t&quot;&gt;waves of contagion&lt;/em&gt;, overreacting and mispricing risk for years.&lt;/p&gt;
+      &lt;p class=&quot;small&quot;&gt;Earlier, &lt;em class=&quot;t&quot;&gt;contagious optimism&lt;/em&gt;: risk was underpriced, especially around the euro&#x27;s tenth anniversary. In 2010 the shift is from the “good” (optimistic) equilibrium to the “bad” (pessimistic) one: very high CDS → public finances deteriorate → &lt;strong&gt;self-fulfilling prophecy crisis&lt;/strong&gt;.&lt;/p&gt;
+      &lt;p class=&quot;small&quot;&gt;&lt;strong&gt;Markets that err&lt;/strong&gt; in both directions.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;figure&gt;
+    &lt;svg viewBox=&quot;0 0 680 240&quot; role=&quot;img&quot; aria-label=&quot;Multiple equilibria: good and bad equilibrium&quot;&gt;
+      &lt;line x1=&quot;60&quot; y1=&quot;200&quot; x2=&quot;640&quot; y2=&quot;200&quot; class=&quot;s-ink&quot; stroke-width=&quot;1.2&quot;/&gt;
+      &lt;line x1=&quot;60&quot; y1=&quot;200&quot; x2=&quot;60&quot; y2=&quot;20&quot; class=&quot;s-ink&quot; stroke-width=&quot;1.2&quot;/&gt;
+      &lt;text x=&quot;350&quot; y=&quot;232&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot;&gt;default risk expected by investors (→ required yields)&lt;/text&gt;
+      &lt;text x=&quot;22&quot; y=&quot;110&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; transform=&quot;rotate(-90 22 110)&quot;&gt;resulting default risk&lt;/text&gt;
+      &lt;line x1=&quot;60&quot; y1=&quot;200&quot; x2=&quot;620&quot; y2=&quot;30&quot; class=&quot;s-rule&quot; stroke-dasharray=&quot;4 4&quot; style=&quot;stroke:var(--muted)&quot;/&gt;
+      &lt;text x=&quot;610&quot; y=&quot;50&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; style=&quot;fill:var(--muted)&quot;&gt;45°: expectations = outcome&lt;/text&gt;
+      &lt;path d=&quot;M60,186 C110,178 135,172 160,170 S330,152 420,118 S505,70 534,56 S590,30 625,16&quot; class=&quot;s-slate&quot; stroke-width=&quot;2.5&quot; fill=&quot;none&quot;/&gt;
+      &lt;circle cx=&quot;160&quot; cy=&quot;170&quot; r=&quot;7&quot; class=&quot;f-sage&quot;/&gt;&lt;text x=&quot;170&quot; y=&quot;190&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot;&gt;good equilibrium&lt;/text&gt;
+      &lt;circle cx=&quot;534&quot; cy=&quot;57&quot; r=&quot;7&quot; class=&quot;f-brick&quot;/&gt;&lt;text x=&quot;525&quot; y=&quot;85&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot; text-anchor=&quot;end&quot;&gt;bad equilibrium&lt;/text&gt;
+      &lt;path d=&quot;M200,160 Q360,150 500,70&quot; class=&quot;s-brick&quot; stroke-width=&quot;1.5&quot; fill=&quot;none&quot; stroke-dasharray=&quot;3 3&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+      &lt;text x=&quot;380&quot; y=&quot;160&quot; font-size=&quot;11&quot; style=&quot;fill:var(--brick)&quot;&gt;panic: equilibrium jump&lt;/text&gt;
+    &lt;/svg&gt;
+    &lt;figcaption&gt;Qualitative diagram (not in the slides) of Calvo&#x27;s idea: where expectations intersect the outcome there are several equilibrium points with the same fundamentals. Expectations determine where the economy ends up.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;div class=&quot;q&quot; data-mc=&quot;b&quot;&gt;
+      &lt;p&gt;An out-of-sample prediction error of 7.9 for Ireland in 2010 means that…&lt;/p&gt;
+      &lt;div class=&quot;opts&quot;&gt;
+        &lt;button data-k=&quot;a&quot;&gt;the model overestimated the Irish CDS by 7.9 bp&lt;/button&gt;
+        &lt;button data-k=&quot;b&quot;&gt;the actual CDS was 7.9 times the value predicted by the model estimated on 2005-07&lt;/button&gt;
+        &lt;button data-k=&quot;c&quot;&gt;Irish fundamentals deteriorated by 790%&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;fb&quot;&gt;The error is an actual/predicted ratio. Values &amp;gt; 1 indicate under-prediction, i.e. risk over-priced relative to fundamentals.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;
+      &lt;p&gt;Which fact supports interpretation A (future fundamentals), and what is its weakness?&lt;/p&gt;
+      &lt;button class=&quot;reveal&quot;&gt;Show answer&lt;/button&gt;
+      &lt;div class=&quot;fb&quot;&gt;In favour: the Greek selective default of 2012 showed that the risk was real, and euro countries cannot devalue. Weakness: if pessimism itself worsens future fundamentals (high rates → austerity → recession), “pricing future fundamentals” and “self-fulfilling crisis” become hard to tell apart in the data: future fundamentals are not independent of expectations.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- S10 --&gt;
+&lt;section class=&quot;part brick&quot; id=&quot;s10&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;span class=&quot;num&quot;&gt;10&lt;/span&gt;&lt;h2&gt;Comparing the two studies and exam questions&lt;/h2&gt;&lt;/div&gt;
+  &lt;p class=&quot;src&quot;&gt;Slide 35 (questions); comparison table built from slides 3-34&lt;/p&gt;
+
+  &lt;div class=&quot;tbl&quot;&gt;&lt;table&gt;
+    &lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;De Grauwe &amp;amp; Ji (2013)&lt;/th&gt;&lt;th&gt;Aizenman, Hutchison &amp;amp; Jinjarak (2013)&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;Dependent variable&lt;/td&gt;&lt;td&gt;10-year bond spread&lt;/td&gt;&lt;td&gt;5-year sovereign CDS spread (bp)&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Sample&lt;/td&gt;&lt;td&gt;Eurozone + 14 stand-alone countries, quarterly 2000Q1-2011Q3&lt;/td&gt;&lt;td&gt;50 countries, annual 2005-2010&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Fundamentals&lt;/td&gt;&lt;td&gt;Debt/GDP or fiscal space (also squared), accumulated current account, REE, growth (+ exchange rate for stand-alone)&lt;/td&gt;&lt;td&gt;Debt/tax, fiscal balance/tax (de facto fiscal space), TED spread, trade/GDP, inflation, external debt/GDP&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Method&lt;/td&gt;&lt;td&gt;Panel with country fixed effects + time dummies&lt;/td&gt;&lt;td&gt;Dynamic panel (Y&lt;sub&gt;t−1&lt;/sub&gt;), Arellano-Bond GMM; time dummies × Euro × SWEAP&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Measure of sentiment&lt;/td&gt;&lt;td&gt;Time dummy coefficients, decomposition&lt;/td&gt;&lt;td&gt;Year × SWEAP interactions; prediction errors&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Comparison&lt;/td&gt;&lt;td&gt;14 developed stand-alone countries&lt;/td&gt;&lt;td&gt;Country groups; 5 middle-income countries with similar fiscal space&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Conclusion&lt;/td&gt;&lt;td&gt;A substantial part of peripheral spreads in 2010-11 disconnected from fundamentals: self-fulfilling, bad equilibria&lt;/td&gt;&lt;td&gt;SWEAP risk priced much higher in 2010; two readings: future fundamentals or pessimistic equilibrium&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+
+  &lt;h3&gt;The questions on the final slide, with answer outlines&lt;/h3&gt;
+  &lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;1 · If risk perceptions are driven by panic and contagion, how can they be measured in an empirical model?&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;They are unobservable, so they are measured &lt;strong&gt;as a residual&lt;/strong&gt;: one estimates what fundamentals explain and attributes the remainder to sentiment. Tools seen: time dummies β&lt;sub&gt;t&lt;/sub&gt; (De Grauwe-Ji), year × group interactions and prediction errors (Aizenman et al.). The control group serves to separate panic specific to the monetary union from global shocks. Limitation: the residual also contains omitted variables.&lt;/p&gt;
+  &lt;/div&gt;&lt;/details&gt;
+  &lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;2 · Which fundamentals do De Grauwe and Ji use? Compare them with Aizenman et al.&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;See the table above. In common: &lt;strong&gt;fiscal space&lt;/strong&gt; (debt/revenue). De Grauwe-Ji add debt/GDP, non-linearity (squared term), external imbalances (accumulated current account) and competitiveness (REE). Aizenman et al. add the fiscal balance/tax ratio, global risk indicators (TED spread), openness, inflation, external debt and dynamics (lagged CDS). Comment: the finding that “there is an unexplained residual” holds with two different sets of variables, which strengthens the result, but both use &lt;em&gt;current&lt;/em&gt; fundamentals rather than expectations of future ones.&lt;/p&gt;
+  &lt;/div&gt;&lt;/details&gt;
+  &lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;3 · Why did investors price SWEAP CDS higher than the control group?&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;(a) &lt;strong&gt;Constraints of the euro&lt;/strong&gt;: no devaluation and no national central bank as lender of last resort, hence adjustment that is economically and politically harder; (b) &lt;strong&gt;expectations of worse future fundamentals&lt;/strong&gt; (confirmed by the Greek default of 2012); (c) &lt;strong&gt;contagion and a switch of equilibrium&lt;/strong&gt;: after years of excessive optimism, a shift to a pessimistic equilibrium (Calvo 1988; De Grauwe-Ji 2012).&lt;/p&gt;
+  &lt;/div&gt;&lt;/details&gt;
+  &lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;4 · Does De Grauwe and Ji&#x27;s analysis support the self-fulfilling debt crisis hypothesis?&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;Largely yes: a strong time component in the periphery and none in stand-alone countries; debt affects spreads only in the EZ; Spain is explained almost entirely by sentiment. With caveats: in Greece fundamentals matter most; the time dummy is a residual and may include omitted factors (e.g. expectations about the future, the bank-sovereign nexus); the sample ends in 2011Q3. Aizenman et al. confirm the anomalous pricing but leave the “rational” interpretation open.&lt;/p&gt;
+  &lt;/div&gt;&lt;/details&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Final self-check&lt;/h3&gt;
+    &lt;div class=&quot;q&quot; data-mc=&quot;a&quot;&gt;
+      &lt;p&gt;Which finding is common to both studies?&lt;/p&gt;
+      &lt;div class=&quot;opts&quot;&gt;
+        &lt;button data-k=&quot;a&quot;&gt;In 2010 the risk of the euro periphery is priced higher than current fundamentals can explain&lt;/button&gt;
+        &lt;button data-k=&quot;b&quot;&gt;Public debt never affects the pricing of risk&lt;/button&gt;
+        &lt;button data-k=&quot;c&quot;&gt;Greece is the clearest case of a purely self-fulfilling crisis&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;fb&quot;&gt;Yes. b is false: in both papers debt and fiscal space are significant (in the EZ). c is false: in De Grauwe-Ji, Greece is the case where fundamentals weigh most; the “purest” case is Spain.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- FONTI --&gt;
+&lt;section class=&quot;part&quot; id=&quot;fonti&quot;&gt;
+ &lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;span class=&quot;num&quot;&gt;→&lt;/span&gt;&lt;h2&gt;Further reading&lt;/h2&gt;&lt;/div&gt;
+  &lt;p class=&quot;src&quot;&gt;Authors, studies and sources cited in the slides. Descriptions and links from web research (October 2026): each entry is an &lt;strong&gt;external source&lt;/strong&gt;, distinct from the content of the slides.&lt;/p&gt;
+  &lt;div class=&quot;refs&quot;&gt;
+    &lt;article&gt;&lt;span class=&quot;pill&quot; style=&quot;--tint:var(--slate);--tint-bg:var(--slate-bg)&quot;&gt;External source&lt;/span&gt;
+      &lt;h4&gt;P. De Grauwe, Y. Ji (2013), “Self-fulfilling crises in the Eurozone: An empirical test”, &lt;em&gt;Journal of International Money and Finance&lt;/em&gt; 34, 15-36&lt;/h4&gt;
+      &lt;p class=&quot;why&quot;&gt;The first paper of the lecture. Circulated in 2012 as CESifo Working Paper no. 3821 and as a CEPS paper, with the same abstract. It matters because it is the main empirical evidence supporting the fragility hypothesis.
+      &lt;a href=&quot;https://researchonline.lse.ac.uk/id/eprint/49648&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LSE Research Online&lt;/a&gt; · &lt;a href=&quot;https://www.cesifo.org/en/publications/2012/working-paper/self-fulfilling-crises-eurozone-empirical-test&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CESifo WP 3821&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;span class=&quot;pill&quot; style=&quot;--tint:var(--slate);--tint-bg:var(--slate-bg)&quot;&gt;External source&lt;/span&gt;
+      &lt;h4&gt;J. Aizenman, M. Hutchison, Y. Jinjarak (2013), “What is the risk of European sovereign debt defaults? Fiscal space, CDS spreads and market pricing of risk”, &lt;em&gt;JIMF&lt;/em&gt; 34, 37-59&lt;/h4&gt;
+      &lt;p class=&quot;why&quot;&gt;The second paper. First released as NBER Working Paper 17407 (September 2011). Note: some versions refer to sixty countries, the one in the slides to fifty. It is the reference for “de facto” fiscal space (debt and deficits relative to revenue). Slide 10 cites the definition as “Aizenman and Hutchison (2012)”: the search found no work with exactly that title and year, but this paper uses the same definition.
+      &lt;a href=&quot;https://www.nber.org/papers/w17407&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NBER w17407&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;span class=&quot;pill&quot; style=&quot;--tint:var(--slate);--tint-bg:var(--slate-bg)&quot;&gt;External source&lt;/span&gt;
+      &lt;h4&gt;P. De Grauwe, Y. Ji (2012), “Mispricing of sovereign risk and macroeconomic stability in the Eurozone”, &lt;em&gt;Journal of Common Market Studies&lt;/em&gt; 50(6), 866-880&lt;/h4&gt;
+      &lt;p class=&quot;why&quot;&gt;Cited on slide 34 as the basis of the “multiple equilibria” interpretation. It argues that systematic mispricing of sovereign risk amplifies instability: bubbles in good years, excessive austerity in bad ones. Non-technical version on VoxEU.
+      &lt;a href=&quot;https://researchonline.lse.ac.uk/id/eprint/47134&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LSE Research Online&lt;/a&gt; · &lt;a href=&quot;https://cepr.org/voxeu/columns/mispricing-sovereign-risk-and-multiple-equilibria-eurozone&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VoxEU&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;span class=&quot;pill&quot; style=&quot;--tint:var(--slate);--tint-bg:var(--slate-bg)&quot;&gt;External source&lt;/span&gt;
+      &lt;h4&gt;G. A. Calvo (1988), “Servicing the public debt: the role of expectations”, &lt;em&gt;American Economic Review&lt;/em&gt; 78(4), 647-661&lt;/h4&gt;
+      &lt;p class=&quot;why&quot;&gt;The reference theoretical model for multiple equilibria (slide 34). It shows that public debt can generate multiple equilibria under perfect foresight when repudiation, whether outright or through inflation, is possible. The AEA credits it with being the first to introduce self-fulfilling distrust about sovereign debt repayment.
+      &lt;a href=&quot;https://ideas.repec.org/a/aea/aecrev/v78y1988i4p647-61.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RePEc/IDEAS&lt;/a&gt; · &lt;a href=&quot;https://www.aeaweb.org/about-aea/honors-awards/distinguished-fellows/guillermo-calvo&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AEA, Distinguished Fellow 2023&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;span class=&quot;pill&quot; style=&quot;--tint:var(--slate);--tint-bg:var(--slate-bg)&quot;&gt;External source&lt;/span&gt;
+      &lt;h4&gt;A. Carboni (2011), “The sovereign credit default swap market: price discovery, volumes and links with banks&#x27; risk premia”, Banca d&#x27;Italia, Temi di discussione (Working Papers) no. 821&lt;/h4&gt;
+      &lt;p class=&quot;why&quot;&gt;Source of the CDS definition on slide 22. Bibliographic details confirmed; the content of the paper has not been verified beyond the title.
+      &lt;a href=&quot;https://ideas.repec.org/p/bdi/wptemi/td_821_11.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RePEc/IDEAS&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;span class=&quot;pill&quot; style=&quot;--tint:var(--slate);--tint-bg:var(--slate-bg)&quot;&gt;External source&lt;/span&gt;
+      &lt;h4&gt;M. Arellano, S. Bond (1991), “Some tests of specification for panel data: Monte Carlo evidence and an application to employment equations”, &lt;em&gt;Review of Economic Studies&lt;/em&gt; 58(2), 277-297&lt;/h4&gt;
+      &lt;p class=&quot;why&quot;&gt;Origin of the GMM estimator used by Aizenman et al. (slide 28) for dynamic panels with individual effects and a lagged dependent variable. It also proposes a test for serial correlation in the residuals.
+      &lt;a href=&quot;https://ideas.repec.org/a/oup/restud/v58y1991i2p277-297..html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RePEc/IDEAS&lt;/a&gt; · &lt;a href=&quot;https://en.wikipedia.org/wiki/Arellano%E2%80%93Bond_estimator&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wikipedia (introduction)&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;span class=&quot;pill&quot; style=&quot;--tint:var(--slate);--tint-bg:var(--slate-bg)&quot;&gt;External source&lt;/span&gt;
+      &lt;h4&gt;P. De Grauwe, &lt;em&gt;Economics of Monetary Union&lt;/em&gt;, Oxford University Press&lt;/h4&gt;
+      &lt;p class=&quot;why&quot;&gt;The textbook from which “Figure 5.7” on slide 16 is taken. The editions found go up to at least 2020 (with updates on EU fiscal rules and ECB QE); check which edition the course adopts.
+      &lt;a href=&quot;https://www.coleurope.eu/fr/economics-monetary-union&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;College of Europe catalogue entry&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;span class=&quot;pill&quot; style=&quot;--tint:var(--slate);--tint-bg:var(--slate-bg)&quot;&gt;External source&lt;/span&gt;
+      &lt;h4&gt;Greece&#x27;s selective default (2012)&lt;/h4&gt;
+      &lt;p class=&quot;why&quot;&gt;Cited on slides 26 and 33. In February 2012 S&amp;amp;P downgraded Greece to “SD” after the retroactive insertion of collective action clauses and the launch of the bond exchange with private creditors (PSI): a 53.5% cut in nominal value, and about 74% in present-value terms.
+      &lt;a href=&quot;https://www.streetinsider.com/Credit+Ratings/Standard+%26+Poor%27s+Downgrades+Greece+to+%27Selective+Default%27/7217704.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;S&amp;amp;P press release (reported by StreetInsider)&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;span class=&quot;pill&quot; style=&quot;--tint:var(--slate);--tint-bg:var(--slate-bg)&quot;&gt;External source&lt;/span&gt;
+      &lt;h4&gt;Regulation (EU) No 236/2012 on short selling and credit default swaps&lt;/h4&gt;
+      &lt;p class=&quot;why&quot;&gt;An example of the “more regulation” of CDS mentioned on slide 22: among other things, it bans “naked” sovereign CDS.
+      &lt;a href=&quot;https://eur-lex.europa.eu/EN/legal-content/summary/short-selling-of-securities.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;EUR-Lex summary&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;span class=&quot;pill&quot; style=&quot;--tint:var(--slate);--tint-bg:var(--slate-bg)&quot;&gt;External source&lt;/span&gt;
+      &lt;h4&gt;AMECO, the macroeconomic database of the European Commission (DG ECFIN)&lt;/h4&gt;
+      &lt;p class=&quot;why&quot;&gt;Source of the debt data in Fig. 1 (slide 7). Annual series reported by Member States and checked by the Commission; an official, freely accessible source for various public finance aggregates. The other sources in the figures (Datastream, Eurostat, OECD) are databases of market data and official statistics.
+      &lt;a href=&quot;https://data.ecb.europa.eu/data/datasets/AME/data-information&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AMECO on the ECB Data Portal&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;p&gt;Summary written by Claude from the slides: always check against the material.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+
+&lt;script&gt;
+(function(){
+  // stepper
+  document.querySelectorAll(&#x27;[data-stepper]&#x27;).forEach(function(st){
+    var steps=[].slice.call(st.querySelectorAll(&#x27;.step&#x27;)),dots=st.querySelector(&#x27;.dots&#x27;),i=0;
+    steps.forEach(function(_,k){var d=document.createElement(&#x27;i&#x27;);d.title=&#x27;Step &#x27;+(k+1);d.onclick=function(){go(k)};dots.appendChild(d)});
+    function go(k){i=Math.max(0,Math.min(steps.length-1,k));steps.forEach(function(s,j){s.classList.toggle(&#x27;on&#x27;,j===i)});[].forEach.call(dots.children,function(d,j){d.classList.toggle(&#x27;on&#x27;,j===i)})}
+    st.querySelector(&#x27;[data-prev]&#x27;).onclick=function(){go(i-1)};
+    st.querySelector(&#x27;[data-next]&#x27;).onclick=function(){go(i+1)};
+    go(0);
+  });
+  // tabs
+  document.querySelectorAll(&#x27;.tabs&#x27;).forEach(function(t){
+    var bs=[].slice.call(t.querySelectorAll(&#x27;.tablist button&#x27;)),ps=[].slice.call(t.querySelectorAll(&#x27;.tabpanel&#x27;));
+    function sel(k){bs.forEach(function(b,j){b.setAttribute(&#x27;aria-selected&#x27;,j===k)});ps.forEach(function(p,j){p.hidden=j!==k});if(t.dataset.cb&amp;&amp;window[t.dataset.cb])window[t.dataset.cb](k)}
+    bs.forEach(function(b,k){b.setAttribute(&#x27;role&#x27;,&#x27;tab&#x27;);b.onclick=function(){sel(k)}});
+    sel(0);
+  });
+  // quiz
+  document.querySelectorAll(&#x27;.q[data-mc]&#x27;).forEach(function(q){
+    var ok=q.dataset.mc,fb=q.querySelector(&#x27;.fb&#x27;);
+    q.querySelectorAll(&#x27;.opts button&#x27;).forEach(function(b){b.onclick=function(){
+      if(b.dataset.k===ok){b.classList.add(&#x27;ok&#x27;);fb.classList.add(&#x27;on&#x27;)}else{b.classList.add(&#x27;ko&#x27;)}
+    }});
+  });
+  document.querySelectorAll(&#x27;.q .reveal&#x27;).forEach(function(b){b.onclick=function(){
+    var fb=b.parentNode.querySelector(&#x27;.fb&#x27;);var on=fb.classList.toggle(&#x27;on&#x27;);b.textContent=on?&#x27;Hide answer&#x27;:&#x27;Show answer&#x27;}});
+  // toc highlight
+  var links=[].slice.call(document.querySelectorAll(&#x27;nav.toc a&#x27;));
+  if(&#x27;IntersectionObserver&#x27; in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle(&#x27;on&#x27;,a.getAttribute(&#x27;href&#x27;)===&#x27;#&#x27;+e.target.id)})}})},{rootMargin:&#x27;-40% 0px -55% 0px&#x27;});
+    document.querySelectorAll(&#x27;section[id]&#x27;).forEach(function(s){io.observe(s)});
+  }
+})();
+(function(){
+  var NS=&#x27;http://www.w3.org/2000/svg&#x27;;
+  function $(id){return document.getElementById(id)}
+  function el(tag,a,p){var e=document.createElementNS(NS,tag);for(var k in a){if(k===&#x27;text&#x27;)e.textContent=a[k];else e.setAttribute(k,a[k])}if(p)p.appendChild(e);return e}
+  function clear(s){while(s.firstChild)s.removeChild(s.firstChild)}
+  function fmt(x,d){return x.toLocaleString(&#x27;en-GB&#x27;,{minimumFractionDigits:d||0,maximumFractionDigits:d||0})}
+
+  // generic line chart
+  function lineChart(svg,o){
+    clear(svg);var vb=svg.viewBox.baseVal,W=vb.width,H=vb.height,L=o.l||48,R=12,T=12,B=o.b||30;
+    var X=function(v){return L+(v-o.x0)/(o.x1-o.x0)*(W-L-R)},Y=function(v){return T+(o.y1-v)/(o.y1-o.y0)*(H-T-B)};
+    o.yt.forEach(function(v){el(&#x27;line&#x27;,{x1:L,x2:W-R,y1:Y(v),y2:Y(v),&#x27;class&#x27;:&#x27;s-rule&#x27;,&#x27;stroke-width&#x27;:v===0?1.4:.7},svg);el(&#x27;text&#x27;,{x:L-6,y:Y(v)+4,&#x27;text-anchor&#x27;:&#x27;end&#x27;,&#x27;font-size&#x27;:11,text:v,style:&#x27;fill:var(--muted)&#x27;},svg)});
+    o.xt.forEach(function(t){el(&#x27;text&#x27;,{x:X(t[0]),y:H-B+16,&#x27;text-anchor&#x27;:&#x27;middle&#x27;,&#x27;font-size&#x27;:11,text:t[1],style:&#x27;fill:var(--muted)&#x27;},svg)});
+    if(o.yl)el(&#x27;text&#x27;,{x:12,y:T+(H-T-B)/2,&#x27;font-size&#x27;:11,&#x27;text-anchor&#x27;:&#x27;middle&#x27;,transform:&#x27;rotate(-90 12 &#x27;+(T+(H-T-B)/2)+&#x27;)&#x27;,text:o.yl,style:&#x27;fill:var(--muted)&#x27;},svg);
+    o.s.forEach(function(s){el(&#x27;polyline&#x27;,{points:s.p.map(function(q){return X(q[0]).toFixed(1)+&#x27;,&#x27;+Y(q[1]).toFixed(1)}).join(&#x27; &#x27;),fill:&#x27;none&#x27;,style:&#x27;stroke:&#x27;+s.c,&#x27;stroke-width&#x27;:s.w||2.2,&#x27;stroke-linejoin&#x27;:&#x27;round&#x27;,&#x27;stroke-dasharray&#x27;:s.d||&#x27;&#x27;},svg)});
+    return {X:X,Y:Y,T:T,B:B,H:H};
+  }
+  function interp(keys,n){var out=[],k=0;for(var i=0;i&lt;n;i++){while(k&lt;keys.length-2&amp;&amp;keys[k+1][0]&lt;i)k++;var a=keys[k],b=keys[k+1],f=(i-a[0])/(b[0]-a[0]);out.push([i,a[1]+(b[1]-a[1])*Math.max(0,Math.min(1,f))])}return out}
+  function yrs(arr,y0){return arr.map(function(v,i){return[y0+i,v]})}
+
+  // Fig 1 debt
+  lineChart($(&#x27;fig1&#x27;),{x0:2000,x1:2011,y0:20,y1:110,yt:[20,40,60,80,100],xt:[[2000,&#x27;2000&#x27;],[2002,&#x27;2002&#x27;],[2004,&#x27;2004&#x27;],[2006,&#x27;2006&#x27;],[2008,&#x27;2008&#x27;],[2010,&#x27;2010&#x27;],[2011,&#x27;2011&#x27;]],yl:&#x27;% of GDP&#x27;,s:[
+    {p:yrs([55,55,57,60,61,62,61,62,71,84,94,103],2000),c:&#x27;var(--slate)&#x27;,d:&#x27;6 4&#x27;},
+    {p:yrs([69,68,68,69,70,70,68,66,70,79,85,89],2000),c:&#x27;var(--ochre)&#x27;},
+    {p:yrs([41,38,37,39,40,42,43,44,52,68,79,87],2000),c:&#x27;var(--brick)&#x27;}]});
+  // Fig 2 spreads (schematic)
+  var T2=[1999,2001,2007,2008,2008.5,2009,2009.5,2010,2010.5,2011,2011.5,2011.8];
+  function z(a){return a.map(function(v,i){return[T2[i],v]})}
+  lineChart($(&#x27;fig2&#x27;),{x0:1999,x1:2012,y0:0,y1:25,yt:[0,5,10,15,20,25],xt:[[1999,&#x27;1999&#x27;],[2001,&#x27;2001&#x27;],[2003,&#x27;2003&#x27;],[2005,&#x27;2005&#x27;],[2007,&#x27;2007&#x27;],[2009,&#x27;2009&#x27;],[2011,&#x27;2011&#x27;]],yl:&#x27;% points&#x27;,s:[
+    {p:z([0.2,0.1,0.1,0.15,0.2,0.3,0.25,0.3,0.4,0.5,0.6,1.2]),c:&#x27;var(--muted)&#x27;,w:1.4},
+    {p:z([0.2,0.2,0.2,0.6,0.8,1.2,0.6,0.6,1.2,1.2,1.8,2.6]),c:&#x27;var(--accent)&#x27;,w:1.6},
+    {p:z([0.3,0.3,0.2,0.5,0.9,1.4,0.8,0.8,1.6,1.6,2.5,3.8]),c:&#x27;var(--slate)&#x27;},
+    {p:z([0.1,0.1,0.1,0.5,1,2.5,2,1.5,3,5.5,9,6.5]),c:&#x27;var(--sage)&#x27;},
+    {p:z([0.2,0.2,0.2,0.5,0.6,1.5,1,1.5,3,4.5,8,10]),c:&#x27;var(--ochre)&#x27;},
+    {p:z([1.8,0.4,0.3,0.6,1,2.8,1.5,3.5,8,8.5,13,22]),c:&#x27;var(--brick)&#x27;}]});
+  // Fig 4/5 scatter (illustrative)
+  var seed=7;function rnd(){seed=(seed*16807)%2147483647;return(seed-1)/2147483646}
+  function scatter(svg,ez){
+    var o=lineChart(svg,{x0:0,x1:ez?160:200,y0:ez?-2:-4,y1:16,yt:ez?[0,4,8,12,16]:[-4,0,4,8,12,16],xt:ez?[[0,&#x27;0&#x27;],[40,&#x27;40&#x27;],[80,&#x27;80&#x27;],[120,&#x27;120&#x27;],[160,&#x27;160&#x27;]]:[[0,&#x27;0&#x27;],[50,&#x27;50&#x27;],[100,&#x27;100&#x27;],[150,&#x27;150&#x27;],[200,&#x27;200&#x27;]],yl:&#x27;spread %&#x27;,l:40,s:[]});
+    var i,x,y;
+    if(ez){for(i=0;i&lt;170;i++){x=25+rnd()*105;y=Math.max(-0.4,(rnd()-0.4)*1.2+(x&gt;90?rnd()*1.5:0)+(rnd()&lt;.08?rnd()*2.5:0));el(&#x27;circle&#x27;,{cx:o.X(x),cy:o.Y(y),r:2.2,&#x27;class&#x27;:&#x27;f-slate&#x27;,opacity:.7},svg)}
+      var out=[[150,14.3,&#x27;GR11Q3&#x27;],[145,12.3,&#x27;GR11Q2&#x27;],[110,9.2,&#x27;PT11Q3&#x27;],[150,8.6,&#x27;GR11Q1&#x27;],[100,7.9,&#x27;IR11Q2&#x27;],[140,8.3,&#x27;GR10Q4&#x27;],[92,6.9,&#x27;IR10Q3&#x27;],[95,6.3,&#x27;IR10Q4&#x27;],[135,5.6,&#x27;GR10Q2&#x27;],[100,6.6,&#x27;PT11Q2&#x27;],[88,4.3,&#x27;PT10Q4&#x27;]];
+      el(&#x27;path&#x27;,{d:&#x27;M&#x27;+o.X(55)+&#x27;,&#x27;+o.Y(5)+&#x27; L&#x27;+o.X(160)+&#x27;,&#x27;+o.Y(5)+&#x27; L&#x27;+o.X(160)+&#x27;,&#x27;+o.Y(16.5)+&#x27; Z&#x27;,fill:&#x27;none&#x27;,style:&#x27;stroke:var(--brick)&#x27;,&#x27;stroke-width&#x27;:1.2},svg);
+      out.forEach(function(p){el(&#x27;circle&#x27;,{cx:o.X(p[0]),cy:o.Y(p[1]),r:3,&#x27;class&#x27;:&#x27;f-brick&#x27;},svg);el(&#x27;text&#x27;,{x:o.X(p[0])-4,y:o.Y(p[1])-4,&#x27;font-size&#x27;:8,&#x27;text-anchor&#x27;:&#x27;end&#x27;,text:p[2]},svg)});
+      el(&#x27;text&#x27;,{x:o.X(80),y:o.Y(14),&#x27;font-size&#x27;:11,text:&#x27;Eurozone&#x27;,style:&#x27;font-weight:600&#x27;},svg);
+    }else{for(i=0;i&lt;200;i++){x=15+rnd()*95;y=(rnd()-0.4)*3.5+(rnd()&lt;.1?2+rnd()*3:0);el(&#x27;circle&#x27;,{cx:o.X(x),cy:o.Y(y),r:2.2,&#x27;class&#x27;:&#x27;f-slate&#x27;,opacity:.7},svg)}
+      for(i=0;i&lt;35;i++){x=95+rnd()*100;y=-3.5+(x-95)/100*1.8+(rnd()-.5)*.8;el(&#x27;circle&#x27;,{cx:o.X(x),cy:o.Y(y),r:2.2,&#x27;class&#x27;:&#x27;f-ochre&#x27;,opacity:.8},svg)}
+      el(&#x27;text&#x27;,{x:o.X(150),y:o.Y(-0.6),&#x27;font-size&#x27;:10,&#x27;text-anchor&#x27;:&#x27;middle&#x27;,text:&#x27;Japan&#x27;},svg);
+      el(&#x27;text&#x27;,{x:o.X(90),y:o.Y(14),&#x27;font-size&#x27;:11,text:&#x27;Stand-alone&#x27;,style:&#x27;font-weight:600&#x27;},svg);}
+    el(&#x27;text&#x27;,{x:o.X(ez?120:150),y:o.H-2,&#x27;font-size&#x27;:10,text:&#x27;debt/GDP %&#x27;,style:&#x27;fill:var(--muted)&#x27;},svg);
+  }
+  scatter($(&#x27;fig4&#x27;),true);scatter($(&#x27;fig5&#x27;),false);
+
+  // fiscal space calculator
+  function fs(){
+    var dA=+$(&#x27;dA&#x27;).value,tA=+$(&#x27;tA&#x27;).value,dB=+$(&#x27;dB&#x27;).value,tB=+$(&#x27;tB&#x27;).value;
+    $(&#x27;dAo&#x27;).value=dA+&#x27;%&#x27;;$(&#x27;tAo&#x27;).value=tA+&#x27;%&#x27;;$(&#x27;dBo&#x27;).value=dB+&#x27;%&#x27;;$(&#x27;tBo&#x27;).value=tB+&#x27;%&#x27;;
+    var a=dA/tA,b=dB/tB,s=$(&#x27;fsSvg&#x27;);clear(s);var mx=Math.max(8,Math.ceil(Math.max(a,b)));
+    [[a,&#x27;A&#x27;,dA,&#x27;var(--ochre)&#x27;,20],[b,&#x27;B&#x27;,dB,&#x27;var(--brick)&#x27;,70]].forEach(function(r){
+      var w=r[0]/mx*520;el(&#x27;rect&#x27;,{x:90,y:r[4],width:w,height:30,rx:5,style:&#x27;fill:&#x27;+r[3]},s);
+      el(&#x27;text&#x27;,{x:10,y:r[4]+20,&#x27;font-size&#x27;:13,text:&#x27;Country &#x27;+r[1],style:&#x27;font-weight:600&#x27;},s);
+      el(&#x27;text&#x27;,{x:96+w,y:r[4]+20,&#x27;font-size&#x27;:13,text:fmt(r[0],1)+&#x27; years of revenue&#x27;},s);
+    });
+    var m=(a&gt;b?&#x27;A&#x27;:&#x27;B&#x27;),lowDebt=(a&gt;b?dA&lt;dB:dB&lt;dA);
+    $(&#x27;fsMsg&#x27;).innerHTML=&#x27;Fiscal space: A = &#x27;+fmt(a,2)+&#x27;, B = &#x27;+fmt(b,2)+&#x27;. Country &lt;strong&gt;&#x27;+m+&#x27;&lt;/strong&gt; has less fiscal space&#x27;+(lowDebt&amp;&amp;Math.abs(a-b)&gt;.05?&#x27; &lt;em&gt;despite having lower debt/GDP&lt;/em&gt;: exactly the case on slide 10.&#x27;:&#x27;.&#x27;);
+  }
+  [&#x27;dA&#x27;,&#x27;tA&#x27;,&#x27;dB&#x27;,&#x27;tB&#x27;].forEach(function(i){$(i).oninput=fs});fs();
+
+  // quadratic chart
+  function f2(D){return -0.0523*D+0.0009*D*D}
+  function quad(){
+    var D=+$(&#x27;qD&#x27;).value;$(&#x27;qDo&#x27;).value=D+&#x27;%&#x27;;var s=$(&#x27;qSvg&#x27;),pe=[],ps=[],x;
+    for(x=30;x&lt;=160;x+=2){pe.push([x,f2(x)-f2(60)]);ps.push([x,0.0105*(x-60)])}
+    var o=lineChart(s,{x0:30,x1:160,y0:-2,y1:12,yt:[-2,0,2,4,6,8,10,12],xt:[[30,&#x27;30&#x27;],[60,&#x27;60&#x27;],[90,&#x27;90&#x27;],[120,&#x27;120&#x27;],[150,&#x27;150&#x27;]],yl:&#x27;Δ spread (% points)&#x27;,s:[{p:ps,c:&#x27;var(--slate)&#x27;,d:&#x27;6 4&#x27;},{p:pe,c:&#x27;var(--ochre)&#x27;,w:3}]});
+    var y=f2(D)-f2(60),me=-0.0523+0.0018*D;
+    el(&#x27;line&#x27;,{x1:o.X(D),x2:o.X(D),y1:o.T,y2:o.H-o.B,&#x27;class&#x27;:&#x27;s-rule&#x27;,style:&#x27;stroke:var(--muted)&#x27;,&#x27;stroke-dasharray&#x27;:&#x27;3 3&#x27;},s);
+    el(&#x27;circle&#x27;,{cx:o.X(D),cy:o.Y(y),r:6,&#x27;class&#x27;:&#x27;f-ochre&#x27;,stroke:&#x27;var(--card)&#x27;,&#x27;stroke-width&#x27;:2},s);
+    // tangent
+    var dx=15;el(&#x27;line&#x27;,{x1:o.X(D-dx),y1:o.Y(y-me*dx),x2:o.X(D+dx),y2:o.Y(y+me*dx),style:&#x27;stroke:var(--accent)&#x27;,&#x27;stroke-width&#x27;:1.5},s);
+    $(&#x27;qMsg&#x27;).innerHTML=&#x27;With debt/GDP at &#x27;+D+&#x27;%: spread &lt;b&gt;&#x27;+(y&gt;=0?&#x27;+&#x27;:&#x27;&#x27;)+fmt(y,2)+&#x27;&lt;/b&gt; points relative to 60%. One additional point of debt is worth &lt;b&gt;&#x27;+fmt(me*100,1)+&#x27; bp&lt;/b&gt; (stand-alone: 1.05 bp, not significant).&#x27;;
+  }
+  $(&#x27;qD&#x27;).oninput=quad;quad();
+
+  // time dummies
+  var TD={
+    sa:interp([[0,0],[1,.2],[3,.2],[4,0],[7,0],[8,-.5],[10,-.5],[12,-.7],[14,-.5],[17,-.2],[21,-.4],[24,-.3],[27,-.5],[29,-.7],[32,-.5],[34,-.6],[37,-.2],[39,-.3],[41,0],[42,0],[44,-.4],[45,-.5],[46,-.2]],47),
+    ez:interp([[0,0],[3,.2],[4,.1],[8,-.2],[10,-.1],[13,-.3],[15,0],[18,0],[19,.1],[20,-.1],[23,-.1],[26,0],[29,.1],[31,.2],[33,0],[35,-.2],[36,-.7],[38,-1.1],[39,-.9],[40,-.6],[41,0],[42,.3],[43,.6],[44,.5],[45,1],[46,1.6]],47),
+    co:interp([[0,0],[3,.15],[8,0],[12,-.25],[16,-.3],[20,-.35],[22,-.25],[30,-.25],[34,-.2],[35,.3],[36,.55],[37,.3],[38,.1],[39,.05],[40,.1],[41,.4],[43,.45],[45,.5],[46,1]],47),
+    pe:interp([[0,0],[2,-.1],[3,.3],[6,.2],[8,.2],[10,.35],[12,.4],[14,.5],[16,.55],[18,.5],[20,.55],[22,.5],[23,.3],[24,.55],[28,.65],[32,.9],[34,1],[36,1.6],[37,.9],[38,.35],[39,.5],[40,.85],[41,1.9],[42,2.7],[43,3.2],[44,3],[45,4.5],[46,5.1]],47)};
+  function ql(q){return (2000+Math.floor(q/4))+&#x27;Q&#x27;+(q%4+1)}
+  function td(){
+    var q=+$(&#x27;tdQ&#x27;).value;$(&#x27;tdQo&#x27;).value=ql(q);var s=$(&#x27;tdSvg&#x27;);
+    var o=lineChart(s,{x0:0,x1:46,y0:-2,y1:6,yt:[-2,-1,0,1,2,3,4,5,6],xt:[[0,&#x27;2000&#x27;],[8,&#x27;2002&#x27;],[16,&#x27;2004&#x27;],[24,&#x27;2006&#x27;],[32,&#x27;2008&#x27;],[40,&#x27;2010&#x27;],[46,&#x27;11Q3&#x27;]],yl:&#x27;time component (%)&#x27;,s:[
+      {p:TD.sa,c:&#x27;var(--slate)&#x27;},{p:TD.ez,c:&#x27;var(--ochre)&#x27;},{p:TD.co,c:&#x27;var(--sage)&#x27;},{p:TD.pe,c:&#x27;var(--brick)&#x27;,w:2.8}]});
+    el(&#x27;line&#x27;,{x1:o.X(q),x2:o.X(q),y1:o.T,y2:o.H-o.B,style:&#x27;stroke:var(--ink)&#x27;,&#x27;stroke-dasharray&#x27;:&#x27;3 3&#x27;},s);
+    var names=[[&#x27;sa&#x27;,&#x27;Stand-alone&#x27;,&#x27;--slate&#x27;],[&#x27;ez&#x27;,&#x27;Eurozone&#x27;,&#x27;--ochre&#x27;],[&#x27;co&#x27;,&#x27;Core EZ&#x27;,&#x27;--sage&#x27;],[&#x27;pe&#x27;,&#x27;EZ periphery&#x27;,&#x27;--brick&#x27;]];
+    $(&#x27;tdRead&#x27;).innerHTML=names.map(function(n){var v=TD[n[0]][q][1];el(&#x27;circle&#x27;,{cx:o.X(q),cy:o.Y(v),r:4.5,style:&#x27;fill:var(&#x27;+n[2]+&#x27;)&#x27;},s);return &#x27;&lt;div class=&quot;card&quot; style=&quot;padding:8px 12px;border-left:4px solid var(&#x27;+n[2]+&#x27;)&quot;&gt;&#x27;+n[1]+&#x27;&lt;br&gt;&lt;b style=&quot;font-family:var(--serif);font-size:1.2rem&quot;&gt;&#x27;+(v&gt;=0?&#x27;+&#x27;:&#x27;&#x27;)+fmt(v,1)+&#x27;&lt;/b&gt; points&lt;/div&gt;&#x27;}).join(&#x27;&#x27;);
+  }
+  $(&#x27;tdQ&#x27;).oninput=td;td();
+
+  // decomposition
+  var DC={ez:[[&#x27;Greece&#x27;,4.5,7.6,1.7,&#x27;The case where fundamentals matter most: ~60% from fundamentals, less than 40% from the time component.&#x27;],[&#x27;Ireland&#x27;,4.5,3.4,-1.4,&#x27;Roughly half time component and half fundamentals (negative residual).&#x27;],[&#x27;Portugal&#x27;,4.5,2.9,1.3,&#x27;Roughly half and half, like Ireland.&#x27;],[&#x27;Spain&#x27;,4.5,0.2,-1.8,&#x27;Almost everything is time component: fundamentals close to zero. The strongest case of loss of confidence (mispricing).&#x27;],[&#x27;Austria&#x27;,1.2,-0.3,-0.2,&#x27;Core: small increase, explained by the time component; improving fundamentals.&#x27;],[&#x27;Belgium&#x27;,1.2,0.1,0.1,&#x27;Core: almost entirely time component.&#x27;],[&#x27;Finland&#x27;,1.2,-0.6,-0.2,&#x27;Core: improving fundamentals, the time component pushes upwards.&#x27;],[&#x27;France&#x27;,1.2,-0.2,-0.2,&#x27;Core: almost entirely time component.&#x27;],[&#x27;Italy&#x27;,1.2,0.3,1.3,&#x27;Among the core countries in the paper: time component + a sizeable residual.&#x27;],[&#x27;Netherlands&#x27;,1.2,-0.6,-0.2,&#x27;Core: negative fundamentals, positive time component.&#x27;]],
+    sa:[[&#x27;Australia&#x27;,.2,.1,-.2],[&#x27;Canada&#x27;,.2,.3,0],[&#x27;Czech Rep.&#x27;,.2,.2,0],[&#x27;Denmark&#x27;,.2,.1,-.2],[&#x27;Hungary&#x27;,.2,.3,.9],[&#x27;Japan&#x27;,.2,.6,.3],[&#x27;Norway&#x27;,.2,-.2,0],[&#x27;Poland&#x27;,.2,.3,.9],[&#x27;Singapore&#x27;,.2,.5,0],[&#x27;Korea&#x27;,.2,.3,-.2],[&#x27;Sweden&#x27;,.2,-.1,0],[&#x27;Switzerland&#x27;,.2,.2,-.5],[&#x27;UK&#x27;,.2,.5,-.8],[&#x27;USA&#x27;,.2,.5,-.2]]};
+  var dcMode=&#x27;ez&#x27;;
+  function dc(){
+    var s=$(&#x27;dcSvg&#x27;);clear(s);var d=DC[dcMode],L=40,W=680,R=10,T=12,B=70,H=320,y0=-3,y1=14;
+    var Y=function(v){return T+(y1-v)/(y1-y0)*(H-T-B)},bw=(W-L-R)/d.length;
+    [-2,0,2,6,10,14].forEach(function(v){el(&#x27;line&#x27;,{x1:L,x2:W-R,y1:Y(v),y2:Y(v),&#x27;class&#x27;:&#x27;s-rule&#x27;,&#x27;stroke-width&#x27;:v===0?1.5:.7},s);el(&#x27;text&#x27;,{x:L-6,y:Y(v)+4,&#x27;text-anchor&#x27;:&#x27;end&#x27;,&#x27;font-size&#x27;:11,text:v,style:&#x27;fill:var(--muted)&#x27;},s)});
+    d.forEach(function(r,i){
+      var x=L+i*bw+bw*.2,w=bw*.6,pos=0,neg=0,g=el(&#x27;g&#x27;,{style:&#x27;cursor:pointer&#x27;,tabindex:0},s);
+      [[r[1],&#x27;var(--slate)&#x27;],[r[2],&#x27;var(--brick)&#x27;],[r[3],&#x27;var(--rule)&#x27;]].forEach(function(c){var v=c[0];if(v&gt;=0){el(&#x27;rect&#x27;,{x:x,y:Y(pos+v),width:w,height:Y(pos)-Y(pos+v),style:&#x27;fill:&#x27;+c[1]},g);pos+=v}else{el(&#x27;rect&#x27;,{x:x,y:Y(neg),width:w,height:Y(neg+v)-Y(neg),style:&#x27;fill:&#x27;+c[1]},g);neg+=v}});
+      el(&#x27;text&#x27;,{x:x+w/2,y:H-B+14,&#x27;font-size&#x27;:11,&#x27;text-anchor&#x27;:&#x27;end&#x27;,transform:&#x27;rotate(-45 &#x27;+(x+w/2)+&#x27; &#x27;+(H-B+14)+&#x27;)&#x27;,text:r[0]},g);
+      g.onclick=g.onkeydown=function(){var tot=r[1]+r[2]+r[3];$(&#x27;dcMsg&#x27;).innerHTML=&#x27;&lt;strong&gt;&#x27;+r[0]+&#x27;&lt;/strong&gt;: total change ≈ &#x27;+fmt(tot,1)+&#x27; points; time component &#x27;+fmt(r[1],1)+&#x27;, fundamentals &#x27;+fmt(r[2],1)+&#x27;, residual &#x27;+fmt(r[3],1)+&#x27;. &#x27;+(r[4]||&#x27;Stand-alone country: minimal changes, negligible time component.&#x27;)};
+    });
+  }
+  function setDc(m){dcMode=m;$(&#x27;dcEZ&#x27;).setAttribute(&#x27;aria-pressed&#x27;,m===&#x27;ez&#x27;);$(&#x27;dcSA&#x27;).setAttribute(&#x27;aria-pressed&#x27;,m===&#x27;sa&#x27;);$(&#x27;dcMsg&#x27;).textContent=&#x27;Click a bar for a comment.&#x27;;dc()}
+  $(&#x27;dcEZ&#x27;).onclick=function(){setDc(&#x27;ez&#x27;)};$(&#x27;dcSA&#x27;).onclick=function(){setDc(&#x27;sa&#x27;)};dc();
+
+  // CDS calc
+  function cds(){var bp=+$(&#x27;cdsBp&#x27;).value,n=+$(&#x27;cdsN&#x27;).value;$(&#x27;cdsBpo&#x27;).value=bp;$(&#x27;cdsNo&#x27;).value=n;
+    var p=bp/10000*n*1e6;$(&#x27;cdsMsg&#x27;).innerHTML=bp+&#x27; bp = &lt;b&gt;&#x27;+fmt(bp/100,2)+&#x27;%&lt;/b&gt; per year → premium of &lt;b&gt;$&#x27;+fmt(p)+&#x27;&lt;/b&gt; per year to insure &#x27;+fmt(n)+&#x27; million.&#x27;}
+  $(&#x27;cdsBp&#x27;).oninput=$(&#x27;cdsN&#x27;).oninput=cds;cds();
+
+  // AHJ table 1
+  var rows=[&#x27;Spain&#x27;,&#x27;Greece&#x27;,&#x27;Ireland&#x27;,&#x27;Italy&#x27;,&#x27;Portugal&#x27;,&#x27;Middle income&#x27;,&#x27;High income (non-OECD)&#x27;,&#x27;OECD (non-euro)&#x27;,&#x27;Euro (excl. SWEAP)&#x27;];
+  var C=[[16.7,100.7,113.5,347.7,187.3],[15,232.1,283.4,1026.5,514],[8.6,181,158,619.2,319.4],[13.4,156.9,109.2,238,168],[10.4,96.3,91.7,497.3,228.4],[124.2,829.9,295.2,233.2,452.8],[32.1,330.7,164,172.3,222.3],[34.8,260.3,120.3,117.8,166.2],[11,95.1,54.2,101.3,83.5]];
+  var Dt=[[1.1,1.1,1.5,1.7,1.4],[3.2,3.5,4,4.5,4],[.9,1.5,2.2,3.2,2.3],[2.5,2.5,2.8,2.8,2.7],[1.9,1.9,2.2,2.4,2.2],[2.7,2.2,2.3,2.3,2.3],[1.2,1,1.7,1.4,1.4],[1.7,1.7,1.9,1.9,1.8],[1.4,1.4,1.6,1.7,1.6]];
+  function tbl(M,dec,max,c){var h=&#x27;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;05-07&lt;/th&gt;&lt;th&gt;08&lt;/th&gt;&lt;th&gt;09&lt;/th&gt;&lt;th&gt;10&lt;/th&gt;&lt;th&gt;08-10&lt;/th&gt;&lt;th style=&quot;width:30%&quot;&gt;2010&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&#x27;;
+    M.forEach(function(r,i){h+=&#x27;&lt;tr&#x27;+(i&lt;5?&#x27; class=&quot;hl&quot;&#x27;:&#x27;&#x27;)+&#x27;&gt;&lt;td&gt;&#x27;+rows[i]+&#x27;&lt;/td&gt;&#x27;+r.map(function(v){return&#x27;&lt;td&gt;&#x27;+fmt(v,dec)+&#x27;&lt;/td&gt;&#x27;}).join(&#x27;&#x27;)+&#x27;&lt;td&gt;&lt;span style=&quot;display:inline-block;height:10px;border-radius:3px;background:var(&#x27;+c+&#x27;);width:&#x27;+Math.min(100,r[3]/max*100)+&#x27;%&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&#x27;});
+    return h+&#x27;&lt;/tbody&gt;&lt;/table&gt;&#x27;}
+  $(&#x27;ahjT1&#x27;).innerHTML=tbl(C,1,1030,&#x27;--slate&#x27;);$(&#x27;ahjT2&#x27;).innerHTML=tbl(Dt,1,4.5,&#x27;--ochre&#x27;);
+
+  // AHJ table 2
+  var T2c=[{n:&#x27;(1) FE · debt/tax&#x27;,v:[295.6,35.4,92.9,-209.5,-15,-29.1,-159.3,73.4,261.9],s:[&#x27;***&#x27;,&#x27;&#x27;,&#x27;***&#x27;,&#x27;***&#x27;,&#x27;&#x27;,&#x27;&#x27;,&#x27;*&#x27;,&#x27;**&#x27;,&#x27;***&#x27;]},
+    {n:&#x27;(2) cluster · debt/tax&#x27;,v:[334.1,-4.7,58.8,-216,80.5,56.2,-194.4,136.1,324.4],s:[&#x27;***&#x27;,&#x27;&#x27;,&#x27;***&#x27;,&#x27;**&#x27;,&#x27;***&#x27;,&#x27;**&#x27;,&#x27;**&#x27;,&#x27;***&#x27;,&#x27;***&#x27;]},
+    {n:&#x27;(3) FE · balance/tax&#x27;,v:[328,-36.8,2.5,-225.3,14.6,5.2,-249.5,18.7,174.4],s:[&#x27;***&#x27;,&#x27;&#x27;,&#x27;&#x27;,&#x27;***&#x27;,&#x27;&#x27;,&#x27;&#x27;,&#x27;**&#x27;,&#x27;&#x27;,&#x27;&#x27;]},
+    {n:&#x27;(4) cluster · balance/tax&#x27;,v:[349.3,-35.5,42.5,-238.6,84.2,48,-235.6,113.8,287.7],s:[&#x27;***&#x27;,&#x27;**&#x27;,&#x27;***&#x27;,&#x27;***&#x27;,&#x27;***&#x27;,&#x27;*&#x27;,&#x27;***&#x27;,&#x27;***&#x27;,&#x27;***&#x27;]}];
+  var cb=$(&#x27;t2cols&#x27;);
+  function t2(k){[].forEach.call(cb.children,function(b,j){b.setAttribute(&#x27;aria-pressed&#x27;,j===k)});var c=T2c[k],h=&#x27;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Year&lt;/th&gt;&lt;th&gt;t (all)&lt;/th&gt;&lt;th&gt;× Euro&lt;/th&gt;&lt;th&gt;× SWEAP&lt;/th&gt;&lt;th&gt;SWEAP total&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&#x27;;
+    for(var y=0;y&lt;3;y++){var a=c.v[y],e=c.v[3+y],sw=c.v[6+y];h+=&#x27;&lt;tr&#x27;+(y===2?&#x27; class=&quot;hl&quot;&#x27;:&#x27;&#x27;)+&#x27;&gt;&lt;td&gt;&#x27;+(2008+y)+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+fmt(a,1)+c.s[y]+&#x27;&lt;/td&gt;&lt;td&gt;&#x27;+fmt(e,1)+c.s[3+y]+&#x27;&lt;/td&gt;&lt;td class=&quot;&#x27;+(c.s[6+y]?&#x27;sig&#x27;:&#x27;&#x27;)+&#x27;&quot;&gt;&#x27;+fmt(sw,1)+c.s[6+y]+&#x27;&lt;/td&gt;&lt;td&gt;&lt;b&gt;&#x27;+fmt(a+e+sw,1)+&#x27;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&#x27;}
+    $(&#x27;t2tbl&#x27;).innerHTML=h+&#x27;&lt;/tbody&gt;&lt;/table&gt;&#x27;;
+    var x10=c.v[5]+c.v[8];$(&#x27;t2msg&#x27;).innerHTML=&#x27;In 2010 a SWEAP country pays &lt;b&gt;&#x27;+(x10&gt;=0?&#x27;+&#x27;:&#x27;&#x27;)+fmt(x10)+&#x27; bp&lt;/b&gt; relative to a non-euro country with the same fundamentals (× Euro + × SWEAP).&#x27;}
+  T2c.forEach(function(c,k){var b=document.createElement(&#x27;button&#x27;);b.className=&#x27;btn&#x27;;b.textContent=c.n;b.onclick=function(){t2(k)};cb.appendChild(b)});t2(0);
+
+  // prediction errors
+  var PE=[[&#x27;Spain&#x27;,[3.9,3.6,6.5,4.7],[3.5,4,4.1,3.8]],[&#x27;Greece&#x27;,[2.7,2.2,3.3,2.7],[2.3,1.8,1.7,1.9]],[&#x27;Ireland&#x27;,[4.2,3.8,7.9,5.3],[.8,1.7,2.6,1.7]],[&#x27;Italy&#x27;,[2.6,1.6,3.6,2.6],[2.3,1.9,3.3,2.5]],[&#x27;Portugal&#x27;,[2.8,2.9,6.9,4.2],[3.2,4,4.5,3.9]],[&#x27;Middle income&#x27;,[3.9,1,1.8,2.3],[2.7,1.2,1.2,1.7]],[&#x27;Non-euro OECD&#x27;,[31.6,1.6,5.4,12.9],[2.6,1.2,1.4,1.7]],[&#x27;Euro excl. SWEAP&#x27;,[5,5.8,13.7,8.2],[2.1,4.2,3.2,3.2]]];
+  var PEn=[&#x27;2010 out-of-sample (6.5) is the peak: an error that grows with the debt crisis.&#x27;,&#x27;Moderate errors: Greek CDS, although extremely high, were partly predicted by fundamentals (severely deteriorated fiscal space).&#x27;,&#x27;The extreme SWEAP case: 7.9 in 2010 out-of-sample.&#x27;,&#x27;Lower errors than the other SWEAP countries, but rising in 2010.&#x27;,&#x27;6.9 in 2010: the rising profile typical of the SWEAP countries.&#x27;,&#x27;Shock in 2008, then errors close to 1: the market moves back in line with fundamentals.&#x27;,&#x27;31.6 in 2008: the global financial shock hits the non-euro OECD; then it subsides (1.6 in 2009).&#x27;,&#x27;The non-peripheral euro area also peaks in 2010 (13.7): a sign of contagion.&#x27;];
+  var pb=$(&#x27;peBtns&#x27;);
+  function pe(k){[].forEach.call(pb.children,function(b,j){b.setAttribute(&#x27;aria-pressed&#x27;,j===k)});var s=$(&#x27;peSvg&#x27;);clear(s);var d=PE[k],mx=Math.max(8,Math.ceil(Math.max.apply(null,d[1].concat(d[2]))/4)*4);
+    var L=40,W=680,T=14,B=30,H=280,Y=function(v){return T+(mx-v)/mx*(H-T-B)},gw=(W-L-10)/4,per=[&#x27;2008&#x27;,&#x27;2009&#x27;,&#x27;2010&#x27;,&#x27;2008-10&#x27;];
+    for(var t=0;t&lt;=mx;t+=mx/4){el(&#x27;line&#x27;,{x1:L,x2:W-10,y1:Y(t),y2:Y(t),&#x27;class&#x27;:&#x27;s-rule&#x27;,&#x27;stroke-width&#x27;:.7},s);el(&#x27;text&#x27;,{x:L-6,y:Y(t)+4,&#x27;text-anchor&#x27;:&#x27;end&#x27;,&#x27;font-size&#x27;:11,text:fmt(t,mx/4%1?1:0),style:&#x27;fill:var(--muted)&#x27;},s)}
+    el(&#x27;line&#x27;,{x1:L,x2:W-10,y1:Y(1),y2:Y(1),style:&#x27;stroke:var(--accent)&#x27;,&#x27;stroke-dasharray&#x27;:&#x27;5 3&#x27;,&#x27;stroke-width&#x27;:1.4},s);
+    el(&#x27;text&#x27;,{x:W-12,y:Y(1)-4,&#x27;text-anchor&#x27;:&#x27;end&#x27;,&#x27;font-size&#x27;:10,text:&#x27;= 1 exact prediction&#x27;,style:&#x27;fill:var(--accent)&#x27;},s);
+    per.forEach(function(p,i){var x=L+i*gw+gw*.18,w=gw*.3;
+      [[d[1][i],&#x27;var(--slate)&#x27;,0],[d[2][i],&#x27;var(--ochre)&#x27;,w+4]].forEach(function(b){el(&#x27;rect&#x27;,{x:x+b[2],y:Y(b[0]),width:w,height:Y(0)-Y(b[0]),rx:3,style:&#x27;fill:&#x27;+b[1]},s);el(&#x27;text&#x27;,{x:x+b[2]+w/2,y:Y(b[0])-4,&#x27;text-anchor&#x27;:&#x27;middle&#x27;,&#x27;font-size&#x27;:11,text:fmt(b[0],1)},s)});
+      el(&#x27;text&#x27;,{x:x+w+2,y:H-10,&#x27;text-anchor&#x27;:&#x27;middle&#x27;,&#x27;font-size&#x27;:12,text:p},s)});
+    $(&#x27;peMsg&#x27;).innerHTML=&#x27;&lt;strong&gt;&#x27;+d[0]+&#x27;&lt;/strong&gt;: &#x27;+PEn[k]}
+  PE.forEach(function(d,k){var b=document.createElement(&#x27;button&#x27;);b.className=&#x27;btn&#x27;;b.textContent=d[0];b.onclick=function(){pe(k)};pb.appendChild(b)});pe(0);
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe></body></html>

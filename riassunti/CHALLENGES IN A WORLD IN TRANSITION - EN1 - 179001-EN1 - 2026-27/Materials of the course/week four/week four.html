@@ -1,0 +1,851 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Riassunto · week four.pdf</title><link rel="icon" href="data:,">
+<style>html,body{margin:0;height:100%}body{display:flex;flex-direction:column}iframe{flex:1;border:0;width:100%}</style>
+</head><body><nav style="font:14px/1.4 system-ui,sans-serif;padding:6px 12px;text-align:right"><a href="/riassunti/CHALLENGES%20IN%20A%20WORLD%20IN%20TRANSITION%20-%20EN1%20-%20179001-EN1%20-%202026-27/Materials%20of%20the%20course/week%20four/week%20four.en.html" style="color:inherit;margin-right:.8em;">English</a><a href="/riassunti/CHALLENGES%20IN%20A%20WORLD%20IN%20TRANSITION%20-%20EN1%20-%20179001-EN1%20-%202026-27/Materials%20of%20the%20course/week%20four/week%20four.html" style="color:inherit;margin-right:.8em;font-weight:700">Italiano</a></nav><iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" title="Riassunto · week four.pdf"
+srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;it&quot;&gt;
+&lt;head&gt;&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27;; style-src &#x27;unsafe-inline&#x27;; font-src &#x27;self&#x27;; img-src data:; form-action &#x27;none&#x27;; base-uri &#x27;none&#x27;&quot;&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Week four · Challenges in a world in transition — canvas di studio&lt;/title&gt;
+&lt;style&gt;
+@font-face{font-family:&quot;Newsreader&quot;;src:url(&quot;/static/fonts/newsreader-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:&quot;IBM Plex Sans&quot;;src:url(&quot;/static/fonts/ibm-plex-sans-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:100 700;font-style:normal;font-display:swap}
+:root{
+  --paper:oklch(97% 0.012 80);--ink:oklch(21% 0.014 60);--rule:oklch(86% 0.014 75);
+  --muted:oklch(45% 0.014 60);--card:oklch(99% 0.008 80);
+  --acc:oklch(50% 0.15 35);--acc-bg:oklch(93% 0.035 35);
+  --sal:oklch(48% 0.09 150);--sal-bg:oklch(94% 0.03 150);
+  --och:oklch(55% 0.11 85);--och-bg:oklch(94% 0.045 85);
+  --sla:oklch(47% 0.08 250);--sla-bg:oklch(94% 0.025 250);
+  --bri:oklch(48% 0.13 25);--bri-bg:oklch(94% 0.03 25);
+  --serif:&quot;Newsreader&quot;,Georgia,&quot;Times New Roman&quot;,serif;
+  --sans:&quot;IBM Plex Sans&quot;,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(19% 0.012 60);--ink:oklch(92% 0.012 80);--rule:oklch(34% 0.014 70);
+  --muted:oklch(72% 0.014 70);--card:oklch(23% 0.012 60);
+  --acc:oklch(70% 0.14 35);--acc-bg:oklch(29% 0.05 35);
+  --sal:oklch(74% 0.09 150);--sal-bg:oklch(27% 0.035 150);
+  --och:oklch(78% 0.11 85);--och-bg:oklch(28% 0.04 85);
+  --sla:oklch(74% 0.08 250);--sla-bg:oklch(27% 0.035 250);
+  --bri:oklch(72% 0.12 25);--bri-bg:oklch(28% 0.045 25);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.3rem,6vw,4rem);font-weight:300;letter-spacing:-.01em}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:400}
+h3{font-size:1.4rem;margin-top:1.6em}
+h4{font-size:1.12rem;margin-top:1.2em}
+p{margin:.6em 0}
+a{color:var(--acc)}
+.kicker{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--c,var(--acc))}
+.lead{font-family:var(--serif);font-size:1.3rem;line-height:1.45;font-weight:350}
+.muted{color:var(--muted)}
+.small{font-size:.88rem}
+header.hero{border-bottom:1px solid var(--rule);padding:56px 0 30px}
+nav.toc{position:sticky;top:0;z-index:5;background:color-mix(in oklch,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav.toc .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:8px;padding-bottom:8px}
+nav.toc a{white-space:nowrap;text-decoration:none;color:var(--ink);font-size:.85rem;padding:4px 10px;border-radius:99px;border:1px solid var(--rule)}
+nav.toc a:hover{border-color:var(--acc);color:var(--acc)}
+section.part{padding:56px 0 40px;border-bottom:1px solid var(--rule)}
+section.part &gt; .wrap &gt; h2{border-left:5px solid var(--c,var(--acc));padding-left:14px}
+.sal{--c:var(--sal);--cb:var(--sal-bg)}.och{--c:var(--och);--cb:var(--och-bg)}
+.sla{--c:var(--sla);--cb:var(--sla-bg)}.bri{--c:var(--bri);--cb:var(--bri-bg)}
+.acc{--c:var(--acc);--cb:var(--acc-bg)}
+.box{background:var(--cb,var(--acc-bg));border-radius:10px;padding:16px 20px;margin:18px 0}
+.slide{border:1px solid var(--rule);border-left:4px solid var(--c,var(--acc));background:var(--card);border-radius:8px;padding:14px 18px;margin:18px 0}
+.slide::before{content:&quot;Dalle slide&quot;;display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.slide[data-p]::before{content:&quot;Dalle slide · &quot; attr(data-p)}
+.ext{border:1px dashed var(--rule);border-radius:8px;padding:12px 16px;margin:16px 0;font-size:.94rem}
+.ext::before{content:&quot;Fonte esterna&quot;;display:inline-block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:1px 7px;border-radius:4px;margin-bottom:6px}
+.note{font-size:.9rem;color:var(--muted);border-top:1px solid var(--rule);padding-top:8px;margin-top:16px}
+dfn{font-style:normal;font-weight:600;border-bottom:2px solid var(--c,var(--acc))}
+.term{font-style:italic}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;border-top:4px solid var(--c,var(--acc))}
+.card h4{margin-top:0}
+svg{max-width:100%;height:auto;display:block}
+svg text{font-family:var(--sans);fill:var(--ink)}
+figure{margin:22px 0}
+figcaption{font-size:.85rem;color:var(--muted);margin-top:6px}
+/* tabs */
+.tabs .tabbar{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--rule)}
+.tabs .tabbar button{font:inherit;font-size:.92rem;background:none;border:1px solid transparent;border-bottom:none;padding:7px 13px;border-radius:8px 8px 0 0;cursor:pointer;color:var(--muted)}
+.tabs .tabbar button[aria-selected=true]{background:var(--cb,var(--acc-bg));color:var(--ink);border-color:var(--rule);font-weight:600}
+.tabs .panel{display:none;padding:14px 4px}.tabs .panel.on{display:block}
+/* details */
+details{border:1px solid var(--rule);border-radius:8px;margin:10px 0;background:var(--card)}
+details summary{cursor:pointer;padding:10px 14px;font-weight:600;list-style:none}
+details summary::before{content:&quot;+&quot;;display:inline-block;width:1.2em;color:var(--c,var(--acc))}
+details[open] summary::before{content:&quot;−&quot;}
+details &gt; div{padding:0 16px 12px}
+/* stepper */
+.steps{border:1px solid var(--rule);border-radius:10px;background:var(--card);padding:16px 18px}
+.steps .step{display:none}.steps .step.on{display:block}
+.steps .ctrl{display:flex;align-items:center;gap:10px;margin-top:12px}
+button.b{font:inherit;font-size:.9rem;background:var(--cb,var(--acc-bg));color:var(--ink);border:1px solid var(--rule);border-radius:99px;padding:5px 14px;cursor:pointer}
+button.b:hover{border-color:var(--c,var(--acc))}
+.dots{display:flex;gap:5px}.dots i{width:8px;height:8px;border-radius:50%;background:var(--rule)}.dots i.on{background:var(--c,var(--acc))}
+/* quiz */
+.quiz{margin-top:30px;background:var(--cb,var(--acc-bg));border-radius:12px;padding:18px 20px}
+.quiz h3{margin-top:0}
+.q{border-top:1px solid var(--rule);padding:10px 0}
+.q p{margin:.2em 0}
+.q .ans{display:none;margin-top:8px;padding:10px 14px;background:var(--card);border-radius:8px;font-size:.95rem}
+.q.open .ans{display:block}
+/* sliders */
+input[type=range]{width:100%;accent-color:var(--c,var(--acc))}
+label.rl{display:block;font-size:.9rem;margin-top:8px}
+.out{font-variant-numeric:tabular-nums;font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{border-bottom:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top}
+th{font-family:var(--serif);font-weight:600;font-size:1rem}
+.matrix button{font:inherit;font-size:.8rem;width:100%;min-height:38px;border:1px solid var(--rule);border-radius:6px;background:var(--card);cursor:pointer;color:var(--ink)}
+.matrix button:hover,.matrix button.on{background:var(--acc-bg);border-color:var(--acc)}
+.matrix td,.matrix th{padding:4px;text-align:center}
+.matrix th.rh{text-align:left;font-size:.88rem}
+.scroll{overflow-x:auto}
+.map a text{cursor:pointer}
+.map a:hover rect{stroke-width:3}
+.map a:focus rect{stroke-width:3}
+.pill{display:inline-block;font-size:.75rem;padding:1px 8px;border-radius:99px;background:var(--cb,var(--acc-bg));color:var(--ink);border:1px solid var(--rule)}
+.refs article{border-top:1px solid var(--rule);padding:14px 0}
+.refs h4{margin:0 0 4px}
+footer{padding:36px 0 60px;font-size:.92rem;color:var(--muted)}
+[data-info]{cursor:pointer}
+g[data-info]:focus{outline:2px solid var(--acc);outline-offset:2px}
+g.on circle,g.on path{stroke:var(--ink);stroke-width:3}
+.wheel path,.wheel circle.seg{cursor:pointer;transition:opacity .2s}
+.wheel path:hover,.wheel circle.seg:hover{opacity:.8}
+@media (max-width:600px){body{font-size:16px}.wrap{padding:0 16px}section.part{padding:40px 0 30px}}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;header class=&quot;hero&quot;&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;kicker&quot;&gt;Università degli Studi di Bergamo · Materials of the course · Week four&lt;/div&gt;
+  &lt;h1&gt;Challenges in a world in transition&lt;/h1&gt;
+  &lt;p class=&quot;lead&quot;&gt;Biodiversità, intelligenza artificiale, spazi digitali e prospettive indigene: quattro casi di studio per una sola domanda politica. &lt;em&gt;Come possono le società ridisegnare potere, istituzioni e sicurezza perché la sostenibilità diventi una capacità condivisa invece di una nuova fonte di disuguaglianza?&lt;/em&gt;&lt;/p&gt;
+  &lt;p class=&quot;muted small&quot;&gt;Il file della lezione (15 pagine) contiene i &lt;span class=&quot;term&quot;&gt;case studies&lt;/span&gt; 9–12, una &lt;span class=&quot;term&quot;&gt;cross-case synthesis&lt;/span&gt;, il &lt;span class=&quot;term&quot;&gt;cooperation problem&lt;/span&gt;, la domanda conclusiva e le indicazioni per il &lt;span class=&quot;term&quot;&gt;group work&lt;/span&gt;. La numerazione delle slide (14–21) e dei casi (dal 9) fa pensare che i casi 1–8 siano in lezioni precedenti. Non ho potuto consultare gli altri file della cartella &lt;code&gt;corso/&lt;/code&gt; (non sono riuscito ad aprirne nessuno con gli strumenti a disposizione): i collegamenti con le altre lezioni qui sotto sono quindi solo ipotesi, segnalate come tali.&lt;/p&gt;
+
+  &lt;figure&gt;
+  &lt;svg class=&quot;map&quot; viewBox=&quot;0 0 900 540&quot; role=&quot;img&quot; aria-labelledby=&quot;mapt&quot;&gt;
+    &lt;title id=&quot;mapt&quot;&gt;Mappa concettuale della lezione: clicca un nodo per andare alla sezione&lt;/title&gt;
+    &lt;defs&gt;
+      &lt;marker id=&quot;ar&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto-start-reverse&quot;&gt;&lt;path d=&quot;M0,0 L10,5 L0,10 z&quot; fill=&quot;var(--muted)&quot;/&gt;&lt;/marker&gt;
+    &lt;/defs&gt;
+    &lt;g stroke=&quot;var(--muted)&quot; stroke-width=&quot;1.4&quot; fill=&quot;none&quot;&gt;
+      &lt;path d=&quot;M115,135 L390,232&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+      &lt;path d=&quot;M340,135 L420,232&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+      &lt;path d=&quot;M560,135 L480,232&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+      &lt;path d=&quot;M785,135 L510,232&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+      &lt;path d=&quot;M400,298 L250,380&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+      &lt;path d=&quot;M330,415 L405,415&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+      &lt;path d=&quot;M595,415 L670,415&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+      &lt;path d=&quot;M115,72 C115,8 785,8 785,72&quot; stroke-dasharray=&quot;5 5&quot;/&gt;
+      &lt;path d=&quot;M340,72 C340,38 560,38 560,72&quot; stroke-dasharray=&quot;5 5&quot;/&gt;
+      &lt;path d=&quot;M115,72 C115,40 340,40 340,72&quot; stroke-dasharray=&quot;2 4&quot;/&gt;
+    &lt;/g&gt;
+    &lt;g font-size=&quot;12&quot; fill=&quot;var(--muted)&quot;&gt;
+      &lt;text x=&quot;450&quot; y=&quot;22&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--muted)&quot;&gt;conoscenza locale, terra, diritti&lt;/text&gt;
+      &lt;text x=&quot;450&quot; y=&quot;52&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--muted)&quot;&gt;dati, infrastrutture, standard&lt;/text&gt;
+      &lt;text x=&quot;228&quot; y=&quot;52&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--muted)&quot;&gt;monitoraggio&lt;/text&gt;
+      &lt;text x=&quot;245&quot; y=&quot;320&quot; style=&quot;fill:var(--muted)&quot;&gt;diagnosi → azione&lt;/text&gt;
+    &lt;/g&gt;
+    &lt;a href=&quot;#bio&quot;&gt;&lt;rect x=&quot;20&quot; y=&quot;72&quot; width=&quot;190&quot; height=&quot;64&quot; rx=&quot;10&quot; fill=&quot;var(--sal-bg)&quot; stroke=&quot;var(--sal)&quot; stroke-width=&quot;1.6&quot;/&gt;
+      &lt;text x=&quot;115&quot; y=&quot;97&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot; style=&quot;fill:var(--sal)&quot;&gt;CASE STUDY 9&lt;/text&gt;
+      &lt;text x=&quot;115&quot; y=&quot;118&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot;&gt;Biodiversità e potere&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#ai&quot;&gt;&lt;rect x=&quot;245&quot; y=&quot;72&quot; width=&quot;190&quot; height=&quot;64&quot; rx=&quot;10&quot; fill=&quot;var(--sla-bg)&quot; stroke=&quot;var(--sla)&quot; stroke-width=&quot;1.6&quot;/&gt;
+      &lt;text x=&quot;340&quot; y=&quot;97&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot; style=&quot;fill:var(--sla)&quot;&gt;CASE STUDY 10&lt;/text&gt;
+      &lt;text x=&quot;340&quot; y=&quot;118&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot;&gt;AI e governance gap&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#digital&quot;&gt;&lt;rect x=&quot;465&quot; y=&quot;72&quot; width=&quot;190&quot; height=&quot;64&quot; rx=&quot;10&quot; fill=&quot;var(--och-bg)&quot; stroke=&quot;var(--och)&quot; stroke-width=&quot;1.6&quot;/&gt;
+      &lt;text x=&quot;560&quot; y=&quot;97&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot; style=&quot;fill:var(--och)&quot;&gt;CASE STUDY 11&lt;/text&gt;
+      &lt;text x=&quot;560&quot; y=&quot;118&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot;&gt;Spazi digitali e dati&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#indig&quot;&gt;&lt;rect x=&quot;690&quot; y=&quot;72&quot; width=&quot;190&quot; height=&quot;64&quot; rx=&quot;10&quot; fill=&quot;var(--bri-bg)&quot; stroke=&quot;var(--bri)&quot; stroke-width=&quot;1.6&quot;/&gt;
+      &lt;text x=&quot;785&quot; y=&quot;97&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot; style=&quot;fill:var(--bri)&quot;&gt;CASE STUDY 12&lt;/text&gt;
+      &lt;text x=&quot;785&quot; y=&quot;118&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot;&gt;Prospettive indigene&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#synth&quot;&gt;&lt;rect x=&quot;320&quot; y=&quot;232&quot; width=&quot;260&quot; height=&quot;66&quot; rx=&quot;33&quot; fill=&quot;var(--acc-bg)&quot; stroke=&quot;var(--acc)&quot; stroke-width=&quot;2&quot;/&gt;
+      &lt;text x=&quot;450&quot; y=&quot;258&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot; style=&quot;fill:var(--acc)&quot;&gt;CROSS-CASE SYNTHESIS&lt;/text&gt;
+      &lt;text x=&quot;450&quot; y=&quot;280&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot;&gt;5 elementi in comune&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#coop&quot;&gt;&lt;rect x=&quot;110&quot; y=&quot;382&quot; width=&quot;220&quot; height=&quot;66&quot; rx=&quot;10&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--acc)&quot; stroke-width=&quot;1.6&quot;/&gt;
+      &lt;text x=&quot;220&quot; y=&quot;408&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot; style=&quot;fill:var(--acc)&quot;&gt;COLLECTIVE ACTION&lt;/text&gt;
+      &lt;text x=&quot;220&quot; y=&quot;430&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot;&gt;Il cooperation problem&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#question&quot;&gt;&lt;rect x=&quot;405&quot; y=&quot;382&quot; width=&quot;190&quot; height=&quot;66&quot; rx=&quot;10&quot; fill=&quot;var(--ink)&quot; stroke=&quot;var(--ink)&quot;/&gt;
+      &lt;text x=&quot;500&quot; y=&quot;408&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot; style=&quot;fill:var(--paper)&quot;&gt;DOMANDA CENTRALE&lt;/text&gt;
+      &lt;text x=&quot;500&quot; y=&quot;430&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot; style=&quot;fill:var(--paper)&quot;&gt;Potere · istituzioni · sicurezza&lt;/text&gt;&lt;/a&gt;
+    &lt;a href=&quot;#group&quot;&gt;&lt;rect x=&quot;670&quot; y=&quot;382&quot; width=&quot;200&quot; height=&quot;66&quot; rx=&quot;10&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--muted)&quot; stroke-width=&quot;1.6&quot; stroke-dasharray=&quot;4 3&quot;/&gt;
+      &lt;text x=&quot;770&quot; y=&quot;408&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot; style=&quot;fill:var(--muted)&quot;&gt;LABORATORIO&lt;/text&gt;
+      &lt;text x=&quot;770&quot; y=&quot;430&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot;&gt;Group work&lt;/text&gt;&lt;/a&gt;
+    &lt;text x=&quot;450&quot; y=&quot;500&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; style=&quot;fill:var(--muted)&quot;&gt;Linee continue: i casi alimentano la sintesi · Tratteggi: legami trasversali tra i casi&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;figcaption&gt;Mappa concettuale: ogni riquadro è un link alla sua sezione. I tratteggi in alto indicano i fili che legano i casi tra loro.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+
+&lt;nav class=&quot;toc&quot; aria-label=&quot;Indice&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;a href=&quot;#bio&quot;&gt;9 · Biodiversità&lt;/a&gt;&lt;a href=&quot;#ai&quot;&gt;10 · AI&lt;/a&gt;&lt;a href=&quot;#digital&quot;&gt;11 · Digitale&lt;/a&gt;&lt;a href=&quot;#indig&quot;&gt;12 · Indigeni&lt;/a&gt;&lt;a href=&quot;#synth&quot;&gt;Sintesi&lt;/a&gt;&lt;a href=&quot;#coop&quot;&gt;Cooperazione&lt;/a&gt;&lt;a href=&quot;#question&quot;&gt;Domanda&lt;/a&gt;&lt;a href=&quot;#group&quot;&gt;Group work&lt;/a&gt;&lt;a href=&quot;#refs&quot;&gt;Per approfondire&lt;/a&gt;
+&lt;/div&gt;&lt;/nav&gt;
+
+&lt;main&gt;
+&lt;section class=&quot;part sal&quot; id=&quot;bio&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;kicker&quot;&gt;Case study 9 · Nature and political authority&lt;/div&gt;
+  &lt;h2&gt;Biodiversità: la conservazione è anche una questione di potere&lt;/h2&gt;
+
+  &lt;div class=&quot;slide&quot; data-p=&quot;slide 14&quot;&gt;
+    &lt;p class=&quot;lead&quot; style=&quot;margin-top:0&quot;&gt;“Who defines valuable nature, and who bears the costs of protecting it?”&lt;/p&gt;
+    &lt;p&gt;Quattro dimensioni: &lt;em&gt;protected areas and land governance&lt;/em&gt; · &lt;em&gt;Indigenous and local knowledge&lt;/em&gt; · &lt;em&gt;food systems and biodiversity&lt;/em&gt; · &lt;em&gt;North-South relations&lt;/em&gt;.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;“A sustainability policy can protect ecosystems while still reproducing unequal control over land and resources.”&lt;/strong&gt; Il compito politico è collegare la tutela della biodiversità con &lt;em&gt;rights, livelihoods and legitimacy&lt;/em&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;p&gt;La domanda della slide contiene due domande distinte, ed è utile tenerle separate:&lt;/p&gt;
+  &lt;div class=&quot;grid g2&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;1 · Chi definisce cosa vale?&lt;/h4&gt;&lt;p&gt;Scegliere &lt;em&gt;quale&lt;/em&gt; natura proteggere (una foresta primaria, una specie simbolo, un paesaggio agricolo tradizionale) non è un dato scientifico neutro: dipende da chi ha l&#x27;autorità di produrre mappe, classificazioni e priorità. È il tema della &lt;dfn&gt;political authority&lt;/dfn&gt; (autorità politica): il potere riconosciuto di prendere decisioni vincolanti per altri.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;2 · Chi paga i costi?&lt;/h4&gt;&lt;p&gt;Un&#x27;area protetta genera benefici spesso globali (clima, specie, immagine) e costi spesso locali: limiti al pascolo, alla pesca, alla raccolta, a volte allo spostamento di intere comunità. Se chi paga non è chi decide, la conservazione diventa una &lt;em&gt;redistribuzione&lt;/em&gt; di risorse, non solo una tutela.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Le quattro dimensioni, una per linguetta&lt;/h3&gt;
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;tabbar&quot;&gt;&lt;button aria-selected=&quot;true&quot;&gt;Protected areas&lt;/button&gt;&lt;button&gt;Indigenous knowledge&lt;/button&gt;&lt;button&gt;Food systems&lt;/button&gt;&lt;button&gt;North-South&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel on&quot;&gt;
+      &lt;p&gt;Una &lt;dfn&gt;protected area&lt;/dfn&gt; (area protetta) è uno spazio geografico delimitato e gestito, per legge o con altri mezzi efficaci, allo scopo di conservare la natura nel lungo periodo. La &lt;dfn&gt;land governance&lt;/dfn&gt; (governo della terra) è l&#x27;insieme di regole, istituzioni e rapporti di forza che stabiliscono chi può usare, possedere, trasferire e controllare la terra.&lt;/p&gt;
+      &lt;p&gt;Il punto della slide: un&#x27;area protetta è sempre anche una decisione di &lt;em&gt;land governance&lt;/em&gt;. Tracciare un confine sulla mappa significa stabilire chi entra, chi resta fuori, chi controlla.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel&quot;&gt;
+      &lt;p&gt;La &lt;dfn&gt;Indigenous and local knowledge&lt;/dfn&gt; (conoscenza indigena e locale) è il sapere accumulato e trasmesso tra generazioni da comunità che vivono un territorio: stagionalità, specie, usi del fuoco e dell&#x27;acqua, regole di prelievo. Non è “folklore”: spesso è il motivo per cui un ecosistema è arrivato in buono stato fino a oggi.&lt;/p&gt;
+      &lt;p&gt;Il problema politico è &lt;em&gt;quale sapere conta&lt;/em&gt; nelle decisioni: quello degli esperti esterni e delle agenzie, o anche quello di chi abita il luogo? Il tema torna nel &lt;a href=&quot;#indig&quot;&gt;case study 12&lt;/a&gt;.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel&quot;&gt;
+      &lt;p&gt;Biodiversità e &lt;dfn&gt;food systems&lt;/dfn&gt; (sistemi alimentari: tutto ciò che va dalla produzione al consumo del cibo) sono legati in due direzioni: l&#x27;agricoltura è uno dei principali motori di perdita di habitat, ma la diversità di colture, razze e paesaggi agricoli è a sua volta biodiversità, e la sicurezza alimentare dipende da impollinatori, suoli, acqua.&lt;/p&gt;
+      &lt;p&gt;Proteggere un&#x27;area può ridurre l&#x27;accesso di chi ci produce cibo; non proteggerla può distruggere la base del cibo futuro. È qui che &lt;em&gt;livelihoods&lt;/em&gt; (mezzi di sussistenza) e conservazione si scontrano o si alleano.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;panel&quot;&gt;
+      &lt;p&gt;Le &lt;dfn&gt;North-South relations&lt;/dfn&gt; (relazioni Nord-Sud: tra paesi ad alto reddito e paesi del Sud globale) entrano perché gran parte della biodiversità terrestre si trova nel Sud globale, mentre gran parte dei finanziamenti, delle ONG e delle agende di conservazione nasce nel Nord. Chi finanzia tende a definire le priorità.&lt;/p&gt;
+      &lt;p&gt;Domanda tipica d&#x27;esame: è giusto chiedere ai paesi del Sud di rinunciare a usare le proprie risorse per un beneficio globale, dopo che il Nord ha già trasformato i propri territori?&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;La mappa delle aree protette&lt;/h3&gt;
+  &lt;div class=&quot;slide&quot; data-p=&quot;slide successiva&quot;&gt;
+    &lt;p&gt;Mappa mondiale delle &lt;em&gt;terrestrial protected areas&lt;/em&gt; (verde) e &lt;em&gt;marine and coastal protected areas&lt;/em&gt; (blu). Fonte indicata: UNEP-WCMC e IUCN (2021), &lt;em&gt;Protected Planet: The World Database on Protected Areas (WDPA) and World Database on Other Effective Area-Based Conservation Measures (WD-OECM)&lt;/em&gt;, luglio 2021, protectedplanet.net. Loghi: UN Environment Programme WCMC, IUCN, WCPA.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Come leggere la mappa con lo sguardo della lezione (osservazioni sulla figura, non dati misurati):&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Le aree terrestri sono fitte in Amazzonia, Africa orientale e australe, Europa; la Groenlandia nord-orientale è coperta da un unico grande parco.&lt;/li&gt;
+    &lt;li&gt;Molte aree marine sono enormi cerchi o poligoni attorno a isole remote nel Pacifico, nell&#x27;Atlantico meridionale e nell&#x27;Oceano Indiano: superfici vastissime, spesso poco abitate e amministrate da stati lontani. È facile “fare numero” in ettari lì, più difficile dove vive gente.&lt;/li&gt;
+    &lt;li&gt;La mappa mostra &lt;em&gt;dove&lt;/em&gt; c&#x27;è protezione, non &lt;em&gt;chi&lt;/em&gt; la governa né &lt;em&gt;quanto&lt;/em&gt; sia efficace: due aree dello stesso verde possono avere regimi di potere opposti.&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;Una &lt;dfn&gt;OECM&lt;/dfn&gt; (&lt;span class=&quot;term&quot;&gt;other effective area-based conservation measure&lt;/span&gt;) è un&#x27;area che conserva efficacemente la natura pur non essendo formalmente un&#x27;area protetta: per esempio un territorio gestito da una comunità o una zona militare interdetta. La categoria è nata proprio per riconoscere forme di conservazione non statali.&lt;/p&gt;
+
+  &lt;h3&gt;Esplora: chi governa l&#x27;area protetta?&lt;/h3&gt;
+  &lt;p&gt;La stessa area, sulla mappa sempre verde, può essere governata in modi molto diversi. Sposta il cursore.&lt;/p&gt;
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;label class=&quot;rl&quot; for=&quot;govR&quot;&gt;Tipo di governance: &lt;span class=&quot;out&quot; id=&quot;govN&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+    &lt;input type=&quot;range&quot; id=&quot;govR&quot; min=&quot;0&quot; max=&quot;3&quot; step=&quot;1&quot; value=&quot;0&quot;&gt;
+    &lt;svg viewBox=&quot;0 0 600 120&quot; aria-hidden=&quot;true&quot;&gt;
+      &lt;g id=&quot;govBars&quot;&gt;&lt;/g&gt;
+    &lt;/svg&gt;
+    &lt;p id=&quot;govT&quot;&gt;&lt;/p&gt;
+    &lt;div class=&quot;ext small&quot;&gt;I quattro tipi di governance (A governo, B condivisa, C privata, D popoli indigeni e comunità locali) sono le categorie usate dall&#x27;IUCN e registrate nel WDPA: &lt;a href=&quot;https://www.protectedplanet.net&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;protectedplanet.net&lt;/a&gt;. Le barre sono una lettura qualitativa didattica, non misure.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+  (function(){
+    var T=[[&#x27;A · Governance by government&#x27;,&#x27;Lo stato (ministero, agenzia parchi) decide e gestisce. Vantaggi: risorse, continuità, base legale forte. Rischio tipico: la cosiddetta “fortress conservation”, cioè proteggere escludendo le popolazioni residenti.&#x27;,[90,30,30]],
+      [&#x27;B · Shared governance&#x27;,&#x27;Decisioni prese insieme da stato, comunità, a volte ONG (co-gestione). Più legittimità, ma servono veri poteri condivisi e non solo “consultazioni”.&#x27;,[65,60,55]],
+      [&#x27;C · Private governance&#x27;,&#x27;Proprietari privati, fondazioni o imprese. Può essere molto efficace e rapida; il rischio è che la protezione segua la proprietà e il mercato più che i diritti di chi abita.&#x27;,[55,25,35]],
+      [&#x27;D · Indigenous peoples and local communities&#x27;,&#x27;La comunità decide secondo proprie istituzioni (in inglese ICCAs, “territori di vita”). Legittimità e conoscenza locale alte; spesso manca il riconoscimento legale e il sostegno finanziario.&#x27;,[30,90,80]]];
+    var L=[&#x27;Controllo statale&#x27;,&#x27;Voce locale&#x27;,&#x27;Legittimità percepita&#x27;];
+    var r=document.getElementById(&#x27;govR&#x27;),g=document.getElementById(&#x27;govBars&#x27;);
+    function draw(){var t=T[+r.value];document.getElementById(&#x27;govN&#x27;).textContent=t[0];document.getElementById(&#x27;govT&#x27;).textContent=t[1];
+      g.innerHTML=t[2].map(function(v,i){var y=10+i*36;return &#x27;&lt;text x=&quot;0&quot; y=&quot;&#x27;+(y+17)+&#x27;&quot; font-size=&quot;14&quot;&gt;&#x27;+L[i]+&#x27;&lt;/text&gt;&lt;rect x=&quot;190&quot; y=&quot;&#x27;+y+&#x27;&quot; width=&quot;400&quot; height=&quot;24&quot; rx=&quot;4&quot; fill=&quot;var(--paper)&quot; stroke=&quot;var(--rule)&quot;/&gt;&lt;rect x=&quot;190&quot; y=&quot;&#x27;+y+&#x27;&quot; width=&quot;&#x27;+(v*4)+&#x27;&quot; height=&quot;24&quot; rx=&quot;4&quot; fill=&quot;var(--sal)&quot; style=&quot;transition:width .3s&quot;/&gt;&#x27;}).join(&#x27;&#x27;);}
+    r.addEventListener(&#x27;input&#x27;,draw);draw();
+  })();
+  &lt;/script&gt;
+
+  &lt;details&gt;&lt;summary&gt;Ciò che la slide dà per scontato: “fortress conservation” e giustizia ambientale&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;Con &lt;span class=&quot;term&quot;&gt;fortress conservation&lt;/span&gt; (conservazione-fortezza) si indica il modello storico, nato con i grandi parchi nazionali, in cui la natura si protegge recintandola e allontanando chi ci viveva. Ha prodotto sfollamenti e conflitti, soprattutto in Africa e Asia. La slide non usa il termine, ma la frase “protect ecosystems while still reproducing unequal control over land” descrive esattamente questo rischio.&lt;/p&gt;
+    &lt;p&gt;Da qui le tre parole chiave della slide: &lt;em&gt;rights&lt;/em&gt; (diritti su terra e risorse), &lt;em&gt;livelihoods&lt;/em&gt; (mezzi di vita), &lt;em&gt;legitimacy&lt;/em&gt; (le regole sono accettate come giuste da chi le subisce). Una politica di conservazione è sostenibile politicamente solo se tiene insieme tutte e tre.&lt;/p&gt;
+  &lt;/div&gt;&lt;/details&gt;
+
+  &lt;div class=&quot;ext&quot;&gt;
+    &lt;p&gt;&lt;strong&gt;Contesto: l&#x27;obiettivo “30x30”.&lt;/strong&gt; Il &lt;em&gt;Kunming-Montreal Global Biodiversity Framework&lt;/em&gt; (2022), Target 3, chiede di conservare almeno il 30% delle aree terrestri, delle acque interne e delle aree marine e costiere entro il 2030, riconoscendo anche i territori indigeni e tradizionali e i diritti delle comunità. Un&#x27;analisi dell&#x27;IIED osserva che l&#x27;attuazione è disomogenea e che servono riconoscimenti legali dei diritti collettivi sulla terra. Fonti: &lt;a href=&quot;https://www.iucn.org/sites/default/files/2023-09/30x30-target-framework.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IUCN, 30x30 target framework&lt;/a&gt;; &lt;a href=&quot;https://www.iied.org/achieving-30x30-vital-role-indigenous-traditional-territories-rights-governance&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IIED, Achieving 30x30&lt;/a&gt;. Non è citato nelle slide, ma è lo sfondo normativo in cui si colloca la domanda “chi paga?”.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Autoverifica · Case study 9&lt;/h3&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;1. Perché una politica di conservazione può essere “sostenibile” e allo stesso tempo ingiusta?&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Perché può tutelare l&#x27;ecosistema ma riprodurre &lt;em&gt;unequal control over land and resources&lt;/em&gt;: chi decide (stati, finanziatori, spesso del Nord) non coincide con chi sopporta i costi (comunità locali che perdono accesso a terra, pesca, raccolta).&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;2. Cosa mostra e cosa &lt;em&gt;non&lt;/em&gt; mostra la mappa WDPA?&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Mostra la distribuzione di aree protette terrestri e marine (UNEP-WCMC e IUCN, 2021). Non mostra chi le governa, se sono efficaci, né quali diritti abbiano le popolazioni che ci vivono.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;3. Quali tre elementi la slide chiede di collegare alla tutela della biodiversità?&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;&lt;em&gt;Rights, livelihoods and legitimacy&lt;/em&gt;: diritti, mezzi di sussistenza, legittimità.&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part sla&quot; id=&quot;ai&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;kicker&quot;&gt;Case study 10 · Technology and power&lt;/div&gt;
+  &lt;h2&gt;L&#x27;AI e l&#x27;environmental governance gap&lt;/h2&gt;
+
+  &lt;div class=&quot;slide&quot; data-p=&quot;slide 15&quot;&gt;
+    &lt;p class=&quot;lead&quot; style=&quot;margin-top:0&quot;&gt;“AI is both an infrastructure challenge and a governance challenge.”&lt;/p&gt;
+    &lt;table&gt;
+      &lt;tr&gt;&lt;th&gt;INPUTS&lt;/th&gt;&lt;td&gt;Data, minerals, energy and water&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;th&gt;SYSTEMS&lt;/th&gt;&lt;td&gt;Data centres, models and supply chains&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;th&gt;EFFECTS&lt;/th&gt;&lt;td&gt;Environmental monitoring, decision-making and surveillance&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;th&gt;GOVERNANCE&lt;/th&gt;&lt;td&gt;Who sets rules and who is accountable?&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p&gt;&lt;strong&gt;“The geopolitics of AI sits under the hype: infrastructures, standards, data and unequal capacity.”&lt;/strong&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;p&gt;Un &lt;dfn&gt;governance gap&lt;/dfn&gt; (vuoto di governance) è la distanza tra ciò che una tecnologia già fa nel mondo e la capacità delle istituzioni di stabilire regole, controlli e responsabilità su di essa. “Environmental” qui ha due sensi: l&#x27;AI ha un impatto ambientale (consuma energia, acqua, minerali) e viene usata per governare l&#x27;ambiente (monitoraggio, previsioni, gestione di reti).&lt;/p&gt;
+
+  &lt;h3&gt;Le quattro catene dell&#x27;AI, passo per passo&lt;/h3&gt;
+  &lt;div class=&quot;steps&quot;&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;1 · Inputs&lt;/span&gt;
+      &lt;h4&gt;Data, minerals, energy and water&lt;/h4&gt;
+      &lt;p&gt;L&#x27;AI sembra immateriale, ma poggia su risorse fisiche: dati (spesso raccolti da persone che non ne controllano l&#x27;uso), &lt;em&gt;minerals&lt;/em&gt; per i chip e l&#x27;hardware (rame, litio, terre rare, gallio…), elettricità per addestrare e far girare i modelli, acqua per raffreddare i data centre.&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Lettura politica:&lt;/strong&gt; chi controlla miniere, raffinazione, reti elettriche e bacini idrici controlla un pezzo dell&#x27;AI. È lo stesso tema delle &lt;em&gt;new dependencies&lt;/em&gt; della sintesi finale.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;2 · Systems&lt;/span&gt;
+      &lt;h4&gt;Data centres, models and supply chains&lt;/h4&gt;
+      &lt;p&gt;I &lt;em&gt;data centres&lt;/em&gt; (centri di elaborazione dati) sono infrastrutture concentrate in pochi paesi e in poche imprese; i &lt;em&gt;models&lt;/em&gt; sono addestrati da pochi attori con enormi capitali; le &lt;em&gt;supply chains&lt;/em&gt; (catene di fornitura) dei chip attraversano molti stati, con passaggi critici in pochissimi luoghi.&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Lettura politica:&lt;/strong&gt; concentrazione = potere e vulnerabilità. Un blocco all&#x27;export o un conflitto in un nodo della catena si propaga a tutto il sistema.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;3 · Effects&lt;/span&gt;
+      &lt;h4&gt;Environmental monitoring, decision-making and surveillance&lt;/h4&gt;
+      &lt;p&gt;Gli stessi strumenti hanno effetti ambivalenti: l&#x27;AI aiuta a vedere deforestazione, incendi, emissioni, siccità (&lt;em&gt;monitoring&lt;/em&gt;); supporta o sostituisce decisioni su reti idriche ed energetiche (&lt;em&gt;decision-making&lt;/em&gt;); ma può anche servire a controllare persone e territori (&lt;em&gt;surveillance&lt;/em&gt;, sorveglianza).&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Lettura politica:&lt;/strong&gt; la stessa immagine satellitare può proteggere una foresta o identificare chi vi abita senza titolo legale (collegamento con il &lt;a href=&quot;#bio&quot;&gt;caso 9&lt;/a&gt;).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;4 · Governance&lt;/span&gt;
+      &lt;h4&gt;Who sets rules and who is accountable?&lt;/h4&gt;
+      &lt;p&gt;Chi scrive le regole (stati, unioni regionali, imprese tramite standard tecnici, organismi internazionali)? E chi risponde quando un sistema sbaglia? La &lt;dfn&gt;accountability&lt;/dfn&gt; (rendicontabilità: dover rendere conto e subire conseguenze) è il punto più debole: tra sviluppatore, fornitore, utilizzatore pubblico e operatore la responsabilità si diluisce.&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Lettura politica:&lt;/strong&gt; &lt;em&gt;standards&lt;/em&gt; e &lt;em&gt;unequal capacity&lt;/em&gt;: chi fissa gli standard tecnici esporta le proprie regole; chi non ha capacità tecniche e finanziarie le subisce.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;button class=&quot;b prev&quot;&gt;← Indietro&lt;/button&gt;&lt;button class=&quot;b next&quot;&gt;Avanti →&lt;/button&gt;&lt;span class=&quot;dots&quot;&gt;&lt;/span&gt;&lt;span class=&quot;n small muted&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;L&#x27;immagine AIGN: quando le macchine acquistano autorità&lt;/h3&gt;
+  &lt;div class=&quot;slide&quot; data-p=&quot;slide 4 (immagine)&quot;&gt;
+    &lt;p&gt;Copertina di &lt;em&gt;AI Governance Newsletter · Issue #35&lt;/em&gt;, Patrick Upmann, 22 settembre 2026: &lt;strong&gt;“The AI Governance Gap — When Machines Gain Authority Over Critical Systems”&lt;/strong&gt;. Sottotitolo: da un workshop di ricerca sostenuto dalla NATO in Armenia alla sfida globale di governare l&#x27;AI autonoma nelle &lt;em&gt;critical infrastructures&lt;/em&gt;. Al centro un ciclo: &lt;em&gt;Detect · Assess · Recommend · Act · Account&lt;/em&gt;. In basso: &lt;em&gt;Secure infrastructure · Govern authority · Strengthen accountability · Enable evidence · Build a safer tomorrow&lt;/em&gt;. Ai lati: “Human responsibility remains essential” e “Intelligence is not permission”. Sullo sfondo: diga, rete elettrica, pale eoliche, città, aeroporto, ferrovia.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Le &lt;dfn&gt;critical infrastructures&lt;/dfn&gt; (infrastrutture critiche) sono i sistemi la cui interruzione colpisce la sicurezza e la vita di una società: energia, acqua, trasporti, telecomunicazioni, sanità. Clicca le fasi del ciclo per capire dove si apre il &lt;em&gt;gap&lt;/em&gt;.&lt;/p&gt;
+  &lt;figure&gt;
+  &lt;svg viewBox=&quot;0 0 560 380&quot; aria-label=&quot;Ciclo Detect, Assess, Recommend, Act, Account&quot;&gt;
+    &lt;circle cx=&quot;280&quot; cy=&quot;190&quot; r=&quot;120&quot; fill=&quot;none&quot; stroke=&quot;var(--rule)&quot; stroke-width=&quot;10&quot;/&gt;
+    &lt;text x=&quot;280&quot; y=&quot;183&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot; font-family=&quot;Newsreader,serif&quot;&gt;“Intelligence is&lt;/text&gt;
+    &lt;text x=&quot;280&quot; y=&quot;203&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot; font-family=&quot;Newsreader,serif&quot;&gt;not permission”&lt;/text&gt;
+    &lt;g font-size=&quot;14&quot; font-weight=&quot;600&quot;&gt;
+      &lt;g data-info=&quot;Il sistema rileva un&#x27;anomalia (es. un calo di pressione in una rete idrica, un picco di domanda elettrica). È il campo in cui l&#x27;AI è più utile e meno controversa.&quot; data-title=&quot;Detect&quot; data-target=&quot;cycOut&quot;&gt;&lt;circle cx=&quot;280&quot; cy=&quot;70&quot; r=&quot;40&quot; fill=&quot;var(--sla-bg)&quot; stroke=&quot;var(--sla)&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;280&quot; y=&quot;75&quot; text-anchor=&quot;middle&quot;&gt;Detect&lt;/text&gt;&lt;/g&gt;
+      &lt;g data-info=&quot;Valuta la gravità e le cause. Qui entrano i dati di addestramento: se sono parziali, la valutazione può sottostimare i rischi per alcune aree o gruppi.&quot; data-title=&quot;Assess&quot; data-target=&quot;cycOut&quot;&gt;&lt;circle cx=&quot;394&quot; cy=&quot;153&quot; r=&quot;40&quot; fill=&quot;var(--sla-bg)&quot; stroke=&quot;var(--sla)&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;394&quot; y=&quot;158&quot; text-anchor=&quot;middle&quot;&gt;Assess&lt;/text&gt;&lt;/g&gt;
+      &lt;g data-info=&quot;Propone un&#x27;azione. Finché un essere umano sceglie, l&#x27;autorità resta umana; ma se nessuno ha tempo o competenze per contraddire la macchina, la raccomandazione diventa di fatto una decisione.&quot; data-title=&quot;Recommend&quot; data-target=&quot;cycOut&quot;&gt;&lt;circle cx=&quot;350&quot; cy=&quot;287&quot; r=&quot;40&quot; fill=&quot;var(--sla-bg)&quot; stroke=&quot;var(--sla)&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;350&quot; y=&quot;292&quot; text-anchor=&quot;middle&quot;&gt;Recommend&lt;/text&gt;&lt;/g&gt;
+      &lt;g data-info=&quot;Il sistema agisce da solo (apre una paratoia, stacca un carico). È il passaggio in cui la macchina “guadagna autorità”: il cuore del governance gap. “Intelligence is not permission”: saper agire non equivale ad avere il diritto di farlo.&quot; data-title=&quot;Act&quot; data-target=&quot;cycOut&quot;&gt;&lt;circle cx=&quot;210&quot; cy=&quot;287&quot; r=&quot;40&quot; fill=&quot;var(--bri-bg)&quot; stroke=&quot;var(--bri)&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;210&quot; y=&quot;292&quot; text-anchor=&quot;middle&quot;&gt;Act&lt;/text&gt;&lt;/g&gt;
+      &lt;g data-info=&quot;Qualcuno deve rendere conto dell&#x27;azione: tracciabilità (enable evidence), responsabilità chiara (strengthen accountability), possibilità di ricorso. Se questa fase manca, il ciclo resta aperto e nessuno è responsabile.&quot; data-title=&quot;Account&quot; data-target=&quot;cycOut&quot;&gt;&lt;circle cx=&quot;166&quot; cy=&quot;153&quot; r=&quot;40&quot; fill=&quot;var(--acc-bg)&quot; stroke=&quot;var(--acc)&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;166&quot; y=&quot;158&quot; text-anchor=&quot;middle&quot;&gt;Account&lt;/text&gt;&lt;/g&gt;
+    &lt;/g&gt;
+  &lt;/svg&gt;
+  &lt;figcaption id=&quot;cycOut&quot; class=&quot;box&quot; style=&quot;font-size:.95rem&quot;&gt;Clicca una fase del ciclo.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;h3&gt;Grafico: perché si apre il gap&lt;/h3&gt;
+  &lt;p&gt;Modello didattico (non dati reali): la capacità tecnologica cresce in modo continuo e accelerato; le regole si aggiornano “a gradini”, con un ritardo. L&#x27;area colorata è il &lt;em&gt;governance gap&lt;/em&gt;.&lt;/p&gt;
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;svg viewBox=&quot;0 0 600 300&quot; id=&quot;gapSvg&quot; aria-label=&quot;Grafico del governance gap&quot;&gt;
+      &lt;line x1=&quot;50&quot; y1=&quot;260&quot; x2=&quot;580&quot; y2=&quot;260&quot; stroke=&quot;var(--muted)&quot;/&gt;&lt;line x1=&quot;50&quot; y1=&quot;20&quot; x2=&quot;50&quot; y2=&quot;260&quot; stroke=&quot;var(--muted)&quot;/&gt;
+      &lt;text x=&quot;315&quot; y=&quot;290&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot;&gt;tempo (anni)&lt;/text&gt;
+      &lt;text x=&quot;18&quot; y=&quot;140&quot; font-size=&quot;13&quot; transform=&quot;rotate(-90 18 140)&quot; text-anchor=&quot;middle&quot;&gt;capacità / copertura&lt;/text&gt;
+      &lt;path id=&quot;gapArea&quot; fill=&quot;var(--bri)&quot; fill-opacity=&quot;.22&quot;/&gt;
+      &lt;path id=&quot;gapTech&quot; fill=&quot;none&quot; stroke=&quot;var(--sla)&quot; stroke-width=&quot;3&quot;/&gt;
+      &lt;path id=&quot;gapRule&quot; fill=&quot;none&quot; stroke=&quot;var(--acc)&quot; stroke-width=&quot;3&quot;/&gt;
+      &lt;g font-size=&quot;13&quot;&gt;&lt;rect x=&quot;70&quot; y=&quot;30&quot; width=&quot;14&quot; height=&quot;4&quot; fill=&quot;var(--sla)&quot;/&gt;&lt;text x=&quot;90&quot; y=&quot;36&quot;&gt;tecnologia&lt;/text&gt;
+      &lt;rect x=&quot;70&quot; y=&quot;50&quot; width=&quot;14&quot; height=&quot;4&quot; fill=&quot;var(--acc)&quot;/&gt;&lt;text x=&quot;90&quot; y=&quot;56&quot;&gt;regole e istituzioni&lt;/text&gt;&lt;/g&gt;
+    &lt;/svg&gt;
+    &lt;label class=&quot;rl&quot; for=&quot;gapG&quot;&gt;Velocità della tecnologia: &lt;span class=&quot;out&quot; id=&quot;gapGo&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+    &lt;input type=&quot;range&quot; id=&quot;gapG&quot; min=&quot;1&quot; max=&quot;10&quot; value=&quot;5&quot;&gt;
+    &lt;label class=&quot;rl&quot; for=&quot;gapL&quot;&gt;Ritardo istituzionale tra un aggiornamento delle regole e l&#x27;altro: &lt;span class=&quot;out&quot; id=&quot;gapLo&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+    &lt;input type=&quot;range&quot; id=&quot;gapL&quot; min=&quot;1&quot; max=&quot;6&quot; value=&quot;3&quot;&gt;
+    &lt;p&gt;Gap medio (indice): &lt;span class=&quot;out&quot; id=&quot;gapV&quot;&gt;&lt;/span&gt;. &lt;span class=&quot;muted small&quot;&gt;Prova: con ritardo minimo il gap quasi scompare, con tecnologia veloce si allarga anche se le istituzioni “lavorano”.&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+  (function(){
+    var g=document.getElementById(&#x27;gapG&#x27;),l=document.getElementById(&#x27;gapL&#x27;);
+    function draw(){var k=.12+(+g.value)*.035,L=+l.value,N=20,max=Math.exp(k*N)-1,pts=[],rp=[],sum=0;
+      function T(t){return (Math.exp(k*t)-1)/max}
+      function X(t){return 50+t*26.5}function Y(v){return 260-v*230}
+      for(var i=0;i&lt;=200;i++){var t=i/10,rr=T(Math.max(0,Math.floor(t/L)*L-L));
+        pts.push(X(t)+&#x27;,&#x27;+Y(T(t)));rp.push(X(t)+&#x27;,&#x27;+Y(rr));sum+=T(t)-rr;}
+      document.getElementById(&#x27;gapTech&#x27;).setAttribute(&#x27;d&#x27;,&#x27;M&#x27;+pts.join(&#x27; L&#x27;));
+      document.getElementById(&#x27;gapRule&#x27;).setAttribute(&#x27;d&#x27;,&#x27;M&#x27;+rp.join(&#x27; L&#x27;));
+      document.getElementById(&#x27;gapArea&#x27;).setAttribute(&#x27;d&#x27;,&#x27;M&#x27;+pts.join(&#x27; L&#x27;)+&#x27; L&#x27;+rp.slice().reverse().join(&#x27; L&#x27;)+&#x27; Z&#x27;);
+      document.getElementById(&#x27;gapGo&#x27;).textContent=[&#x27;&#x27;,&#x27;molto lenta&#x27;,&#x27;lenta&#x27;,&#x27;lenta&#x27;,&#x27;moderata&#x27;,&#x27;moderata&#x27;,&#x27;sostenuta&#x27;,&#x27;sostenuta&#x27;,&#x27;rapida&#x27;,&#x27;rapida&#x27;,&#x27;esplosiva&#x27;][g.value];
+      document.getElementById(&#x27;gapLo&#x27;).textContent=L+(L&gt;1?&#x27; anni&#x27;:&#x27; anno&#x27;);
+      document.getElementById(&#x27;gapV&#x27;).textContent=Math.round(sum/201*100);}
+    g.addEventListener(&#x27;input&#x27;,draw);l.addEventListener(&#x27;input&#x27;,draw);draw();
+  })();
+  &lt;/script&gt;
+
+  &lt;details&gt;&lt;summary&gt;Ciò che la slide dà per scontato: “geopolitics under the hype”&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;L&#x27;&lt;em&gt;hype&lt;/em&gt; (entusiasmo mediatico) parla di modelli sempre più intelligenti. La slide sposta lo sguardo sotto: &lt;strong&gt;infrastructures&lt;/strong&gt; (chi possiede data centre, reti, chip), &lt;strong&gt;standards&lt;/strong&gt; (chi definisce le norme tecniche e quindi cosa è “sicuro” o “conforme”), &lt;strong&gt;data&lt;/strong&gt; (chi raccoglie e possiede i dati), &lt;strong&gt;unequal capacity&lt;/strong&gt; (molti paesi non hanno risorse per sviluppare, verificare o regolare l&#x27;AI). È geopolitica nel senso pieno: competizione tra stati e blocchi per il controllo di risorse e regole.&lt;/p&gt;
+    &lt;p&gt;Esempio di regolazione (non citato nelle slide): l&#x27;Unione europea ha adottato l&#x27;&lt;em&gt;AI Act&lt;/em&gt;, Regolamento (UE) 2024/1689, che classifica i sistemi per livello di rischio e tratta come “ad alto rischio” anche quelli usati nella gestione di infrastrutture critiche. Testo: &lt;a href=&quot;https://eur-lex.europa.eu/eli/reg/2024/1689/oj&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;EUR-Lex&lt;/a&gt; &lt;span class=&quot;pill&quot;&gt;fonte esterna&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/details&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Autoverifica · Case study 10&lt;/h3&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;1. In che senso l&#x27;AI è una “infrastructure challenge”?&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Perché dipende da input materiali (dati, minerali, energia, acqua) e da sistemi fisici concentrati (data centre, catene di fornitura): chi li controlla ha potere, chi ne dipende è vulnerabile.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;2. Cosa significa “Intelligence is not permission”?&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Che la capacità tecnica di un sistema di agire su un&#x27;infrastruttura critica non gli conferisce legittimità a farlo: l&#x27;autorità e la responsabilità devono restare attribuite a esseri umani e istituzioni che ne rispondono (&lt;em&gt;Human responsibility remains essential&lt;/em&gt;).&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;3. Elenca i quattro elementi della “geopolitics of AI” secondo la slide.&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;&lt;em&gt;Infrastructures, standards, data, unequal capacity.&lt;/em&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part och&quot; id=&quot;digital&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;kicker&quot;&gt;Case study 11 · Cyberspace and digital identity&lt;/div&gt;
+  &lt;h2&gt;Spazi digitali: regolare oltre i confini&lt;/h2&gt;
+
+  &lt;div class=&quot;slide&quot; data-p=&quot;slide 16&quot;&gt;
+    &lt;p class=&quot;lead&quot; style=&quot;margin-top:0&quot;&gt;“Digital systems cross borders faster than political institutions can regulate them.”&lt;/p&gt;
+    &lt;div class=&quot;grid g2&quot;&gt;
+      &lt;div&gt;&lt;strong&gt;The problem.&lt;/strong&gt; Digital personas move across jurisdictions. Platforms, states and users do not share the same rules or responsibilities.&lt;/div&gt;
+      &lt;div&gt;&lt;strong&gt;The geopolitical question.&lt;/strong&gt; Can transnational regulation protect rights while preserving room for democratic governance and technological innovation?&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p&gt;&lt;strong&gt;“Data Sovereignty refers to the set of obligations and rights established by a series of conventions, rules and laws on the ownership, access, processing and storage of personal data.”&lt;/strong&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;I concetti chiave&lt;/h3&gt;
+  &lt;div class=&quot;grid g2&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Digital persona&lt;/h4&gt;&lt;p&gt;L&#x27;identità digitale di una persona: account, profili, dati di navigazione, pagamenti, posizione. Non sta in un posto solo: viene copiata e trattata in server di paesi diversi.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Jurisdiction&lt;/h4&gt;&lt;p&gt;La &lt;dfn&gt;jurisdiction&lt;/dfn&gt; (giurisdizione) è l&#x27;ambito territoriale in cui un&#x27;autorità può fare e applicare le leggi. Nel digitale si sovrappongono la giurisdizione dell&#x27;utente, della sede dell&#x27;impresa e del luogo in cui stanno i server.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Transnational regulation&lt;/h4&gt;&lt;p&gt;Regole che valgono oltre i confini di uno stato: accordi internazionali, norme regionali (come quelle UE) o leggi nazionali con effetto extraterritoriale, cioè applicate anche a imprese straniere che trattano dati di residenti.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Data sovereignty&lt;/h4&gt;&lt;p&gt;Nella definizione della slide è un &lt;em&gt;insieme di obblighi e diritti&lt;/em&gt; su quattro operazioni: &lt;em&gt;ownership&lt;/em&gt; (proprietà), &lt;em&gt;access&lt;/em&gt; (accesso), &lt;em&gt;processing&lt;/em&gt; (trattamento), &lt;em&gt;storage&lt;/em&gt; (conservazione) dei dati personali. Non è solo “lo stato controlla i dati”: è chi ha diritti e chi ha doveri su ciascuna operazione.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Il viaggio di un dato, passo per passo&lt;/h3&gt;
+  &lt;p&gt;Esempio ipotetico costruito per capire “digital personas move across jurisdictions”.&lt;/p&gt;
+  &lt;figure&gt;
+  &lt;svg viewBox=&quot;0 0 640 170&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;g font-size=&quot;13&quot;&gt;
+      &lt;rect x=&quot;10&quot; y=&quot;40&quot; width=&quot;130&quot; height=&quot;70&quot; rx=&quot;10&quot; fill=&quot;var(--och-bg)&quot; stroke=&quot;var(--och)&quot;/&gt;&lt;text x=&quot;75&quot; y=&quot;70&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Utente&lt;/text&gt;&lt;text x=&quot;75&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot;&gt;Italia&lt;/text&gt;
+      &lt;rect x=&quot;175&quot; y=&quot;40&quot; width=&quot;130&quot; height=&quot;70&quot; rx=&quot;10&quot; fill=&quot;var(--sla-bg)&quot; stroke=&quot;var(--sla)&quot;/&gt;&lt;text x=&quot;240&quot; y=&quot;70&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Piattaforma&lt;/text&gt;&lt;text x=&quot;240&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot;&gt;sede: paese X&lt;/text&gt;
+      &lt;rect x=&quot;340&quot; y=&quot;40&quot; width=&quot;130&quot; height=&quot;70&quot; rx=&quot;10&quot; fill=&quot;var(--sal-bg)&quot; stroke=&quot;var(--sal)&quot;/&gt;&lt;text x=&quot;405&quot; y=&quot;70&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Data centre&lt;/text&gt;&lt;text x=&quot;405&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot;&gt;paese Y&lt;/text&gt;
+      &lt;rect x=&quot;505&quot; y=&quot;40&quot; width=&quot;125&quot; height=&quot;70&quot; rx=&quot;10&quot; fill=&quot;var(--bri-bg)&quot; stroke=&quot;var(--bri)&quot;/&gt;&lt;text x=&quot;567&quot; y=&quot;70&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Fornitore AI&lt;/text&gt;&lt;text x=&quot;567&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot;&gt;paese Z&lt;/text&gt;
+    &lt;/g&gt;
+    &lt;g stroke=&quot;var(--muted)&quot; stroke-width=&quot;1.6&quot; marker-end=&quot;url(#ar)&quot;&gt;&lt;path d=&quot;M140,75 L172,75&quot;/&gt;&lt;path d=&quot;M305,75 L337,75&quot;/&gt;&lt;path d=&quot;M470,75 L502,75&quot;/&gt;&lt;/g&gt;
+    &lt;text x=&quot;320&quot; y=&quot;150&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; style=&quot;fill:var(--muted)&quot;&gt;4 luoghi · almeno 4 ordinamenti giuridici · chi è responsabile?&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;/figure&gt;
+  &lt;div class=&quot;steps&quot;&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;1 · Utente&lt;/span&gt;&lt;p&gt;Una studentessa in Italia carica foto e messaggi su un social network. Per lei valgono le leggi italiane ed europee sulla protezione dei dati: ha diritti di accesso, rettifica, cancellazione. Ma non sa dove finiscano fisicamente i suoi dati.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;2 · Piattaforma&lt;/span&gt;&lt;p&gt;L&#x27;impresa ha sede in un altro paese, con altre regole e altri obblighi verso le autorità locali (che possono chiedere accesso ai dati per motivi di sicurezza). Le regole della piattaforma (termini d&#x27;uso) sono un terzo livello, privato, che si sovrappone alle leggi.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;3 · Data centre&lt;/span&gt;&lt;p&gt;I dati sono conservati (&lt;em&gt;storage&lt;/em&gt;) in un terzo paese, magari per costi energetici o di raffreddamento (collegamento con gli &lt;em&gt;inputs&lt;/em&gt; del &lt;a href=&quot;#ai&quot;&gt;caso 10&lt;/a&gt;). Alcuni stati impongono la &lt;em&gt;data localisation&lt;/em&gt;, cioè che i dati dei propri cittadini restino sul territorio nazionale: è una forma “dura” di sovranità dei dati.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;4 · Trattamento&lt;/span&gt;&lt;p&gt;I dati vengono usati (&lt;em&gt;processing&lt;/em&gt;) per addestrare un modello da un fornitore in un quarto paese. Se qualcosa va storto (profilazione, fuga di dati), quale autorità interviene? Ecco il problema della slide: “platforms, states and users do not share the same rules or responsibilities”.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;button class=&quot;b prev&quot;&gt;← Indietro&lt;/button&gt;&lt;button class=&quot;b next&quot;&gt;Avanti →&lt;/button&gt;&lt;span class=&quot;dots&quot;&gt;&lt;/span&gt;&lt;span class=&quot;n small muted&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;La mappa delle leggi sulla protezione dei dati&lt;/h3&gt;
+  &lt;div class=&quot;slide&quot; data-p=&quot;slide successiva&quot;&gt;
+    &lt;p&gt;Mappa “Data Protection Laws around the world”, fonte © 2023 DLA Piper. Legenda circolare “Regulation &amp;amp; Enforcement” con quattro livelli: &lt;em&gt;Heavy&lt;/em&gt; (rosso), &lt;em&gt;Robust&lt;/em&gt; (arancio), &lt;em&gt;Moderate&lt;/em&gt; (giallo), &lt;em&gt;Limited&lt;/em&gt; (verde acqua); in grigio i paesi senza dati.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt;La classificazione combina due cose diverse: quanto è severa la legge (&lt;em&gt;regulation&lt;/em&gt;) e quanto viene fatta rispettare (&lt;em&gt;enforcement&lt;/em&gt;, applicazione effettiva con controlli e sanzioni). Leggi forti senza enforcement contano poco.&lt;/p&gt;
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;tabbar&quot;&gt;&lt;button aria-selected=&quot;true&quot;&gt;Heavy&lt;/button&gt;&lt;button&gt;Robust&lt;/button&gt;&lt;button&gt;Moderate&lt;/button&gt;&lt;button&gt;Limited&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel on&quot;&gt;&lt;p&gt;Regole estese e applicate con forza. Sulla mappa 2023 appaiono in rosso, tra gli altri, Stati Uniti, Canada, Messico, gran parte dell&#x27;Unione europea, Regno Unito, Cina, Corea del Sud e Australia.&lt;/p&gt;&lt;p&gt;Nota: sistemi molto diversi tra loro (UE, USA, Cina) finiscono nella stessa categoria. “Heavy” misura l&#x27;intensità, non il modello politico: in un caso prevale la tutela dell&#x27;individuo, in un altro il controllo statale sui dati.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel&quot;&gt;&lt;p&gt;Regolazione solida con enforcement un po&#x27; meno intenso. Sulla mappa: ad esempio Argentina, Giappone, Nuova Zelanda, Indonesia, Egitto, alcuni stati del Sud-est asiatico.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel&quot;&gt;&lt;p&gt;Leggi presenti ma meno complete o applicate in modo discontinuo. Sulla mappa: ad esempio Russia, Brasile, molti paesi dell&#x27;Africa subsahariana e del Golfo.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel&quot;&gt;&lt;p&gt;Regolazione minima o recente, poca applicazione. Sulla mappa: ad esempio India, varie repubbliche dell&#x27;Asia centrale, parti dell&#x27;Africa orientale e australe, alcuni paesi andini.&lt;/p&gt;&lt;p class=&quot;small muted&quot;&gt;Le attribuzioni paese per paese sono lette dalla figura 2023 e vanno verificate sulla mappa aggiornata di DLA Piper (vedi &lt;a href=&quot;#refs&quot;&gt;Per approfondire&lt;/a&gt;): le leggi cambiano spesso.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Il trilemma della domanda geopolitica&lt;/h3&gt;
+  &lt;p&gt;La domanda della slide chiede di tenere insieme tre obiettivi che tirano in direzioni diverse:&lt;/p&gt;
+  &lt;figure&gt;
+  &lt;svg viewBox=&quot;0 0 520 300&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;polygon points=&quot;260,30 470,260 50,260&quot; fill=&quot;var(--och-bg)&quot; stroke=&quot;var(--och)&quot; stroke-width=&quot;2&quot;/&gt;
+    &lt;g font-size=&quot;14&quot; font-weight=&quot;600&quot; text-anchor=&quot;middle&quot;&gt;
+      &lt;text x=&quot;260&quot; y=&quot;22&quot;&gt;Protect rights&lt;/text&gt;
+      &lt;text x=&quot;470&quot; y=&quot;285&quot;&gt;Technological innovation&lt;/text&gt;
+      &lt;text x=&quot;55&quot; y=&quot;285&quot;&gt;Democratic governance&lt;/text&gt;
+    &lt;/g&gt;
+    &lt;g font-size=&quot;12&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--muted)&quot;&gt;
+      &lt;text x=&quot;400&quot; y=&quot;140&quot; style=&quot;fill:var(--muted)&quot;&gt;regole troppo rigide&lt;/text&gt;&lt;text x=&quot;400&quot; y=&quot;156&quot; style=&quot;fill:var(--muted)&quot;&gt;frenano l&#x27;innovazione&lt;/text&gt;
+      &lt;text x=&quot;115&quot; y=&quot;140&quot; style=&quot;fill:var(--muted)&quot;&gt;regole decise fuori&lt;/text&gt;&lt;text x=&quot;115&quot; y=&quot;156&quot; style=&quot;fill:var(--muted)&quot;&gt;dai parlamenti nazionali&lt;/text&gt;
+      &lt;text x=&quot;260&quot; y=&quot;240&quot; style=&quot;fill:var(--muted)&quot;&gt;innovazione veloce che sfugge al controllo democratico&lt;/text&gt;
+    &lt;/g&gt;
+    &lt;text x=&quot;260&quot; y=&quot;180&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot; font-family=&quot;Newsreader,serif&quot;&gt;transnational regulation?&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;figcaption&gt;Schema interpretativo (non nelle slide): ogni lato del triangolo è una tensione tra due obiettivi.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;div class=&quot;ext&quot;&gt;&lt;p&gt;&lt;strong&gt;Esempio di regolazione transnazionale.&lt;/strong&gt; Il Regolamento generale sulla protezione dei dati dell&#x27;UE (GDPR, Regolamento (UE) 2016/679) si applica anche a imprese fuori dall&#x27;UE che trattano dati di persone che si trovano nell&#x27;UE: è l&#x27;esempio classico di norma regionale con effetti extraterritoriali. Non è citato nelle slide. Testo: &lt;a href=&quot;https://eur-lex.europa.eu/eli/reg/2016/679/oj&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;EUR-Lex&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Autoverifica · Case study 11&lt;/h3&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;1. Quali quattro operazioni sui dati compaiono nella definizione di data sovereignty?&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;&lt;em&gt;Ownership, access, processing, storage&lt;/em&gt; (proprietà, accesso, trattamento, conservazione) dei dati personali, regolate da convenzioni, regole e leggi che stabiliscono obblighi e diritti.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;2. Perché nella mappa DLA Piper conta sia “regulation” sia “enforcement”?&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Perché una legge può essere severa sulla carta ma non applicata: il livello reale di protezione dipende dalla combinazione di regole e capacità/volontà di farle rispettare.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;3. Qual è il “problem” della slide in una frase?&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Le identità digitali attraversano più giurisdizioni, e piattaforme, stati e utenti non condividono le stesse regole né le stesse responsabilità: i sistemi digitali attraversano i confini più in fretta di quanto le istituzioni riescano a regolarli.&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part bri&quot; id=&quot;indig&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;kicker&quot;&gt;Case study 12 · Planetary equity&lt;/div&gt;
+  &lt;h2&gt;Prospettive indigene: un&#x27;altra idea di sostenibilità&lt;/h2&gt;
+
+  &lt;div class=&quot;slide&quot; data-p=&quot;slide 18&quot;&gt;
+    &lt;p class=&quot;lead&quot; style=&quot;margin-top:0&quot;&gt;“Sustainability changes when the object of governance is not only the economy, but relationships among people, land and non-human life.”&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Knowledge&lt;/strong&gt;: local and intergenerational knowledge · &lt;strong&gt;Authority&lt;/strong&gt;: community-led decision-making · &lt;strong&gt;Justice&lt;/strong&gt;: recognition of rights and histories · &lt;strong&gt;Resilience&lt;/strong&gt;: adaptation rooted in place.&lt;/p&gt;
+    &lt;p&gt;&lt;em&gt;“Planetary equity requires more than adding local voices to existing institutions. It can require changing the institutions themselves.”&lt;/em&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;p&gt;La &lt;dfn&gt;planetary equity&lt;/dfn&gt; (equità planetaria) è l&#x27;idea che la giustizia ambientale vada pensata a scala globale e tra generazioni: chi ha causato i problemi, chi ne subisce gli effetti, chi ha voce nelle soluzioni. La slide sposta l&#x27;&lt;em&gt;oggetto della governance&lt;/em&gt;: non si governa solo “l&#x27;economia” (crescita, produzione, emissioni) ma le &lt;strong&gt;relazioni&lt;/strong&gt; tra persone, terra e vita non umana.&lt;/p&gt;
+
+  &lt;div class=&quot;grid g4&quot;&gt;
+    &lt;div class=&quot;card sal&quot;&gt;&lt;h4&gt;Knowledge&lt;/h4&gt;&lt;p&gt;Sapere locale e intergenerazionale: osservazioni accumulate per secoli su un luogo preciso, trasmesse oralmente e nella pratica.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card sla&quot;&gt;&lt;h4&gt;Authority&lt;/h4&gt;&lt;p&gt;Decisioni prese dalla comunità (&lt;em&gt;community-led&lt;/em&gt;), non solo “consultata” da altri.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card och&quot;&gt;&lt;h4&gt;Justice&lt;/h4&gt;&lt;p&gt;Riconoscere diritti &lt;em&gt;e&lt;/em&gt; storie: espropri, colonizzazione, esclusioni passate pesano sulle scelte di oggi.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Resilience&lt;/h4&gt;&lt;p&gt;Capacità di adattarsi radicata nel luogo (&lt;em&gt;rooted in place&lt;/em&gt;), non soluzioni standard importate.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;details open&gt;&lt;summary&gt;“Adding voices” o “changing institutions”? La differenza chiave&lt;/summary&gt;&lt;div&gt;
+    &lt;table&gt;
+      &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Aggiungere voci locali&lt;/th&gt;&lt;th&gt;Cambiare le istituzioni&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;&lt;strong&gt;Chi decide&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;L&#x27;istituzione esistente, dopo aver ascoltato&lt;/td&gt;&lt;td&gt;Anche la comunità, con poteri propri&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;&lt;strong&gt;Sapere&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Il sapere locale è un “input” tra tanti&lt;/td&gt;&lt;td&gt;Il sapere locale è una base riconosciuta per la decisione&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;&lt;strong&gt;Esempio&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Consultazione pubblica sul piano di un parco&lt;/td&gt;&lt;td&gt;Co-gestione o gestione indigena con diritto di veto o consenso&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;&lt;strong&gt;Rischio&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Partecipazione di facciata (&lt;em&gt;tokenism&lt;/em&gt;)&lt;/td&gt;&lt;td&gt;Conflitti di competenza con lo stato, tempi lunghi&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;&lt;/details&gt;
+
+  &lt;h3&gt;L&#x27;Indigenous Systems Framework&lt;/h3&gt;
+  &lt;div class=&quot;slide&quot; data-p=&quot;slide 8 (figura)&quot;&gt;
+    &lt;p&gt;“Indigenous Systems Framework — Analytical Lenses for Interpreting Indigenous Systems”. Fonte: Humanculture / Stephanie Zabriskie. Al centro: &lt;em&gt;Indigenous Systems of Life&lt;/em&gt; con cinque valori: &lt;em&gt;Relationality, Kinship Responsibility, Spiritual Relationship to Land, Intergenerational Responsibility, Reciprocity&lt;/em&gt;. Attorno, otto lenti analitiche. A destra: &lt;strong&gt;Legitimacy versus Legality → Empowerment&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Clicca un elemento della ruota per una spiegazione. Il cerchio interno indica i &lt;em&gt;valori&lt;/em&gt; che tengono insieme il sistema; l&#x27;anello esterno indica gli &lt;em&gt;ambiti&lt;/em&gt; in cui osservarli (le “lenti” con cui analizzare un caso concreto).&lt;/p&gt;
+  &lt;figure&gt;
+  &lt;svg viewBox=&quot;0 0 460 460&quot; class=&quot;wheel&quot; id=&quot;wheel&quot; aria-label=&quot;Ruota dell&#x27;Indigenous Systems Framework&quot;&gt;&lt;/svg&gt;
+  &lt;figcaption id=&quot;wheelOut&quot; class=&quot;box&quot; style=&quot;font-size:.95rem&quot;&gt;Clicca un settore o un valore.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;script&gt;
+  (function(){
+    var outer=[[&#x27;Governance &amp; Decision-Making&#x27;,&#x27;come la comunità prende decisioni collettive, con quali istituzioni (consigli, anziani, assemblee) e con quale legittimità.&#x27;],
+      [&#x27;Ecological Stewardship&#x27;,&#x27;la cura attiva dell\&#x27;ecosistema: non lasciare la natura “intatta”, ma gestirla con regole di prelievo, fuoco, rotazione.&#x27;],
+      [&#x27;Land &amp; Resource Systems&#x27;,&#x27;regimi di accesso e uso della terra, spesso collettivi e consuetudinari, che il diritto statale non sempre riconosce.&#x27;],
+      [&#x27;Knowledge &amp; Learning&#x27;,&#x27;come il sapere viene prodotto e trasmesso: oralità, pratica, apprendistato tra generazioni.&#x27;],
+      [&#x27;Livelihood &amp; Production&#x27;,&#x27;i mezzi di sussistenza: pastorizia, agricoltura, pesca, raccolta, artigianato. Legame con i food systems del caso 9.&#x27;],
+      [&#x27;Climate Adaptation&#x27;,&#x27;strategie per adattarsi a siccità, alluvioni, cambi stagionali, basate su osservazione locale di lungo periodo.&#x27;],
+      [&#x27;Cultural Continuity&#x27;,&#x27;lingua, riti, memoria: la cultura come infrastruttura sociale che rende possibili le altre funzioni.&#x27;],
+      [&#x27;Health &amp; Wellbeing&#x27;,&#x27;salute intesa in modo ampio, legata al territorio, al cibo, alle relazioni comunitarie.&#x27;]];
+    var inner=[[&#x27;Relationality&#x27;,&#x27;tutto è definito dalle relazioni (persone, terra, specie), non da individui isolati.&#x27;],
+      [&#x27;Kinship Responsibility&#x27;,&#x27;obblighi verso la parentela, estesa anche a terra e non-umani: la natura come parente, non come risorsa.&#x27;],
+      [&#x27;Spiritual Relationship to Land&#x27;,&#x27;la terra ha un valore spirituale e identitario, non solo economico: per questo non è sempre “compensabile” con denaro.&#x27;],
+      [&#x27;Intergenerational Responsibility&#x27;,&#x27;le decisioni rispondono anche alle generazioni future e a quelle passate.&#x27;],
+      [&#x27;Reciprocity&#x27;,&#x27;prendere implica restituire: un principio di scambio equilibrato con la comunità e con l\&#x27;ambiente.&#x27;]];
+    var s=&#x27;&#x27;,cx=230,cy=230,R1=220,R0=140,n=outer.length;
+    function p(r,a){return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+    outer.forEach(function(o,i){var a0=-Math.PI/2-Math.PI/4+i*2*Math.PI/n+.01,a1=a0+2*Math.PI/n-.02,
+      A=p(R1,a0),B=p(R1,a1),C=p(R0,a1),D=p(R0,a0),m=(a0+a1)/2,T=p((R1+R0)/2,m),
+      h=[150,165,180,210,230,200,175,155][i],L=[48,44,40,42,44,46,50,52][i];
+      s+=&#x27;&lt;g data-title=&quot;&#x27;+o[0]+&#x27;&quot; data-info=&quot;&#x27;+o[1].replace(/&quot;/g,&#x27;&amp;quot;&#x27;)+&#x27;&quot; data-target=&quot;wheelOut&quot;&gt;&lt;path d=&quot;M&#x27;+A+&#x27; A&#x27;+R1+&#x27;,&#x27;+R1+&#x27; 0 0 1 &#x27;+B+&#x27; L&#x27;+C+&#x27; A&#x27;+R0+&#x27;,&#x27;+R0+&#x27; 0 0 0 &#x27;+D+&#x27; Z&quot; fill=&quot;oklch(&#x27;+L+&#x27;% 0.07 &#x27;+h+&#x27;)&quot;/&gt;&#x27;;
+      var w=o[0].split(&#x27; &amp; &#x27;);s+=&#x27;&lt;text text-anchor=&quot;middle&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot; style=&quot;fill:#fff;pointer-events:none&quot;&gt;&#x27;;
+      w.forEach(function(t,j){s+=&#x27;&lt;tspan x=&quot;&#x27;+T[0]+&#x27;&quot; y=&quot;&#x27;+(T[1]+(j-(w.length-1)/2)*15+4)+&#x27;&quot;&gt;&#x27;+t+(j&lt;w.length-1?&#x27; &amp;amp;&#x27;:&#x27;&#x27;)+&#x27;&lt;/tspan&gt;&#x27;});s+=&#x27;&lt;/text&gt;&lt;/g&gt;&#x27;;});
+    s+=&#x27;&lt;circle cx=&quot;230&quot; cy=&quot;230&quot; r=&quot;134&quot; fill=&quot;oklch(58% 0.11 75)&quot;/&gt;&lt;text x=&quot;230&quot; y=&quot;225&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot; font-weight=&quot;700&quot; style=&quot;fill:#fff&quot;&gt;Indigenous&lt;/text&gt;&lt;text x=&quot;230&quot; y=&quot;243&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot; font-weight=&quot;700&quot; style=&quot;fill:#fff&quot;&gt;Systems of Life&lt;/text&gt;&#x27;;
+    inner.forEach(function(o,i){var a=-Math.PI/2+i*2*Math.PI/5,c=p(88,a),w=o[0].split(&#x27; &#x27;);
+      s+=&#x27;&lt;g data-title=&quot;&#x27;+o[0]+&#x27;&quot; data-info=&quot;&#x27;+o[1].replace(/&quot;/g,&#x27;&amp;quot;&#x27;)+&#x27;&quot; data-target=&quot;wheelOut&quot;&gt;&lt;circle class=&quot;seg&quot; cx=&quot;&#x27;+c[0]+&#x27;&quot; cy=&quot;&#x27;+c[1]+&#x27;&quot; r=&quot;38&quot; fill=&quot;oklch(36% 0.06 60)&quot;/&gt;&lt;text text-anchor=&quot;middle&quot; font-size=&quot;10&quot; style=&quot;fill:#fff;pointer-events:none&quot;&gt;&#x27;;
+      var lines=w.length&gt;2?[w.slice(0,Math.ceil(w.length/2)).join(&#x27; &#x27;),w.slice(Math.ceil(w.length/2)).join(&#x27; &#x27;)]:w;
+      lines.forEach(function(t,j){s+=&#x27;&lt;tspan x=&quot;&#x27;+c[0]+&#x27;&quot; y=&quot;&#x27;+(c[1]+(j-(lines.length-1)/2)*12+3)+&#x27;&quot;&gt;&#x27;+t+&#x27;&lt;/tspan&gt;&#x27;});s+=&#x27;&lt;/text&gt;&lt;/g&gt;&#x27;;});
+    document.getElementById(&#x27;wheel&#x27;).innerHTML=s;
+  })();
+  &lt;/script&gt;
+
+  &lt;h3&gt;Legitimacy versus legality → empowerment&lt;/h3&gt;
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;tabbar&quot;&gt;&lt;button aria-selected=&quot;true&quot;&gt;Legality&lt;/button&gt;&lt;button&gt;Legitimacy&lt;/button&gt;&lt;button&gt;Empowerment&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel on&quot;&gt;&lt;p&gt;La &lt;dfn&gt;legality&lt;/dfn&gt; (legalità) è la conformità al diritto formale dello stato: titoli di proprietà, concessioni, autorizzazioni. Una miniera o un parco possono essere perfettamente legali.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel&quot;&gt;&lt;p&gt;La &lt;dfn&gt;legitimacy&lt;/dfn&gt; (legittimità) è il riconoscimento che un potere o una regola sono giusti da parte di chi li subisce. Una comunità può governare un territorio da secoli con piena legittimità ma senza titolo legale; al contrario una concessione legale può essere percepita come illegittima.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel&quot;&gt;&lt;p&gt;L&#x27;&lt;dfn&gt;empowerment&lt;/dfn&gt; (rafforzamento del potere di agire) è la freccia della slide: colmare la distanza tra legittimità e legalità dando alle comunità diritti, risorse e voce effettiva, cioè trasformando una legittimità di fatto in un potere riconosciuto. È il passaggio da “aggiungere voci” a “cambiare le istituzioni”.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;figure&gt;
+  &lt;svg viewBox=&quot;0 0 600 170&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;circle cx=&quot;210&quot; cy=&quot;80&quot; r=&quot;70&quot; fill=&quot;var(--sla)&quot; fill-opacity=&quot;.18&quot; stroke=&quot;var(--sla)&quot;/&gt;
+    &lt;circle cx=&quot;330&quot; cy=&quot;80&quot; r=&quot;70&quot; fill=&quot;var(--bri)&quot; fill-opacity=&quot;.18&quot; stroke=&quot;var(--bri)&quot;/&gt;
+    &lt;g font-size=&quot;14&quot; text-anchor=&quot;middle&quot;&gt;&lt;text x=&quot;170&quot; y=&quot;84&quot;&gt;Legality&lt;/text&gt;&lt;text x=&quot;372&quot; y=&quot;84&quot;&gt;Legitimacy&lt;/text&gt;
+    &lt;text x=&quot;270&quot; y=&quot;78&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot;&gt;regole&lt;/text&gt;&lt;text x=&quot;270&quot; y=&quot;93&quot; font-size=&quot;12&quot; font-weight=&quot;600&quot;&gt;accettate&lt;/text&gt;&lt;/g&gt;
+    &lt;path d=&quot;M440,80 L500,80&quot; stroke=&quot;var(--acc)&quot; stroke-width=&quot;3&quot; marker-end=&quot;url(#ar)&quot;/&gt;
+    &lt;text x=&quot;545&quot; y=&quot;85&quot; text-anchor=&quot;middle&quot; font-size=&quot;14&quot; font-weight=&quot;600&quot; style=&quot;fill:var(--acc)&quot;&gt;Empowerment&lt;/text&gt;
+    &lt;text x=&quot;270&quot; y=&quot;166&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; style=&quot;fill:var(--muted)&quot;&gt;L&#x27;obiettivo è allargare la zona in cui le regole sono sia legali sia legittime&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;/figure&gt;
+
+  &lt;div class=&quot;ext&quot;&gt;&lt;p&gt;&lt;strong&gt;Norma di riferimento.&lt;/strong&gt; La &lt;em&gt;United Nations Declaration on the Rights of Indigenous Peoples&lt;/em&gt; (UNDRIP), adottata dall&#x27;Assemblea generale con la risoluzione 61/295 del 13 settembre 2007, prevede il &lt;em&gt;free, prior and informed consent&lt;/em&gt; (FPIC, consenso libero, preventivo e informato) per esempio prima di trasferimenti dalle terre (art. 10) e di misure legislative che riguardano i popoli indigeni (art. 19). È lo strumento giuridico più vicino all&#x27;idea di trasformare legittimità in legalità. Non è citata nelle slide. Testo: &lt;a href=&quot;https://www.justice.gc.ca/eng/declaration/decl_doc.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;riproduzione integrale (Department of Justice Canada)&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Autoverifica · Case study 12&lt;/h3&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;1. Cosa cambia quando l&#x27;“oggetto della governance” non è solo l&#x27;economia?&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Si governano le relazioni tra persone, terra e vita non umana: diventano centrali conoscenza locale, autorità comunitaria, giustizia (diritti e storie) e resilienza radicata nel luogo, non solo crescita ed efficienza.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;2. Perché “aggiungere voci locali” può non bastare?&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Perché se le istituzioni restano le stesse, chi decide resta lo stesso: la partecipazione rischia di essere consultiva o di facciata. La &lt;em&gt;planetary equity&lt;/em&gt; può richiedere di cambiare le istituzioni (poteri, regole, sedi decisionali).&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;3. Fai un esempio di situazione legale ma non legittima.&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Una concessione mineraria o un&#x27;area protetta istituite secondo la legge statale su un territorio che una comunità governa da generazioni senza titolo formale e senza averle approvate.&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part acc&quot; id=&quot;synth&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;kicker&quot;&gt;Cross-case synthesis&lt;/div&gt;
+  &lt;h2&gt;Cosa hanno in comune i casi&lt;/h2&gt;
+  &lt;div class=&quot;slide&quot; data-p=&quot;slide 20&quot;&gt;
+    &lt;ol&gt;
+      &lt;li&gt;&lt;strong&gt;Transitions redistribute power&lt;/strong&gt; — New infrastructures and resources create new dependencies&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Scale matters&lt;/strong&gt; — Local impacts are tied to global markets and institutions&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Justice is geopolitical&lt;/strong&gt; — Distribution of costs and benefits shapes cooperation&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Institutions lag behind change&lt;/strong&gt; — Rules remain fragmented while systems are connected&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Security is expanding&lt;/strong&gt; — Environmental change enters defence, finance and technology policy&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Una &lt;dfn&gt;transition&lt;/dfn&gt; (transizione) è il passaggio da un sistema a un altro: energetica, digitale, ecologica. La tesi della lezione è che nessuna transizione è neutra: sposta potere, crea vincitori e perdenti. Clicca una cella per vedere come ogni principio si applica a ciascun caso.&lt;/p&gt;
+
+  &lt;div class=&quot;scroll&quot;&gt;&lt;table class=&quot;matrix&quot;&gt;
+    &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;9 · Biodiversità&lt;/th&gt;&lt;th&gt;10 · AI&lt;/th&gt;&lt;th&gt;11 · Digitale&lt;/th&gt;&lt;th&gt;12 · Indigeni&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th class=&quot;rh&quot;&gt;1 · Power&lt;/th&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Power × Biodiversità&quot; data-info=&quot;Chi istituisce un&#x27;area protetta acquisisce controllo sul territorio; le comunità possono diventare dipendenti da agenzie o finanziatori esterni.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Power × AI&quot; data-info=&quot;Data centre, chip e minerali critici creano nuove dipendenze da pochi paesi e imprese.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Power × Digitale&quot; data-info=&quot;Le piattaforme diventano attori quasi-statali: fissano regole (termini d&#x27;uso) per miliardi di persone.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Power × Indigeni&quot; data-info=&quot;La transizione verde (es. miniere per batterie, nuovi parchi) può spostare potere lontano dalle comunità, oppure, con l&#x27;empowerment, verso di loro.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th class=&quot;rh&quot;&gt;2 · Scale&lt;/th&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Scale × Biodiversità&quot; data-info=&quot;Un obiettivo globale (es. 30% di aree protette) si traduce in confini concreti in villaggi specifici; i mercati globali del cibo spingono la conversione di habitat locali.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Scale × AI&quot; data-info=&quot;Un modello addestrato altrove decide su una rete idrica locale; l&#x27;acqua usata da un data centre è sottratta a un bacino locale.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Scale × Digitale&quot; data-info=&quot;Il dato di un singolo utente circola su scala globale tra giurisdizioni diverse.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Scale × Indigeni&quot; data-info=&quot;La resilienza è “rooted in place”, ma le pressioni (clima, mercati, concessioni) arrivano da scala globale.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th class=&quot;rh&quot;&gt;3 · Justice&lt;/th&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Justice × Biodiversità&quot; data-info=&quot;Benefici globali, costi locali: la domanda “who bears the costs?” è il cuore del caso.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Justice × AI&quot; data-info=&quot;Unequal capacity: chi non ha infrastrutture e competenze subisce standard decisi da altri.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Justice × Digitale&quot; data-info=&quot;La protezione dei dati varia da heavy a limited: lo stesso diritto vale molto o poco a seconda di dove si vive.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Justice × Indigeni&quot; data-info=&quot;Recognition of rights and histories: la giustizia include la riparazione delle esclusioni passate.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th class=&quot;rh&quot;&gt;4 · Lag&lt;/th&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Lag × Biodiversità&quot; data-info=&quot;Regimi di tutela frammentati per stato, mentre specie, fiumi e oceani sono connessi.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Lag × AI&quot; data-info=&quot;Il governance gap: la tecnologia agisce già su infrastrutture critiche, le regole arrivano dopo.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Lag × Digitale&quot; data-info=&quot;“Digital systems cross borders faster than political institutions can regulate them.”&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Lag × Indigeni&quot; data-info=&quot;Le istituzioni statali non riconoscono forme di governo consuetudinarie: legittimità senza legalità.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th class=&quot;rh&quot;&gt;5 · Security&lt;/th&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Security × Biodiversità&quot; data-info=&quot;Sicurezza alimentare e controllo delle risorse naturali diventano questioni strategiche.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Security × AI&quot; data-info=&quot;AI nelle infrastrutture critiche: tema di difesa (l&#x27;immagine AIGN cita un workshop sostenuto dalla NATO).&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Security × Digitale&quot; data-info=&quot;Sovranità dei dati e localizzazione come strumenti di sicurezza nazionale.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;button data-target=&quot;mxOut&quot; data-title=&quot;Security × Indigeni&quot; data-info=&quot;Sicurezza intesa come resilienza delle comunità a clima e pressioni esterne, non solo come difesa militare.&quot;&gt;vedi&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;&lt;/div&gt;
+  &lt;p id=&quot;mxOut&quot; class=&quot;box&quot; style=&quot;font-size:.95rem&quot;&gt;Clicca una cella “vedi”.&lt;/p&gt;
+  &lt;p class=&quot;small muted&quot;&gt;Le celle sono applicazioni ragionate dei principi ai casi, scritte per lo studio: la slide elenca solo i cinque principi.&lt;/p&gt;
+
+  &lt;details&gt;&lt;summary&gt;Ciò che la slide dà per scontato: “security is expanding”&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;Nella tradizione delle relazioni internazionali la &lt;em&gt;security&lt;/em&gt; era soprattutto militare. Il quinto punto descrive un allargamento: clima, risorse, tecnologia e finanza vengono trattati come questioni di sicurezza. Il rischio, discusso in letteratura come &lt;span class=&quot;term&quot;&gt;securitisation&lt;/span&gt; (securitizzazione: presentare un tema come minaccia esistenziale per giustificare misure straordinarie), è che l&#x27;ambiente venga gestito con logiche di emergenza e di difesa, riducendo trasparenza e partecipazione.&lt;/p&gt;
+  &lt;/div&gt;&lt;/details&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Autoverifica · Sintesi&lt;/h3&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;1. Ricostruisci i cinque principi con la loro spiegazione.&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Transitions redistribute power (nuove dipendenze) · Scale matters (locale legato a globale) · Justice is geopolitical (distribuzione di costi e benefici condiziona la cooperazione) · Institutions lag behind change (regole frammentate, sistemi connessi) · Security is expanding (l&#x27;ambiente entra in difesa, finanza, tecnologia).&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;2. Applica “institutions lag behind change” al caso 11.&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;I dati attraversano giurisdizioni in tempo reale, mentre le leggi sulla protezione dei dati restano nazionali o regionali e molto diverse tra loro (mappa DLA Piper): regole frammentate, sistema connesso.&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part acc&quot; id=&quot;coop&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;kicker&quot;&gt;From diagnosis to collective action&lt;/div&gt;
+  &lt;h2&gt;Il cooperation problem&lt;/h2&gt;
+  &lt;div class=&quot;slide&quot; data-p=&quot;slide 21&quot;&gt;
+    &lt;p class=&quot;lead&quot; style=&quot;margin-top:0&quot;&gt;“Global challenges create shared exposure, but political incentives remain uneven.”&lt;/p&gt;
+    &lt;div class=&quot;grid g2&quot;&gt;
+      &lt;div&gt;&lt;strong&gt;WHY COOPERATION IS DIFFICULT&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Shared risks&lt;/li&gt;&lt;li&gt;Unequal responsibility&lt;/li&gt;&lt;li&gt;Different capacities&lt;/li&gt;&lt;li&gt;Competing time horizons&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;strong&gt;WHY COOPERATION REMAINS NECESSARY&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Fragmented institutions&lt;/li&gt;&lt;li&gt;Strategic rivalry&lt;/li&gt;&lt;li&gt;Short-term political pressure&lt;/li&gt;&lt;li&gt;Weak accountability&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box&quot;&gt;&lt;strong&gt;Attenzione alla lettura.&lt;/strong&gt; Così come sono impaginate, le due colonne sembrano poco coerenti con i titoli: &lt;em&gt;fragmented institutions&lt;/em&gt;, &lt;em&gt;strategic rivalry&lt;/em&gt;, &lt;em&gt;short-term pressure&lt;/em&gt; e &lt;em&gt;weak accountability&lt;/em&gt; sono tipicamente &lt;em&gt;ostacoli&lt;/em&gt; alla cooperazione, mentre i &lt;em&gt;shared risks&lt;/em&gt; sono la ragione per cui cooperare è necessario. È possibile che le etichette siano invertite o che la slide vada letta in modo più sottile (vedi sotto). Verificalo con il docente o con gli appunti della lezione.&lt;/div&gt;
+
+  &lt;p&gt;&lt;dfn&gt;Collective action&lt;/dfn&gt; (azione collettiva) indica le situazioni in cui un risultato utile a tutti richiede il contributo di molti, ma ciascuno ha un incentivo a lasciare che contribuiscano gli altri (&lt;span class=&quot;term&quot;&gt;free riding&lt;/span&gt;, “viaggiare a sbafo”). Clima e biodiversità sono &lt;span class=&quot;term&quot;&gt;global public goods&lt;/span&gt; (beni pubblici globali): nessuno può essere escluso dai benefici, quindi pagare i costi conviene poco al singolo.&lt;/p&gt;
+
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;tabbar&quot;&gt;&lt;button aria-selected=&quot;true&quot;&gt;Shared exposure&lt;/button&gt;&lt;button&gt;Uneven incentives&lt;/button&gt;&lt;button&gt;Una lettura delle due colonne&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel on&quot;&gt;&lt;p&gt;Tutti sono esposti (&lt;em&gt;shared risks&lt;/em&gt;): ondate di calore, perdita di biodiversità, attacchi a infrastrutture digitali. Ma esposizione condivisa non significa uguale: i più poveri sono più vulnerabili.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel&quot;&gt;&lt;p&gt;Gli incentivi politici sono disuguali: &lt;em&gt;unequal responsibility&lt;/em&gt; (chi ha emesso o sfruttato di più), &lt;em&gt;different capacities&lt;/em&gt; (chi può pagare e innovare), &lt;em&gt;competing time horizons&lt;/em&gt; (i governi rispondono a cicli elettorali di pochi anni, i problemi ambientali si sviluppano su decenni).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel&quot;&gt;&lt;p&gt;Si può leggere la colonna di destra così: proprio perché le istituzioni sono frammentate, la rivalità è strategica, la politica è di breve periodo e l&#x27;accountability è debole, &lt;em&gt;nessun attore può risolvere da solo&lt;/em&gt; i problemi; quindi la cooperazione resta necessaria. La colonna di sinistra spiega perché è difficile: rischi condivisi ma responsabilità, capacità e orizzonti diversi rendono difficile accordarsi su chi fa cosa. È una lettura possibile, non indicata esplicitamente dalla slide.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Simulatore: il dilemma del bene pubblico&lt;/h3&gt;
+  &lt;p&gt;Modello didattico classico (&lt;span class=&quot;term&quot;&gt;public goods game&lt;/span&gt;), non tratto dalle slide. Dieci paesi; chi coopera paga un costo; la somma dei contributi viene moltiplicata (il beneficio collettivo) e divisa tra &lt;em&gt;tutti&lt;/em&gt;, anche chi non ha pagato.&lt;/p&gt;
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;label class=&quot;rl&quot; for=&quot;pgK&quot;&gt;Paesi che cooperano: &lt;span class=&quot;out&quot; id=&quot;pgKo&quot;&gt;&lt;/span&gt; su 10&lt;/label&gt;
+    &lt;input type=&quot;range&quot; id=&quot;pgK&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;5&quot;&gt;
+    &lt;label class=&quot;rl&quot; for=&quot;pgC&quot;&gt;Costo della cooperazione per paese: &lt;span class=&quot;out&quot; id=&quot;pgCo&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+    &lt;input type=&quot;range&quot; id=&quot;pgC&quot; min=&quot;1&quot; max=&quot;10&quot; value=&quot;4&quot;&gt;
+    &lt;label class=&quot;rl&quot; for=&quot;pgR&quot;&gt;Moltiplicatore del beneficio collettivo: &lt;span class=&quot;out&quot; id=&quot;pgRo&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+    &lt;input type=&quot;range&quot; id=&quot;pgR&quot; min=&quot;1&quot; max=&quot;9&quot; step=&quot;.5&quot; value=&quot;3&quot;&gt;
+    &lt;svg viewBox=&quot;0 0 600 190&quot; aria-label=&quot;Guadagni di chi coopera, di chi non coopera e del gruppo&quot;&gt;&lt;g id=&quot;pgBars&quot;&gt;&lt;/g&gt;&lt;/svg&gt;
+    &lt;p id=&quot;pgTxt&quot;&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+  (function(){
+    var k=document.getElementById(&#x27;pgK&#x27;),c=document.getElementById(&#x27;pgC&#x27;),r=document.getElementById(&#x27;pgR&#x27;),N=10;
+    function draw(){var K=+k.value,C=+c.value,R=+r.value,share=K*C*R/N,coop=share-C,free=share,tot=K*coop+(N-K)*free,totAll=N*(C*R-C);
+      document.getElementById(&#x27;pgKo&#x27;).textContent=K;document.getElementById(&#x27;pgCo&#x27;).textContent=C;document.getElementById(&#x27;pgRo&#x27;).textContent=&#x27;×&#x27;+R;
+      var rows=[[&#x27;Chi coopera&#x27;,K?coop:null,&#x27;var(--sal)&#x27;],[&#x27;Chi non coopera&#x27;,K&lt;N?free:null,&#x27;var(--bri)&#x27;],[&#x27;Media del gruppo&#x27;,tot/N,&#x27;var(--sla)&#x27;],[&#x27;Media se tutti cooperano&#x27;,totAll/N,&#x27;var(--acc)&#x27;]];
+      var mx=Math.max(10,Math.abs(totAll/N),free,Math.abs(coop)),z=330,s=230/mx;
+      document.getElementById(&#x27;pgBars&#x27;).innerHTML=&#x27;&lt;line x1=&quot;&#x27;+z+&#x27;&quot; y1=&quot;0&quot; x2=&quot;&#x27;+z+&#x27;&quot; y2=&quot;180&quot; stroke=&quot;var(--muted)&quot;/&gt;&#x27;+rows.map(function(o,i){var y=10+i*44,v=o[1];
+        if(v===null)return &#x27;&lt;text x=&quot;0&quot; y=&quot;&#x27;+(y+20)+&#x27;&quot; font-size=&quot;14&quot;&gt;&#x27;+o[0]+&#x27;&lt;/text&gt;&lt;text x=&quot;&#x27;+(z+8)+&#x27;&quot; y=&quot;&#x27;+(y+20)+&#x27;&quot; font-size=&quot;13&quot; style=&quot;fill:var(--muted)&quot;&gt;nessuno&lt;/text&gt;&#x27;;
+        var w=Math.abs(v)*s,x=v&lt;0?z-w:z;
+        return &#x27;&lt;text x=&quot;0&quot; y=&quot;&#x27;+(y+20)+&#x27;&quot; font-size=&quot;14&quot;&gt;&#x27;+o[0]+&#x27;&lt;/text&gt;&lt;rect x=&quot;&#x27;+x+&#x27;&quot; y=&quot;&#x27;+y+&#x27;&quot; width=&quot;&#x27;+w+&#x27;&quot; height=&quot;28&quot; rx=&quot;4&quot; fill=&quot;&#x27;+o[2]+&#x27;&quot;/&gt;&lt;text x=&quot;&#x27;+(v&lt;0?x-6:x+w+6)+&#x27;&quot; y=&quot;&#x27;+(y+20)+&#x27;&quot; font-size=&quot;13&quot; text-anchor=&quot;&#x27;+(v&lt;0?&#x27;end&#x27;:&#x27;start&#x27;)+&#x27;&quot;&gt;&#x27;+(Math.round(v*10)/10)+&#x27;&lt;/text&gt;&#x27;}).join(&#x27;&#x27;);
+      var t;if(R&lt;=1)t=&#x27;Con moltiplicatore ≤ 1 cooperare non crea valore: nessun dilemma, semplicemente non conviene.&#x27;;
+      else if(R&gt;=N)t=&#x27;Con moltiplicatore ≥ 10 ogni paese recupera più di quanto paga: cooperare conviene anche individualmente, il problema sparisce.&#x27;;
+      else t=&#x27;Dilemma: chi non coopera guadagna sempre &#x27;+C+&#x27; in più di chi coopera, quindi ciascuno è tentato di non contribuire; ma se tutti cooperano ognuno ottiene &#x27;+(Math.round(totAll/N*10)/10)+&#x27;, più che in qualsiasi altra situazione. Ecco perché “shared exposure” non basta: gli incentivi individuali restano disallineati.&#x27;;
+      document.getElementById(&#x27;pgTxt&#x27;).textContent=t;}
+    [k,c,r].forEach(function(e){e.addEventListener(&#x27;input&#x27;,draw)});draw();
+  })();
+  &lt;/script&gt;
+  &lt;p&gt;Collegamento con la slide: &lt;em&gt;unequal responsibility&lt;/em&gt; e &lt;em&gt;different capacities&lt;/em&gt; significano che nella realtà i costi non sono uguali per tutti (un paese povero paga relativamente di più); &lt;em&gt;competing time horizons&lt;/em&gt; significa che il beneficio arriva tra decenni, il costo subito. Entrambi peggiorano il dilemma del modello.&lt;/p&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Autoverifica · Cooperation problem&lt;/h3&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;1. Spiega “shared exposure, uneven incentives”.&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Tutti sono esposti ai rischi globali, ma i costi dell&#x27;azione, le responsabilità storiche, le capacità e gli orizzonti temporali dei governi sono diversi: gli incentivi politici a cooperare non sono distribuiti in modo uguale.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;2. Cosa sono i “competing time horizons”?&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Il contrasto tra i tempi della politica (cicli elettorali, pressioni di breve periodo) e i tempi lunghi dei problemi ambientali e tecnologici, i cui benefici della prevenzione arrivano dopo anni.&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part&quot; id=&quot;question&quot; style=&quot;background:var(--ink);color:var(--paper)&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;kicker&quot; style=&quot;color:var(--paper);opacity:.7&quot;&gt;Challenges in a world in transition · la domanda centrale&lt;/div&gt;
+  &lt;p class=&quot;lead&quot; style=&quot;font-size:clamp(1.4rem,3.2vw,2rem)&quot;&gt;“How can societies redesign &lt;strong&gt;power&lt;/strong&gt;, &lt;strong&gt;institutions&lt;/strong&gt; and &lt;strong&gt;security&lt;/strong&gt; so that sustainability becomes a &lt;strong&gt;shared capacity&lt;/strong&gt; rather than a new source of &lt;strong&gt;inequality&lt;/strong&gt;?”&lt;/p&gt;
+  &lt;p style=&quot;opacity:.85&quot;&gt;La slide dice che la domanda è &lt;em&gt;political&lt;/em&gt;: non tecnica. Tre leve da ridisegnare, ciascuna già vista nei casi:&lt;/p&gt;
+  &lt;div class=&quot;grid g4&quot; style=&quot;color:var(--ink)&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Power&lt;/h4&gt;&lt;p&gt;Chi controlla terra, dati, infrastrutture (casi 9, 10, 11).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Institutions&lt;/h4&gt;&lt;p&gt;Regole che inseguono sistemi connessi; cambiare le istituzioni, non solo aggiungere voci (casi 11, 12).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Security&lt;/h4&gt;&lt;p&gt;Un concetto che si allarga: da difesa militare a resilienza di comunità e infrastrutture (caso 10, sintesi).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Shared capacity&lt;/h4&gt;&lt;p&gt;La sostenibilità come capacità di tutti di adattarsi e decidere, non come privilegio di chi ha risorse.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part och&quot; id=&quot;group&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;kicker&quot;&gt;Laboratorio&lt;/div&gt;
+  &lt;h2&gt;Group work: dai casi a un territorio&lt;/h2&gt;
+  &lt;p&gt;Le ultime slide passano dalla teoria al lavoro di gruppo: scegliere un luogo concreto (un &lt;dfn&gt;territorial patch&lt;/dfn&gt;, “ritaglio” o porzione di territorio da analizzare) e leggerlo con le categorie della lezione. Le slide chiamano lo sfondo comune &lt;dfn&gt;Anthropocene&lt;/dfn&gt; (Antropocene: l&#x27;epoca in cui le attività umane sono la principale forza che trasforma il sistema Terra).&lt;/p&gt;
+
+  &lt;h3&gt;La struttura del lavoro, passo per passo&lt;/h3&gt;
+  &lt;div class=&quot;slide&quot; data-p=&quot;Main points of group work&quot;&gt;I sei punti sono riportati nei passi qui sotto, con un suggerimento su come usare la lezione in ciascuno.&lt;/div&gt;
+  &lt;div class=&quot;steps&quot;&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;1&lt;/span&gt;&lt;h4&gt;Introduction&lt;/h4&gt;&lt;p&gt;&lt;em&gt;Reminding the title and explain your vision/position.&lt;/em&gt; Dichiarate titolo e tesi. Suggerimento: formulate la tesi come risposta alla domanda centrale (chi guadagna e chi perde potere nella transizione del vostro territorio?).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;2&lt;/span&gt;&lt;h4&gt;Territorial analysis of the chosen patch&lt;/h4&gt;&lt;p&gt;Geografia fisica, uso del suolo, risorse, ecosistemi, aree protette. Strumento utile: la mappa del WDPA vista nel &lt;a href=&quot;#bio&quot;&gt;caso 9&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;3&lt;/span&gt;&lt;h4&gt;Socio-economic analysis of the patch&lt;/h4&gt;&lt;p&gt;Popolazione, attività produttive, redditi, lavoro, dipendenza da mercati globali (principio &lt;em&gt;scale matters&lt;/em&gt;).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;4&lt;/span&gt;&lt;h4&gt;Analysis of social actors involved in the patch&lt;/h4&gt;&lt;p&gt;Chi sono gli attori (stato, imprese, comunità locali e indigene, ONG, organismi internazionali, piattaforme)? Che potere, interessi e legittimità hanno? Utile la distinzione &lt;em&gt;legitimacy vs legality&lt;/em&gt; del &lt;a href=&quot;#indig&quot;&gt;caso 12&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;5&lt;/span&gt;&lt;h4&gt;Global challenges and the perception of the landscape: pollution and mobility&lt;/h4&gt;&lt;p&gt;Collegate il luogo a sfide globali, con attenzione a inquinamento e mobilità (di persone, merci, capitali), e a come gli abitanti &lt;em&gt;percepiscono&lt;/em&gt; il paesaggio che cambia.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;span class=&quot;pill&quot;&gt;6&lt;/span&gt;&lt;h4&gt;Conclusion&lt;/h4&gt;&lt;p&gt;&lt;em&gt;Summarise the problems and envisage solutions.&lt;/em&gt; Riassumete i problemi e proponete soluzioni: usate il &lt;a href=&quot;#coop&quot;&gt;cooperation problem&lt;/a&gt; per spiegare perché le soluzioni richiedono azione collettiva e quali attori devono cooperare.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;button class=&quot;b prev&quot;&gt;← Indietro&lt;/button&gt;&lt;button class=&quot;b next&quot;&gt;Avanti →&lt;/button&gt;&lt;span class=&quot;dots&quot;&gt;&lt;/span&gt;&lt;span class=&quot;n small muted&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Esempi dalle slide&lt;/h3&gt;
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;tabbar&quot;&gt;&lt;button aria-selected=&quot;true&quot;&gt;Esempi dell&#x27;anno scorso&lt;/button&gt;&lt;button&gt;Brainstorming per gruppi&lt;/button&gt;&lt;button&gt;Luoghi e sfide&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel on&quot;&gt;&lt;div class=&quot;slide&quot; data-p=&quot;Main challenges in the Anthropocene&quot;&gt;“Examples of last year!”: Group 1 &lt;strong&gt;Fast fashion&lt;/strong&gt; · Group 2 &lt;strong&gt;Gold extraction Asanti region&lt;/strong&gt; · Group 3 &lt;strong&gt;Impact of Olympic Games&lt;/strong&gt; · Group 4 &lt;strong&gt;Lagos urban laboratory of global challenges&lt;/strong&gt;.&lt;/div&gt;
+      &lt;p&gt;Si nota il tipo di tema atteso: una filiera globale (moda), un&#x27;attività estrattiva in una regione precisa (oro nella regione Ashanti del Ghana), un grande evento, una metropoli come “laboratorio”.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel&quot;&gt;&lt;div class=&quot;slide&quot; data-p=&quot;Group work · Brainstorming&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Group 1&lt;/strong&gt; — Global challenge: rischi del settore fast fashion (es. Shein), basse condizioni di lavoro. Territorial patch (da definire): Cina.&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Group 2&lt;/strong&gt; — Global challenge: sovrasfruttamento delle risorse, danno ambientale, alto costo della vita. Territorial patch (da definire): Ghana.&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Group 3&lt;/strong&gt; — Global challenge: basse condizioni di lavoro nei distretti industriali, riscaldamento globale. Territorial patch (da definire): India.&lt;/p&gt;&lt;/div&gt;
+      &lt;p class=&quot;small muted&quot;&gt;La slide contiene foto degli studenti: qui sono omesse.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel&quot;&gt;&lt;div class=&quot;slide&quot; data-p=&quot;Brainstorming · Examples of places and their challenges&quot;&gt;
+      &lt;table&gt;&lt;tr&gt;&lt;th&gt;Luogo&lt;/th&gt;&lt;th&gt;Impatti&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Greenland&lt;/td&gt;&lt;td&gt;Politici; ambientali: scioglimento dei ghiacci; sociali: sistema di vita indigeno&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Malesia&lt;/td&gt;&lt;td&gt;Politici, sociali, ambientali&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Cyprus&lt;/td&gt;&lt;td&gt;Politici (“two countries”); divisione religiosa; ambientali: sfruttamento delle risorse per l&#x27;energia&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Australia&lt;/td&gt;&lt;td&gt;Sociali: popoli indigeni, migrazione; ambientali&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+      &lt;p class=&quot;small muted&quot;&gt;La tabella originale ha anche una colonna con i nomi degli studenti, qui omessa.&lt;/p&gt;
+      &lt;p&gt;Prova: la Groenlandia tocca quasi tutti i casi della lezione (biodiversità e grandi aree protette, prospettive indigene, minerali critici per la tecnologia, sicurezza che si allarga all&#x27;Artico).&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;ext&quot;&gt;&lt;p&gt;&lt;strong&gt;Anthropocene, una precisazione.&lt;/strong&gt; Nel marzo 2024 la Subcommission on Quaternary Stratigraphy ha respinto la proposta di inserire l&#x27;Antropocene come epoca formale nella scala dei tempi geologici, decisione confermata dall&#x27;International Union of Geological Sciences (IUGS), che ha però definito il termine un descrittore prezioso dell&#x27;impatto umano sul sistema Terra. Nelle scienze sociali e in questo corso resta quindi un concetto interpretativo, non un&#x27;unità geologica ufficiale. Fonti: &lt;a href=&quot;https://en.wikipedia.org/wiki/Anthropocene&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wikipedia, Anthropocene&lt;/a&gt;; &lt;a href=&quot;https://anthropocene.univie.ac.at/news/detailansicht/statement-on-the-iugs-anthropocene-decision&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Università di Vienna, statement on the IUGS decision&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Autoverifica · Group work&lt;/h3&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;1. Elenca i sei punti del lavoro di gruppo.&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Introduction · Territorial analysis · Socio-economic analysis · Analysis of social actors · Global challenges and perception of the landscape (pollution and mobility) · Conclusion (problemi e soluzioni).&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;q&quot;&gt;&lt;p&gt;2. Scegli uno dei luoghi del brainstorming e collega a esso due principi della sintesi.&lt;/p&gt;&lt;button class=&quot;b&quot;&gt;Mostra risposta&lt;/button&gt;
+      &lt;div class=&quot;ans&quot;&gt;Esempio, Groenlandia: &lt;em&gt;transitions redistribute power&lt;/em&gt; (la fusione dei ghiacci e i minerali critici attirano interessi esterni e creano nuove dipendenze); &lt;em&gt;security is expanding&lt;/em&gt; (il cambiamento ambientale dell&#x27;Artico entra nelle politiche di difesa). Ma molte altre combinazioni sono valide.&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+
+&lt;section class=&quot;part&quot; id=&quot;refs&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;kicker&quot;&gt;Per approfondire&lt;/div&gt;
+  &lt;h2&gt;Fonti citate nelle slide e contesto&lt;/h2&gt;
+  &lt;p&gt;Tutte le schede qui sotto sono &lt;strong&gt;fonti esterne&lt;/strong&gt;: dati e link trovati con ricerca web (ottobre 2026). Le prime quattro sono citate nelle slide; le altre sono contesto utile, non citato.&lt;/p&gt;
+  &lt;div class=&quot;refs&quot;&gt;
+    &lt;h3&gt;Citate nelle slide&lt;/h3&gt;
+    &lt;article&gt;&lt;h4&gt;UNEP-WCMC e IUCN — Protected Planet / World Database on Protected Areas (WDPA)&lt;/h4&gt;
+      &lt;p&gt;&lt;span class=&quot;pill&quot;&gt;fonte esterna&lt;/span&gt; Il WDPA è un progetto congiunto di UNEP e IUCN, compilato e gestito dallo UNEP World Conservation Monitoring Centre insieme alla IUCN World Commission on Protected Areas (WCPA). È il più completo database mondiale di aree protette terrestri e marine; si consulta e scarica dal sito Protected Planet ed è aggiornato mensilmente. Secondo Wikipedia, nella versione allargata (World Database on Protected and Conserved Areas) a maggio 2026 conteneva oltre 312.000 aree protette e circa 7.400 OECM. &lt;strong&gt;Perché conta:&lt;/strong&gt; è la fonte della mappa del caso 9 e la base con cui si misurano obiettivi come il 30x30; registra anche il tipo di governance di ogni area.&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.protectedplanet.net&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;protectedplanet.net&lt;/a&gt; · &lt;a href=&quot;https://en.wikipedia.org/wiki/World_Database_on_Protected_Areas&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wikipedia, World Database on Protected Areas&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;h4&gt;DLA Piper — Data Protection Laws of the World&lt;/h4&gt;
+      &lt;p&gt;&lt;span class=&quot;pill&quot;&gt;fonte esterna&lt;/span&gt; Guida e mappa interattiva pubblicata dallo studio legale DLA Piper: per ogni paese riporta la legge sulla protezione dei dati, le definizioni, l&#x27;autorità competente, e classifica regolazione ed enforcement in quattro livelli (Heavy, Robust, Moderate, Limited). L&#x27;edizione 2025, la quattordicesima, copre oltre 160 giurisdizioni (la slide usa la mappa 2023). &lt;strong&gt;Perché conta:&lt;/strong&gt; permette di confrontare paese per paese la frammentazione delle regole sui dati del caso 11; è una fonte professionale, non un atto ufficiale, e va usata come panoramica.&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.dlapiperdataprotection.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;dlapiperdataprotection.com&lt;/a&gt; · &lt;a href=&quot;https://iapp.org/resources/article/dla-piper-data-protection-laws-of-the-world&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;scheda IAPP&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;h4&gt;AIGN, Artificial Intelligence Governance Network — Patrick Upmann, newsletter sull&#x27;AI Governance Gap&lt;/h4&gt;
+      &lt;p&gt;&lt;span class=&quot;pill&quot;&gt;fonte esterna&lt;/span&gt; AIGN è una rete dedicata a etica, governance e regolazione dell&#x27;AI, fondata da Patrick Upmann, che cura anche un podcast. La ricerca ha trovato una serie di uscite intitolate “The AI Governance Gap Brief” con temi come &lt;em&gt;Accountability Gap&lt;/em&gt;, &lt;em&gt;Evidence Gap&lt;/em&gt;, &lt;em&gt;Machine Authority Gap&lt;/em&gt;; il numero #35 citato nella slide non è stato trovato direttamente online, quindi il suo contenuto è riportato solo come appare nell&#x27;immagine. &lt;strong&gt;Perché conta:&lt;/strong&gt; è un esempio di dibattito professionale (non accademico) sul controllo umano dell&#x27;AI nelle infrastrutture critiche.&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://music.amazon.de/podcasts/f228df12-7ad1-497b-b474-0e2ee8e1c502/aign-artificial-intelligence-governance-network&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AIGN Podcast&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;h4&gt;Humanculture — Indigenous Systems Framework (Stephanie Zabriskie)&lt;/h4&gt;
+      &lt;p&gt;&lt;span class=&quot;pill&quot;&gt;fonte esterna&lt;/span&gt; Humanculture è un&#x27;organizzazione non profit, nata come Maasai Water Project con comunità pastorali Maasai in Tanzania, che sostiene la gestione della terra e la resilienza attraverso sistemi di governance e conoscenza indigeni in aree esposte a siccità e degrado del suolo, in Africa, Americhe e Asia; gestisce la piattaforma IndigenousSystems.org. Non è stato trovato online un documento intitolato esattamente “Indigenous Systems Framework”: la figura della slide va presa come schema analitico proposto dall&#x27;organizzazione. &lt;strong&gt;Perché conta:&lt;/strong&gt; offre le “lenti” per analizzare un sistema indigeno nel caso 12 e nel group work.&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.unccd.int/cso/humanculture&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Scheda UNCCD su Humanculture&lt;/a&gt; · &lt;a href=&quot;https://www.preventionweb.net/organization/humanculture&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PreventionWeb&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+
+    &lt;h3&gt;Contesto utile (non citato nelle slide)&lt;/h3&gt;
+    &lt;article&gt;&lt;h4&gt;Kunming-Montreal Global Biodiversity Framework, Target 3 (“30x30”)&lt;/h4&gt;
+      &lt;p&gt;&lt;span class=&quot;pill&quot;&gt;fonte esterna&lt;/span&gt; Obiettivo di conservare almeno il 30% di terre, acque interne e aree marine e costiere entro il 2030, con governance equa e riconoscimento dei territori indigeni e tradizionali. &lt;strong&gt;Perché conta:&lt;/strong&gt; traduce la domanda “who bears the costs?” in un obiettivo globale con conseguenze locali.&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.iucn.org/sites/default/files/2023-09/30x30-target-framework.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IUCN, 30x30 target framework (PDF)&lt;/a&gt; · &lt;a href=&quot;https://www.iied.org/achieving-30x30-vital-role-indigenous-traditional-territories-rights-governance&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IIED&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;h4&gt;UN Declaration on the Rights of Indigenous Peoples (UNDRIP, 2007)&lt;/h4&gt;
+      &lt;p&gt;&lt;span class=&quot;pill&quot;&gt;fonte esterna&lt;/span&gt; Risoluzione 61/295 dell&#x27;Assemblea generale ONU; stabilisce tra l&#x27;altro il principio del consenso libero, preventivo e informato. &lt;strong&gt;Perché conta:&lt;/strong&gt; è il riferimento normativo per il passaggio da legittimità a legalità del caso 12.&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://www.justice.gc.ca/eng/declaration/decl_doc.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Testo integrale (Justice Canada)&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;h4&gt;Regolamenti UE: GDPR (2016/679) e AI Act (2024/1689)&lt;/h4&gt;
+      &lt;p&gt;&lt;span class=&quot;pill&quot;&gt;fonte esterna&lt;/span&gt; Due esempi di regolazione regionale con effetti oltre i confini dell&#x27;UE, rispettivamente su dati personali e sistemi di AI. &lt;strong&gt;Perché contano:&lt;/strong&gt; mostrano concretamente la “transnational regulation” dei casi 10 e 11.&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://eur-lex.europa.eu/eli/reg/2016/679/oj&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GDPR su EUR-Lex&lt;/a&gt; · &lt;a href=&quot;https://eur-lex.europa.eu/eli/reg/2024/1689/oj&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AI Act su EUR-Lex&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+    &lt;article&gt;&lt;h4&gt;La decisione IUGS sull&#x27;Antropocene (2024)&lt;/h4&gt;
+      &lt;p&gt;&lt;span class=&quot;pill&quot;&gt;fonte esterna&lt;/span&gt; Rifiuto della formalizzazione dell&#x27;Antropocene come epoca geologica, con riconoscimento del valore descrittivo del termine. &lt;strong&gt;Perché conta:&lt;/strong&gt; chiarisce lo statuto del concetto usato nel titolo del group work.&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://anthropocene.univie.ac.at/news/detailansicht/statement-on-the-iugs-anthropocene-decision&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Università di Vienna&lt;/a&gt; · &lt;a href=&quot;https://en.wikipedia.org/wiki/Anthropocene&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;&lt;/article&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;p&gt;Riassunto scritto da Claude a partire dalle slide: controlla sempre sul materiale.&lt;/p&gt;
+  &lt;p class=&quot;small&quot;&gt;Le parti marcate “Dalle slide” riportano il contenuto del PDF &lt;code&gt;week four.pdf&lt;/code&gt;; le parti marcate “Fonte esterna” vengono da ricerche web (link indicati); il resto è spiegazione didattica aggiunta. Grafici con cursori = modelli illustrativi, non dati reali.&lt;/p&gt;
+&lt;/div&gt;&lt;/footer&gt;
+
+&lt;script&gt;
+(function(){
+  // linguette
+  document.querySelectorAll(&#x27;.tabs&#x27;).forEach(function(t){
+    var bs=t.querySelectorAll(&#x27;.tabbar button&#x27;),ps=t.querySelectorAll(&#x27;.panel&#x27;);
+    bs.forEach(function(b,i){b.setAttribute(&#x27;role&#x27;,&#x27;tab&#x27;);b.addEventListener(&#x27;click&#x27;,function(){
+      bs.forEach(function(x){x.setAttribute(&#x27;aria-selected&#x27;,&#x27;false&#x27;)});ps.forEach(function(p){p.classList.remove(&#x27;on&#x27;)});
+      b.setAttribute(&#x27;aria-selected&#x27;,&#x27;true&#x27;);ps[i].classList.add(&#x27;on&#x27;);});});
+  });
+  // passi
+  document.querySelectorAll(&#x27;.steps&#x27;).forEach(function(s){
+    var st=s.querySelectorAll(&#x27;.step&#x27;),i=0,dots=s.querySelector(&#x27;.dots&#x27;),n=s.querySelector(&#x27;.n&#x27;);
+    st.forEach(function(){dots.appendChild(document.createElement(&#x27;i&#x27;))});
+    function go(k){i=Math.max(0,Math.min(st.length-1,k));st.forEach(function(x,j){x.classList.toggle(&#x27;on&#x27;,j===i)});
+      dots.querySelectorAll(&#x27;i&#x27;).forEach(function(d,j){d.classList.toggle(&#x27;on&#x27;,j===i)});n.textContent=(i+1)+&#x27; / &#x27;+st.length;}
+    s.querySelector(&#x27;.prev&#x27;).addEventListener(&#x27;click&#x27;,function(){go(i-1)});
+    s.querySelector(&#x27;.next&#x27;).addEventListener(&#x27;click&#x27;,function(){go(i+1)});
+    go(0);
+  });
+  // autoverifica
+  document.querySelectorAll(&#x27;.q button&#x27;).forEach(function(b){b.addEventListener(&#x27;click&#x27;,function(){
+    var q=b.closest(&#x27;.q&#x27;);q.classList.toggle(&#x27;open&#x27;);b.textContent=q.classList.contains(&#x27;open&#x27;)?&#x27;Nascondi risposta&#x27;:&#x27;Mostra risposta&#x27;;});});
+  // pannelli informativi cliccabili (ruota, ciclo, matrice)
+  document.querySelectorAll(&#x27;[data-info]&#x27;).forEach(function(el){
+    function show(){var o=document.getElementById(el.getAttribute(&#x27;data-target&#x27;));if(!o)return;
+      o.innerHTML=&#x27;&lt;strong&gt;&#x27;+el.getAttribute(&#x27;data-title&#x27;)+&#x27;&lt;/strong&gt; — &#x27;+el.getAttribute(&#x27;data-info&#x27;);
+      document.querySelectorAll(&#x27;[data-target=&quot;&#x27;+el.getAttribute(&#x27;data-target&#x27;)+&#x27;&quot;]&#x27;).forEach(function(x){x.classList.remove(&#x27;on&#x27;)});el.classList.add(&#x27;on&#x27;);}
+    el.addEventListener(&#x27;click&#x27;,show);el.setAttribute(&#x27;tabindex&#x27;,&#x27;0&#x27;);
+    el.addEventListener(&#x27;keydown&#x27;,function(e){if(e.key===&#x27;Enter&#x27;||e.key===&#x27; &#x27;){e.preventDefault();show();}});
+  });
+  window.__init&amp;&amp;window.__init.forEach(function(f){f()});
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe></body></html>

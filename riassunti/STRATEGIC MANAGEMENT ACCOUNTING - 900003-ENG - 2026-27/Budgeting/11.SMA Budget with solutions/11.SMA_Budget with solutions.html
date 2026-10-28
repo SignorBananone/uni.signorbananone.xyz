@@ -1,0 +1,778 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Riassunto · 11.SMA_Budget with solutions.pdf</title><link rel="icon" href="data:,">
+<style>html,body{margin:0;height:100%}body{display:flex;flex-direction:column}iframe{flex:1;border:0;width:100%}</style>
+</head><body><nav style="font:14px/1.4 system-ui,sans-serif;padding:6px 12px;text-align:right"><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Budgeting/11.SMA%20Budget%20with%20solutions/11.SMA_Budget%20with%20solutions.en.html" style="color:inherit;margin-right:.8em;">English</a><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Budgeting/11.SMA%20Budget%20with%20solutions/11.SMA_Budget%20with%20solutions.html" style="color:inherit;margin-right:.8em;font-weight:700">Italiano</a></nav><iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" title="Riassunto · 11.SMA_Budget with solutions.pdf"
+srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;it&quot;&gt;
+&lt;head&gt;&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27;; style-src &#x27;unsafe-inline&#x27;; font-src &#x27;self&#x27;; img-src data:; form-action &#x27;none&#x27;; base-uri &#x27;none&#x27;&quot;&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Budgeting · Exercise 1: il master budget di Morganton Company&lt;/title&gt;
+&lt;style&gt;
+@font-face{font-family:&quot;Newsreader&quot;;src:url(&quot;/static/fonts/newsreader-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:&quot;IBM Plex Sans&quot;;src:url(&quot;/static/fonts/ibm-plex-sans-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:100 700;font-style:normal;font-display:swap}
+:root{
+  --paper:oklch(97% 0.012 80);--ink:oklch(21% 0.014 60);--muted:oklch(44% 0.014 60);--rule:oklch(86% 0.014 75);
+  --card:oklch(99% 0.006 80);--acc:oklch(50% 0.15 35);--acc-bg:oklch(94% 0.03 35);
+  --sage:oklch(47% 0.08 150);--sage-bg:oklch(94% 0.03 150);
+  --ochre:oklch(50% 0.1 85);--ochre-bg:oklch(94.5% 0.04 85);
+  --slate:oklch(45% 0.06 250);--slate-bg:oklch(94% 0.02 250);
+  --brick:oklch(46% 0.13 25);--brick-bg:oklch(94% 0.03 25);
+  --serif:&quot;Newsreader&quot;,Georgia,&quot;Times New Roman&quot;,serif;--sans:&quot;IBM Plex Sans&quot;,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(19% 0.012 60);--ink:oklch(92% 0.012 80);--muted:oklch(72% 0.014 70);--rule:oklch(34% 0.014 75);
+  --card:oklch(23% 0.012 60);--acc:oklch(72% 0.14 35);--acc-bg:oklch(28% 0.05 35);
+  --sage:oklch(77% 0.09 150);--sage-bg:oklch(27% 0.03 150);
+  --ochre:oklch(80% 0.11 85);--ochre-bg:oklch(28% 0.04 85);
+  --slate:oklch(77% 0.06 250);--slate-bg:oklch(27% 0.025 250);
+  --brick:oklch(74% 0.12 25);--brick-bg:oklch(28% 0.04 25);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.62 var(--sans);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:500;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);font-weight:500}
+h3{font-size:1.32rem;margin-top:1.6em}
+h4{font-size:1.08rem}
+p{margin:0 0 1em}
+a{color:var(--acc)}
+em.t,.t{font-style:normal;font-weight:600;color:var(--c,var(--acc))}
+main{max-width:900px;margin:0 auto;padding:0 20px 40px}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+.mono,.num{font-variant-numeric:tabular-nums}
+/* nav */
+nav.top{position:sticky;top:0;z-index:20;background:color-mix(in oklch,var(--paper) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+nav.top ul{list-style:none;margin:0 auto;padding:8px 16px;display:flex;gap:6px;overflow-x:auto;max-width:900px;scrollbar-width:none}
+nav.top a{display:block;white-space:nowrap;text-decoration:none;color:var(--muted);font-size:.84rem;padding:4px 10px;border-radius:99px;border:1px solid transparent}
+nav.top a:hover,nav.top a.on{color:var(--ink);border-color:var(--rule);background:var(--card)}
+/* hero */
+header.hero{padding:56px 0 24px;border-bottom:1px solid var(--rule);margin-bottom:28px}
+.kicker{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);font-weight:600;margin-bottom:12px}
+.lede{font-family:var(--serif);font-size:1.28rem;line-height:1.45;color:var(--muted);max-width:44em}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.86rem;color:var(--muted);margin-top:18px}
+.meta b{color:var(--ink);font-weight:600}
+/* legend badges */
+.badge{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:99px;vertical-align:middle;border:1px solid currentColor}
+.b-slide{color:var(--slate)}
+.b-add{color:var(--ochre)}
+.b-ext{color:var(--brick)}
+/* map */
+.map{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:14px;margin:22px 0}
+.map svg{width:100%;height:auto;display:block}
+.map .node{cursor:pointer}
+.map .node rect{stroke-width:1.5;transition:transform .15s}
+.map .node:hover rect,.map .node:focus rect{stroke-width:3}
+.map .node text{font-family:var(--sans);font-size:14px;fill:var(--ink);pointer-events:none}
+.map .node text.s{font-size:11.5px;fill:var(--muted)}
+.map .edge{fill:none;stroke:var(--muted);stroke-width:1.4;opacity:.7}
+.map .el{font-size:11px;fill:var(--muted);font-family:var(--sans);font-style:italic}
+.cap{font-size:.85rem;color:var(--muted);margin-top:6px}
+/* parts */
+section.part{--c:var(--slate);--cbg:var(--slate-bg);padding:34px 0 10px;border-top:1px solid var(--rule);scroll-margin-top:56px}
+.p-sage{--c:var(--sage)!important;--cbg:var(--sage-bg)!important}
+.p-ochre{--c:var(--ochre)!important;--cbg:var(--ochre-bg)!important}
+.p-slate{--c:var(--slate)!important;--cbg:var(--slate-bg)!important}
+.p-brick{--c:var(--brick)!important;--cbg:var(--brick-bg)!important}
+.p-acc{--c:var(--acc)!important;--cbg:var(--acc-bg)!important}
+.sec-head{display:flex;gap:16px;align-items:flex-start;margin-bottom:10px}
+.sec-no{flex:none;width:48px;height:48px;border-radius:50%;background:var(--cbg);color:var(--c);display:grid;place-items:center;font-family:var(--serif);font-size:1.5rem;font-weight:600;border:1.5px solid var(--c)}
+.sec-head .qs{font-size:.82rem;color:var(--c);font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.box{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:18px 20px;margin:18px 0}
+.box.tint{background:var(--cbg);border-color:color-mix(in oklch,var(--c) 30%,transparent)}
+.def{border-left:4px solid var(--c);background:var(--cbg);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0}
+.def dt{font-weight:700;color:var(--c)}
+.def dd{margin:2px 0 10px}
+.def dd:last-child{margin-bottom:0}
+.formula{font-family:var(--serif);font-size:1.18rem;text-align:center;padding:14px 12px;border:1px dashed var(--c);border-radius:12px;margin:16px 0;background:var(--card)}
+.formula small{display:block;font-family:var(--sans);font-size:.8rem;color:var(--muted);margin-top:4px}
+.warn{border:1px solid var(--brick);background:var(--brick-bg);border-radius:12px;padding:12px 16px;margin:16px 0;font-size:.95rem}
+.warn b:first-child{color:var(--brick)}
+.src{font-size:.78rem;color:var(--muted)}
+/* ledger tables */
+table.ledger{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.96rem;margin:8px 0}
+table.ledger td,table.ledger th{padding:6px 8px;border-bottom:1px dotted var(--rule);vertical-align:top}
+table.ledger th{text-align:left;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+table.ledger td.n,table.ledger th.n{text-align:right;white-space:nowrap}
+table.ledger tr.tot td{border-top:1.5px solid var(--ink);border-bottom:3px double var(--ink);font-weight:700}
+table.ledger tr.sub td{font-weight:600}
+table.ledger tr.hl td{background:var(--cbg)}
+table.ledger td .op{color:var(--c);font-weight:700;display:inline-block;width:1.2em}
+.scroll{overflow-x:auto}
+/* tabs */
+.tabs [role=tablist]{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--rule)}
+.tabs [role=tab]{font:600 .9rem var(--sans);background:none;border:1px solid transparent;border-bottom:none;padding:8px 14px;border-radius:10px 10px 0 0;color:var(--muted);cursor:pointer;margin-bottom:-1px}
+.tabs [role=tab][aria-selected=true]{background:var(--card);border-color:var(--rule);color:var(--c)}
+.tabs [role=tabpanel]{background:var(--card);border:1px solid var(--rule);border-top:none;border-radius:0 0 14px 14px;padding:16px 18px}
+.tabs [role=tabpanel][hidden]{display:none}
+/* details */
+details.acc{border:1px solid var(--rule);border-radius:12px;background:var(--card);margin:10px 0}
+details.acc&gt;summary{cursor:pointer;padding:12px 16px;font-weight:600;list-style:none;display:flex;gap:10px;align-items:center}
+details.acc&gt;summary::-webkit-details-marker{display:none}
+details.acc&gt;summary::before{content:&quot;+&quot;;color:var(--c);font-weight:700;width:1em;font-size:1.2em;line-height:1}
+details.acc[open]&gt;summary::before{content:&quot;–&quot;}
+details.acc&gt;div{padding:0 16px 14px 42px}
+/* quiz */
+.quiz{background:var(--cbg);border-radius:16px;padding:18px 20px;margin:26px 0 10px;border:1px solid color-mix(in oklch,var(--c) 25%,transparent)}
+.quiz h4{color:var(--c);margin-bottom:10px}
+.quiz details{background:var(--card);border-radius:10px;margin:8px 0;border:1px solid var(--rule)}
+.quiz summary{cursor:pointer;padding:10px 14px;list-style:none}
+.quiz summary::-webkit-details-marker{display:none}
+.quiz summary::after{content:&quot;Mostra risposta&quot;;float:right;font-size:.75rem;color:var(--c);font-weight:600;margin-left:10px}
+.quiz details[open] summary::after{content:&quot;Nascondi&quot;}
+.quiz details&gt;div{padding:0 14px 12px;border-top:1px dashed var(--rule);padding-top:10px}
+/* stepper */
+.stepper .controls{display:flex;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+.btn{font:600 .88rem var(--sans);border:1.5px solid var(--c,var(--acc));color:var(--c,var(--acc));background:var(--card);border-radius:99px;padding:6px 16px;cursor:pointer}
+.btn:hover{background:var(--cbg)}
+.btn[disabled]{opacity:.35;cursor:default}
+.btn.on{background:var(--c);color:var(--paper)}
+.dots{display:flex;gap:5px}
+.dots i{width:9px;height:9px;border-radius:50%;background:var(--rule)}
+.dots i.on{background:var(--c)}
+.stepper tr[data-step]{transition:opacity .25s}
+.stepper tr.off{opacity:.12}
+.stepper tr.now td{background:var(--cbg)}
+.steptext{min-height:3.2em;margin-top:10px;padding:10px 14px;border-radius:10px;background:var(--cbg);font-size:.95rem}
+/* sliders */
+.ctrl{display:grid;grid-template-columns:minmax(150px,1fr) 2fr auto;gap:10px;align-items:center;margin:8px 0;font-size:.92rem}
+.ctrl output{font-weight:700;color:var(--c);min-width:4.5em;text-align:right;font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--c,var(--acc))}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0}
+.kpi{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:10px 12px}
+.kpi span{display:block;font-size:.76rem;color:var(--muted);line-height:1.3}
+.kpi b{font-family:var(--serif);font-size:1.4rem;font-weight:600;font-variant-numeric:tabular-nums}
+.kpi.ch{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc-bg)}
+.kpi small{display:block;font-size:.72rem;color:var(--muted)}
+svg text{font-family:var(--sans)}
+.fig{width:100%;height:auto;display:block}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:680px){.grid2{grid-template-columns:1fr}.ctrl{grid-template-columns:1fr auto}.ctrl input{grid-column:1/-1;grid-row:2}body{font-size:16px}details.acc&gt;div{padding-left:16px}}
+/* glossary chips */
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.chips span{font-size:.82rem;border:1px solid var(--rule);border-radius:99px;padding:2px 10px;background:var(--card)}
+/* sources */
+.ref{border:1px solid var(--rule);border-left:4px solid var(--brick);border-radius:0 12px 12px 0;background:var(--card);padding:14px 18px;margin:14px 0}
+.ref h4{margin-bottom:4px}
+footer{border-top:1px solid var(--rule);padding:26px 20px 40px;text-align:center;color:var(--muted);font-size:.9rem}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;nav class=&quot;top&quot; aria-label=&quot;Sezioni&quot;&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#mappa&quot;&gt;Mappa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#s1&quot;&gt;1 · Master budget&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#s2&quot;&gt;2 · Vendite e incassi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#s3&quot;&gt;3 · Produzione&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#s4&quot;&gt;4 · Materie prime&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#s5&quot;&gt;5 · Lavoro e costo unitario&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#s6&quot;&gt;6 · COGS, margine, S&amp;amp;A&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#s7&quot;&gt;7 · Simulatore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#fonti&quot;&gt;Per approfondire&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/nav&gt;
+
+&lt;div class=&quot;wrap&quot;&gt;
+&lt;header class=&quot;hero&quot; id=&quot;mappa&quot;&gt;
+  &lt;div class=&quot;kicker&quot;&gt;Budgeting · Exercise 1 · Università degli Studi di Bergamo&lt;/div&gt;
+  &lt;h1&gt;Il master budget di Morganton Company, passo per passo&lt;/h1&gt;
+  &lt;p class=&quot;lede&quot;&gt;Un&#x27;azienda, un solo prodotto, quattro mesi di previsioni di vendita. Da questi pochi dati si ricava tutto il budget di luglio: vendite, incassi, produzione, acquisti, manodopera, costo del prodotto, margine e spese commerciali.&lt;/p&gt;
+  &lt;div class=&quot;meta&quot;&gt;&lt;span&gt;Docente: &lt;b&gt;Prof.ssa Silvia Pilonato&lt;/b&gt;&lt;/span&gt;&lt;span&gt;Dipartimento di Scienze Aziendali&lt;/span&gt;&lt;span&gt;Fonte: &lt;b&gt;11.SMA_Budget with solutions.pdf&lt;/b&gt; (12 slide)&lt;/span&gt;&lt;/div&gt;
+  &lt;p class=&quot;src&quot; style=&quot;margin-top:14px&quot;&gt;Legenda: &lt;span class=&quot;badge b-slide&quot;&gt;dalle slide&lt;/span&gt; contenuto dell&#x27;esercizio · &lt;span class=&quot;badge b-add&quot;&gt;spiegazione aggiunta&lt;/span&gt; concetti che le slide danno per scontati · &lt;span class=&quot;badge b-ext&quot;&gt;fonte esterna&lt;/span&gt; dal web, con link. I numeri sono scritti come nelle slide ($ e virgola per le migliaia: $700,000 = 700 mila dollari).&lt;/p&gt;
+
+  &lt;div class=&quot;map&quot; role=&quot;navigation&quot; aria-label=&quot;Mappa concettuale&quot;&gt;
+  &lt;svg viewBox=&quot;0 0 920 560&quot; id=&quot;cmap&quot; aria-labelledby=&quot;cmapt&quot;&gt;
+    &lt;title id=&quot;cmapt&quot;&gt;Mappa concettuale: dai dati al master budget&lt;/title&gt;
+    &lt;defs&gt;&lt;marker id=&quot;ar&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto-start-reverse&quot;&gt;&lt;path d=&quot;M0 0L10 5L0 10z&quot; fill=&quot;currentColor&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+    &lt;g style=&quot;color:var(--muted)&quot;&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M450 71C450 102 160 102 160 132&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M450 71L450 132&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M450 71C450 102 760 102 760 132&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M255 160L353 160&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M160 186L160 252&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M450 186C450 220 330 220 330 252&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M450 186C450 220 570 220 570 252&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M330 306L330 372&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M330 306C330 340 570 340 570 372&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M570 306L570 372&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M570 426C570 455 480 455 480 482&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M160 306C160 500 280 510 383 510&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M577 510L663 510&quot;/&gt;
+      &lt;path class=&quot;edge&quot; marker-end=&quot;url(#ar)&quot; d=&quot;M760 186L760 482&quot;/&gt;
+    &lt;/g&gt;
+    &lt;text class=&quot;el&quot; x=&quot;304&quot; y=&quot;152&quot; text-anchor=&quot;middle&quot;&gt;unit sales&lt;/text&gt;
+    &lt;text class=&quot;el&quot; x=&quot;352&quot; y=&quot;232&quot; text-anchor=&quot;end&quot;&gt;units to produce&lt;/text&gt;
+    &lt;text class=&quot;el&quot; x=&quot;418&quot; y=&quot;354&quot;&gt;$10 DM&lt;/text&gt;
+    &lt;text class=&quot;el&quot; x=&quot;580&quot; y=&quot;344&quot;&gt;$30 DL + $20 MOH&lt;/text&gt;
+    &lt;text class=&quot;el&quot; x=&quot;200&quot; y=&quot;470&quot;&gt;revenues&lt;/text&gt;
+    &lt;text class=&quot;el&quot; x=&quot;620&quot; y=&quot;500&quot; text-anchor=&quot;middle&quot;&gt;−&lt;/text&gt;
+    &lt;text class=&quot;el&quot; x=&quot;770&quot; y=&quot;330&quot;&gt;units sold × $1.80&lt;/text&gt;
+    &lt;text class=&quot;el&quot; x=&quot;770&quot; y=&quot;346&quot;&gt;+ $60,000&lt;/text&gt;
+
+    &lt;g class=&quot;node&quot; data-go=&quot;s1&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Sezione 1: dati e master budget&quot;&gt;&lt;rect x=&quot;355&quot; y=&quot;19&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot;/&gt;&lt;text x=&quot;450&quot; y=&quot;41&quot; text-anchor=&quot;middle&quot;&gt;Dati di partenza (a–g)&lt;/text&gt;&lt;text class=&quot;s&quot; x=&quot;450&quot; y=&quot;59&quot; text-anchor=&quot;middle&quot;&gt;§1 · master budget&lt;/text&gt;&lt;/g&gt;
+    &lt;g class=&quot;node&quot; data-go=&quot;s2&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Sezione 2: sales budget&quot;&gt;&lt;rect x=&quot;65&quot; y=&quot;134&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--sage-bg)&quot; stroke=&quot;var(--sage)&quot;/&gt;&lt;text x=&quot;160&quot; y=&quot;156&quot; text-anchor=&quot;middle&quot;&gt;Sales budget&lt;/text&gt;&lt;text class=&quot;s&quot; x=&quot;160&quot; y=&quot;174&quot; text-anchor=&quot;middle&quot;&gt;§2 · domanda 1&lt;/text&gt;&lt;/g&gt;
+    &lt;g class=&quot;node&quot; data-go=&quot;s3&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Sezione 3: production budget&quot;&gt;&lt;rect x=&quot;355&quot; y=&quot;134&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--ochre-bg)&quot; stroke=&quot;var(--ochre)&quot;/&gt;&lt;text x=&quot;450&quot; y=&quot;156&quot; text-anchor=&quot;middle&quot;&gt;Production budget&lt;/text&gt;&lt;text class=&quot;s&quot; x=&quot;450&quot; y=&quot;174&quot; text-anchor=&quot;middle&quot;&gt;§3 · domanda 4&lt;/text&gt;&lt;/g&gt;
+    &lt;g class=&quot;node&quot; data-go=&quot;s6&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Sezione 6: selling and administrative budget&quot;&gt;&lt;rect x=&quot;665&quot; y=&quot;134&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--acc-bg)&quot; stroke=&quot;var(--acc)&quot;/&gt;&lt;text x=&quot;760&quot; y=&quot;156&quot; text-anchor=&quot;middle&quot;&gt;S&amp;amp;A expense budget&lt;/text&gt;&lt;text class=&quot;s&quot; x=&quot;760&quot; y=&quot;174&quot; text-anchor=&quot;middle&quot;&gt;§6 · domanda 14&lt;/text&gt;&lt;/g&gt;
+    &lt;g class=&quot;node&quot; data-go=&quot;s2&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Sezione 2: cash collections e accounts receivable&quot;&gt;&lt;rect x=&quot;65&quot; y=&quot;254&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--sage-bg)&quot; stroke=&quot;var(--sage)&quot;/&gt;&lt;text x=&quot;160&quot; y=&quot;276&quot; text-anchor=&quot;middle&quot;&gt;Cash collections · AR&lt;/text&gt;&lt;text class=&quot;s&quot; x=&quot;160&quot; y=&quot;294&quot; text-anchor=&quot;middle&quot;&gt;§2 · domande 2–3&lt;/text&gt;&lt;/g&gt;
+    &lt;g class=&quot;node&quot; data-go=&quot;s4&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Sezione 4: direct materials budget&quot;&gt;&lt;rect x=&quot;235&quot; y=&quot;254&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--brick-bg)&quot; stroke=&quot;var(--brick)&quot;/&gt;&lt;text x=&quot;330&quot; y=&quot;276&quot; text-anchor=&quot;middle&quot;&gt;Direct materials budget&lt;/text&gt;&lt;text class=&quot;s&quot; x=&quot;330&quot; y=&quot;294&quot; text-anchor=&quot;middle&quot;&gt;§4 · domande 5–6, 9&lt;/text&gt;&lt;/g&gt;
+    &lt;g class=&quot;node&quot; data-go=&quot;s5&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Sezione 5: direct labor budget&quot;&gt;&lt;rect x=&quot;475&quot; y=&quot;254&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot;/&gt;&lt;text x=&quot;570&quot; y=&quot;276&quot; text-anchor=&quot;middle&quot;&gt;Direct labor budget&lt;/text&gt;&lt;text class=&quot;s&quot; x=&quot;570&quot; y=&quot;294&quot; text-anchor=&quot;middle&quot;&gt;§5 · domanda 10&lt;/text&gt;&lt;/g&gt;
+    &lt;g class=&quot;node&quot; data-go=&quot;s4&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Sezione 4: cash disbursements e accounts payable&quot;&gt;&lt;rect x=&quot;235&quot; y=&quot;374&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--brick-bg)&quot; stroke=&quot;var(--brick)&quot;/&gt;&lt;text x=&quot;330&quot; y=&quot;396&quot; text-anchor=&quot;middle&quot;&gt;Disbursements · AP&lt;/text&gt;&lt;text class=&quot;s&quot; x=&quot;330&quot; y=&quot;414&quot; text-anchor=&quot;middle&quot;&gt;§4 · domande 7–8&lt;/text&gt;&lt;/g&gt;
+    &lt;g class=&quot;node&quot; data-go=&quot;s5&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Sezione 5: unit product cost&quot;&gt;&lt;rect x=&quot;475&quot; y=&quot;374&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot;/&gt;&lt;text x=&quot;570&quot; y=&quot;396&quot; text-anchor=&quot;middle&quot;&gt;Unit product cost $60&lt;/text&gt;&lt;text class=&quot;s&quot; x=&quot;570&quot; y=&quot;414&quot; text-anchor=&quot;middle&quot;&gt;§5 · domanda 11&lt;/text&gt;&lt;/g&gt;
+    &lt;g class=&quot;node&quot; data-go=&quot;s6&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Sezione 6: COGS, gross margin, finished goods&quot;&gt;&lt;rect x=&quot;385&quot; y=&quot;484&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--acc-bg)&quot; stroke=&quot;var(--acc)&quot;/&gt;&lt;text x=&quot;480&quot; y=&quot;506&quot; text-anchor=&quot;middle&quot;&gt;FG inventory · COGS · GM&lt;/text&gt;&lt;text class=&quot;s&quot; x=&quot;480&quot; y=&quot;524&quot; text-anchor=&quot;middle&quot;&gt;§6 · domande 12–13&lt;/text&gt;&lt;/g&gt;
+    &lt;g class=&quot;node&quot; data-go=&quot;s7&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Sezione 7: simulatore del master budget&quot;&gt;&lt;rect x=&quot;665&quot; y=&quot;484&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--sage-bg)&quot; stroke=&quot;var(--sage)&quot;/&gt;&lt;text x=&quot;760&quot; y=&quot;506&quot; text-anchor=&quot;middle&quot;&gt;Budgeted income stmt&lt;/text&gt;&lt;text class=&quot;s&quot; x=&quot;760&quot; y=&quot;524&quot; text-anchor=&quot;middle&quot;&gt;§7 · tutto insieme&lt;/text&gt;&lt;/g&gt;
+  &lt;/svg&gt;
+  &lt;p class=&quot;cap&quot;&gt;Clicca un riquadro per saltare alla sezione. Le frecce indicano quale budget fornisce i numeri al successivo: tutto parte dalle &lt;span class=&quot;t&quot;&gt;unit sales&lt;/span&gt; (unità vendute previste).&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+&lt;/div&gt;
+
+&lt;main&gt;
+&lt;!-- ============ S1 ============ --&gt;
+&lt;section class=&quot;part p-slate&quot; id=&quot;s1&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;div class=&quot;sec-no&quot;&gt;1&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;qs&quot;&gt;Slide 1–4 · il caso e le domande&lt;/div&gt;&lt;h2&gt;Il master budget e i dati di Morganton&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;p&gt;Il &lt;span class=&quot;t&quot;&gt;master budget&lt;/span&gt; (budget generale) è l&#x27;insieme coordinato dei budget con cui l&#x27;azienda traduce in numeri i piani di un periodo futuro. Non è un unico prospetto ma una &lt;em&gt;catena&lt;/em&gt;: ogni budget usa i risultati del precedente. &lt;span class=&quot;badge b-add&quot;&gt;spiegazione aggiunta&lt;/span&gt;&lt;/p&gt;
+
+  &lt;div class=&quot;def&quot;&gt;&lt;dl style=&quot;margin:0&quot;&gt;
+    &lt;dt&gt;Operating budgets&lt;/dt&gt;&lt;dd&gt;i budget &quot;operativi&quot;, che descrivono le attività: &lt;span class=&quot;t&quot;&gt;sales budget&lt;/span&gt; (vendite), &lt;span class=&quot;t&quot;&gt;production budget&lt;/span&gt; (produzione), &lt;span class=&quot;t&quot;&gt;direct materials budget&lt;/span&gt; (materie prime), &lt;span class=&quot;t&quot;&gt;direct labor budget&lt;/span&gt; (manodopera diretta), &lt;span class=&quot;t&quot;&gt;manufacturing overhead budget&lt;/span&gt; (costi indiretti di produzione), &lt;span class=&quot;t&quot;&gt;selling and administrative expense budget&lt;/span&gt; (spese commerciali e amministrative), fino al &lt;span class=&quot;t&quot;&gt;budgeted income statement&lt;/span&gt; (conto economico previsionale).&lt;/dd&gt;
+    &lt;dt&gt;Financial budgets&lt;/dt&gt;&lt;dd&gt;i budget &quot;finanziari&quot;: &lt;span class=&quot;t&quot;&gt;cash budget&lt;/span&gt; (entrate e uscite di cassa) e &lt;span class=&quot;t&quot;&gt;budgeted balance sheet&lt;/span&gt; (stato patrimoniale previsionale), dove finiscono crediti, debiti e rimanenze calcolati nell&#x27;esercizio.&lt;/dd&gt;
+    &lt;dt&gt;Perché si parte dalle vendite&lt;/dt&gt;&lt;dd&gt;il volume di vendita determina quanto produrre, quindi quanta materia comprare e quanta manodopera servirà. Un errore nella previsione delle vendite si propaga a tutto il resto.&lt;/dd&gt;
+  &lt;/dl&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;tabs&quot; data-tabs&gt;
+    &lt;div role=&quot;tablist&quot;&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;true&quot; data-panel=&quot;t1a&quot;&gt;I dati (a–g)&lt;/button&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; data-panel=&quot;t1b&quot;&gt;Le 14 domande&lt;/button&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; data-panel=&quot;t1c&quot;&gt;Le vendite nel tempo&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;t1a&quot;&gt;
+      &lt;p class=&quot;src&quot;&gt;&lt;span class=&quot;badge b-slide&quot;&gt;slide 2&lt;/span&gt;&lt;/p&gt;
+      &lt;div class=&quot;scroll&quot;&gt;&lt;table class=&quot;ledger&quot;&gt;
+        &lt;tr&gt;&lt;th&gt;Voce&lt;/th&gt;&lt;th&gt;Dato&lt;/th&gt;&lt;th&gt;Cosa significa&lt;/th&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;a&lt;/td&gt;&lt;td&gt;Prezzo $70/unità; vendite: giugno 8,400 · luglio 10,000 · agosto 12,000 · settembre 13,000 unità; tutte &lt;span class=&quot;t&quot;&gt;on credit&lt;/span&gt;&lt;/td&gt;&lt;td&gt;vendite a credito: il cliente paga dopo, quindi ricavo e incasso non coincidono&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;b&lt;/td&gt;&lt;td&gt;40% incassato nel mese della vendita, 60% nel mese successivo&lt;/td&gt;&lt;td&gt;regola degli incassi (cash collections)&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;c&lt;/td&gt;&lt;td&gt;Rimanenza finale di prodotti finiti = 20% delle vendite del mese dopo&lt;/td&gt;&lt;td&gt;scorta di sicurezza di &lt;span class=&quot;t&quot;&gt;finished goods&lt;/span&gt; (prodotti finiti)&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;d&lt;/td&gt;&lt;td&gt;Rimanenza finale di materie prime = 10% del fabbisogno di produzione del mese dopo; 5 pounds per unità; $2.00 per pound&lt;/td&gt;&lt;td&gt;1 pound (libbra) ≈ 0,454 kg; scorta di &lt;span class=&quot;t&quot;&gt;raw materials&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;e&lt;/td&gt;&lt;td&gt;30% degli acquisti pagato nel mese, 70% nel mese successivo&lt;/td&gt;&lt;td&gt;regola dei pagamenti ai fornitori (cash disbursements)&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;f&lt;/td&gt;&lt;td&gt;Manodopera diretta $15/ora; 2 &lt;span class=&quot;t&quot;&gt;direct labor-hours&lt;/span&gt; per unità&lt;/td&gt;&lt;td&gt;ore di lavoro diretto necessarie per un&#x27;unità&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;g&lt;/td&gt;&lt;td&gt;S&amp;amp;A variabile $1.80 per unità venduta; S&amp;amp;A fissa $60,000 al mese&lt;/td&gt;&lt;td&gt;spese commerciali e amministrative&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Q11&lt;/td&gt;&lt;td&gt;Niente overhead fisso; overhead variabile $10 per direct labor-hour&lt;/td&gt;&lt;td&gt;dato aggiunto nella domanda 11 (slide 4)&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;t1b&quot; hidden&gt;
+      &lt;p class=&quot;src&quot;&gt;&lt;span class=&quot;badge b-slide&quot;&gt;slide 3–4&lt;/span&gt; Tutte le domande riguardano &lt;b&gt;luglio&lt;/b&gt;.&lt;/p&gt;
+      &lt;ol style=&quot;margin:0;padding-left:1.4em;columns:2 280px;column-gap:28px&quot;&gt;
+        &lt;li&gt;Budgeted sales &lt;a href=&quot;#s2&quot;&gt;→§2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Expected cash collections &lt;a href=&quot;#s2&quot;&gt;→§2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Accounts receivable a fine luglio &lt;a href=&quot;#s2&quot;&gt;→§2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Unità da produrre &lt;a href=&quot;#s3&quot;&gt;→§3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Pounds di materia da acquistare (agosto ne richiede 61,000) &lt;a href=&quot;#s4&quot;&gt;→§4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Costo degli acquisti di materia &lt;a href=&quot;#s4&quot;&gt;→§4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Pagamenti per materia (acquisti di giugno: $88,880) &lt;a href=&quot;#s4&quot;&gt;→§4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Accounts payable a fine luglio &lt;a href=&quot;#s4&quot;&gt;→§4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Rimanenza di materie prime a fine luglio &lt;a href=&quot;#s4&quot;&gt;→§4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Costo della manodopera diretta &lt;a href=&quot;#s5&quot;&gt;→§5&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Unit product cost &lt;a href=&quot;#s5&quot;&gt;→§5&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Rimanenza di prodotti finiti a fine luglio &lt;a href=&quot;#s6&quot;&gt;→§6&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Cost of goods sold e gross margin &lt;a href=&quot;#s6&quot;&gt;→§6&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Selling and administrative expense &lt;a href=&quot;#s6&quot;&gt;→§6&lt;/a&gt;&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;t1c&quot; hidden&gt;
+      &lt;svg class=&quot;fig&quot; viewBox=&quot;0 0 600 230&quot; role=&quot;img&quot; aria-label=&quot;Vendite in unità da giugno a settembre&quot;&gt;
+        &lt;line x1=&quot;30&quot; y1=&quot;185&quot; x2=&quot;580&quot; y2=&quot;185&quot; stroke=&quot;var(--rule)&quot; stroke-width=&quot;1.5&quot;/&gt;
+        &lt;rect x=&quot;60&quot; y=&quot;88&quot; width=&quot;90&quot; height=&quot;97&quot; rx=&quot;4&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot;/&gt;
+        &lt;rect x=&quot;200&quot; y=&quot;70&quot; width=&quot;90&quot; height=&quot;115&quot; rx=&quot;4&quot; fill=&quot;var(--acc)&quot; /&gt;
+        &lt;rect x=&quot;340&quot; y=&quot;47&quot; width=&quot;90&quot; height=&quot;138&quot; rx=&quot;4&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot;/&gt;
+        &lt;rect x=&quot;480&quot; y=&quot;35&quot; width=&quot;90&quot; height=&quot;150&quot; rx=&quot;4&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot;/&gt;
+        &lt;g font-size=&quot;14&quot; text-anchor=&quot;middle&quot; fill=&quot;var(--ink)&quot;&gt;
+          &lt;text x=&quot;105&quot; y=&quot;80&quot;&gt;8,400&lt;/text&gt;&lt;text x=&quot;245&quot; y=&quot;62&quot; font-weight=&quot;700&quot;&gt;10,000&lt;/text&gt;&lt;text x=&quot;385&quot; y=&quot;39&quot;&gt;12,000&lt;/text&gt;&lt;text x=&quot;525&quot; y=&quot;27&quot;&gt;13,000&lt;/text&gt;
+          &lt;text x=&quot;105&quot; y=&quot;205&quot;&gt;Giugno&lt;/text&gt;&lt;text x=&quot;245&quot; y=&quot;205&quot; font-weight=&quot;700&quot;&gt;Luglio&lt;/text&gt;&lt;text x=&quot;385&quot; y=&quot;205&quot;&gt;Agosto&lt;/text&gt;&lt;text x=&quot;525&quot; y=&quot;205&quot;&gt;Settembre&lt;/text&gt;
+        &lt;/g&gt;
+        &lt;g font-size=&quot;11&quot; text-anchor=&quot;middle&quot; fill=&quot;var(--muted)&quot;&gt;
+          &lt;text x=&quot;105&quot; y=&quot;222&quot;&gt;incassi e scorte iniziali&lt;/text&gt;&lt;text x=&quot;245&quot; y=&quot;222&quot;&gt;mese del budget&lt;/text&gt;&lt;text x=&quot;385&quot; y=&quot;222&quot;&gt;scorte finali FG e RM&lt;/text&gt;&lt;text x=&quot;525&quot; y=&quot;222&quot;&gt;serve per la produzione di agosto&lt;/text&gt;
+        &lt;/g&gt;
+      &lt;/svg&gt;
+      &lt;p class=&quot;cap&quot;&gt;Per fare il budget di luglio servono anche i mesi vicini: giugno per gli incassi e le scorte iniziali, agosto (e indirettamente settembre) per le scorte finali.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h4&gt;Autoverifica · parte 1&lt;/h4&gt;
+    &lt;details&gt;&lt;summary&gt;Perché il master budget comincia sempre dal sales budget?&lt;/summary&gt;&lt;div&gt;Perché le vendite previste sono il vincolo che guida tutto: da esse dipendono produzione, acquisti di materia, manodopera, spese variabili e incassi. Gli altri budget sono costruiti &quot;a valle&quot;.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Cosa vuol dire che tutte le vendite sono &quot;on credit&quot;?&lt;/summary&gt;&lt;div&gt;Che al momento della vendita l&#x27;azienda non riceve denaro: nasce un credito verso il cliente (accounts receivable). Il ricavo di competenza del mese e l&#x27;incasso del mese sono quindi grandezze diverse.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Perché per un budget di luglio servono i dati di agosto?&lt;/summary&gt;&lt;div&gt;Perché le scorte finali di luglio (prodotti finiti e materie prime) sono definite come percentuale del fabbisogno del mese successivo, cioè agosto.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ S2 ============ --&gt;
+&lt;section class=&quot;part p-sage&quot; id=&quot;s2&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;div class=&quot;sec-no&quot;&gt;2&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;qs&quot;&gt;Domande 1–3 · slide 5–6&lt;/div&gt;&lt;h2&gt;Sales budget, cash collections e accounts receivable&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;h3&gt;Domanda 1 · Budgeted sales&lt;/h3&gt;
+  &lt;div class=&quot;formula&quot;&gt;Sales = unit sales × selling price = 10,000 × $70 = &lt;b&gt;$700,000&lt;/b&gt;&lt;small&gt;Il ricavo è di competenza di luglio anche se non è ancora stato incassato.&lt;/small&gt;&lt;/div&gt;
+
+  &lt;h3&gt;Domanda 2 · Expected cash collections&lt;/h3&gt;
+  &lt;p&gt;Gli &lt;span class=&quot;t&quot;&gt;expected cash collections&lt;/span&gt; (incassi previsti) sono il denaro che entra davvero nel mese. Con la regola 40% / 60%, a luglio entrano due &quot;fette&quot; di vendite diverse:&lt;/p&gt;
+  &lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;July&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;June sales: $588,000 × 60% &lt;span class=&quot;src&quot;&gt;(8,400 × $70)&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$352,800&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;July sales: $700,000 × 40%&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;280,000&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Total cash collections&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$632,800&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+
+  &lt;h3&gt;Domanda 3 · Accounts receivable a fine luglio&lt;/h3&gt;
+  &lt;p&gt;Gli &lt;span class=&quot;t&quot;&gt;accounts receivable&lt;/span&gt; (crediti verso clienti) sono, come nota la slide 3, «l&#x27;importo dei beni venduti che non sono stati pagati (nessun incasso)». A fine luglio resta da incassare il 60% delle vendite di luglio: &lt;b&gt;$700,000 × 60% = $420,000&lt;/b&gt;. Le vendite di giugno, a fine luglio, sono state incassate per intero.&lt;/p&gt;
+
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;h4&gt;Prova tu: cambia la regola di incasso&lt;/h4&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;colPct&quot;&gt;% incassata nel mese della vendita&lt;/label&gt;&lt;input id=&quot;colPct&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;5&quot; value=&quot;40&quot;&gt;&lt;output id=&quot;colPctO&quot;&gt;40%&lt;/output&gt;&lt;/div&gt;
+    &lt;svg class=&quot;fig&quot; id=&quot;colSvg&quot; viewBox=&quot;0 0 640 170&quot; role=&quot;img&quot; aria-label=&quot;Ripartizione degli incassi di giugno e luglio&quot;&gt;&lt;/svg&gt;
+    &lt;div class=&quot;kpis&quot;&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Cash collections di luglio&lt;/span&gt;&lt;b id=&quot;colK1&quot;&gt;$632,800&lt;/b&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Accounts receivable fine luglio&lt;/span&gt;&lt;b id=&quot;colK2&quot;&gt;$420,000&lt;/b&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Sales di luglio (non cambia)&lt;/span&gt;&lt;b&gt;$700,000&lt;/b&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;cap&quot;&gt;Il ricavo resta $700,000 qualunque sia la regola: cambia solo &lt;em&gt;quando&lt;/em&gt; arriva il denaro. Più si incassa subito, più cassa e meno crediti.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;Competenza e cassa: perché sono due numeri diversi&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;&lt;span class=&quot;badge b-add&quot;&gt;spiegazione aggiunta&lt;/span&gt; Il conto economico segue il principio di competenza (&lt;span class=&quot;t&quot;&gt;accrual basis&lt;/span&gt;): il ricavo si registra quando si vende. Il cash budget segue la cassa: conta quando entra il denaro. Con vendite a credito i due numeri divergono, e la differenza si accumula nei crediti.&lt;/p&gt;
+    &lt;p&gt;Un controllo utile: &lt;b&gt;AR iniziale + vendite − incassi = AR finale&lt;/b&gt;. AR fine giugno = 60% × 588,000 = 352,800; 352,800 + 700,000 − 632,800 = &lt;b&gt;420,000&lt;/b&gt;. Torna.&lt;/p&gt;
+  &lt;/div&gt;&lt;/details&gt;
+  &lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;Il programma completo degli incassi (luglio–settembre)&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;&lt;span class=&quot;badge b-add&quot;&gt;calcolo aggiunto&lt;/span&gt; Con gli stessi dati si possono stimare anche i mesi dopo (agosto: vendite $840,000; settembre: $910,000).&lt;/p&gt;
+    &lt;div class=&quot;scroll&quot;&gt;&lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;Jul&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;Aug&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;Sep&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;60% delle vendite del mese prima&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;352,800&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;420,000&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;504,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;40% delle vendite del mese&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;280,000&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;336,000&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;364,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Totale incassi&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;632,800&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;756,000&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;868,000&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/details&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h4&gt;Autoverifica · parte 2&lt;/h4&gt;
+    &lt;details&gt;&lt;summary&gt;Se a luglio le vendite fossero 11,000 unità, quanto varrebbero gli incassi di luglio?&lt;/summary&gt;&lt;div&gt;June: 588,000 × 60% = 352,800; July: 11,000 × 70 = 770,000 × 40% = 308,000. Totale &lt;b&gt;$660,800&lt;/b&gt;.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Perché l&#x27;AR di fine luglio non comprende nulla delle vendite di giugno?&lt;/summary&gt;&lt;div&gt;Perché le vendite di giugno sono incassate per il 40% a giugno e per il 60% a luglio: a fine luglio sono pagate al 100%.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Ricavi di luglio $700,000, incassi $632,800: dove va la differenza?&lt;/summary&gt;&lt;div&gt;Fa crescere i crediti: AR passa da $352,800 (fine giugno) a $420,000 (fine luglio), +$67,200 = 700,000 − 632,800.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ S3 ============ --&gt;
+&lt;section class=&quot;part p-ochre&quot; id=&quot;s3&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;div class=&quot;sec-no&quot;&gt;3&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;qs&quot;&gt;Domanda 4 · slide 6&lt;/div&gt;&lt;h2&gt;Production budget: quante unità produrre&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;p&gt;Il &lt;span class=&quot;t&quot;&gt;production budget&lt;/span&gt; (budget di produzione) dice quante unità fabbricare. Non basta produrre quanto si vende: bisogna anche lasciare in magazzino la scorta desiderata per il mese dopo, e si può usare quella già presente a inizio mese.&lt;/p&gt;
+  &lt;div class=&quot;formula&quot;&gt;Required production = Budgeted unit sales + Desired ending FG inventory − Beginning FG inventory&lt;small&gt;FG = finished goods, prodotti finiti. La rimanenza iniziale di luglio è la rimanenza finale di giugno.&lt;/small&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;box stepper&quot; data-stepper&gt;
+    &lt;h4&gt;Costruisci il calcolo, un passo alla volta&lt;/h4&gt;
+    &lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;July&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr data-step=&quot;1&quot;&gt;&lt;td&gt;&lt;span class=&quot;op&quot;&gt;&lt;/span&gt;Budgeted sales in units&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;10,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr data-step=&quot;2&quot;&gt;&lt;td&gt;&lt;span class=&quot;op&quot;&gt;+&lt;/span&gt;Desired ending inventory*&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;2,400&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr data-step=&quot;3&quot; class=&quot;sub&quot;&gt;&lt;td&gt;&lt;span class=&quot;op&quot;&gt;=&lt;/span&gt;Total needs&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;12,400&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr data-step=&quot;4&quot;&gt;&lt;td&gt;&lt;span class=&quot;op&quot;&gt;−&lt;/span&gt;Beginning inventory**&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;2,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr data-step=&quot;5&quot; class=&quot;tot&quot;&gt;&lt;td&gt;&lt;span class=&quot;op&quot;&gt;=&lt;/span&gt;Required production&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;10,400&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;div class=&quot;steptext&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+    &lt;template&gt;&lt;p&gt;Si parte da ciò che si prevede di vendere a luglio: &lt;b&gt;10,000 unità&lt;/b&gt; (dato a).&lt;/p&gt;&lt;p&gt;*A fine luglio vogliamo in magazzino il 20% delle vendite di agosto: 12,000 × 20% = &lt;b&gt;2,400&lt;/b&gt; unità (dato c).&lt;/p&gt;&lt;p&gt;Il fabbisogno totale è quanto serve avere a disposizione nel mese: vendere 10,000 e tenerne 2,400 = &lt;b&gt;12,400&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;**Una parte c&#x27;è già: la scorta finale di giugno, pari al 20% delle vendite di luglio: 10,000 × 20% = &lt;b&gt;2,000&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;Resta da produrre &lt;b&gt;10,400 unità&lt;/b&gt;. Produzione &amp;gt; vendite perché le vendite crescono e quindi cresce anche la scorta richiesta.&lt;/p&gt;&lt;/template&gt;
+    &lt;div class=&quot;controls&quot;&gt;&lt;button class=&quot;btn&quot; data-prev&gt;← Indietro&lt;/button&gt;&lt;button class=&quot;btn&quot; data-next&gt;Avanti →&lt;/button&gt;&lt;div class=&quot;dots&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;h4&gt;L&#x27;equazione del magazzino, in figura&lt;/h4&gt;
+    &lt;p class=&quot;cap&quot; style=&quot;margin-top:0&quot;&gt;Ciò che entra (scorta iniziale + produzione) deve coincidere con ciò che esce o resta (vendite + scorta finale). Muovi il cursore per cambiare la politica di scorta.&lt;/p&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;fgPct&quot;&gt;Scorta finale FG (% vendite mese dopo)&lt;/label&gt;&lt;input id=&quot;fgPct&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;50&quot; step=&quot;5&quot; value=&quot;20&quot;&gt;&lt;output id=&quot;fgPctO&quot;&gt;20%&lt;/output&gt;&lt;/div&gt;
+    &lt;svg class=&quot;fig&quot; id=&quot;prodSvg&quot; viewBox=&quot;0 0 640 150&quot; role=&quot;img&quot; aria-label=&quot;Equazione del magazzino prodotti finiti&quot;&gt;&lt;/svg&gt;
+    &lt;div class=&quot;kpis&quot;&gt;&lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Required production luglio&lt;/span&gt;&lt;b id=&quot;prodK&quot;&gt;10,400&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Differenza rispetto alle vendite&lt;/span&gt;&lt;b id=&quot;prodK2&quot;&gt;+400&lt;/b&gt;&lt;small&gt;= (agosto − luglio) × % scorta&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;Production budget di giugno, luglio e agosto (verifica del dato «61,000 pounds»)&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;&lt;span class=&quot;badge b-add&quot;&gt;calcolo aggiunto&lt;/span&gt; Applicando la stessa formula agli altri mesi:&lt;/p&gt;
+    &lt;div class=&quot;scroll&quot;&gt;&lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;Jun&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;Jul&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;Aug&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Unit sales&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;8,400&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;10,000&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;12,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;+ Ending FG (20% mese dopo)&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;2,000&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;2,400&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;2,600&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;− Beginning FG (20% del mese)&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;1,680&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;2,000&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;2,400&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Required production&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;10,720&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;10,400&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;12,200&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;&lt;/div&gt;
+    &lt;p&gt;Agosto: 12,200 unità × 5 pounds = &lt;b&gt;61,000 pounds&lt;/b&gt;, proprio il dato che la domanda 5 fornisce già pronto. Anche giugno ha produzione maggiore delle vendite, per costruire la scorta in vista della crescita.&lt;/p&gt;
+  &lt;/div&gt;&lt;/details&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h4&gt;Autoverifica · parte 3&lt;/h4&gt;
+    &lt;details&gt;&lt;summary&gt;Se le vendite fossero costanti ogni mese, la produzione sarebbe maggiore, minore o uguale alle vendite?&lt;/summary&gt;&lt;div&gt;Uguale: scorta iniziale e scorta finale sarebbero identiche (20% dello stesso numero) e si annullerebbero.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Perché la rimanenza iniziale di luglio è 2,000 e non 2,400?&lt;/summary&gt;&lt;div&gt;Perché è la scorta finale di giugno, calcolata sulle vendite del mese dopo giugno, cioè luglio: 10,000 × 20% = 2,000. I 2,400 sono la scorta finale di luglio (20% di agosto).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Con una scorta del 30%, quante unità produrre a luglio?&lt;/summary&gt;&lt;div&gt;10,000 + 30% × 12,000 − 30% × 10,000 = 10,000 + 3,600 − 3,000 = &lt;b&gt;10,600&lt;/b&gt;.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ S4 ============ --&gt;
+&lt;section class=&quot;part p-brick&quot; id=&quot;s4&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;div class=&quot;sec-no&quot;&gt;4&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;qs&quot;&gt;Domande 5–9 · slide 7–9&lt;/div&gt;&lt;h2&gt;Direct materials budget, pagamenti e accounts payable&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;p&gt;Il &lt;span class=&quot;t&quot;&gt;direct materials budget&lt;/span&gt; (budget delle materie prime dirette) ragiona come il production budget, ma un livello più a monte: parte dalla produzione e calcola quanta materia &lt;em&gt;acquistare&lt;/em&gt;, tenendo conto delle scorte di &lt;span class=&quot;t&quot;&gt;raw materials&lt;/span&gt; (materie prime).&lt;/p&gt;
+  &lt;div class=&quot;formula&quot;&gt;Purchases (pounds) = Production needs + Desired ending RM inventory − Beginning RM inventory&lt;small&gt;Production needs = unità da produrre × pounds per unità. Le scorte sono il 10% del fabbisogno del mese dopo (dato d).&lt;/small&gt;&lt;/div&gt;
+
+  &lt;h3&gt;Domanda 5 · Pounds da acquistare&lt;/h3&gt;
+  &lt;div class=&quot;box stepper&quot; data-stepper&gt;
+    &lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;July&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr data-step=&quot;1&quot;&gt;&lt;td&gt;&lt;span class=&quot;op&quot;&gt;&lt;/span&gt;Required production in units of finished goods&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;10,400&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr data-step=&quot;2&quot;&gt;&lt;td&gt;&lt;span class=&quot;op&quot;&gt;×&lt;/span&gt;Units of raw materials needed per unit&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;5&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr data-step=&quot;3&quot; class=&quot;sub&quot;&gt;&lt;td&gt;&lt;span class=&quot;op&quot;&gt;=&lt;/span&gt;Raw materials needed to meet production&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;52,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr data-step=&quot;4&quot;&gt;&lt;td&gt;&lt;span class=&quot;op&quot;&gt;+&lt;/span&gt;Desired ending raw materials inventory*&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;6,100&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr data-step=&quot;5&quot; class=&quot;sub&quot;&gt;&lt;td&gt;&lt;span class=&quot;op&quot;&gt;=&lt;/span&gt;Total raw materials needed&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;58,100&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr data-step=&quot;6&quot;&gt;&lt;td&gt;&lt;span class=&quot;op&quot;&gt;−&lt;/span&gt;Beginning raw materials inventory**&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;5,200&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr data-step=&quot;7&quot; class=&quot;tot&quot;&gt;&lt;td&gt;&lt;span class=&quot;op&quot;&gt;=&lt;/span&gt;Raw materials to be purchased&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;52,900&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;div class=&quot;steptext&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+    &lt;template&gt;&lt;p&gt;Si parte dalla produzione di luglio calcolata nel production budget: &lt;b&gt;10,400 unità&lt;/b&gt;. Attenzione: produzione, non vendite.&lt;/p&gt;&lt;p&gt;Ogni unità richiede &lt;b&gt;5 pounds&lt;/b&gt; di materia (dato d).&lt;/p&gt;&lt;p&gt;Per produrre servono 10,400 × 5 = &lt;b&gt;52,000 pounds&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;*La scorta finale di luglio è il 10% del fabbisogno di agosto, che il testo dà già: 61,000 × 10% = &lt;b&gt;6,100 pounds&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;Fabbisogno totale: 52,000 + 6,100 = &lt;b&gt;58,100 pounds&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;**La scorta iniziale di luglio è la finale di giugno: 10% del fabbisogno di luglio, 52,000 × 10% = &lt;b&gt;5,200 pounds&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;Da comprare: &lt;b&gt;52,900 pounds&lt;/b&gt;.&lt;/p&gt;&lt;/template&gt;
+    &lt;div class=&quot;controls&quot;&gt;&lt;button class=&quot;btn&quot; data-prev&gt;← Indietro&lt;/button&gt;&lt;button class=&quot;btn&quot; data-next&gt;Avanti →&lt;/button&gt;&lt;div class=&quot;dots&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;svg class=&quot;fig&quot; id=&quot;rmSvg&quot; viewBox=&quot;0 0 640 150&quot; role=&quot;img&quot; aria-label=&quot;Equazione del magazzino materie prime&quot;&gt;&lt;/svg&gt;
+  &lt;p class=&quot;cap&quot;&gt;Stessa equazione del magazzino vista per i prodotti finiti, ora in pounds di materia prima.&lt;/p&gt;
+
+  &lt;h3&gt;Domande 6–9 · dai pounds ai dollari&lt;/h3&gt;
+  &lt;div class=&quot;tabs&quot; data-tabs&gt;
+    &lt;div role=&quot;tablist&quot;&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;true&quot; data-panel=&quot;t4a&quot;&gt;6 · Costo acquisti&lt;/button&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; data-panel=&quot;t4b&quot;&gt;7 · Pagamenti&lt;/button&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; data-panel=&quot;t4c&quot;&gt;8 · Accounts payable&lt;/button&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; data-panel=&quot;t4d&quot;&gt;9 · Scorta RM&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;t4a&quot;&gt;
+      &lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;td&gt;Units of raw materials to be purchased&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;52,900&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Unit cost of raw materials&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$2.00&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Cost of raw materials to be purchased&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$105,800&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      &lt;p class=&quot;cap&quot;&gt;È il costo degli &lt;em&gt;acquisti&lt;/em&gt;, non della materia consumata: la materia usata in produzione vale 52,000 × $2 = $104,000.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;t4b&quot; hidden&gt;
+      &lt;p&gt;Le &lt;span class=&quot;t&quot;&gt;cash disbursements&lt;/span&gt; (uscite di cassa) per materia seguono la regola 30% nel mese / 70% nel mese dopo (dato e):&lt;/p&gt;
+      &lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;td&gt;June purchases: $88,880 × 70%&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$62,216&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;July purchases: $105,800 × 30%&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;31,740&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Total cash disbursements&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$93,956&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      &lt;div class=&quot;warn&quot;&gt;&lt;b&gt;Attenzione:&lt;/b&gt; il costo degli acquisti di giugno ($88,880) è un&#x27;&lt;em&gt;ipotesi della domanda 7&lt;/em&gt;, da usare così com&#x27;è. &lt;span class=&quot;badge b-add&quot;&gt;nota aggiunta&lt;/span&gt; Ricalcolandolo dai dati (produzione giugno 10,720 unità → 53,600 pounds + 5,200 − 5,360 = 53,440 pounds × $2) si otterrebbero $106,880: il testo semplifica, quindi all&#x27;esame usa il dato fornito.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;t4c&quot; hidden&gt;
+      &lt;p&gt;Gli &lt;span class=&quot;t&quot;&gt;accounts payable&lt;/span&gt; (debiti verso fornitori) sono gli acquisti ricevuti ma non ancora pagati. A fine luglio resta da pagare il 70% degli acquisti di luglio:&lt;/p&gt;
+      &lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;td&gt;July purchases&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$105,800&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Percent unpaid&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;70%&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Accounts payable&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$74,060&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; id=&quot;t4d&quot; hidden&gt;
+      &lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;td&gt;Ending raw materials inventory (pounds)&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;6,100&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Cost per pound&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$2.00&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Raw material inventory balance&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$12,200&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      &lt;p class=&quot;cap&quot;&gt;Questo valore finisce nello stato patrimoniale previsionale tra le rimanenze di materie prime.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;box tint&quot;&gt;
+    &lt;h4&gt;Specchio: clienti e fornitori funzionano allo stesso modo&lt;/h4&gt;
+    &lt;div class=&quot;scroll&quot;&gt;&lt;table class=&quot;ledger&quot;&gt;
+      &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Lato vendite (§2)&lt;/th&gt;&lt;th&gt;Lato acquisti (§4)&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Grandezza di competenza&lt;/td&gt;&lt;td&gt;Sales $700,000&lt;/td&gt;&lt;td&gt;Purchases $105,800&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Regola di cassa&lt;/td&gt;&lt;td&gt;40% subito, 60% mese dopo&lt;/td&gt;&lt;td&gt;30% subito, 70% mese dopo&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Movimento di cassa luglio&lt;/td&gt;&lt;td&gt;Collections $632,800 (entrata)&lt;/td&gt;&lt;td&gt;Disbursements $93,956 (uscita)&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Saldo a fine mese&lt;/td&gt;&lt;td&gt;Accounts receivable $420,000 (attivo)&lt;/td&gt;&lt;td&gt;Accounts payable $74,060 (passivo)&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Formula del saldo&lt;/td&gt;&lt;td&gt;vendite del mese × % non incassata&lt;/td&gt;&lt;td&gt;acquisti del mese × % non pagata&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h4&gt;Autoverifica · parte 4&lt;/h4&gt;
+    &lt;details&gt;&lt;summary&gt;Perché il fabbisogno di materia si calcola sulla produzione e non sulle vendite?&lt;/summary&gt;&lt;div&gt;Perché la materia si consuma quando si produce. Le 10,000 unità vendute a luglio includono 2,000 unità prodotte a giugno; le 10,400 unità prodotte a luglio richiedono materia comprata ora.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Se i fornitori volessero il 50% subito, quali sarebbero i pagamenti di luglio?&lt;/summary&gt;&lt;div&gt;Giugno: 88,880 × 50% = 44,440; luglio: 105,800 × 50% = 52,900. Totale &lt;b&gt;$97,340&lt;/b&gt;; AP fine luglio = 52,900.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Da dove viene il dato «61,000 pounds» per agosto?&lt;/summary&gt;&lt;div&gt;Dal production budget di agosto: 12,000 + 20% × 13,000 − 20% × 12,000 = 12,200 unità × 5 pounds = 61,000 (vedi la scheda di verifica in §3).&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ S5 ============ --&gt;
+&lt;section class=&quot;part p-slate&quot; id=&quot;s5&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;div class=&quot;sec-no&quot;&gt;5&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;qs&quot;&gt;Domande 10–11 · slide 10&lt;/div&gt;&lt;h2&gt;Direct labor budget e unit product cost&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;h3&gt;Domanda 10 · Direct labor cost&lt;/h3&gt;
+  &lt;p&gt;Il &lt;span class=&quot;t&quot;&gt;direct labor budget&lt;/span&gt; (budget della manodopera diretta) stima le ore e il costo del personale che lavora direttamente sul prodotto. Anche qui si parte dalla &lt;b&gt;produzione&lt;/b&gt;.&lt;/p&gt;
+  &lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;July&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Required production in units&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;10,400&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;× Direct labor hours per unit&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;2.0&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total direct labor-hours needed&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;20,800&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;× Direct labor cost per hour&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$15&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Total direct labor cost&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$312,000&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;p class=&quot;cap&quot;&gt;&lt;span class=&quot;badge b-add&quot;&gt;nota&lt;/span&gt; Le slide trattano la manodopera come costo che varia con le ore. Nella realtà spesso una parte è fissa (personale con orario garantito); qui l&#x27;ipotesi semplifica.&lt;/p&gt;
+
+  &lt;h3&gt;Domanda 11 · Unit product cost&lt;/h3&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;dl style=&quot;margin:0&quot;&gt;
+    &lt;dt&gt;Manufacturing overhead (MOH)&lt;/dt&gt;&lt;dd&gt;i costi indiretti di produzione: energia degli impianti, manutenzione, materiali di consumo, supervisione… Non si attribuiscono a un&#x27;unità in modo diretto, quindi si ripartiscono con una &lt;span class=&quot;t&quot;&gt;allocation base&lt;/span&gt; (base di ripartizione), qui le direct labor-hours: $10 per ora.&lt;/dd&gt;
+    &lt;dt&gt;Unit product cost&lt;/dt&gt;&lt;dd&gt;il costo pieno di produzione di un&#x27;unità: materie dirette + manodopera diretta + overhead. Comprende solo costi di &lt;em&gt;prodotto&lt;/em&gt;, mai le spese commerciali e amministrative. È l&#x27;impostazione dell&#x27;&lt;span class=&quot;t&quot;&gt;absorption costing&lt;/span&gt; (costo pieno industriale). &lt;span class=&quot;badge b-add&quot;&gt;spiegazione aggiunta&lt;/span&gt;&lt;/dd&gt;
+  &lt;/dl&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;h4&gt;Di cosa è fatto il costo di un&#x27;unità? Clicca le barre&lt;/h4&gt;
+    &lt;svg class=&quot;fig&quot; viewBox=&quot;0 0 640 120&quot; id=&quot;ucSvg&quot; role=&quot;img&quot; aria-label=&quot;Composizione del costo unitario di 60 dollari&quot;&gt;
+      &lt;g class=&quot;seg&quot; data-k=&quot;dm&quot; tabindex=&quot;0&quot; style=&quot;cursor:pointer&quot;&gt;&lt;rect x=&quot;20&quot; y=&quot;20&quot; width=&quot;100&quot; height=&quot;56&quot; fill=&quot;var(--brick)&quot;/&gt;&lt;text x=&quot;70&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; fill=&quot;var(--paper)&quot; font-size=&quot;15&quot; font-weight=&quot;700&quot;&gt;$10&lt;/text&gt;&lt;/g&gt;
+      &lt;g class=&quot;seg&quot; data-k=&quot;dl&quot; tabindex=&quot;0&quot; style=&quot;cursor:pointer&quot;&gt;&lt;rect x=&quot;120&quot; y=&quot;20&quot; width=&quot;300&quot; height=&quot;56&quot; fill=&quot;var(--slate)&quot;/&gt;&lt;text x=&quot;270&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; fill=&quot;var(--paper)&quot; font-size=&quot;15&quot; font-weight=&quot;700&quot;&gt;$30&lt;/text&gt;&lt;/g&gt;
+      &lt;g class=&quot;seg&quot; data-k=&quot;oh&quot; tabindex=&quot;0&quot; style=&quot;cursor:pointer&quot;&gt;&lt;rect x=&quot;420&quot; y=&quot;20&quot; width=&quot;200&quot; height=&quot;56&quot; fill=&quot;var(--ochre)&quot;/&gt;&lt;text x=&quot;520&quot; y=&quot;54&quot; text-anchor=&quot;middle&quot; fill=&quot;var(--paper)&quot; font-size=&quot;15&quot; font-weight=&quot;700&quot;&gt;$20&lt;/text&gt;&lt;/g&gt;
+      &lt;g font-size=&quot;12&quot; fill=&quot;var(--muted)&quot; text-anchor=&quot;middle&quot;&gt;&lt;text x=&quot;70&quot; y=&quot;96&quot;&gt;Direct materials&lt;/text&gt;&lt;text x=&quot;270&quot; y=&quot;96&quot;&gt;Direct labor&lt;/text&gt;&lt;text x=&quot;520&quot; y=&quot;96&quot;&gt;Manufacturing overhead&lt;/text&gt;&lt;text x=&quot;620&quot; y=&quot;14&quot; text-anchor=&quot;end&quot; fill=&quot;var(--ink)&quot; font-weight=&quot;700&quot;&gt;= $60.00&lt;/text&gt;&lt;/g&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;steptext&quot; id=&quot;ucText&quot;&gt;Clicca un segmento per vedere da dove viene.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;Quantity&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;Cost&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;Total&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Direct materials&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;5 pounds&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$2 per pound&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$10.00&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Direct labor&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;2 hours&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$15 per hour&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;30.00&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Manufacturing overhead&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;2 hours&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$10 per hour&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;20.00&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Unit product cost&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$60.00&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;E se ci fosse overhead fisso?&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;&lt;span class=&quot;badge b-add&quot;&gt;spiegazione aggiunta&lt;/span&gt; La domanda 11 esclude l&#x27;overhead fisso apposta. Se ci fosse, per assorbirlo nel costo unitario servirebbe un &lt;span class=&quot;t&quot;&gt;predetermined overhead rate&lt;/span&gt; (tasso predeterminato): overhead fisso budget ÷ ore budget. Ad esempio $41,600 di overhead fisso su 20,800 ore aggiungerebbero $2 per ora, cioè $4 a unità. Il costo unitario dipenderebbe allora dal volume di produzione, perché il fisso si spalma su più o meno unità.&lt;/p&gt;
+  &lt;/div&gt;&lt;/details&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h4&gt;Autoverifica · parte 5&lt;/h4&gt;
+    &lt;details&gt;&lt;summary&gt;Il costo della manodopera di luglio è $312,000, ma 10,000 unità × $30 fa $300,000. Perché la differenza?&lt;/summary&gt;&lt;div&gt;$312,000 riguarda le 10,400 unità &lt;em&gt;prodotte&lt;/em&gt;. I $300,000 sarebbero la manodopera contenuta nelle unità &lt;em&gt;vendute&lt;/em&gt; (entra nel COGS). I $12,000 di differenza sono le 400 unità in più finite in magazzino (400 × $30).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Le spese di vendita da $1.80 per unità entrano nell&#x27;unit product cost?&lt;/summary&gt;&lt;div&gt;No. Sono &lt;span class=&quot;t&quot;&gt;period costs&lt;/span&gt;: costi del periodo, che vanno direttamente a conto economico, non nel costo del prodotto né nelle rimanenze.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Se il salario salisse a $18 l&#x27;ora, quale sarebbe il costo unitario?&lt;/summary&gt;&lt;div&gt;DM 10 + DL 2 × 18 = 36 + MOH 20 = &lt;b&gt;$66&lt;/b&gt;. L&#x27;overhead non cambia: è legato alle ore, non alla tariffa.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ S6 ============ --&gt;
+&lt;section class=&quot;part p-acc&quot; id=&quot;s6&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;div class=&quot;sec-no&quot;&gt;6&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;qs&quot;&gt;Domande 12–14 · slide 4, 11–12&lt;/div&gt;&lt;h2&gt;Finished goods, cost of goods sold, gross margin e S&amp;amp;A&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;grid2&quot;&gt;
+    &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;12 · Finished goods inventory&lt;/h4&gt;
+      &lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;td&gt;Ending FG inventory (units)&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;2,400&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Unit product cost&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$60.00&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Ending FG inventory&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$144,000&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      &lt;p class=&quot;cap&quot;&gt;Le unità in magazzino valgono il loro costo di produzione, non il prezzo di vendita.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;13 · COGS e gross margin&lt;/h4&gt;
+      &lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;td&gt;Unit sales × unit product cost: 10,000 × $60&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$600,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Total sales&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$700,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;− Cost of goods sold&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;600,000&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Gross margin&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$100,000&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;def&quot;&gt;&lt;dl style=&quot;margin:0&quot;&gt;
+    &lt;dt&gt;Cost of goods sold (COGS)&lt;/dt&gt;&lt;dd&gt;il costo del venduto: «il costo di prodotto totale dei beni venduti, solo costi di prodotto, non spese di vendita e amministrative» (nota della slide 4). Si moltiplica per le unità &lt;b&gt;vendute&lt;/b&gt; (10,000), non per quelle prodotte.&lt;/dd&gt;
+    &lt;dt&gt;Gross margin&lt;/dt&gt;&lt;dd&gt;margine lordo industriale = ricavi − cost of goods sold (slide 4). Qui $100,000, cioè $10 per unità ($70 − $60), il 14.3% delle vendite.&lt;/dd&gt;
+  &lt;/dl&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;h4&gt;Dove finiscono i costi di produzione di luglio&lt;/h4&gt;
+    &lt;svg class=&quot;fig&quot; viewBox=&quot;0 0 640 200&quot; role=&quot;img&quot; aria-label=&quot;Flusso dei costi di produzione tra magazzino e costo del venduto&quot;&gt;
+      &lt;rect x=&quot;20&quot; y=&quot;30&quot; width=&quot;170&quot; height=&quot;50&quot; rx=&quot;8&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot;/&gt;&lt;text x=&quot;105&quot; y=&quot;52&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; fill=&quot;var(--ink)&quot;&gt;Beginning FG&lt;/text&gt;&lt;text x=&quot;105&quot; y=&quot;70&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; fill=&quot;var(--muted)&quot;&gt;2,000 × $60 = $120,000&lt;/text&gt;
+      &lt;rect x=&quot;20&quot; y=&quot;110&quot; width=&quot;170&quot; height=&quot;50&quot; rx=&quot;8&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot;/&gt;&lt;text x=&quot;105&quot; y=&quot;132&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; fill=&quot;var(--ink)&quot;&gt;Costo produzione luglio&lt;/text&gt;&lt;text x=&quot;105&quot; y=&quot;150&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; fill=&quot;var(--muted)&quot;&gt;10,400 × $60 = $624,000&lt;/text&gt;
+      &lt;path d=&quot;M190 55C230 55 230 95 255 95M190 135C230 135 230 95 255 95&quot; fill=&quot;none&quot; stroke=&quot;var(--muted)&quot; stroke-width=&quot;1.5&quot;/&gt;
+      &lt;rect x=&quot;255&quot; y=&quot;70&quot; width=&quot;140&quot; height=&quot;50&quot; rx=&quot;8&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--ink)&quot;/&gt;&lt;text x=&quot;325&quot; y=&quot;92&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; fill=&quot;var(--ink)&quot;&gt;Disponibile&lt;/text&gt;&lt;text x=&quot;325&quot; y=&quot;110&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; fill=&quot;var(--muted)&quot;&gt;$744,000&lt;/text&gt;
+      &lt;path d=&quot;M395 95C425 95 425 55 450 55M395 95C425 95 425 135 450 135&quot; fill=&quot;none&quot; stroke=&quot;var(--muted)&quot; stroke-width=&quot;1.5&quot;/&gt;
+      &lt;rect x=&quot;450&quot; y=&quot;30&quot; width=&quot;170&quot; height=&quot;50&quot; rx=&quot;8&quot; fill=&quot;var(--acc-bg)&quot; stroke=&quot;var(--acc)&quot;/&gt;&lt;text x=&quot;535&quot; y=&quot;52&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; fill=&quot;var(--ink)&quot;&gt;COGS → conto econ.&lt;/text&gt;&lt;text x=&quot;535&quot; y=&quot;70&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; fill=&quot;var(--muted)&quot;&gt;10,000 × $60 = $600,000&lt;/text&gt;
+      &lt;rect x=&quot;450&quot; y=&quot;110&quot; width=&quot;170&quot; height=&quot;50&quot; rx=&quot;8&quot; fill=&quot;var(--sage-bg)&quot; stroke=&quot;var(--sage)&quot;/&gt;&lt;text x=&quot;535&quot; y=&quot;132&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; fill=&quot;var(--ink)&quot;&gt;Ending FG → stato patr.&lt;/text&gt;&lt;text x=&quot;535&quot; y=&quot;150&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; fill=&quot;var(--muted)&quot;&gt;2,400 × $60 = $144,000&lt;/text&gt;
+      &lt;text x=&quot;320&quot; y=&quot;190&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--muted)&quot;&gt;Ipotesi: anche la scorta iniziale è valutata $60 per unità&lt;/text&gt;
+    &lt;/svg&gt;
+    &lt;p class=&quot;cap&quot;&gt;&lt;span class=&quot;badge b-add&quot;&gt;schema aggiunto&lt;/span&gt; I costi di produzione &quot;aspettano&quot; in magazzino e diventano costo solo quando l&#x27;unità è venduta. Per questo il COGS ($600,000) è diverso dai costi sostenuti nel mese ($624,000).&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Domanda 14 · Selling and administrative expense&lt;/h3&gt;
+  &lt;table class=&quot;ledger&quot;&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th class=&quot;n&quot;&gt;July&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Budgeted unit sales&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;10,000&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;× Variable S&amp;amp;A expense per unit&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$1.80&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total variable expense&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$18,000&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;+ Fixed S&amp;amp;A expenses&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;60,000&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Total selling and administrative expenses&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$78,000&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;p&gt;Le spese S&amp;amp;A variabili dipendono dalle unità &lt;b&gt;vendute&lt;/b&gt; (provvigioni, spedizioni), non da quelle prodotte. Sono &lt;span class=&quot;t&quot;&gt;period costs&lt;/span&gt;: vanno a conto economico nel mese, senza passare dal magazzino.&lt;/p&gt;
+
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;h4&gt;Il conto economico di luglio: due formati&lt;/h4&gt;
+    &lt;p class=&quot;cap&quot; style=&quot;margin-top:0&quot;&gt;&lt;span class=&quot;badge b-add&quot;&gt;estensione&lt;/span&gt; Le slide si fermano a gross margin e S&amp;amp;A; mettendoli insieme si ottiene il &lt;span class=&quot;t&quot;&gt;net operating income&lt;/span&gt; (reddito operativo).&lt;/p&gt;
+    &lt;div style=&quot;display:flex;gap:8px;margin-bottom:10px&quot;&gt;&lt;button class=&quot;btn on&quot; data-fmt=&quot;abs&quot;&gt;Absorption (per funzione)&lt;/button&gt;&lt;button class=&quot;btn&quot; data-fmt=&quot;con&quot;&gt;Contribution (per variabilità)&lt;/button&gt;&lt;/div&gt;
+    &lt;table class=&quot;ledger&quot; id=&quot;fmtAbs&quot;&gt;
+      &lt;tr&gt;&lt;td&gt;Sales&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$700,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;− Cost of goods sold&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;600,000&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Gross margin&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;100,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;− Selling &amp;amp; administrative expenses&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;78,000&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$22,000&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;table class=&quot;ledger&quot; id=&quot;fmtCon&quot; hidden&gt;
+      &lt;tr&gt;&lt;td&gt;Sales&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$700,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;− Variable production costs (10,000 × $60)&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;600,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;− Variable S&amp;amp;A (10,000 × $1.80)&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;18,000&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Contribution margin&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;82,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;− Fixed S&amp;amp;A&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;60,000&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td class=&quot;n&quot;&gt;$22,000&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p class=&quot;cap&quot;&gt;Qui i due formati danno lo stesso reddito perché non c&#x27;è overhead fisso di produzione: nessun costo fisso resta &quot;parcheggiato&quot; nelle rimanenze.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h4&gt;Autoverifica · parte 6&lt;/h4&gt;
+    &lt;details&gt;&lt;summary&gt;Perché il COGS usa 10,000 unità e non 10,400?&lt;/summary&gt;&lt;div&gt;Perché il cost of goods sold riguarda le unità vendute. Le unità prodotte e non vendute restano in magazzino come attività (finished goods inventory).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Le spese S&amp;amp;A fisse di $60,000 cambierebbero se a luglio si vendessero 12,000 unità?&lt;/summary&gt;&lt;div&gt;No, sono fisse nel mese. Cambierebbe solo la parte variabile: 12,000 × 1.80 = 21,600, totale $81,600.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Quanto vale il gross margin per unità e cosa deve coprire?&lt;/summary&gt;&lt;div&gt;$70 − $60 = $10 a unità. Deve coprire le spese S&amp;amp;A ($7.80 a unità a questo volume: 78,000 ÷ 10,000) e lasciare un utile ($2.20 a unità, $22,000 in totale).&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ S7 ============ --&gt;
+&lt;section class=&quot;part p-sage&quot; id=&quot;s7&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;div class=&quot;sec-no&quot;&gt;7&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;qs&quot;&gt;Tutto insieme · simulatore&lt;/div&gt;&lt;h2&gt;Il master budget di luglio in un colpo d&#x27;occhio&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;p&gt;Ogni cursore è un dato del testo. Muovendolo, vedi quali delle 14 risposte cambiano (bordo colorato) e quali no: è il modo più rapido per capire le dipendenze della mappa iniziale. Con i valori di partenza ritrovi le soluzioni delle slide.&lt;/p&gt;
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;vP&quot;&gt;Prezzo di vendita&lt;/label&gt;&lt;input id=&quot;vP&quot; type=&quot;range&quot; min=&quot;50&quot; max=&quot;90&quot; step=&quot;1&quot; value=&quot;70&quot;&gt;&lt;output data-f=&quot;usd&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;vQ&quot;&gt;Unità vendute a luglio&lt;/label&gt;&lt;input id=&quot;vQ&quot; type=&quot;range&quot; min=&quot;8000&quot; max=&quot;14000&quot; step=&quot;200&quot; value=&quot;10000&quot;&gt;&lt;output data-f=&quot;int&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;vC&quot;&gt;% incassata nel mese&lt;/label&gt;&lt;input id=&quot;vC&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;5&quot; value=&quot;40&quot;&gt;&lt;output data-f=&quot;pct&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;vF&quot;&gt;Scorta FG (% mese dopo)&lt;/label&gt;&lt;input id=&quot;vF&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;50&quot; step=&quot;5&quot; value=&quot;20&quot;&gt;&lt;output data-f=&quot;pct&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;vR&quot;&gt;Scorta RM (% mese dopo)&lt;/label&gt;&lt;input id=&quot;vR&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;30&quot; step=&quot;5&quot; value=&quot;10&quot;&gt;&lt;output data-f=&quot;pct&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;vS&quot;&gt;% acquisti pagata nel mese&lt;/label&gt;&lt;input id=&quot;vS&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;5&quot; value=&quot;30&quot;&gt;&lt;output data-f=&quot;pct&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;vW&quot;&gt;Salario orario&lt;/label&gt;&lt;input id=&quot;vW&quot; type=&quot;range&quot; min=&quot;10&quot; max=&quot;25&quot; step=&quot;1&quot; value=&quot;15&quot;&gt;&lt;output data-f=&quot;usd&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;vO&quot;&gt;Overhead variabile per ora&lt;/label&gt;&lt;input id=&quot;vO&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;20&quot; step=&quot;1&quot; value=&quot;10&quot;&gt;&lt;output data-f=&quot;usd&quot;&gt;&lt;/output&gt;&lt;/div&gt;
+    &lt;p style=&quot;margin:10px 0 0&quot;&gt;&lt;button class=&quot;btn&quot; id=&quot;simReset&quot;&gt;Ripristina i dati delle slide&lt;/button&gt;&lt;/p&gt;
+    &lt;div class=&quot;kpis&quot; id=&quot;simOut&quot;&gt;&lt;/div&gt;
+    &lt;p class=&quot;cap&quot;&gt;Fissi: vendite giugno 8,400, agosto 12,000, settembre 13,000; 5 pounds a $2; 2 ore per unità; acquisti di giugno $88,880; S&amp;amp;A $1.80 + $60,000. Il fabbisogno di agosto (61,000 pounds nel testo) è ricalcolato dalla produzione di agosto. Il net operating income è un&#x27;estensione, non è nelle slide.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;Gli errori più comuni in questo esercizio&lt;/summary&gt;&lt;div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Usare le &lt;b&gt;vendite&lt;/b&gt; invece della &lt;b&gt;produzione&lt;/b&gt; per materie prime e manodopera (domande 5 e 10).&lt;/li&gt;
+      &lt;li&gt;Usare la &lt;b&gt;produzione&lt;/b&gt; invece delle &lt;b&gt;vendite&lt;/b&gt; per COGS e spese S&amp;amp;A variabili (domande 13 e 14).&lt;/li&gt;
+      &lt;li&gt;Confondere scorta iniziale e finale: la iniziale di luglio è la finale di giugno, quindi si calcola sulle vendite (o sul fabbisogno) di &lt;em&gt;luglio&lt;/em&gt;.&lt;/li&gt;
+      &lt;li&gt;Calcolare gli incassi di luglio con le sole vendite di luglio, dimenticando il 60% di giugno.&lt;/li&gt;
+      &lt;li&gt;Mettere le spese di vendita nell&#x27;unit product cost: sono period costs.&lt;/li&gt;
+      &lt;li&gt;Valutare le rimanenze al prezzo di vendita ($70) invece che al costo ($60).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;&lt;/details&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h4&gt;Autoverifica · parte 7&lt;/h4&gt;
+    &lt;details&gt;&lt;summary&gt;Nel simulatore, alzando la % incassata nel mese, quali risposte cambiano?&lt;/summary&gt;&lt;div&gt;Solo cash collections (2) e accounts receivable (3). Nessun costo, margine o quantità dipende dai tempi di incasso.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;E alzando il salario orario?&lt;/summary&gt;&lt;div&gt;Direct labor cost (10), unit product cost (11) e, a cascata, ending FG inventory (12), COGS e gross margin (13). Quantità, acquisti e incassi restano uguali.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Quale dato influenza il maggior numero di risposte?&lt;/summary&gt;&lt;div&gt;Le unità vendute di luglio: toccano vendite, incassi, crediti, produzione, materia, pagamenti, debiti, manodopera, COGS, margine e S&amp;amp;A. È il motivo per cui il sales budget sta in cima alla catena.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ FONTI ============ --&gt;
+&lt;section class=&quot;part p-brick&quot; id=&quot;fonti&quot;&gt;
+  &lt;div class=&quot;sec-head&quot;&gt;&lt;div class=&quot;sec-no&quot;&gt;↗&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;qs&quot;&gt;Per approfondire&lt;/div&gt;&lt;h2&gt;Testi e risorse&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;p&gt;Le slide di questa esercitazione &lt;b&gt;non citano&lt;/b&gt; autori, testi, norme, standard o siti: contengono solo il testo del problema e le soluzioni. Qui sotto trovi due risorse di studio cercate sul web per approfondire il master budget. Sono &lt;span class=&quot;badge b-ext&quot;&gt;fonte esterna&lt;/span&gt;, non materiale del corso.&lt;/p&gt;
+
+  &lt;div class=&quot;ref&quot;&gt;
+    &lt;h4&gt;Garrison, Noreen, Brewer · &lt;i&gt;Managerial Accounting&lt;/i&gt; (McGraw Hill)&lt;/h4&gt;
+    &lt;p class=&quot;src&quot;&gt;&lt;span class=&quot;badge b-ext&quot;&gt;fonte esterna&lt;/span&gt; &lt;a href=&quot;https://www.mheducation.ca/managerial-accounting-for-managers-ise-9781265617660-can&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Scheda dell&#x27;editore: Managerial Accounting for Managers, ISE&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Manuale molto diffuso di contabilità direzionale. Nelle edizioni recenti il capitolo 8, &lt;i&gt;Master Budgeting&lt;/i&gt;, presenta la stessa sequenza dell&#x27;esercizio: sales budget con schedule of expected cash collections, production budget, direct materials budget, direct labor budget, manufacturing overhead budget, S&amp;amp;A budget, cash budget e prospetti previsionali. Il problema &quot;Morganton Company&quot;, con gli stessi numeri, circola online associato a questo testo. Le slide però non indicano la fonte, quindi l&#x27;attribuzione è probabile, non certa.&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Perché conta:&lt;/b&gt; ha la stessa impostazione e terminologia dell&#x27;esercitazione e molti esercizi simili per allenarsi.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;ref&quot;&gt;
+    &lt;h4&gt;OpenStax · &lt;i&gt;Principles of Accounting, Volume 2: Managerial Accounting&lt;/i&gt;&lt;/h4&gt;
+    &lt;p class=&quot;src&quot;&gt;&lt;span class=&quot;badge b-ext&quot;&gt;fonte esterna&lt;/span&gt; &lt;a href=&quot;https://openstax.org/books/principles-managerial-accounting/pages/index&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;openstax.org: Principles of Managerial Accounting&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Manuale universitario gratuito e open access. Il capitolo 7, &lt;i&gt;Budgeting&lt;/i&gt;, tratta nella sezione 7.2 gli operating budgets (production, direct materials, direct labor, manufacturing overhead, selling and administrative) e nella 7.3 i financial budgets, con i prospetti di incassi e pagamenti.&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Perché conta:&lt;/b&gt; si consulta online senza costi e ha esempi svolti con la stessa logica (scorte come % del mese successivo, incassi ripartiti su più mesi).&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;Riassunto scritto da Claude a partire dalle slide: controlla sempre sul materiale.&lt;/footer&gt;
+
+&lt;script&gt;
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var NS=&quot;http://www.w3.org/2000/svg&quot;;
+  function int(n){return Math.round(n).toLocaleString(&quot;en-US&quot;)}
+  function usd(n,d){return (n&lt;0?&quot;−&quot;:&quot;&quot;)+&quot;$&quot;+Math.abs(n).toLocaleString(&quot;en-US&quot;,{minimumFractionDigits:d||0,maximumFractionDigits:d||0})}
+  function el(tag,attrs,txt){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(txt!=null)e.textContent=txt;return e}
+
+  /* mappa concettuale */
+  $$(&quot;#cmap .node&quot;).forEach(function(n){
+    function go(){var t=document.getElementById(n.getAttribute(&quot;data-go&quot;));if(t)t.scrollIntoView({behavior:&quot;smooth&quot;,block:&quot;start&quot;})}
+    n.addEventListener(&quot;click&quot;,go);
+    n.addEventListener(&quot;keydown&quot;,function(e){if(e.key===&quot;Enter&quot;||e.key===&quot; &quot;){e.preventDefault();go()}});
+  });
+
+  /* nav attiva */
+  var links=$$(&quot;nav.top a&quot;);
+  if(&quot;IntersectionObserver&quot; in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle(&quot;on&quot;,a.getAttribute(&quot;href&quot;)===&quot;#&quot;+e.target.id)})}})},{rootMargin:&quot;-45% 0px -50% 0px&quot;});
+    $$(&quot;section.part, #mappa&quot;).forEach(function(s){io.observe(s)});
+  }
+
+  /* linguette */
+  $$(&quot;[data-tabs]&quot;).forEach(function(box){
+    var tabs=$$(&quot;[role=tab]&quot;,box);
+    tabs.forEach(function(t){t.addEventListener(&quot;click&quot;,function(){
+      tabs.forEach(function(o){var on=o===t;o.setAttribute(&quot;aria-selected&quot;,on);document.getElementById(o.getAttribute(&quot;data-panel&quot;)).hidden=!on});
+    })});
+  });
+
+  /* passi */
+  $$(&quot;[data-stepper]&quot;).forEach(function(st){
+    var rows=$$(&quot;tr[data-step]&quot;,st),texts=$$(&quot;p&quot;,$(&quot;template&quot;,st).content),box=$(&quot;.steptext&quot;,st),dots=$(&quot;.dots&quot;,st),i=1,n=rows.length;
+    for(var k=0;k&lt;n;k++)dots.appendChild(document.createElement(&quot;i&quot;));
+    function show(){
+      rows.forEach(function(r){var s=+r.getAttribute(&quot;data-step&quot;);r.classList.toggle(&quot;off&quot;,s&gt;i);r.classList.toggle(&quot;now&quot;,s===i)});
+      box.innerHTML=texts[i-1].innerHTML;
+      $$(&quot;i&quot;,dots).forEach(function(d,j){d.classList.toggle(&quot;on&quot;,j&lt;i)});
+      $(&quot;[data-prev]&quot;,st).disabled=i===1;$(&quot;[data-next]&quot;,st).disabled=i===n;
+    }
+    $(&quot;[data-prev]&quot;,st).addEventListener(&quot;click&quot;,function(){if(i&gt;1){i--;show()}});
+    $(&quot;[data-next]&quot;,st).addEventListener(&quot;click&quot;,function(){if(i&lt;n){i++;show()}});
+    show();
+  });
+
+  /* barra di equilibrio del magazzino */
+  function drawBal(svg,top,bot,unit){
+    while(svg.firstChild)svg.removeChild(svg.firstChild);
+    var tot=top.reduce(function(a,b){return a+b.v},0),sc=600/tot;
+    [[top,18,&quot;Entra / c&#x27;è&quot;],[bot,84,&quot;Esce / resta&quot;]].forEach(function(row){
+      var x=20;
+      row[0].forEach(function(s){
+        var w=s.v*sc;
+        if(w&gt;0){
+          svg.appendChild(el(&quot;rect&quot;,{x:x,y:row[1],width:w,height:46,fill:s.f,stroke:&quot;var(--paper)&quot;,&quot;stroke-width&quot;:2}));
+          var cx=x+w/2,col=s.dark?&quot;var(--paper)&quot;:&quot;var(--ink)&quot;;
+          if(w&gt;110){svg.appendChild(el(&quot;text&quot;,{x:cx,y:row[1]+20,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:12,fill:col},s.l));svg.appendChild(el(&quot;text&quot;,{x:cx,y:row[1]+37,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:13,&quot;font-weight&quot;:700,fill:col},int(s.v)))}
+          else if(w&gt;34){svg.appendChild(el(&quot;text&quot;,{x:cx,y:row[1]+28,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:11,&quot;font-weight&quot;:700,fill:col},int(s.v)))}
+        }
+        x+=w;
+      });
+    });
+    svg.appendChild(el(&quot;text&quot;,{x:620,y:146,&quot;text-anchor&quot;:&quot;end&quot;,&quot;font-size&quot;:11,fill:&quot;var(--muted)&quot;},&quot;Totale &quot;+int(tot)+&quot; &quot;+unit+&quot; su entrambe le righe&quot;));
+  }
+
+  /* §2 incassi */
+  var colSvg=$(&quot;#colSvg&quot;);
+  function drawCol(){
+    var c=+$(&quot;#colPct&quot;).value/100,jun=588000,jul=700000,sc=500/700000;
+    $(&quot;#colPctO&quot;).textContent=Math.round(c*100)+&quot;%&quot;;
+    while(colSvg.firstChild)colSvg.removeChild(colSvg.firstChild);
+    function seg(x,y,v,fill,lab,dark){var w=v*sc;if(w&lt;=0)return x;colSvg.appendChild(el(&quot;rect&quot;,{x:x,y:y,width:w,height:40,fill:fill,stroke:&quot;var(--paper)&quot;,&quot;stroke-width&quot;:2}));if(w&gt;70)colSvg.appendChild(el(&quot;text&quot;,{x:x+w/2,y:y+25,&quot;text-anchor&quot;:&quot;middle&quot;,&quot;font-size&quot;:12,&quot;font-weight&quot;:600,fill:dark?&quot;var(--paper)&quot;:&quot;var(--ink)&quot;},lab+&quot; &quot;+int(v)));return x+w}
+    colSvg.appendChild(el(&quot;text&quot;,{x:10,y:44,&quot;font-size&quot;:13,fill:&quot;var(--ink)&quot;},&quot;Vendite giugno&quot;));
+    colSvg.appendChild(el(&quot;text&quot;,{x:10,y:114,&quot;font-size&quot;:13,fill:&quot;var(--ink)&quot;},&quot;Vendite luglio&quot;));
+    var x=seg(120,20,jun*c,&quot;var(--rule)&quot;,&quot;giugno&quot;);seg(x,20,jun*(1-c),&quot;var(--sage)&quot;,&quot;luglio&quot;,true);
+    x=seg(120,90,jul*c,&quot;var(--sage)&quot;,&quot;luglio&quot;,true);seg(x,90,jul*(1-c),&quot;var(--brick)&quot;,&quot;AR&quot;,true);
+    colSvg.appendChild(el(&quot;rect&quot;,{x:120,y:148,width:12,height:12,fill:&quot;var(--sage)&quot;}));colSvg.appendChild(el(&quot;text&quot;,{x:138,y:158,&quot;font-size&quot;:11,fill:&quot;var(--muted)&quot;},&quot;incassato a luglio&quot;));
+    colSvg.appendChild(el(&quot;rect&quot;,{x:260,y:148,width:12,height:12,fill:&quot;var(--rule)&quot;}));colSvg.appendChild(el(&quot;text&quot;,{x:278,y:158,&quot;font-size&quot;:11,fill:&quot;var(--muted)&quot;},&quot;incassato a giugno&quot;));
+    colSvg.appendChild(el(&quot;rect&quot;,{x:400,y:148,width:12,height:12,fill:&quot;var(--brick)&quot;}));colSvg.appendChild(el(&quot;text&quot;,{x:418,y:158,&quot;font-size&quot;:11,fill:&quot;var(--muted)&quot;},&quot;ancora da incassare (AR)&quot;));
+    $(&quot;#colK1&quot;).textContent=usd(jun*(1-c)+jul*c);$(&quot;#colK2&quot;).textContent=usd(jul*(1-c));
+  }
+  $(&quot;#colPct&quot;).addEventListener(&quot;input&quot;,drawCol);drawCol();
+
+  /* §3 produzione */
+  function drawProd(){
+    var f=+$(&quot;#fgPct&quot;).value/100,beg=f*10000,end=f*12000,prod=10000+end-beg;
+    $(&quot;#fgPctO&quot;).textContent=Math.round(f*100)+&quot;%&quot;;
+    drawBal($(&quot;#prodSvg&quot;),[{v:beg,l:&quot;Beginning FG&quot;,f:&quot;var(--slate-bg)&quot;},{v:prod,l:&quot;Required production&quot;,f:&quot;var(--ochre)&quot;,dark:true}],[{v:10000,l:&quot;Unit sales&quot;,f:&quot;var(--sage)&quot;,dark:true},{v:end,l:&quot;Ending FG&quot;,f:&quot;var(--acc-bg)&quot;}],&quot;unità&quot;);
+    $(&quot;#prodK&quot;).textContent=int(prod);$(&quot;#prodK2&quot;).textContent=(prod-10000&gt;=0?&quot;+&quot;:&quot;−&quot;)+int(Math.abs(prod-10000));
+  }
+  $(&quot;#fgPct&quot;).addEventListener(&quot;input&quot;,drawProd);drawProd();
+
+  /* §4 materie prime */
+  drawBal($(&quot;#rmSvg&quot;),[{v:5200,l:&quot;Beginning RM&quot;,f:&quot;var(--slate-bg)&quot;},{v:52900,l:&quot;Purchases (pounds)&quot;,f:&quot;var(--brick)&quot;,dark:true}],[{v:52000,l:&quot;Used in production&quot;,f:&quot;var(--ochre)&quot;,dark:true},{v:6100,l:&quot;Ending RM&quot;,f:&quot;var(--acc-bg)&quot;}],&quot;pounds&quot;);
+
+  /* §5 costo unitario */
+  var ucT={dm:&quot;&lt;b&gt;Direct materials $10&lt;/b&gt;: 5 pounds × $2.00 per pound (dato d). È il costo della materia contenuta in un&#x27;unità.&quot;,
+    dl:&quot;&lt;b&gt;Direct labor $30&lt;/b&gt;: 2 direct labor-hours × $15 per ora (dato f). È la voce più pesante: metà del costo unitario.&quot;,
+    oh:&quot;&lt;b&gt;Manufacturing overhead $20&lt;/b&gt;: 2 direct labor-hours × $10 per ora (domanda 11). L&#x27;overhead si ripartisce in base alle ore di manodopera; non c&#x27;è overhead fisso.&quot;};
+  $$(&quot;#ucSvg .seg&quot;).forEach(function(g){
+    function s(){$(&quot;#ucText&quot;).innerHTML=ucT[g.getAttribute(&quot;data-k&quot;)];$$(&quot;#ucSvg .seg rect&quot;).forEach(function(r){r.style.opacity=r.parentNode===g?1:.45})}
+    g.addEventListener(&quot;click&quot;,s);g.addEventListener(&quot;keydown&quot;,function(e){if(e.key===&quot;Enter&quot;||e.key===&quot; &quot;){e.preventDefault();s()}});
+  });
+
+  /* §6 formato conto economico */
+  $$(&quot;[data-fmt]&quot;).forEach(function(b){b.addEventListener(&quot;click&quot;,function(){
+    $$(&quot;[data-fmt]&quot;).forEach(function(o){o.classList.toggle(&quot;on&quot;,o===b)});
+    $(&quot;#fmtAbs&quot;).hidden=b.getAttribute(&quot;data-fmt&quot;)!==&quot;abs&quot;;$(&quot;#fmtCon&quot;).hidden=b.getAttribute(&quot;data-fmt&quot;)!==&quot;con&quot;;
+  })});
+
+  /* §7 simulatore */
+  var ids=[&quot;vP&quot;,&quot;vQ&quot;,&quot;vC&quot;,&quot;vF&quot;,&quot;vR&quot;,&quot;vS&quot;,&quot;vW&quot;,&quot;vO&quot;],base={};
+  ids.forEach(function(id){base[id]=$(&quot;#&quot;+id).value});
+  function calc(v){
+    var P=v.vP,Q=v.vQ,c=v.vC/100,f=v.vF/100,r=v.vR/100,s=v.vS/100,W=v.vW,O=v.vO,A=12000,S=13000;
+    var sales=Q*P,coll=8400*P*(1-c)+sales*c,ar=sales*(1-c);
+    var prod=Q+f*A-f*Q,prodAug=A+f*S-f*A,need=prod*5,endRM=r*prodAug*5,begRM=r*need,lbs=need+endRM-begRM,cost=lbs*2;
+    var disb=88880*(1-s)+cost*s,ap=cost*(1-s),rmInv=endRM*2,dl=prod*2*W,uc=10+2*W+2*O,fg=f*A*uc,cogs=Q*uc,gm=sales-cogs,sa=Q*1.8+60000;
+    return [[&quot;1 · Budgeted sales&quot;,usd(sales)],[&quot;2 · Cash collections&quot;,usd(coll)],[&quot;3 · Accounts receivable&quot;,usd(ar)],[&quot;4 · Required production&quot;,int(prod)+&quot; u.&quot;],[&quot;5 · RM da acquistare&quot;,int(lbs)+&quot; lb&quot;],[&quot;6 · Costo acquisti RM&quot;,usd(cost)],[&quot;7 · Pagamenti RM&quot;,usd(disb)],[&quot;8 · Accounts payable&quot;,usd(ap)],[&quot;9 · Scorta RM&quot;,usd(rmInv)],[&quot;10 · Direct labor cost&quot;,usd(dl)],[&quot;11 · Unit product cost&quot;,usd(uc,2)],[&quot;12 · Ending FG inventory&quot;,usd(fg)],[&quot;13 · COGS / Gross margin&quot;,usd(cogs)+&quot; / &quot;+usd(gm)],[&quot;14 · Total S&amp;A&quot;,usd(sa)],[&quot;Net operating income*&quot;,usd(gm-sa)]];
+  }
+  function vals(){var o={};ids.forEach(function(id){o[id]=+$(&quot;#&quot;+id).value});return o}
+  var baseOut=calc((function(){var o={};ids.forEach(function(id){o[id]=+base[id]});return o})());
+  function sim(){
+    ids.forEach(function(id){var i=$(&quot;#&quot;+id),o=i.nextElementSibling,fm=o.getAttribute(&quot;data-f&quot;);o.textContent=fm===&quot;usd&quot;?&quot;$&quot;+i.value:fm===&quot;pct&quot;?i.value+&quot;%&quot;:int(+i.value)});
+    var out=calc(vals()),box=$(&quot;#simOut&quot;);box.innerHTML=&quot;&quot;;
+    out.forEach(function(k,j){var d=document.createElement(&quot;div&quot;);d.className=&quot;kpi&quot;+(k[1]!==baseOut[j][1]?&quot; ch&quot;:&quot;&quot;);d.innerHTML=&quot;&lt;span&gt;&quot;+k[0].replace(&quot;&amp;&quot;,&quot;&amp;amp;&quot;)+&quot;&lt;/span&gt;&lt;b&gt;&quot;+k[1]+&quot;&lt;/b&gt;&quot;+(k[1]!==baseOut[j][1]?&quot;&lt;small&gt;slide: &quot;+baseOut[j][1]+&quot;&lt;/small&gt;&quot;:&quot;&quot;);box.appendChild(d)});
+  }
+  ids.forEach(function(id){$(&quot;#&quot;+id).addEventListener(&quot;input&quot;,sim)});
+  $(&quot;#simReset&quot;).addEventListener(&quot;click&quot;,function(){ids.forEach(function(id){$(&quot;#&quot;+id).value=base[id]});sim()});
+  sim();
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe></body></html>

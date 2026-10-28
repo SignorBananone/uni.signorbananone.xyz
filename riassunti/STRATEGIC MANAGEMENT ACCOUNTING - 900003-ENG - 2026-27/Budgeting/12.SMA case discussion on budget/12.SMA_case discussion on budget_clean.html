@@ -1,0 +1,846 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Riassunto · 12.SMA_case discussion on budget_clean.pdf</title><link rel="icon" href="data:,">
+<style>html,body{margin:0;height:100%}body{display:flex;flex-direction:column}iframe{flex:1;border:0;width:100%}</style>
+</head><body><nav style="font:14px/1.4 system-ui,sans-serif;padding:6px 12px;text-align:right"><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Budgeting/12.SMA%20case%20discussion%20on%20budget/12.SMA_case%20discussion%20on%20budget_clean.en.html" style="color:inherit;margin-right:.8em;">English</a><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Budgeting/12.SMA%20case%20discussion%20on%20budget/12.SMA_case%20discussion%20on%20budget_clean.html" style="color:inherit;margin-right:.8em;font-weight:700">Italiano</a></nav><iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" title="Riassunto · 12.SMA_case discussion on budget_clean.pdf"
+srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;it&quot;&gt;
+&lt;head&gt;&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27;; style-src &#x27;unsafe-inline&#x27;; font-src &#x27;self&#x27;; img-src data:; form-action &#x27;none&#x27;; base-uri &#x27;none&#x27;&quot;&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Ripensare il budget: il caso CarePlus Services · canvas di studio&lt;/title&gt;
+&lt;style&gt;
+@font-face{font-family:&quot;Newsreader&quot;;src:url(&quot;/static/fonts/newsreader-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:&quot;IBM Plex Sans&quot;;src:url(&quot;/static/fonts/ibm-plex-sans-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:100 700;font-style:normal;font-display:swap}
+:root{
+  --paper:oklch(97% 0.012 80);--ink:oklch(21% 0.014 60);--ink2:oklch(42% 0.014 60);--rule:oklch(86% 0.014 75);
+  --card:oklch(99% 0.006 80);--acc:oklch(50% 0.15 35);--acc-bg:oklch(93% 0.035 35);
+  --sage:oklch(48% 0.08 150);--sage-bg:oklch(94% 0.03 150);
+  --ochre:oklch(55% 0.11 85);--ochre-bg:oklch(94% 0.045 85);
+  --slate:oklch(47% 0.07 250);--slate-bg:oklch(94% 0.025 250);
+  --brick:oklch(48% 0.13 25);--brick-bg:oklch(93% 0.035 25);
+  --serif:&quot;Newsreader&quot;,Georgia,&quot;Times New Roman&quot;,serif;--sans:&quot;IBM Plex Sans&quot;,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(20% 0.012 60);--ink:oklch(92% 0.012 80);--ink2:oklch(74% 0.014 75);--rule:oklch(34% 0.014 70);
+  --card:oklch(24% 0.012 60);--acc:oklch(70% 0.14 35);--acc-bg:oklch(30% 0.05 35);
+  --sage:oklch(74% 0.09 150);--sage-bg:oklch(28% 0.035 150);
+  --ochre:oklch(78% 0.11 85);--ochre-bg:oklch(30% 0.045 85);
+  --slate:oklch(74% 0.07 250);--slate-bg:oklch(28% 0.035 250);
+  --brick:oklch(70% 0.13 25);--brick-bg:oklch(29% 0.045 25);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.62;-webkit-text-size-adjust:100%}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,6vw,3.9rem);font-weight:400;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,4vw,2.5rem)}
+h3{font-size:1.35rem;margin-top:1.6em}
+h4{font-size:1.1rem;font-weight:600}
+p{margin:0 0 1em}
+a{color:var(--acc)}
+em.t{font-style:normal;font-weight:600;color:var(--acc)}
+.small{font-size:.88rem;color:var(--ink2)}
+hr{border:0;border-top:1px solid var(--rule);margin:2.5em 0}
+/* nav */
+nav.top{position:sticky;top:0;z-index:20;background:color-mix(in oklch,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav.top .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+nav.top a{flex:none;text-decoration:none;color:var(--ink2);font-size:.82rem;padding:4px 10px;border-radius:99px;border:1px solid transparent;white-space:nowrap}
+nav.top a:hover,nav.top a.on{border-color:var(--rule);color:var(--ink);background:var(--card)}
+/* hero */
+header.hero{padding:56px 0 24px;border-bottom:1px solid var(--rule)}
+.kicker{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);font-weight:600;margin-bottom:12px}
+.lede{font-family:var(--serif);font-size:1.3rem;color:var(--ink2);max-width:46em}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font-size:.78rem;padding:3px 10px;border-radius:99px;border:1px solid var(--rule);background:var(--card);color:var(--ink2)}
+/* map */
+.map{margin:28px 0 8px;background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:10px}
+.map svg{width:100%;height:auto;display:block}
+.map a .nd{transition:transform .2s;transform-box:fill-box;transform-origin:center}
+.map a:hover .nd,.map a:focus .nd{transform:scale(1.05)}
+.map text{font-family:var(--sans)}
+/* sections */
+section.part{padding:56px 0 28px;border-bottom:1px solid var(--rule);scroll-margin-top:50px}
+.num{font-family:var(--serif);font-size:1rem;color:var(--c,var(--acc));font-weight:600;letter-spacing:.08em}
+.part.sage{--c:var(--sage);--cb:var(--sage-bg)}.part.ochre{--c:var(--ochre);--cb:var(--ochre-bg)}
+.part.slate{--c:var(--slate);--cb:var(--slate-bg)}.part.brick{--c:var(--brick);--cb:var(--brick-bg)}
+.part h2{border-left:5px solid var(--c,var(--acc));padding-left:14px}
+.src{display:inline-block;font-size:.74rem;padding:2px 8px;border-radius:6px;background:var(--cb,var(--acc-bg));color:var(--c,var(--acc));font-weight:600;margin-bottom:12px}
+.box{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:18px 20px;margin:18px 0}
+.box.tint{background:var(--cb,var(--acc-bg));border-color:transparent}
+.def{border-left:4px solid var(--c,var(--acc));background:var(--card);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0}
+.def b:first-child{font-family:var(--serif);font-size:1.08rem}
+blockquote{margin:18px 0;padding:6px 0 6px 18px;border-left:2px solid var(--rule);font-family:var(--serif);font-size:1.15rem;font-style:italic;color:var(--ink)}
+blockquote cite{display:block;font-style:normal;font-family:var(--sans);font-size:.8rem;color:var(--ink2);margin-top:4px}
+.ext{border:1px dashed var(--slate);border-radius:10px;padding:12px 16px;margin:16px 0;background:color-mix(in oklch,var(--slate-bg) 50%,transparent)}
+.ext::before{content:&quot;fonte esterna&quot;;display:inline-block;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--slate);margin-bottom:4px}
+.mine::before{content:&quot;elaborazione didattica (non nelle slide)&quot;;display:inline-block;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--ochre);margin-bottom:4px}
+.mine{border:1px dashed var(--ochre);border-radius:10px;padding:12px 16px;margin:16px 0}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.formula{font-family:var(--serif);font-size:1.25rem;text-align:center;padding:14px;background:var(--card);border:1px solid var(--rule);border-radius:10px;margin:14px 0}
+.fig{margin:20px 0;background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px}
+.fig svg{width:100%;height:auto;display:block}
+.fig figcaption,.figc{font-size:.84rem;color:var(--ink2);margin-top:8px}
+svg text{font-family:var(--sans);fill:var(--ink)}
+/* details */
+details{border:1px solid var(--rule);border-radius:10px;background:var(--card);margin:10px 0}
+details&gt;summary{cursor:pointer;padding:12px 16px;font-weight:600;list-style:none;position:relative;padding-right:40px}
+details&gt;summary::-webkit-details-marker{display:none}
+details&gt;summary::after{content:&quot;+&quot;;position:absolute;right:16px;top:9px;font-size:1.3rem;color:var(--c,var(--acc));transition:transform .2s}
+details[open]&gt;summary::after{transform:rotate(45deg)}
+details&gt;div{padding:0 16px 14px}
+/* tabs */
+.tabs{margin:18px 0}
+.tablist{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--rule)}
+.tablist button{font:inherit;font-size:.9rem;background:none;border:1px solid transparent;border-bottom:none;padding:8px 14px;border-radius:8px 8px 0 0;cursor:pointer;color:var(--ink2)}
+.tablist button[aria-selected=true]{background:var(--card);border-color:var(--rule);color:var(--ink);font-weight:600;margin-bottom:-1px;box-shadow:inset 0 3px 0 var(--c,var(--acc))}
+.tabpanel{background:var(--card);border:1px solid var(--rule);border-top:none;border-radius:0 0 10px 10px;padding:16px 18px}
+.tabpanel[hidden]{display:none}
+/* stepper */
+.stepper{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:18px}
+.steps-dots{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.steps-dots button{font:inherit;font-size:.78rem;border:1px solid var(--rule);background:var(--paper);color:var(--ink2);border-radius:99px;padding:3px 10px;cursor:pointer}
+.steps-dots button.on{background:var(--c,var(--acc));color:var(--paper);border-color:transparent}
+.step[hidden]{display:none}
+.step h4{margin-top:0}
+.stepnav{display:flex;justify-content:space-between;margin-top:12px}
+.btn{font:inherit;font-size:.88rem;border:1px solid var(--rule);background:var(--paper);color:var(--ink);border-radius:8px;padding:6px 14px;cursor:pointer}
+.btn:hover{border-color:var(--c,var(--acc))}
+.btn:disabled{opacity:.4;cursor:default}
+/* range */
+.ctrl{display:grid;grid-template-columns:minmax(150px,220px) 1fr 64px;gap:10px;align-items:center;margin:8px 0;font-size:.92rem}
+.ctrl output{font-variant-numeric:tabular-nums;font-weight:600;text-align:right}
+input[type=range]{width:100%;accent-color:var(--c,var(--acc))}
+@media (max-width:560px){.ctrl{grid-template-columns:1fr 60px}.ctrl label{grid-column:1/-1}}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:12px}
+.kpi{border:1px solid var(--rule);border-radius:10px;padding:10px 12px;background:var(--paper)}
+.kpi b{display:block;font-family:var(--serif);font-size:1.6rem;font-weight:500;font-variant-numeric:tabular-nums}
+.kpi span{font-size:.8rem;color:var(--ink2)}
+.verdict{margin-top:10px;padding:10px 14px;border-radius:8px;font-size:.92rem}
+/* people */
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.person{border:1px solid var(--rule);border-radius:12px;padding:12px;background:var(--card);text-align:left;font:inherit;color:inherit;cursor:pointer}
+.person:hover,.person.on{border-color:var(--c,var(--acc));box-shadow:0 0 0 2px color-mix(in oklch,var(--c,var(--acc)) 25%,transparent)}
+.person .r{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--ink2)}
+.person .n{font-family:var(--serif);font-size:1.15rem}
+.pdetail{margin-top:12px}
+/* table */
+table{border-collapse:collapse;width:100%;font-size:.92rem;margin:14px 0}
+th,td{border-bottom:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top}
+th{font-family:var(--serif);font-weight:600;font-size:1rem}
+.tblwrap{overflow-x:auto}
+/* quiz */
+.quiz{margin-top:30px;border-top:2px solid var(--c,var(--acc));padding-top:14px}
+.quiz h3{margin-top:0;font-size:1.2rem}
+.quiz details&gt;summary{font-weight:500}
+.quiz details&gt;div{border-top:1px dashed var(--rule);padding-top:10px}
+/* sorter */
+.sorter{display:flex;flex-direction:column;gap:8px}
+.sorter .row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;border:1px solid var(--rule);border-radius:10px;padding:8px 12px;background:var(--card)}
+.sorter .opts{display:flex;gap:6px;flex-wrap:wrap}
+.sorter .opts button{font:inherit;font-size:.8rem;padding:4px 10px;border-radius:99px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);cursor:pointer}
+.sorter .fb{grid-column:1/-1;font-size:.86rem;display:none}
+.sorter .row.ok{border-color:var(--sage)}.sorter .row.ok .fb{display:block;color:var(--sage)}
+.sorter .row.ko{border-color:var(--brick)}.sorter .row.ko .fb{display:block;color:var(--brick)}
+@media (max-width:560px){.sorter .row{grid-template-columns:1fr}}
+/* flip */
+.flip{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.flip button{font:inherit;color:inherit;text-align:left;border:1px solid var(--rule);border-radius:10px;padding:12px;background:var(--card);cursor:pointer;min-height:96px}
+.flip button .b{display:none;font-size:.88rem;color:var(--ink2);margin-top:6px}
+.flip button.open .b{display:block}
+.flip button .f{font-weight:600}
+.flip button .f::before{content:&quot;↻ &quot;;color:var(--c,var(--acc))}
+/* refs */
+.ref{border-top:1px solid var(--rule);padding:16px 0}
+.ref h4{margin:0 0 4px}
+.ref .why{font-size:.92rem}
+footer{padding:40px 0 60px;color:var(--ink2);font-size:.9rem;text-align:center}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:.8rem;color:var(--ink2);margin-top:8px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+@media print{nav.top{display:none}details{break-inside:avoid}}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;nav class=&quot;top&quot; aria-label=&quot;Sezioni&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;a href=&quot;#mappa&quot;&gt;Mappa&lt;/a&gt;&lt;a href=&quot;#caso&quot;&gt;1 · Il caso&lt;/a&gt;&lt;a href=&quot;#budget&quot;&gt;2 · Cosa fa il budget&lt;/a&gt;&lt;a href=&quot;#tradeoff&quot;&gt;3 · Trade-off&lt;/a&gt;&lt;a href=&quot;#chi&quot;&gt;4 · Chi partecipa&lt;/a&gt;&lt;a href=&quot;#comportamenti&quot;&gt;5 · Comportamenti&lt;/a&gt;&lt;a href=&quot;#controllo&quot;&gt;6 · Controllability&lt;/a&gt;&lt;a href=&quot;#cultura&quot;&gt;7 · Motivazione e cultura&lt;/a&gt;&lt;a href=&quot;#ripensare&quot;&gt;8 · Ripensare il budget&lt;/a&gt;&lt;a href=&quot;#fonti&quot;&gt;Per approfondire&lt;/a&gt;
+&lt;/div&gt;&lt;/nav&gt;
+
+&lt;header class=&quot;hero&quot; id=&quot;mappa&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;kicker&quot;&gt;Budgeting · Lezione 12 · Case discussion&lt;/div&gt;
+  &lt;h1&gt;Ripensare il budget:&lt;br&gt;il caso CarePlus Services&lt;/h1&gt;
+  &lt;p class=&quot;lede&quot;&gt;Un&#x27;azienda di assistenza domiciliare introduce un processo di budgeting formale per gestire la crescita. I conti diventano più disciplinati, ma nascono tensioni, comportamenti difensivi e decisioni di breve periodo. Il caso serve a capire che il budget non è uno strumento tecnico neutrale: &lt;strong&gt;cambia il modo in cui le persone si comportano&lt;/strong&gt;.&lt;/p&gt;
+  &lt;div class=&quot;meta&quot;&gt;&lt;span class=&quot;chip&quot;&gt;Fonte: 12.SMA_case discussion on budget_clean.pdf (7 pagine)&lt;/span&gt;&lt;span class=&quot;chip&quot;&gt;Caso + 6 domande di discussione + note del docente&lt;/span&gt;&lt;span class=&quot;chip&quot;&gt;Temi: planning &amp;amp; control, participative budgeting, behavioural effects, controllability&lt;/span&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;map&quot; role=&quot;navigation&quot; aria-label=&quot;Mappa concettuale cliccabile&quot;&gt;
+  &lt;svg viewBox=&quot;0 0 920 520&quot; role=&quot;img&quot; aria-labelledby=&quot;mapT&quot;&gt;
+    &lt;title id=&quot;mapT&quot;&gt;Mappa concettuale: dal caso CarePlus ai temi della lezione&lt;/title&gt;
+    &lt;defs&gt;&lt;marker id=&quot;ar&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto-start-reverse&quot;&gt;&lt;path d=&quot;M0,0 L10,5 L0,10 z&quot; fill=&quot;var(--ink2)&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+    &lt;g stroke=&quot;var(--ink2)&quot; stroke-width=&quot;1.3&quot; fill=&quot;none&quot; marker-end=&quot;url(#ar)&quot; opacity=&quot;.7&quot;&gt;
+      &lt;path d=&quot;M460 112 L460 188&quot;/&gt;
+      &lt;path d=&quot;M380 236 C300 250 230 270 190 300&quot;/&gt;
+      &lt;path d=&quot;M540 236 C620 250 690 270 730 300&quot;/&gt;
+      &lt;path d=&quot;M430 262 L370 318&quot;/&gt;
+      &lt;path d=&quot;M490 262 L550 318&quot;/&gt;
+      &lt;path d=&quot;M262 340 L298 340&quot;/&gt;
+      &lt;path d=&quot;M640 340 L624 340&quot; /&gt;
+      &lt;path d=&quot;M160 372 C170 420 250 440 330 452&quot;/&gt;
+      &lt;path d=&quot;M460 372 L460 425&quot;/&gt;
+      &lt;path d=&quot;M750 372 C740 420 670 440 590 452&quot;/&gt;
+    &lt;/g&gt;
+    &lt;g font-size=&quot;11.5&quot; fill=&quot;var(--ink2)&quot; font-style=&quot;italic&quot;&gt;
+      &lt;text x=&quot;468&quot; y=&quot;155&quot;&gt;viene introdotto per gestire la crescita&lt;/text&gt;
+      &lt;text x=&quot;196&quot; y=&quot;262&quot;&gt;deve bilanciare&lt;/text&gt;
+      &lt;text x=&quot;640&quot; y=&quot;262&quot;&gt;misura e premia&lt;/text&gt;
+      &lt;text x=&quot;300&quot; y=&quot;296&quot;&gt;chi fornisce le info?&lt;/text&gt;
+      &lt;text x=&quot;520&quot; y=&quot;296&quot; &gt;chi risponde di cosa?&lt;/text&gt;
+      &lt;text x=&quot;200&quot; y=&quot;440&quot;&gt;genera&lt;/text&gt;
+      &lt;text x=&quot;468&quot; y=&quot;408&quot;&gt;plasma&lt;/text&gt;
+      &lt;text x=&quot;676&quot; y=&quot;440&quot;&gt;incide su&lt;/text&gt;
+    &lt;/g&gt;
+    &lt;a href=&quot;#caso&quot;&gt;&lt;g class=&quot;nd&quot;&gt;&lt;rect x=&quot;330&quot; y=&quot;40&quot; width=&quot;260&quot; height=&quot;70&quot; rx=&quot;14&quot; fill=&quot;var(--acc-bg)&quot; stroke=&quot;var(--acc)&quot;/&gt;&lt;text x=&quot;460&quot; y=&quot;70&quot; text-anchor=&quot;middle&quot; font-size=&quot;17&quot; font-weight=&quot;600&quot;&gt;1 · Il caso CarePlus&lt;/text&gt;&lt;text x=&quot;460&quot; y=&quot;92&quot; text-anchor=&quot;middle&quot; font-size=&quot;12.5&quot; fill=&quot;var(--ink2)&quot;&gt;220 persone, crescita veloce, servizi di cura&lt;/text&gt;&lt;/g&gt;&lt;/a&gt;
+    &lt;a href=&quot;#budget&quot;&gt;&lt;g class=&quot;nd&quot;&gt;&lt;rect x=&quot;340&quot; y=&quot;190&quot; width=&quot;240&quot; height=&quot;72&quot; rx=&quot;36&quot; fill=&quot;var(--ink)&quot;/&gt;&lt;text x=&quot;460&quot; y=&quot;222&quot; text-anchor=&quot;middle&quot; font-size=&quot;17&quot; font-weight=&quot;600&quot; style=&quot;fill:var(--paper)&quot;&gt;2 · Cosa fa il budget&lt;/text&gt;&lt;text x=&quot;460&quot; y=&quot;244&quot; text-anchor=&quot;middle&quot; font-size=&quot;12.5&quot; style=&quot;fill:var(--paper)&quot; opacity=&quot;.8&quot;&gt;planning, control… e pressione&lt;/text&gt;&lt;/g&gt;&lt;/a&gt;
+    &lt;a href=&quot;#tradeoff&quot;&gt;&lt;g class=&quot;nd&quot;&gt;&lt;rect x=&quot;60&quot; y=&quot;306&quot; width=&quot;200&quot; height=&quot;66&quot; rx=&quot;12&quot; fill=&quot;var(--ochre-bg)&quot; stroke=&quot;var(--ochre)&quot;/&gt;&lt;text x=&quot;160&quot; y=&quot;334&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot; font-weight=&quot;600&quot;&gt;3 · Trade-off&lt;/text&gt;&lt;text x=&quot;160&quot; y=&quot;354&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; fill=&quot;var(--ink2)&quot;&gt;crescita · costi · qualità&lt;/text&gt;&lt;/g&gt;&lt;/a&gt;
+    &lt;a href=&quot;#chi&quot;&gt;&lt;g class=&quot;nd&quot;&gt;&lt;rect x=&quot;300&quot; y=&quot;320&quot; width=&quot;150&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--sage-bg)&quot; stroke=&quot;var(--sage)&quot;/&gt;&lt;text x=&quot;375&quot; y=&quot;344&quot; text-anchor=&quot;middle&quot; font-size=&quot;14&quot; font-weight=&quot;600&quot;&gt;4 · Chi partecipa&lt;/text&gt;&lt;text x=&quot;375&quot; y=&quot;362&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; fill=&quot;var(--ink2)&quot;&gt;participative budgeting&lt;/text&gt;&lt;/g&gt;&lt;/a&gt;
+    &lt;a href=&quot;#controllo&quot;&gt;&lt;g class=&quot;nd&quot;&gt;&lt;rect x=&quot;470&quot; y=&quot;320&quot; width=&quot;150&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot;/&gt;&lt;text x=&quot;545&quot; y=&quot;344&quot; text-anchor=&quot;middle&quot; font-size=&quot;14&quot; font-weight=&quot;600&quot;&gt;6 · Controllability&lt;/text&gt;&lt;text x=&quot;545&quot; y=&quot;362&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; fill=&quot;var(--ink2)&quot;&gt;interdipendenza&lt;/text&gt;&lt;/g&gt;&lt;/a&gt;
+    &lt;a href=&quot;#comportamenti&quot;&gt;&lt;g class=&quot;nd&quot;&gt;&lt;rect x=&quot;640&quot; y=&quot;306&quot; width=&quot;220&quot; height=&quot;66&quot; rx=&quot;12&quot; fill=&quot;var(--brick-bg)&quot; stroke=&quot;var(--brick)&quot;/&gt;&lt;text x=&quot;750&quot; y=&quot;334&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot; font-weight=&quot;600&quot;&gt;5 · Comportamenti&lt;/text&gt;&lt;text x=&quot;750&quot; y=&quot;354&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; fill=&quot;var(--ink2)&quot;&gt;variance, slack, “use it or lose it”&lt;/text&gt;&lt;/g&gt;&lt;/a&gt;
+    &lt;a href=&quot;#cultura&quot;&gt;&lt;g class=&quot;nd&quot;&gt;&lt;rect x=&quot;330&quot; y=&quot;428&quot; width=&quot;260&quot; height=&quot;62&quot; rx=&quot;12&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--acc)&quot; stroke-width=&quot;1.5&quot;/&gt;&lt;text x=&quot;460&quot; y=&quot;455&quot; text-anchor=&quot;middle&quot; font-size=&quot;15&quot; font-weight=&quot;600&quot;&gt;7 · Motivazione e service culture&lt;/text&gt;&lt;text x=&quot;460&quot; y=&quot;475&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; fill=&quot;var(--ink2)&quot;&gt;“People are the service”&lt;/text&gt;&lt;/g&gt;&lt;/a&gt;
+    &lt;a href=&quot;#ripensare&quot;&gt;&lt;g class=&quot;nd&quot;&gt;&lt;rect x=&quot;700&quot; y=&quot;440&quot; width=&quot;200&quot; height=&quot;50&quot; rx=&quot;25&quot; fill=&quot;none&quot; stroke=&quot;var(--ink2)&quot; stroke-dasharray=&quot;4 3&quot;/&gt;&lt;text x=&quot;800&quot; y=&quot;470&quot; text-anchor=&quot;middle&quot; font-size=&quot;13.5&quot; font-weight=&quot;600&quot;&gt;8 · Ripensare il budget →&lt;/text&gt;&lt;/g&gt;&lt;/a&gt;
+    &lt;a href=&quot;#fonti&quot;&gt;&lt;g class=&quot;nd&quot;&gt;&lt;rect x=&quot;20&quot; y=&quot;440&quot; width=&quot;180&quot; height=&quot;50&quot; rx=&quot;25&quot; fill=&quot;none&quot; stroke=&quot;var(--ink2)&quot; stroke-dasharray=&quot;4 3&quot;/&gt;&lt;text x=&quot;110&quot; y=&quot;470&quot; text-anchor=&quot;middle&quot; font-size=&quot;13.5&quot; font-weight=&quot;600&quot;&gt;Per approfondire&lt;/text&gt;&lt;/g&gt;&lt;/a&gt;
+  &lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;small&quot;&gt;Clicca su un nodo per saltare alla sezione. Le frecce leggono il caso come una catena: il budget nasce per gestire la crescita, deve bilanciare obiettivi in conflitto, e il modo in cui misura le persone ne cambia i comportamenti e, alla fine, la cultura del servizio.&lt;/p&gt;
+&lt;/div&gt;&lt;/header&gt;
+
+&lt;main class=&quot;wrap&quot;&gt;
+
+&lt;!-- ============ 1 IL CASO ============ --&gt;
+&lt;section class=&quot;part&quot; id=&quot;caso&quot;&gt;
+  &lt;div class=&quot;num&quot;&gt;01&lt;/div&gt;
+  &lt;h2&gt;Il caso: CarePlus Services Ltd.&lt;/h2&gt;
+  &lt;span class=&quot;src&quot;&gt;dalle slide · pp. 1–3&lt;/span&gt;
+  &lt;p&gt;CarePlus è una &lt;strong&gt;media impresa di servizi&lt;/strong&gt; che fornisce assistenza domiciliare ad anziani e persone con autonomia limitata. Ha circa &lt;strong&gt;220 dipendenti&lt;/strong&gt; (care workers, infermieri, coordinatori, amministrativi, customer service) e clienti molto diversi: famiglie private, comuni, RSA (&lt;em&gt;nursing homes&lt;/em&gt;) e fondazioni sanitarie.&lt;/p&gt;
+  &lt;div class=&quot;grid2&quot;&gt;
+    &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;Servizi offerti&lt;/h4&gt;
+      &lt;ul&gt;&lt;li&gt;assistenza domiciliare diurna e notturna&lt;/li&gt;&lt;li&gt;supporto post-ospedaliero (&lt;em&gt;post-hospitalization support&lt;/em&gt;)&lt;/li&gt;&lt;li&gt;fisioterapia a domicilio&lt;/li&gt;&lt;li&gt;pacchetti di assistenza per i comuni&lt;/li&gt;&lt;li&gt;sostituzioni d&#x27;emergenza&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+    &lt;div class=&quot;box&quot;&gt;&lt;h4&gt;La reputazione si regge su tre cose&lt;/h4&gt;
+      &lt;p style=&quot;font-family:var(--serif);font-size:1.5rem;margin:.2em 0&quot;&gt;reliability · empathy · flexibility&lt;/p&gt;
+      &lt;p class=&quot;small&quot;&gt;affidabilità, empatia, flessibilità. Tutte e tre dipendono dalle &lt;strong&gt;persone&lt;/strong&gt; che erogano il servizio: è il filo rosso di tutto il caso.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p&gt;La crescita rapida ha reso l&#x27;azienda difficile da gestire: turni complessi, famiglie che chiedono cambi all&#x27;ultimo minuto, comuni che vogliono prezzi più bassi e reportistica dettagliata, dipendenti che lamentano turni imprevedibili e pressione.&lt;/p&gt;
+
+  &lt;h3&gt;I protagonisti&lt;/h3&gt;
+  &lt;p class=&quot;small&quot;&gt;Tocca un ruolo per leggere la sua posizione. Ognuno guarda il budget da un punto di vista diverso, ed è proprio questo il cuore della discussione.&lt;/p&gt;
+  &lt;div data-people&gt;
+    &lt;div class=&quot;people&quot;&gt;
+      &lt;button class=&quot;person&quot; type=&quot;button&quot;&gt;&lt;div class=&quot;r&quot;&gt;CEO&lt;/div&gt;&lt;div class=&quot;n&quot;&gt;Emma Ricci&lt;/div&gt;&lt;template&gt;&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Emma, CEO.&lt;/b&gt; Vuole un budget formale per «pianificare le risorse, coordinare i reparti e capire se siamo finanziariamente sostenibili». Alla fine riconosce che il budget ha migliorato la &lt;em&gt;financial discipline&lt;/em&gt; ma ha creato tensione, comportamenti difensivi e decisioni di breve periodo: «se il processo spinge i manager a difendere i numeri del reparto invece di coordinarsi attorno al cliente, dobbiamo ripensare il modo in cui facciamo budget».&lt;/div&gt;&lt;/template&gt;&lt;/button&gt;
+      &lt;button class=&quot;person&quot; type=&quot;button&quot;&gt;&lt;div class=&quot;r&quot;&gt;CFO&lt;/div&gt;&lt;div class=&quot;n&quot;&gt;Lorenzo Bianchi&lt;/div&gt;&lt;template&gt;&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Lorenzo, CFO.&lt;/b&gt; Introduce il processo strutturato (revenue, staffing, training, travel &amp;amp; coordination, cash budget, budgeted income statement). Rappresenta la pressione del board sulla redditività: «Il budget non può limitarsi a riflettere i vincoli attuali. Deve spingere l&#x27;organizzazione a migliorare». Chiede tagli dell&#x27;8% ai costi discrezionali e introduce la regola che riduce il budget a chi resta sotto per due mesi.&lt;/div&gt;&lt;/template&gt;&lt;/button&gt;
+      &lt;button class=&quot;person&quot; type=&quot;button&quot;&gt;&lt;div class=&quot;r&quot;&gt;Commerciale&lt;/div&gt;&lt;div class=&quot;n&quot;&gt;Laura&lt;/div&gt;&lt;template&gt;&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Laura, commercial director.&lt;/b&gt; Prevede +20% di ricavi (espansione dei contratti con i comuni, domanda di post-ospedaliero, nuova provincia). «Se siamo troppo prudenti, i concorrenti prenderanno l&#x27;opportunità. Servono target sfidanti». A fine trimestre: «Se riduciamo i target ora mandiamo il messaggio sbagliato. La crescita richiede pressione». È valutata sulla crescita dei ricavi, quindi firma contratti anche senza conferma dell&#x27;operations.&lt;/div&gt;&lt;/template&gt;&lt;/button&gt;
+      &lt;button class=&quot;person&quot; type=&quot;button&quot;&gt;&lt;div class=&quot;r&quot;&gt;Operations&lt;/div&gt;&lt;div class=&quot;n&quot;&gt;Paolo&lt;/div&gt;&lt;template&gt;&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Paolo, operations manager.&lt;/b&gt; Gestisce i coordinatori che assegnano i care workers ai clienti; già oggi fatica a coprire sere, weekend e festivi. «Possiamo vendere più ore, ma qualcuno deve erogarle». Poi: «Ogni reparto protegge il proprio budget, ma le famiglie vivono CarePlus come un&#x27;unica azienda» e «La pressione non è la stessa cosa della pianificazione».&lt;/div&gt;&lt;/template&gt;&lt;/button&gt;
+      &lt;button class=&quot;person&quot; type=&quot;button&quot;&gt;&lt;div class=&quot;r&quot;&gt;HR&lt;/div&gt;&lt;div class=&quot;n&quot;&gt;Sara&lt;/div&gt;&lt;template&gt;&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Sara, HR manager.&lt;/b&gt; Reclutare care workers qualificati è difficile, il &lt;em&gt;turnover&lt;/em&gt; (rotazione del personale: quota di dipendenti che lascia e va sostituita) è in aumento, la formazione richiede tempo e non si possono mandare persone non formate da clienti fragili. «Il sistema insegna ai manager a difendere il budget, non a migliorare il servizio». «Le persone non sono solo un costo variabile. Sono il servizio».&lt;/div&gt;&lt;/template&gt;&lt;/button&gt;
+      &lt;button class=&quot;person&quot; type=&quot;button&quot;&gt;&lt;div class=&quot;r&quot;&gt;Qualità&lt;/div&gt;&lt;div class=&quot;n&quot;&gt;Giulia&lt;/div&gt;&lt;template&gt;&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Giulia, quality manager.&lt;/b&gt; «Stiamo riducendo i costi, ma alcuni risparmi possono danneggiare la qualità. Nel nostro business la qualità dipende da persone, relazioni e fiducia». E chiude: «Misuriamo i costi con grande attenzione, ma non misuriamo abbastanza cosa succede a qualità del servizio, continuità dell&#x27;assistenza e fiducia dei clienti».&lt;/div&gt;&lt;/template&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pdetail&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;La storia passo per passo&lt;/h3&gt;
+  &lt;div class=&quot;stepper&quot;&gt;
+    &lt;div class=&quot;steps-dots&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;Prima&quot;&gt;&lt;h4&gt;Prima: un budget “della finanza”&lt;/h4&gt;&lt;p&gt;Il budget è preparato quasi solo dal reparto finanza, partendo dai &lt;strong&gt;costi dell&#x27;anno precedente più le variazioni attese&lt;/strong&gt;. È il classico &lt;em class=&quot;t&quot;&gt;incremental budgeting&lt;/em&gt; (budget incrementale: si prende lo storico e lo si aggiusta di qualche punto percentuale). I responsabili di reparto danno informazioni ma non sono davvero coinvolti.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;Ottobre&quot;&gt;&lt;h4&gt;Ottobre: si prepara il budget dell&#x27;anno dopo&lt;/h4&gt;&lt;p&gt;Laura propone +20% di ricavi. Paolo e Sara avvertono che mancano persone e che la formazione richiede tempo. Il CFO ricorda che il board vuole più redditività.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;Approvazione&quot;&gt;&lt;h4&gt;Il budget approvato&lt;/h4&gt;&lt;p&gt;La prima versione passa “con modifiche minori”: &lt;strong&gt;+20% di ore di servizio&lt;/strong&gt; ma solo &lt;strong&gt;+7% di care workers&lt;/strong&gt;. La finanza conta di colmare il gap con scheduling migliore, meno tempi morti (&lt;em&gt;idle time&lt;/em&gt;) e coordinamento più efficiente. Le obiezioni operative sono state ascoltate, non incorporate.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;Tagli&quot;&gt;&lt;h4&gt;Tagli dell&#x27;8% ai costi discrezionali&lt;/h4&gt;&lt;p&gt;Customer service riduce i temporanei nelle ore di punta → attese al telefono più lunghe, più reclami. Si taglia la formazione. L&#x27;operations taglia i costi di viaggio assegnando i care workers per vicinanza geografica → si perde la &lt;strong&gt;continuità&lt;/strong&gt; con l&#x27;operatore di fiducia.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;Report mensili&quot;&gt;&lt;h4&gt;Budget performance report mensili&lt;/h4&gt;&lt;p&gt;Ogni mese la finanza confronta consuntivo e budget; i manager devono spiegare gli scostamenti (&lt;em&gt;variances&lt;/em&gt;) davanti a CEO e CFO. Dopo pochi mesi i comportamenti cambiano: niente straordinari, formazione rinviata, contratti firmati senza verificare la capacità.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;Regola&quot;&gt;&lt;h4&gt;La regola “sotto budget = budget ridotto”&lt;/h4&gt;&lt;p&gt;Se un reparto resta sotto budget per due mesi consecutivi, il budget futuro viene ridotto. Effetto: nessuno vuole mostrare risparmi; c&#x27;è chi rinvia spese e chi spende il residuo a fine mese.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;Fine Q1&quot;&gt;&lt;h4&gt;La riunione di fine trimestre&lt;/h4&gt;&lt;p&gt;Ricavi in crescita ma sotto budget; costo del lavoro sopra le attese; reclami in aumento; turnover invariato; coordinatori più stressati; alcuni contratti redditizi “sulla carta” ma ingestibili. Emma conclude che va ripensato il modo di fare budget.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;stepnav&quot;&gt;&lt;button class=&quot;btn prev&quot; type=&quot;button&quot;&gt;← Indietro&lt;/button&gt;&lt;button class=&quot;btn next&quot; type=&quot;button&quot;&gt;Avanti →&lt;/button&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · il caso&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;Perché il budget “storico” di CarePlus si chiama incrementale, e qual è il suo limite principale?&lt;/summary&gt;&lt;div&gt;Perché parte dai costi dell&#x27;anno prima e aggiunge le variazioni attese. È semplice, ma dà per scontato che la struttura di costo attuale sia corretta e non obbliga a ripensare &lt;em&gt;come&lt;/em&gt; si usano le risorse; inoltre, fatto solo dalla finanza, ignora le informazioni di chi eroga il servizio.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Quale numero del budget approvato rivela già il problema che esploderà a fine trimestre?&lt;/summary&gt;&lt;div&gt;+20% di ore contro +7% di care workers: ogni operatore dovrebbe produrre circa il 12% di ore in più (1,20 / 1,07 ≈ 1,12). Un&#x27;ipotesi di efficienza molto ambiziosa, in un&#x27;azienda che già non riesce a coprire tutti i turni.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Su quali tre elementi si fonda la reputazione di CarePlus, e perché contano per il budget?&lt;/summary&gt;&lt;div&gt;Reliability, empathy, flexibility. Tutti e tre dipendono dal personale: un budget che tratta le persone solo come costo da comprimere rischia di erodere proprio la fonte del vantaggio competitivo.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 2 COSA FA IL BUDGET ============ --&gt;
+&lt;section class=&quot;part slate&quot; id=&quot;budget&quot;&gt;
+  &lt;div class=&quot;num&quot;&gt;02&lt;/div&gt;
+  &lt;h2&gt;Cosa sta facendo davvero il budget?&lt;/h2&gt;
+  &lt;span class=&quot;src&quot;&gt;domanda 1 · note del docente p. 4&lt;/span&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Budget.&lt;/b&gt; Piano quantitativo, di solito annuale e in termini monetari, che traduce gli obiettivi dell&#x27;azienda in risorse, ricavi e costi attesi per ciascuna area di responsabilità. Serve sia &lt;strong&gt;ex ante&lt;/strong&gt; (pianificare e coordinare) sia &lt;strong&gt;ex post&lt;/strong&gt; (confrontare consuntivo e previsione, cioè controllo).&lt;/div&gt;
+
+  &lt;h3&gt;Il master budget che il CFO vuole introdurre&lt;/h3&gt;
+  &lt;p&gt;Il &lt;em class=&quot;t&quot;&gt;master budget&lt;/em&gt; (budget generale) è l&#x27;insieme coordinato dei budget parziali. Nel caso il CFO elenca sei pezzi: il diagramma mostra come si collegano. Tutto parte dalla previsione dei ricavi: se quella è gonfiata, l&#x27;errore si propaga ovunque.&lt;/p&gt;
+  &lt;figure class=&quot;fig&quot;&gt;
+  &lt;svg viewBox=&quot;0 0 860 300&quot; role=&quot;img&quot; aria-label=&quot;Flusso del master budget di CarePlus&quot;&gt;
+    &lt;defs&gt;&lt;marker id=&quot;a2&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0,0 L10,5 L0,10 z&quot; fill=&quot;var(--ink2)&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+    &lt;g stroke=&quot;var(--ink2)&quot; fill=&quot;none&quot; stroke-width=&quot;1.4&quot; marker-end=&quot;url(#a2)&quot;&gt;
+      &lt;path d=&quot;M180 150 L238 70&quot;/&gt;&lt;path d=&quot;M180 150 L238 150&quot;/&gt;&lt;path d=&quot;M180 150 L238 230&quot;/&gt;
+      &lt;path d=&quot;M418 70 L490 130&quot;/&gt;&lt;path d=&quot;M418 150 L490 150&quot;/&gt;&lt;path d=&quot;M418 230 L490 170&quot;/&gt;
+      &lt;path d=&quot;M180 150 C200 20 560 10 610 110&quot; stroke-dasharray=&quot;4 4&quot;/&gt;
+      &lt;path d=&quot;M680 150 L708 150&quot;/&gt;
+    &lt;/g&gt;
+    &lt;rect x=&quot;20&quot; y=&quot;115&quot; width=&quot;160&quot; height=&quot;70&quot; rx=&quot;10&quot; fill=&quot;var(--ochre-bg)&quot; stroke=&quot;var(--ochre)&quot;/&gt;&lt;text x=&quot;100&quot; y=&quot;145&quot; text-anchor=&quot;middle&quot; font-size=&quot;14&quot; font-weight=&quot;600&quot;&gt;Revenue budget&lt;/text&gt;&lt;text x=&quot;100&quot; y=&quot;165&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; fill=&quot;var(--ink2)&quot;&gt;ore vendute × tariffe&lt;/text&gt;
+    &lt;rect x=&quot;240&quot; y=&quot;40&quot; width=&quot;178&quot; height=&quot;58&quot; rx=&quot;10&quot; fill=&quot;var(--sage-bg)&quot; stroke=&quot;var(--sage)&quot;/&gt;&lt;text x=&quot;329&quot; y=&quot;65&quot; text-anchor=&quot;middle&quot; font-size=&quot;13.5&quot; font-weight=&quot;600&quot;&gt;Staffing budget&lt;/text&gt;&lt;text x=&quot;329&quot; y=&quot;83&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;quante persone, che ore&lt;/text&gt;
+    &lt;rect x=&quot;240&quot; y=&quot;121&quot; width=&quot;178&quot; height=&quot;58&quot; rx=&quot;10&quot; fill=&quot;var(--sage-bg)&quot; stroke=&quot;var(--sage)&quot;/&gt;&lt;text x=&quot;329&quot; y=&quot;146&quot; text-anchor=&quot;middle&quot; font-size=&quot;13.5&quot; font-weight=&quot;600&quot;&gt;Training budget&lt;/text&gt;&lt;text x=&quot;329&quot; y=&quot;164&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;formazione nuovi assunti&lt;/text&gt;
+    &lt;rect x=&quot;240&quot; y=&quot;202&quot; width=&quot;178&quot; height=&quot;58&quot; rx=&quot;10&quot; fill=&quot;var(--sage-bg)&quot; stroke=&quot;var(--sage)&quot;/&gt;&lt;text x=&quot;329&quot; y=&quot;227&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;Travel &amp;amp; coordination&lt;/text&gt;&lt;text x=&quot;329&quot; y=&quot;245&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;spostamenti, coordinatori&lt;/text&gt;
+    &lt;rect x=&quot;492&quot; y=&quot;115&quot; width=&quot;188&quot; height=&quot;70&quot; rx=&quot;10&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot;/&gt;&lt;text x=&quot;586&quot; y=&quot;143&quot; text-anchor=&quot;middle&quot; font-size=&quot;13.5&quot; font-weight=&quot;600&quot;&gt;Budgeted income&lt;/text&gt;&lt;text x=&quot;586&quot; y=&quot;161&quot; text-anchor=&quot;middle&quot; font-size=&quot;13.5&quot; font-weight=&quot;600&quot;&gt;statement&lt;/text&gt;
+    &lt;rect x=&quot;710&quot; y=&quot;115&quot; width=&quot;132&quot; height=&quot;70&quot; rx=&quot;10&quot; fill=&quot;var(--acc-bg)&quot; stroke=&quot;var(--acc)&quot;/&gt;&lt;text x=&quot;776&quot; y=&quot;145&quot; text-anchor=&quot;middle&quot; font-size=&quot;13.5&quot; font-weight=&quot;600&quot;&gt;Cash budget&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;165&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;entrate/uscite&lt;/text&gt;
+    &lt;text x=&quot;100&quot; y=&quot;215&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;punto di partenza&lt;/text&gt;
+    &lt;text x=&quot;400&quot; y=&quot;22&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot; font-style=&quot;italic&quot;&gt;ricavi&lt;/text&gt;
+    &lt;text x=&quot;250&quot; y=&quot;290&quot; font-size=&quot;11.5&quot; fill=&quot;var(--ink2)&quot;&gt;operating budgets&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;290&quot; font-size=&quot;11.5&quot; fill=&quot;var(--ink2)&quot;&gt;financial budgets&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;figcaption&gt;I budget operativi (verde) derivano dalla domanda prevista; il conto economico previsionale (&lt;em&gt;budgeted income statement&lt;/em&gt;) li riassume in un risultato; il &lt;em&gt;cash budget&lt;/em&gt; traduce tutto in flussi di cassa, utile perché i comuni spesso pagano in ritardo mentre gli stipendi escono ogni mese.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;h3&gt;Le funzioni del budget&lt;/h3&gt;
+  &lt;p class=&quot;small&quot;&gt;Il manuale elenca diverse funzioni; il caso mostra che possono entrare in conflitto tra loro. Scorri le linguette.&lt;/p&gt;
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;tablist&quot; role=&quot;tablist&quot;&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;true&quot; type=&quot;button&quot;&gt;Planning&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; type=&quot;button&quot;&gt;Coordination&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; type=&quot;button&quot;&gt;Communication&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; type=&quot;button&quot;&gt;Control&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; type=&quot;button&quot;&gt;Motivation&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; type=&quot;button&quot;&gt;Evaluation&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;Pianificare&lt;/strong&gt;: anticipare domanda e risorse. In CarePlus “ci obbliga a pensare ai fabbisogni di risorse” (note del docente). Ma un piano che ignora il vincolo di personale è un desiderio, non un piano.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;strong&gt;Coordinare&lt;/strong&gt; i reparti: le ore vendute dal commerciale devono essere coperte da operations, con persone reclutate e formate da HR. È esattamente ciò che è mancato: ogni reparto ha ottimizzato il proprio pezzo.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;strong&gt;Comunicare&lt;/strong&gt; obiettivi e vincoli lungo la gerarchia, in entrambe le direzioni. In CarePlus la comunicazione è stata soprattutto top-down: le informazioni di Paolo e Sara sono state ascoltate ma non usate.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;strong&gt;Controllare&lt;/strong&gt;: confrontare consuntivo e budget e analizzare gli scostamenti (&lt;em&gt;variance analysis&lt;/em&gt;). Il budget “rende visibili i costi”, ed è un merito reale riconosciuto dalle note del docente.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;strong&gt;Motivare&lt;/strong&gt;: un target sfidante ma raggiungibile può spingere a migliorare (è la tesi del CFO e di Laura). Se percepito come irrealistico o ingiusto, ottiene l&#x27;effetto opposto (cfr. sezione 7).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;strong&gt;Valutare&lt;/strong&gt; la performance dei manager. È l&#x27;uso che genera più effetti collaterali: quando il budget diventa il metro con cui si giudica una persona, la persona inizia a gestire il &lt;em&gt;numero&lt;/em&gt; invece della realtà.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Intended vs actual: la risposta del docente&lt;/h3&gt;
+  &lt;figure class=&quot;fig&quot;&gt;
+  &lt;svg viewBox=&quot;0 0 860 250&quot; role=&quot;img&quot; aria-label=&quot;Confronto fra ciò che il budget doveva fare e ciò che fa&quot;&gt;
+    &lt;rect x=&quot;10&quot; y=&quot;10&quot; width=&quot;400&quot; height=&quot;230&quot; rx=&quot;12&quot; fill=&quot;var(--sage-bg)&quot;/&gt;&lt;rect x=&quot;450&quot; y=&quot;10&quot; width=&quot;400&quot; height=&quot;230&quot; rx=&quot;12&quot; fill=&quot;var(--brick-bg)&quot;/&gt;
+    &lt;text x=&quot;210&quot; y=&quot;42&quot; text-anchor=&quot;middle&quot; font-size=&quot;17&quot; font-weight=&quot;600&quot; style=&quot;font-family:var(--serif)&quot;&gt;Cosa doveva fare&lt;/text&gt;
+    &lt;text x=&quot;650&quot; y=&quot;42&quot; text-anchor=&quot;middle&quot; font-size=&quot;17&quot; font-weight=&quot;600&quot; style=&quot;font-family:var(--serif)&quot;&gt;Cosa fa anche&lt;/text&gt;
+    &lt;g font-size=&quot;14&quot;&gt;&lt;text x=&quot;40&quot; y=&quot;85&quot;&gt;✓ supportare planning &amp;amp; control&lt;/text&gt;&lt;text x=&quot;40&quot; y=&quot;118&quot;&gt;✓ rendere visibili i costi&lt;/text&gt;&lt;text x=&quot;40&quot; y=&quot;151&quot;&gt;✓ far pensare ai fabbisogni di risorse&lt;/text&gt;&lt;text x=&quot;40&quot; y=&quot;184&quot;&gt;✓ disciplina finanziaria&lt;/text&gt;&lt;/g&gt;
+    &lt;g font-size=&quot;14&quot;&gt;&lt;text x=&quot;480&quot; y=&quot;85&quot;&gt;✗ diventa un pressure mechanism&lt;/text&gt;&lt;text x=&quot;480&quot; y=&quot;118&quot;&gt;✗ crea paura degli scostamenti sfavorevoli&lt;/text&gt;&lt;text x=&quot;480&quot; y=&quot;151&quot;&gt;✗ spinge a difendere il budget del reparto&lt;/text&gt;&lt;text x=&quot;480&quot; y=&quot;184&quot;&gt;✗ decisioni di breve periodo&lt;/text&gt;&lt;/g&gt;
+    &lt;path d=&quot;M415 125 L445 125&quot; stroke=&quot;var(--ink2)&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#a2)&quot;/&gt;
+  &lt;/svg&gt;
+  &lt;figcaption&gt;Messaggio chiave della lezione: &lt;strong&gt;i budget non sono strumenti tecnici neutrali&lt;/strong&gt;. Influenzano comportamenti, comunicazione, priorità e rapporti di potere.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;div class=&quot;grid3&quot;&gt;
+    &lt;div class=&quot;box tint&quot;&gt;&lt;h4&gt;Comportamenti&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;Ciò che viene misurato e discusso ogni mese diventa ciò su cui le persone si concentrano.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;box tint&quot;&gt;&lt;h4&gt;Priorità&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;Il costo, misurato con precisione, prevale sulla qualità, che non è misurata.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;box tint&quot;&gt;&lt;h4&gt;Potere&lt;/h4&gt;&lt;p class=&quot;small&quot;&gt;Chi scrive il budget (finanza, commerciale) definisce il problema; chi lo subisce (operations, HR) ne paga le conseguenze.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · funzioni del budget&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;In che senso un budget “non è neutrale”? Fai un esempio dal caso.&lt;/summary&gt;&lt;div&gt;Non si limita a descrivere: orienta l&#x27;attenzione e i comportamenti. Esempio: misurando il costo del lavoro del customer service ma non i tempi d&#x27;attesa, il budget ha spinto a tagliare i temporanei nelle ore di punta, con più reclami.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Perché il revenue budget è il “primo domino” del master budget?&lt;/summary&gt;&lt;div&gt;Perché da esso derivano staffing, training, viaggi e quindi conto economico e cassa. Se la previsione dei ricavi è ottimistica e non verificata con la capacità, tutti gli altri budget poggiano su una base sbagliata.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Quali due funzioni del budget sono entrate più in conflitto in CarePlus?&lt;/summary&gt;&lt;div&gt;Pianificazione/coordinamento (servono informazioni oneste e condivise) contro valutazione/pressione (spinge a proteggere il proprio numero). Usare lo stesso budget per entrambe le cose crea incentivi a distorcerlo.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 3 TRADE-OFF ============ --&gt;
+&lt;section class=&quot;part ochre&quot; id=&quot;tradeoff&quot;&gt;
+  &lt;div class=&quot;num&quot;&gt;03&lt;/div&gt;
+  &lt;h2&gt;Le tensioni tra crescita, controllo dei costi e qualità&lt;/h2&gt;
+  &lt;span class=&quot;src&quot;&gt;domanda 2 · note del docente p. 4&lt;/span&gt;
+  &lt;p&gt;Un &lt;em class=&quot;t&quot;&gt;trade-off&lt;/em&gt; è una scelta in cui migliorare una dimensione costa qualcosa su un&#x27;altra. Il punto del docente: &lt;strong&gt;il budgeting richiede una discussione esplicita dei trade-off, non solo la fissazione di target numerici&lt;/strong&gt;. In CarePlus i trade-off sono stati “risolti” implicitamente, scrivendo numeri che li ignoravano.&lt;/p&gt;
+
+  &lt;figure class=&quot;fig&quot;&gt;
+  &lt;svg viewBox=&quot;0 0 860 400&quot; role=&quot;img&quot; aria-label=&quot;Triangolo delle tensioni: crescita, costi, qualità&quot;&gt;
+    &lt;polygon points=&quot;430,40 120,350 740,350&quot; fill=&quot;none&quot; stroke=&quot;var(--rule)&quot; stroke-width=&quot;2&quot;/&gt;
+    &lt;circle cx=&quot;430&quot; cy=&quot;40&quot; r=&quot;30&quot; fill=&quot;var(--ochre-bg)&quot; stroke=&quot;var(--ochre)&quot;/&gt;&lt;text x=&quot;430&quot; y=&quot;45&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;Crescita&lt;/text&gt;
+    &lt;circle cx=&quot;120&quot; cy=&quot;350&quot; r=&quot;34&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot;/&gt;&lt;text x=&quot;120&quot; y=&quot;347&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;Controllo&lt;/text&gt;&lt;text x=&quot;120&quot; y=&quot;362&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;costi&lt;/text&gt;
+    &lt;circle cx=&quot;740&quot; cy=&quot;350&quot; r=&quot;30&quot; fill=&quot;var(--sage-bg)&quot; stroke=&quot;var(--sage)&quot;/&gt;&lt;text x=&quot;740&quot; y=&quot;355&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; font-weight=&quot;600&quot;&gt;Qualità&lt;/text&gt;
+    &lt;g font-size=&quot;12.5&quot;&gt;
+      &lt;text x=&quot;160&quot; y=&quot;150&quot; fill=&quot;var(--ochre)&quot; font-weight=&quot;600&quot;&gt;↔ ore +20% vs staff +7%&lt;/text&gt;
+      &lt;text x=&quot;140&quot; y=&quot;178&quot;&gt;capacità limitata di erogare&lt;/text&gt;
+      &lt;text x=&quot;590&quot; y=&quot;150&quot; fill=&quot;var(--sage)&quot; font-weight=&quot;600&quot;&gt;contratti vs fattibilità ↔&lt;/text&gt;
+      &lt;text x=&quot;590&quot; y=&quot;178&quot;&gt;firmare senza conferma ops&lt;/text&gt;
+      &lt;text x=&quot;290&quot; y=&quot;388&quot; fill=&quot;var(--slate)&quot; font-weight=&quot;600&quot;&gt;lavoro · formazione · viaggi · redditività&lt;/text&gt;
+      &lt;text x=&quot;300&quot; y=&quot;300&quot;&gt;customer service ↔ responsiveness&lt;/text&gt;
+      &lt;text x=&quot;300&quot; y=&quot;275&quot;&gt;training ↔ preparazione degli operatori&lt;/text&gt;
+      &lt;text x=&quot;300&quot; y=&quot;250&quot;&gt;travel ↔ continuity of care&lt;/text&gt;
+      &lt;text x=&quot;300&quot; y=&quot;325&quot;&gt;profitability ↔ burnout&lt;/text&gt;
+    &lt;/g&gt;
+  &lt;/svg&gt;
+  &lt;figcaption&gt;Le sei tensioni indicate dalle note del docente, collocate sui lati del triangolo. Quasi tutte stanno sul lato “costi ↔ qualità”: il risparmio è immediato e misurato, il danno arriva dopo e non è misurato.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;h3&gt;Simulatore: l&#x27;ipotesi di produttività nascosta nel budget&lt;/h3&gt;
+  &lt;p&gt;Se le ore crescono più delle persone, ogni persona deve lavorare (o essere impiegata) di più. La crescita richiesta della produttività per operatore è:&lt;/p&gt;
+  &lt;div class=&quot;formula&quot;&gt;Δ produttività = (1 + g&lt;sub&gt;ore&lt;/sub&gt;) / (1 + g&lt;sub&gt;staff&lt;/sub&gt;) − 1&lt;/div&gt;
+  &lt;p class=&quot;small&quot;&gt;Con i dati del caso: 1,20 / 1,07 − 1 ≈ &lt;strong&gt;+12,1%&lt;/strong&gt; di ore per operatore. Muovi i cursori: l&#x27;ultimo indica quanta efficienza (scheduling migliore, meno idle time) ritieni davvero realistica. Il resto del gap va coperto con straordinari, o non viene coperto.&lt;/p&gt;
+  &lt;div class=&quot;box&quot; id=&quot;simCap&quot;&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;gH&quot;&gt;Crescita ore di servizio&lt;/label&gt;&lt;input id=&quot;gH&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;35&quot; value=&quot;20&quot;&gt;&lt;output id=&quot;gHo&quot;&gt;20%&lt;/output&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;gS&quot;&gt;Crescita care workers&lt;/label&gt;&lt;input id=&quot;gS&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;30&quot; value=&quot;7&quot;&gt;&lt;output id=&quot;gSo&quot;&gt;7%&lt;/output&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;gE&quot;&gt;Efficienza realistica&lt;/label&gt;&lt;input id=&quot;gE&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;15&quot; value=&quot;4&quot;&gt;&lt;output id=&quot;gEo&quot;&gt;4%&lt;/output&gt;&lt;/div&gt;
+    &lt;div class=&quot;kpis&quot;&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;b id=&quot;kReq&quot;&gt;12,1%&lt;/b&gt;&lt;span&gt;ore in più richieste a ogni operatore&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;b id=&quot;kGap&quot;&gt;7,8%&lt;/b&gt;&lt;span&gt;gap scoperto dopo l&#x27;efficienza&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;b id=&quot;kOT&quot;&gt;≈ 3,1 h&lt;/b&gt;&lt;span&gt;straordinario/settimana per operatore (base 40 h, solo indicativo)&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;svg viewBox=&quot;0 0 600 70&quot; style=&quot;width:100%;margin-top:12px&quot; aria-hidden=&quot;true&quot;&gt;
+      &lt;rect x=&quot;0&quot; y=&quot;20&quot; width=&quot;600&quot; height=&quot;26&quot; rx=&quot;6&quot; fill=&quot;var(--rule)&quot;/&gt;
+      &lt;rect id=&quot;bE&quot; x=&quot;0&quot; y=&quot;20&quot; width=&quot;0&quot; height=&quot;26&quot; rx=&quot;6&quot; fill=&quot;var(--sage)&quot;/&gt;
+      &lt;rect id=&quot;bG&quot; x=&quot;0&quot; y=&quot;20&quot; width=&quot;0&quot; height=&quot;26&quot; fill=&quot;var(--brick)&quot;/&gt;
+      &lt;text x=&quot;0&quot; y=&quot;64&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;verde = coperto da efficienza · rosso = da coprire con straordinari, nuove assunzioni o servizio non erogato&lt;/text&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;verdict&quot; id=&quot;vCap&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;(window.__w=window.__w||[]).push(function(){
+    var h=document.getElementById(&#x27;gH&#x27;),s=document.getElementById(&#x27;gS&#x27;),e=document.getElementById(&#x27;gE&#x27;);
+    function f(x){return x.toFixed(1).replace(&#x27;.&#x27;,&#x27;,&#x27;)}
+    function up(){
+      var gh=+h.value/100,gs=+s.value/100,ge=+e.value/100;
+      document.getElementById(&#x27;gHo&#x27;).textContent=h.value+&#x27;%&#x27;;document.getElementById(&#x27;gSo&#x27;).textContent=s.value+&#x27;%&#x27;;document.getElementById(&#x27;gEo&#x27;).textContent=e.value+&#x27;%&#x27;;
+      var req=Math.max(0,(1+gh)/(1+gs)-1),gap=Math.max(0,(1+req)/(1+ge)-1),cov=Math.min(req,ge);
+      document.getElementById(&#x27;kReq&#x27;).textContent=f(req*100)+&#x27;%&#x27;;document.getElementById(&#x27;kGap&#x27;).textContent=f(gap*100)+&#x27;%&#x27;;
+      document.getElementById(&#x27;kOT&#x27;).textContent=&#x27;≈ &#x27;+f(gap*40)+&#x27; h&#x27;;
+      var sc=600/0.35;document.getElementById(&#x27;bE&#x27;).setAttribute(&#x27;width&#x27;,Math.min(600,cov*sc));
+      var bg=document.getElementById(&#x27;bG&#x27;);bg.setAttribute(&#x27;x&#x27;,Math.min(600,cov*sc));bg.setAttribute(&#x27;width&#x27;,Math.max(0,Math.min(600-cov*sc,gap*sc)));
+      var v=document.getElementById(&#x27;vCap&#x27;);
+      if(gap&lt;=0.005){v.textContent=&#x27;Piano coerente: la crescita delle ore è coperta da persone ed efficienza realistica.&#x27;;v.style.background=&#x27;var(--sage-bg)&#x27;}
+      else if(gap&lt;0.05){v.textContent=&#x27;Gap moderato: gestibile solo se esplicitato e discusso (chi lo copre? con quali costi?).&#x27;;v.style.background=&#x27;var(--ochre-bg)&#x27;}
+      else{v.textContent=&#x27;Gap rilevante: il budget “promette” ore che nessuno può erogare. Il problema ricadrà su operations (Paolo), come accaduto nel caso.&#x27;;v.style.background=&#x27;var(--brick-bg)&#x27;}
+    }
+    [h,s,e].forEach(function(x){x.addEventListener(&#x27;input&#x27;,up)});up();
+  });&lt;/script&gt;
+  &lt;p class=&quot;small&quot;&gt;Nota sul simulatore: è un&#x27;elaborazione didattica sui due numeri del caso (+20% ore, +7% staff). Le 40 ore settimanali e la percentuale di efficienza sono ipotesi di esempio, non dati delle slide.&lt;/p&gt;
+
+  &lt;h3&gt;I tagli dell&#x27;8%: risparmio visibile, costo nascosto&lt;/h3&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Discretionary costs.&lt;/b&gt; Costi discrezionali: spese decise periodicamente dal management senza un legame tecnico preciso con il volume prodotto (formazione, temporanei extra, alcune spese di coordinamento). Si distinguono dai &lt;em&gt;committed costs&lt;/em&gt; (impegnati, es. affitti) e dagli &lt;em&gt;engineered costs&lt;/em&gt; (legati in modo misurabile all&#x27;output, es. ore di assistenza erogate). Proprio perché “discrezionali”, sono i primi a essere tagliati, ma spesso sono investimenti in capacità e qualità.&lt;/div&gt;
+  &lt;p&gt;Un taglio uniforme &lt;em&gt;across-the-board&lt;/em&gt; (uguale per tutti, qui l&#x27;8%) è semplice da comunicare ma ignora dove ogni euro crea valore. Apri ogni scheda per seguire la catena causa-effetto.&lt;/p&gt;
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;tablist&quot; role=&quot;tablist&quot;&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;true&quot; type=&quot;button&quot;&gt;Customer service&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; type=&quot;button&quot;&gt;Training&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; type=&quot;button&quot;&gt;Travel&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot; type=&quot;button&quot;&gt;Contratti&lt;/button&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;strong&gt;Azione:&lt;/strong&gt; meno temporanei nelle ore di punta. &lt;strong&gt;Risparmio:&lt;/strong&gt; costo del lavoro del reparto. &lt;strong&gt;Effetto nascosto:&lt;/strong&gt; attese al telefono più lunghe → più reclami → più carico sul customer service stesso e reputazione erosa. Tensione: &lt;em&gt;reducing labor costs vs maintaining responsiveness&lt;/em&gt; (reattività verso il cliente).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;strong&gt;Azione:&lt;/strong&gt; budget formazione ridotto, sessioni rinviate. &lt;strong&gt;Effetto nascosto:&lt;/strong&gt; nuovi assunti non pronti a lavorare da soli con clienti fragili; più errori, più stress, più turnover, quindi ancora più assunzioni da formare. Tensione: &lt;em&gt;reducing training costs vs protecting service quality&lt;/em&gt;.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;strong&gt;Azione:&lt;/strong&gt; assegnazioni per vicinanza geografica. &lt;strong&gt;Risparmio:&lt;/strong&gt; tempi e costi di viaggio. &lt;strong&gt;Effetto nascosto:&lt;/strong&gt; le famiglie perdono l&#x27;operatore di cui si fidavano. La &lt;em class=&quot;t&quot;&gt;continuity of care&lt;/em&gt; (continuità dell&#x27;assistenza: stessa persona, stessa relazione nel tempo) è parte del prodotto, non un dettaglio. Tensione: &lt;em&gt;travel costs vs continuity with trusted care workers&lt;/em&gt;.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;strong&gt;Azione:&lt;/strong&gt; firmare nuovi contratti per raggiungere il target di ricavi. &lt;strong&gt;Effetto nascosto:&lt;/strong&gt; contratti “profitable on paper” ma difficili da gestire; pressione sui turni; rischio di &lt;em&gt;burnout&lt;/em&gt; (esaurimento da stress cronico) per coordinatori e operatori. Tensioni: &lt;em&gt;new contracts vs operational feasibility&lt;/em&gt; e &lt;em&gt;profitability vs employee burnout&lt;/em&gt;.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;mine&quot;&gt;&lt;p style=&quot;margin:0&quot;&gt;Come discuterli nel processo di budget? Una pratica utile è rendere ogni trade-off una riga esplicita del documento: “se tagliamo X, prevediamo questo effetto su Y; lo monitoriamo con l&#x27;indicatore Z”. Così il costo nascosto diventa visibile e qualcuno ne è responsabile.&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · trade-off&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;Calcola la produttività implicita se le ore crescono del 20% e lo staff del 10%.&lt;/summary&gt;&lt;div&gt;1,20 / 1,10 − 1 ≈ 9,1% di ore in più per operatore. Ancora alto, ma meno del 12,1% del caso.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Perché i tagli ai costi discrezionali sono “pericolosi” in un&#x27;azienda di servizi alla persona?&lt;/summary&gt;&lt;div&gt;Perché molti costi discrezionali (formazione, personale nelle ore di punta, tempo per la continuità) sono ciò che produce qualità. Il risparmio si vede subito nel report; il danno (reclami, turnover, reputazione) arriva più tardi e non è misurato dal budget.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Elenca le sei tensioni indicate dal docente.&lt;/summary&gt;&lt;div&gt;Ore di servizio vs staff disponibile; costo del lavoro vs reattività; formazione vs qualità; viaggi vs continuità con l&#x27;operatore di fiducia; nuovi contratti vs fattibilità operativa; redditività vs burnout.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 4 CHI PARTECIPA ============ --&gt;
+&lt;section class=&quot;part sage&quot; id=&quot;chi&quot;&gt;
+  &lt;div class=&quot;num&quot;&gt;04&lt;/div&gt;
+  &lt;h2&gt;Chi dovrebbe partecipare al budgeting?&lt;/h2&gt;
+  &lt;span class=&quot;src&quot;&gt;domanda 3 · note del docente pp. 4–5&lt;/span&gt;
+  &lt;p&gt;Ogni reparto possiede un pezzo di informazione che gli altri non hanno: si parla di &lt;em class=&quot;t&quot;&gt;information asymmetry&lt;/em&gt; (asimmetria informativa). Chi sta “vicino al lavoro” conosce vincoli e capacità reali; il vertice conosce la strategia. Un buon processo di budget mette insieme le due cose.&lt;/p&gt;
+
+  &lt;h3&gt;Tre modi di costruire il budget&lt;/h3&gt;
+  &lt;div class=&quot;tblwrap&quot;&gt;&lt;table&gt;
+    &lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Top-down&lt;/th&gt;&lt;th&gt;Bottom-up&lt;/th&gt;&lt;th&gt;Participative&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;&lt;strong&gt;Chi decide&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Vertice/finanza, poi comunica i numeri&lt;/td&gt;&lt;td&gt;I reparti propongono, il vertice somma&lt;/td&gt;&lt;td&gt;Vertice fissa la direzione; reparti costruiscono e negoziano&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;&lt;strong&gt;Pregi&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Veloce, coerente con gli obiettivi del board&lt;/td&gt;&lt;td&gt;Usa l&#x27;informazione locale&lt;/td&gt;&lt;td&gt;Informazione migliore + più &lt;em&gt;commitment&lt;/em&gt; (adesione) ai target&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;&lt;strong&gt;Rischi&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Target irrealistici, scarsa adesione&lt;/td&gt;&lt;td&gt;Budgetary slack, poca visione d&#x27;insieme&lt;/td&gt;&lt;td&gt;Più tempo; slack se non c&#x27;è fiducia&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;&lt;strong&gt;CarePlus&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;È di fatto ciò che è successo&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;td&gt;È ciò che suggerisce il docente&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;&lt;/div&gt;
+  &lt;p class=&quot;small&quot;&gt;La conclusione delle note: un processo &lt;strong&gt;più partecipativo&lt;/strong&gt;, che però lascia al top management il compito di fissare la direzione strategica.&lt;/p&gt;
+
+  &lt;h3&gt;Il contributo informativo di ciascun ruolo&lt;/h3&gt;
+  &lt;figure class=&quot;fig&quot;&gt;
+  &lt;svg viewBox=&quot;0 0 860 420&quot; role=&quot;img&quot; aria-label=&quot;Ruoli che partecipano al budget e informazioni che portano&quot;&gt;
+    &lt;defs&gt;&lt;marker id=&quot;a4&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0,0 L10,5 L0,10 z&quot; fill=&quot;var(--sage)&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+    &lt;circle cx=&quot;430&quot; cy=&quot;210&quot; r=&quot;78&quot; fill=&quot;var(--sage-bg)&quot; stroke=&quot;var(--sage)&quot; stroke-width=&quot;2&quot;/&gt;
+    &lt;text x=&quot;430&quot; y=&quot;203&quot; text-anchor=&quot;middle&quot; font-size=&quot;17&quot; font-weight=&quot;600&quot; style=&quot;font-family:var(--serif)&quot;&gt;Budget&lt;/text&gt;&lt;text x=&quot;430&quot; y=&quot;225&quot; text-anchor=&quot;middle&quot; font-size=&quot;12&quot; fill=&quot;var(--ink2)&quot;&gt;condiviso&lt;/text&gt;
+    &lt;g stroke=&quot;var(--sage)&quot; stroke-width=&quot;1.5&quot; marker-end=&quot;url(#a4)&quot; fill=&quot;none&quot;&gt;
+      &lt;path d=&quot;M430 66 L430 128&quot;/&gt;&lt;path d=&quot;M640 110 L496 170&quot;/&gt;&lt;path d=&quot;M660 300 L506 240&quot;/&gt;&lt;path d=&quot;M430 352 L430 292&quot;/&gt;&lt;path d=&quot;M200 300 L354 240&quot;/&gt;&lt;path d=&quot;M220 110 L364 170&quot;/&gt;&lt;path d=&quot;M140 210 L350 210&quot;/&gt;
+    &lt;/g&gt;
+    &lt;g font-size=&quot;13&quot;&gt;
+      &lt;rect x=&quot;320&quot; y=&quot;18&quot; width=&quot;220&quot; height=&quot;48&quot; rx=&quot;10&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--rule)&quot;/&gt;&lt;text x=&quot;430&quot; y=&quot;38&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Top management&lt;/text&gt;&lt;text x=&quot;430&quot; y=&quot;56&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; fill=&quot;var(--ink2)&quot;&gt;priorità strategiche&lt;/text&gt;
+      &lt;rect x=&quot;600&quot; y=&quot;70&quot; width=&quot;240&quot; height=&quot;48&quot; rx=&quot;10&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--rule)&quot;/&gt;&lt;text x=&quot;720&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Commercial / sales&lt;/text&gt;&lt;text x=&quot;720&quot; y=&quot;108&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; fill=&quot;var(--ink2)&quot;&gt;domanda attesa, contratti possibili&lt;/text&gt;
+      &lt;rect x=&quot;620&quot; y=&quot;290&quot; width=&quot;230&quot; height=&quot;48&quot; rx=&quot;10&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--rule)&quot;/&gt;&lt;text x=&quot;735&quot; y=&quot;310&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Operations&lt;/text&gt;&lt;text x=&quot;735&quot; y=&quot;328&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; fill=&quot;var(--ink2)&quot;&gt;scheduling, capacità di erogazione&lt;/text&gt;
+      &lt;rect x=&quot;320&quot; y=&quot;354&quot; width=&quot;220&quot; height=&quot;48&quot; rx=&quot;10&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--rule)&quot;/&gt;&lt;text x=&quot;430&quot; y=&quot;374&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;HR&lt;/text&gt;&lt;text x=&quot;430&quot; y=&quot;392&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; fill=&quot;var(--ink2)&quot;&gt;recruiting, training, turnover&lt;/text&gt;
+      &lt;rect x=&quot;10&quot; y=&quot;290&quot; width=&quot;230&quot; height=&quot;48&quot; rx=&quot;10&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--rule)&quot;/&gt;&lt;text x=&quot;125&quot; y=&quot;310&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Quality&lt;/text&gt;&lt;text x=&quot;125&quot; y=&quot;328&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; fill=&quot;var(--ink2)&quot;&gt;standard, soddisfazione clienti&lt;/text&gt;
+      &lt;rect x=&quot;20&quot; y=&quot;70&quot; width=&quot;230&quot; height=&quot;48&quot; rx=&quot;10&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--rule)&quot;/&gt;&lt;text x=&quot;135&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Customer service&lt;/text&gt;&lt;text x=&quot;135&quot; y=&quot;108&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; fill=&quot;var(--ink2)&quot;&gt;volumi di chiamate, reclami&lt;/text&gt;
+      &lt;rect x=&quot;10&quot; y=&quot;186&quot; width=&quot;130&quot; height=&quot;48&quot; rx=&quot;10&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--rule)&quot;/&gt;&lt;text x=&quot;75&quot; y=&quot;206&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Finance&lt;/text&gt;&lt;text x=&quot;75&quot; y=&quot;224&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;costi, cassa, profitto&lt;/text&gt;
+    &lt;/g&gt;
+  &lt;/svg&gt;
+  &lt;figcaption&gt;I sette ruoli indicati dalle note del docente e l&#x27;informazione che ciascuno porta. Nel caso, solo finanza e commerciale hanno davvero “scritto” il budget.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Budgetary slack.&lt;/b&gt; Margine di sicurezza inserito deliberatamente nel budget: costi sovrastimati o ricavi sottostimati per rendere il target più facile da raggiungere. È il rischio tipico della partecipazione quando i manager sono valutati sul rispetto del budget: chi conosce meglio la realtà ha anche l&#x27;incentivo a “proteggersi”.&lt;/div&gt;
+  &lt;div class=&quot;mine&quot;&gt;&lt;p style=&quot;margin:0&quot;&gt;Il paradosso del caso: più CarePlus punisce gli scostamenti e riduce i budget a chi risparmia, più rende razionale lo slack. La partecipazione funziona solo se l&#x27;informazione onesta non viene usata contro chi la fornisce.&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · partecipazione&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;Che cosa avrebbe dovuto portare l&#x27;HR nella discussione sul +20% di ore?&lt;/summary&gt;&lt;div&gt;Dati su tempi di reclutamento, turnover, durata della formazione e disponibilità effettiva di personale qualificato: cioè quante ore si possono realisticamente coprire e quando.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Participative budgeting significa che il budget lo decidono i reparti?&lt;/summary&gt;&lt;div&gt;No. I reparti contribuiscono con informazioni e proposte e negoziano i target, ma il top management mantiene il compito di fissare la direzione strategica (note del docente).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Perché la partecipazione può generare budgetary slack?&lt;/summary&gt;&lt;div&gt;Perché chi propone il proprio target ha più informazioni del superiore e, se verrà valutato sul raggiungimento, ha l&#x27;incentivo a proporre target facili (costi gonfiati, ricavi prudenti).&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 5 COMPORTAMENTI ============ --&gt;
+&lt;section class=&quot;part brick&quot; id=&quot;comportamenti&quot;&gt;
+  &lt;div class=&quot;num&quot;&gt;05&lt;/div&gt;
+  &lt;h2&gt;Quali comportamenti incoraggia il sistema?&lt;/h2&gt;
+  &lt;span class=&quot;src&quot;&gt;domanda 4 · note del docente p. 5&lt;/span&gt;
+  &lt;p&gt;Tre meccanismi del caso modellano il comportamento dei manager: i &lt;strong&gt;report mensili&lt;/strong&gt;, la &lt;strong&gt;discussione degli scostamenti&lt;/strong&gt; con CEO e CFO e la &lt;strong&gt;regola di stretta del budget&lt;/strong&gt; (&lt;em&gt;budget-tightening rule&lt;/em&gt;).&lt;/p&gt;
+
+  &lt;h3&gt;Variance: lo strumento del report mensile&lt;/h3&gt;
+  &lt;div class=&quot;formula&quot;&gt;Variance = Actual − Budget&lt;/div&gt;
+  &lt;div class=&quot;grid2&quot;&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Favourable (F).&lt;/b&gt; Lo scostamento migliora il risultato: costi effettivi sotto budget, oppure ricavi sopra budget.&lt;/div&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Unfavourable (U).&lt;/b&gt; Lo scostamento peggiora il risultato: costi sopra budget o ricavi sotto. In CarePlus si deve “spiegare” in riunione, e così nasce la paura.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Problema: un budget &lt;em class=&quot;t&quot;&gt;static&lt;/em&gt; (statico, fissato per un volume previsto) confronta i costi con un volume che non si è verificato. Un &lt;em class=&quot;t&quot;&gt;flexible budget&lt;/em&gt; (budget flessibile) ricalcola i costi “ammessi” sul volume effettivo, separando l&#x27;effetto volume dall&#x27;effetto efficienza. Prova con il customer service, che nel caso cerca di stare nel budget del costo del lavoro “anche quando i volumi di chiamate aumentano”.&lt;/p&gt;
+  &lt;div class=&quot;box&quot; id=&quot;simVar&quot;&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;vCall&quot;&gt;Chiamate effettive vs previste&lt;/label&gt;&lt;input id=&quot;vCall&quot; type=&quot;range&quot; min=&quot;-20&quot; max=&quot;40&quot; value=&quot;20&quot;&gt;&lt;output id=&quot;vCallO&quot;&gt;+20%&lt;/output&gt;&lt;/div&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;vEff&quot;&gt;Costo per chiamata vs standard&lt;/label&gt;&lt;input id=&quot;vEff&quot; type=&quot;range&quot; min=&quot;-15&quot; max=&quot;15&quot; value=&quot;0&quot;&gt;&lt;output id=&quot;vEffO&quot;&gt;0%&lt;/output&gt;&lt;/div&gt;
+    &lt;p class=&quot;small&quot; style=&quot;margin:6px 0 0&quot;&gt;Ipotesi d&#x27;esempio: budget mensile 10.000 chiamate × 3 € = 30.000 € di costo del lavoro, tutto variabile.&lt;/p&gt;
+    &lt;div class=&quot;kpis&quot;&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;b id=&quot;vAct&quot;&gt;36.000 €&lt;/b&gt;&lt;span&gt;costo effettivo&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;b id=&quot;vSt&quot;&gt;6.000 U&lt;/b&gt;&lt;span&gt;variance vs static budget (30.000 €)&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;b id=&quot;vFl&quot;&gt;0&lt;/b&gt;&lt;span&gt;variance vs flexible budget (efficienza)&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;b id=&quot;vVol&quot;&gt;6.000 U&lt;/b&gt;&lt;span&gt;parte dovuta al solo volume&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;verdict&quot; id=&quot;vMsg&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;(window.__w=window.__w||[]).push(function(){
+    var c=document.getElementById(&#x27;vCall&#x27;),e=document.getElementById(&#x27;vEff&#x27;);
+    function eu(x){return Math.round(Math.abs(x)).toLocaleString(&#x27;it-IT&#x27;)}
+    function tag(x){return Math.abs(x)&lt;1?&#x27;0&#x27;:eu(x)+(x&gt;0?&#x27; U&#x27;:&#x27; F&#x27;)}
+    function up(){
+      var q=10000*(1+c.value/100),p=3*(1+e.value/100),act=q*p,flex=q*3,st=30000;
+      document.getElementById(&#x27;vCallO&#x27;).textContent=(c.value&gt;0?&#x27;+&#x27;:&#x27;&#x27;)+c.value+&#x27;%&#x27;;document.getElementById(&#x27;vEffO&#x27;).textContent=(e.value&gt;0?&#x27;+&#x27;:&#x27;&#x27;)+e.value+&#x27;%&#x27;;
+      document.getElementById(&#x27;vAct&#x27;).textContent=eu(act)+&#x27; €&#x27;;document.getElementById(&#x27;vSt&#x27;).textContent=tag(act-st);
+      document.getElementById(&#x27;vFl&#x27;).textContent=tag(act-flex);document.getElementById(&#x27;vVol&#x27;).textContent=tag(flex-st);
+      var m=document.getElementById(&#x27;vMsg&#x27;);
+      if(act-st&gt;1&amp;&amp;act-flex&lt;=1){m.textContent=&#x27;Il report statico mostra uno scostamento sfavorevole, ma il manager è stato efficiente: il costo extra è dovuto solo a più chiamate. Punirlo spinge a tagliare personale mentre le chiamate crescono, cioè famiglie in attesa.&#x27;;m.style.background=&#x27;var(--brick-bg)&#x27;}
+      else if(act-flex&gt;1){m.textContent=&#x27;C\&#x27;è una vera inefficienza (costo per chiamata sopra lo standard): questa è la parte da discutere col manager.&#x27;;m.style.background=&#x27;var(--ochre-bg)&#x27;}
+      else{m.textContent=&#x27;Il costo è in linea o sotto il flexible budget: nessun problema di efficienza.&#x27;;m.style.background=&#x27;var(--sage-bg)&#x27;}
+    }
+    [c,e].forEach(function(x){x.addEventListener(&#x27;input&#x27;,up)});up();
+  });&lt;/script&gt;
+  &lt;p class=&quot;small&quot;&gt;I numeri del simulatore sono inventati a scopo didattico; il caso non riporta cifre sui volumi di chiamate.&lt;/p&gt;
+
+  &lt;h3&gt;Comportamenti positivi e negativi&lt;/h3&gt;
+  &lt;p class=&quot;small&quot;&gt;Tocca le carte per vedere da dove nasce ciascun comportamento nel caso.&lt;/p&gt;
+  &lt;h4 style=&quot;color:var(--sage)&quot;&gt;Positivi&lt;/h4&gt;
+  &lt;div class=&quot;flip&quot;&gt;
+    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;&lt;div class=&quot;f&quot;&gt;Più attenzione ai costi&lt;/div&gt;&lt;div class=&quot;b&quot;&gt;I costi diventano visibili reparto per reparto: prima il budget era un esercizio della sola finanza.&lt;/div&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;&lt;div class=&quot;f&quot;&gt;Target finanziari più chiari&lt;/div&gt;&lt;div class=&quot;b&quot;&gt;Ognuno sa quanto può spendere e quanto deve generare.&lt;/div&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;&lt;div class=&quot;f&quot;&gt;Più disciplina nella pianificazione&lt;/div&gt;&lt;div class=&quot;b&quot;&gt;Si passa dalla gestione informale a un ciclo annuale strutturato (era l&#x27;obiettivo di Emma).&lt;/div&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;&lt;div class=&quot;f&quot;&gt;Discussioni di performance strutturate&lt;/div&gt;&lt;div class=&quot;b&quot;&gt;Le riunioni mensili creano un momento regolare per parlare dei risultati.&lt;/div&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;h4 style=&quot;color:var(--brick);margin-top:18px&quot;&gt;Negativi&lt;/h4&gt;
+  &lt;div class=&quot;flip&quot;&gt;
+    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;&lt;div class=&quot;f&quot;&gt;Evitare gli straordinari anche se servono&lt;/div&gt;&lt;div class=&quot;b&quot;&gt;Operations approva overtime solo se “assolutamente necessario”: turni scoperti, pressione sui coordinatori.&lt;/div&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;&lt;div class=&quot;f&quot;&gt;Rinviare la formazione&lt;/div&gt;&lt;div class=&quot;b&quot;&gt;HR sposta sessioni per restare nel budget mensile: operatori meno preparati.&lt;/div&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;&lt;div class=&quot;f&quot;&gt;Tagliare le risorse del customer service&lt;/div&gt;&lt;div class=&quot;b&quot;&gt;Meno temporanei nelle ore di punta: attese e reclami.&lt;/div&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;&lt;div class=&quot;f&quot;&gt;Firmare contratti senza conferma operativa&lt;/div&gt;&lt;div class=&quot;b&quot;&gt;Il commerciale è valutato sulla crescita dei ricavi, non sulla fattibilità.&lt;/div&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;&lt;div class=&quot;f&quot;&gt;Spendere il budget avanzato&lt;/div&gt;&lt;div class=&quot;b&quot;&gt;Per paura che le risorse inutilizzate vengano tolte (regola dei due mesi): il cosiddetto &lt;em&gt;use it or lose it&lt;/em&gt;.&lt;/div&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;&lt;div class=&quot;f&quot;&gt;Creare budgetary slack&lt;/div&gt;&lt;div class=&quot;b&quot;&gt;Chiedere più del necessario per proteggersi da scostamenti e tagli futuri.&lt;/div&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;&lt;div class=&quot;f&quot;&gt;Guardare la variance del mese, non la qualità di lungo periodo&lt;/div&gt;&lt;div class=&quot;b&quot;&gt;È il &lt;em&gt;short-termism&lt;/em&gt; (miopia di breve periodo): il report è mensile, gli effetti sulla qualità arrivano in mesi o anni.&lt;/div&gt;&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;La regola dei due mesi: un ratchet effect&lt;/h3&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Ratchet effect.&lt;/b&gt; “Effetto cricchetto”: il target di domani si basa sulla performance di oggi, quindi chi fa meglio si ritrova con un obiettivo più difficile. Il manager impara a non mostrare tutto ciò che sa fare. È esattamente la regola del CFO: due mesi sotto budget → budget ridotto.&lt;/div&gt;
+  &lt;p&gt;Confronta due strategie di un manager nell&#x27;arco di sei mesi. Nella prima mostra i risparmi reali; nella seconda spende il residuo per restare a ridosso del budget.&lt;/p&gt;
+  &lt;div class=&quot;box&quot; id=&quot;ratchet&quot;&gt;
+    &lt;div role=&quot;group&quot; style=&quot;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn&quot; data-m=&quot;honest&quot; aria-pressed=&quot;true&quot;&gt;Mostra i risparmi&lt;/button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn&quot; data-m=&quot;burn&quot; aria-pressed=&quot;false&quot;&gt;Spende il residuo&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;svg viewBox=&quot;0 0 620 240&quot; style=&quot;width:100%&quot; role=&quot;img&quot; aria-label=&quot;Andamento di budget e spesa in sei mesi&quot;&gt;
+      &lt;g stroke=&quot;var(--rule)&quot;&gt;&lt;line x1=&quot;50&quot; y1=&quot;30&quot; x2=&quot;600&quot; y2=&quot;30&quot;/&gt;&lt;line x1=&quot;50&quot; y1=&quot;90&quot; x2=&quot;600&quot; y2=&quot;90&quot;/&gt;&lt;line x1=&quot;50&quot; y1=&quot;150&quot; x2=&quot;600&quot; y2=&quot;150&quot;/&gt;&lt;line x1=&quot;50&quot; y1=&quot;210&quot; x2=&quot;600&quot; y2=&quot;210&quot;/&gt;&lt;/g&gt;
+      &lt;g font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;&lt;text x=&quot;8&quot; y=&quot;34&quot;&gt;110&lt;/text&gt;&lt;text x=&quot;8&quot; y=&quot;94&quot;&gt;100&lt;/text&gt;&lt;text x=&quot;14&quot; y=&quot;154&quot;&gt;90&lt;/text&gt;&lt;text x=&quot;14&quot; y=&quot;214&quot;&gt;80&lt;/text&gt;&lt;/g&gt;
+      &lt;g id=&quot;rBars&quot;&gt;&lt;/g&gt;
+      &lt;polyline id=&quot;rLine&quot; fill=&quot;none&quot; stroke=&quot;var(--ink)&quot; stroke-width=&quot;2.5&quot;/&gt;
+      &lt;g id=&quot;rLbl&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;&lt;/g&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;legend&quot;&gt;&lt;span&gt;&lt;i style=&quot;background:var(--ink)&quot;&gt;&lt;/i&gt;budget del mese&lt;/span&gt;&lt;span&gt;&lt;i style=&quot;background:var(--sage)&quot;&gt;&lt;/i&gt;spesa effettiva (necessaria)&lt;/span&gt;&lt;span&gt;&lt;i style=&quot;background:var(--brick)&quot;&gt;&lt;/i&gt;spesa “di difesa” non necessaria&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;verdict&quot; id=&quot;rMsg&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;(window.__w=window.__w||[]).push(function(){
+    var box=document.getElementById(&#x27;ratchet&#x27;),need=[92,93,90,91,99,97];
+    function y(v){return 90-(v-100)*6}
+    function run(m){
+      var b=100,below=0,bars=&#x27;&#x27;,pts=[],lbl=&#x27;&#x27;,waste=0;
+      for(var i=0;i&lt;6;i++){
+        var x=60+i*90,spend=m===&#x27;honest&#x27;?need[i]:Math.max(need[i],b);
+        pts.push((x)+&#x27;,&#x27;+y(b),(x+80)+&#x27;,&#x27;+y(b));
+        bars+=&#x27;&lt;rect x=&quot;&#x27;+(x+15)+&#x27;&quot; y=&quot;&#x27;+y(need[i])+&#x27;&quot; width=&quot;50&quot; height=&quot;&#x27;+(210-y(need[i]))+&#x27;&quot; fill=&quot;var(--sage)&quot; opacity=&quot;.85&quot;/&gt;&#x27;;
+        if(spend&gt;need[i]){bars+=&#x27;&lt;rect x=&quot;&#x27;+(x+15)+&#x27;&quot; y=&quot;&#x27;+y(spend)+&#x27;&quot; width=&quot;50&quot; height=&quot;&#x27;+(y(need[i])-y(spend))+&#x27;&quot; fill=&quot;var(--brick)&quot;/&gt;&#x27;;waste+=spend-need[i];}
+        lbl+=&#x27;&lt;text x=&quot;&#x27;+(x+40)+&#x27;&quot; y=&quot;230&quot; text-anchor=&quot;middle&quot;&gt;M&#x27;+(i+1)+&#x27;&lt;/text&gt;&#x27;;
+        below=spend&lt;b?below+1:0;
+        if(below&gt;=2){b=b-4;below=0;}
+      }
+      document.getElementById(&#x27;rBars&#x27;).innerHTML=bars;document.getElementById(&#x27;rLine&#x27;).setAttribute(&#x27;points&#x27;,pts.join(&#x27; &#x27;));document.getElementById(&#x27;rLbl&#x27;).innerHTML=lbl;
+      var msg=document.getElementById(&#x27;rMsg&#x27;);
+      if(m===&#x27;honest&#x27;){msg.textContent=&#x27;Mostrando i risparmi, il budget viene tagliato due volte (100 → 96 → 92). A M5 e M6 la spesa necessaria (99 e 97) supera il budget: scostamenti sfavorevoli da spiegare, pur senza aver sprecato nulla.&#x27;;msg.style.background=&#x27;var(--brick-bg)&#x27;}
+      else{msg.textContent=&#x27;Spendendo il residuo il budget resta a 100 e non ci sono mai scostamenti “negativi”, ma si sprecano circa &#x27;+Math.round(waste)+&#x27; unità in sei mesi. Il sistema premia lo spreco e punisce l\&#x27;efficienza.&#x27;;msg.style.background=&#x27;var(--ochre-bg)&#x27;}
+      box.querySelectorAll(&#x27;[data-m]&#x27;).forEach(function(b){b.setAttribute(&#x27;aria-pressed&#x27;,b.dataset.m===m);b.style.borderColor=b.dataset.m===m?&#x27;var(--brick)&#x27;:&#x27;&#x27;});
+    }
+    box.querySelectorAll(&#x27;[data-m]&#x27;).forEach(function(b){b.addEventListener(&#x27;click&#x27;,function(){run(b.dataset.m)})});run(&#x27;honest&#x27;);
+  });&lt;/script&gt;
+  &lt;p class=&quot;small&quot;&gt;Simulazione didattica: la regola è quella del caso, i valori (fabbisogno mensile, taglio di 4 punti) sono inventati.&lt;/p&gt;
+  &lt;blockquote&gt;The system is teaching managers to defend their budget, not to improve the service.&lt;cite&gt;Sara, HR manager, p. 2&lt;/cite&gt;&lt;/blockquote&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · comportamenti&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;Costi del lavoro effettivi 33.000 €, budget 30.000 €. Scostamento? Favorevole o sfavorevole?&lt;/summary&gt;&lt;div&gt;+3.000 €, unfavourable (costo sopra budget). Prima di giudicare il manager, però, va verificato se il volume è cambiato con un flexible budget.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Perché la regola “due mesi sotto budget → budget ridotto” produce spesa a fine mese?&lt;/summary&gt;&lt;div&gt;Perché trasforma il risparmio in una punizione futura (ratchet effect). Al manager conviene consumare il residuo (&lt;em&gt;use it or lose it&lt;/em&gt;) o rinviare spese, cioè nascondere l&#x27;informazione sull&#x27;efficienza reale.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Cita due comportamenti positivi e due negativi indotti dal sistema.&lt;/summary&gt;&lt;div&gt;Positivi: maggiore attenzione ai costi; più disciplina nella pianificazione (anche: target chiari, discussioni strutturate). Negativi: rinvio della formazione; contratti firmati senza conferma operativa (anche: niente straordinari, tagli al customer service, spesa del residuo, slack, focus sul mese).&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 6 CONTROLLABILITY ============ --&gt;
+&lt;section class=&quot;part slate&quot; id=&quot;controllo&quot;&gt;
+  &lt;div class=&quot;num&quot;&gt;06&lt;/div&gt;
+  &lt;h2&gt;Che cosa è “controllabile” in un&#x27;azienda di servizi?&lt;/h2&gt;
+  &lt;span class=&quot;src&quot;&gt;domanda 5 · note del docente p. 5&lt;/span&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Controllability principle.&lt;/b&gt; Principio di controllabilità: un manager dovrebbe essere valutato solo (o soprattutto) sui risultati che può effettivamente influenzare. Se viene giudicato su fattori fuori dal suo controllo, il sistema diventa percepito come ingiusto e lo spinge a difendersi invece che a migliorare.&lt;/div&gt;
+  &lt;p&gt;In CarePlus la controllabilità è difficile perché &lt;strong&gt;l&#x27;erogazione del servizio è interdipendente&lt;/strong&gt;: il risultato di ciascun reparto dipende dalle decisioni degli altri e da clienti che cambiano richieste all&#x27;ultimo minuto.&lt;/p&gt;
+
+  &lt;figure class=&quot;fig&quot;&gt;
+  &lt;svg viewBox=&quot;0 0 860 380&quot; role=&quot;img&quot; aria-label=&quot;Rete di interdipendenze tra reparti&quot;&gt;
+    &lt;defs&gt;&lt;marker id=&quot;a6&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0,0 L10,5 L0,10 z&quot; fill=&quot;var(--slate)&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+    &lt;g stroke=&quot;var(--slate)&quot; stroke-width=&quot;1.6&quot; fill=&quot;none&quot; marker-end=&quot;url(#a6)&quot;&gt;
+      &lt;path d=&quot;M215 70 L345 70&quot;/&gt;
+      &lt;path d=&quot;M100 90 C100 150 300 170 360 90&quot; stroke-dasharray=&quot;5 4&quot;/&gt;
+      &lt;path d=&quot;M690 245 C640 160 560 110 515 90&quot;/&gt;
+      &lt;path d=&quot;M470 105 L470 250&quot;/&gt;
+      &lt;path d=&quot;M560 290 L630 290&quot;/&gt;
+      &lt;path d=&quot;M150 290 L360 290&quot;/&gt;
+      &lt;path d=&quot;M120 270 L420 100&quot; stroke-opacity=&quot;.5&quot;/&gt;
+    &lt;/g&gt;
+    &lt;g font-size=&quot;13&quot;&gt;
+      &lt;rect x=&quot;20&quot; y=&quot;45&quot; width=&quot;195&quot; height=&quot;50&quot; rx=&quot;10&quot; fill=&quot;var(--ochre-bg)&quot; stroke=&quot;var(--ochre)&quot;/&gt;&lt;text x=&quot;117&quot; y=&quot;68&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Sales&lt;/text&gt;&lt;text x=&quot;117&quot; y=&quot;85&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;promesse ai clienti&lt;/text&gt;
+      &lt;rect x=&quot;345&quot; y=&quot;45&quot; width=&quot;250&quot; height=&quot;56&quot; rx=&quot;10&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot;/&gt;&lt;text x=&quot;470&quot; y=&quot;68&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Costi di Operations&lt;/text&gt;&lt;text x=&quot;470&quot; y=&quot;87&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;straordinari, viaggi, coordinamento&lt;/text&gt;
+      &lt;rect x=&quot;20&quot; y=&quot;265&quot; width=&quot;130&quot; height=&quot;50&quot; rx=&quot;10&quot; fill=&quot;var(--sage-bg)&quot; stroke=&quot;var(--sage)&quot;/&gt;&lt;text x=&quot;85&quot; y=&quot;288&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;HR&lt;/text&gt;&lt;text x=&quot;85&quot; y=&quot;305&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;assunzioni, training&lt;/text&gt;
+      &lt;rect x=&quot;360&quot; y=&quot;255&quot; width=&quot;200&quot; height=&quot;66&quot; rx=&quot;10&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--slate)&quot;/&gt;&lt;text x=&quot;460&quot; y=&quot;280&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Capacità &amp;amp; qualità&lt;/text&gt;&lt;text x=&quot;460&quot; y=&quot;300&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;training + scheduling + staffing&lt;/text&gt;
+      &lt;rect x=&quot;630&quot; y=&quot;255&quot; width=&quot;215&quot; height=&quot;66&quot; rx=&quot;10&quot; fill=&quot;var(--brick-bg)&quot; stroke=&quot;var(--brick)&quot;/&gt;&lt;text x=&quot;737&quot; y=&quot;280&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Customer service&lt;/text&gt;&lt;text x=&quot;737&quot; y=&quot;300&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;carico di chiamate e reclami&lt;/text&gt;
+      &lt;rect x=&quot;630&quot; y=&quot;130&quot; width=&quot;215&quot; height=&quot;46&quot; rx=&quot;10&quot; fill=&quot;var(--card)&quot; stroke=&quot;var(--rule)&quot;/&gt;&lt;text x=&quot;737&quot; y=&quot;158&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;Clienti: cambi last-minute&lt;/text&gt;
+    &lt;/g&gt;
+    &lt;path d=&quot;M700 176 L560 90&quot; stroke=&quot;var(--ink2)&quot; stroke-dasharray=&quot;3 3&quot; fill=&quot;none&quot; marker-end=&quot;url(#a6)&quot;/&gt;
+    &lt;g font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot; font-style=&quot;italic&quot;&gt;&lt;text x=&quot;225&quot; y=&quot;60&quot;&gt;vende ore&lt;/text&gt;&lt;text x=&quot;480&quot; y=&quot;180&quot;&gt;problemi operativi&lt;/text&gt;&lt;text x=&quot;190&quot; y=&quot;282&quot;&gt;capacità di servizio&lt;/text&gt;&lt;text x=&quot;570&quot; y=&quot;282&quot;&gt;genera chiamate&lt;/text&gt;&lt;/g&gt;
+  &lt;/svg&gt;
+  &lt;figcaption&gt;Le quattro interdipendenze citate nelle note del docente: i costi dell&#x27;operations dipendono dalle promesse commerciali e dai cambi dei clienti; i risultati HR determinano la capacità di servizio; il carico del customer service dipende dai problemi operativi; la qualità dipende da formazione, scheduling e staffing.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;p&gt;Conclusione delle note: &lt;strong&gt;i manager non dovrebbero essere valutati solo su risultati influenzati da altri reparti o da vincoli esterni; i report dovrebbero distinguere fattori controllabili e meno controllabili.&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;h3&gt;Esercizio: controllabile o no?&lt;/h3&gt;
+  &lt;p class=&quot;small&quot;&gt;Per ciascuna voce scegli se, per il manager indicato, è in larga parte controllabile o solo in parte (dipende da altri o dall&#x27;esterno).&lt;/p&gt;
+  &lt;div class=&quot;sorter&quot;&gt;
+    &lt;div class=&quot;row&quot; data-a=&quot;p&quot;&gt;&lt;div&gt;Costo degli straordinari dell&#x27;&lt;strong&gt;operations&lt;/strong&gt; dopo che il commerciale ha firmato tre nuovi contratti senza preavviso&lt;/div&gt;&lt;div class=&quot;opts&quot;&gt;&lt;button type=&quot;button&quot; data-v=&quot;c&quot;&gt;Controllabile&lt;/button&gt;&lt;button type=&quot;button&quot; data-v=&quot;p&quot;&gt;Solo in parte&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;fb&quot;&gt;Solo in parte: il volume è stato deciso da sales. Paolo controlla come organizza i turni, non quante ore deve coprire.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;row&quot; data-a=&quot;c&quot;&gt;&lt;div&gt;Ore di &lt;strong&gt;idle time&lt;/strong&gt; (tempi morti) nei turni pianificati dai coordinatori&lt;/div&gt;&lt;div class=&quot;opts&quot;&gt;&lt;button type=&quot;button&quot; data-v=&quot;c&quot;&gt;Controllabile&lt;/button&gt;&lt;button type=&quot;button&quot; data-v=&quot;p&quot;&gt;Solo in parte&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;fb&quot;&gt;In larga parte controllabile da operations: dipende dalla qualità dello scheduling.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;row&quot; data-a=&quot;p&quot;&gt;&lt;div&gt;Numero di chiamate ricevute dal &lt;strong&gt;customer service&lt;/strong&gt;&lt;/div&gt;&lt;div class=&quot;opts&quot;&gt;&lt;button type=&quot;button&quot; data-v=&quot;c&quot;&gt;Controllabile&lt;/button&gt;&lt;button type=&quot;button&quot; data-v=&quot;p&quot;&gt;Solo in parte&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;fb&quot;&gt;Solo in parte: le chiamate crescono quando ci sono problemi operativi. Controllabile è il tempo di risposta dato il volume.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;row&quot; data-a=&quot;c&quot;&gt;&lt;div&gt;Rispetto del calendario di formazione deciso da &lt;strong&gt;HR&lt;/strong&gt;&lt;/div&gt;&lt;div class=&quot;opts&quot;&gt;&lt;button type=&quot;button&quot; data-v=&quot;c&quot;&gt;Controllabile&lt;/button&gt;&lt;button type=&quot;button&quot; data-v=&quot;p&quot;&gt;Solo in parte&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;fb&quot;&gt;Controllabile da HR (purché il budget non la spinga a rinviarla).&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;row&quot; data-a=&quot;p&quot;&gt;&lt;div&gt;&lt;strong&gt;Turnover&lt;/strong&gt; dei care workers come indicatore di HR&lt;/div&gt;&lt;div class=&quot;opts&quot;&gt;&lt;button type=&quot;button&quot; data-v=&quot;c&quot;&gt;Controllabile&lt;/button&gt;&lt;button type=&quot;button&quot; data-v=&quot;p&quot;&gt;Solo in parte&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;fb&quot;&gt;Solo in parte: dipende anche da turni imprevedibili (operations), pressione dei contratti (sales), mercato del lavoro.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;row&quot; data-a=&quot;c&quot;&gt;&lt;div&gt;Verifica della capacità operativa prima di firmare un contratto (&lt;strong&gt;commerciale&lt;/strong&gt;)&lt;/div&gt;&lt;div class=&quot;opts&quot;&gt;&lt;button type=&quot;button&quot; data-v=&quot;c&quot;&gt;Controllabile&lt;/button&gt;&lt;button type=&quot;button&quot; data-v=&quot;p&quot;&gt;Solo in parte&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;fb&quot;&gt;Controllabile: è un comportamento del commerciale, e infatti andrebbe incentivato e misurato.&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mine&quot;&gt;&lt;p style=&quot;margin:0&quot;&gt;Due rimedi pratici: (1) report a due colonne, “scostamento controllabile” e “scostamento dovuto ad altri o all&#x27;esterno” (per esempio con il flexible budget visto sopra); (2) alcuni obiettivi &lt;strong&gt;condivisi&lt;/strong&gt; tra reparti (es. ore coperte con operatore formato), perché il risultato è comune.&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · controllability&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;Enuncia il controllability principle e spiega perché in CarePlus è difficile applicarlo.&lt;/summary&gt;&lt;div&gt;Valutare i manager su ciò che possono influenzare. Difficile perché il servizio è interdipendente: costi, capacità, reclami e qualità nascono dall&#x27;interazione di più reparti e dai clienti.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Se è difficile isolare la responsabilità individuale, conviene allora non valutare nessuno?&lt;/summary&gt;&lt;div&gt;No: conviene distinguere nei report la parte controllabile da quella meno controllabile e affiancare indicatori comuni a più reparti, così si responsabilizza senza punire per colpe altrui.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 7 MOTIVAZIONE E CULTURA ============ --&gt;
+&lt;section class=&quot;part&quot; id=&quot;cultura&quot;&gt;
+  &lt;div class=&quot;num&quot;&gt;07&lt;/div&gt;
+  &lt;h2&gt;Motivazione e service culture&lt;/h2&gt;
+  &lt;span class=&quot;src&quot;&gt;domanda 6 · note del docente pp. 6–7&lt;/span&gt;
+  &lt;p&gt;Le note del docente sono chiare su tre punti:&lt;/p&gt;
+  &lt;div class=&quot;grid3&quot;&gt;
+    &lt;div class=&quot;box tint&quot;&gt;&lt;p style=&quot;margin:0&quot;&gt;Il sistema può motivare a controllare i costi, ma &lt;strong&gt;danneggia la motivazione&lt;/strong&gt; se i target sono percepiti come &lt;strong&gt;irrealistici o ingiusti&lt;/strong&gt;.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;box tint&quot;&gt;&lt;p style=&quot;margin:0&quot;&gt;Nei servizi i dipendenti &lt;strong&gt;sono parte dell&#x27;esperienza di servizio&lt;/strong&gt;: troppa pressione porta a stress, turnover, meno empatia e qualità più debole.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;box tint&quot;&gt;&lt;p style=&quot;margin:0&quot;&gt;Un budget focalizzato solo sui costi può &lt;strong&gt;entrare in conflitto con una cultura&lt;/strong&gt; basata su cura, fiducia e affidabilità.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Service culture.&lt;/b&gt; Insieme di valori e comportamenti condivisi che mettono al centro il cliente e la qualità della relazione. In CarePlus coincide con la reputazione: reliability, empathy, flexibility.&lt;/div&gt;
+
+  &lt;h3&gt;Quanto deve essere difficile un target?&lt;/h3&gt;
+  &lt;div class=&quot;mine&quot;&gt;
+    &lt;p&gt;Schema stilizzato (non nelle slide), coerente con il dibattito tra Laura (“growth requires pressure”) e Paolo (“pressure is not the same as planning”): la motivazione cresce con la difficoltà del target finché il target è &lt;strong&gt;accettato&lt;/strong&gt; come raggiungibile, poi crolla quando diventa irrealistico.&lt;/p&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;tD&quot;&gt;Difficoltà del target&lt;/label&gt;&lt;input id=&quot;tD&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; value=&quot;80&quot;&gt;&lt;output id=&quot;tDo&quot;&gt;80&lt;/output&gt;&lt;/div&gt;
+    &lt;svg viewBox=&quot;0 0 600 220&quot; style=&quot;width:100%&quot; role=&quot;img&quot; aria-label=&quot;Curva motivazione-difficoltà del target&quot;&gt;
+      &lt;rect x=&quot;40&quot; y=&quot;10&quot; width=&quot;300&quot; height=&quot;180&quot; fill=&quot;var(--sage-bg)&quot; opacity=&quot;.6&quot;/&gt;&lt;rect x=&quot;340&quot; y=&quot;10&quot; width=&quot;110&quot; height=&quot;180&quot; fill=&quot;var(--ochre-bg)&quot; opacity=&quot;.6&quot;/&gt;&lt;rect x=&quot;450&quot; y=&quot;10&quot; width=&quot;140&quot; height=&quot;180&quot; fill=&quot;var(--brick-bg)&quot; opacity=&quot;.6&quot;/&gt;
+      &lt;line x1=&quot;40&quot; y1=&quot;190&quot; x2=&quot;590&quot; y2=&quot;190&quot; stroke=&quot;var(--ink2)&quot;/&gt;&lt;line x1=&quot;40&quot; y1=&quot;10&quot; x2=&quot;40&quot; y2=&quot;190&quot; stroke=&quot;var(--ink2)&quot;/&gt;
+      &lt;path id=&quot;tCurve&quot; fill=&quot;none&quot; stroke=&quot;var(--acc)&quot; stroke-width=&quot;3&quot;/&gt;
+      &lt;circle id=&quot;tDot&quot; r=&quot;7&quot; fill=&quot;var(--acc)&quot;/&gt;
+      &lt;g font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot;&gt;&lt;text x=&quot;300&quot; y=&quot;208&quot; text-anchor=&quot;middle&quot;&gt;difficoltà percepita del target →&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;26&quot;&gt;motivazione / sforzo&lt;/text&gt;&lt;text x=&quot;120&quot; y=&quot;180&quot;&gt;facile&lt;/text&gt;&lt;text x=&quot;350&quot; y=&quot;180&quot;&gt;sfidante&lt;/text&gt;&lt;text x=&quot;470&quot; y=&quot;180&quot;&gt;irrealistico&lt;/text&gt;&lt;/g&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;verdict&quot; id=&quot;tMsg&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;(window.__w=window.__w||[]).push(function(){
+    var r=document.getElementById(&#x27;tD&#x27;);
+    function m(d){return d&lt;=70?20+d*1.1:Math.max(5,97-Math.pow(d-70,1.55)*1.6)}
+    function X(d){return 40+d*5.5}function Y(v){return 190-v*1.75}
+    var p=&#x27;&#x27;;for(var d=0;d&lt;=100;d+=2){p+=(d?&#x27;L&#x27;:&#x27;M&#x27;)+X(d).toFixed(1)+&#x27; &#x27;+Y(m(d)).toFixed(1)}
+    document.getElementById(&#x27;tCurve&#x27;).setAttribute(&#x27;d&#x27;,p);
+    function up(){var d=+r.value;document.getElementById(&#x27;tDo&#x27;).textContent=d;var dot=document.getElementById(&#x27;tDot&#x27;);dot.setAttribute(&#x27;cx&#x27;,X(d));dot.setAttribute(&#x27;cy&#x27;,Y(m(d)));
+      var t=document.getElementById(&#x27;tMsg&#x27;);
+      if(d&lt;55){t.textContent=&#x27;Target facile: poco stimolo, rischio di slack e di compiacenza.&#x27;;t.style.background=&#x27;var(--sage-bg)&#x27;}
+      else if(d&lt;=74){t.textContent=&#x27;Target sfidante ma credibile: il punto in cui la pressione “spinge a migliorare”, come vuole il CFO.&#x27;;t.style.background=&#x27;var(--ochre-bg)&#x27;}
+      else{t.textContent=&#x27;Target percepito come irrealistico (es. +20% ore con +7% staff): demotivazione, stress, comportamenti difensivi, gaming dei numeri.&#x27;;t.style.background=&#x27;var(--brick-bg)&#x27;}}
+    r.addEventListener(&#x27;input&#x27;,up);up();
+  });&lt;/script&gt;
+
+  &lt;h3&gt;Circolo virtuoso o vizioso?&lt;/h3&gt;
+  &lt;p&gt;In un&#x27;azienda dove “le persone sono il servizio”, motivazione dei dipendenti e soddisfazione dei clienti sono legate in un ciclo. Il budget può alimentarlo in un senso o nell&#x27;altro.&lt;/p&gt;
+  &lt;div class=&quot;box&quot; id=&quot;cyc&quot;&gt;
+    &lt;div style=&quot;display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn&quot; data-c=&quot;v&quot;&gt;Ciclo vizioso (CarePlus al Q1)&lt;/button&gt;&lt;button type=&quot;button&quot; class=&quot;btn&quot; data-c=&quot;g&quot;&gt;Ciclo virtuoso&lt;/button&gt;&lt;/div&gt;
+    &lt;svg viewBox=&quot;0 0 600 360&quot; style=&quot;width:100%&quot; role=&quot;img&quot; aria-label=&quot;Ciclo tra budget, persone e clienti&quot;&gt;
+      &lt;defs&gt;&lt;marker id=&quot;a7&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0,0 L10,5 L0,10 z&quot; fill=&quot;var(--ink2)&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+      &lt;circle cx=&quot;300&quot; cy=&quot;180&quot; r=&quot;130&quot; fill=&quot;none&quot; stroke=&quot;var(--rule)&quot; stroke-width=&quot;10&quot;/&gt;
+      &lt;g id=&quot;cycN&quot; font-size=&quot;12.5&quot; text-anchor=&quot;middle&quot;&gt;&lt;/g&gt;
+      &lt;text id=&quot;cycC&quot; x=&quot;300&quot; y=&quot;186&quot; text-anchor=&quot;middle&quot; font-size=&quot;16&quot; style=&quot;font-family:var(--serif)&quot; font-weight=&quot;600&quot;&gt;&lt;/text&gt;
+    &lt;/svg&gt;
+    &lt;p class=&quot;small&quot; id=&quot;cycS&quot;&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;script&gt;(window.__w=window.__w||[]).push(function(){
+    var box=document.getElementById(&#x27;cyc&#x27;);
+    var C={v:{c:&#x27;vizioso&#x27;,col:&#x27;var(--brick)&#x27;,bg:&#x27;var(--brick-bg)&#x27;,n:[&#x27;Tagli e target irrealistici&#x27;,&#x27;Turni imprevedibili, meno training&#x27;,&#x27;Stress e burnout&#x27;,&#x27;Turnover, meno continuità&#x27;,&#x27;Reclami, fiducia in calo&#x27;,&#x27;Ricavi sotto budget → nuovi tagli&#x27;],s:&#x27;È la sequenza descritta nella riunione di fine trimestre: costo del lavoro più alto, reclami in aumento, turnover invariato, coordinatori più stressati, ricavi sotto budget.&#x27;},
+           g:{c:&#x27;virtuoso&#x27;,col:&#x27;var(--sage)&#x27;,bg:&#x27;var(--sage-bg)&#x27;,n:[&#x27;Budget realistico e condiviso&#x27;,&#x27;Turni stabili, training adeguato&#x27;,&#x27;Operatori motivati ed empatici&#x27;,&#x27;Meno turnover, più continuità&#x27;,&#x27;Famiglie soddisfatte e fedeli&#x27;,&#x27;Ricavi e margini sostenibili&#x27;],s:&#x27;Logica vicina alla service-profit chain (fonte esterna, vedi “Per approfondire”): qualità del lavoro interno → soddisfazione dei dipendenti → qualità del servizio → fedeltà dei clienti → crescita e profitto.&#x27;}};
+    function run(k){var d=C[k],h=&#x27;&#x27;;d.n.forEach(function(t,i){var a=-Math.PI/2+i*Math.PI/3,x=300+130*Math.cos(a),y=180+130*Math.sin(a);var w=t.split(&#x27; &#x27;);var l1=[],l2=[];w.forEach(function(x2){(l1.join(&#x27; &#x27;).length&lt;16?l1:l2).push(x2)});
+      h+=&#x27;&lt;rect x=&quot;&#x27;+(x-82)+&#x27;&quot; y=&quot;&#x27;+(y-22)+&#x27;&quot; width=&quot;164&quot; height=&quot;44&quot; rx=&quot;10&quot; fill=&quot;&#x27;+d.bg+&#x27;&quot; stroke=&quot;&#x27;+d.col+&#x27;&quot;/&gt;&lt;text x=&quot;&#x27;+x+&#x27;&quot; y=&quot;&#x27;+(y-3)+&#x27;&quot;&gt;&#x27;+l1.join(&#x27; &#x27;)+&#x27;&lt;/text&gt;&lt;text x=&quot;&#x27;+x+&#x27;&quot; y=&quot;&#x27;+(y+13)+&#x27;&quot;&gt;&#x27;+l2.join(&#x27; &#x27;)+&#x27;&lt;/text&gt;&#x27;;});
+      document.getElementById(&#x27;cycN&#x27;).innerHTML=h;var c=document.getElementById(&#x27;cycC&#x27;);c.textContent=&#x27;ciclo &#x27;+d.c;c.style.fill=d.col;document.getElementById(&#x27;cycS&#x27;).textContent=d.s;
+      box.querySelectorAll(&#x27;[data-c]&#x27;).forEach(function(b){b.style.borderColor=b.dataset.c===k?d.col:&#x27;&#x27;});}
+    box.querySelectorAll(&#x27;[data-c]&#x27;).forEach(function(b){b.addEventListener(&#x27;click&#x27;,function(){run(b.dataset.c)})});run(&#x27;v&#x27;);
+  });&lt;/script&gt;
+  &lt;blockquote&gt;People are not just a variable cost. They are the service.&lt;cite&gt;Sara, HR manager, p. 3&lt;/cite&gt;&lt;/blockquote&gt;
+
+  &lt;div class=&quot;ext&quot;&gt;&lt;p style=&quot;margin:0&quot;&gt;&lt;strong&gt;Stili di valutazione (Hopwood, 1972).&lt;/strong&gt; Studiando i manager di un&#x27;acciaieria, Hopwood distinse uno stile &lt;em&gt;budget-constrained&lt;/em&gt; (giudizio basato soprattutto sul rispetto del budget di breve periodo), uno &lt;em&gt;profit-conscious&lt;/em&gt; (budget usato in modo flessibile, guardando all&#x27;efficacia di lungo periodo) e uno &lt;em&gt;non-accounting&lt;/em&gt;. Lo stile budget-constrained era associato a più tensione e a comportamenti disfunzionali, come la manipolazione dei dati: un buon specchio delle riunioni mensili di CarePlus. Fonte: &lt;a href=&quot;https://www.jstor.org/stable/2489870&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Journal of Accounting Research (JSTOR)&lt;/a&gt;; sintesi in &lt;a href=&quot;https://maaw.info/ArticleSummaries/ArtSumOtleyFakiolas2000.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MAAW&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · motivazione e cultura&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;Perché la motivazione dei dipendenti pesa di più in un&#x27;azienda di servizi che in una manifatturiera?&lt;/summary&gt;&lt;div&gt;Perché il dipendente è parte del prodotto: empatia, affidabilità e continuità della relazione si producono nell&#x27;interazione con il cliente. Stress e turnover diventano subito qualità peggiore.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Laura dice “growth requires pressure”, Paolo “pressure is not the same as planning”. Chi ha ragione?&lt;/summary&gt;&lt;div&gt;Entrambi in parte: un target sfidante può motivare, ma solo se è credibile e sostenuto da un piano di risorse. Oltre quella soglia la pressione produce comportamenti difensivi e danni alla qualità.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;In che modo un budget “solo costi” confligge con la cultura di CarePlus?&lt;/summary&gt;&lt;div&gt;Misura e premia il risparmio ma non cura, fiducia e affidabilità, che sono i valori su cui si regge la reputazione. Le persone imparano che ciò che conta è il numero, non il cliente.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 8 RIPENSARE ============ --&gt;
+&lt;section class=&quot;part sage&quot; id=&quot;ripensare&quot;&gt;
+  &lt;div class=&quot;num&quot;&gt;08&lt;/div&gt;
+  &lt;h2&gt;Ripensare il budget di CarePlus&lt;/h2&gt;
+  &lt;span class=&quot;src&quot;&gt;sintesi: dalle note del docente + elaborazione didattica&lt;/span&gt;
+  &lt;p&gt;Il caso si chiude con Emma che vuole “ripensare il modo in cui facciamo budget”. Le slide non danno una soluzione: le proposte qui sotto mettono insieme le indicazioni delle note del docente (partecipazione, trade-off espliciti, controllabilità, attenzione alla qualità) con strumenti classici del controllo di gestione.&lt;/p&gt;
+  &lt;div class=&quot;stepper&quot;&gt;
+    &lt;div class=&quot;steps-dots&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;1 Direzione&quot;&gt;&lt;h4&gt;1 · Il vertice fissa la direzione&lt;/h4&gt;&lt;p&gt;Priorità strategiche chiare (es. crescere nella nuova provincia &lt;em&gt;senza&lt;/em&gt; peggiorare la continuità dell&#x27;assistenza). È il ruolo che le note lasciano al top management.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;2 Domanda&quot;&gt;&lt;h4&gt;2 · Domanda e capacità insieme&lt;/h4&gt;&lt;p&gt;La previsione dei ricavi del commerciale viene verificata con operations e HR: quante ore si possono coprire con personale formato, e quando? Il revenue budget diventa un &lt;strong&gt;capacity-checked plan&lt;/strong&gt;.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;3 Trade-off&quot;&gt;&lt;h4&gt;3 · Trade-off scritti&lt;/h4&gt;&lt;p&gt;Ogni taglio o target ambizioso è accompagnato dall&#x27;effetto atteso sulla qualità e da chi lo monitora (sezione 3). Niente tagli uniformi dell&#x27;8%: si discute dove il costo crea valore.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;4 KPI&quot;&gt;&lt;h4&gt;4 · Misurare anche la qualità&lt;/h4&gt;&lt;p&gt;Accanto ai numeri finanziari, indicatori non finanziari (vedi tabella sotto), così che “ciò che non è misurato” smetta di essere sacrificato.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;5 Report&quot;&gt;&lt;h4&gt;5 · Report più giusti&lt;/h4&gt;&lt;p&gt;Flexible budget per separare volume ed efficienza; colonna controllabile / non controllabile; discussione degli scostamenti orientata a capire, non a colpevolizzare.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;6 Incentivi&quot;&gt;&lt;h4&gt;6 · Incentivi coerenti&lt;/h4&gt;&lt;p&gt;Abolire la regola che taglia il budget a chi risparmia (ratchet). Valutare il commerciale anche sui contratti effettivamente erogabili; introdurre obiettivi condivisi tra reparti.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot; data-label=&quot;7 Revisione&quot;&gt;&lt;h4&gt;7 · Rivedere in corso d&#x27;anno&lt;/h4&gt;&lt;p&gt;Previsioni aggiornate periodicamente (&lt;em&gt;rolling forecast&lt;/em&gt;, previsione “a scorrimento” che si estende sempre di alcuni mesi in avanti) invece di difendere a ogni costo un numero fissato a ottobre.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;stepnav&quot;&gt;&lt;button class=&quot;btn prev&quot; type=&quot;button&quot;&gt;← Indietro&lt;/button&gt;&lt;button class=&quot;btn next&quot; type=&quot;button&quot;&gt;Avanti →&lt;/button&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Un cruscotto bilanciato per CarePlus&lt;/h3&gt;
+  &lt;p class=&quot;small&quot;&gt;Proposta didattica: per ogni dimensione citata da Giulia e Sara un indicatore possibile e un responsabile.&lt;/p&gt;
+  &lt;div class=&quot;tblwrap&quot;&gt;&lt;table&gt;
+    &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Dimensione&lt;/th&gt;&lt;th&gt;Indicatore possibile&lt;/th&gt;&lt;th&gt;Chi lo influenza&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;Financial&lt;/td&gt;&lt;td&gt;Margine per contratto; costo del lavoro su flexible budget&lt;/td&gt;&lt;td&gt;Finance, tutti&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Continuity of care&lt;/td&gt;&lt;td&gt;% visite fatte dall&#x27;operatore abituale&lt;/td&gt;&lt;td&gt;Operations&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Responsiveness&lt;/td&gt;&lt;td&gt;Tempo medio di attesa al telefono; reclami ogni 1.000 ore&lt;/td&gt;&lt;td&gt;Customer service, operations&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Persone&lt;/td&gt;&lt;td&gt;Turnover; ore di formazione prima del primo servizio da soli; straordinari pro capite&lt;/td&gt;&lt;td&gt;HR, operations&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Crescita sostenibile&lt;/td&gt;&lt;td&gt;% nuovi contratti con conferma di capacità prima della firma&lt;/td&gt;&lt;td&gt;Commercial, operations&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Fiducia del cliente&lt;/td&gt;&lt;td&gt;Soddisfazione delle famiglie e dei comuni; rinnovi&lt;/td&gt;&lt;td&gt;Quality, tutti&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;&lt;/div&gt;
+  &lt;div class=&quot;ext&quot;&gt;&lt;p style=&quot;margin:0&quot;&gt;&lt;strong&gt;Beyond Budgeting.&lt;/strong&gt; Un filone di pratica manageriale nato con il Beyond Budgeting Round Table (Hope, Fraser, Bunce, 1998) propone di superare il budget annuale fisso: target relativi, previsioni a scorrimento, risorse allocate quando servono, manager responsabili di risultati competitivi anziché del rispetto del budget. Utile come termine di confronto per la domanda di Emma. Fonte: &lt;a href=&quot;https://www.bbrt.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;bbrt.org&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · sintesi finale&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;In tre frasi: che cosa è andato storto nel budget di CarePlus?&lt;/summary&gt;&lt;div&gt;È stato costruito top-down, senza integrare i vincoli di capacità e personale. È stato usato soprattutto come strumento di pressione e valutazione su indicatori di costo, con regole che punivano l&#x27;efficienza. Non misurava qualità, continuità e fiducia, quindi le ha sacrificate.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Perché separare (almeno in parte) il budget come piano dal budget come metro di valutazione?&lt;/summary&gt;&lt;div&gt;Perché se lo stesso numero serve a pianificare e a giudicare, i manager hanno l&#x27;incentivo a distorcerlo (slack, gaming). Separando le funzioni si ottengono informazioni più oneste per pianificare.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;Indica un indicatore non finanziario per ciascuno di: operations, HR, customer service.&lt;/summary&gt;&lt;div&gt;Operations: % visite con operatore abituale. HR: turnover o ore di formazione dei nuovi assunti. Customer service: tempo medio di attesa o reclami per 1.000 ore.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ FONTI ============ --&gt;
+&lt;section class=&quot;part slate&quot; id=&quot;fonti&quot;&gt;
+  &lt;div class=&quot;num&quot;&gt;∞&lt;/div&gt;
+  &lt;h2&gt;Per approfondire&lt;/h2&gt;
+  &lt;p&gt;Le slide di questa lezione sono un caso didattico e &lt;strong&gt;non citano autori, studi, norme o siti&lt;/strong&gt;. Le schede qui sotto sono quindi &lt;strong&gt;fonti esterne&lt;/strong&gt; scelte perché trattano i concetti che il caso mette in gioco. Sono indicazioni di studio da verificare sul testo originale.&lt;/p&gt;
+
+  &lt;div class=&quot;ref ext&quot;&gt;&lt;h4&gt;Chris Argyris, &lt;em&gt;The Impact of Budgets on People&lt;/em&gt; (Controllership Foundation, 1952)&lt;/h4&gt;
+    &lt;p class=&quot;why&quot;&gt;Ricerca qualitativa considerata da molti l&#x27;inizio della ricerca comportamentale in contabilità: mostra che i budget, se usati come strumento di pressione, generano tensione, ostilità e comportamenti disfunzionali. È la radice storica della tesi “i budget non sono neutrali”. Una copia è consultabile su HathiTrust.&lt;/p&gt;
+    &lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;https://catalog.hathitrust.org/Record/005306296&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;catalog.hathitrust.org: scheda dell&#x27;opera&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ref ext&quot;&gt;&lt;h4&gt;Anthony G. Hopwood, “An Empirical Study of the Role of Accounting Data in Performance Evaluation”, &lt;em&gt;Journal of Accounting Research&lt;/em&gt;, 10 (1972), pp. 156–182&lt;/h4&gt;
+    &lt;p class=&quot;why&quot;&gt;Classifica gli stili di valutazione (budget-constrained, profit-conscious, non-accounting) e mostra che la valutazione rigida sul budget aumenta tensione e manipolazione dei dati. Collega direttamente le sezioni 5 e 7: il problema non è il budget in sé, ma il modo in cui viene usato per giudicare.&lt;/p&gt;
+    &lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;https://www.jstor.org/stable/2489870&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;jstor.org/stable/2489870&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ref ext&quot;&gt;&lt;h4&gt;Michael Schiff &amp;amp; Arie Y. Lewin, “The Impact of People on Budgets”, &lt;em&gt;The Accounting Review&lt;/em&gt;, 45(2), 1970, pp. 259–268&lt;/h4&gt;
+    &lt;p class=&quot;why&quot;&gt;Articolo spesso citato come riferimento per il concetto di &lt;em&gt;budgetary slack&lt;/em&gt;: i manager che partecipano alla preparazione del budget tendono a inserire margini di sicurezza. Utile per la sezione 4 (partecipazione) e per i comportamenti della sezione 5.&lt;/p&gt;
+    &lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;https://scholars.duke.edu/display/pub1127261&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;scholars.duke.edu: scheda bibliografica&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ref ext&quot;&gt;&lt;h4&gt;Steven Kerr, “On the Folly of Rewarding A, While Hoping for B”, &lt;em&gt;Academy of Management Journal&lt;/em&gt;, 18(4), 1975, pp. 769–783&lt;/h4&gt;
+    &lt;p class=&quot;why&quot;&gt;Classico sulle organizzazioni che premiano comportamenti opposti a quelli che dicono di volere. È la diagnosi del commerciale di CarePlus (premiato sui ricavi mentre si “spera” in contratti erogabili) e della regola che punisce chi risparmia.&lt;/p&gt;
+    &lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;https://www.talkingaboutorganizations.com/e57-reward-systems-kerr/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;talkingaboutorganizations.com: discussione dell&#x27;articolo&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ref ext&quot;&gt;&lt;h4&gt;Michael C. Jensen, “Corporate Budgeting Is Broken — Let&#x27;s Fix It”, &lt;em&gt;Harvard Business Review&lt;/em&gt;, novembre 2001, pp. 94–101&lt;/h4&gt;
+    &lt;p class=&quot;why&quot;&gt;Sostiene che legare compensi e valutazioni al raggiungimento del budget spinge i manager a “mentire”: target bassi, risultati gonfiati, spese anticipate o rinviate. Propone di sganciare i premi dal budget. È il fondamento della proposta “separare piano e valutazione” della sezione 8.&lt;/p&gt;
+    &lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;https://www.library.hbs.edu/working-knowledge/why-corporate-budgeting-needs-to-be-fixed&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Harvard Business School Working Knowledge: sintesi&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ref ext&quot;&gt;&lt;h4&gt;Kenneth A. Merchant &amp;amp; Wim A. Van der Stede, &lt;em&gt;Management Control Systems: Performance Measurement, Evaluation and Incentives&lt;/em&gt; (Pearson, 4ª ed. 2017)&lt;/h4&gt;
+    &lt;p class=&quot;why&quot;&gt;Manuale di riferimento sul controllo di gestione: centri di responsabilità, controllo dei risultati finanziari, uso del budget nella valutazione e un capitolo dedicato ai fattori non controllabili (controllability principle). Approfondisce le sezioni 5 e 6.&lt;/p&gt;
+    &lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;https://akademika.no/okonomi-administrasjon-og-ledelse/management-control-systems/9781292110554&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;scheda del libro (ISBN 9781292110554)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ref ext&quot;&gt;&lt;h4&gt;J. L. Heskett, T. O. Jones, G. W. Loveman, W. E. Sasser Jr., L. A. Schlesinger, “Putting the Service-Profit Chain to Work”, &lt;em&gt;Harvard Business Review&lt;/em&gt;, marzo-aprile 1994&lt;/h4&gt;
+    &lt;p class=&quot;why&quot;&gt;Introduce la &lt;em&gt;service-profit chain&lt;/em&gt;: la qualità del lavoro interno genera dipendenti soddisfatti e fedeli, che producono valore per il cliente, fedeltà e infine crescita e profitto. È la versione “virtuosa” del ciclo della sezione 7 e argomenta la frase di Sara “people are the service”.&lt;/p&gt;
+    &lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Service%E2%80%93profit_chain&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wikipedia: Service–profit chain (voce introduttiva con riferimenti)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;ref ext&quot;&gt;&lt;h4&gt;Beyond Budgeting Round Table (BBRT): i principi del Beyond Budgeting&lt;/h4&gt;
+    &lt;p class=&quot;why&quot;&gt;Rete fondata nel 1998 da Jeremy Hope, Robin Fraser e Peter Bunce. Propone dodici principi, sei di leadership e sei di processo (obiettivi relativi, previsioni a scorrimento, risorse su richiesta, controlli basati sulla trasparenza) per superare il budget annuale fisso. È un riferimento per rispondere alla domanda finale di Emma.&lt;/p&gt;
+    &lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;https://www.bbrt.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;bbrt.org&lt;/a&gt; · &lt;a href=&quot;https://www.bbrt.org/wp-content/uploads/bb_principles.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PDF dei principi&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;&lt;div class=&quot;wrap&quot;&gt;
+  &lt;p&gt;Riassunto scritto da Claude a partire dalle slide: controlla sempre sul materiale.&lt;/p&gt;
+&lt;/div&gt;&lt;/footer&gt;
+
+&lt;script&gt;
+(function(){
+  /* tabs */
+  document.querySelectorAll(&#x27;.tabs&#x27;).forEach(function(t){
+    var btns=t.querySelectorAll(&#x27;.tablist button&#x27;),pans=t.querySelectorAll(&#x27;.tabpanel&#x27;);
+    btns.forEach(function(b,i){b.addEventListener(&#x27;click&#x27;,function(){
+      btns.forEach(function(x,j){x.setAttribute(&#x27;aria-selected&#x27;,i===j?&#x27;true&#x27;:&#x27;false&#x27;);pans[j].hidden=i!==j;});
+    });});
+  });
+  /* steppers */
+  document.querySelectorAll(&#x27;.stepper&#x27;).forEach(function(s){
+    var steps=s.querySelectorAll(&#x27;.step&#x27;),dots=s.querySelector(&#x27;.steps-dots&#x27;),prev=s.querySelector(&#x27;.prev&#x27;),next=s.querySelector(&#x27;.next&#x27;),cur=0;
+    steps.forEach(function(st,i){var b=document.createElement(&#x27;button&#x27;);b.type=&#x27;button&#x27;;b.textContent=st.dataset.label||(i+1);b.addEventListener(&#x27;click&#x27;,function(){go(i)});dots.appendChild(b);});
+    function go(i){cur=i;steps.forEach(function(st,j){st.hidden=j!==i});dots.querySelectorAll(&#x27;button&#x27;).forEach(function(b,j){b.classList.toggle(&#x27;on&#x27;,j===i)});prev.disabled=i===0;next.disabled=i===steps.length-1;}
+    prev.addEventListener(&#x27;click&#x27;,function(){if(cur&gt;0)go(cur-1)});next.addEventListener(&#x27;click&#x27;,function(){if(cur&lt;steps.length-1)go(cur+1)});
+    go(0);
+  });
+  /* flip cards */
+  document.querySelectorAll(&#x27;.flip button&#x27;).forEach(function(b){b.addEventListener(&#x27;click&#x27;,function(){b.classList.toggle(&#x27;open&#x27;);b.setAttribute(&#x27;aria-expanded&#x27;,b.classList.contains(&#x27;open&#x27;));});});
+  /* people pickers */
+  document.querySelectorAll(&#x27;[data-people]&#x27;).forEach(function(g){
+    var btns=g.querySelectorAll(&#x27;.person&#x27;),out=g.querySelector(&#x27;.pdetail&#x27;);
+    btns.forEach(function(b){b.addEventListener(&#x27;click&#x27;,function(){btns.forEach(function(x){x.classList.toggle(&#x27;on&#x27;,x===b)});out.innerHTML=b.querySelector(&#x27;template&#x27;).innerHTML;});});
+    if(btns[0])btns[0].click();
+  });
+  /* sorters */
+  document.querySelectorAll(&#x27;.sorter .row&#x27;).forEach(function(r){
+    r.querySelectorAll(&#x27;.opts button&#x27;).forEach(function(b){b.addEventListener(&#x27;click&#x27;,function(){
+      var ok=b.dataset.v===r.dataset.a;r.classList.toggle(&#x27;ok&#x27;,ok);r.classList.toggle(&#x27;ko&#x27;,!ok);
+    });});
+  });
+  /* active nav */
+  var links=document.querySelectorAll(&#x27;nav.top a&#x27;);
+  if(&#x27;IntersectionObserver&#x27; in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle(&#x27;on&#x27;,l.getAttribute(&#x27;href&#x27;)===&#x27;#&#x27;+e.target.id)});}});},{rootMargin:&#x27;-40% 0px -55% 0px&#x27;});
+    document.querySelectorAll(&#x27;section.part,header.hero&#x27;).forEach(function(s){io.observe(s)});
+  }
+  /* widgets registered by sections */
+  (window.__w||[]).forEach(function(f){f()});
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe></body></html>

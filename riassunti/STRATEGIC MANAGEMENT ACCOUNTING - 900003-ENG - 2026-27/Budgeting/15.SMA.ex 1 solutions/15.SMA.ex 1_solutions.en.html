@@ -1,0 +1,883 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Summary · 15.SMA.ex 1_solutions.pdf</title><link rel="icon" href="data:,">
+<style>html,body{margin:0;height:100%}body{display:flex;flex-direction:column}iframe{flex:1;border:0;width:100%}</style>
+</head><body><nav style="font:14px/1.4 system-ui,sans-serif;padding:6px 12px;text-align:right"><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Budgeting/15.SMA.ex%201%20solutions/15.SMA.ex%201_solutions.en.html" style="color:inherit;margin-right:.8em;font-weight:700">English</a><a href="/riassunti/STRATEGIC%20MANAGEMENT%20ACCOUNTING%20-%20900003-ENG%20-%202026-27/Budgeting/15.SMA.ex%201%20solutions/15.SMA.ex%201_solutions.html" style="color:inherit;margin-right:.8em;">Italiano</a></nav><iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" title="Summary · 15.SMA.ex 1_solutions.pdf"
+srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27;; style-src &#x27;unsafe-inline&#x27;; font-src &#x27;self&#x27;; img-src data:; form-action &#x27;none&#x27;; base-uri &#x27;none&#x27;&quot;&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Flexible Budgeting — Adger Corporation Exercise · Study canvas&lt;/title&gt;
+&lt;style&gt;
+@font-face{font-family:&quot;Newsreader&quot;;src:url(&quot;/static/fonts/newsreader-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:&quot;IBM Plex Sans&quot;;src:url(&quot;/static/fonts/ibm-plex-sans-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:100 700;font-style:normal;font-display:swap}
+:root{
+  --paper:oklch(97% 0.012 80);
+  --paper2:oklch(94.5% 0.016 78);
+  --ink:oklch(21% 0.014 60);
+  --ink2:oklch(42% 0.02 60);
+  --rule:oklch(86% 0.014 75);
+  --accent:oklch(50% 0.15 35);
+  --accent-bg:oklch(93% 0.035 35);
+  --sage:oklch(48% 0.08 150);  --sage-bg:oklch(94% 0.03 150);
+  --ochre:oklch(55% 0.11 85);  --ochre-bg:oklch(94.5% 0.04 85);
+  --slate:oklch(45% 0.07 250); --slate-bg:oklch(94% 0.025 250);
+  --brick:oklch(48% 0.13 25);  --brick-bg:oklch(94% 0.03 25);
+  --fav:oklch(48% 0.11 150); --unf:oklch(50% 0.16 28);
+  --shadow:0 1px 0 var(--rule), 0 8px 24px -16px oklch(30% 0.03 60 / .35);
+  --serif:&quot;Newsreader&quot;, Georgia, &quot;Times New Roman&quot;, serif;
+  --sans:&quot;IBM Plex Sans&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:oklch(20% 0.012 60);
+    --paper2:oklch(24.5% 0.014 60);
+    --ink:oklch(92% 0.014 80);
+    --ink2:oklch(74% 0.02 75);
+    --rule:oklch(36% 0.014 65);
+    --accent:oklch(70% 0.13 38);
+    --accent-bg:oklch(29% 0.045 35);
+    --sage:oklch(76% 0.08 150);  --sage-bg:oklch(27% 0.03 150);
+    --ochre:oklch(80% 0.1 85);   --ochre-bg:oklch(28% 0.035 85);
+    --slate:oklch(76% 0.07 250); --slate-bg:oklch(27% 0.03 250);
+    --brick:oklch(74% 0.11 25);  --brick-bg:oklch(28% 0.04 25);
+    --fav:oklch(76% 0.11 150); --unf:oklch(73% 0.14 28);
+    --shadow:0 1px 0 var(--rule), 0 8px 24px -16px #000;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.62;-webkit-text-size-adjust:100%}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:300;margin:.2em 0 .25em}
+h1 em{font-style:italic;color:var(--accent);font-weight:400}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin:0 0 .4em;font-weight:400}
+h3{font-size:1.38rem;margin:1.6em 0 .5em}
+h4{font-size:1.1rem;margin:1.2em 0 .3em;font-weight:600}
+p{margin:.6em 0}
+a{color:var(--accent)}
+small,.muted{color:var(--ink2)}
+code,.mono{font-family:ui-monospace,&quot;SFMono-Regular&quot;,Menlo,Consolas,monospace;font-size:.92em}
+.num{font-variant-numeric:tabular-nums}
+/* hero */
+header.hero{border-bottom:1px solid var(--rule);padding:48px 0 26px;background:
+  radial-gradient(1200px 400px at 85% -10%, var(--accent-bg), transparent 70%)}
+.kicker{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.lede{font-family:var(--serif);font-size:1.3rem;color:var(--ink2);max-width:42em;font-weight:350}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:.88rem;color:var(--ink2)}
+.meta span{border-left:2px solid var(--rule);padding-left:10px}
+/* toc */
+nav.toc{position:sticky;top:0;z-index:20;background:color-mix(in oklch, var(--paper) 92%, transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:thin}
+nav.toc a{white-space:nowrap;text-decoration:none;color:var(--ink2);font-size:.84rem;padding:5px 10px;border-radius:99px}
+nav.toc a:hover,nav.toc a.on{background:var(--accent-bg);color:var(--accent)}
+/* sections */
+section{padding:56px 0 30px;border-bottom:1px solid var(--rule)}
+section[data-hue]{--h:var(--accent);--hb:var(--accent-bg)}
+section[data-hue=sage]{--h:var(--sage);--hb:var(--sage-bg)}
+section[data-hue=ochre]{--h:var(--ochre);--hb:var(--ochre-bg)}
+section[data-hue=slate]{--h:var(--slate);--hb:var(--slate-bg)}
+section[data-hue=brick]{--h:var(--brick);--hb:var(--brick-bg)}
+.sec-n{font-family:var(--serif);font-style:italic;color:var(--h);font-size:1.05rem}
+.sec-n::before{content:&quot;&quot;;display:inline-block;width:34px;height:3px;background:var(--h);vertical-align:middle;margin-right:10px;border-radius:2px}
+.src{display:inline-block;font-size:.74rem;letter-spacing:.04em;padding:2px 8px;border-radius:99px;background:var(--hb);color:var(--h);font-weight:600;margin-left:4px;vertical-align:2px}
+.ext{display:inline-block;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1px dashed var(--accent);color:var(--accent);font-weight:600}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:760px){.grid2,.grid3{grid-template-columns:1fr}}
+.card{background:var(--paper2);border:1px solid var(--rule);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+.card.tint{background:var(--hb);border-color:transparent}
+.card h4{margin-top:0}
+.def{border-left:4px solid var(--h);background:var(--hb);padding:12px 16px;border-radius:0 12px 12px 0;margin:16px 0}
+.def b:first-child{font-family:var(--serif);font-size:1.08rem}
+.note{border:1px solid var(--rule);border-radius:12px;padding:12px 16px;margin:16px 0;font-size:.95rem}
+.note.warn{border-color:var(--accent);background:var(--accent-bg)}
+.formula{font-family:var(--serif);font-size:1.3rem;text-align:center;padding:14px;margin:14px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.formula .v{color:var(--h);font-style:italic}
+.term{font-style:italic;color:var(--h);font-weight:500}
+figure{margin:18px 0}
+figcaption{font-size:.85rem;color:var(--ink2);margin-top:6px}
+svg{max-width:100%;height:auto;display:block}
+svg text{font-family:var(--sans);fill:var(--ink)}
+/* tables */
+.tbl-wrap{overflow-x:auto;margin:14px 0;border:1px solid var(--rule);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:.93rem;font-variant-numeric:tabular-nums}
+th,td{padding:8px 12px;border-bottom:1px solid var(--rule);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+thead th{font-weight:600;background:var(--paper2);font-size:.82rem;letter-spacing:.02em}
+tr.tot td{font-weight:600;border-top:2px solid var(--ink2)}
+tr.sub td{color:var(--ink2);font-style:italic}
+.F{color:var(--fav);font-weight:600}.U{color:var(--unf);font-weight:600}
+/* tabs */
+.tabs{margin:16px 0}
+.tablist{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--rule)}
+.tablist button{font:inherit;font-size:.9rem;background:none;border:1px solid transparent;border-bottom:none;padding:8px 14px;border-radius:10px 10px 0 0;color:var(--ink2);cursor:pointer;margin-bottom:-1px}
+.tablist button[aria-selected=true]{background:var(--paper2);border-color:var(--rule);color:var(--h);font-weight:600}
+.tabpanel{border:1px solid var(--rule);border-top:none;border-radius:0 0 12px 12px;padding:14px 18px;background:var(--paper2)}
+.tabpanel[hidden]{display:none}
+/* details */
+details{border:1px solid var(--rule);border-radius:12px;margin:10px 0;background:var(--paper2)}
+details&gt;summary{cursor:pointer;padding:11px 16px;font-weight:500;list-style:none;position:relative;padding-right:40px}
+details&gt;summary::-webkit-details-marker{display:none}
+details&gt;summary::after{content:&quot;+&quot;;position:absolute;right:16px;top:8px;font-size:1.3rem;color:var(--h,var(--accent));transition:transform .2s}
+details[open]&gt;summary::after{transform:rotate(45deg)}
+details&gt;div{padding:0 16px 14px}
+/* quiz */
+.quiz{margin-top:30px;border-top:2px solid var(--h);padding-top:8px}
+.quiz h3{margin-top:.6em}
+.quiz h3::before{content:&quot;✎ &quot;;color:var(--h)}
+.quiz details&gt;summary{font-weight:400}
+.quiz details&gt;summary b{color:var(--h)}
+.quiz details&gt;div{border-top:1px dashed var(--rule);padding-top:10px}
+/* stepper */
+.stepper{border:1px solid var(--rule);border-radius:14px;overflow:hidden;background:var(--paper2);margin:18px 0}
+.stepper .bar{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--rule);background:var(--hb)}
+.stepper .dots{display:flex;gap:6px;flex:1;flex-wrap:wrap}
+.stepper .dots button{width:28px;height:28px;border-radius:50%;border:1px solid var(--h);background:transparent;color:var(--h);font:600 .78rem var(--sans);cursor:pointer}
+.stepper .dots button.on{background:var(--h);color:var(--paper)}
+.stepper .nav button,.btn{font:inherit;font-size:.88rem;border:1px solid var(--rule);background:var(--paper);color:var(--ink);padding:6px 12px;border-radius:99px;cursor:pointer}
+.stepper .nav button:disabled{opacity:.4;cursor:default}
+.step{padding:16px 20px;display:none}
+.step.on{display:block;animation:fade .3s}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
+/* slider */
+.ctrl{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:10px 0}
+.ctrl label{font-weight:600}
+input[type=range]{flex:1;min-width:180px;accent-color:var(--accent)}
+.out{font-family:var(--serif);font-size:1.6rem;color:var(--accent);min-width:2.5em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:12px 0}
+.kpi{background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:10px 12px}
+.kpi span{display:block;font-size:.76rem;color:var(--ink2);text-transform:uppercase;letter-spacing:.06em}
+.kpi b{font-family:var(--serif);font-size:1.35rem;font-weight:500}
+/* report */
+#report td,#report th{cursor:default;transition:background .15s}
+#report .hl{background:var(--accent-bg)}
+#report th.colA,#report td.colA{border-left:3px solid var(--slate)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.legend button{font:inherit;font-size:.82rem;border-radius:99px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);padding:5px 12px;cursor:pointer}
+.legend button.on{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+/* map */
+.map a{cursor:pointer}
+.map a rect{transition:transform .2s, filter .2s}
+.map a:hover rect,.map a:focus rect{filter:brightness(.95) drop-shadow(0 3px 6px oklch(30% 0.03 60 / .25))}
+.map a:focus{outline:none}
+.map a:focus-visible rect{stroke-width:3}
+/* refs */
+.ref{border-top:1px solid var(--rule);padding:14px 0}
+.ref h4{margin:.2em 0}
+footer{padding:36px 0 60px;color:var(--ink2);font-size:.9rem;text-align:center}
+footer p{font-family:var(--serif);font-style:italic;font-size:1.08rem;color:var(--ink)}
+.chip{display:inline-block;padding:1px 8px;border-radius:6px;font-size:.85em;font-weight:600}
+.chip.F{background:var(--sage-bg)}.chip.U{background:var(--brick-bg)}
+@media (max-width:560px){body{font-size:16px}.step{padding:14px}th,td{padding:7px 9px}}
+@media print{nav.toc{display:none}.step{display:block}details{break-inside:avoid}}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;header class=&quot;hero&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;kicker&quot;&gt;Budgeting · Exercise session 15 · Solutions&lt;/div&gt;
+    &lt;h1&gt;Flexible &lt;em&gt;Budgeting&lt;/em&gt;&lt;/h1&gt;
+    &lt;p class=&quot;lede&quot;&gt;The &lt;b&gt;Adger Corporation&lt;/b&gt; exercise: from the planning budget to the flexible budget, and on to the &lt;i&gt;Flexible Budget Performance Report&lt;/i&gt;, which separates what depends on the level of activity from what depends on prices and efficiency.&lt;/p&gt;
+    &lt;div class=&quot;meta&quot;&gt;&lt;span&gt;University of Bergamo — Department of Management&lt;/span&gt;&lt;span&gt;Prof. Silvia Pilonato&lt;/span&gt;&lt;span&gt;Source: &lt;i&gt;15.SMA.ex 1_solutions.pdf&lt;/i&gt; (18 slides)&lt;/span&gt;&lt;/div&gt;
+
+    &lt;figure class=&quot;map&quot; aria-label=&quot;Concept map of the lesson&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 800 410&quot; role=&quot;img&quot;&gt;
+        &lt;title&gt;Concept map: from cost formulas to the performance report&lt;/title&gt;
+        &lt;defs&gt;
+          &lt;marker id=&quot;ar&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto-start-reverse&quot;&gt;&lt;path d=&quot;M0,0 L10,5 L0,10 z&quot; fill=&quot;var(--ink2)&quot;/&gt;&lt;/marker&gt;
+        &lt;/defs&gt;
+        &lt;g stroke=&quot;var(--ink2)&quot; stroke-width=&quot;1.4&quot; fill=&quot;none&quot; marker-end=&quot;url(#ar)&quot;&gt;
+          &lt;path d=&quot;M330 70 C 230 90, 150 110, 130 140&quot;/&gt;
+          &lt;path d=&quot;M400 75 L 400 140&quot;/&gt;
+          &lt;path d=&quot;M470 70 C 570 90, 650 110, 670 140&quot; stroke-dasharray=&quot;4 4&quot;/&gt;
+          &lt;path d=&quot;M150 198 C 170 230, 200 240, 220 246&quot;/&gt;
+          &lt;path d=&quot;M380 198 C 360 230, 330 240, 312 246&quot;/&gt;
+          &lt;path d=&quot;M420 198 C 440 230, 470 240, 490 246&quot;/&gt;
+          &lt;path d=&quot;M650 198 C 630 230, 600 240, 580 246&quot;/&gt;
+          &lt;path d=&quot;M265 296 C 280 320, 320 335, 340 342&quot;/&gt;
+          &lt;path d=&quot;M535 296 C 520 320, 480 335, 460 342&quot;/&gt;
+        &lt;/g&gt;
+        &lt;g font-size=&quot;11&quot; fill=&quot;var(--ink2)&quot; font-style=&quot;italic&quot;&gt;
+          &lt;text x=&quot;205&quot; y=&quot;100&quot; style=&quot;fill:var(--ink2)&quot;&gt;planned q = 30&lt;/text&gt;
+          &lt;text x=&quot;408&quot; y=&quot;112&quot; style=&quot;fill:var(--ink2)&quot;&gt;actual q = 35&lt;/text&gt;
+          &lt;text x=&quot;560&quot; y=&quot;100&quot; style=&quot;fill:var(--ink2)&quot;&gt;accounting&lt;/text&gt;
+        &lt;/g&gt;
+        &lt;a href=&quot;#s1&quot; tabindex=&quot;0&quot;&gt;&lt;rect x=&quot;270&quot; y=&quot;22&quot; width=&quot;260&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--sage-bg)&quot; stroke=&quot;var(--sage)&quot; stroke-width=&quot;1.5&quot;/&gt;
+          &lt;text x=&quot;400&quot; y=&quot;45&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot; font-size=&quot;14&quot;&gt;Cost behaviour &amp;amp; cost formulas&lt;/text&gt;
+          &lt;text x=&quot;400&quot; y=&quot;63&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; style=&quot;fill:var(--ink2)&quot;&gt;fixed · variable · mixed — y = a + b·q&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#s5&quot; tabindex=&quot;0&quot;&gt;&lt;rect x=&quot;30&quot; y=&quot;142&quot; width=&quot;200&quot; height=&quot;56&quot; rx=&quot;12&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot; stroke-width=&quot;1.5&quot;/&gt;
+          &lt;text x=&quot;130&quot; y=&quot;166&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot; font-size=&quot;14&quot;&gt;Planning budget&lt;/text&gt;
+          &lt;text x=&quot;130&quot; y=&quot;185&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; style=&quot;fill:var(--ink2)&quot;&gt;Q10–Q13 · NOI 13,000&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#s3&quot; tabindex=&quot;0&quot;&gt;&lt;rect x=&quot;300&quot; y=&quot;142&quot; width=&quot;200&quot; height=&quot;56&quot; rx=&quot;12&quot; fill=&quot;var(--ochre-bg)&quot; stroke=&quot;var(--ochre)&quot; stroke-width=&quot;1.5&quot;/&gt;
+          &lt;text x=&quot;400&quot; y=&quot;166&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot; font-size=&quot;14&quot;&gt;Flexible budget&lt;/text&gt;
+          &lt;text x=&quot;400&quot; y=&quot;185&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; style=&quot;fill:var(--ink2)&quot;&gt;Q1–Q5 · NOI 29,500&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#s2&quot; tabindex=&quot;0&quot;&gt;&lt;rect x=&quot;570&quot; y=&quot;142&quot; width=&quot;200&quot; height=&quot;56&quot; rx=&quot;12&quot; fill=&quot;var(--paper2)&quot; stroke=&quot;var(--ink2)&quot; stroke-width=&quot;1.5&quot;/&gt;
+          &lt;text x=&quot;670&quot; y=&quot;166&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot; font-size=&quot;14&quot;&gt;Actual results&lt;/text&gt;
+          &lt;text x=&quot;670&quot; y=&quot;185&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; style=&quot;fill:var(--ink2)&quot;&gt;May data · NOI 18,500&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#s6&quot; tabindex=&quot;0&quot;&gt;&lt;rect x=&quot;160&quot; y=&quot;246&quot; width=&quot;210&quot; height=&quot;50&quot; rx=&quot;12&quot; fill=&quot;var(--slate-bg)&quot; stroke=&quot;var(--slate)&quot; stroke-width=&quot;1.5&quot; stroke-dasharray=&quot;5 3&quot;/&gt;
+          &lt;text x=&quot;265&quot; y=&quot;268&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot; font-size=&quot;13.5&quot;&gt;Activity variances&lt;/text&gt;
+          &lt;text x=&quot;265&quot; y=&quot;285&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; style=&quot;fill:var(--ink2)&quot;&gt;Q14–Q15 · volume effect&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#s4&quot; tabindex=&quot;0&quot;&gt;&lt;rect x=&quot;430&quot; y=&quot;246&quot; width=&quot;210&quot; height=&quot;50&quot; rx=&quot;12&quot; fill=&quot;var(--brick-bg)&quot; stroke=&quot;var(--brick)&quot; stroke-width=&quot;1.5&quot; stroke-dasharray=&quot;5 3&quot;/&gt;
+          &lt;text x=&quot;535&quot; y=&quot;268&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot; font-size=&quot;13.5&quot;&gt;Revenue &amp;amp; spending var.&lt;/text&gt;
+          &lt;text x=&quot;535&quot; y=&quot;285&quot; text-anchor=&quot;middle&quot; font-size=&quot;11&quot; style=&quot;fill:var(--ink2)&quot;&gt;Q6–Q9 · prices and efficiency&lt;/text&gt;&lt;/a&gt;
+        &lt;a href=&quot;#s7&quot; tabindex=&quot;0&quot;&gt;&lt;rect x=&quot;250&quot; y=&quot;342&quot; width=&quot;300&quot; height=&quot;52&quot; rx=&quot;12&quot; fill=&quot;var(--accent-bg)&quot; stroke=&quot;var(--accent)&quot; stroke-width=&quot;2&quot;/&gt;
+          &lt;text x=&quot;400&quot; y=&quot;365&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot; font-size=&quot;14.5&quot;&gt;Flexible Budget Performance Report&lt;/text&gt;
+          &lt;text x=&quot;400&quot; y=&quot;383&quot; text-anchor=&quot;middle&quot; font-size=&quot;11.5&quot; style=&quot;fill:var(--ink2)&quot;&gt;everything together, with the reconciliation&lt;/text&gt;&lt;/a&gt;
+      &lt;/svg&gt;
+      &lt;figcaption&gt;Concept map — click a box to jump to the section. Dashed arrows indicate a comparison, solid arrows a calculation.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;nav class=&quot;toc&quot; aria-label=&quot;Contents&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;a href=&quot;#s1&quot;&gt;1 · Concepts&lt;/a&gt;&lt;a href=&quot;#s2&quot;&gt;2 · Adger data&lt;/a&gt;&lt;a href=&quot;#s3&quot;&gt;3 · Flexible budget&lt;/a&gt;&lt;a href=&quot;#s4&quot;&gt;4 · Spending var.&lt;/a&gt;&lt;a href=&quot;#s5&quot;&gt;5 · Planning budget&lt;/a&gt;&lt;a href=&quot;#s6&quot;&gt;6 · Activity var.&lt;/a&gt;&lt;a href=&quot;#s7&quot;&gt;7 · Report&lt;/a&gt;&lt;a href=&quot;#s8&quot;&gt;8 · Connections&lt;/a&gt;&lt;a href=&quot;#s9&quot;&gt;Further reading&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+&lt;!-- ============ 1 CONCETTI ============ --&gt;
+&lt;section id=&quot;s1&quot; data-hue=&quot;sage&quot;&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-n&quot;&gt;Part 1&lt;/div&gt;
+  &lt;h2&gt;The basics: budgets, activity and cost behaviour&lt;/h2&gt;
+  &lt;p&gt;The slides are the solutions to an exercise and take the theory for granted. Here we reconstruct it. Three ideas are needed: &lt;b&gt;what a budget is&lt;/b&gt;, &lt;b&gt;what the measure of activity is&lt;/b&gt; and &lt;b&gt;how costs and revenues behave&lt;/b&gt; when activity changes.&lt;/p&gt;
+
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Budget&lt;/b&gt; — a quantitative plan, expressed in monetary terms, for a future period (here: the month of May). It is used to &lt;i&gt;plan&lt;/i&gt; beforehand and to &lt;i&gt;control&lt;/i&gt; afterwards, by comparing what actually happened with what was expected.&lt;/div&gt;
+
+  &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Measure of activity&lt;/b&gt; (or &lt;i&gt;cost driver&lt;/i&gt;) — the quantity that “drives” costs and revenues. For Adger it is the number of &lt;span class=&quot;term&quot;&gt;customers served&lt;/span&gt;, denoted by &lt;b&gt;q&lt;/b&gt;. In the report on the slides: “Customers (q)”.&lt;/div&gt;
+
+  &lt;h3&gt;Three cost behaviours&lt;/h3&gt;
+  &lt;div class=&quot;grid3&quot;&gt;
+    &lt;figure class=&quot;card&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 220 150&quot; aria-label=&quot;Fixed cost&quot;&gt;
+        &lt;line x1=&quot;30&quot; y1=&quot;130&quot; x2=&quot;210&quot; y2=&quot;130&quot; stroke=&quot;var(--ink2)&quot;/&gt;&lt;line x1=&quot;30&quot; y1=&quot;130&quot; x2=&quot;30&quot; y2=&quot;15&quot; stroke=&quot;var(--ink2)&quot;/&gt;
+        &lt;line x1=&quot;30&quot; y1=&quot;70&quot; x2=&quot;205&quot; y2=&quot;70&quot; stroke=&quot;var(--sage)&quot; stroke-width=&quot;3&quot;/&gt;
+        &lt;text x=&quot;205&quot; y=&quot;145&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; style=&quot;fill:var(--ink2)&quot;&gt;q&lt;/text&gt;
+        &lt;text x=&quot;36&quot; y=&quot;62&quot; font-size=&quot;11.5&quot;&gt;y = a&lt;/text&gt;
+      &lt;/svg&gt;
+      &lt;h4&gt;&lt;span class=&quot;term&quot;&gt;Fixed cost&lt;/span&gt;&lt;/h4&gt;
+      &lt;p&gt;Does not change as q varies (within the relevant range). Adger: &lt;b&gt;other expenses of $36,000&lt;/b&gt; per month.&lt;/p&gt;
+    &lt;/figure&gt;
+    &lt;figure class=&quot;card&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 220 150&quot; aria-label=&quot;Variable cost&quot;&gt;
+        &lt;line x1=&quot;30&quot; y1=&quot;130&quot; x2=&quot;210&quot; y2=&quot;130&quot; stroke=&quot;var(--ink2)&quot;/&gt;&lt;line x1=&quot;30&quot; y1=&quot;130&quot; x2=&quot;30&quot; y2=&quot;15&quot; stroke=&quot;var(--ink2)&quot;/&gt;
+        &lt;line x1=&quot;30&quot; y1=&quot;130&quot; x2=&quot;200&quot; y2=&quot;25&quot; stroke=&quot;var(--ochre)&quot; stroke-width=&quot;3&quot;/&gt;
+        &lt;text x=&quot;205&quot; y=&quot;145&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; style=&quot;fill:var(--ink2)&quot;&gt;q&lt;/text&gt;
+        &lt;text x=&quot;120&quot; y=&quot;100&quot; font-size=&quot;11.5&quot;&gt;y = b·q&lt;/text&gt;
+      &lt;/svg&gt;
+      &lt;h4&gt;&lt;span class=&quot;term&quot;&gt;Variable cost&lt;/span&gt;&lt;/h4&gt;
+      &lt;p&gt;Proportional to q, with a constant cost per unit &lt;b&gt;b&lt;/b&gt;. Adger: &lt;b&gt;travel expenses of $600&lt;/b&gt; per customer.&lt;/p&gt;
+    &lt;/figure&gt;
+    &lt;figure class=&quot;card&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 220 150&quot; aria-label=&quot;Mixed cost&quot;&gt;
+        &lt;line x1=&quot;30&quot; y1=&quot;130&quot; x2=&quot;210&quot; y2=&quot;130&quot; stroke=&quot;var(--ink2)&quot;/&gt;&lt;line x1=&quot;30&quot; y1=&quot;130&quot; x2=&quot;30&quot; y2=&quot;15&quot; stroke=&quot;var(--ink2)&quot;/&gt;
+        &lt;line x1=&quot;30&quot; y1=&quot;88&quot; x2=&quot;205&quot; y2=&quot;88&quot; stroke=&quot;var(--sage)&quot; stroke-dasharray=&quot;4 4&quot;/&gt;
+        &lt;line x1=&quot;30&quot; y1=&quot;88&quot; x2=&quot;200&quot; y2=&quot;22&quot; stroke=&quot;var(--brick)&quot; stroke-width=&quot;3&quot;/&gt;
+        &lt;text x=&quot;205&quot; y=&quot;145&quot; font-size=&quot;11&quot; text-anchor=&quot;end&quot; style=&quot;fill:var(--ink2)&quot;&gt;q&lt;/text&gt;
+        &lt;text x=&quot;36&quot; y=&quot;104&quot; font-size=&quot;11&quot; style=&quot;fill:var(--ink2)&quot;&gt;a (fixed part)&lt;/text&gt;
+        &lt;text x=&quot;100&quot; y=&quot;44&quot; font-size=&quot;11.5&quot;&gt;y = a + b·q&lt;/text&gt;
+      &lt;/svg&gt;
+      &lt;h4&gt;&lt;span class=&quot;term&quot;&gt;Mixed cost&lt;/span&gt;&lt;/h4&gt;
+      &lt;p&gt;A mixed (semi-variable) cost has a fixed part plus a variable part. Adger: &lt;b&gt;salaries &amp;amp; wages of $50,000 + $1,100 per customer&lt;/b&gt;.&lt;/p&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;formula&quot;&gt;Cost formula: &amp;nbsp; &lt;span class=&quot;v&quot;&gt;y&lt;/span&gt; = &lt;span class=&quot;v&quot;&gt;a&lt;/span&gt; + &lt;span class=&quot;v&quot;&gt;b&lt;/span&gt; · &lt;span class=&quot;v&quot;&gt;q&lt;/span&gt;&lt;/div&gt;
+  &lt;p class=&quot;muted&quot; style=&quot;text-align:center;margin-top:-6px&quot;&gt;a = &lt;span class=&quot;term&quot;&gt;fixed element per month&lt;/span&gt; · b = &lt;span class=&quot;term&quot;&gt;variable element per customer served&lt;/span&gt; · q = level of activity&lt;/p&gt;
+  &lt;p&gt;The slides use exactly these terms: every calculation shows “&lt;i&gt;Variable element per customer served (a)&lt;/i&gt;” and “&lt;i&gt;Fixed element per month&lt;/i&gt;”. Note that on the slides the letter &lt;b&gt;(a)&lt;/b&gt; denotes the &lt;i&gt;variable&lt;/i&gt; element and &lt;b&gt;(b)&lt;/b&gt; the activity, because they are only labels for the lines of the calculation. Here, by contrast, we use the textbook notation, a = fixed and b = variable. Revenue also follows a formula: &lt;b&gt;revenue = $5,000 · q&lt;/b&gt;.&lt;/p&gt;
+
+  &lt;h3&gt;Three columns, three “worlds”&lt;/h3&gt;
+  &lt;div class=&quot;tabs&quot; data-tabs&gt;
+    &lt;div class=&quot;tablist&quot; role=&quot;tablist&quot;&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;true&quot;&gt;Planning budget&lt;/button&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Flexible budget&lt;/button&gt;
+      &lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Actual results&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot; role=&quot;tabpanel&quot;&gt;
+      &lt;p&gt;&lt;b&gt;&lt;span class=&quot;term&quot;&gt;Planning budget&lt;/span&gt;&lt;/b&gt; (also called the &lt;i&gt;static budget&lt;/i&gt;): the budget prepared &lt;b&gt;before&lt;/b&gt; the period, based on the &lt;b&gt;expected&lt;/b&gt; level of activity. Adger had planned for &lt;b&gt;30 customers&lt;/b&gt;. It is “static” because it does not adjust to what actually happens.&lt;/p&gt;
+      &lt;p&gt;Limitation: comparing it directly with actual results mixes up two different things, namely “did we do more or less work?” and “did we spend well or badly?”.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot; role=&quot;tabpanel&quot; hidden&gt;
+      &lt;p&gt;&lt;b&gt;&lt;span class=&quot;term&quot;&gt;Flexible budget&lt;/span&gt;&lt;/b&gt;: an estimate of what revenues and costs &lt;b&gt;should have been&lt;/b&gt; given the &lt;b&gt;actual&lt;/b&gt; level of activity. It is prepared &lt;b&gt;after&lt;/b&gt; the period, by applying the same cost formulas to the actual q: for Adger, &lt;b&gt;35 customers&lt;/b&gt;.&lt;/p&gt;
+      &lt;p&gt;It is the “right” benchmark for evaluating managers on costs: it compares the actual cost with the cost that should have been incurred &lt;i&gt;for that volume&lt;/i&gt;.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tabpanel&quot; role=&quot;tabpanel&quot; hidden&gt;
+      &lt;p&gt;&lt;b&gt;&lt;span class=&quot;term&quot;&gt;Actual results&lt;/span&gt;&lt;/b&gt;: the revenues and costs actually recorded in the accounts at the end of the month. They are not derived from formulas; they are data.&lt;/p&gt;
+      &lt;p&gt;Adger in May: 35 customers, revenue of $160,000, costs of $141,500, &lt;span class=&quot;term&quot;&gt;net operating income&lt;/span&gt; (NOI) of $18,500.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Favorable (F) or Unfavorable (U)?&lt;/h3&gt;
+  &lt;p&gt;A &lt;span class=&quot;term&quot;&gt;variance&lt;/span&gt; is the difference between two columns. It is always written &lt;b&gt;as an absolute value&lt;/b&gt; with an F or U label, as on the slides (“15,000 U”, “500 F”).&lt;/p&gt;
+  &lt;div class=&quot;grid2&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Revenues&lt;/h4&gt;&lt;p&gt;Higher than the benchmark → &lt;span class=&quot;chip F&quot;&gt;F&lt;/span&gt;&lt;br&gt;Lower → &lt;span class=&quot;chip U&quot;&gt;U&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;&lt;h4&gt;Costs&lt;/h4&gt;&lt;p&gt;Lower than the benchmark → &lt;span class=&quot;chip F&quot;&gt;F&lt;/span&gt;&lt;br&gt;Higher → &lt;span class=&quot;chip U&quot;&gt;U&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;muted&quot;&gt;Rule of thumb: F = the effect on income is positive; U = the effect on income is negative.&lt;/p&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;1.&lt;/b&gt; Why is the planning budget not enough to evaluate May&#x27;s costs?&lt;/summary&gt;&lt;div&gt;Because it is built on 30 customers, whereas 35 customers were actually served. Variable costs &lt;i&gt;had&lt;/i&gt; to be higher, so a direct comparison would make a simple increase in volume look like “poor management”.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;2.&lt;/b&gt; Classify: salaries &amp;amp; wages, travel expenses, other expenses.&lt;/summary&gt;&lt;div&gt;Salaries &amp;amp; wages = &lt;b&gt;mixed&lt;/b&gt; (50,000 + 1,100q); travel = &lt;b&gt;variable&lt;/b&gt; (600q); other = &lt;b&gt;fixed&lt;/b&gt; (36,000).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;3.&lt;/b&gt; An actual cost of 19,000 against a budget of 21,000: F or U?&lt;/summary&gt;&lt;div&gt;&lt;b&gt;2,000 F&lt;/b&gt;: less was spent than expected, so the effect on income is positive (this is Q8).&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 2 DATI ============ --&gt;
+&lt;section id=&quot;s2&quot; data-hue=&quot;slate&quot;&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-n&quot;&gt;Part 2&lt;/div&gt;
+  &lt;h2&gt;The Adger Corporation data&lt;/h2&gt;
+  &lt;p&gt;Slide 2 asks you to answer &lt;b&gt;15 questions&lt;/b&gt; and to prepare the &lt;b&gt;Flexible Budget Performance Report&lt;/b&gt;. The text of the exercise is not included in the solutions PDF: the data below have been &lt;b&gt;reconstructed from the solutions&lt;/b&gt; (slides 3–18), and they are all consistent.&lt;/p&gt;
+
+  &lt;div class=&quot;grid2&quot;&gt;
+    &lt;div&gt;
+      &lt;h3 style=&quot;margin-top:.4em&quot;&gt;Cost formulas&lt;/h3&gt;
+      &lt;div class=&quot;tbl-wrap&quot;&gt;&lt;table&gt;
+        &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Item&lt;/th&gt;&lt;th&gt;Fixed / month&lt;/th&gt;&lt;th&gt;Variable / customer&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;&lt;td&gt;Revenue&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;td&gt;5,000&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Employee salaries &amp;amp; wages&lt;/td&gt;&lt;td&gt;50,000&lt;/td&gt;&lt;td&gt;1,100&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Travel expenses&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;td&gt;600&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Other expenses&lt;/td&gt;&lt;td&gt;36,000&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;h3 style=&quot;margin-top:.4em&quot;&gt;Activity and results for May&lt;/h3&gt;
+      &lt;div class=&quot;tbl-wrap&quot;&gt;&lt;table&gt;
+        &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Item&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;&lt;td&gt;Planned customers&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Actual customers&lt;/td&gt;&lt;td&gt;35&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Actual revenue&lt;/td&gt;&lt;td&gt;160,000&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Actual salaries &amp;amp; wages&lt;/td&gt;&lt;td&gt;88,000&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Actual travel&lt;/td&gt;&lt;td&gt;19,000&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Actual other&lt;/td&gt;&lt;td&gt;34,500&lt;/td&gt;&lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;muted&quot;&gt;Amounts in dollars ($), with a comma as the thousands separator, as on the slides.&lt;/p&gt;
+
+  &lt;div class=&quot;note&quot;&gt;&lt;b&gt;Map of the 15 questions.&lt;/b&gt; Q1–Q5 flexible budget · Q6–Q9 revenue and spending variances · Q10–Q13 planning budget · Q14–Q15 activity variances · last slide: complete performance report.&lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;1.&lt;/b&gt; Which information changes between the planning and the flexible budget? Which stays the same?&lt;/summary&gt;&lt;div&gt;Only &lt;b&gt;q&lt;/b&gt; changes (30 → 35). The cost formulas, i.e. the 5,000, 1,100, 600, 50,000 and 36,000, remain identical.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;2.&lt;/b&gt; What is Adger&#x27;s contribution margin per customer?&lt;/summary&gt;&lt;div&gt;5,000 − 1,100 − 600 = &lt;b&gt;$3,300&lt;/b&gt; per customer. It is not on the slides, but it helps a great deal: each additional customer adds $3,300 of income in the flexible budget.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 3 FLEXIBLE ============ --&gt;
+&lt;section id=&quot;s3&quot; data-hue=&quot;ochre&quot;&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-n&quot;&gt;Part 3 · Q1–Q5&lt;/div&gt;
+  &lt;h2&gt;Building the flexible budget (q = 35)&lt;/h2&gt;
+  &lt;p&gt;A single rule: &lt;b&gt;apply each cost formula to the actual level of activity&lt;/b&gt;. Step through the calculation.&lt;/p&gt;
+
+  &lt;div class=&quot;stepper&quot; data-stepper&gt;
+    &lt;div class=&quot;bar&quot;&gt;&lt;div class=&quot;dots&quot;&gt;&lt;/div&gt;&lt;div class=&quot;nav&quot;&gt;&lt;button data-prev&gt;← Back&lt;/button&gt; &lt;button data-next&gt;Next →&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;h4&gt;Q1 · Revenue&lt;/h4&gt;
+      &lt;p&gt;Variable element per customer served × actual activity&lt;/p&gt;
+      &lt;div class=&quot;formula&quot;&gt;5,000 × 35 = &lt;b&gt;$175,000&lt;/b&gt;&lt;/div&gt;
+      &lt;p class=&quot;muted&quot;&gt;Revenue is purely variable: each customer served brings in $5,000.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;h4&gt;Q2 · Employee salaries &amp;amp; wages&lt;/h4&gt;
+      &lt;p&gt;Mixed cost: variable part + fixed part.&lt;/p&gt;
+      &lt;div class=&quot;formula&quot;&gt;1,100 × 35 = 38,500 &amp;nbsp;→&amp;nbsp; 38,500 + 50,000 = &lt;b&gt;$88,500&lt;/b&gt;&lt;/div&gt;
+      &lt;p class=&quot;muted&quot;&gt;Common mistake: forgetting the fixed 50,000 or, conversely, multiplying it by q.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;h4&gt;Q3 · Travel expenses&lt;/h4&gt;
+      &lt;div class=&quot;formula&quot;&gt;600 × 35 = &lt;b&gt;$21,000&lt;/b&gt;&lt;/div&gt;
+      &lt;p class=&quot;muted&quot;&gt;Purely variable.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;h4&gt;Q4 · Other expenses&lt;/h4&gt;
+      &lt;p&gt;Fixed cost: the flexible budget includes the &lt;i&gt;fixed element per month&lt;/i&gt;, whatever the value of q.&lt;/p&gt;
+      &lt;div class=&quot;formula&quot;&gt;&lt;b&gt;$36,000&lt;/b&gt;&lt;/div&gt;
+      &lt;p class=&quot;muted&quot;&gt;A fixed cost is the same in the planning and the flexible budget: this is why its activity variance will be 0 (Q15).&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;step&quot;&gt;&lt;h4&gt;Q5 · Net operating income&lt;/h4&gt;
+      &lt;div class=&quot;tbl-wrap&quot;&gt;&lt;table&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;&lt;td&gt;Revenue&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;175,000&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Employee salaries &amp;amp; wages&lt;/td&gt;&lt;td&gt;88,500&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Travel expenses&lt;/td&gt;&lt;td&gt;21,000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Other expenses&lt;/td&gt;&lt;td&gt;36,000&lt;/td&gt;&lt;td&gt;145,500&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;29,500&lt;/td&gt;&lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;&lt;/div&gt;
+      &lt;p class=&quot;muted&quot;&gt;Quick check using the margin: 3,300 × 35 − (50,000 + 36,000) = 115,500 − 86,000 = 29,500 ✓&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Lab: the flexible budget “flexes”&lt;/h3&gt;
+  &lt;p&gt;Move the slider: the cost formulas stay fixed, only q changes. The lines show revenue and total expenses. The point where they cross is the break-even point.&lt;/p&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;ctrl&quot;&gt;&lt;label for=&quot;qr&quot;&gt;Customers served (q)&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;qr&quot; min=&quot;0&quot; max=&quot;50&quot; step=&quot;1&quot; value=&quot;35&quot;&gt;&lt;span class=&quot;out num&quot; id=&quot;qv&quot;&gt;35&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;kpis&quot;&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Revenue&lt;/span&gt;&lt;b class=&quot;num&quot; id=&quot;k-rev&quot;&gt;&lt;/b&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Salaries &amp;amp; wages&lt;/span&gt;&lt;b class=&quot;num&quot; id=&quot;k-sal&quot;&gt;&lt;/b&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Travel&lt;/span&gt;&lt;b class=&quot;num&quot; id=&quot;k-tra&quot;&gt;&lt;/b&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;Other&lt;/span&gt;&lt;b class=&quot;num&quot; id=&quot;k-oth&quot;&gt;&lt;/b&gt;&lt;/div&gt;
+      &lt;div class=&quot;kpi&quot;&gt;&lt;span&gt;NOI&lt;/span&gt;&lt;b class=&quot;num&quot; id=&quot;k-noi&quot;&gt;&lt;/b&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;svg id=&quot;flexchart&quot; viewBox=&quot;0 0 620 300&quot; aria-label=&quot;Chart of revenue and total costs as q varies&quot;&gt;&lt;/svg&gt;
+    &lt;p class=&quot;muted&quot; id=&quot;flexnote&quot;&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;1.&lt;/b&gt; If Adger had served 40 customers, what would salaries &amp;amp; wages be in the flexible budget?&lt;/summary&gt;&lt;div&gt;50,000 + 1,100 × 40 = &lt;b&gt;$94,000&lt;/b&gt;.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;2.&lt;/b&gt; And the flexible budget NOI at 40 customers?&lt;/summary&gt;&lt;div&gt;3,300 × 40 − 86,000 = &lt;b&gt;$46,000&lt;/b&gt; (try it with the slider).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;3.&lt;/b&gt; Why are “other expenses” 36,000 at both 30 and 35 customers?&lt;/summary&gt;&lt;div&gt;Because it is a fixed cost: its cost formula does not contain q.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- ============ 4 SPENDING ============ --&gt;
+&lt;section id=&quot;s4&quot; data-hue=&quot;brick&quot;&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-n&quot;&gt;Part 4 · Q6–Q9&lt;/div&gt;
+  &lt;h2&gt;Revenue variance and spending variances&lt;/h2&gt;
+  &lt;p&gt;We now compare &lt;b&gt;actual results&lt;/b&gt; with the &lt;b&gt;flexible budget&lt;/b&gt;. They have &lt;b&gt;the same q (35)&lt;/b&gt;, so the volume effect has already been removed: what remains depends on &lt;b&gt;prices, efficiency and spending control&lt;/b&gt;.&lt;/p&gt;
+  &lt;div class=&quot;formula&quot;&gt;Revenue / Spending variance = &lt;span class=&quot;v&quot;&gt;Actual results&lt;/span&gt; − &lt;span class=&quot;v&quot;&gt;Flexible budget&lt;/span&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;grid2&quot;&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Revenue variance&lt;/b&gt; — the difference between actual revenue and the revenue that should have been earned at the actual level of activity. Higher actual revenue → F.&lt;/div&gt;
+    &lt;div class=&quot;def&quot;&gt;&lt;b&gt;Spending variance&lt;/b&gt; — the difference between the actual cost and the cost that should have been incurred at the actual level of activity. Lower actual cost → F.&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;figure class=&quot;card&quot;&gt;
+    &lt;svg viewBox=&quot;0 0 640 235&quot; aria-label=&quot;Comparison of actual results and flexible budget&quot;&gt;
+      &lt;g font-size=&quot;12&quot;&gt;
+        &lt;text x=&quot;160&quot; y=&quot;16&quot; text-anchor=&quot;end&quot; style=&quot;fill:var(--ink2)&quot;&gt;$ thousands&lt;/text&gt;
+        &lt;rect x=&quot;370&quot; y=&quot;5&quot; width=&quot;12&quot; height=&quot;10&quot; rx=&quot;2&quot; fill=&quot;var(--brick)&quot;/&gt;&lt;text x=&quot;388&quot; y=&quot;14&quot; font-size=&quot;11&quot;&gt;Actual&lt;/text&gt;
+        &lt;rect x=&quot;440&quot; y=&quot;5&quot; width=&quot;12&quot; height=&quot;10&quot; rx=&quot;2&quot; fill=&quot;var(--ochre)&quot; opacity=&quot;.55&quot;/&gt;&lt;text x=&quot;458&quot; y=&quot;14&quot; font-size=&quot;11&quot;&gt;Flexible budget&lt;/text&gt;
+      &lt;/g&gt;
+      &lt;g font-size=&quot;12.5&quot;&gt;
+        &lt;text x=&quot;160&quot; y=&quot;50&quot; text-anchor=&quot;end&quot;&gt;Revenue&lt;/text&gt;
+        &lt;rect x=&quot;170&quot; y=&quot;36&quot; width=&quot;380&quot; height=&quot;11&quot; rx=&quot;2&quot; fill=&quot;var(--ochre)&quot; opacity=&quot;.55&quot;/&gt;
+        &lt;rect x=&quot;170&quot; y=&quot;49&quot; width=&quot;347.4&quot; height=&quot;11&quot; rx=&quot;2&quot; fill=&quot;var(--brick)&quot;/&gt;
+        &lt;text x=&quot;556&quot; y=&quot;46&quot; font-size=&quot;11&quot;&gt;175&lt;/text&gt;&lt;text x=&quot;523&quot; y=&quot;59&quot; font-size=&quot;11&quot;&gt;160&lt;/text&gt;
+        &lt;text x=&quot;600&quot; y=&quot;54&quot; class=&quot;U&quot; style=&quot;fill:var(--unf)&quot; font-weight=&quot;700&quot;&gt;15 U&lt;/text&gt;
+
+        &lt;text x=&quot;160&quot; y=&quot;100&quot; text-anchor=&quot;end&quot;&gt;Salaries &amp;amp; w.&lt;/text&gt;
+        &lt;rect x=&quot;170&quot; y=&quot;86&quot; width=&quot;192.2&quot; height=&quot;11&quot; rx=&quot;2&quot; fill=&quot;var(--ochre)&quot; opacity=&quot;.55&quot;/&gt;
+        &lt;rect x=&quot;170&quot; y=&quot;99&quot; width=&quot;191.1&quot; height=&quot;11&quot; rx=&quot;2&quot; fill=&quot;var(--brick)&quot;/&gt;
+        &lt;text x=&quot;368&quot; y=&quot;96&quot; font-size=&quot;11&quot;&gt;88.5&lt;/text&gt;&lt;text x=&quot;368&quot; y=&quot;109&quot; font-size=&quot;11&quot;&gt;88&lt;/text&gt;
+        &lt;text x=&quot;600&quot; y=&quot;104&quot; style=&quot;fill:var(--fav)&quot; font-weight=&quot;700&quot;&gt;0.5 F&lt;/text&gt;
+
+        &lt;text x=&quot;160&quot; y=&quot;150&quot; text-anchor=&quot;end&quot;&gt;Travel&lt;/text&gt;
+        &lt;rect x=&quot;170&quot; y=&quot;136&quot; width=&quot;45.6&quot; height=&quot;11&quot; rx=&quot;2&quot; fill=&quot;var(--ochre)&quot; opacity=&quot;.55&quot;/&gt;
+        &lt;rect x=&quot;170&quot; y=&quot;149&quot; width=&quot;41.3&quot; height=&quot;11&quot; rx=&quot;2&quot; fill=&quot;var(--brick)&quot;/&gt;
+        &lt;text x=&quot;222&quot; y=&quot;146&quot; font-size=&quot;11&quot;&gt;21&lt;/text&gt;&lt;text x=&quot;218&quot; y=&quot;159&quot; font-size=&quot;11&quot;&gt;19&lt;/text&gt;
+        &lt;text x=&quot;600&quot; y=&quot;154&quot; style=&quot;fill:var(--fav)&quot; font-weight=&quot;700&quot;&gt;2 F&lt;/text&gt;
+
+        &lt;text x=&quot;160&quot; y=&quot;200&quot; text-anchor=&quot;end&quot;&gt;Other&lt;/text&gt;
+        &lt;rect x=&quot;170&quot; y=&quot;186&quot; width=&quot;78.2&quot; height=&quot;11&quot; rx=&quot;2&quot; fill=&quot;var(--ochre)&quot; opacity=&quot;.55&quot;/&gt;
+        &lt;rect x=&quot;170&quot; y=&quot;199&quot; width=&quot;74.9&quot; height=&quot;11&quot; rx=&quot;2&quot; fill=&quot;var(--brick)&quot;/&gt;
+        &lt;text x=&quot;255&quot; y=&quot;196&quot; font-size=&quot;11&quot;&gt;36&lt;/text&gt;&lt;text x=&quot;251&quot; y=&quot;209&quot; font-size=&quot;11&quot;&gt;34.5&lt;/text&gt;
+        &lt;text x=&quot;600&quot; y=&quot;204&quot; style=&quot;fill:var(--fav)&quot; font-weight=&quot;700&quot;&gt;1.5 F&lt;/text&gt;
+      &lt;/g&gt;
+      &lt;line x1=&quot;170&quot; y1=&quot;28&quot; x2=&quot;170&quot; y2=&quot;220&quot; stroke=&quot;var(--ink2)&quot;/&gt;
+    &lt;/svg&gt;
+    &lt;figcaption&gt;Q6–Q9 compared, values in $ thousands (data from slides 8–11).&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;div class=&quot;tbl-wrap&quot;&gt;&lt;table&gt;
+    &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Question&lt;/th&gt;&lt;th&gt;Actual results&lt;/th&gt;&lt;th&gt;Variance&lt;/th&gt;&lt;th&gt;Flexible budget&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;Q6 · Revenue&lt;/td&gt;&lt;td&gt;160,000&lt;/td&gt;&lt;td class=&quot;U&quot;&gt;15,000 U&lt;/td&gt;&lt;td&gt;175,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Q7 · Salaries &amp;amp; wages&lt;/td&gt;&lt;td&gt;88,000&lt;/td&gt;&lt;td class=&quot;F&quot;&gt;500 F&lt;/td&gt;&lt;td&gt;88,500&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Q8 · Travel expenses&lt;/td&gt;&lt;td&gt;19,000&lt;/td&gt;&lt;td class=&quot;F&quot;&gt;2,000 F&lt;/td&gt;&lt;td&gt;21,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Q9 · Other expenses&lt;/td&gt;&lt;td&gt;34,500&lt;/td&gt;&lt;td class=&quot;F&quot;&gt;1,500 F&lt;/td&gt;&lt;td&gt;36,000&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;&lt;/div&gt;
+
+  &lt;details&gt;&lt;summary&gt;How to interpret the 15,000 U on revenue&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;With 35 customers, Adger &lt;i&gt;should have&lt;/i&gt; earned $175,000 ($5,000 per customer). It earned $160,000, i.e. on average &lt;b&gt;≈ $4,571 per customer&lt;/b&gt; (160,000 / 35). Volume is not the issue, since it is the same in both columns: the problem is the &lt;b&gt;average price&lt;/b&gt; obtained, for instance because of discounts or a cheaper mix of services.&lt;/p&gt;
+    &lt;p class=&quot;muted&quot;&gt;The calculation of the average revenue and the possible causes are an added interpretation; they are not on the slides.&lt;/p&gt;
+  &lt;/div&gt;&lt;/details&gt;
+  &lt;details&gt;&lt;summary&gt;Why can a fixed cost have a spending variance?&lt;/summary&gt;&lt;div&gt;
+    &lt;p&gt;“Fixed” means that it does not depend on q, not that it is impossible to spend more or less. Other expenses were budgeted at 36,000 and turned out to be 34,500: &lt;b&gt;1,500 F&lt;/b&gt;. A spending variance on a fixed cost measures spending control only.&lt;/p&gt;
+  &lt;/div&gt;&lt;/details&gt;
+
+  &lt;h3&gt;Mini-game: F or U?&lt;/h3&gt;
+  &lt;div class=&quot;card&quot; id=&quot;fu-game&quot;&gt;
+    &lt;p class=&quot;muted&quot;&gt;Choose the correct label for each comparison of &lt;i&gt;actual vs flexible&lt;/i&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;1.&lt;/b&gt; What is the total spending variance on expenses?&lt;/summary&gt;&lt;div&gt;500 F + 2,000 F + 1,500 F = &lt;b&gt;4,000 F&lt;/b&gt; (141,500 actual against 145,500 in the flexible budget).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;2.&lt;/b&gt; What is the net effect of the revenue and spending variances on NOI?&lt;/summary&gt;&lt;div&gt;15,000 U − 4,000 F = &lt;b&gt;11,000 U&lt;/b&gt;: indeed, actual NOI (18,500) is 11,000 lower than the flexible budget NOI (29,500).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;3.&lt;/b&gt; Why would comparing actual travel (19,000) with the planning budget (18,000) be misleading?&lt;/summary&gt;&lt;div&gt;It would give 1,000 U, as if too much had been spent. In reality, with 35 customers, the “right” amount to spend was 21,000: Adger spent &lt;b&gt;2,000 less&lt;/b&gt; than it should have.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 5 PLANNING ============ --&gt;
+&lt;section id=&quot;s5&quot; data-hue=&quot;slate&quot;&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-n&quot;&gt;Part 5 · Q10–Q13&lt;/div&gt;
+  &lt;h2&gt;The planning budget (q = 30)&lt;/h2&gt;
+  &lt;p&gt;The same cost formulas, but with the &lt;b&gt;planned&lt;/b&gt; level of activity: 30 customers. This is the budget approved at the start of the period.&lt;/p&gt;
+  &lt;div class=&quot;tbl-wrap&quot;&gt;&lt;table&gt;
+    &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Question&lt;/th&gt;&lt;th&gt;Calculation&lt;/th&gt;&lt;th&gt;Planning (q=30)&lt;/th&gt;&lt;th&gt;Flexible (q=35)&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;Q10 · Revenue&lt;/td&gt;&lt;td&gt;5,000 × 30&lt;/td&gt;&lt;td&gt;150,000&lt;/td&gt;&lt;td&gt;175,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Q11 · Salaries &amp;amp; wages&lt;/td&gt;&lt;td&gt;50,000 + 1,100 × 30&lt;/td&gt;&lt;td&gt;83,000&lt;/td&gt;&lt;td&gt;88,500&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Q12 · Travel expenses&lt;/td&gt;&lt;td&gt;600 × 30&lt;/td&gt;&lt;td&gt;18,000&lt;/td&gt;&lt;td&gt;21,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Q13 · Other expenses&lt;/td&gt;&lt;td&gt;fixed&lt;/td&gt;&lt;td&gt;36,000&lt;/td&gt;&lt;td&gt;36,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Total expenses&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;137,000&lt;/td&gt;&lt;td&gt;145,500&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;13,000&lt;/td&gt;&lt;td&gt;29,500&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;&lt;/div&gt;
+  &lt;p class=&quot;muted&quot;&gt;The planning budget totals and NOI come from the final report (slide 18). Q11 on the slides: 1,100 × 30 = 33,000, plus 50,000 = 83,000.&lt;/p&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;1.&lt;/b&gt; Calculate the planning budget NOI using the contribution margin.&lt;/summary&gt;&lt;div&gt;3,300 × 30 − 86,000 = 99,000 − 86,000 = &lt;b&gt;$13,000&lt;/b&gt;.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;2.&lt;/b&gt; When is the planning budget prepared, and when the flexible budget?&lt;/summary&gt;&lt;div&gt;The planning budget &lt;b&gt;before&lt;/b&gt; the period (expected q); the flexible budget &lt;b&gt;after&lt;/b&gt; it, once the actual q is known.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 6 ACTIVITY ============ --&gt;
+&lt;section id=&quot;s6&quot; data-hue=&quot;slate&quot;&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-n&quot;&gt;Part 6 · Q14–Q15&lt;/div&gt;
+  &lt;h2&gt;Activity variances: the pure volume effect&lt;/h2&gt;
+  &lt;div class=&quot;formula&quot;&gt;Activity variance = &lt;span class=&quot;v&quot;&gt;Flexible budget&lt;/span&gt; − &lt;span class=&quot;v&quot;&gt;Planning budget&lt;/span&gt;&lt;/div&gt;
+  &lt;p&gt;The two columns use the same formulas and differ &lt;b&gt;only in q&lt;/b&gt; (35 versus 30). The activity variance therefore measures &lt;b&gt;only&lt;/b&gt; the effect of having served 5 more customers. For variable items it can also be calculated directly: &lt;b&gt;Δq × variable cost (or revenue) per unit&lt;/b&gt;.&lt;/p&gt;
+
+  &lt;div class=&quot;tbl-wrap&quot;&gt;&lt;table&gt;
+    &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Item&lt;/th&gt;&lt;th&gt;Flexible&lt;/th&gt;&lt;th&gt;Planning&lt;/th&gt;&lt;th&gt;Activity variance&lt;/th&gt;&lt;th&gt;Shortcut&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;Q14 · Revenue&lt;/td&gt;&lt;td&gt;175,000&lt;/td&gt;&lt;td&gt;150,000&lt;/td&gt;&lt;td class=&quot;F&quot;&gt;25,000 F&lt;/td&gt;&lt;td&gt;5 × 5,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Q15 · Salaries &amp;amp; wages&lt;/td&gt;&lt;td&gt;88,500&lt;/td&gt;&lt;td&gt;83,000&lt;/td&gt;&lt;td class=&quot;U&quot;&gt;5,500 U&lt;/td&gt;&lt;td&gt;5 × 1,100&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Q15 · Travel expenses&lt;/td&gt;&lt;td&gt;21,000&lt;/td&gt;&lt;td&gt;18,000&lt;/td&gt;&lt;td class=&quot;U&quot;&gt;3,000 U&lt;/td&gt;&lt;td&gt;5 × 600&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Q15 · Other expenses&lt;/td&gt;&lt;td&gt;36,000&lt;/td&gt;&lt;td&gt;36,000&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;fixed&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;29,500&lt;/td&gt;&lt;td&gt;13,000&lt;/td&gt;&lt;td class=&quot;F&quot;&gt;16,500 F&lt;/td&gt;&lt;td&gt;5 × 3,300&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;note warn&quot;&gt;&lt;b&gt;Be careful with the U label on costs.&lt;/b&gt; The 5,500 U on salaries and the 3,000 U on travel are &lt;b&gt;not&lt;/b&gt; waste: they are the normal consequence of serving more customers. What matters is the overall effect on income, &lt;b&gt;16,500 F&lt;/b&gt;. Efficiency is assessed through the spending variances (Part 4), not these.&lt;/div&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;1.&lt;/b&gt; Why is the activity variance of a fixed cost always zero?&lt;/summary&gt;&lt;div&gt;Because the fixed cost has the same amount in the flexible and the planning budget: its formula does not depend on q.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;2.&lt;/b&gt; If 28 customers had actually been served, what would the activity variance on revenue be?&lt;/summary&gt;&lt;div&gt;Flexible 140,000 − planning 150,000 = &lt;b&gt;10,000 U&lt;/b&gt; (−2 × 5,000).&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;3.&lt;/b&gt; What is the combined activity variance of salaries &amp;amp; wages and travel?&lt;/summary&gt;&lt;div&gt;5,500 U + 3,000 U = &lt;b&gt;8,500 U&lt;/b&gt; = total expenses 145,500 − 137,000.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 7 REPORT ============ --&gt;
+&lt;section id=&quot;s7&quot; data-hue=&quot;brick&quot;&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-n&quot;&gt;Part 7 · Slide 18&lt;/div&gt;
+  &lt;h2&gt;Flexible Budget Performance Report&lt;/h2&gt;
+  &lt;p&gt;The report lines up the five columns: &lt;b&gt;Actual → (Revenue &amp;amp; spending variances) → Flexible → (Activity variances) → Planning&lt;/b&gt;. The flexible budget sits in the middle and acts as a “bridge”. Use the buttons to highlight a comparison.&lt;/p&gt;
+  &lt;div class=&quot;legend&quot; id=&quot;rep-legend&quot;&gt;
+    &lt;button data-cols=&quot;0,1,2&quot;&gt;Actual vs flexible&lt;/button&gt;
+    &lt;button data-cols=&quot;2,3,4&quot;&gt;Flexible vs planning&lt;/button&gt;
+    &lt;button data-cols=&quot;0,4&quot;&gt;Actual vs planning&lt;/button&gt;
+    &lt;button data-cols=&quot;&quot;&gt;All&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tbl-wrap&quot;&gt;&lt;table id=&quot;report&quot;&gt;
+    &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Adger Corporation — May&lt;/th&gt;&lt;th&gt;Actual Results&lt;/th&gt;&lt;th&gt;Revenue &amp;amp; Spending Variances&lt;/th&gt;&lt;th&gt;Flexible Budget&lt;/th&gt;&lt;th&gt;Activity Variances&lt;/th&gt;&lt;th&gt;Planning Budget&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;Customers (q)&lt;/td&gt;&lt;td&gt;35&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;35&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Revenues (5,000q)&lt;/td&gt;&lt;td&gt;160,000&lt;/td&gt;&lt;td class=&quot;U&quot;&gt;15,000 U&lt;/td&gt;&lt;td&gt;175,000&lt;/td&gt;&lt;td class=&quot;F&quot;&gt;25,000 F&lt;/td&gt;&lt;td&gt;150,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;sub&quot;&gt;&lt;td&gt;Expenses&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Salaries &amp;amp; wages (50,000 + 1,100q)&lt;/td&gt;&lt;td&gt;88,000&lt;/td&gt;&lt;td class=&quot;F&quot;&gt;500 F&lt;/td&gt;&lt;td&gt;88,500&lt;/td&gt;&lt;td class=&quot;U&quot;&gt;5,500 U&lt;/td&gt;&lt;td&gt;83,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Travel expenses (600q)&lt;/td&gt;&lt;td&gt;19,000&lt;/td&gt;&lt;td class=&quot;F&quot;&gt;2,000 F&lt;/td&gt;&lt;td&gt;21,000&lt;/td&gt;&lt;td class=&quot;U&quot;&gt;3,000 U&lt;/td&gt;&lt;td&gt;18,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Other expenses (36,000)&lt;/td&gt;&lt;td&gt;34,500&lt;/td&gt;&lt;td class=&quot;F&quot;&gt;1,500 F&lt;/td&gt;&lt;td&gt;36,000&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;36,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Total expenses&lt;/td&gt;&lt;td&gt;141,500&lt;/td&gt;&lt;td class=&quot;F&quot;&gt;4,000 F&lt;/td&gt;&lt;td&gt;145,500&lt;/td&gt;&lt;td class=&quot;U&quot;&gt;8,500 U&lt;/td&gt;&lt;td&gt;137,000&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr class=&quot;tot&quot;&gt;&lt;td&gt;Net operating income&lt;/td&gt;&lt;td&gt;18,500&lt;/td&gt;&lt;td class=&quot;U&quot;&gt;11,000 U&lt;/td&gt;&lt;td&gt;29,500&lt;/td&gt;&lt;td class=&quot;F&quot;&gt;16,500 F&lt;/td&gt;&lt;td&gt;13,000&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;&lt;/div&gt;
+
+  &lt;h3&gt;The reconciliation&lt;/h3&gt;
+  &lt;div class=&quot;formula&quot;&gt;18,500 − 13,000 = &lt;b&gt;5,500 F&lt;/b&gt; = 16,500 F − 11,000 U&lt;/div&gt;
+  &lt;p&gt;This is the key message of slide 18. Actual NOI exceeds planned NOI by $5,500, but this figure “hides” two opposing stories:&lt;/p&gt;
+  &lt;div class=&quot;grid2&quot;&gt;
+    &lt;div class=&quot;card tint&quot; style=&quot;--hb:var(--sage-bg)&quot;&gt;&lt;h4&gt;+16,500 · volume effect&lt;/h4&gt;&lt;p&gt;5 more customers × $3,300 of margin. Good news from a sales perspective.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card tint&quot;&gt;&lt;h4&gt;−11,000 · price / spending effect&lt;/h4&gt;&lt;p&gt;Revenue per customer below standard (−15,000), only partly offset by costs kept under control (+4,000).&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;figure class=&quot;card&quot;&gt;
+    &lt;svg viewBox=&quot;0 0 760 350&quot; aria-label=&quot;Waterfall chart from planned NOI to actual NOI&quot;&gt;
+      &lt;line x1=&quot;40&quot; y1=&quot;290&quot; x2=&quot;740&quot; y2=&quot;290&quot; stroke=&quot;var(--ink2)&quot;/&gt;
+      &lt;g stroke=&quot;var(--ink2)&quot; stroke-dasharray=&quot;3 3&quot; stroke-width=&quot;1&quot;&gt;
+        &lt;line x1=&quot;110&quot; y1=&quot;205.5&quot; x2=&quot;128&quot; y2=&quot;205.5&quot;/&gt;&lt;line x1=&quot;178&quot; y1=&quot;43&quot; x2=&quot;196&quot; y2=&quot;43&quot;/&gt;&lt;line x1=&quot;246&quot; y1=&quot;78.75&quot; x2=&quot;264&quot; y2=&quot;78.75&quot;/&gt;
+        &lt;line x1=&quot;314&quot; y1=&quot;98.25&quot; x2=&quot;332&quot; y2=&quot;98.25&quot;/&gt;&lt;line x1=&quot;382&quot; y1=&quot;98.25&quot; x2=&quot;400&quot; y2=&quot;98.25&quot;/&gt;&lt;line x1=&quot;450&quot; y1=&quot;195.75&quot; x2=&quot;468&quot; y2=&quot;195.75&quot;/&gt;
+        &lt;line x1=&quot;518&quot; y1=&quot;192.5&quot; x2=&quot;536&quot; y2=&quot;192.5&quot;/&gt;&lt;line x1=&quot;586&quot; y1=&quot;179.5&quot; x2=&quot;604&quot; y2=&quot;179.5&quot;/&gt;&lt;line x1=&quot;654&quot; y1=&quot;169.75&quot; x2=&quot;672&quot; y2=&quot;169.75&quot;/&gt;
+      &lt;/g&gt;
+      &lt;rect x=&quot;60&quot; y=&quot;205.5&quot; width=&quot;50&quot; height=&quot;84.5&quot; fill=&quot;var(--slate)&quot; rx=&quot;2&quot;/&gt;
+      &lt;rect x=&quot;128&quot; y=&quot;43&quot; width=&quot;50&quot; height=&quot;162.5&quot; fill=&quot;var(--fav)&quot; rx=&quot;2&quot;/&gt;
+      &lt;rect x=&quot;196&quot; y=&quot;43&quot; width=&quot;50&quot; height=&quot;35.75&quot; fill=&quot;var(--unf)&quot; rx=&quot;2&quot;/&gt;
+      &lt;rect x=&quot;264&quot; y=&quot;78.75&quot; width=&quot;50&quot; height=&quot;19.5&quot; fill=&quot;var(--unf)&quot; rx=&quot;2&quot;/&gt;
+      &lt;rect x=&quot;332&quot; y=&quot;98.25&quot; width=&quot;50&quot; height=&quot;191.75&quot; fill=&quot;var(--ochre)&quot; rx=&quot;2&quot;/&gt;
+      &lt;rect x=&quot;400&quot; y=&quot;98.25&quot; width=&quot;50&quot; height=&quot;97.5&quot; fill=&quot;var(--unf)&quot; rx=&quot;2&quot;/&gt;
+      &lt;rect x=&quot;468&quot; y=&quot;192.5&quot; width=&quot;50&quot; height=&quot;3.25&quot; fill=&quot;var(--fav)&quot; rx=&quot;1&quot;/&gt;
+      &lt;rect x=&quot;536&quot; y=&quot;179.5&quot; width=&quot;50&quot; height=&quot;13&quot; fill=&quot;var(--fav)&quot; rx=&quot;2&quot;/&gt;
+      &lt;rect x=&quot;604&quot; y=&quot;169.75&quot; width=&quot;50&quot; height=&quot;9.75&quot; fill=&quot;var(--fav)&quot; rx=&quot;2&quot;/&gt;
+      &lt;rect x=&quot;672&quot; y=&quot;169.75&quot; width=&quot;50&quot; height=&quot;120.25&quot; fill=&quot;var(--brick)&quot; rx=&quot;2&quot;/&gt;
+      &lt;g font-size=&quot;11.5&quot; text-anchor=&quot;middle&quot; font-weight=&quot;600&quot;&gt;
+        &lt;text x=&quot;85&quot; y=&quot;198&quot;&gt;13,000&lt;/text&gt;&lt;text x=&quot;153&quot; y=&quot;36&quot;&gt;+25,000&lt;/text&gt;&lt;text x=&quot;221&quot; y=&quot;36&quot;&gt;−5,500&lt;/text&gt;
+        &lt;text x=&quot;289&quot; y=&quot;72&quot;&gt;−3,000&lt;/text&gt;&lt;text x=&quot;357&quot; y=&quot;91&quot;&gt;29,500&lt;/text&gt;&lt;text x=&quot;425&quot; y=&quot;91&quot;&gt;−15,000&lt;/text&gt;
+        &lt;text x=&quot;493&quot; y=&quot;186&quot;&gt;+500&lt;/text&gt;&lt;text x=&quot;561&quot; y=&quot;173&quot;&gt;+2,000&lt;/text&gt;&lt;text x=&quot;629&quot; y=&quot;163&quot;&gt;+1,500&lt;/text&gt;&lt;text x=&quot;697&quot; y=&quot;163&quot;&gt;18,500&lt;/text&gt;
+      &lt;/g&gt;
+      &lt;g font-size=&quot;10.5&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--ink2)&quot;&gt;
+        &lt;text x=&quot;85&quot; y=&quot;306&quot; style=&quot;fill:var(--ink2)&quot;&gt;Planning&lt;/text&gt;&lt;text x=&quot;85&quot; y=&quot;319&quot; style=&quot;fill:var(--ink2)&quot;&gt;NOI&lt;/text&gt;
+        &lt;text x=&quot;153&quot; y=&quot;306&quot; style=&quot;fill:var(--ink2)&quot;&gt;Revenue&lt;/text&gt;&lt;text x=&quot;153&quot; y=&quot;319&quot; style=&quot;fill:var(--ink2)&quot;&gt;activity&lt;/text&gt;
+        &lt;text x=&quot;221&quot; y=&quot;306&quot; style=&quot;fill:var(--ink2)&quot;&gt;Salaries&lt;/text&gt;&lt;text x=&quot;221&quot; y=&quot;319&quot; style=&quot;fill:var(--ink2)&quot;&gt;activity&lt;/text&gt;
+        &lt;text x=&quot;289&quot; y=&quot;306&quot; style=&quot;fill:var(--ink2)&quot;&gt;Travel&lt;/text&gt;&lt;text x=&quot;289&quot; y=&quot;319&quot; style=&quot;fill:var(--ink2)&quot;&gt;activity&lt;/text&gt;
+        &lt;text x=&quot;357&quot; y=&quot;306&quot; style=&quot;fill:var(--ink2)&quot;&gt;Flexible&lt;/text&gt;&lt;text x=&quot;357&quot; y=&quot;319&quot; style=&quot;fill:var(--ink2)&quot;&gt;NOI&lt;/text&gt;
+        &lt;text x=&quot;425&quot; y=&quot;306&quot; style=&quot;fill:var(--ink2)&quot;&gt;Revenue&lt;/text&gt;&lt;text x=&quot;425&quot; y=&quot;319&quot; style=&quot;fill:var(--ink2)&quot;&gt;variance&lt;/text&gt;
+        &lt;text x=&quot;493&quot; y=&quot;306&quot; style=&quot;fill:var(--ink2)&quot;&gt;Salaries&lt;/text&gt;&lt;text x=&quot;493&quot; y=&quot;319&quot; style=&quot;fill:var(--ink2)&quot;&gt;spending&lt;/text&gt;
+        &lt;text x=&quot;561&quot; y=&quot;306&quot; style=&quot;fill:var(--ink2)&quot;&gt;Travel&lt;/text&gt;&lt;text x=&quot;561&quot; y=&quot;319&quot; style=&quot;fill:var(--ink2)&quot;&gt;spending&lt;/text&gt;
+        &lt;text x=&quot;629&quot; y=&quot;306&quot; style=&quot;fill:var(--ink2)&quot;&gt;Other&lt;/text&gt;&lt;text x=&quot;629&quot; y=&quot;319&quot; style=&quot;fill:var(--ink2)&quot;&gt;spending&lt;/text&gt;
+        &lt;text x=&quot;697&quot; y=&quot;306&quot; style=&quot;fill:var(--ink2)&quot;&gt;Actual&lt;/text&gt;&lt;text x=&quot;697&quot; y=&quot;319&quot; style=&quot;fill:var(--ink2)&quot;&gt;NOI&lt;/text&gt;
+      &lt;/g&gt;
+      &lt;text x=&quot;221&quot; y=&quot;342&quot; font-size=&quot;11&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--slate)&quot; font-style=&quot;italic&quot;&gt;← activity variances: +16,500 →&lt;/text&gt;
+      &lt;text x=&quot;561&quot; y=&quot;342&quot; font-size=&quot;11&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--brick)&quot; font-style=&quot;italic&quot;&gt;← revenue &amp;amp; spending: −11,000 →&lt;/text&gt;
+    &lt;/svg&gt;
+    &lt;figcaption&gt;Waterfall chart built from the figures on slide 18: from planned NOI to actual NOI.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;details&gt;&lt;summary&gt;5-step procedure for preparing the report (for use in the exam)&lt;/summary&gt;&lt;div&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Write down the cost formula for each item (left-hand column, in brackets).&lt;/li&gt;
+      &lt;li&gt;Planning budget: apply the formulas to the planned q.&lt;/li&gt;
+      &lt;li&gt;Flexible budget: apply the formulas to the actual q.&lt;/li&gt;
+      &lt;li&gt;Actual results: copy the accounting data.&lt;/li&gt;
+      &lt;li&gt;Calculate the variances as absolute values with F/U: Actual vs Flexible (revenue &amp;amp; spending), Flexible vs Planning (activity). Check that the NOI variances agree with the reconciliation.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/div&gt;&lt;/details&gt;
+
+  &lt;div class=&quot;quiz&quot;&gt;
+    &lt;h3&gt;Self-check&lt;/h3&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;1.&lt;/b&gt; A manager says: “NOI is 5,500 above plan, so everything went well”. How do you respond?&lt;/summary&gt;&lt;div&gt;That the result is due to volume (+16,500 F). At the same volume, Adger lost 11,000, mainly on revenue per customer (15,000 U). Pricing and discounts need to be investigated.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;2.&lt;/b&gt; Total expenses: check the activity variances column.&lt;/summary&gt;&lt;div&gt;145,500 − 137,000 = 8,500 U = 5,500 U + 3,000 U + 0.&lt;/div&gt;&lt;/details&gt;
+    &lt;details&gt;&lt;summary&gt;&lt;b&gt;3.&lt;/b&gt; Which column would you use to evaluate the purchasing manager, and which for the sales director?&lt;/summary&gt;&lt;div&gt;For purchasing, the &lt;b&gt;spending variances&lt;/b&gt;, because the flexible budget has already neutralised volume. For sales, the &lt;b&gt;activity variances&lt;/b&gt;, for the additional customers served, and the &lt;b&gt;revenue variance&lt;/b&gt;, for the average price obtained.&lt;/div&gt;&lt;/details&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 8 COLLEGAMENTI ============ --&gt;
+&lt;section id=&quot;s8&quot; data-hue=&quot;sage&quot;&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-n&quot;&gt;Part 8&lt;/div&gt;
+  &lt;h2&gt;Connections with the rest of the course&lt;/h2&gt;
+  &lt;div class=&quot;note&quot;&gt;I looked for other files in the &lt;code&gt;corso/&lt;/code&gt; folder, but with the tools available I could not list its contents, and the file names I tried did not exist. &lt;b&gt;This page therefore does not draw on any other course files&lt;/b&gt;: all of the teaching content comes from &lt;i&gt;15.SMA.ex 1_solutions.pdf&lt;/i&gt;, plus the external sources marked as such.&lt;/div&gt;
+  &lt;p&gt;In general, management accounting courses place flexible budgeting as follows:&lt;/p&gt;
+  &lt;svg viewBox=&quot;0 0 760 120&quot; aria-label=&quot;Position of the topic within the course sequence&quot;&gt;
+    &lt;g font-size=&quot;13&quot; text-anchor=&quot;middle&quot;&gt;
+      &lt;rect x=&quot;10&quot; y=&quot;35&quot; width=&quot;160&quot; height=&quot;50&quot; rx=&quot;10&quot; fill=&quot;var(--paper2)&quot; stroke=&quot;var(--rule)&quot;/&gt;&lt;text x=&quot;90&quot; y=&quot;58&quot;&gt;Cost behaviour&lt;/text&gt;&lt;text x=&quot;90&quot; y=&quot;74&quot; font-size=&quot;11&quot; style=&quot;fill:var(--ink2)&quot;&gt;fixed / variable&lt;/text&gt;
+      &lt;rect x=&quot;200&quot; y=&quot;35&quot; width=&quot;160&quot; height=&quot;50&quot; rx=&quot;10&quot; fill=&quot;var(--paper2)&quot; stroke=&quot;var(--rule)&quot;/&gt;&lt;text x=&quot;280&quot; y=&quot;58&quot;&gt;Master budget&lt;/text&gt;&lt;text x=&quot;280&quot; y=&quot;74&quot; font-size=&quot;11&quot; style=&quot;fill:var(--ink2)&quot;&gt;planning budget&lt;/text&gt;
+      &lt;rect x=&quot;390&quot; y=&quot;30&quot; width=&quot;170&quot; height=&quot;60&quot; rx=&quot;10&quot; fill=&quot;var(--accent-bg)&quot; stroke=&quot;var(--accent)&quot; stroke-width=&quot;2&quot;/&gt;&lt;text x=&quot;475&quot; y=&quot;56&quot; font-weight=&quot;600&quot;&gt;Flexible budgeting&lt;/text&gt;&lt;text x=&quot;475&quot; y=&quot;74&quot; font-size=&quot;11&quot; style=&quot;fill:var(--ink2)&quot;&gt;this lesson&lt;/text&gt;
+      &lt;rect x=&quot;590&quot; y=&quot;35&quot; width=&quot;160&quot; height=&quot;50&quot; rx=&quot;10&quot; fill=&quot;var(--paper2)&quot; stroke=&quot;var(--rule)&quot;/&gt;&lt;text x=&quot;670&quot; y=&quot;58&quot;&gt;Standard costs&lt;/text&gt;&lt;text x=&quot;670&quot; y=&quot;74&quot; font-size=&quot;11&quot; style=&quot;fill:var(--ink2)&quot;&gt;price &amp;amp; quantity var.&lt;/text&gt;
+    &lt;/g&gt;
+    &lt;g stroke=&quot;var(--ink2)&quot; stroke-width=&quot;1.4&quot;&gt;&lt;line x1=&quot;170&quot; y1=&quot;60&quot; x2=&quot;198&quot; y2=&quot;60&quot; marker-end=&quot;url(#ar)&quot;/&gt;&lt;line x1=&quot;360&quot; y1=&quot;60&quot; x2=&quot;388&quot; y2=&quot;60&quot; marker-end=&quot;url(#ar)&quot;/&gt;&lt;line x1=&quot;560&quot; y1=&quot;60&quot; x2=&quot;588&quot; y2=&quot;60&quot; marker-end=&quot;url(#ar)&quot;/&gt;&lt;/g&gt;
+  &lt;/svg&gt;
+  &lt;p class=&quot;muted&quot;&gt;This sequence is taken from the table of contents of the Garrison–Noreen–Brewer textbook (ch. 9 “Flexible Budgets and Performance Analysis” and ch. 10 “Standard Costs and Variances”, &lt;span class=&quot;ext&quot;&gt;external source&lt;/span&gt;, see below). Check the course syllabus to confirm that the order is the same.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============ 9 APPROFONDIRE ============ --&gt;
+&lt;section id=&quot;s9&quot;&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div class=&quot;sec-n&quot;&gt;Further reading&lt;/div&gt;
+  &lt;h2&gt;Further reading&lt;/h2&gt;
+  &lt;p&gt;The slides &lt;b&gt;do not explicitly cite&lt;/b&gt; any authors, texts, standards or websites. The entries below are an &lt;span class=&quot;ext&quot;&gt;external source&lt;/span&gt;: I found them through web searches to put the exercise in context. Its case, terminology and report structure match the Garrison et al. textbook.&lt;/p&gt;
+
+  &lt;div class=&quot;ref&quot;&gt;
+    &lt;span class=&quot;ext&quot;&gt;external source&lt;/span&gt;
+    &lt;h4&gt;Garrison, Noreen, Brewer — &lt;i&gt;Managerial Accounting&lt;/i&gt; (McGraw Hill, 18th ed., ISE)&lt;/h4&gt;
+    &lt;p&gt;A standard international textbook on managerial accounting. Chapter 9, “Flexible Budgets and Performance Analysis”, introduces planning and flexible budgets, activity variances, revenue and spending variances, and the &lt;i&gt;flexible budget performance report&lt;/i&gt; with the same five columns as slide 18. It matters because the terminology used in the course comes from here. Check which edition the course adopts: chapter numbering changes from one edition to another.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://aus.magento.intl.prod.mheducation.com/managerial-accounting-ise-9781266382680-aus-group&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;McGraw Hill publisher page&lt;/a&gt; · &lt;a href=&quot;https://www.eyrolles.com/Loisirs/Livre/managerial-accounting-18th-ise-9781266248610&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Bookshop listing (18th ISE)&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;ref&quot;&gt;
+    &lt;span class=&quot;ext&quot;&gt;external source&lt;/span&gt;
+    &lt;h4&gt;McGraw Hill — Solutions Manual, Chapter 9 (Garrison)&lt;/h4&gt;
+    &lt;p&gt;Official solutions to the exercises in the chapter on flexible budgets. According to the search, it contains an exercise with the same amounts as Adger: a flexible budget with revenue of 175,000, salaries of 88,500, travel of 21,000 and other expenses of 36,000. Useful for practising on similar cases.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://highered.mheducation.com/sites/dl/free/0027162757/1029197/SMChap009.doc&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SMChap009.doc — highered.mheducation.com&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;ref&quot;&gt;
+    &lt;span class=&quot;ext&quot;&gt;external source&lt;/span&gt;
+    &lt;h4&gt;AccountingTools — “Flexible budget variance”&lt;/h4&gt;
+    &lt;p&gt;A short introductory entry on the variance between actual results and the flexible budget, with a definition and examples. Useful as a quick review of the &lt;i&gt;actual vs flexible&lt;/i&gt; logic. Note: other texts use “flexible budget variance” for what the course calls revenue and spending variances.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://accountingtools.com/articles/what-is-a-flexible-budget-variance.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;accountingtools.com&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;ref&quot;&gt;
+    &lt;span class=&quot;ext&quot;&gt;external source&lt;/span&gt;
+    &lt;h4&gt;McGraw Hill — textbook table of contents (Online Learning Center)&lt;/h4&gt;
+    &lt;p&gt;Chapter list for one edition of &lt;i&gt;Managerial Accounting&lt;/i&gt;: it shows where flexible budgets and standard costs fit in the sequence.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://highered.mheducation.com/sites/0077432312/information_center_view0/table_of_contents.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Table of contents — highered.mheducation.com&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;p&gt;Summary written by Claude from the slides: always check against the material.&lt;/p&gt;
+    &lt;div&gt;Parts marked &lt;span class=&quot;ext&quot;&gt;external source&lt;/span&gt; come from web searches, not from the slides.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+
+&lt;script&gt;
+(function(){
+  var fmt = function(n){ var s = Math.abs(Math.round(n)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, &quot;,&quot;); return (n &lt; 0 ? &quot;−&quot; : &quot;&quot;) + s; };
+  var NS = &quot;http://www.w3.org/2000/svg&quot;;
+
+  // Linguette
+  document.querySelectorAll(&quot;[data-tabs]&quot;).forEach(function(box){
+    var btns = box.querySelectorAll(&#x27;[role=tab]&#x27;), pans = box.querySelectorAll(&#x27;[role=tabpanel]&#x27;);
+    btns.forEach(function(b, i){
+      b.addEventListener(&quot;click&quot;, function(){
+        btns.forEach(function(x, j){ x.setAttribute(&quot;aria-selected&quot;, i === j); pans[j].hidden = i !== j; });
+      });
+    });
+  });
+
+  // Passi da scorrere
+  document.querySelectorAll(&quot;[data-stepper]&quot;).forEach(function(st){
+    var steps = st.querySelectorAll(&quot;.step&quot;), dots = st.querySelector(&quot;.dots&quot;), cur = 0;
+    var prev = st.querySelector(&quot;[data-prev]&quot;), next = st.querySelector(&quot;[data-next]&quot;);
+    steps.forEach(function(s, i){
+      var d = document.createElement(&quot;button&quot;);
+      d.textContent = &quot;Q&quot; + (i + 1); d.setAttribute(&quot;aria-label&quot;, &quot;Step &quot; + (i + 1));
+      d.addEventListener(&quot;click&quot;, function(){ go(i); });
+      dots.appendChild(d);
+    });
+    function go(i){
+      cur = i;
+      steps.forEach(function(s, j){ s.classList.toggle(&quot;on&quot;, j === i); dots.children[j].classList.toggle(&quot;on&quot;, j === i); });
+      prev.disabled = i === 0; next.disabled = i === steps.length - 1;
+    }
+    prev.addEventListener(&quot;click&quot;, function(){ if (cur &gt; 0) go(cur - 1); });
+    next.addEventListener(&quot;click&quot;, function(){ if (cur &lt; steps.length - 1) go(cur + 1); });
+    go(0);
+  });
+
+  // Grafico del flexible budget
+  var svg = document.getElementById(&quot;flexchart&quot;);
+  function X(q){ return 60 + q * 10.8; }
+  function Y(v){ return 260 - v * 0.00096; }
+  function el(tag, attrs, txt){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (txt != null) e.textContent = txt;
+    svg.appendChild(e); return e;
+  }
+  for (var v = 0; v &lt;= 250000; v += 50000){
+    el(&quot;line&quot;, {x1:60, x2:600, y1:Y(v), y2:Y(v), stroke:&quot;var(--rule)&quot;});
+    el(&quot;text&quot;, {x:54, y:Y(v) + 4, &quot;font-size&quot;:10.5, &quot;text-anchor&quot;:&quot;end&quot;, style:&quot;fill:var(--ink2)&quot;}, v / 1000 + &quot;k&quot;);
+  }
+  for (var q = 0; q &lt;= 50; q += 10){
+    el(&quot;text&quot;, {x:X(q), y:276, &quot;font-size&quot;:10.5, &quot;text-anchor&quot;:&quot;middle&quot;, style:&quot;fill:var(--ink2)&quot;}, q);
+  }
+  el(&quot;text&quot;, {x:600, y:293, &quot;font-size&quot;:11, &quot;text-anchor&quot;:&quot;end&quot;, style:&quot;fill:var(--ink2)&quot;}, &quot;customers served (q)&quot;);
+  el(&quot;line&quot;, {x1:60, x2:600, y1:Y(86000), y2:Y(86000), stroke:&quot;var(--sage)&quot;, &quot;stroke-dasharray&quot;:&quot;5 4&quot;});
+  el(&quot;text&quot;, {x:64, y:Y(86000) - 6, &quot;font-size&quot;:10.5, style:&quot;fill:var(--sage)&quot;}, &quot;fixed costs 86,000&quot;);
+  el(&quot;line&quot;, {x1:X(0), y1:Y(0), x2:X(50), y2:Y(250000), stroke:&quot;var(--ochre)&quot;, &quot;stroke-width&quot;:2.5});
+  el(&quot;line&quot;, {x1:X(0), y1:Y(86000), x2:X(50), y2:Y(86000 + 1700 * 50), stroke:&quot;var(--brick)&quot;, &quot;stroke-width&quot;:2.5});
+  el(&quot;text&quot;, {x:X(44), y:Y(220000) - 8, &quot;font-size&quot;:11.5, &quot;text-anchor&quot;:&quot;end&quot;, style:&quot;fill:var(--ochre)&quot;, &quot;font-weight&quot;:600}, &quot;Revenue 5,000q&quot;);
+  el(&quot;text&quot;, {x:X(50), y:Y(171000) + 18, &quot;font-size&quot;:11.5, &quot;text-anchor&quot;:&quot;end&quot;, style:&quot;fill:var(--brick)&quot;, &quot;font-weight&quot;:600}, &quot;Total expenses 86,000 + 1,700q&quot;);
+  var be = 86000 / 3300;
+  el(&quot;circle&quot;, {cx:X(be), cy:Y(5000 * be), r:4, fill:&quot;var(--ink)&quot;});
+  el(&quot;text&quot;, {x:X(be) + 8, y:Y(5000 * be) + 16, &quot;font-size&quot;:10.5, style:&quot;fill:var(--ink2)&quot;}, &quot;break-even ≈ 26.1&quot;);
+  el(&quot;line&quot;, {x1:X(30), x2:X(30), y1:20, y2:260, stroke:&quot;var(--slate)&quot;, &quot;stroke-dasharray&quot;:&quot;2 4&quot;});
+  el(&quot;text&quot;, {x:X(30) - 4, y:30, &quot;font-size&quot;:10.5, &quot;text-anchor&quot;:&quot;end&quot;, style:&quot;fill:var(--slate)&quot;}, &quot;plan: 30&quot;);
+  var gap = el(&quot;line&quot;, {&quot;stroke-width&quot;:6, &quot;stroke-linecap&quot;:&quot;round&quot;, opacity:.35});
+  var vline = el(&quot;line&quot;, {y1:20, y2:260, stroke:&quot;var(--accent)&quot;, &quot;stroke-width&quot;:1.5});
+  var d1 = el(&quot;circle&quot;, {r:5, fill:&quot;var(--ochre)&quot;}), d2 = el(&quot;circle&quot;, {r:5, fill:&quot;var(--brick)&quot;});
+  var lab = el(&quot;text&quot;, {&quot;font-size&quot;:11.5, &quot;font-weight&quot;:600});
+
+  var qr = document.getElementById(&quot;qr&quot;);
+  function upd(){
+    var q = +qr.value, rev = 5000 * q, sal = 50000 + 1100 * q, tra = 600 * q, oth = 36000, tot = sal + tra + oth, noi = rev - tot;
+    document.getElementById(&quot;qv&quot;).textContent = q;
+    document.getElementById(&quot;k-rev&quot;).textContent = fmt(rev);
+    document.getElementById(&quot;k-sal&quot;).textContent = fmt(sal);
+    document.getElementById(&quot;k-tra&quot;).textContent = fmt(tra);
+    document.getElementById(&quot;k-oth&quot;).textContent = fmt(oth);
+    var kn = document.getElementById(&quot;k-noi&quot;); kn.textContent = fmt(noi); kn.style.color = noi &gt;= 0 ? &quot;var(--fav)&quot; : &quot;var(--unf)&quot;;
+    var x = X(q);
+    vline.setAttribute(&quot;x1&quot;, x); vline.setAttribute(&quot;x2&quot;, x);
+    d1.setAttribute(&quot;cx&quot;, x); d1.setAttribute(&quot;cy&quot;, Y(rev));
+    d2.setAttribute(&quot;cx&quot;, x); d2.setAttribute(&quot;cy&quot;, Y(tot));
+    gap.setAttribute(&quot;x1&quot;, x); gap.setAttribute(&quot;x2&quot;, x); gap.setAttribute(&quot;y1&quot;, Y(rev)); gap.setAttribute(&quot;y2&quot;, Y(tot));
+    gap.setAttribute(&quot;stroke&quot;, noi &gt;= 0 ? &quot;var(--fav)&quot; : &quot;var(--unf)&quot;);
+    var right = q &gt; 38;
+    lab.setAttribute(&quot;x&quot;, right ? x - 8 : x + 8); lab.setAttribute(&quot;text-anchor&quot;, right ? &quot;end&quot; : &quot;start&quot;);
+    lab.setAttribute(&quot;y&quot;, (Y(rev) + Y(tot)) / 2 + 4);
+    lab.textContent = &quot;NOI &quot; + fmt(noi);
+    var n = &quot;&quot;;
+    if (q === 35) n = &quot;q = 35 is the actual level for May: these are exactly the flexible budget figures on the slides (Q1–Q5).&quot;;
+    else if (q === 30) n = &quot;q = 30 is the planned level: this gives the planning budget (Q10–Q13), NOI 13,000.&quot;;
+    else n = &quot;Compared with the planning budget (q = 30), the activity variance on NOI would be &quot; + fmt(Math.abs(3300 * (q - 30))) + (q &gt; 30 ? &quot; F&quot; : &quot; U&quot;) + &quot; (= &quot; + (q - 30) + &quot; × 3,300).&quot;;
+    document.getElementById(&quot;flexnote&quot;).textContent = n;
+  }
+  qr.addEventListener(&quot;input&quot;, upd); upd();
+
+  // Report: evidenzia le colonne
+  var rep = document.getElementById(&quot;report&quot;);
+  document.querySelectorAll(&quot;#rep-legend button&quot;).forEach(function(b){
+    b.addEventListener(&quot;click&quot;, function(){
+      document.querySelectorAll(&quot;#rep-legend button&quot;).forEach(function(x){ x.classList.toggle(&quot;on&quot;, x === b); });
+      var cols = b.dataset.cols === &quot;&quot; ? [] : b.dataset.cols.split(&quot;,&quot;).map(function(c){ return +c + 1; });
+      rep.querySelectorAll(&quot;tr&quot;).forEach(function(tr){
+        Array.prototype.forEach.call(tr.children, function(td, i){ td.classList.toggle(&quot;hl&quot;, cols.indexOf(i) &gt;= 0); });
+      });
+    });
+  });
+
+  // Mini-gioco F/U
+  var game = document.getElementById(&quot;fu-game&quot;);
+  var items = [
+    [&quot;Revenue: actual 160,000 vs flexible 175,000&quot;, &quot;U&quot;, &quot;Revenue below the flexible budget: negative effect on income → 15,000 U.&quot;],
+    [&quot;Salaries: actual 88,000 vs flexible 88,500&quot;, &quot;F&quot;, &quot;Cost below the flexible budget → 500 F.&quot;],
+    [&quot;Travel: flexible 21,000 vs planning 18,000 (activity)&quot;, &quot;U&quot;, &quot;Higher cost in the flexible budget → 3,000 U. This is only the volume effect, not waste.&quot;],
+    [&quot;Revenue: flexible 175,000 vs planning 150,000 (activity)&quot;, &quot;F&quot;, &quot;More customers, more revenue → 25,000 F.&quot;],
+    [&quot;NOI: actual 18,500 vs flexible 29,500&quot;, &quot;U&quot;, &quot;Lower income → 11,000 U.&quot;]
+  ];
+  items.forEach(function(it){
+    var row = document.createElement(&quot;div&quot;);
+    row.style.cssText = &quot;display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:8px 0;border-top:1px solid var(--rule)&quot;;
+    var t = document.createElement(&quot;span&quot;); t.textContent = it[0]; t.style.flex = &quot;1 1 260px&quot;;
+    var fb = document.createElement(&quot;div&quot;); fb.style.cssText = &quot;flex-basis:100%;font-size:.9rem;display:none&quot;;
+    row.appendChild(t);
+    [&quot;F&quot;, &quot;U&quot;].forEach(function(l){
+      var b = document.createElement(&quot;button&quot;); b.className = &quot;btn&quot;; b.textContent = l;
+      b.addEventListener(&quot;click&quot;, function(){
+        var ok = l === it[1];
+        fb.style.display = &quot;block&quot;;
+        fb.innerHTML = (ok ? &#x27;&lt;b class=&quot;F&quot;&gt;✓ Correct.&lt;/b&gt; &#x27; : &#x27;&lt;b class=&quot;U&quot;&gt;✗ No, it is &#x27; + it[1] + &#x27;.&lt;/b&gt; &#x27;) + it[2];
+      });
+      row.appendChild(b);
+    });
+    row.appendChild(fb); game.appendChild(row);
+  });
+
+  // Indice: evidenzia la sezione visibile
+  var links = document.querySelectorAll(&quot;nav.toc a&quot;);
+  if (&quot;IntersectionObserver&quot; in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting) links.forEach(function(a){ a.classList.toggle(&quot;on&quot;, a.getAttribute(&quot;href&quot;) === &quot;#&quot; + e.target.id); });
+      });
+    }, {rootMargin:&quot;-40% 0px -55% 0px&quot;});
+    document.querySelectorAll(&quot;main section&quot;).forEach(function(s){ io.observe(s); });
+  }
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe></body></html>

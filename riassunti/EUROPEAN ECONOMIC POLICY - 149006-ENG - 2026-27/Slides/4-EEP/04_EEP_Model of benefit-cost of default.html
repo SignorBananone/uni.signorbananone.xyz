@@ -1,0 +1,827 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Riassunto · 04_EEP_Model of benefit-cost of default.pdf</title><link rel="icon" href="data:,">
+<style>html,body{margin:0;height:100%}body{display:flex;flex-direction:column}iframe{flex:1;border:0;width:100%}</style>
+</head><body><nav style="font:14px/1.4 system-ui,sans-serif;padding:6px 12px;text-align:right"><a href="/riassunti/EUROPEAN%20ECONOMIC%20POLICY%20-%20149006-ENG%20-%202026-27/Slides/4-EEP/04_EEP_Model%20of%20benefit-cost%20of%20default.en.html" style="color:inherit;margin-right:.8em;">English</a><a href="/riassunti/EUROPEAN%20ECONOMIC%20POLICY%20-%20149006-ENG%20-%202026-27/Slides/4-EEP/04_EEP_Model%20of%20benefit-cost%20of%20default.html" style="color:inherit;margin-right:.8em;font-weight:700">Italiano</a></nav><iframe sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" title="Riassunto · 04_EEP_Model of benefit-cost of default.pdf"
+srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;it&quot;&gt;
+&lt;head&gt;&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27;; style-src &#x27;unsafe-inline&#x27;; font-src &#x27;self&#x27;; img-src data:; form-action &#x27;none&#x27;; base-uri &#x27;none&#x27;&quot;&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;title&gt;Self-fulfilling debt crisis · Canvas di studio · European Economic Policy&lt;/title&gt;
+&lt;style&gt;
+@font-face{font-family:&quot;Newsreader&quot;;src:url(&quot;/static/fonts/newsreader-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:&quot;IBM Plex Sans&quot;;src:url(&quot;/static/fonts/ibm-plex-sans-latin-wght-normal.woff2&quot;) format(&quot;woff2&quot;);font-weight:100 700;font-style:normal;font-display:swap}
+:root{
+  --paper:oklch(97% 0.012 80);--ink:oklch(21% 0.014 60);--muted:oklch(45% 0.014 60);
+  --rule:oklch(86% 0.014 75);--card:oklch(99% 0.008 80);
+  --accent:oklch(50% 0.15 35);--accent-bg:oklch(93% 0.035 35);
+  --sage:oklch(47% 0.09 150);--sage-bg:oklch(94% 0.03 150);
+  --ochre:oklch(53% 0.11 85);--ochre-bg:oklch(94% 0.045 85);
+  --slate:oklch(45% 0.08 250);--slate-bg:oklch(94% 0.025 250);
+  --brick:oklch(47% 0.14 25);--brick-bg:oklch(94% 0.03 25);
+  --serif:&quot;Newsreader&quot;,Georgia,&quot;Times New Roman&quot;,serif;
+  --sans:&quot;IBM Plex Sans&quot;,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,sans-serif;
+  --c:var(--accent);--cbg:var(--accent-bg);
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(20% 0.012 60);--ink:oklch(92% 0.012 80);--muted:oklch(72% 0.014 70);
+  --rule:oklch(35% 0.014 70);--card:oklch(23.5% 0.012 60);
+  --accent:oklch(71% 0.13 35);--accent-bg:oklch(29% 0.04 35);
+  --sage:oklch(74% 0.09 150);--sage-bg:oklch(27% 0.03 150);
+  --ochre:oklch(78% 0.11 85);--ochre-bg:oklch(28% 0.035 85);
+  --slate:oklch(74% 0.08 250);--slate-bg:oklch(27% 0.03 250);
+  --brick:oklch(72% 0.13 25);--brick-bg:oklch(28% 0.04 25);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.62 var(--sans);-webkit-text-size-adjust:100%}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,5.4vw,3.9rem);font-weight:400;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:450}
+h3{font-size:1.32rem;margin-top:1.6em}
+h4{font-size:1.08rem;font-family:var(--sans);font-weight:600;margin-top:1.1em}
+p{margin:.55em 0}
+a{color:var(--accent)}
+em{font-style:italic}
+.en{font-style:italic;font-weight:500}
+small,.small{font-size:.86rem;color:var(--muted)}
+hr{border:0;border-top:1px solid var(--rule);margin:2rem 0}
+/* hero */
+header.hero{padding:56px 0 26px;border-bottom:1px solid var(--rule)}
+.kicker{font:600 .78rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.hero .sub{font-family:var(--serif);font-size:1.35rem;color:var(--muted);max-width:44em;font-weight:300}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{font-size:.8rem;border:1px solid var(--rule);border-radius:99px;padding:3px 11px;background:var(--card)}
+/* nav */
+nav.toc{position:sticky;top:0;z-index:5;background:color-mix(in oklch,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+nav.toc a{white-space:nowrap;text-decoration:none;color:var(--ink);font-size:.84rem;padding:4px 10px;border-radius:99px}
+nav.toc a:hover{background:var(--accent-bg)}
+/* map */
+.map{margin:26px 0 6px;background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:12px}
+.map svg{width:100%;height:auto;display:block}
+.map .node rect{fill:var(--nb);stroke:var(--nc);stroke-width:1.5;transition:transform .15s}
+.map .node text{fill:var(--ink);font:500 15px var(--sans)}
+.map .node text.t{font:600 16px var(--serif)}
+.map a.node:hover rect,.map a.node:focus rect{stroke-width:3}
+.map .edge{stroke:var(--muted);stroke-width:1.4;fill:none;marker-end:url(#arr)}
+.map .elab{fill:var(--muted);font:italic 12.5px var(--sans)}
+/* sections */
+section.part{padding:54px 0 30px;border-bottom:1px solid var(--rule);scroll-margin-top:50px}
+.sage{--c:var(--sage);--cbg:var(--sage-bg)}.ochre{--c:var(--ochre);--cbg:var(--ochre-bg)}
+.slate{--c:var(--slate);--cbg:var(--slate-bg)}.brick{--c:var(--brick);--cbg:var(--brick-bg)}
+.terra{--c:var(--accent);--cbg:var(--accent-bg)}
+.num{font:600 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--c);display:flex;align-items:center;gap:10px}
+.num:after{content:&quot;&quot;;flex:1;height:1px;background:var(--rule)}
+.lead{font-family:var(--serif);font-size:1.24rem;font-weight:350;max-width:46em}
+.src{display:inline-block;font:600 .7rem/1.4 var(--sans);letter-spacing:.04em;color:var(--c);border:1px solid currentColor;border-radius:4px;padding:0 5px;vertical-align:1px;white-space:nowrap}
+.ext{display:inline-block;font:600 .7rem/1.4 var(--sans);letter-spacing:.04em;color:var(--paper);background:var(--accent);border-radius:4px;padding:0 6px;vertical-align:1px;white-space:nowrap}
+.add{display:inline-block;font:600 .7rem/1.4 var(--sans);color:var(--muted);border:1px dashed var(--muted);border-radius:4px;padding:0 5px;vertical-align:1px;white-space:nowrap}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:760px){.grid2,.grid3{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:16px 18px}
+.tint{background:var(--cbg);border-color:transparent}
+.def{border-left:4px solid var(--c);background:var(--cbg);padding:12px 16px;border-radius:0 10px 10px 0;margin:14px 0}
+.def b:first-child{font-family:var(--serif);font-size:1.06rem}
+.note{border:1px dashed var(--rule);border-radius:10px;padding:12px 16px;margin:14px 0;font-size:.95rem}
+.formula{font-family:var(--serif);font-size:1.3rem;text-align:center;padding:14px;background:var(--card);border:1px solid var(--rule);border-radius:10px;margin:14px 0;overflow-x:auto}
+.formula sub{font-size:.65em}
+figure{margin:18px 0}
+figcaption{font-size:.86rem;color:var(--muted);margin-top:6px}
+ul.clean{padding-left:1.1em}ul.clean li{margin:.3em 0}
+/* charts */
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:12px}
+.chart svg{width:100%;height:auto;display:block}
+.ax{stroke:var(--ink);stroke-width:1.3}
+.axl{fill:var(--muted);font:13px var(--sans)}
+.cl{fill:none;stroke-width:2.6}
+.c-bu{stroke:var(--slate)}.c-be{stroke:var(--brick)}.c-new{stroke:var(--sage)}.c-newu{stroke:var(--ochre)}
+.c-ghost{stroke:var(--muted);stroke-dasharray:5 5;stroke-width:1.6;opacity:.6}
+.c-cost{stroke:var(--ochre);stroke-width:2.2}
+.lab{font:600 14px var(--serif)}
+.vl{stroke:var(--muted);stroke-dasharray:3 4;stroke-width:1.2}
+.dot{stroke:var(--card);stroke-width:2}
+.zone-g{fill:var(--sage);opacity:.1}.zone-m{fill:var(--ochre);opacity:.13}.zone-b{fill:var(--brick);opacity:.1}
+.ctrl{display:grid;gap:10px;margin-top:12px}
+.ctrl label{display:grid;grid-template-columns:minmax(120px,220px) 1fr 54px;align-items:center;gap:10px;font-size:.9rem}
+@media (max-width:560px){.ctrl label{grid-template-columns:1fr 50px}.ctrl label input{grid-column:1/3;grid-row:2}}
+input[type=range]{width:100%;accent-color:var(--c)}
+output{font:600 .9rem var(--sans);text-align:right}
+.readout{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--cbg);font-size:.95rem}
+.readout b{font-family:var(--serif);font-size:1.05rem}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--rule);border-radius:99px;overflow:hidden;background:var(--card)}
+.seg button{border:0;background:none;padding:6px 14px;font:500 .86rem var(--sans);color:var(--ink);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--c);color:var(--paper)}
+.chk{display:flex;gap:8px;align-items:center;font-size:.92rem;cursor:pointer}
+.chk input{accent-color:var(--c);width:18px;height:18px}
+/* tabs */
+.tabs [role=tablist]{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--rule);margin-top:14px}
+.tabs [role=tab]{border:1px solid var(--rule);border-bottom:0;background:var(--paper);border-radius:9px 9px 0 0;padding:8px 14px;font:500 .9rem var(--sans);color:var(--ink);cursor:pointer;margin-bottom:-1px}
+.tabs [role=tab][aria-selected=true]{background:var(--card);border-top:3px solid var(--c);font-weight:600}
+.tabs [role=tabpanel]{background:var(--card);border:1px solid var(--rule);border-top:0;border-radius:0 0 12px 12px;padding:16px 18px}
+/* details */
+details.acc{border:1px solid var(--rule);border-radius:10px;background:var(--card);margin:10px 0}
+details.acc&gt;summary{cursor:pointer;padding:12px 16px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}
+details.acc&gt;summary::-webkit-details-marker{display:none}
+details.acc&gt;summary:after{content:&quot;+&quot;;font:400 1.3rem/1 var(--serif);color:var(--c)}
+details.acc[open]&gt;summary:after{content:&quot;–&quot;}
+details.acc&gt;div{padding:0 16px 14px}
+/* quiz */
+.quiz{margin-top:30px;border:2px solid var(--c);border-radius:14px;padding:16px 18px 8px;background:linear-gradient(var(--cbg),var(--cbg)) top/100% 6px no-repeat,var(--card)}
+.quiz h3{margin-top:.2em;font-size:1.2rem}
+.quiz details{border-top:1px solid var(--rule);padding:10px 0}
+.quiz summary{cursor:pointer;font-weight:500}
+.quiz summary::marker{color:var(--c)}
+.quiz .ans{margin:8px 0 4px 1.1em;padding:10px 14px;background:var(--cbg);border-radius:8px;font-size:.95rem}
+/* stepper */
+.stepper{display:grid;grid-template-columns:minmax(220px,340px) 1fr;gap:20px;align-items:center}
+@media (max-width:700px){.stepper{grid-template-columns:1fr}}
+.stepper .ring circle.st{fill:var(--card);stroke:var(--rule);stroke-width:2;transition:all .2s}
+.stepper .ring circle.st.on{fill:var(--c);stroke:var(--c)}
+.stepper .ring text{font:600 15px var(--sans);fill:var(--ink);pointer-events:none}
+.stepper .ring text.on{fill:var(--paper)}
+.stepper .ring path{fill:none;stroke:var(--rule);stroke-width:2;marker-end:url(#arr2)}
+.steptxt h4{margin-top:0;font-family:var(--serif);font-size:1.25rem;font-weight:500}
+.btns{display:flex;gap:8px;margin-top:12px;align-items:center}
+.btn{border:1px solid var(--c);background:var(--card);color:var(--c);border-radius:99px;padding:6px 16px;font:600 .86rem var(--sans);cursor:pointer}
+.btn:hover{background:var(--cbg)}
+.btn:disabled{opacity:.35;cursor:default}
+/* tables */
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-family:var(--serif);font-weight:600;font-size:1rem}
+.tblwrap{overflow-x:auto;background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:6px 10px}
+/* refs */
+.ref{border-left:3px solid var(--accent);padding:4px 0 4px 16px;margin:18px 0}
+.ref h4{margin:0 0 4px;font-family:var(--serif);font-size:1.12rem;font-weight:600}
+.ref p{margin:.3em 0;font-size:.95rem}
+.ref .why{color:var(--muted)}
+footer{padding:36px 0 60px;font-size:.92rem;color:var(--muted);text-align:center}
+.bar-l{font:13px var(--sans);fill:var(--ink)}
+.bar-v{font:600 12.5px var(--sans);fill:var(--muted)}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;svg width=&quot;0&quot; height=&quot;0&quot; style=&quot;position:absolute&quot; aria-hidden=&quot;true&quot;&gt;&lt;defs&gt;
+&lt;marker id=&quot;arr&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto-start-reverse&quot;&gt;&lt;path d=&quot;M0 0L10 5L0 10z&quot; fill=&quot;currentColor&quot; style=&quot;fill:var(--muted)&quot;/&gt;&lt;/marker&gt;
+&lt;marker id=&quot;arr2&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;6&quot; markerHeight=&quot;6&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0 0L10 5L0 10z&quot; style=&quot;fill:var(--rule)&quot;/&gt;&lt;/marker&gt;
+&lt;/defs&gt;&lt;/svg&gt;
+
+&lt;header class=&quot;hero&quot;&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+&lt;div class=&quot;kicker&quot;&gt;European Economic Policy 2026-27 · Lezione 4&lt;/div&gt;
+&lt;h1&gt;Self-fulfilling debt crisis&lt;/h1&gt;
+&lt;p class=&quot;sub&quot;&gt;Un modello semplice di &lt;span class=&quot;en&quot;&gt;multiple equilibria&lt;/span&gt; (equilibri multipli): quando conviene a uno Stato non pagare i debiti, perché le aspettative dei mercati possono avverare se stesse, e che cosa può fare l&#x27;Europa per evitarlo.&lt;/p&gt;
+&lt;div class=&quot;meta&quot;&gt;&lt;span class=&quot;chip&quot;&gt;Slide: 04_EEP_Model of benefit-cost of default.pdf · 37 pagine&lt;/span&gt;&lt;span class=&quot;chip&quot;&gt;Modello: De Grauwe &amp;amp; Ji (2013), De Grauwe (2018)&lt;/span&gt;&lt;span class=&quot;chip&quot;&gt;Legenda: &lt;span class=&quot;src&quot; style=&quot;--c:var(--ink)&quot;&gt;slide n&lt;/span&gt; dalle slide · &lt;span class=&quot;add&quot;&gt;integrazione&lt;/span&gt; spiegazione aggiunta · &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; dal web&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;map&quot; role=&quot;navigation&quot; aria-label=&quot;Mappa concettuale&quot;&gt;
+&lt;svg viewBox=&quot;0 0 960 430&quot; role=&quot;img&quot; aria-labelledby=&quot;mapt&quot;&gt;
+&lt;title id=&quot;mapt&quot;&gt;Mappa concettuale della lezione: clicca un riquadro per andare alla sezione&lt;/title&gt;
+&lt;path class=&quot;edge&quot; d=&quot;M190 200 C215 200 215 98 238 98&quot;/&gt;
+&lt;path class=&quot;edge&quot; d=&quot;M190 236 C215 236 215 348 238 348&quot;/&gt;
+&lt;path class=&quot;edge&quot; d=&quot;M420 98 L458 98&quot;/&gt;
+&lt;text class=&quot;elab&quot; x=&quot;423&quot; y=&quot;86&quot;&gt;+ attese&lt;/text&gt;
+&lt;path class=&quot;edge&quot; d=&quot;M420 348 C445 348 445 236 458 236&quot;/&gt;
+&lt;path class=&quot;edge&quot; d=&quot;M560 130 L560 186&quot;/&gt;
+&lt;path class=&quot;edge&quot; d=&quot;M330 130 C330 175 400 215 458 215&quot;/&gt;
+&lt;path class=&quot;edge&quot; d=&quot;M660 210 C690 210 690 74 718 74&quot;/&gt;
+&lt;path class=&quot;edge&quot; d=&quot;M660 220 L718 220&quot;/&gt;
+&lt;path class=&quot;edge&quot; d=&quot;M660 232 C690 232 690 366 718 366&quot;/&gt;
+&lt;text class=&quot;elab&quot; x=&quot;664&quot; y=&quot;132&quot;&gt;rimedi&lt;/text&gt;
+&lt;text class=&quot;elab&quot; x=&quot;214&quot; y=&quot;420&quot;&gt;S = dimensione dello shock · B = benefit · C = cost&lt;/text&gt;
+
+&lt;a class=&quot;node&quot; href=&quot;#s-intro&quot; style=&quot;--nb:var(--accent-bg);--nc:var(--accent)&quot;&gt;&lt;rect x=&quot;12&quot; y=&quot;176&quot; width=&quot;178&quot; height=&quot;84&quot; rx=&quot;12&quot;/&gt;&lt;text class=&quot;t&quot; x=&quot;101&quot; y=&quot;208&quot; text-anchor=&quot;middle&quot;&gt;Solvency shock&lt;/text&gt;&lt;text x=&quot;101&quot; y=&quot;232&quot; text-anchor=&quot;middle&quot;&gt;il punto di partenza&lt;/text&gt;&lt;/a&gt;
+&lt;a class=&quot;node&quot; href=&quot;#s-benefit&quot; style=&quot;--nb:var(--sage-bg);--nc:var(--sage)&quot;&gt;&lt;rect x=&quot;240&quot; y=&quot;66&quot; width=&quot;180&quot; height=&quot;64&quot; rx=&quot;12&quot;/&gt;&lt;text class=&quot;t&quot; x=&quot;330&quot; y=&quot;94&quot; text-anchor=&quot;middle&quot;&gt;Benefit of default&lt;/text&gt;&lt;text x=&quot;330&quot; y=&quot;116&quot; text-anchor=&quot;middle&quot;&gt;curva B&lt;tspan baseline-shift=&quot;sub&quot; font-size=&quot;11&quot;&gt;U&lt;/tspan&gt;&lt;/text&gt;&lt;/a&gt;
+&lt;a class=&quot;node&quot; href=&quot;#s-cost&quot; style=&quot;--nb:var(--ochre-bg);--nc:var(--ochre)&quot;&gt;&lt;rect x=&quot;240&quot; y=&quot;316&quot; width=&quot;180&quot; height=&quot;64&quot; rx=&quot;12&quot;/&gt;&lt;text class=&quot;t&quot; x=&quot;330&quot; y=&quot;344&quot; text-anchor=&quot;middle&quot;&gt;Cost of default&lt;/text&gt;&lt;text x=&quot;330&quot; y=&quot;366&quot; text-anchor=&quot;middle&quot;&gt;linea C · soglia S₀&lt;/text&gt;&lt;/a&gt;
+&lt;a class=&quot;node&quot; href=&quot;#s-expect&quot; style=&quot;--nb:var(--slate-bg);--nc:var(--slate)&quot;&gt;&lt;rect x=&quot;460&quot; y=&quot;66&quot; width=&quot;200&quot; height=&quot;64&quot; rx=&quot;12&quot;/&gt;&lt;text class=&quot;t&quot; x=&quot;560&quot; y=&quot;94&quot; text-anchor=&quot;middle&quot;&gt;Market expectations&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;116&quot; text-anchor=&quot;middle&quot;&gt;curva B&lt;tspan baseline-shift=&quot;sub&quot; font-size=&quot;11&quot;&gt;E&lt;/tspan&gt; sopra B&lt;tspan baseline-shift=&quot;sub&quot; font-size=&quot;11&quot;&gt;U&lt;/tspan&gt;&lt;/text&gt;&lt;/a&gt;
+&lt;a class=&quot;node&quot; href=&quot;#s-equil&quot; style=&quot;--nb:var(--slate-bg);--nc:var(--slate)&quot;&gt;&lt;rect x=&quot;460&quot; y=&quot;188&quot; width=&quot;200&quot; height=&quot;76&quot; rx=&quot;12&quot;/&gt;&lt;text class=&quot;t&quot; x=&quot;560&quot; y=&quot;216&quot; text-anchor=&quot;middle&quot;&gt;Multiple equilibria&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;238&quot; text-anchor=&quot;middle&quot;&gt;N vs D ·&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;256&quot; text-anchor=&quot;middle&quot;&gt;coordination failure&lt;/text&gt;&lt;/a&gt;
+&lt;a class=&quot;node&quot; href=&quot;#s-policy&quot; style=&quot;--nb:var(--brick-bg);--nc:var(--brick)&quot;&gt;&lt;rect x=&quot;720&quot; y=&quot;40&quot; width=&quot;228&quot; height=&quot;68&quot; rx=&quot;12&quot;/&gt;&lt;text class=&quot;t&quot; x=&quot;834&quot; y=&quot;68&quot; text-anchor=&quot;middle&quot;&gt;Central bank &amp;amp; aiuti&lt;/text&gt;&lt;text x=&quot;834&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot;&gt;ECB, EFSF/ESM&lt;/text&gt;&lt;/a&gt;
+&lt;a class=&quot;node&quot; href=&quot;#s-budget&quot; style=&quot;--nb:var(--sage-bg);--nc:var(--sage)&quot;&gt;&lt;rect x=&quot;720&quot; y=&quot;186&quot; width=&quot;228&quot; height=&quot;68&quot; rx=&quot;12&quot;/&gt;&lt;text class=&quot;t&quot; x=&quot;834&quot; y=&quot;214&quot; text-anchor=&quot;middle&quot;&gt;Budgetary union&lt;/text&gt;&lt;text x=&quot;834&quot; y=&quot;236&quot; text-anchor=&quot;middle&quot;&gt;bilancio UE, NGEU&lt;/text&gt;&lt;/a&gt;
+&lt;a class=&quot;node&quot; href=&quot;#s-safe&quot; style=&quot;--nb:var(--ochre-bg);--nc:var(--ochre)&quot;&gt;&lt;rect x=&quot;720&quot; y=&quot;332&quot; width=&quot;228&quot; height=&quot;68&quot; rx=&quot;12&quot;/&gt;&lt;text class=&quot;t&quot; x=&quot;834&quot; y=&quot;360&quot; text-anchor=&quot;middle&quot;&gt;Safe assets&lt;/text&gt;&lt;text x=&quot;834&quot; y=&quot;382&quot; text-anchor=&quot;middle&quot;&gt;ESBies, EU bonds&lt;/text&gt;&lt;/a&gt;
+&lt;/svg&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small&quot;&gt;Clicca un riquadro della mappa per saltare alla sezione. Il filo logico: uno &lt;span class=&quot;en&quot;&gt;shock&lt;/span&gt; rende allettante il &lt;span class=&quot;en&quot;&gt;default&lt;/span&gt;; il default conviene solo se il beneficio supera il costo; le attese dei mercati alzano il beneficio e creano due equilibri possibili; le politiche servono a eliminare quello cattivo.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+
+&lt;nav class=&quot;toc&quot; aria-label=&quot;Indice&quot;&gt;&lt;div class=&quot;wrap&quot;&gt;
+&lt;a href=&quot;#s-intro&quot;&gt;1 · Il problema&lt;/a&gt;&lt;a href=&quot;#s-benefit&quot;&gt;2 · Benefit&lt;/a&gt;&lt;a href=&quot;#s-cost&quot;&gt;3 · Cost&lt;/a&gt;&lt;a href=&quot;#s-expect&quot;&gt;4 · Expectations&lt;/a&gt;&lt;a href=&quot;#s-policy&quot;&gt;5 · CB e aiuti&lt;/a&gt;&lt;a href=&quot;#s-budget&quot;&gt;6 · Budgetary union&lt;/a&gt;&lt;a href=&quot;#s-safe&quot;&gt;7 · Safe assets&lt;/a&gt;&lt;a href=&quot;#s-refs&quot;&gt;Per approfondire&lt;/a&gt;
+&lt;/div&gt;&lt;/nav&gt;
+
+&lt;main class=&quot;wrap&quot;&gt;
+
+&lt;!-- 1 ─────────────────────────────── --&gt;
+&lt;section class=&quot;part terra&quot; id=&quot;s-intro&quot;&gt;
+&lt;div class=&quot;num&quot;&gt;Parte 1 · Il problema&lt;/div&gt;
+&lt;h2&gt;Perché una crisi del debito può “autoavverarsi”&lt;/h2&gt;
+&lt;p class=&quot;lead&quot;&gt;Il titolo delle slide (“&lt;span class=&quot;en&quot;&gt;Self-fulfilling debt crisis&lt;/span&gt;”) indica l&#x27;idea centrale: una crisi che avviene &lt;em&gt;perché&lt;/em&gt; i mercati se la aspettano. Il modello confronta, per un governo indebitato, il beneficio e il costo di non pagare. &lt;span class=&quot;src&quot;&gt;slide 1–2&lt;/span&gt;&lt;/p&gt;
+
+&lt;div class=&quot;grid2&quot;&gt;
+&lt;div&gt;
+&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Default&lt;/b&gt; (insolvenza sovrana): il governo non rimborsa, in tutto o in parte, il debito pubblico o gli interessi, oppure li ristruttura imponendo perdite ai creditori.&lt;/div&gt;
+&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Solvency shock&lt;/b&gt; (shock di solvibilità): un evento che peggiora i conti pubblici, per esempio una recessione che riduce le entrate fiscali. È la variabile sull&#x27;asse orizzontale di tutti i grafici: più è grande, più il debito diventa difficile da sostenere. &lt;span class=&quot;src&quot;&gt;slide 2–3&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Spread&lt;/b&gt; (differenziale di rendimento): la differenza tra il tasso d&#x27;interesse pagato da un titolo di Stato e quello di un titolo considerato sicuro, nell&#x27;area euro di solito il &lt;span class=&quot;en&quot;&gt;Bund&lt;/span&gt; tedesco. Misura il premio per il rischio che chiedono gli investitori. Si esprime spesso in &lt;span class=&quot;en&quot;&gt;basis points&lt;/span&gt; (punti base: 100 bp = 1 punto percentuale). &lt;span class=&quot;add&quot;&gt;integrazione&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Haircut&lt;/b&gt;: la percentuale di valore che i creditori perdono in una ristrutturazione del debito. &lt;span class=&quot;add&quot;&gt;integrazione&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Ceteris paribus&lt;/b&gt;: “a parità di altre condizioni”. Si studia l&#x27;effetto di una variabile tenendo ferme tutte le altre. &lt;span class=&quot;src&quot;&gt;slide 2&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Multiple equilibria&lt;/b&gt; (equilibri multipli): con gli stessi “fondamentali” (debito, entrate, shock) sono possibili più esiti stabili. Quale si realizza dipende dalle aspettative. &lt;span class=&quot;src&quot;&gt;slide 11–12&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;La logica del modello in una riga&lt;/h3&gt;
+&lt;div class=&quot;formula&quot;&gt;default &amp;nbsp;⇔&amp;nbsp; Benefit(S) &amp;gt; Cost&lt;/div&gt;
+&lt;p&gt;Il governo è trattato come un decisore razionale che confronta due grandezze: quanto “guadagna” non pagando (meno interessi, meno austerità) e quanto “perde” (esclusione dai mercati, danni all&#x27;economia). Il modello prende il costo come costante e fa dipendere il beneficio dallo shock &lt;i&gt;S&lt;/i&gt;. La novità sta nelle aspettative dei mercati, che spostano verso l&#x27;alto la curva del beneficio. &lt;span class=&quot;src&quot;&gt;slide 2–10&lt;/span&gt;&lt;/p&gt;
+
+&lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;Da dove viene il beneficio? Un&#x27;occhiata alla dinamica del debito &lt;span class=&quot;add&quot;&gt;integrazione&lt;/span&gt;&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;Indichiamo con &lt;i&gt;d&lt;/i&gt; il rapporto debito/PIL, con &lt;i&gt;i&lt;/i&gt; il tasso d&#x27;interesse sul debito, con &lt;i&gt;g&lt;/i&gt; la crescita del PIL e con &lt;i&gt;pb&lt;/i&gt; il saldo primario (entrate meno spese, esclusi gli interessi). In forma semplificata:&lt;/p&gt;
+&lt;div class=&quot;formula&quot;&gt;Δd ≈ (i − g)·d − pb&lt;/div&gt;
+&lt;p&gt;Per tenere fermo il debito serve un avanzo primario &lt;i&gt;pb* = (i − g)·d&lt;/i&gt;. Uno shock che abbassa &lt;i&gt;g&lt;/i&gt; o alza &lt;i&gt;i&lt;/i&gt; fa crescere &lt;i&gt;pb*&lt;/i&gt;, cioè rende necessarie più tasse e meno spesa. Il default riduce &lt;i&gt;d&lt;/i&gt; o &lt;i&gt;i&lt;/i&gt; e quindi l&#x27;austerità da fare: questo è il “beneficio” delle slide. La formula aiuta anche a capire perché un debito iniziale alto (&lt;i&gt;d&lt;/i&gt; grande) amplifica tutto.&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+
+&lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;Il contesto: perché il tema è “europeo” &lt;span class=&quot;add&quot;&gt;integrazione&lt;/span&gt;&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;Le slide 13 e 20 lo danno per scontato. Un Paese “&lt;span class=&quot;en&quot;&gt;stand-alone&lt;/span&gt;” (con moneta e banca centrale proprie, come il Regno Unito) emette debito in una valuta che controlla: la sua banca centrale può sempre fornire liquidità, quindi il contante per pagare c&#x27;è sempre e un default forzato da mancanza di liquidità è molto improbabile. Un membro dell&#x27;eurozona emette invece debito in una moneta che non controlla, “come se fosse in valuta estera”. Gli investitori possono temere che un giorno manchi la liquidità, e questa paura basta a scatenare la crisi. È la tesi della &lt;span class=&quot;en&quot;&gt;fragility of the eurozone&lt;/span&gt; di De Grauwe, alla base del modello. La slide 30 (“&lt;span class=&quot;en&quot;&gt;as we have seen&lt;/span&gt;”) rimanda alla lezione precedente sui &lt;span class=&quot;en&quot;&gt;flights to safety&lt;/span&gt; (fughe verso i titoli sicuri).&lt;/p&gt;
+&lt;p class=&quot;small&quot;&gt;Non sono riuscito a elencare il contenuto della cartella &lt;code&gt;corso/&lt;/code&gt; (l&#x27;ambiente non permette di vedere le cartelle), quindi questi collegamenti si basano solo sui rimandi interni a questo PDF. Controlla nelle lezioni 3 e 5.&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+
+&lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · Parte 1&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;Che cosa misura l&#x27;asse orizzontale in tutti i grafici del modello?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;La dimensione del &lt;span class=&quot;en&quot;&gt;solvency shock&lt;/span&gt; &lt;i&gt;S&lt;/i&gt;, cioè di quanto peggiorano i conti pubblici (per esempio per una recessione che riduce le entrate).&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Qual è la regola di decisione del governo?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Fa default se il beneficio del default è maggiore del costo: B(S) &amp;gt; C. Altrimenti paga.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Che cosa significa che una crisi è “self-fulfilling”?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Che si verifica perché gli investitori se la aspettano: la loro aspettativa cambia i tassi e quindi la convenienza del default, rendendo il default effettivamente conveniente.&lt;/div&gt;&lt;/details&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 2 ─────────────────────────────── --&gt;
+&lt;section class=&quot;part sage&quot; id=&quot;s-benefit&quot;&gt;
+&lt;div class=&quot;num&quot;&gt;Parte 2 · Benefit of default&lt;/div&gt;
+&lt;h2&gt;La tentazione del default: la curva B&lt;sub&gt;U&lt;/sub&gt;&lt;/h2&gt;
+&lt;p class=&quot;lead&quot;&gt;La &lt;span class=&quot;en&quot;&gt;temptation to default&lt;/span&gt; (tentazione di non pagare), o &lt;span class=&quot;en&quot;&gt;benefit of defaulting&lt;/span&gt;: facendo default il governo riduce il peso degli interessi sul debito esistente, quindi deve tagliare meno le spese e alzare meno le tasse. Anche tasse e tagli hanno un costo politico. &lt;span class=&quot;src&quot;&gt;slide 2&lt;/span&gt;&lt;/p&gt;
+
+&lt;div class=&quot;grid2&quot;&gt;
+&lt;div&gt;
+&lt;p&gt;Il beneficio &lt;b&gt;cresce con lo shock&lt;/b&gt;, ceteris paribus: più profonda è la recessione, più austerità servirebbe per pagare, quindi più “risparmia” chi non paga. La curva è convessa, cioè cresce sempre più in fretta. &lt;span class=&quot;src&quot;&gt;slide 3&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Il pedice &lt;b&gt;U&lt;/b&gt; sta per &lt;span class=&quot;en&quot;&gt;unanticipated&lt;/span&gt;: è il beneficio quando i mercati &lt;em&gt;non&lt;/em&gt; si aspettano il default e i tassi restano normali. Lo si capisce dal confronto con B&lt;sub&gt;E&lt;/sub&gt; (&lt;span class=&quot;en&quot;&gt;expected&lt;/span&gt;) nella Parte 4. &lt;span class=&quot;src&quot;&gt;slide 9–10&lt;/span&gt;&lt;/p&gt;
+&lt;h4&gt;Tre fattori spostano o ruotano B&lt;sub&gt;U&lt;/sub&gt; &lt;span class=&quot;src&quot;&gt;slide 4&lt;/span&gt;&lt;/h4&gt;
+&lt;div class=&quot;tabs&quot; data-tabs&gt;
+&lt;div role=&quot;tablist&quot;&gt;
+&lt;button role=&quot;tab&quot; aria-selected=&quot;true&quot;&gt;Debito iniziale&lt;/button&gt;
+&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Sistema fiscale&lt;/button&gt;
+&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Debito estero&lt;/button&gt;
+&lt;/div&gt;
+&lt;div role=&quot;tabpanel&quot;&gt;&lt;p&gt;&lt;b&gt;The initial debt level.&lt;/b&gt; Più alto è il debito di partenza, più interessi si risparmiano non pagando, quindi più alto è il beneficio. La curva &lt;b&gt;ruota verso l&#x27;alto&lt;/b&gt;.&lt;/p&gt;&lt;p class=&quot;small&quot;&gt;Esempio: con un debito al 150% del PIL, ogni punto di tasso in più costa 1,5% del PIL l&#x27;anno, con uno al 60% costa 0,6%.&lt;/p&gt;&lt;/div&gt;
+&lt;div role=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;b&gt;The efficiency of the tax system.&lt;/b&gt; Se il sistema fiscale è inefficiente (evasione, base imponibile ristretta) il governo non riesce ad alzare le entrate facilmente, quindi l&#x27;alternativa del default diventa più attraente. La curva &lt;b&gt;ruota verso l&#x27;alto&lt;/b&gt;.&lt;/p&gt;&lt;/div&gt;
+&lt;div role=&quot;tabpanel&quot; hidden&gt;&lt;p&gt;&lt;b&gt;The size of the external debt.&lt;/b&gt; Se gran parte del debito è in mano a creditori esteri, all&#x27;interno c&#x27;è meno resistenza politica al default (le perdite ricadono su chi non vota), che diventa più attraente. La curva &lt;b&gt;ruota verso l&#x27;alto&lt;/b&gt;.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div class=&quot;chart&quot;&gt;&lt;svg id=&quot;chBU&quot; viewBox=&quot;0 0 560 340&quot; role=&quot;img&quot; aria-label=&quot;Curva del beneficio di default B_U in funzione dello shock&quot;&gt;&lt;/svg&gt;
+&lt;div class=&quot;ctrl&quot;&gt;
+&lt;label&gt;Debito iniziale &lt;input type=&quot;range&quot; id=&quot;fDebt&quot; min=&quot;0&quot; max=&quot;2&quot; step=&quot;0.1&quot; value=&quot;1&quot;&gt;&lt;output id=&quot;oDebt&quot;&gt;&lt;/output&gt;&lt;/label&gt;
+&lt;label&gt;Inefficienza fiscale &lt;input type=&quot;range&quot; id=&quot;fTax&quot; min=&quot;0&quot; max=&quot;2&quot; step=&quot;0.1&quot; value=&quot;1&quot;&gt;&lt;output id=&quot;oTax&quot;&gt;&lt;/output&gt;&lt;/label&gt;
+&lt;label&gt;Quota di debito estero &lt;input type=&quot;range&quot; id=&quot;fExt&quot; min=&quot;0&quot; max=&quot;2&quot; step=&quot;0.1&quot; value=&quot;1&quot;&gt;&lt;output id=&quot;oExt&quot;&gt;&lt;/output&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;readout&quot; id=&quot;rBU&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small&quot;&gt;Grafico illustrativo con forma funzionale inventata (esponenziale). Conta solo la direzione degli spostamenti, non i numeri.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · Parte 2&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;Perché il beneficio del default cresce con lo shock?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Perché uno shock più grande (per esempio una recessione più profonda) richiederebbe più tagli di spesa e più tasse per continuare a pagare. Non pagando, il governo evita un&#x27;austerità più pesante, quindi “risparmia” di più.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Nomina i tre fattori che ruotano B&lt;sub&gt;U&lt;/sub&gt; verso l&#x27;alto.&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Debito iniziale più alto, sistema fiscale meno efficiente, quota maggiore di debito detenuto all&#x27;estero.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Perché un debito detenuto all&#x27;estero rende il default più “facile” politicamente?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Perché le perdite ricadono su creditori stranieri e non sugli elettori nazionali, quindi c&#x27;è meno opposizione interna.&lt;/div&gt;&lt;/details&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 3 ─────────────────────────────── --&gt;
+&lt;section class=&quot;part ochre&quot; id=&quot;s-cost&quot;&gt;
+&lt;div class=&quot;num&quot;&gt;Parte 3 · Cost of default&lt;/div&gt;
+&lt;h2&gt;Quanto costa non pagare&lt;/h2&gt;
+&lt;p class=&quot;lead&quot;&gt;Le slide si basano sul cap. 7 di &lt;i&gt;Sovereign Debt: A Guide for Economists and Practitioners&lt;/i&gt; (IMF / Oxford University Press). I costi si dividono in due famiglie: quelli finanziari e i “danni collaterali” all&#x27;economia. &lt;span class=&quot;src&quot;&gt;slide 5–6&lt;/span&gt;&lt;/p&gt;
+
+&lt;div class=&quot;grid2&quot;&gt;
+&lt;div&gt;
+&lt;details class=&quot;acc&quot; open&gt;&lt;summary&gt;1 · Costi sui mercati dei capitali&lt;/summary&gt;&lt;div&gt;
+&lt;ul class=&quot;clean&quot;&gt;
+&lt;li&gt;&lt;b&gt;Esclusione&lt;/b&gt; dai mercati internazionali dei capitali e &lt;b&gt;costi di finanziamento più alti&lt;/b&gt; dopo il default.&lt;/li&gt;
+&lt;li&gt;C&#x27;è consenso sul fatto che il default peggiori le condizioni di prestito, all&#x27;estero e in patria, ma &lt;b&gt;non su quanto duri&lt;/b&gt; l&#x27;effetto:
+&lt;ul&gt;&lt;li&gt;alcuni studi: gli spread salgono molto ma solo nei &lt;b&gt;primi due anni&lt;/b&gt;, e la maggior parte dei Paesi torna sui mercati entro 1–2 anni;&lt;/li&gt;
+&lt;li&gt;altri: con &lt;span class=&quot;en&quot;&gt;haircut&lt;/span&gt; più grandi l&#x27;&lt;b&gt;esclusione dura di più&lt;/b&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class=&quot;small&quot;&gt;I due filoni corrispondono alla letteratura di Borensztein &amp;amp; Panizza e di Cruces &amp;amp; Trebesch: vedi “Per approfondire” &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;2 · Danni collaterali all&#x27;economia&lt;/summary&gt;&lt;div&gt;
+&lt;ul class=&quot;clean&quot;&gt;
+&lt;li&gt;Le crisi del debito sovrano si accompagnano a un &lt;b&gt;calo significativo della crescita&lt;/b&gt;.&lt;/li&gt;
+&lt;li&gt;Correlazione negativa tra default e (i) &lt;b&gt;commercio&lt;/b&gt;, (ii) &lt;b&gt;investimenti diretti esteri&lt;/b&gt; (FDI), (iii) &lt;b&gt;imprese nazionali&lt;/b&gt;.&lt;/li&gt;
+&lt;li&gt;Il default &lt;b&gt;riduce il valore in Borsa&lt;/b&gt; delle imprese nazionali, soprattutto esportatori e imprese a proprietà estera.&lt;/li&gt;
+&lt;li&gt;La caduta del prodotto è particolarmente forte se il default coincide con una &lt;b&gt;crisi bancaria&lt;/b&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/details&gt;
+&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Ipotesi del modello:&lt;/b&gt; il costo è &lt;em&gt;dato&lt;/em&gt;, cioè non dipende dalla dimensione dello shock. Nel grafico è una retta orizzontale C. &lt;span class=&quot;src&quot;&gt;slide 7&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div class=&quot;chart&quot;&gt;&lt;svg id=&quot;chC&quot; viewBox=&quot;0 0 560 340&quot; role=&quot;img&quot; aria-label=&quot;Benefit B_U e cost C: soglia S0&quot;&gt;&lt;/svg&gt;
+&lt;div class=&quot;ctrl&quot;&gt;
+&lt;label&gt;Shock S &lt;input type=&quot;range&quot; id=&quot;cS&quot; min=&quot;0&quot; max=&quot;10&quot; step=&quot;0.1&quot; value=&quot;4&quot;&gt;&lt;output id=&quot;oCS&quot;&gt;&lt;/output&gt;&lt;/label&gt;
+&lt;label&gt;Livello del costo C &lt;input type=&quot;range&quot; id=&quot;cC&quot; min=&quot;1&quot; max=&quot;6&quot; step=&quot;0.1&quot; value=&quot;3&quot;&gt;&lt;output id=&quot;oCC&quot;&gt;&lt;/output&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;readout&quot; id=&quot;rC&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;formula&quot;&gt;B&lt;sub&gt;U&lt;/sub&gt;(S&lt;sub&gt;0&lt;/sub&gt;) = C &amp;nbsp;&amp;nbsp;→&amp;nbsp;&amp;nbsp; S &amp;gt; S&lt;sub&gt;0&lt;/sub&gt;: default · S &amp;lt; S&lt;sub&gt;0&lt;/sub&gt;: nessun default&lt;/div&gt;
+&lt;p&gt;Con shock maggiori di S&lt;sub&gt;0&lt;/sub&gt; il beneficio supera il costo e il default avviene, con shock minori no. Alzando C (default più doloroso) la soglia S&lt;sub&gt;0&lt;/sub&gt; si sposta a destra, quindi servono shock più grandi per tentare il governo. &lt;span class=&quot;src&quot;&gt;slide 7&lt;/span&gt;&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;b&gt;“What is missing in this account?”&lt;/b&gt; &lt;span class=&quot;src&quot;&gt;slide 8&lt;/span&gt;. La slide 8 pone questa domanda prima di andare avanti. Finora il governo decide da solo, come se i mercati fossero spettatori passivi. Mancano le &lt;b&gt;aspettative degli investitori&lt;/b&gt;, che modificano i tassi e quindi il beneficio stesso. È il passo della Parte 4.&lt;/div&gt;
+
+&lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · Parte 3&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;Quali sono le due famiglie di costi del default?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;(1) Costi sui mercati: esclusione dai mercati internazionali e spread più alti dopo il default. (2) Danni collaterali: meno crescita, commercio, FDI e valore delle imprese, con perdite più forti se c&#x27;è anche una crisi bancaria.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Su che cosa non c&#x27;è accordo nella letteratura sui costi?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Sulla &lt;b&gt;persistenza&lt;/b&gt;: per alcuni l&#x27;aumento degli spread dura circa due anni e l&#x27;accesso ai mercati torna in 1–2 anni, per altri l&#x27;esclusione è più lunga quando gli haircut sono grandi.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Che cosa succede alla soglia S&lt;sub&gt;0&lt;/sub&gt; se il costo del default aumenta?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Si sposta a destra: la retta C si alza e incontra B&lt;sub&gt;U&lt;/sub&gt; più avanti, quindi il default avviene solo per shock più grandi.&lt;/div&gt;&lt;/details&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 4 ─────────────────────────────── --&gt;
+&lt;section class=&quot;part slate&quot; id=&quot;s-expect&quot;&gt;
+&lt;div class=&quot;num&quot;&gt;Parte 4 · Expectations e multiple equilibria&lt;/div&gt;
+&lt;h2&gt;Quando le aspettative cambiano la partita&lt;/h2&gt;
+&lt;p class=&quot;lead&quot;&gt;Se gli investitori si aspettano un default, vendono titoli di Stato e il tasso d&#x27;interesse sale. Il deficit aumenta e servirebbe un&#x27;austerità ancora più dura, quindi il default diventa più attraente. Per ogni shock, il beneficio è più alto di quando il default non era atteso. &lt;span class=&quot;src&quot;&gt;slide 9&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Il circolo vizioso, passo per passo&lt;/h3&gt;
+&lt;div class=&quot;stepper&quot; data-stepper id=&quot;loop&quot;&gt;
+&lt;svg class=&quot;ring&quot; viewBox=&quot;0 0 300 300&quot; aria-hidden=&quot;true&quot;&gt;
+&lt;path d=&quot;M196 58 A110 110 0 0 1 252 150&quot;/&gt;&lt;path d=&quot;M250 176 A110 110 0 0 1 200 248&quot;/&gt;&lt;path d=&quot;M128 262 A110 110 0 0 1 62 214&quot;/&gt;&lt;path d=&quot;M42 176 A110 110 0 0 1 50 112&quot;/&gt;&lt;path d=&quot;M84 62 A110 110 0 0 1 128 40&quot;/&gt;
+&lt;g&gt;&lt;circle class=&quot;st&quot; cx=&quot;150&quot; cy=&quot;40&quot; r=&quot;24&quot;/&gt;&lt;text x=&quot;150&quot; y=&quot;45&quot; text-anchor=&quot;middle&quot;&gt;1&lt;/text&gt;&lt;/g&gt;
+&lt;g&gt;&lt;circle class=&quot;st&quot; cx=&quot;255&quot; cy=&quot;118&quot; r=&quot;24&quot;/&gt;&lt;text x=&quot;255&quot; y=&quot;123&quot; text-anchor=&quot;middle&quot;&gt;2&lt;/text&gt;&lt;/g&gt;
+&lt;g&gt;&lt;circle class=&quot;st&quot; cx=&quot;215&quot; cy=&quot;240&quot; r=&quot;24&quot;/&gt;&lt;text x=&quot;215&quot; y=&quot;245&quot; text-anchor=&quot;middle&quot;&gt;3&lt;/text&gt;&lt;/g&gt;
+&lt;g&gt;&lt;circle class=&quot;st&quot; cx=&quot;85&quot; cy=&quot;240&quot; r=&quot;24&quot;/&gt;&lt;text x=&quot;85&quot; y=&quot;245&quot; text-anchor=&quot;middle&quot;&gt;4&lt;/text&gt;&lt;/g&gt;
+&lt;g&gt;&lt;circle class=&quot;st&quot; cx=&quot;45&quot; cy=&quot;118&quot; r=&quot;24&quot;/&gt;&lt;text x=&quot;45&quot; y=&quot;123&quot; text-anchor=&quot;middle&quot;&gt;5&lt;/text&gt;&lt;/g&gt;
+&lt;text x=&quot;150&quot; y=&quot;146&quot; text-anchor=&quot;middle&quot; style=&quot;font:500 15px var(--serif)&quot;&gt;profezia che&lt;/text&gt;
+&lt;text x=&quot;150&quot; y=&quot;166&quot; text-anchor=&quot;middle&quot; style=&quot;font:500 15px var(--serif)&quot;&gt;si autoavvera&lt;/text&gt;
+&lt;/svg&gt;
+&lt;div class=&quot;steptxt&quot;&gt;
+&lt;div data-step&gt;&lt;h4&gt;1 · Gli investitori temono un default&lt;/h4&gt;&lt;p&gt;Anche senza un peggioramento dei fondamentali, si diffonde la paura che il governo non paghi, per esempio per contagio da un altro Paese.&lt;/p&gt;&lt;/div&gt;
+&lt;div data-step hidden&gt;&lt;h4&gt;2 · Vendono i titoli di Stato&lt;/h4&gt;&lt;p&gt;Il prezzo dei bond scende e il loro rendimento sale. Lo &lt;span class=&quot;en&quot;&gt;spread&lt;/span&gt; si allarga.&lt;/p&gt;&lt;/div&gt;
+&lt;div data-step hidden&gt;&lt;h4&gt;3 · Il costo del debito sale&lt;/h4&gt;&lt;p&gt;Il governo si rifinanzia a tassi più alti, il deficit cresce e servirebbe un programma di &lt;span class=&quot;en&quot;&gt;austerity&lt;/span&gt; (tagli e tasse) più intenso.&lt;/p&gt;&lt;/div&gt;
+&lt;div data-step hidden&gt;&lt;h4&gt;4 · Il default diventa più allettante&lt;/h4&gt;&lt;p&gt;Più austerità significa più costo politico, quindi a parità di shock il beneficio del default sale. La curva rilevante non è più B&lt;sub&gt;U&lt;/sub&gt; ma B&lt;sub&gt;E&lt;/sub&gt;, più in alto.&lt;/p&gt;&lt;/div&gt;
+&lt;div data-step hidden&gt;&lt;h4&gt;5 · Se B&lt;sub&gt;E&lt;/sub&gt;(S) &amp;gt; C, il governo fa default&lt;/h4&gt;&lt;p&gt;La paura iniziale si è avverata. Gli investitori “avevano ragione”, ma è stata la loro stessa aspettativa a creare la crisi.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;btns&quot;&gt;&lt;button class=&quot;btn&quot; data-prev&gt;← indietro&lt;/button&gt;&lt;button class=&quot;btn&quot; data-next&gt;avanti →&lt;/button&gt;&lt;span class=&quot;small&quot; data-count&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;s-equil&quot; style=&quot;scroll-margin-top:60px&quot;&gt;Tre tipi di shock, due equilibri&lt;/h3&gt;
+&lt;div class=&quot;grid2&quot;&gt;
+&lt;div&gt;
+&lt;div class=&quot;chart&quot;&gt;&lt;svg id=&quot;chEq&quot; viewBox=&quot;0 0 560 340&quot; role=&quot;img&quot; aria-label=&quot;Curve B_E, B_U e cost C con le soglie S1 e S2&quot;&gt;&lt;/svg&gt;
+&lt;div class=&quot;ctrl&quot;&gt;&lt;label&gt;Shock S &lt;input type=&quot;range&quot; id=&quot;eS&quot; min=&quot;0&quot; max=&quot;10&quot; step=&quot;0.05&quot; value=&quot;6.2&quot;&gt;&lt;output id=&quot;oES&quot;&gt;&lt;/output&gt;&lt;/label&gt;&lt;/div&gt;
+&lt;div style=&quot;margin-top:10px&quot;&gt;Gli investitori si aspettano: &lt;span class=&quot;seg&quot; id=&quot;eExp&quot;&gt;&lt;button aria-pressed=&quot;true&quot; data-v=&quot;0&quot;&gt;nessun default&lt;/button&gt;&lt;button aria-pressed=&quot;false&quot; data-v=&quot;1&quot;&gt;default&lt;/button&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;readout&quot; id=&quot;rEq&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div class=&quot;tblwrap&quot;&gt;&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;Shock&lt;/th&gt;&lt;th&gt;Esito&lt;/th&gt;&lt;th&gt;Coerente con le attese?&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Piccolo&lt;/b&gt;&lt;br&gt;S &amp;lt; S&lt;sub&gt;1&lt;/sub&gt;&lt;/td&gt;&lt;td&gt;Nessun default: il costo supera il beneficio anche se il default è atteso.&lt;/td&gt;&lt;td&gt;Sì, equilibrio unico “buono”&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Grande&lt;/b&gt;&lt;br&gt;S &amp;gt; S&lt;sub&gt;2&lt;/sub&gt;&lt;/td&gt;&lt;td&gt;Default certo: il beneficio supera il costo anche se il default non è atteso.&lt;/td&gt;&lt;td&gt;Sì, equilibrio unico “cattivo”&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Intermedio&lt;/b&gt;&lt;br&gt;S&lt;sub&gt;1&lt;/sub&gt; &amp;lt; S &amp;lt; S&lt;sub&gt;2&lt;/sub&gt;&lt;/td&gt;&lt;td&gt;Due equilibri: &lt;b&gt;N&lt;/b&gt; (su B&lt;sub&gt;U&lt;/sub&gt;, no default) e &lt;b&gt;D&lt;/b&gt; (su B&lt;sub&gt;E&lt;/sub&gt;, default).&lt;/td&gt;&lt;td&gt;Entrambi coerenti con le attese&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/div&gt;
+&lt;p class=&quot;small&quot;&gt;&lt;span class=&quot;src&quot;&gt;slide 10–11, 15&lt;/span&gt; S&lt;sub&gt;1&lt;/sub&gt;: dove B&lt;sub&gt;E&lt;/sub&gt; incontra C. S&lt;sub&gt;2&lt;/sub&gt;: dove B&lt;sub&gt;U&lt;/sub&gt; incontra C. Poiché B&lt;sub&gt;E&lt;/sub&gt; sta sopra B&lt;sub&gt;U&lt;/sub&gt;, S&lt;sub&gt;1&lt;/sub&gt; &amp;lt; S&lt;sub&gt;2&lt;/sub&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid2&quot; style=&quot;margin-top:14px&quot;&gt;
+&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Coordination failure&lt;/b&gt; (fallimento di coordinamento): nella zona intermedia entrambi gli equilibri sono “ugualmente possibili” e la scelta dipende &lt;em&gt;solo&lt;/em&gt; da ciò che si aspettano gli investitori. Se si aspettano il default, il default arriva, se non se lo aspettano no. Se tutti si coordinassero sull&#x27;aspettativa “nessun default” starebbero meglio, ma nessun singolo investitore ha interesse a restare quando teme che gli altri vendano. &lt;span class=&quot;src&quot;&gt;slide 12&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;def&quot;&gt;&lt;b&gt;La nota chiave&lt;/b&gt;: non ci sarebbe spazio per equilibri multipli se il governo potesse &lt;u&gt;sempre garantire&lt;/u&gt; che il contante per pagare sarà disponibile. In quel caso le attese non alzerebbero i tassi e &lt;b&gt;B&lt;sub&gt;E&lt;/sub&gt; coinciderebbe con B&lt;sub&gt;U&lt;/sub&gt;&lt;/b&gt;. È la situazione di un Paese con una propria banca centrale, che fa da &lt;span class=&quot;en&quot;&gt;lender of last resort&lt;/span&gt; (prestatore di ultima istanza). &lt;span class=&quot;src&quot;&gt;slide 13&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · Parte 4&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;Perché la curva B&lt;sub&gt;E&lt;/sub&gt; sta sopra B&lt;sub&gt;U&lt;/sub&gt;?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Perché quando il default è atteso gli investitori vendono, i tassi salgono, il deficit peggiora e l&#x27;austerità necessaria per pagare aumenta. Quindi per ogni shock il beneficio di non pagare è maggiore.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Con uno shock S&#x27; compreso tra S&lt;sub&gt;1&lt;/sub&gt; e S&lt;sub&gt;2&lt;/sub&gt;, che cosa determina se si finisce in N o in D?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Solo le aspettative degli investitori. Se si attendono il default si va su B&lt;sub&gt;E&lt;/sub&gt;, dove il beneficio supera C (punto D). Altrimenti si resta su B&lt;sub&gt;U&lt;/sub&gt;, dove il beneficio è sotto C (punto N). Entrambi gli esiti confermano l&#x27;aspettativa che li ha generati.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Con uno shock piccolo (S &amp;lt; S&lt;sub&gt;1&lt;/sub&gt;) l&#x27;aspettativa di default può autoavverarsi?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;No. Anche su B&lt;sub&gt;E&lt;/sub&gt; il beneficio resta sotto il costo, quindi il governo paga e l&#x27;aspettativa viene smentita. Non è un equilibrio.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;In quale caso gli equilibri multipli scompaiono?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Quando il governo può sempre garantire la liquidità (per esempio grazie a una banca centrale che fa da prestatore di ultima istanza): B&lt;sub&gt;E&lt;/sub&gt; coincide con B&lt;sub&gt;U&lt;/sub&gt; e resta una sola soglia.&lt;/div&gt;&lt;/details&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 5 ─────────────────────────────── --&gt;
+&lt;section class=&quot;part brick&quot; id=&quot;s-policy&quot;&gt;
+&lt;div class=&quot;num&quot;&gt;Parte 5 · Le politiche&lt;/div&gt;
+&lt;h2&gt;Si può evitare il coordination failure?&lt;/h2&gt;
+&lt;p class=&quot;lead&quot;&gt;Nell&#x27;eurozona le due curve &lt;b&gt;non coincidono&lt;/b&gt;: gli Stati membri non possono garantire sempre la liquidità. I nuovi strumenti, EFSM ed EFSF e poi l&#x27;ESM, hanno aiutato ma non sono bastati. Per evitare il fallimento di coordinamento, e il probabile crollo dell&#x27;eurozona, è stata decisiva la &lt;b&gt;politica monetaria&lt;/b&gt;. &lt;span class=&quot;src&quot;&gt;slide 14&lt;/span&gt;&lt;/p&gt;
+
+&lt;div class=&quot;grid2&quot;&gt;
+&lt;div&gt;
+&lt;div class=&quot;tabs&quot; data-tabs&gt;
+&lt;div role=&quot;tablist&quot;&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;true&quot;&gt;Il ruolo della banca centrale&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Il ruolo degli aiuti finanziari&lt;/button&gt;&lt;/div&gt;
+&lt;div role=&quot;tabpanel&quot;&gt;
+&lt;p&gt;Il cattivo equilibrio si evita se si &lt;b&gt;abbassa il beneficio del default&lt;/b&gt;. Per esempio, la banca centrale annuncia che interverrà in caso di tensioni e panico per calmare i mercati. Se l&#x27;annuncio è &lt;b&gt;credibile&lt;/b&gt;, riduce le corse a vendere il debito, lo spread e la tentazione di default. &lt;span class=&quot;src&quot;&gt;slide 16&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Graficamente B&lt;sub&gt;E&lt;/sub&gt; si abbassa in &lt;b&gt;B′&lt;sub&gt;E&lt;/sub&gt;&lt;/b&gt;. Con lo stesso shock S′ il beneficio resta sotto il costo: l&#x27;equilibrio è quello buono, senza default.&lt;/p&gt;
+&lt;p class=&quot;small&quot;&gt;Nella pratica è quello che è successo con il “&lt;span class=&quot;en&quot;&gt;whatever it takes&lt;/span&gt;” di Mario Draghi (luglio 2012) e con il programma OMT, &lt;span class=&quot;en&quot;&gt;Outright Monetary Transactions&lt;/span&gt; (settembre 2012): acquisti potenzialmente illimitati di titoli di Stato, condizionati a un programma EFSF/ESM. &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; Vedi “Per approfondire”.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div role=&quot;tabpanel&quot; hidden&gt;
+&lt;p&gt;Se il governo ottiene &lt;b&gt;prestiti a tasso relativamente basso&lt;/b&gt; (dall&#x27;ESM e/o dall&#x27;UE) il beneficio del default si riduce. Pagare costa meno, quindi la tentazione cala in entrambi i casi: &lt;b&gt;B&lt;sub&gt;U&lt;/sub&gt; → B′&lt;sub&gt;U&lt;/sub&gt;&lt;/b&gt; e &lt;b&gt;B&lt;sub&gt;E&lt;/sub&gt; → B′&lt;sub&gt;E&lt;/sub&gt;&lt;/b&gt;. Con lo shock S′, anche con il default atteso, il costo supera il beneficio. &lt;span class=&quot;src&quot;&gt;slide 17&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;small&quot;&gt;La slide scrive “EMS”: dal contesto si tratta verosimilmente dell&#x27;&lt;b&gt;ESM&lt;/b&gt;, il &lt;span class=&quot;en&quot;&gt;European Stability Mechanism&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h4&gt;La sequenza degli strumenti europei &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt;&lt;/h4&gt;
+&lt;div class=&quot;tblwrap&quot;&gt;&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;Strumento&lt;/th&gt;&lt;th&gt;Quando&lt;/th&gt;&lt;th&gt;Che cos&#x27;è&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;EFSM&lt;/b&gt; · &lt;span class=&quot;en&quot;&gt;European Financial Stabilisation Mechanism&lt;/span&gt;&lt;/td&gt;&lt;td&gt;maggio 2010&lt;/td&gt;&lt;td&gt;Regolamento del Consiglio: la Commissione può prendere a prestito fino a 60 mld € sul mercato, garantiti dal bilancio UE. Usato per Irlanda, Portogallo e (2015) Grecia.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;EFSF&lt;/b&gt; · &lt;span class=&quot;en&quot;&gt;European Financial Stability Facility&lt;/span&gt;&lt;/td&gt;&lt;td&gt;giugno/agosto 2010&lt;/td&gt;&lt;td&gt;Veicolo temporaneo dei Paesi euro, capacità di prestito di 440 mld € garantita dagli Stati membri.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;ESM&lt;/b&gt; · &lt;span class=&quot;en&quot;&gt;European Stability Mechanism&lt;/span&gt;&lt;/td&gt;&lt;td&gt;trattato firmato a febbraio 2012, operativo dall&#x27;8 ottobre 2012&lt;/td&gt;&lt;td&gt;Successore permanente dell&#x27;EFSF. Insieme, EFSF ed ESM hanno erogato circa 295 mld € a cinque Paesi.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/div&gt;
+&lt;p class=&quot;small&quot;&gt;Fonte: sito ESM (storia) e Banque de France. Link in “Per approfondire”.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div class=&quot;chart&quot;&gt;&lt;svg id=&quot;chPol&quot; viewBox=&quot;0 0 560 340&quot; role=&quot;img&quot; aria-label=&quot;Effetto delle politiche sulle curve di beneficio&quot;&gt;&lt;/svg&gt;
+&lt;div style=&quot;margin-top:10px;display:grid;gap:10px&quot;&gt;
+&lt;div&gt;Banca centrale: &lt;span class=&quot;seg&quot; id=&quot;pCB&quot;&gt;&lt;button aria-pressed=&quot;true&quot; data-v=&quot;0&quot;&gt;nessun backstop&lt;/button&gt;&lt;button aria-pressed=&quot;false&quot; data-v=&quot;1&quot;&gt;annuncio credibile&lt;/button&gt;&lt;button aria-pressed=&quot;false&quot; data-v=&quot;2&quot;&gt;garanzia piena&lt;/button&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;label class=&quot;chk&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;pAid&quot;&gt; Prestiti agevolati (ESM / UE)&lt;/label&gt;
+&lt;div class=&quot;ctrl&quot;&gt;&lt;label&gt;Shock S′ &lt;input type=&quot;range&quot; id=&quot;pS&quot; min=&quot;0&quot; max=&quot;10&quot; step=&quot;0.05&quot; value=&quot;6.2&quot;&gt;&lt;output id=&quot;oPS&quot;&gt;&lt;/output&gt;&lt;/label&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;readout&quot; id=&quot;rPol&quot;&gt;&lt;/div&gt;
+&lt;p class=&quot;small&quot;&gt;Le linee tratteggiate sono le curve originali B&lt;sub&gt;E&lt;/sub&gt; e B&lt;sub&gt;U&lt;/sub&gt;. “Garanzia piena” è il caso della slide 13: B&lt;sub&gt;E&lt;/sub&gt; coincide con B&lt;sub&gt;U&lt;/sub&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · Parte 5&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;Perché un annuncio della banca centrale può bastare, senza spendere nulla?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Perché agisce sulle aspettative. Se è credibile, gli investitori non temono più di restare senza compratori, non vendono in massa, lo spread non sale e B&lt;sub&gt;E&lt;/sub&gt; si abbassa. Il cattivo equilibrio non ha più motivo di realizzarsi.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Che differenza c&#x27;è tra l&#x27;effetto della banca centrale e quello dei prestiti agevolati sulle curve?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Nelle slide la banca centrale abbassa B&lt;sub&gt;E&lt;/sub&gt; (riduce l&#x27;effetto amplificante delle aspettative). I prestiti a basso tasso abbassano sia B&lt;sub&gt;U&lt;/sub&gt; sia B&lt;sub&gt;E&lt;/sub&gt;, perché rendono meno costoso pagare in ogni caso.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Perché per le slide EFSF/ESM “non erano stati sufficienti”?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Perché, da soli, non abbassavano abbastanza B&lt;sub&gt;E&lt;/sub&gt; da eliminare la zona degli equilibri multipli. È servita la politica monetaria (la promessa della BCE) per togliere ai mercati la paura di una crisi di liquidità.&lt;/div&gt;&lt;/details&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 6 ─────────────────────────────── --&gt;
+&lt;section class=&quot;part sage&quot; id=&quot;s-budget&quot;&gt;
+&lt;div class=&quot;num&quot;&gt;Parte 6 · Budgetary union&lt;/div&gt;
+&lt;h2&gt;Un&#x27;altra via: l&#x27;unione di bilancio&lt;/h2&gt;
+&lt;p class=&quot;lead&quot;&gt;“&lt;span class=&quot;en&quot;&gt;Are there other ways to solve the fragility of EMU?&lt;/span&gt;” Una &lt;span class=&quot;en&quot;&gt;budgetary union&lt;/span&gt; (unione di bilancio) consiste nel centralizzare una parte significativa dei bilanci nazionali in un bilancio comune dell&#x27;unione. EMU sta per &lt;span class=&quot;en&quot;&gt;Economic and Monetary Union&lt;/span&gt;, l&#x27;unione economica e monetaria. &lt;span class=&quot;src&quot;&gt;slide 18–19&lt;/span&gt;&lt;/p&gt;
+
+&lt;div class=&quot;grid2&quot;&gt;
+&lt;div class=&quot;box tint&quot;&gt;&lt;h4 style=&quot;margin-top:0&quot;&gt;Insurance mechanism · meccanismo assicurativo&lt;/h4&gt;&lt;p&gt;Attiva &lt;b&gt;trasferimenti di reddito&lt;/b&gt; dai Paesi in fase buona ai Paesi colpiti dalla sfortuna, &lt;em&gt;senza bisogno di prestiti&lt;/em&gt;. È automatico: chi va bene paga più tasse al centro e riceve meno, chi va male il contrario.&lt;/p&gt;&lt;p&gt;Può compensare gli &lt;span class=&quot;en&quot;&gt;asymmetric shocks&lt;/span&gt; (shock che colpiscono un Paese e non gli altri). &lt;span class=&quot;src&quot;&gt;slide 19–20&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;box tint&quot;&gt;&lt;h4 style=&quot;margin-top:0&quot;&gt;Protection mechanism · meccanismo di protezione&lt;/h4&gt;&lt;p&gt;Permette di &lt;b&gt;consolidare una parte significativa di debiti e deficit nazionali&lt;/b&gt; in debito dell&#x27;unione, proteggendo gli Stati dalle crisi di liquidità e dai default forzati.&lt;/p&gt;&lt;p&gt;Il governo dell&#x27;unione diventa come un governo &lt;span class=&quot;en&quot;&gt;stand-alone&lt;/span&gt;: &lt;b&gt;emette debito in una valuta che controlla pienamente&lt;/b&gt;. Un governo dell&#x27;unione forte potrebbe anche “costringere” la banca centrale comune a fornire liquidità nelle crisi. &lt;span class=&quot;src&quot;&gt;slide 20&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;def&quot;&gt;&lt;b&gt;Moral hazard&lt;/b&gt; (azzardo morale): se un Paese sa che in caso di difficoltà riceverà trasferimenti, può avere meno incentivi a gestire bene i conti o a fare riforme. Le slide notano che il rischio è serio &lt;em&gt;a meno che gli shock siano temporanei&lt;/em&gt;: un trasferimento permanente verso lo stesso Paese smette di essere un&#x27;assicurazione. &lt;span class=&quot;src&quot;&gt;slide 20&lt;/span&gt;&lt;/div&gt;
+
+&lt;h3&gt;Quanto è grande oggi il bilancio UE?&lt;/h3&gt;
+&lt;div class=&quot;grid2&quot;&gt;
+&lt;div class=&quot;chart&quot;&gt;&lt;svg id=&quot;barCountries&quot; viewBox=&quot;0 0 520 280&quot; role=&quot;img&quot; aria-label=&quot;Bilanci nazionali e bilancio UE 2019, miliardi di euro&quot;&gt;&lt;/svg&gt;&lt;p class=&quot;small&quot;&gt;Spesa annua 2019 in miliardi di €, dall&#x27;infografica della Commissione “&lt;i&gt;The EU budget at a glance&lt;/i&gt;”, maggio 2019 &lt;span class=&quot;src&quot;&gt;slide 22&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div class=&quot;chart&quot;&gt;&lt;svg id=&quot;barShare&quot; viewBox=&quot;0 0 520 70&quot; role=&quot;img&quot; aria-label=&quot;Bilancio UE 1% contro bilancio nazionale medio 46%&quot;&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;ul class=&quot;clean&quot;&gt;
+&lt;li&gt;2019: &lt;b&gt;148 mld €&lt;/b&gt;, circa l&#x27;&lt;b&gt;1% del PIL UE&lt;/b&gt;, dentro il &lt;span class=&quot;en&quot;&gt;Multiannual Financial Framework&lt;/span&gt; (MFF, il bilancio settennale) 2014–20. &lt;span class=&quot;src&quot;&gt;slide 21&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;È più piccolo del bilancio dell&#x27;Austria o del Belgio e vale il &lt;b&gt;2%&lt;/b&gt; dei bilanci nazionali sommati (7.524 mld €). I governi spendono &lt;b&gt;più di 50 volte&lt;/b&gt; quello che spende l&#x27;UE. &lt;span class=&quot;src&quot;&gt;slide 23&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Un bilancio nazionale medio vale il &lt;b&gt;46%&lt;/b&gt; dell&#x27;economia (40–50% del PIL). &lt;span class=&quot;src&quot;&gt;slide 21, 23&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Il bilancio UE serve soprattutto per &lt;b&gt;investimenti&lt;/b&gt; (infrastrutture e ricerca, dove contano le economie di scala). &lt;b&gt;Non&lt;/b&gt; finanzia protezione sociale (sussidi di disoccupazione, pensioni), istruzione primaria o difesa nazionale. &lt;span class=&quot;src&quot;&gt;slide 22, 24&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Il cittadino medio paga circa &lt;b&gt;240 € l&#x27;anno&lt;/b&gt; (2018), meno di un caffè al giorno. &lt;span class=&quot;src&quot;&gt;slide 24&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;details class=&quot;acc&quot;&gt;&lt;summary&gt;La svolta: Next Generation EU (NGEU) &lt;span class=&quot;src&quot;&gt;slide 25–27&lt;/span&gt;&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;In risposta al Covid-19, a luglio 2020 è stata decisa un&#x27;espansione fiscale di &lt;b&gt;750 mld €&lt;/b&gt; (quasi il 5% del PIL UE): &lt;b&gt;Next Generation EU&lt;/b&gt;. Le slide sottolineano due novità:&lt;/p&gt;
+&lt;ul class=&quot;clean&quot;&gt;&lt;li&gt;è la &lt;b&gt;prima politica fiscale pan-europea&lt;/b&gt;;&lt;/li&gt;&lt;li&gt;è &lt;b&gt;finanziata con capitale raccolto sui mercati finanziari&lt;/b&gt;, cioè con debito comune emesso dalla Commissione.&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&quot;grid3&quot; style=&quot;margin-top:10px&quot;&gt;
+&lt;div class=&quot;box&quot;&gt;&lt;b style=&quot;font-family:var(--serif);font-size:1.5rem&quot;&gt;1.074,3&lt;/b&gt;&lt;br&gt;&lt;small&gt;mld € · MFF 2021–27 (prezzi 2024), in linea con il precedente&lt;/small&gt;&lt;/div&gt;
+&lt;div class=&quot;box&quot;&gt;&lt;b style=&quot;font-family:var(--serif);font-size:1.5rem&quot;&gt;750&lt;/b&gt;&lt;br&gt;&lt;small&gt;mld € · NGEU: 390 di &lt;span class=&quot;en&quot;&gt;grants&lt;/span&gt; (sovvenzioni) + 360 di &lt;span class=&quot;en&quot;&gt;loans&lt;/span&gt; (prestiti)&lt;/small&gt;&lt;/div&gt;
+&lt;div class=&quot;box&quot;&gt;&lt;b style=&quot;font-family:var(--serif);font-size:1.5rem&quot;&gt;1.824,3&lt;/b&gt;&lt;br&gt;&lt;small&gt;mld € · totale 2021–27 a prezzi 2024&lt;/small&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Nel 2024 il bilancio UE ha erogato 146,1 mld € di pagamenti, che salgono a 247,0 mld € includendo le entrate assegnate da NGEU e altre fonti (98,2 mld). A prezzi correnti 2026 il totale è &lt;b&gt;2.027,9 mld €&lt;/b&gt;: 1.221,0 di bilancio di lungo periodo + 806,9 di NGEU. La voce più grande è “&lt;span class=&quot;en&quot;&gt;Cohesion, Resilience and Values&lt;/span&gt;” (429,8 + 776,5 da NGEU). &lt;span class=&quot;src&quot;&gt;slide 26–27&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;small&quot;&gt;La pagina “fact check” della Commissione conferma la ripartizione 1.221 + 806,9 mld a prezzi correnti. &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+
+&lt;h3&gt;Incomplete vs full monetary union&lt;/h3&gt;
+&lt;p&gt;Centralizzare il bilancio richiederebbe un &lt;b&gt;grado molto profondo di unificazione politica&lt;/b&gt;, e la slide 28 chiede: “&lt;span class=&quot;en&quot;&gt;How is the political convergence in EZ?&lt;/span&gt;”. Le slide distinguono due modelli. &lt;span class=&quot;src&quot;&gt;slide 28–29&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;tblwrap&quot;&gt;&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Incomplete monetary union&lt;/th&gt;&lt;th&gt;Full monetary union&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Definizione&lt;/td&gt;&lt;td&gt;Unione monetaria &lt;b&gt;senza&lt;/b&gt; unione di bilancio (oggi l&#x27;eurozona)&lt;/td&gt;&lt;td&gt;Unione monetaria &lt;b&gt;con&lt;/b&gt; unione di bilancio&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Debito pubblico&lt;/td&gt;&lt;td&gt;Nazionale, in una moneta che il singolo Stato non controlla&lt;/td&gt;&lt;td&gt;In larga parte dell&#x27;unione, in una moneta che l&#x27;unione controlla&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Shock asimmetrici&lt;/td&gt;&lt;td&gt;Assorbiti dal singolo Paese, eventualmente con prestiti&lt;/td&gt;&lt;td&gt;Trasferimenti automatici di reddito&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Nel modello&lt;/td&gt;&lt;td&gt;B&lt;sub&gt;E&lt;/sub&gt; ≠ B&lt;sub&gt;U&lt;/sub&gt;: equilibri multipli possibili&lt;/td&gt;&lt;td&gt;B&lt;sub&gt;E&lt;/sub&gt; ≈ B&lt;sub&gt;U&lt;/sub&gt;: protezione dalle crisi di liquidità &lt;span class=&quot;add&quot;&gt;integrazione&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Rischio principale&lt;/td&gt;&lt;td&gt;Fragilità, crisi autoavveranti&lt;/td&gt;&lt;td&gt;Moral hazard, richiede unione politica&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · Parte 6&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;Distingui insurance mechanism e protection mechanism.&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;L&#x27;&lt;b&gt;insurance&lt;/b&gt; trasferisce reddito dai Paesi in fase buona a quelli in crisi, senza prestiti. La &lt;b&gt;protection&lt;/b&gt; consolida parte del debito nazionale in debito comune, emesso in una valuta che l&#x27;unione controlla, e protegge gli Stati da crisi di liquidità e default forzati.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Perché il bilancio UE attuale non può fare da “assicurazione” contro gli shock?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Perché è minuscolo (circa l&#x27;1% del PIL contro il 46% dei bilanci nazionali) e finanzia soprattutto investimenti, non voci che reagiscono al ciclo come i sussidi di disoccupazione.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Quali sono le due novità di NGEU secondo le slide?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;È la prima politica fiscale pan-europea ed è finanziata con debito raccolto sui mercati dalla UE.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Quando il moral hazard è meno preoccupante?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Quando gli shock sono temporanei: i trasferimenti vanno a turno a Paesi diversi e funzionano davvero come un&#x27;assicurazione, non come un sussidio permanente.&lt;/div&gt;&lt;/details&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- 7 ─────────────────────────────── --&gt;
+&lt;section class=&quot;part ochre&quot; id=&quot;s-safe&quot;&gt;
+&lt;div class=&quot;num&quot;&gt;Parte 7 · Safe assets&lt;/div&gt;
+&lt;h2&gt;European Safe Bonds (ESBies) ed EU bonds&lt;/h2&gt;
+&lt;p class=&quot;lead&quot;&gt;Basta che nell&#x27;eurozona ci sia anche un solo Paese considerato sicuro perché i capitali scappino lì dai Paesi rischiosi (&lt;span class=&quot;en&quot;&gt;flight to safety&lt;/span&gt;). L&#x27;asimmetria tra Paesi diventa asimmetria tra titoli. Si può progettare un &lt;b&gt;titolo comune&lt;/b&gt; che dia un equilibrio unico, senza fughe di capitali tra regioni? &lt;span class=&quot;src&quot;&gt;slide 30&lt;/span&gt;&lt;/p&gt;
+
+&lt;div class=&quot;grid2&quot;&gt;
+&lt;div&gt;
+&lt;h4&gt;La proposta &lt;span class=&quot;src&quot;&gt;slide 30–32&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;Le slide la attribuiscono a un rapporto dell&#x27;&lt;b&gt;ESRB&lt;/b&gt; (&lt;span class=&quot;en&quot;&gt;European Systemic Risk Board&lt;/span&gt;, il Comitato europeo per il rischio sistemico, istituito nel 2010 per vigilare sul sistema finanziario UE e prevenire il rischio sistemico) del 2011, e al paper di &lt;b&gt;Brunnermeier et al. (2011)&lt;/b&gt;.&lt;/p&gt;
+&lt;ul class=&quot;clean&quot;&gt;
+&lt;li&gt;Non propone &lt;b&gt;debito comune&lt;/b&gt; (che richiederebbe un accordo politico e giuridico tra Stati) ma uno &lt;b&gt;strumento di mercato&lt;/b&gt; che funzioni &lt;em&gt;come&lt;/em&gt; gli eurobond.&lt;/li&gt;
+&lt;li&gt;Un bond con &lt;b&gt;responsabilità solidale&lt;/b&gt; (&lt;span class=&quot;en&quot;&gt;joint liability&lt;/span&gt;: se uno non paga, pagano gli altri), come un Eurobond, crea un forte moral hazard.&lt;/li&gt;
+&lt;li&gt;Alternativa: &lt;span class=&quot;en&quot;&gt;sovereign bond-backed securities&lt;/span&gt; (SBBS, titoli garantiti da titoli di Stato) &lt;b&gt;senza joint liability&lt;/b&gt;.&lt;/li&gt;
+&lt;li&gt;Si raccolgono bond sovrani in un portafoglio e lo si usa per emettere nuovi titoli con diversa &lt;span class=&quot;en&quot;&gt;seniority&lt;/span&gt; (priorità nel rimborso): una &lt;b&gt;senior tranche&lt;/b&gt; molto sicura (gli ESBies) e una &lt;b&gt;junior tranche&lt;/b&gt; che assorbe le perdite.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class=&quot;small&quot;&gt;Nota sulle date &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt;. La proposta ESBies del 2011 viene dal gruppo accademico &lt;i&gt;Euro-nomics&lt;/i&gt; (Brunnermeier, Garicano, Lane, Pagano, Reis, Santos, Thesmar, Van Nieuwerburgh, Vayanos). Lo studio di fattibilità ufficiale dell&#x27;ESRB (&lt;span class=&quot;en&quot;&gt;High-Level Task Force on Safe Assets&lt;/span&gt;, presieduta da Philip Lane) è del gennaio 2018. Verifica con il docente a quale documento si riferisce la slide 30.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h4&gt;Come funzionerebbero · esempio delle slide &lt;span class=&quot;src&quot;&gt;slide 33&lt;/span&gt;&lt;/h4&gt;
+&lt;div class=&quot;chart&quot;&gt;&lt;svg id=&quot;chTr&quot; viewBox=&quot;0 0 520 320&quot; role=&quot;img&quot; aria-label=&quot;Tranching: senior e junior tranche e assorbimento delle perdite&quot;&gt;&lt;/svg&gt;
+&lt;div class=&quot;ctrl&quot;&gt;
+&lt;label&gt;Perdite sul portafoglio &lt;input type=&quot;range&quot; id=&quot;tL&quot; min=&quot;0&quot; max=&quot;60&quot; step=&quot;1&quot; value=&quot;10&quot;&gt;&lt;output id=&quot;oTL&quot;&gt;&lt;/output&gt;&lt;/label&gt;
+&lt;label&gt;Spessore junior tranche &lt;input type=&quot;range&quot; id=&quot;tJ&quot; min=&quot;10&quot; max=&quot;50&quot; step=&quot;1&quot; value=&quot;30&quot;&gt;&lt;output id=&quot;oTJ&quot;&gt;&lt;/output&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;readout&quot; id=&quot;rTr&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid3&quot; style=&quot;margin-top:16px&quot;&gt;
+&lt;div class=&quot;box&quot;&gt;&lt;b&gt;1 · Raccolta&lt;/b&gt;&lt;p&gt;Si mettono in portafoglio bond di Germania, Spagna, Francia, Italia… per un totale di, diciamo, 100 mld €.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;box&quot;&gt;&lt;b&gt;2 · Emissione&lt;/b&gt;&lt;p&gt;Uno &lt;span class=&quot;en&quot;&gt;special purpose vehicle&lt;/span&gt; (società veicolo creata solo per questo) compra il portafoglio ed emette 70 mld di senior (ESBies) e 30 mld di junior.&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;box&quot;&gt;&lt;b&gt;3 · Rischio e rendimento&lt;/b&gt;&lt;p&gt;La junior assorbe per prima le perdite e quindi paga un &lt;b&gt;rendimento più alto&lt;/b&gt;. La senior è il “safe bond”.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Perché interessa: il doom loop&lt;/h3&gt;
+&lt;div class=&quot;grid2&quot;&gt;
+&lt;figure class=&quot;chart&quot; style=&quot;margin:0&quot;&gt;&lt;svg viewBox=&quot;0 0 420 260&quot; role=&quot;img&quot; aria-label=&quot;Doom loop tra banche e Stato&quot;&gt;
+&lt;rect x=&quot;20&quot; y=&quot;96&quot; width=&quot;140&quot; height=&quot;64&quot; rx=&quot;12&quot; style=&quot;fill:var(--slate-bg);stroke:var(--slate)&quot;/&gt;&lt;text x=&quot;90&quot; y=&quot;124&quot; text-anchor=&quot;middle&quot; style=&quot;font:600 16px var(--serif);fill:var(--ink)&quot;&gt;Stato&lt;/text&gt;&lt;text x=&quot;90&quot; y=&quot;144&quot; text-anchor=&quot;middle&quot; class=&quot;axl&quot;&gt;spread ↑, debito ↑&lt;/text&gt;
+&lt;rect x=&quot;260&quot; y=&quot;96&quot; width=&quot;140&quot; height=&quot;64&quot; rx=&quot;12&quot; style=&quot;fill:var(--brick-bg);stroke:var(--brick)&quot;/&gt;&lt;text x=&quot;330&quot; y=&quot;124&quot; text-anchor=&quot;middle&quot; style=&quot;font:600 16px var(--serif);fill:var(--ink)&quot;&gt;Banche&lt;/text&gt;&lt;text x=&quot;330&quot; y=&quot;144&quot; text-anchor=&quot;middle&quot; class=&quot;axl&quot;&gt;piene di bond nazionali&lt;/text&gt;
+&lt;path d=&quot;M140 92 C190 30 230 30 280 92&quot; style=&quot;fill:none;stroke:var(--muted);stroke-width:1.6&quot; marker-end=&quot;url(#arr)&quot;/&gt;
+&lt;text x=&quot;210&quot; y=&quot;34&quot; text-anchor=&quot;middle&quot; class=&quot;axl&quot;&gt;bond svalutati → perdite&lt;/text&gt;
+&lt;path d=&quot;M280 164 C230 226 190 226 140 164&quot; style=&quot;fill:none;stroke:var(--muted);stroke-width:1.6&quot; marker-end=&quot;url(#arr)&quot;/&gt;
+&lt;text x=&quot;210&quot; y=&quot;238&quot; text-anchor=&quot;middle&quot; class=&quot;axl&quot;&gt;salvataggi → più debito pubblico&lt;/text&gt;
+&lt;/svg&gt;&lt;figcaption&gt;Il &lt;span class=&quot;en&quot;&gt;doom loop&lt;/span&gt; (circolo vizioso banche–Stato): le banche detengono soprattutto titoli del proprio Stato, quindi la crisi dell&#x27;uno contagia l&#x27;altro. &lt;span class=&quot;add&quot;&gt;integrazione&lt;/span&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;div&gt;
+&lt;p&gt;Obiettivi dell&#x27;ESRB &lt;span class=&quot;src&quot;&gt;slide 32&lt;/span&gt;:&lt;/p&gt;
+&lt;ul class=&quot;clean&quot;&gt;
+&lt;li&gt;ridurre il &lt;b&gt;doom loop&lt;/b&gt; tra banche e governi nazionali: le banche comprerebbero solo la senior tranche e non sarebbero più esposte al rischio di un solo Stato &lt;span class=&quot;src&quot;&gt;slide 33&lt;/span&gt;;&lt;/li&gt;
+&lt;li&gt;creare un &lt;b&gt;common low-risk asset&lt;/b&gt; per l&#x27;area euro, con un ruolo simile ai &lt;span class=&quot;en&quot;&gt;U.S. Treasury bonds&lt;/span&gt;;&lt;/li&gt;
+&lt;li&gt;rafforzare la &lt;b&gt;financial stability&lt;/b&gt; &lt;u&gt;senza&lt;/u&gt; unione fiscale piena né mutualizzazione del debito;&lt;/li&gt;
+&lt;li&gt;poiché il rischio è diversificato su tutti gli Stati, la senior tranche sarebbe un “&lt;span class=&quot;en&quot;&gt;European safe asset&lt;/span&gt;” che riduce la frammentazione finanziaria.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;b&gt;Domande aperte&lt;/b&gt; &lt;span class=&quot;src&quot;&gt;slide 33&lt;/span&gt;: ci sarà un compratore per la junior tranche? E se la crisi si estende ai Paesi grandi e la junior non basta ad assorbire le perdite? Prova il cursore qui sopra con perdite oltre lo spessore della junior.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Il dibattito&lt;/h3&gt;
+&lt;div class=&quot;tabs&quot; data-tabs&gt;
+&lt;div role=&quot;tablist&quot;&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;true&quot;&gt;De Grauwe &amp;amp; Ji (2018)&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;ECB WP 2712 (2022)&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Banca d&#x27;Italia n. 937 (2025)&lt;/button&gt;&lt;button role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Banca d&#x27;Italia n. 1010 (2026)&lt;/button&gt;&lt;/div&gt;
+&lt;div role=&quot;tabpanel&quot;&gt;
+&lt;p&gt;&lt;b&gt;La critica: il safe asset non è la soluzione, serve una budgetary union.&lt;/b&gt; Secondo De Grauwe e Ji, un sistema fondamentalmente instabile non si stabilizza con la &lt;span class=&quot;en&quot;&gt;financial engineering&lt;/span&gt; (ingegneria finanziaria). La proposta ESRB dà l&#x27;illusione che i mercati dei titoli sovrani si possano stabilizzare senza &lt;b&gt;condividere il rischio tra Stati&lt;/b&gt; (&lt;span class=&quot;en&quot;&gt;risk sharing&lt;/span&gt;). Per loro la stabilizzazione passa solo dal risk sharing, quindi da più unione di bilancio e da unione politica. &lt;span class=&quot;src&quot;&gt;slide 34&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Collegamento al modello: i tranche non cambiano chi garantisce la liquidità del singolo Stato, quindi la distanza tra B&lt;sub&gt;E&lt;/sub&gt; e B&lt;sub&gt;U&lt;/sub&gt; resta. &lt;span class=&quot;add&quot;&gt;integrazione&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;La slide chiede anche: &lt;i&gt;quanto conta davvero il moral hazard? Ci sono prove che la spesa dei Paesi sia guidata da comportamenti di moral hazard?&lt;/i&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div role=&quot;tabpanel&quot; hidden&gt;
+&lt;p&gt;&lt;b&gt;“Can EU bonds serve as euro-denominated safe assets?”&lt;/b&gt; Un &lt;span class=&quot;en&quot;&gt;safe asset&lt;/span&gt; ha alta qualità creditizia, mantiene il valore nei periodi difficili ed è scambiato su mercati liquidi. I bond emessi dall&#x27;UE sono considerati di alta qualità e il loro spread sul Bund è rimasto contenuto nella recessione Covid del 2020. Le emissioni SURE e NGEU hanno migliorato la &lt;b&gt;liquidità&lt;/b&gt; (facilità di comprare e vendere senza muovere il prezzo) e ridotto il premio per il rischio di liquidità. Gli acquisti dell&#x27;Eurosistema non l&#x27;hanno danneggiata. &lt;b&gt;Ostacolo&lt;/b&gt;: la natura una tantum e temporanea delle risposte UE al Covid. &lt;span class=&quot;src&quot;&gt;slide 35&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div role=&quot;tabpanel&quot; hidden&gt;
+&lt;p&gt;&lt;b&gt;“Issuing European safe assets: how to get the most out of Eurobonds?”&lt;/b&gt; (Pallara, Pericoli, Tommasino). Il paper analizza gli Eurobond emessi dalla Commissione per conto dell&#x27;UE e i fattori che ne determinano i rendimenti. La &lt;b&gt;scarsa liquidità&lt;/b&gt; e l&#x27;&lt;b&gt;incertezza sulle emissioni future&lt;/b&gt; costano circa &lt;b&gt;40 punti base&lt;/b&gt; in più rispetto a uno scenario in cui gli Eurobond, garantiti congiuntamente dagli Stati, somiglino ai titoli nazionali. Emissioni continue, con meccanismi per redistribuire i risparmi sugli interessi, ridurrebbero il costo del debito per tutti. &lt;span class=&quot;src&quot;&gt;slide 36&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div role=&quot;tabpanel&quot; hidden&gt;
+&lt;p&gt;&lt;b&gt;“A European safe asset? Not without the investors”&lt;/b&gt; (Bonfanti, Marcucci). Perché i bond UE, pur sicurissimi, rendono più di quelli tedeschi o francesi? Perché sono &lt;b&gt;esclusi da molti indici finanziari&lt;/b&gt; e quindi hanno una base di investitori più ristretta. I rendimenti risultano più alti e volatili, soprattutto nelle fasi di stress e di tassi in salita. Riconoscerli come titoli sovrani europei e includerli negli indici ne migliorerebbe liquidità, stabilità e funzione di safe asset. &lt;span class=&quot;src&quot;&gt;slide 37&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;quiz&quot;&gt;&lt;h3&gt;Autoverifica · Parte 7&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;Qual è la differenza essenziale tra un Eurobond e gli ESBies?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;L&#x27;Eurobond implica &lt;b&gt;joint liability&lt;/b&gt;: se uno Stato non paga, pagano gli altri. Gli ESBies non hanno responsabilità solidale: la sicurezza nasce dalla diversificazione del portafoglio e dal tranching (la junior assorbe le prime perdite).&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Portafoglio di 100 mld, junior di 30. Le perdite sono 35 mld: chi perde quanto?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;La junior perde tutti i 30 mld (100%), la senior perde 5 mld su 70 (circa 7%). Il “safe bond” non è più del tutto sicuro.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Perché gli ESBies ridurrebbero il doom loop?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Perché le banche comprerebbero la senior tranche, diversificata su tutti gli Stati, invece dei titoli del proprio governo, e non sarebbero più legate alla sorte di un solo sovrano.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Riassumi la critica di De Grauwe e Ji.&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Un sistema fondamentalmente instabile non si stabilizza con l&#x27;ingegneria finanziaria. Serve una vera condivisione del rischio tra Stati, cioè unione di bilancio e quindi politica.&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Secondo i paper della Banca d&#x27;Italia, perché gli EU bonds non sono ancora pienamente “safe assets”?&lt;/summary&gt;&lt;div class=&quot;ans&quot;&gt;Per la scarsa liquidità e l&#x27;incertezza sulle emissioni future (n. 937, circa 40 bp di costo in più), e perché, esclusi dagli indici di titoli sovrani, hanno una base di investitori ristretta (n. 1010).&lt;/div&gt;&lt;/details&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- Per approfondire ─────────────────────────────── --&gt;
+&lt;section class=&quot;part terra&quot; id=&quot;s-refs&quot;&gt;
+&lt;div class=&quot;num&quot;&gt;Per approfondire&lt;/div&gt;
+&lt;h2&gt;Autori, studi, istituzioni e fonti citate&lt;/h2&gt;
+&lt;p class=&quot;lead&quot;&gt;Per ogni riferimento delle slide ho cercato sul web una scheda affidabile. Tutto ciò che segue, salvo dove è indicato “nelle slide”, è &lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; e va verificato al link.&lt;/p&gt;
+
+&lt;h3&gt;Il modello&lt;/h3&gt;
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;De Grauwe, P. &amp;amp; Ji, Y. (2013), “Self-fulfilling crises in the Eurozone: An empirical test”&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; &lt;i&gt;Journal of International Money and Finance&lt;/i&gt;, vol. 34, pp. 15–36. Uscito prima come CESifo WP 3821 e CEPS Working Document 366 (2012). Mostra che l&#x27;aumento degli spread dei Paesi periferici nel 2010–11 era spiegato solo in parte dai fondamentali (debito, deficit): una quota ampia dipendeva da un sentiment di mercato negativo e autoavverante. Nei Paesi “stand-alone” con debiti simili il fenomeno non si vedeva.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: è la base empirica del modello delle slide 2–15. Link: &lt;a href=&quot;https://researchonline.lse.ac.uk/id/eprint/49648&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LSE Research Online&lt;/a&gt; · &lt;a href=&quot;https://www.cesifo.org/en/publications/2012/working-paper/self-fulfilling-crises-eurozone-empirical-test&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CESifo WP 3821&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;De Grauwe, P., &lt;i&gt;Economics of Monetary Union&lt;/i&gt; (Oxford University Press)&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; Manuale di riferimento sull&#x27;unione monetaria, con molte edizioni. Il “De Grauwe 2018” delle slide corrisponde verosimilmente alla 12ª edizione. La più recente trovata è la 14ª (2022). Contiene il modello benefit–cost del default, la fragilità dell&#x27;eurozona e il dibattito sulla budgetary union.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: è il testo da cui vengono i grafici con B&lt;sub&gt;U&lt;/sub&gt;, B&lt;sub&gt;E&lt;/sub&gt;, S&lt;sub&gt;1&lt;/sub&gt;, S&lt;sub&gt;2&lt;/sub&gt;. Link: &lt;a href=&quot;https://researchonline.lse.ac.uk/id/eprint/102147&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;scheda nel repository LSE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;h3&gt;I costi del default&lt;/h3&gt;
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;Abbas, S. A., Pienkowski, A. &amp;amp; Rogoff, K. (a cura di), &lt;i&gt;Sovereign Debt: A Guide for Economists and Practitioners&lt;/i&gt;, OUP / IMF, 2019&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; Volume di circa 460 pagine con contributi di specialisti: sostenibilità e riduzione del debito, prevenzione delle crisi, storia del debito sovrano. Le slide 5–6 rimandano al cap. 7 (costi del default) e alla conferenza IMF del 24 maggio 2018.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: è la fonte dei costi del default nelle slide. Link: &lt;a href=&quot;https://www.imf.org/en/News/Seminars/Conferences/2018/05/24/sovereign-debt-a-guide-for-economists-and-practitioners&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;pagina IMF citata nelle slide&lt;/a&gt; · &lt;a href=&quot;https://www.bookstore.imf.org/books/sovereign-debt-a-guide-for-economics-and-practitioners&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IMF Bookstore&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;Borensztein, E. &amp;amp; Panizza, U. (2009), “The Costs of Sovereign Default”&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; &lt;i&gt;IMF Staff Papers&lt;/i&gt; 56(4), prima IMF WP 08/238. Esamina quattro tipi di costo: reputazionale, esclusione dal commercio, sistema finanziario interno, politico. I costi economici sono reali ma &lt;b&gt;temporanei&lt;/b&gt;, quelli politici (per governi e ministri in carica) sono pesanti.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: le slide non lo citano per nome, ma è uno studio di riferimento per la tesi “spread più alti solo per pochi anni” della slide 5. Link: &lt;a href=&quot;https://www.imf.org/en/Publications/WP/Issues/2016/12/31/The-Costs-of-Sovereign-Default-22346&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IMF Working Paper&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;Cruces, J. J. &amp;amp; Trebesch, C. (2013), “Sovereign Defaults: The Price of Haircuts”&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; &lt;i&gt;American Economic Journal: Macroeconomics&lt;/i&gt; 5(3), pp. 85–117. Costruisce un database degli haircut in 180 ristrutturazioni (68 Paesi, 1970–2010). Haircut più grandi si associano a spread successivi più alti e a &lt;b&gt;esclusioni più lunghe&lt;/b&gt; dai mercati.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: anche questo non è citato per nome, ma corrisponde agli “&lt;i&gt;other studies&lt;/i&gt;” della slide 5. Link: &lt;a href=&quot;https://ideas.repec.org/a/aea/aejmac/v5y2013i3p85-117.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IDEAS/RePEc&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;h3&gt;Istituzioni e politiche&lt;/h3&gt;
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;EFSM, EFSF ed ESM&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; L&#x27;EFSM (maggio 2010, fino a 60 mld €, garantito dal bilancio UE) e l&#x27;EFSF (2010, 440 mld €) sono stati strumenti temporanei. L&#x27;ESM, permanente, è operativo dall&#x27;8 ottobre 2012. Il sito ESM ne ricostruisce la storia e i programmi per Grecia, Irlanda, Portogallo, Spagna e Cipro.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: sono i “nuovi strumenti” della slide 14 e la fonte dei prestiti agevolati della slide 17. Link: &lt;a href=&quot;https://www.esm.europa.eu/about-us/history&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ESM · History&lt;/a&gt; · &lt;a href=&quot;https://www.banque-france.fr/en/banque-de-france/strong-transparent-governance/european-ecosystem/crisis-management-mechanisms&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Banque de France · meccanismi di gestione delle crisi&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;BCE: “whatever it takes” (26 luglio 2012) e Outright Monetary Transactions (6 settembre 2012)&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; Nel discorso di Londra Draghi disse: “&lt;i&gt;Within our mandate, the ECB is ready to do whatever it takes to preserve the euro&lt;/i&gt;”. Il 6 settembre il Consiglio direttivo definì le OMT: acquisti sul mercato secondario di titoli di Stato, subordinati a un programma EFSF/ESM con condizionalità stretta.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: è l&#x27;esempio concreto dell&#x27;“annuncio credibile” della slide 16, che abbassa B&lt;sub&gt;E&lt;/sub&gt;. Le slide non lo nominano, ma è il caso tipico. Link: &lt;a href=&quot;https://www.ecb.europa.eu/press/pr/date/2012/html/pr120906_1.en.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;BCE · comunicato OMT&lt;/a&gt; · &lt;a href=&quot;https://www.bis.org/review/r120727d.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;BIS · testo del discorso&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;Commissione europea: bilancio UE, MFF 2021–27 e NextGenerationEU&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; La pagina “fact check” spiega quanto è grande il bilancio UE: circa 160–200 mld € l&#x27;anno nel 2021–27, paragonabile a quello della Polonia. Riporta anche il pacchetto complessivo di circa 2.000 mld € a prezzi correnti (1.221 mld MFF + 806,9 mld NGEU). La pagina MFF ricostruisce i tempi: proposta a maggio 2018, accordo a luglio 2020, adozione a dicembre 2020.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: le cifre delle slide 21–27 vengono da qui (le slide citano la vecchia pagina su ec.europa.eu). Link: &lt;a href=&quot;https://commission.europa.eu/strategy-and-policy/eu-budget/news-events-and-publications/publications/fact-check-eu-budget_en&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Fact check on the EU budget&lt;/a&gt; · &lt;a href=&quot;https://commission.europa.eu/strategy-and-policy/eu-budget/long-term-eu-budget/2021-2027_en&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Long-term EU budget 2021–2027&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;SURE · Support to mitigate Unemployment Risks in an Emergency&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; Strumento temporaneo (2020–2022) da circa 100 mld € di prestiti agli Stati per finanziare la cassa integrazione durante il Covid. È stato finanziato con bond UE garantiti dagli Stati membri. Erogati 98,4 mld € a 19 Paesi.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: insieme a NGEU ha creato il mercato degli EU bonds di cui parla l&#x27;ECB WP 2712 (slide 35). Link: &lt;a href=&quot;https://commission.europa.eu/document/download/9844ecbe-a6c8-4727-b37e-2f84586c0fbd_en&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Commissione europea · documento su SURE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;ESRB · European Systemic Risk Board (Regolamento UE 1092/2010)&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; Istituito dal Regolamento 1092/2010 (in vigore dal 16 dicembre 2010), con sede a Francoforte. Fa parte del Sistema europeo di vigilanza finanziaria e ha il compito di sorvegliare il rischio sistemico, emettere allerte e raccomandazioni.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: è l&#x27;istituzione dietro la proposta SBBS (slide 30–34). Link: &lt;a href=&quot;https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1136795&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Parlamento europeo · scheda del regolamento&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;h3&gt;Safe assets&lt;/h3&gt;
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;Brunnermeier, M. et al. (2011), “European Safe Bonds (ESBies)”, Euro-nomics group&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; Paper di nove economisti europei (30 settembre 2011): ESBies come senior tranche di un portafoglio diversificato di titoli sovrani dell&#x27;area euro, senza responsabilità solidale. Versione rivista: “&lt;i&gt;ESBies: Safety in the Tranches&lt;/i&gt;”, &lt;i&gt;Economic Policy&lt;/i&gt; 32 (2017).&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: è il “Brunnermeier et al. (2011)” della slide 31. Link: &lt;a href=&quot;https://personal.lse.ac.uk/vayanos/Euronomics.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;pagina Euro-nomics (LSE)&lt;/a&gt; · &lt;a href=&quot;https://cepr.org/voxeu/columns/esbies-realistic-reform-europes-financial-architecture&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VoxEU · ESBies&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;ESRB High-Level Task Force on Safe Assets (2018), &lt;i&gt;Sovereign bond-backed securities: a feasibility study&lt;/i&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; Rapporto in due volumi (gennaio 2018), con la task force presieduta da Philip R. Lane. Esamina design (portafoglio, seniority), sviluppo del mercato e trattamento regolamentare degli SBBS, che diversificano il rischio senza metterlo in comune.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: è la proposta ESRB criticata da De Grauwe &amp;amp; Ji (slide 34). Link: &lt;a href=&quot;https://www.esrb.europa.eu/pub/task_force_safe_assets/html/index.en.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ESRB · Task Force on Safe Assets&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;Lane, P. R. &amp;amp; Langfield, S. (2018), “The feasibility of sovereign bond-backed securities for the euro area”, VoxEU&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; Articolo divulgativo che riassume lo studio ESRB. Spiega come un mercato degli SBBS potrebbe migliorare la stabilità finanziaria e quali ostacoli regolamentari andrebbero rimossi.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: è il link “see for example” della slide 32. Link: &lt;a href=&quot;https://cepr.org/voxeu/columns/feasibility-sovereign-bond-backed-securities-euro-area&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CEPR / VoxEU&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;De Grauwe, P. &amp;amp; Ji, Y. (2018), “How safe is a safe asset?”, CEPS&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; CEPS Policy Insight, 22 febbraio 2018. Spiega perché i mercati dei titoli sovrani in un&#x27;unione monetaria sono instabili e sostiene che l&#x27;ingegneria finanziaria degli SBBS non può stabilizzarli senza condivisione del rischio.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: è la critica citata nella slide 34. Link: &lt;a href=&quot;https://www.ceps.eu/ceps-publications/how-safe-safe-asset/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CEPS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;Bletzinger, T., Greif, W. &amp;amp; Schwaab, B. (2022), “Can EU bonds serve as euro-denominated safe assets?”, ECB WP 2712&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; BCE, agosto 2022, pubblicato anche nel &lt;i&gt;Journal of Risk and Financial Management&lt;/i&gt; 15(11). Analizza qualità creditizia, spread sul Bund e liquidità dei bond UE dopo SURE e NGEU.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: slide 35. Link: &lt;a href=&quot;https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2712~6f023a5df2.en.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PDF BCE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;Pallara, K., Pericoli, M. &amp;amp; Tommasino, P. (2025), “Issuing European safe assets: how to get the most out of Eurobonds?”, Banca d&#x27;Italia QEF n. 937&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; &lt;i&gt;Questioni di Economia e Finanza&lt;/i&gt;, giugno 2025. Propone emissioni regolari (per esempio per finanziare investimenti comuni verdi e digitali), lo sviluppo di future e l&#x27;inclusione negli indici sovrani per rendere il mercato più liquido.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: slide 36. Link: &lt;a href=&quot;https://ideas.repec.org/p/bdi/opques/qef_937_25.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IDEAS/RePEc&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ref&quot;&gt;&lt;h4&gt;Bonfanti, G. &amp;amp; Marcucci, J. (2026), “A European safe asset? Not without the investors”, Banca d&#x27;Italia QEF n. 1010&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;ext&quot;&gt;fonte esterna&lt;/span&gt; Giugno 2026. Una versione di lavoro stima un premio di circa 50 punti base dei bond UE rispetto a emittenti sovrani comparabili, dovuto al loro status legale di “sovranazionali” più che ai fondamentali.&lt;/p&gt;
+&lt;p class=&quot;why&quot;&gt;Perché conta: slide 37, è il contributo più recente della lezione. Link: &lt;a href=&quot;https://www.bancaditalia.it/pubblicazioni/qef/2026-1010/index.html?com.dotmarketing.htmlpage.language=1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Banca d&#x27;Italia&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;&lt;div class=&quot;wrap&quot;&gt;Riassunto scritto da Claude a partire dalle slide: controlla sempre sul materiale.&lt;/div&gt;&lt;/footer&gt;
+
+&lt;script&gt;
+(function(){
+&quot;use strict&quot;;
+var A=0.12,K=0.42;
+function B(m,s){return m*A*(Math.exp(K*s)-1)}
+function Sat(m,c){return Math.log(c/(A*m)+1)/K}
+function f1(v){return (Math.round(v*10)/10).toFixed(1).replace(&quot;.&quot;,&quot;,&quot;)}
+var W=560,H=340,L=58,R=22,T=16,BT=48,w=W-L-R,h=H-T-BT;
+function X(s){return L+s/10*w}
+function Y(b){return T+h-b/8*h}
+function path(m){var d=&quot;&quot;,s;for(s=0;s&lt;=10.001;s+=0.1){var b=B(m,s);d+=(d?&quot;L&quot;:&quot;M&quot;)+X(s).toFixed(1)+&quot; &quot;+Y(Math.min(b,9)).toFixed(1);if(b&gt;9)break}return d}
+function draw(svg,o){
+  var id=svg.id+&quot;c&quot;,g=&#x27;&lt;defs&gt;&lt;clipPath id=&quot;&#x27;+id+&#x27;&quot;&gt;&lt;rect x=&quot;&#x27;+L+&#x27;&quot; y=&quot;&#x27;+(T-6)+&#x27;&quot; width=&quot;&#x27;+w+&#x27;&quot; height=&quot;&#x27;+(h+6)+&#x27;&quot;/&gt;&lt;/clipPath&gt;&lt;/defs&gt;&#x27;;
+  (o.zones||[]).forEach(function(z){g+=&#x27;&lt;rect class=&quot;&#x27;+z[2]+&#x27;&quot; x=&quot;&#x27;+X(z[0])+&#x27;&quot; y=&quot;&#x27;+T+&#x27;&quot; width=&quot;&#x27;+(X(z[1])-X(z[0]))+&#x27;&quot; height=&quot;&#x27;+h+&#x27;&quot;/&gt;&#x27;});
+  g+=&#x27;&lt;line class=&quot;ax&quot; x1=&quot;&#x27;+L+&#x27;&quot; y1=&quot;&#x27;+(T+h)+&#x27;&quot; x2=&quot;&#x27;+(L+w+8)+&#x27;&quot; y2=&quot;&#x27;+(T+h)+&#x27;&quot; marker-end=&quot;url(#arr)&quot;/&gt;&lt;line class=&quot;ax&quot; x1=&quot;&#x27;+L+&#x27;&quot; y1=&quot;&#x27;+(T+h)+&#x27;&quot; x2=&quot;&#x27;+L+&#x27;&quot; y2=&quot;&#x27;+(T-4)+&#x27;&quot; marker-end=&quot;url(#arr)&quot;/&gt;&#x27;;
+  g+=&#x27;&lt;text class=&quot;axl&quot; x=&quot;&#x27;+(L+w)+&#x27;&quot; y=&quot;&#x27;+(T+h+38)+&#x27;&quot; text-anchor=&quot;end&quot;&gt;solvency shock S →&lt;/text&gt;&lt;text class=&quot;axl&quot; transform=&quot;translate(18 &#x27;+(T+h/2)+&#x27;) rotate(-90)&quot; text-anchor=&quot;middle&quot;&gt;benefit, cost&lt;/text&gt;&#x27;;
+  (o.v||[]).forEach(function(v){g+=&#x27;&lt;line class=&quot;vl&quot; x1=&quot;&#x27;+X(v[0])+&#x27;&quot; y1=&quot;&#x27;+Y(v[1])+&#x27;&quot; x2=&quot;&#x27;+X(v[0])+&#x27;&quot; y2=&quot;&#x27;+(T+h)+&#x27;&quot;/&gt;&lt;text class=&quot;axl&quot; x=&quot;&#x27;+X(v[0])+&#x27;&quot; y=&quot;&#x27;+(T+h+18)+&#x27;&quot; text-anchor=&quot;middle&quot; style=&quot;fill:var(--ink)&quot;&gt;&#x27;+v[2]+&#x27;&lt;/text&gt;&#x27;});
+  if(o.cost!=null){g+=&#x27;&lt;line class=&quot;c-cost&quot; x1=&quot;&#x27;+L+&#x27;&quot; y1=&quot;&#x27;+Y(o.cost)+&#x27;&quot; x2=&quot;&#x27;+(L+w)+&#x27;&quot; y2=&quot;&#x27;+Y(o.cost)+&#x27;&quot;/&gt;&lt;text class=&quot;lab&quot; x=&quot;&#x27;+(L+w-4)+&#x27;&quot; y=&quot;&#x27;+(Y(o.cost)-7)+&#x27;&quot; text-anchor=&quot;end&quot; style=&quot;fill:var(--ochre)&quot;&gt;C&lt;/text&gt;&#x27;}
+  g+=&#x27;&lt;g clip-path=&quot;url(#&#x27;+id+&#x27;)&quot;&gt;&#x27;;
+  o.curves.forEach(function(c){g+=&#x27;&lt;path class=&quot;cl &#x27;+c.cls+&#x27;&quot; d=&quot;&#x27;+path(c.m)+&#x27;&quot;/&gt;&#x27;});
+  g+=&#x27;&lt;/g&gt;&#x27;;
+  o.curves.forEach(function(c){if(!c.lab)return;var s=Math.min(Sat(c.m,8.2),9.6);g+=&#x27;&lt;text class=&quot;lab&quot; x=&quot;&#x27;+(X(s)+6)+&#x27;&quot; y=&quot;&#x27;+(Y(Math.min(B(c.m,s),8))+14)+&#x27;&quot; style=&quot;fill:&#x27;+c.col+&#x27;&quot;&gt;&#x27;+c.lab+&#x27;&lt;/text&gt;&#x27;});
+  (o.dots||[]).forEach(function(d){if(d[1]&gt;8.3)return;g+=&#x27;&lt;circle class=&quot;dot&quot; cx=&quot;&#x27;+X(d[0])+&#x27;&quot; cy=&quot;&#x27;+Y(d[1])+&#x27;&quot; r=&quot;6.5&quot; style=&quot;fill:&#x27;+d[2]+&#x27;&quot;/&gt;&#x27;+(d[3]?&#x27;&lt;text class=&quot;lab&quot; x=&quot;&#x27;+(X(d[0])-10)+&#x27;&quot; y=&quot;&#x27;+(Y(d[1])-8)+&#x27;&quot; text-anchor=&quot;end&quot; style=&quot;fill:&#x27;+d[2]+&#x27;&quot;&gt;&#x27;+d[3]+&#x27;&lt;/text&gt;&#x27;:&#x27;&#x27;)});
+  svg.innerHTML=g;
+}
+function $(i){return document.getElementById(i)}
+var SUB=function(t){return &#x27;B&lt;tspan baseline-shift=&quot;sub&quot; font-size=&quot;10&quot;&gt;&#x27;+t+&#x27;&lt;/tspan&gt;&#x27;};
+
+/* Parte 2 */
+function upBU(){
+  if(!$(&quot;chBU&quot;))return;
+  var d=+$(&quot;fDebt&quot;).value,t=+$(&quot;fTax&quot;).value,e=+$(&quot;fExt&quot;).value;
+  var lv=function(v){return v&lt;.7?&quot;basso&quot;:v&gt;1.3?&quot;alto&quot;:&quot;medio&quot;};
+  $(&quot;oDebt&quot;).textContent=lv(d);$(&quot;oTax&quot;).textContent=lv(t);$(&quot;oExt&quot;).textContent=lv(e);
+  var m=(0.6+0.4*d)*(0.6+0.4*t)*(0.75+0.25*e);
+  draw($(&quot;chBU&quot;),{curves:[{m:1,cls:&quot;c-ghost&quot;},{m:m,cls:&quot;c-bu&quot;,lab:SUB(&quot;U&quot;),col:&quot;var(--slate)&quot;}]});
+  var s=5;$(&quot;rBU&quot;).innerHTML=&quot;Con uno shock S = 5 il beneficio è &lt;b&gt;&quot;+(B(m,s)/B(1,s)*100).toFixed(0)+&quot;%&lt;/b&gt; di quello del caso base (linea tratteggiata). &quot;+(m&gt;1.02?&quot;La curva è &lt;b&gt;ruotata verso l&#x27;alto&lt;/b&gt;: il default è più tentante per ogni shock.&quot;:m&lt;0.98?&quot;La curva è &lt;b&gt;ruotata verso il basso&lt;/b&gt;: il default è meno tentante.&quot;:&quot;Caso base.&quot;);
+}
+[&quot;fDebt&quot;,&quot;fTax&quot;,&quot;fExt&quot;].forEach(function(i){var x=$(i);if(x)x.addEventListener(&quot;input&quot;,upBU)});
+
+/* Parte 3 */
+function upC(){
+  if(!$(&quot;chC&quot;))return;
+  var s=+$(&quot;cS&quot;).value,c=+$(&quot;cC&quot;).value,s0=Sat(1,c),b=B(1,s),def=b&gt;c;
+  $(&quot;oCS&quot;).textContent=f1(s);$(&quot;oCC&quot;).textContent=f1(c);
+  draw($(&quot;chC&quot;),{curves:[{m:1,cls:&quot;c-bu&quot;,lab:SUB(&quot;U&quot;),col:&quot;var(--slate)&quot;}],cost:c,v:[[s0,c,&quot;S₀&quot;]],dots:[[s,b,def?&quot;var(--brick)&quot;:&quot;var(--sage)&quot;]],zones:[[s0,10,&quot;zone-b&quot;]]});
+  $(&quot;rC&quot;).innerHTML=&quot;S₀ ≈ &lt;b&gt;&quot;+f1(s0)+&quot;&lt;/b&gt;. Con S = &quot;+f1(s)+&quot; il beneficio vale &quot;+f1(b)+&quot; contro un costo di &quot;+f1(c)+&quot; → &quot;+(def?&quot;&lt;b&gt;default&lt;/b&gt; (B &amp;gt; C)&quot;:&quot;&lt;b&gt;nessun default&lt;/b&gt; (B &amp;lt; C)&quot;)+&quot;.&quot;;
+}
+[&quot;cS&quot;,&quot;cC&quot;].forEach(function(i){var x=$(i);if(x)x.addEventListener(&quot;input&quot;,upC)});
+
+/* Parte 4 */
+var expD=0;
+function upEq(){
+  if(!$(&quot;chEq&quot;))return;
+  var s=+$(&quot;eS&quot;).value,C=3,mU=1,mE=3,s1=Sat(mE,C),s2=Sat(mU,C);
+  $(&quot;oES&quot;).textContent=f1(s);
+  var bu=B(mU,s),be=B(mE,s),b=expD?be:bu,dec=b&gt;C;
+  draw($(&quot;chEq&quot;),{curves:[{m:mE,cls:&quot;c-be&quot;,lab:SUB(&quot;E&quot;),col:&quot;var(--brick)&quot;},{m:mU,cls:&quot;c-bu&quot;,lab:SUB(&quot;U&quot;),col:&quot;var(--slate)&quot;}],cost:C,
+    v:[[s1,C,&quot;S₁&quot;],[s2,C,&quot;S₂&quot;],[s,Math.min(be,8),&quot;S&quot;]],zones:[[0,s1,&quot;zone-g&quot;],[s1,s2,&quot;zone-m&quot;],[s2,10,&quot;zone-b&quot;]],
+    dots:[[s,bu,expD?&quot;var(--muted)&quot;:&quot;var(--sage)&quot;,expD?&quot;&quot;:&quot;N&quot;],[s,be,expD?&quot;var(--brick)&quot;:&quot;var(--muted)&quot;,expD?&quot;D&quot;:&quot;&quot;]]});
+  var zone=s&lt;s1?&quot;&lt;b&gt;shock piccolo&lt;/b&gt; (S &amp;lt; S₁)&quot;:s&gt;s2?&quot;&lt;b&gt;shock grande&lt;/b&gt; (S &amp;gt; S₂)&quot;:&quot;&lt;b&gt;shock intermedio&lt;/b&gt; (S₁ &amp;lt; S &amp;lt; S₂)&quot;;
+  var cons=(dec===!!expD);
+  var t=zone+&quot;. Aspettativa: &quot;+(expD?&quot;default&quot;:&quot;nessun default&quot;)+&quot; → curva rilevante &quot;+(expD?&quot;B&lt;sub&gt;E&lt;/sub&gt;&quot;:&quot;B&lt;sub&gt;U&lt;/sub&gt;&quot;)+&quot;, beneficio &quot;+f1(b)+&quot; vs costo 3,0 → il governo &quot;+(dec?&quot;&lt;b&gt;fa default&lt;/b&gt;&quot;:&quot;&lt;b&gt;paga&lt;/b&gt;&quot;)+&quot;. &quot;;
+  t+=cons?&quot;L&#x27;aspettativa si &lt;b&gt;conferma&lt;/b&gt;: è un equilibrio.&quot;:&quot;L&#x27;aspettativa viene &lt;b&gt;smentita&lt;/b&gt;: non è un equilibrio, gli investitori correggeranno le attese.&quot;;
+  if(s&gt;=s1&amp;&amp;s&lt;=s2)t+=&quot; Prova a cambiare l&#x27;aspettativa: anche l&#x27;altra si conferma (coordination failure).&quot;;
+  $(&quot;rEq&quot;).innerHTML=t;
+}
+var eS=$(&quot;eS&quot;);if(eS)eS.addEventListener(&quot;input&quot;,upEq);
+document.querySelectorAll(&quot;#eExp button&quot;).forEach(function(bt){bt.addEventListener(&quot;click&quot;,function(){expD=+bt.dataset.v;document.querySelectorAll(&quot;#eExp button&quot;).forEach(function(x){x.setAttribute(&quot;aria-pressed&quot;,x===bt)});upEq()})});
+
+/* Parte 5 */
+var cbMode=0;
+function upPol(){
+  if(!$(&quot;chPol&quot;))return;
+  var s=+$(&quot;pS&quot;).value,aid=$(&quot;pAid&quot;).checked,C=3;
+  $(&quot;oPS&quot;).textContent=f1(s);
+  var mU=aid?0.6:1,gap=cbMode===0?3:cbMode===1?1.8:1,mE=mU*gap;
+  var cur=[{m:3,cls:&quot;c-ghost&quot;},{m:1,cls:&quot;c-ghost&quot;}];
+  cur.push({m:mE,cls:(cbMode||aid)?&quot;c-new&quot;:&quot;c-be&quot;,lab:(cbMode||aid)?&quot;B′&quot;+&#x27;&lt;tspan baseline-shift=&quot;sub&quot; font-size=&quot;10&quot;&gt;E&lt;/tspan&gt;&#x27;:SUB(&quot;E&quot;),col:(cbMode||aid)?&quot;var(--sage)&quot;:&quot;var(--brick)&quot;});
+  if(cbMode!==2)cur.push({m:mU,cls:aid?&quot;c-newu&quot;:&quot;c-bu&quot;,lab:aid?&quot;B′&quot;+&#x27;&lt;tspan baseline-shift=&quot;sub&quot; font-size=&quot;10&quot;&gt;U&lt;/tspan&gt;&#x27;:SUB(&quot;U&quot;),col:aid?&quot;var(--ochre)&quot;:&quot;var(--slate)&quot;});
+  var be=B(mE,s),s1=Sat(mE,C),s2=Sat(mU,C);
+  var v=[[s,Math.min(be,8),&quot;S′&quot;]];if(cbMode!==2)v.push([s1,C,&quot;S₁&quot;]);v.push([s2,C,cbMode===2?&quot;S₁=S₂&quot;:&quot;S₂&quot;]);
+  draw($(&quot;chPol&quot;),{curves:cur,cost:C,v:v,dots:[[s,be,be&gt;C?&quot;var(--brick)&quot;:&quot;var(--sage)&quot;,be&gt;C?&quot;D&quot;:&quot;ok&quot;]]});
+  var t=&quot;Con lo shock S′ = &quot;+f1(s)+&quot;, anche se i mercati si aspettano il default, il beneficio vale &quot;+f1(be)+&quot; contro un costo di 3,0: &quot;;
+  t+=be&gt;C?&quot;&lt;b&gt;il default atteso si avvera&lt;/b&gt; (equilibrio cattivo possibile).&quot;:&quot;&lt;b&gt;il default non conviene&lt;/b&gt;, quindi l&#x27;attesa di default non regge e resta solo l&#x27;equilibrio buono.&quot;;
+  if(cbMode===2)t+=&quot; Con la garanzia piena B&lt;sub&gt;E&lt;/sub&gt; = B&lt;sub&gt;U&lt;/sub&gt;: resta &lt;b&gt;una sola soglia&lt;/b&gt; e gli equilibri multipli spariscono.&quot;;
+  else t+=&quot; Zona a rischio di equilibri multipli: da S₁ ≈ &quot;+f1(s1)+&quot; a S₂ ≈ &quot;+f1(s2)+&quot;.&quot;;
+  $(&quot;rPol&quot;).innerHTML=t;
+}
+var pS=$(&quot;pS&quot;);if(pS){pS.addEventListener(&quot;input&quot;,upPol);$(&quot;pAid&quot;).addEventListener(&quot;change&quot;,upPol)}
+document.querySelectorAll(&quot;#pCB button&quot;).forEach(function(bt){bt.addEventListener(&quot;click&quot;,function(){cbMode=+bt.dataset.v;document.querySelectorAll(&quot;#pCB button&quot;).forEach(function(x){x.setAttribute(&quot;aria-pressed&quot;,x===bt)});upPol()})});
+
+/* Parte 6: barre bilanci */
+function bars(id,data,max,unit){
+  var svg=$(id);if(!svg)return;var rowH=30,lw=176,ww=520-lw-96,g=&quot;&quot;;
+  data.forEach(function(d,i){var y=8+i*rowH,bw=Math.max(2,d[1]/max*ww);
+    g+=&#x27;&lt;text class=&quot;bar-l&quot; x=&quot;&#x27;+(lw-8)+&#x27;&quot; y=&quot;&#x27;+(y+15)+&#x27;&quot; text-anchor=&quot;end&quot;&gt;&#x27;+d[0]+&#x27;&lt;/text&gt;&lt;rect x=&quot;&#x27;+lw+&#x27;&quot; y=&quot;&#x27;+(y+2)+&#x27;&quot; width=&quot;&#x27;+bw+&#x27;&quot; height=&quot;18&quot; rx=&quot;3&quot; style=&quot;fill:&#x27;+(d[2]||&quot;var(--sage)&quot;)+&#x27;&quot;/&gt;&lt;text class=&quot;bar-v&quot; x=&quot;&#x27;+(lw+bw+6)+&#x27;&quot; y=&quot;&#x27;+(y+15)+&#x27;&quot;&gt;&#x27;+d[1].toLocaleString(&quot;it-IT&quot;)+unit+&#x27;&lt;/text&gt;&#x27;});
+  svg.setAttribute(&quot;viewBox&quot;,&quot;0 0 520 &quot;+(data.length*rowH+12));svg.innerHTML=g;
+}
+bars(&quot;barCountries&quot;,[[&quot;Germania&quot;,1552],[&quot;Francia&quot;,1342],[&quot;Italia&quot;,871],[&quot;Spagna&quot;,516],[&quot;Belgio&quot;,242],[&quot;Polonia&quot;,223],[&quot;Austria&quot;,192],[&quot;Danimarca&quot;,157],[&quot;Bilancio UE&quot;,148,&quot;var(--accent)&quot;]],1552,&quot; mld €&quot;);
+bars(&quot;barShare&quot;,[[&quot;Bilancio UE&quot;,1,&quot;var(--accent)&quot;],[&quot;Bilancio nazionale medio&quot;,46]],46,&quot;% del PIL&quot;);
+
+/* Parte 7: tranching */
+function upTr(){
+  if(!$(&quot;chTr&quot;))return;
+  var loss=+$(&quot;tL&quot;).value,jun=+$(&quot;tJ&quot;).value,sen=100-jun;
+  $(&quot;oTL&quot;).textContent=loss+&quot; mld&quot;;$(&quot;oTJ&quot;).textContent=jun+&quot; mld&quot;;
+  var lj=Math.min(loss,jun),ls=Math.max(0,loss-jun),x0=40,bw=150,H0=260,sc=H0/100;
+  var g=&#x27;&lt;text class=&quot;bar-l&quot; x=&quot;&#x27;+(x0+bw/2)+&#x27;&quot; y=&quot;16&quot; text-anchor=&quot;middle&quot;&gt;Portafoglio · 100 mld di bond sovrani&lt;/text&gt;&#x27;;
+  var ySen=24,hSen=sen*sc,yJun=ySen+hSen,hJun=jun*sc;
+  g+=&#x27;&lt;rect x=&quot;&#x27;+x0+&#x27;&quot; y=&quot;&#x27;+ySen+&#x27;&quot; width=&quot;&#x27;+bw+&#x27;&quot; height=&quot;&#x27;+hSen+&#x27;&quot; style=&quot;fill:var(--slate-bg);stroke:var(--slate)&quot;/&gt;&#x27;;
+  g+=&#x27;&lt;rect x=&quot;&#x27;+x0+&#x27;&quot; y=&quot;&#x27;+yJun+&#x27;&quot; width=&quot;&#x27;+bw+&#x27;&quot; height=&quot;&#x27;+hJun+&#x27;&quot; style=&quot;fill:var(--ochre-bg);stroke:var(--ochre)&quot;/&gt;&#x27;;
+  if(lj&gt;0)g+=&#x27;&lt;rect x=&quot;&#x27;+x0+&#x27;&quot; y=&quot;&#x27;+(yJun+hJun-lj*sc)+&#x27;&quot; width=&quot;&#x27;+bw+&#x27;&quot; height=&quot;&#x27;+(lj*sc)+&#x27;&quot; style=&quot;fill:var(--brick);opacity:.55&quot;/&gt;&#x27;;
+  if(ls&gt;0)g+=&#x27;&lt;rect x=&quot;&#x27;+x0+&#x27;&quot; y=&quot;&#x27;+(yJun-ls*sc)+&#x27;&quot; width=&quot;&#x27;+bw+&#x27;&quot; height=&quot;&#x27;+(ls*sc)+&#x27;&quot; style=&quot;fill:var(--brick);opacity:.8&quot;/&gt;&#x27;;
+  g+=&#x27;&lt;text class=&quot;lab&quot; x=&quot;&#x27;+(x0+bw+14)+&#x27;&quot; y=&quot;&#x27;+(ySen+hSen/2)+&#x27;&quot; style=&quot;fill:var(--slate)&quot;&gt;Senior tranche · ESBies&lt;/text&gt;&lt;text class=&quot;bar-v&quot; x=&quot;&#x27;+(x0+bw+14)+&#x27;&quot; y=&quot;&#x27;+(ySen+hSen/2+18)+&#x27;&quot;&gt;&#x27;+sen+&#x27; mld · perdita &#x27;+ls+&#x27; mld (&#x27;+(sen?Math.round(ls/sen*100):0)+&#x27;%)&lt;/text&gt;&#x27;;
+  g+=&#x27;&lt;text class=&quot;lab&quot; x=&quot;&#x27;+(x0+bw+14)+&#x27;&quot; y=&quot;&#x27;+(yJun+hJun/2)+&#x27;&quot; style=&quot;fill:var(--ochre)&quot;&gt;Junior tranche&lt;/text&gt;&lt;text class=&quot;bar-v&quot; x=&quot;&#x27;+(x0+bw+14)+&#x27;&quot; y=&quot;&#x27;+(yJun+hJun/2+18)+&#x27;&quot;&gt;&#x27;+jun+&#x27; mld · perdita &#x27;+lj+&#x27; mld (&#x27;+(jun?Math.round(lj/jun*100):0)+&#x27;%)&lt;/text&gt;&#x27;;
+  g+=&#x27;&lt;text class=&quot;axl&quot; x=&quot;&#x27;+(x0+bw/2)+&#x27;&quot; y=&quot;&#x27;+(ySen+H0+22)+&#x27;&quot; text-anchor=&quot;middle&quot;&gt;le perdite salgono dal basso ↑&lt;/text&gt;&#x27;;
+  $(&quot;chTr&quot;).innerHTML=g;
+  $(&quot;rTr&quot;).innerHTML=ls&gt;0?&quot;Le perdite (&quot;+loss+&quot; mld) superano lo spessore della junior tranche: &lt;b&gt;anche la senior tranche perde&lt;/b&gt;. È lo scenario temuto nella slide 33, una crisi che si estende ai Paesi grandi.&quot;:&quot;La junior tranche assorbe tutte le perdite: la senior tranche (ESBies) &lt;b&gt;resta intatta&lt;/b&gt;. È per questo che si chiama “safe bond”.&quot;;
+}
+[&quot;tL&quot;,&quot;tJ&quot;].forEach(function(i){var x=$(i);if(x)x.addEventListener(&quot;input&quot;,upTr)});
+
+/* tabs */
+document.querySelectorAll(&quot;[data-tabs]&quot;).forEach(function(tb){
+  var tabs=tb.querySelectorAll(&quot;[role=tab]&quot;),pans=tb.querySelectorAll(&quot;[role=tabpanel]&quot;);
+  tabs.forEach(function(t,i){t.addEventListener(&quot;click&quot;,function(){tabs.forEach(function(x,j){x.setAttribute(&quot;aria-selected&quot;,i===j);pans[j].hidden=i!==j})})});
+});
+/* stepper */
+document.querySelectorAll(&quot;[data-stepper]&quot;).forEach(function(st){
+  var steps=st.querySelectorAll(&quot;[data-step]&quot;),cs=st.querySelectorAll(&quot;circle.st&quot;),ts=st.querySelectorAll(&quot;.ring g text&quot;),k=0;
+  var pv=st.querySelector(&quot;[data-prev]&quot;),nx=st.querySelector(&quot;[data-next]&quot;),ct=st.querySelector(&quot;[data-count]&quot;);
+  function show(){steps.forEach(function(s,i){s.hidden=i!==k});cs.forEach(function(c,i){c.classList.toggle(&quot;on&quot;,i&lt;=k)});ts.forEach(function(t,i){t.classList.toggle(&quot;on&quot;,i&lt;=k)});pv.disabled=k===0;nx.disabled=k===steps.length-1;ct.textContent=(k+1)+&quot; / &quot;+steps.length}
+  pv.addEventListener(&quot;click&quot;,function(){if(k&gt;0){k--;show()}});nx.addEventListener(&quot;click&quot;,function(){if(k&lt;steps.length-1){k++;show()}});
+  cs.forEach(function(c,i){c.style.cursor=&quot;pointer&quot;;c.addEventListener(&quot;click&quot;,function(){k=i;show()})});
+  show();
+});
+upBU();upC();upEq();upPol();upTr();
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe></body></html>
