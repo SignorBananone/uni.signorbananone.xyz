@@ -210,6 +210,27 @@ button.danger { color: var(--k-esame); border-color: transparent; padding-inline
 .chip .t { color: var(--k); font-weight: 600; }
 .chip .p { display: none; }
 .chip.cancelled { text-decoration: line-through; color: var(--color-neutral); }
+/* Lezione in corso: piena, con la parola; la successiva: bordo tratteggiato. Il colore non è mai da solo. */
+.chip.now { background: var(--k); color: var(--color-paper); }
+.chip.now .t { color: var(--color-paper); }
+.chip.now::before, .chip.next::before { font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+.chip.now::before { content: "ora · "; }
+.chip.next { outline: 2px dashed var(--k); outline-offset: -2px; }
+.chip.next::before { content: "dopo · "; color: var(--k); }
+[hidden] { display: none !important; }
+
+/* Filtro dei corsi */
+.filters { display: flex; flex-wrap: wrap; gap: var(--space-2xs) var(--space-md); align-items: baseline;
+  margin: 0 0 var(--space-sm); font-size: var(--text-sm); }
+.filters fieldset { display: flex; flex-wrap: wrap; gap: var(--space-3xs) var(--space-sm); border: 0; margin: 0; padding: 0; }
+.filters legend { float: left; margin-right: var(--space-2xs); font-size: var(--text-xs); font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-neutral); }
+.filters label { display: inline-flex; gap: var(--space-3xs); align-items: center; cursor: pointer; }
+.filters summary { cursor: pointer; font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--color-ink-2); }
+.filters .boxes { display: flex; flex-wrap: wrap; gap: var(--space-3xs) var(--space-sm); padding-top: var(--space-2xs); }
+.filters input { width: auto; margin: 0; padding: 0; accent-color: var(--color-accent); }
+.new { font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent); }
 
 @media (max-width: 720px) {
   .weekdays, .month > li.pad, .month > li.blank { display: none; }
@@ -224,6 +245,9 @@ button.danger { color: var(--k-esame); border-color: transparent; padding-inline
   .month li.today .daynum::after { content: ""; }
   .chip { font-size: var(--text-sm); padding: var(--space-3xs) var(--space-2xs); white-space: normal; }
   .chip .p { display: block; color: var(--color-ink-2); }
+  .chip.now .p { color: var(--color-paper); }
+  .chip.now::before { content: "In corso · "; }
+  .chip.next::before { content: "Prossima · "; }
 }
 
 /* Elenchi a righe (esami, corsi, materiali) */
@@ -289,7 +313,8 @@ button.quiet { border-color: transparent; color: var(--color-neutral); }
 }
 /* Dito, non mouse: pulsanti alti almeno 44 px. */
 @media (pointer: coarse) {
-  button.preview, .files .actions button, .event-dialog .button { min-height: 2.75rem; }
+  button.preview, .files .actions button, .event-dialog .button, .filters label, .filters summary { min-height: 2.75rem; }
+  .filters summary { display: flex; align-items: center; }
 }
 
 /* Finestra di anteprima */
